@@ -13,7 +13,7 @@ public class CarLevel1Holder {
 	
 	
 	//Void Funkcija kura saglaba masinas cars array
-	//Viena masina aiznem no array 3 vietas
+	//Viena masina aiznem no array 4 vietas
 	//CarsMaker void funckija darbojas , ka panem String tad ievada int kura array vieta vajag ievadit to String
 	public void CarsMaker(String a1,int k, String a2,int k1, String a3,int k2,String a4,int k3){
 //panem k integer kurs ir ievadits un a1 string tiek ielikts cars array k vieta
