@@ -6121,7 +6121,7 @@ public class ClickerGame implements ActionListener {
         }      
     }
      
-    public void actionPerformed2(ActionEvent ae) {
+   public void actionPerformed2(ActionEvent ae) {
     if(ae.getSource() == jbtnBuildCarLv1){
     	System.out.println("Test");
     	if(CarMain.PlayerLevel >=1){
