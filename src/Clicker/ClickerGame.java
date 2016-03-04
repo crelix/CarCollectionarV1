@@ -2868,7 +2868,7 @@ public class ClickerGame implements ActionListener {
         TiresLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL8Label.setText("<html>Tires LVL 8<br>" + "Count: " + Part.TiresLv8.PartCount);
-               
+    
         SellPartsLVL8PanelSub.add(AccessoriesLVL8Label);
         SellPartsLVL8PanelSub.add(jbtnSellAccessoriesLv8);
         SellPartsLVL8PanelSub2.add(BodyLVL8Label);
@@ -3359,216 +3359,216 @@ public class ClickerGame implements ActionListener {
     	frame.setSize(1000, 700);
     }
 
-    public static void main(String[] args) {
-    	
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-        	private boolean GameLoop = false;
-            public void run() {
-            	GameLoop = true;
-            	createAndShowGUI();
-            	while(GameLoop){
-            	checks();
-            	}
-       
-            }
-        });
-    }
+//    public static void main(String[] args) {
+//    	
+//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//        	private boolean GameLoop = false;
+//            public void run() {
+//            	GameLoop = true;
+//            	createAndShowGUI();
+//            //	while(GameLoop){
+//            //	checks();
+//           // 	}
+//       
+//            }
+//        });
+//    }
 
-    protected static void checks(){
-			if(CarMain.PlayerLevel >=1){
-		    	jbtnPartsLv1.setEnabled(true);
-		    	jbtnBuyBoxLv1.setEnabled(true);
-		    	jbtnBuyFrameLv1.setEnabled(true);
-		    	jbtnBuildCarLv1.setEnabled(true);
-		    	jbtnSellAccessoriesLv1.setEnabled(true);
-		        jbtnSellBodyLv1.setEnabled(true);
-		        jbtnSellBrakesLv1.setEnabled(true);
-		        jbtnSellCoolingLv1.setEnabled(true);
-		        jbtnSellElectronicsLv1.setEnabled(true);
-		        jbtnSellEngineLv1.setEnabled(true);
-		        jbtnSellExaustLv1.setEnabled(true);
-		        jbtnSellFuelLv1.setEnabled(true);
-		        jbtnSellInteriorLv1.setEnabled(true);
-		        jbtnSellSteeringLv1.setEnabled(true);
-		        jbtnSellSuspensionLv1.setEnabled(true);
-		        jbtnSellTransmissionLv1.setEnabled(true);
-		        jbtnSellTiresLv1.setEnabled(true);
-		    }
-			
-			if(CarMain.PlayerLevel >=2){
-				jbtnPartsLv2.setEnabled(true);
-		    	jbtnBuyBoxLv2.setEnabled(true);
-		    	jbtnBuyFrameLv2.setEnabled(true);
-		    	jbtnBuildCarLv2.setEnabled(true);
-		    	jbtnSellAccessoriesLv2.setEnabled(true);
-		        jbtnSellBodyLv2.setEnabled(true);
-		        jbtnSellBrakesLv2.setEnabled(true);
-		        jbtnSellCoolingLv2.setEnabled(true);
-		        jbtnSellElectronicsLv2.setEnabled(true);
-		        jbtnSellEngineLv2.setEnabled(true);
-		        jbtnSellExaustLv2.setEnabled(true);
-		        jbtnSellFuelLv2.setEnabled(true);
-		        jbtnSellInteriorLv2.setEnabled(true);
-		        jbtnSellSteeringLv2.setEnabled(true);
-		        jbtnSellSuspensionLv2.setEnabled(true);
-		        jbtnSellTransmissionLv2.setEnabled(true);
-		        jbtnSellTiresLv2.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=3){
-				jbtnPartsLv3.setEnabled(true);
-		    	jbtnBuyBoxLv3.setEnabled(true);
-		    	jbtnBuyFrameLv3.setEnabled(true);
-		    	jbtnBuildCarLv3.setEnabled(true);
-		    	jbtnSellAccessoriesLv3.setEnabled(true);
-		        jbtnSellBodyLv3.setEnabled(true);
-		        jbtnSellBrakesLv3.setEnabled(true);
-		        jbtnSellCoolingLv3.setEnabled(true);
-		        jbtnSellElectronicsLv3.setEnabled(true);
-		        jbtnSellEngineLv3.setEnabled(true);
-		        jbtnSellExaustLv3.setEnabled(true);
-		        jbtnSellFuelLv3.setEnabled(true);
-		        jbtnSellInteriorLv3.setEnabled(true);
-		        jbtnSellSteeringLv3.setEnabled(true);
-		        jbtnSellSuspensionLv3.setEnabled(true);
-		        jbtnSellTransmissionLv3.setEnabled(true);
-		        jbtnSellTiresLv3.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=4){
-				jbtnPartsLv4.setEnabled(true);
-		    	jbtnBuyBoxLv4.setEnabled(true);
-		    	jbtnBuyFrameLv4.setEnabled(true);
-		    	jbtnBuildCarLv4.setEnabled(true);
-		    	jbtnSellAccessoriesLv4.setEnabled(true);
-		        jbtnSellBodyLv4.setEnabled(true);
-		        jbtnSellBrakesLv4.setEnabled(true);
-		        jbtnSellCoolingLv4.setEnabled(true);
-		        jbtnSellElectronicsLv4.setEnabled(true);
-		        jbtnSellEngineLv4.setEnabled(true);
-		        jbtnSellExaustLv4.setEnabled(true);
-		        jbtnSellFuelLv4.setEnabled(true);
-		        jbtnSellInteriorLv4.setEnabled(true);
-		        jbtnSellSteeringLv4.setEnabled(true);
-		        jbtnSellSuspensionLv4.setEnabled(true);
-		        jbtnSellTransmissionLv4.setEnabled(true);
-		        jbtnSellTiresLv4.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=5){
-				jbtnPartsLv5.setEnabled(true);
-		    	jbtnBuyBoxLv5.setEnabled(true);
-		    	jbtnBuyFrameLv5.setEnabled(true);
-		    	jbtnBuildCarLv5.setEnabled(true);
-		    	jbtnSellAccessoriesLv5.setEnabled(true);
-		        jbtnSellBodyLv5.setEnabled(true);
-		        jbtnSellBrakesLv5.setEnabled(true);
-		        jbtnSellCoolingLv5.setEnabled(true);
-		        jbtnSellElectronicsLv5.setEnabled(true);
-		        jbtnSellEngineLv5.setEnabled(true);
-		        jbtnSellExaustLv5.setEnabled(true);
-		        jbtnSellFuelLv5.setEnabled(true);
-		        jbtnSellInteriorLv5.setEnabled(true);
-		        jbtnSellSteeringLv5.setEnabled(true);
-		        jbtnSellSuspensionLv5.setEnabled(true);
-		        jbtnSellTransmissionLv5.setEnabled(true);
-		        jbtnSellTiresLv5.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=6){
-				jbtnPartsLv6.setEnabled(true);
-		    	jbtnBuyBoxLv6.setEnabled(true);
-		    	jbtnBuyFrameLv6.setEnabled(true);
-		    	jbtnBuildCarLv6.setEnabled(true);
-		    	jbtnSellAccessoriesLv6.setEnabled(true);
-		        jbtnSellBodyLv6.setEnabled(true);
-		        jbtnSellBrakesLv6.setEnabled(true);
-		        jbtnSellCoolingLv6.setEnabled(true);
-		        jbtnSellElectronicsLv6.setEnabled(true);
-		        jbtnSellEngineLv6.setEnabled(true);
-		        jbtnSellExaustLv6.setEnabled(true);
-		        jbtnSellFuelLv6.setEnabled(true);
-		        jbtnSellInteriorLv6.setEnabled(true);
-		        jbtnSellSteeringLv6.setEnabled(true);
-		        jbtnSellSuspensionLv6.setEnabled(true);
-		        jbtnSellTransmissionLv6.setEnabled(true);
-		        jbtnSellTiresLv6.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=7){
-				jbtnPartsLv7.setEnabled(true);
-		    	jbtnBuyBoxLv7.setEnabled(true);
-		    	jbtnBuyFrameLv7.setEnabled(true);
-		    	jbtnBuildCarLv7.setEnabled(true);
-		    	jbtnSellAccessoriesLv7.setEnabled(true);
-		        jbtnSellBodyLv7.setEnabled(true);
-		        jbtnSellBrakesLv7.setEnabled(true);
-		        jbtnSellCoolingLv7.setEnabled(true);
-		        jbtnSellElectronicsLv7.setEnabled(true);
-		        jbtnSellEngineLv7.setEnabled(true);
-		        jbtnSellExaustLv7.setEnabled(true);
-		        jbtnSellFuelLv7.setEnabled(true);
-		        jbtnSellInteriorLv7.setEnabled(true);
-		        jbtnSellSteeringLv7.setEnabled(true);
-		        jbtnSellSuspensionLv7.setEnabled(true);
-		        jbtnSellTransmissionLv7.setEnabled(true);
-		        jbtnSellTiresLv7.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=8){
-				jbtnPartsLv8.setEnabled(true);
-		    	jbtnBuyBoxLv8.setEnabled(true);
-		    	jbtnBuyFrameLv8.setEnabled(true);
-		    	jbtnBuildCarLv8.setEnabled(true);
-		    	jbtnSellAccessoriesLv8.setEnabled(true);
-		        jbtnSellBodyLv8.setEnabled(true);
-		        jbtnSellBrakesLv8.setEnabled(true);
-		        jbtnSellCoolingLv8.setEnabled(true);
-		        jbtnSellElectronicsLv8.setEnabled(true);
-		        jbtnSellEngineLv8.setEnabled(true);
-		        jbtnSellExaustLv8.setEnabled(true);
-		        jbtnSellFuelLv8.setEnabled(true);
-		        jbtnSellInteriorLv8.setEnabled(true);
-		        jbtnSellSteeringLv8.setEnabled(true);
-		        jbtnSellSuspensionLv8.setEnabled(true);
-		        jbtnSellTransmissionLv8.setEnabled(true);
-		        jbtnSellTiresLv8.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=9){
-				jbtnPartsLv9.setEnabled(true);
-		    	jbtnBuyBoxLv9.setEnabled(true);
-		    	jbtnBuyFrameLv9.setEnabled(true);
-		    	jbtnBuildCarLv9.setEnabled(true);
-		    	jbtnSellAccessoriesLv9.setEnabled(true);
-		        jbtnSellBodyLv9.setEnabled(true);
-		        jbtnSellBrakesLv9.setEnabled(true);
-		        jbtnSellCoolingLv9.setEnabled(true);
-		        jbtnSellElectronicsLv9.setEnabled(true);
-		        jbtnSellEngineLv9.setEnabled(true);
-		        jbtnSellExaustLv9.setEnabled(true);
-		        jbtnSellFuelLv9.setEnabled(true);
-		        jbtnSellInteriorLv9.setEnabled(true);
-		        jbtnSellSteeringLv9.setEnabled(true);
-		        jbtnSellSuspensionLv9.setEnabled(true);
-		        jbtnSellTransmissionLv9.setEnabled(true);
-		        jbtnSellTiresLv9.setEnabled(true);
-			}		
-			if(CarMain.PlayerLevel >=10){
-				jbtnPartsLv10.setEnabled(true);
-		    	jbtnBuyBoxLv10.setEnabled(true);
-		    	jbtnBuyFrameLv10.setEnabled(true);
-		    	jbtnBuildCarLv10.setEnabled(true);
-		    	jbtnSellAccessoriesLv10.setEnabled(true);
-		        jbtnSellBodyLv10.setEnabled(true);
-		        jbtnSellBrakesLv10.setEnabled(true);
-		        jbtnSellCoolingLv10.setEnabled(true);
-		        jbtnSellElectronicsLv10.setEnabled(true);
-		        jbtnSellEngineLv10.setEnabled(true);
-		        jbtnSellExaustLv10.setEnabled(true);
-		        jbtnSellFuelLv10.setEnabled(true);
-		        jbtnSellInteriorLv10.setEnabled(true);
-		        jbtnSellSteeringLv10.setEnabled(true);
-		        jbtnSellSuspensionLv10.setEnabled(true);
-		        jbtnSellTransmissionLv10.setEnabled(true);
-		        jbtnSellTiresLv10.setEnabled(true);
-			}
-			}
+//    protected static void checks(){
+//			if(CarMain.PlayerLevel >=1){
+//		    	jbtnPartsLv1.setEnabled(true);
+//		    	jbtnBuyBoxLv1.setEnabled(true);
+//		    	jbtnBuyFrameLv1.setEnabled(true);
+//		    	jbtnBuildCarLv1.setEnabled(true);
+//		    	jbtnSellAccessoriesLv1.setEnabled(true);
+//		        jbtnSellBodyLv1.setEnabled(true);
+//		        jbtnSellBrakesLv1.setEnabled(true);
+//		        jbtnSellCoolingLv1.setEnabled(true);
+//		        jbtnSellElectronicsLv1.setEnabled(true);
+//		        jbtnSellEngineLv1.setEnabled(true);
+//		        jbtnSellExaustLv1.setEnabled(true);
+//		        jbtnSellFuelLv1.setEnabled(true);
+//		        jbtnSellInteriorLv1.setEnabled(true);
+//		        jbtnSellSteeringLv1.setEnabled(true);
+//		        jbtnSellSuspensionLv1.setEnabled(true);
+//		        jbtnSellTransmissionLv1.setEnabled(true);
+//		        jbtnSellTiresLv1.setEnabled(true);
+//		    }
+//			
+//			if(CarMain.PlayerLevel >=2){
+//				jbtnPartsLv2.setEnabled(true);
+//		    	jbtnBuyBoxLv2.setEnabled(true);
+//		    	jbtnBuyFrameLv2.setEnabled(true);
+//		    	jbtnBuildCarLv2.setEnabled(true);
+//		    	jbtnSellAccessoriesLv2.setEnabled(true);
+//		        jbtnSellBodyLv2.setEnabled(true);
+//		        jbtnSellBrakesLv2.setEnabled(true);
+//		        jbtnSellCoolingLv2.setEnabled(true);
+//		        jbtnSellElectronicsLv2.setEnabled(true);
+//		        jbtnSellEngineLv2.setEnabled(true);
+//		        jbtnSellExaustLv2.setEnabled(true);
+//		        jbtnSellFuelLv2.setEnabled(true);
+//		        jbtnSellInteriorLv2.setEnabled(true);
+//		        jbtnSellSteeringLv2.setEnabled(true);
+//		        jbtnSellSuspensionLv2.setEnabled(true);
+//		        jbtnSellTransmissionLv2.setEnabled(true);
+//		        jbtnSellTiresLv2.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=3){
+//				jbtnPartsLv3.setEnabled(true);
+//		    	jbtnBuyBoxLv3.setEnabled(true);
+//		    	jbtnBuyFrameLv3.setEnabled(true);
+//		    	jbtnBuildCarLv3.setEnabled(true);
+//		    	jbtnSellAccessoriesLv3.setEnabled(true);
+//		        jbtnSellBodyLv3.setEnabled(true);
+//		        jbtnSellBrakesLv3.setEnabled(true);
+//		        jbtnSellCoolingLv3.setEnabled(true);
+//		        jbtnSellElectronicsLv3.setEnabled(true);
+//		        jbtnSellEngineLv3.setEnabled(true);
+//		        jbtnSellExaustLv3.setEnabled(true);
+//		        jbtnSellFuelLv3.setEnabled(true);
+//		        jbtnSellInteriorLv3.setEnabled(true);
+//		        jbtnSellSteeringLv3.setEnabled(true);
+//		        jbtnSellSuspensionLv3.setEnabled(true);
+//		        jbtnSellTransmissionLv3.setEnabled(true);
+//		        jbtnSellTiresLv3.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=4){
+//				jbtnPartsLv4.setEnabled(true);
+//		    	jbtnBuyBoxLv4.setEnabled(true);
+//		    	jbtnBuyFrameLv4.setEnabled(true);
+//		    	jbtnBuildCarLv4.setEnabled(true);
+//		    	jbtnSellAccessoriesLv4.setEnabled(true);
+//		        jbtnSellBodyLv4.setEnabled(true);
+//		        jbtnSellBrakesLv4.setEnabled(true);
+//		        jbtnSellCoolingLv4.setEnabled(true);
+//		        jbtnSellElectronicsLv4.setEnabled(true);
+//		        jbtnSellEngineLv4.setEnabled(true);
+//		        jbtnSellExaustLv4.setEnabled(true);
+//		        jbtnSellFuelLv4.setEnabled(true);
+//		        jbtnSellInteriorLv4.setEnabled(true);
+//		        jbtnSellSteeringLv4.setEnabled(true);
+//		        jbtnSellSuspensionLv4.setEnabled(true);
+//		        jbtnSellTransmissionLv4.setEnabled(true);
+//		        jbtnSellTiresLv4.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=5){
+//				jbtnPartsLv5.setEnabled(true);
+//		    	jbtnBuyBoxLv5.setEnabled(true);
+//		    	jbtnBuyFrameLv5.setEnabled(true);
+//		    	jbtnBuildCarLv5.setEnabled(true);
+//		    	jbtnSellAccessoriesLv5.setEnabled(true);
+//		        jbtnSellBodyLv5.setEnabled(true);
+//		        jbtnSellBrakesLv5.setEnabled(true);
+//		        jbtnSellCoolingLv5.setEnabled(true);
+//		        jbtnSellElectronicsLv5.setEnabled(true);
+//		        jbtnSellEngineLv5.setEnabled(true);
+//		        jbtnSellExaustLv5.setEnabled(true);
+//		        jbtnSellFuelLv5.setEnabled(true);
+//		        jbtnSellInteriorLv5.setEnabled(true);
+//		        jbtnSellSteeringLv5.setEnabled(true);
+//		        jbtnSellSuspensionLv5.setEnabled(true);
+//		        jbtnSellTransmissionLv5.setEnabled(true);
+//		        jbtnSellTiresLv5.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=6){
+//				jbtnPartsLv6.setEnabled(true);
+//		    	jbtnBuyBoxLv6.setEnabled(true);
+//		    	jbtnBuyFrameLv6.setEnabled(true);
+//		    	jbtnBuildCarLv6.setEnabled(true);
+//		    	jbtnSellAccessoriesLv6.setEnabled(true);
+//		        jbtnSellBodyLv6.setEnabled(true);
+//		        jbtnSellBrakesLv6.setEnabled(true);
+//		        jbtnSellCoolingLv6.setEnabled(true);
+//		        jbtnSellElectronicsLv6.setEnabled(true);
+//		        jbtnSellEngineLv6.setEnabled(true);
+//		        jbtnSellExaustLv6.setEnabled(true);
+//		        jbtnSellFuelLv6.setEnabled(true);
+//		        jbtnSellInteriorLv6.setEnabled(true);
+//		        jbtnSellSteeringLv6.setEnabled(true);
+//		        jbtnSellSuspensionLv6.setEnabled(true);
+//		        jbtnSellTransmissionLv6.setEnabled(true);
+//		        jbtnSellTiresLv6.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=7){
+//				jbtnPartsLv7.setEnabled(true);
+//		    	jbtnBuyBoxLv7.setEnabled(true);
+//		    	jbtnBuyFrameLv7.setEnabled(true);
+//		    	jbtnBuildCarLv7.setEnabled(true);
+//		    	jbtnSellAccessoriesLv7.setEnabled(true);
+//		        jbtnSellBodyLv7.setEnabled(true);
+//		        jbtnSellBrakesLv7.setEnabled(true);
+//		        jbtnSellCoolingLv7.setEnabled(true);
+//		        jbtnSellElectronicsLv7.setEnabled(true);
+//		        jbtnSellEngineLv7.setEnabled(true);
+//		        jbtnSellExaustLv7.setEnabled(true);
+//		        jbtnSellFuelLv7.setEnabled(true);
+//		        jbtnSellInteriorLv7.setEnabled(true);
+//		        jbtnSellSteeringLv7.setEnabled(true);
+//		        jbtnSellSuspensionLv7.setEnabled(true);
+//		        jbtnSellTransmissionLv7.setEnabled(true);
+//		        jbtnSellTiresLv7.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=8){
+//				jbtnPartsLv8.setEnabled(true);
+//		    	jbtnBuyBoxLv8.setEnabled(true);
+//		    	jbtnBuyFrameLv8.setEnabled(true);
+//		    	jbtnBuildCarLv8.setEnabled(true);
+//		    	jbtnSellAccessoriesLv8.setEnabled(true);
+//		        jbtnSellBodyLv8.setEnabled(true);
+//		        jbtnSellBrakesLv8.setEnabled(true);
+//		        jbtnSellCoolingLv8.setEnabled(true);
+//		        jbtnSellElectronicsLv8.setEnabled(true);
+//		        jbtnSellEngineLv8.setEnabled(true);
+//		        jbtnSellExaustLv8.setEnabled(true);
+//		        jbtnSellFuelLv8.setEnabled(true);
+//		        jbtnSellInteriorLv8.setEnabled(true);
+//		        jbtnSellSteeringLv8.setEnabled(true);
+//		        jbtnSellSuspensionLv8.setEnabled(true);
+//		        jbtnSellTransmissionLv8.setEnabled(true);
+//		        jbtnSellTiresLv8.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=9){
+//				jbtnPartsLv9.setEnabled(true);
+//		    	jbtnBuyBoxLv9.setEnabled(true);
+//		    	jbtnBuyFrameLv9.setEnabled(true);
+//		    	jbtnBuildCarLv9.setEnabled(true);
+//		    	jbtnSellAccessoriesLv9.setEnabled(true);
+//		        jbtnSellBodyLv9.setEnabled(true);
+//		        jbtnSellBrakesLv9.setEnabled(true);
+//		        jbtnSellCoolingLv9.setEnabled(true);
+//		        jbtnSellElectronicsLv9.setEnabled(true);
+//		        jbtnSellEngineLv9.setEnabled(true);
+//		        jbtnSellExaustLv9.setEnabled(true);
+//		        jbtnSellFuelLv9.setEnabled(true);
+//		        jbtnSellInteriorLv9.setEnabled(true);
+//		        jbtnSellSteeringLv9.setEnabled(true);
+//		        jbtnSellSuspensionLv9.setEnabled(true);
+//		        jbtnSellTransmissionLv9.setEnabled(true);
+//		        jbtnSellTiresLv9.setEnabled(true);
+//			}		
+//			if(CarMain.PlayerLevel >=10){
+//				jbtnPartsLv10.setEnabled(true);
+//		    	jbtnBuyBoxLv10.setEnabled(true);
+//		    	jbtnBuyFrameLv10.setEnabled(true);
+//		    	jbtnBuildCarLv10.setEnabled(true);
+//		    	jbtnSellAccessoriesLv10.setEnabled(true);
+//		        jbtnSellBodyLv10.setEnabled(true);
+//		        jbtnSellBrakesLv10.setEnabled(true);
+//		        jbtnSellCoolingLv10.setEnabled(true);
+//		        jbtnSellElectronicsLv10.setEnabled(true);
+//		        jbtnSellEngineLv10.setEnabled(true);
+//		        jbtnSellExaustLv10.setEnabled(true);
+//		        jbtnSellFuelLv10.setEnabled(true);
+//		        jbtnSellInteriorLv10.setEnabled(true);
+//		        jbtnSellSteeringLv10.setEnabled(true);
+//		        jbtnSellSuspensionLv10.setEnabled(true);
+//		        jbtnSellTransmissionLv10.setEnabled(true);
+//		        jbtnSellTiresLv10.setEnabled(true);
+//			}
+			//}
 		
-	}
+	//}
 
 
     final ImageIcon MoneyIcon = new ImageIcon("Images/Money.png");   
@@ -3824,7 +3824,7 @@ public class ClickerGame implements ActionListener {
 
 
 	
-    @Override
+  //  @Override
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource() == jbtnMoney) {
             CarMain.Money +=1;
