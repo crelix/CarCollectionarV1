@@ -4,6 +4,8 @@ import javax.swing.JFrame;
 
 public class mainClass {
 
+	
+//	MAIN KLASE KUR TIEK IZVEIDOTS LOGS PRIEKS SPELES
 	 public static void main(String[] args) {
 	    	
 		 ClickerGame game = new ClickerGame();

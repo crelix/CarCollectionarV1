@@ -16,19 +16,6 @@ class CarMain implements Serializable{
     public  int BoxLevel;
 }
  
-class CarsLv1{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv1(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
 class CarsLv2{
     public String CarType;
     public String CarBrand;
@@ -145,28 +132,6 @@ class CarsLv10{
         CarCountry = c;
         CarCount = cc;
     }    
-}
-class CarsObjLv1{
-    CarsLv1 Aston_Martin_DB9  = new CarsLv1("Type", "Aston_Martin", "British", 0);
-    CarsLv1 Acura_NSX = new CarsLv1("Type", "Acura", "Japanese", 0);
-    CarsLv1 Ford_Mustang = new CarsLv1("Type", "Ford", "American", 0);
-    CarsLv1 Moskvich_412 = new CarsLv1("Type", "Moskvich", "Russian", 0);
-    CarsLv1 Kia_Venga = new CarsLv1("Type", "Kia", "Korean", 0);
-    CarsLv1 Fiat_1500 = new CarsLv1("Type", "Fiat", "Italian", 0);
-    CarsLv1 Ferrari_Enzo = new CarsLv1("Type", "Ferrari", "Italian", 0);
-    CarsLv1 Aston_Martin_Rapide = new CarsLv1("Type", "Aston_Martin", "British", 0);
-    CarsLv1 Koenigsegg_CCX = new CarsLv1("Type", "Koenigsegg", "Swedish", 0);
-    CarsLv1 Honda_Civic = new CarsLv1("Type", "Honda", "Japanese", 0);
-    CarsLv1 Cadilliac_ATS = new CarsLv1("Type", "Cadilliac", "American", 0);
-    CarsLv1 Mitsubishi_LancerEvolutionX = new CarsLv1("Type", "Mitsubishi", "Japanese", 0);
-    CarsLv1 Infiniti_FX = new CarsLv1("Type", "Infiniti", "Japanese", 0);
-    CarsLv1 Lancia_Thema = new CarsLv1("Type", "Lancia", "Italian", 0);
-    CarsLv1 Volvo_XC90 = new CarsLv1("Type", "Volvo", "Swedish",  0);
-    CarsLv1 Acura_CSX = new CarsLv1("Type", "Acura", "Japanese", 0);
-    CarsLv1 Saab_SonettII = new CarsLv1("Type", "Saab", "Swedish", 0);
-    CarsLv1 Renault_Floride = new CarsLv1("Type", "Renault", "French", 0);
-    CarsLv1 BMW_e34 = new CarsLv1("Type", "BMW", "Germany", 0);
-    CarsLv1 Chrysler_Cordoba = new CarsLv1("Type", "Chrysler", "American", 0);
 }
 class CarsObjLv2{
     CarsLv2 Buick_Riviera = new CarsLv2("Type", "Buick", "American", 0);
@@ -572,7 +537,7 @@ public class ClickerGame implements ActionListener {
     PartObj Part;
     Garages Garage;
     FramesObj CarFrame;
-    CarsObjLv1 CarsLv1;
+    CarLevel1Holder CarsLv1 = new CarLevel1Holder();
     CarsObjLv2 CarsLv2;
     CarsObjLv3 CarsLv3;
     CarsObjLv4 CarsLv4;
@@ -1177,7 +1142,6 @@ public class ClickerGame implements ActionListener {
         Part = new PartObj(); 
         Garage = new Garages();
         CarFrame = new FramesObj();
-        CarsLv1 = new CarsObjLv1();
         CarsLv2 = new CarsObjLv2();
         CarsLv3 = new CarsObjLv3();
         CarsLv4 = new CarsObjLv4();
@@ -3235,7 +3199,6 @@ public class ClickerGame implements ActionListener {
         Part = new PartObj(); 
         Garage = new Garages();
         CarFrame = new FramesObj();
-        CarsLv1 = new CarsObjLv1();
         CarsLv2 = new CarsObjLv2();
         CarsLv3 = new CarsObjLv3();
         CarsLv4 = new CarsObjLv4();
@@ -3261,12 +3224,21 @@ public class ClickerGame implements ActionListener {
     			Box.BoxLv10.BoxCount;
     }
     
+    //Skaita Pirma limena masinu skaitu
     public int CountLv1Cars(){
-    	return CarsLv1.Aston_Martin_DB9.CarCount + CarsLv1.Acura_NSX.CarCount + CarsLv1.Ford_Mustang.CarCount + CarsLv1.Moskvich_412.CarCount +
-    			CarsLv1.Kia_Venga.CarCount + CarsLv1.Fiat_1500.CarCount + CarsLv1.Ferrari_Enzo.CarCount + CarsLv1.Aston_Martin_Rapide.CarCount +
-    			CarsLv1.Koenigsegg_CCX.CarCount + CarsLv1.Honda_Civic.CarCount + CarsLv1.Cadilliac_ATS.CarCount + CarsLv1.Mitsubishi_LancerEvolutionX.CarCount +
-    			CarsLv1.Infiniti_FX.CarCount + CarsLv1.Lancia_Thema.CarCount + CarsLv1.Volvo_XC90.CarCount + CarsLv1.Acura_CSX.CarCount +
-    			CarsLv1.Saab_SonettII.CarCount + CarsLv1.Renault_Floride.CarCount + CarsLv1.BMW_e34.CarCount + CarsLv1.Chrysler_Cordoba.CarCount;     			
+    	//Initilize countccars intiger lai velak varetu izmantot lai varetu skaitit masinas
+    	 int countcars = 0;
+    	 //for loop kas sakas no 3 un katru nakamo gajienu skaitas pa +4 jo CountCars variable in cars array atrodas 
+    	 //3 vieniba pirmajai masinai un katrai nakosajai
+    	 //pa 4 vienibam talak
+    	for(int i = 3;i > CarsLv1.cars.length;i+=4){
+    		//Panem to array string variable un parvers to pa int
+    		countcars+= Integer.parseInt(CarsLv1.cars[i]);
+    	} 
+    	//Returno varibale uz spaceship
+    	return countcars;
+    	
+    	
     }
     
     public int CountLv2Cars(){
@@ -3345,34 +3317,7 @@ public class ClickerGame implements ActionListener {
     	return CarMain.MoneyClicks + CarMain.BoxesClicks;
     }   
  	
-    private static void createAndShowGUI() {
 
-        JFrame frame = new JFrame("CarCollectionarV1");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        ClickerGame CarCollectionar = new ClickerGame();
-        CarCollectionar.addComponentToPane(frame.getContentPane());
-
-        frame.pack();
-        frame.setVisible(true);
-        frame.setResizable(true);
-    	frame.setSize(1000, 700);
-    }
-
-//    public static void main(String[] args) {
-//    	
-//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-//        	private boolean GameLoop = false;
-//            public void run() {
-//            	GameLoop = true;
-//            	createAndShowGUI();
-//            //	while(GameLoop){
-//            //	checks();
-//           // 	}
-//       
-//            }
-//        });
-//    }
 
 //    protected static void checks(){
 //			if(CarMain.PlayerLevel >=1){
@@ -6195,7 +6140,8 @@ public class ClickerGame implements ActionListener {
     														if(Part.SuspensionLv1.PartCount >0){
     															if(Part.TransmissionLv1.PartCount >0){
     																if(Part.TiresLv1.PartCount >0){
-    																	if(CarsLv1.Aston_Martin_DB9.CarCount == 0){          																		CarFrame.FrameLv1.FrameCount -=1;
+    																	int level1carticker= 3; //Skaita pa +4 lai atkal nesajauktos arraya, jo ja panems cita array vinibu tad atkal bus pilns ar erroriem
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){   //Penem no array String un to parvest pa int un nochecko vai 0       																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
     																		Part.BrakesLv1.PartCount -=1;
@@ -6210,10 +6156,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Aston_Martin_DB9.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[3]); skaitlis+=1; //Panem no array cars 3 value un ieliek to private int  pec tam pieskaita pie count +1 
+    																		CarsLv1.cars[3] = Integer.toString(skaitlis); // Jauno value ieliek array ka String atpakal
     																		JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Aston_Martin_DB9Icon);
     																	}
-    																	if(CarsLv1.Acura_NSX.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){ //Penem no array String un to parvest pa int un nochecko vai 0 
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6229,10 +6177,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Acura_NSX.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; //Panem no array cars 7 value un ieliek to private int  pec tam pieskaita pie count +1 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis); // Jauno value ieliek array ka String atpakal
     																		JOptionPane.showMessageDialog (null, "You have gained Acura NSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Acura_NSXIcon);
     																	}
-    																	if(CarsLv1.Ford_Mustang.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6248,10 +6198,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Ford_Mustang.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; //Panem no array cars 7 value un ieliek to private int  pec tam pieskaita pie count +1 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis); // Jauno value ieliek array ka String atpakal
     																		JOptionPane.showMessageDialog (null, "You have gained Ford Mustang!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ford_MustangIcon);
     																	}
-    																	if(CarsLv1.Moskvich_412.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6267,10 +6219,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Moskvich_412.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Moskvich 412!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Moskvich_412Icon);
     																	}
-    																	if(CarsLv1.Kia_Venga.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6286,10 +6240,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Kia_Venga.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Kia Venga!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Kia_VengaIcon);
     																	}
-    																	if(CarsLv1.Fiat_1500.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6305,10 +6261,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Fiat_1500.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Fiat 1500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Fiat_1500Icon);
     																	}
-    																	if(CarsLv1.Ferrari_Enzo.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6324,10 +6282,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Ferrari_Enzo.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Ferrari Enzo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ferrari_EnzoIcon);
     																	}
-    																	if(CarsLv1.Aston_Martin_Rapide.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6343,10 +6303,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Aston_Martin_Rapide.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Aston Martin Rapide!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Aston_Martin_RapideIcon);
     																	}
-    																	if(CarsLv1.Koenigsegg_CCX.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6362,10 +6324,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Koenigsegg_CCX.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Koenigsegg CCX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Koenigsegg_CCXIcon);
     																	}
-    																	if(CarsLv1.Honda_Civic.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker])  == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6381,10 +6345,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Honda_Civic.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Honda Civic!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Honda_CivicIcon);
     																	}
-    																	if(CarsLv1.Cadilliac_ATS.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6400,10 +6366,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Cadilliac_ATS.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Cadilliac ATS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Cadilliac_ATSIcon);
     																	}
-    																	if(CarsLv1.Mitsubishi_LancerEvolutionX.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6419,10 +6387,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Mitsubishi_LancerEvolutionX.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Lancer Evolution X!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mitsubishi_LancerEvolutionXIcon);
     																	}
-    																	if(CarsLv1.Infiniti_FX.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6438,10 +6408,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Infiniti_FX.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Infiniti FX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Infiniti_FXIcon);
     																	}
-    																	if(CarsLv1.Lancia_Thema.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6457,10 +6429,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Lancia_Thema.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Lancia Thema!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lancia_ThemaIcon);
     																	}
-    																	if(CarsLv1.Volvo_XC90.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6476,10 +6450,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Volvo_XC90.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Volvo XC90!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volvo_XC90Icon);
     																	}
-    																	if(CarsLv1.Acura_CSX.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6495,10 +6471,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Acura_CSX.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Acura CSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Acura_CSXIcon);
     																	}
-    																	if(CarsLv1.Saab_SonettII.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6514,10 +6492,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Saab_SonettII.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Saab Sonett II!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Saab_SonettIIIcon);
     																	}
-    																	if(CarsLv1.Renault_Floride.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6533,10 +6513,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Renault_Floride.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Renault Floride!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Renault_FlorideIcon);
     																	}
-    																	if(CarsLv1.BMW_e34.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6552,10 +6534,12 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.BMW_e34.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained BMW e34!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_e34Icon);
     																	}
-    																	if(CarsLv1.Chrysler_Cordoba.CarCount == 0){
+    																	level1carticker+=4;
+    																	if(Integer.parseInt(CarsLv1.cars[level1carticker]) == 0){
     																		CarFrame.FrameLv1.FrameCount -=1;
     																		Part.AccessoriesLv1.PartCount -=1;
     																		Part.BodyLv1.PartCount -=1;
@@ -6571,7 +6555,8 @@ public class ClickerGame implements ActionListener {
     																		Part.TransmissionLv1.PartCount -=1;
     																		Part.TiresLv1.PartCount -=1;
     																		Garage.GarageSlots -=1;
-    																		CarsLv1.Chrysler_Cordoba.CarCount +=1;
+    																		int skaitlis = 	Integer.parseInt(CarsLv1.cars[level1carticker]); skaitlis+=1; 
+    																		CarsLv1.cars[level1carticker] = Integer.toString(skaitlis);
     																		JOptionPane.showMessageDialog (null, "You have gained Chrysler Cordoba!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chrysler_CordobaIcon);
     																	}
     																}
