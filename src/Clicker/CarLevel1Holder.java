@@ -3,12 +3,11 @@ package Clicker;
 public class CarLevel1Holder {
 
 
-	//Public cars[] array 
-	public String cars[] = new String[71];
+	//Public cars[] array. 
+	public String cars[] = new String[76];
 	//Constructor ja nu kas
 	public CarLevel1Holder(){
 		
-		 
 		
 	}
 	
@@ -29,26 +28,47 @@ cars[k3] = a4;
 	//Izveido masinas saja funkcija 
 	public void MakeCars(){
 		
+		//DROSVIEN KA BIJA VIEGLAKS CELS CAUR FOR LOOP TO DARIT BET MAN SLINKUMS DOMAT KA VINU TAISIT
 		
-		CarsMaker("Type", 0,"Acura", 1,"Japanese",2, "0",3);          //Acura_NSX
-		CarsMaker("Type", 4,"Ford", 5,"American", 6,"0",7);           //Ford_Mustang
-		CarsMaker("Type", 4,"Moskvich", 5,"Russian", 6,"0",7);        //Moskvich_412
-		CarsMaker("Type", 8,"Kia", 9,"Korean", 10,"0",11);            //Kia_Venga
-		CarsMaker("Type", 12,"Fiat", 13,"Italian", 14,"0",15);        //Fiat_1500
-		CarsMaker("Type", 16,"Ferrari", 17,"Italian", 18,"0",19);     //Ferrari_Enzo
-		CarsMaker("Type", 20,"Aston_Martin", 21,"British", 22,"0",23);//Aston_Martin_Rapide
-		CarsMaker("Type", 24,"Koenigsegg", 25,"Swedish", 26,"0",27);  //Koenigsegg_CCX
-		CarsMaker("Type", 28,"Honda", 29,"Japanese", 30,"0",31);      //Honda_Civic
-		CarsMaker("Type", 32,"Cadilliac", 33,"American", 34,"0",35);  //Cadilliac_ATS
-		CarsMaker("Type", 36,"Mitsubishi", 37,"Japanese", 38,"0",39); //Mitsubishi_LancerEvolutionX
-		CarsMaker("Type", 40,"Infiniti", 41,"Japanese", 42,"0",43);   //Infiniti_FX
-		CarsMaker("Type", 44,"Lancia", 45,"Italian", 46,"0",47);      //Lancia_Thema
-		CarsMaker("Type", 48,"Volvo", 49,"Swedish", 50,"0",51);       //Volvo_XC90
-		CarsMaker("Type", 52,"Acura", 53,"Japanese", 54,"0",55);      //Acura_CSX
-		CarsMaker("Type", 56,"Saab", 57,"Swedish", 58,"0",59);        //Saab_SonettII
-		CarsMaker("Type", 60,"Renault", 61,"French", 62,"0",63);      //Renault_Floride
-		CarsMaker("Type", 64,"BMW", 65,"Germany", 66,"0",67);         //BMW_e34
-		CarsMaker("Type", 68,"Chrysler", 69,"American", 70,"0",71);   //Chrysler_Cordoba
+		
+		int u = 0;int i = 1;int o = 2;int p = 3; //Izveido integer lai velak liekot array nesajauktu array 
+		CarsMaker("Type", u,"Acura", i,"Japanese",o, "0",p);          //Acura_NSX
+		 u += 4; i += 4; o +=4; p+= 4; //Pieskaita +4 pie katra variable jo katrs nakamais atrodas 4 vietas talak
+		CarsMaker("Type", u,"Ford", i,"American", o,"0",p);           //Ford_Mustang
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Moskvich", i,"Russian", o,"0",p);        //Moskvich_412
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Kia", i,"Korean",o,"0",p);            //Kia_Venga
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Fiat", i,"Italian", o,"0",p);        //Fiat_1500
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Ferrari", i,"Italian", o,"0",p);     //Ferrari_Enzo
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Aston_Martin", i,"British", o,"0",p);//Aston_Martin_Rapide
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Koenigsegg", i,"Swedish", o,"0",p);  //Koenigsegg_CCX
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Honda", i,"Japanese", o,"0",p);      //Honda_Civic
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Cadilliac", i,"American", o,"0",p);  //Cadilliac_ATS
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Mitsubishi", i,"Japanese", o,"0",p); //Mitsubishi_LancerEvolutionX
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Infiniti", i,"Japanese", o,"0",p);   //Infiniti_FX
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Lancia", i,"Italian", o,"0",p);      //Lancia_Thema
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Volvo", i,"Swedish", o,"0",p);       //Volvo_XC90
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Acura", i,"Japanese", o,"0",p);      //Acura_CSX
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Saab", i,"Swedish", o,"0",p);        //Saab_SonettII
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Renault", i,"French", o,"0",p);      //Renault_Floride
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"BMW", i,"Germany", o,"0",p);         //BMW_e34
+		 u += 4; i += 4; o +=4; p+= 4;
+		CarsMaker("Type", u,"Chrysler", i,"American", o,"0",p);   //Chrysler_Cordoba
 	
 		
 		
