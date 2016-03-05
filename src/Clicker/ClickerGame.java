@@ -3527,9 +3527,7 @@ public class ClickerGame implements ActionListener {
 			//}
 		
 	//}
-
-//Ienest jauna klases faila kas satur bildes??? 
-//Tikai idejas
+ 
     final ImageIcon MoneyIcon = new ImageIcon("Images/Money.png");   
     final ImageIcon GarageIcon = new ImageIcon("Images/Garage.png");	
     final ImageIcon LockedIcon = new ImageIcon("Images/Locked.png");	
