@@ -805,15 +805,15 @@ public class ClickerGame implements ActionListener {
      	BuildCarsPanelSub5.add(CarsLv5Label);
      	BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
      	BuildCarsPanelSub6.add(CarsLv6Label);
-     	BuildCarsPanelSub6.add(BuildCarsClass.jbtnBuildCarLv6);
+     	BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
      	BuildCarsPanelSub7.add(CarsLv7Label);
-     	BuildCarsPanelSub7.add(BuildCarsClass.jbtnBuildCarLv7);
+     	BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
      	BuildCarsPanelSub8.add(CarsLv8Label);
-     	BuildCarsPanelSub8.add(BuildCarsClass.jbtnBuildCarLv8);
+     	BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
      	BuildCarsPanelSub9.add(CarsLv9Label);
-     	BuildCarsPanelSub9.add(BuildCarsClass.jbtnBuildCarLv9);
+     	BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
      	BuildCarsPanelSub10.add(CarsLv10Label);
-     	BuildCarsPanelSub10.add(BuildCarsClass.jbtnBuildCarLv10);
+     	BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
      	
      	BuildCarsPanel.add(BuildCarsPanelSub);
      	BuildCarsPanel.add(BuildCarsPanelSub2);
@@ -2825,6 +2825,7 @@ public class ClickerGame implements ActionListener {
     FramesHolder CarFrame = new FramesHolder();
     PartHolder Part = new PartHolder();
     BuildCarsClass BuildCarsClass = new BuildCarsClass();
+    BuildCarsClass2 BuildCarsClass2 = new BuildCarsClass2();
     CarLevel1Holder CarsLv1 = new CarLevel1Holder();
     CarLevel2Holder CarsLv2 = new CarLevel2Holder();
     CarLevel3Holder CarsLv3 = new CarLevel3Holder();
