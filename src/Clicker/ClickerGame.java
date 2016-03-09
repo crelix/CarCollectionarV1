@@ -2,563 +2,13 @@ package Clicker;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
 
 import javax.swing.*;
 import java.util.Random;
 
-
-
-//Vieglak nebutu vinus ta pat iznemt ara no klases un vnk
-// public  int Money=0; 
-//IEksa taja CLikcerGame(){} ?????
-//VAI visus galvenos datus parnest uz jaunu failu un ielikt array lai pectam butu vieglak 
-//pieklut viniem
- class CarMain implements Serializable{
-	private static final long serialVersionUID = 1L;
-	public  int Money=0;
-    public  int Boxes=0;
-    public  int MoneyClicks=0;
-    public  int BoxesClicks=0;
-    public  int PlayerLevel=0;
-    public  int BoxLevel=0;
-}
-
-class CarsLv2{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv2(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv3{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv3(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv4{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv4(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv5{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv5(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv6{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv6(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv7{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv7(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv8{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv8(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv9{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv9(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsLv10{
-    public String CarType;
-    public String CarBrand;
-    public String CarCountry;
-    public int CarCount = 0;
-   
-    CarsLv10(String t, String b, String c, int cc){
-        CarType = t;
-        CarBrand = b;
-        CarCountry = c;
-        CarCount = cc;
-    }    
-}
-class CarsObjLv2{
-    CarsLv2 Buick_Riviera = new CarsLv2("Type", "Buick", "American", 0);
-    CarsLv2 Tesla_Roadster = new CarsLv2("Type", "Tesla", "American", 0);
-    CarsLv2 Audi_80 = new CarsLv2("Type", "Audi", "Germany", 0);
-    CarsLv2 BMW_e36 = new CarsLv2("Type", "BMW", "Germany", 0);
-    CarsLv2 Volkswagen_Scirocco = new CarsLv2("Type", "Volkswagen", "Germany", 0);
-    CarsLv2 Mazda_3 = new CarsLv2("Type", "Mazda", "Japanese", 0);
-    CarsLv2 Chevrolet_Viking = new CarsLv2("Type", "Chevrolet", "American", 0);
-    CarsLv2 Tesla_s = new CarsLv2("Type", "Tesla", "American", 0);
-    CarsLv2 Jeep_ZJ = new CarsLv2("Type", "Jeep", "American", 0);
-    CarsLv2 Dodge_Neon = new CarsLv2("Type", "Dodge", "American", 0);
-    CarsLv2 BMW_e30 = new CarsLv2("Type", "BMW", "Germany", 0);
-    CarsLv2 Mercedes_Benz_W123 = new CarsLv2("Type", "Mercedes_Benz", "Germany", 0);
-    CarsLv2 Land_Rover_Defender = new CarsLv2("Type", "Land_Rover", "British", 0);
-    CarsLv2 Saab_9_5 = new CarsLv2("Type", "Saab", "Swedish", 0);
-    CarsLv2 Aston_Martin_One = new CarsLv2("Type", "Aston_Martin", "British", 0);
-    CarsLv2 Koenigsegg_Regera = new CarsLv2("Type", "Koenigsegg", "Swedish", 0);
-    CarsLv2 Lexus_IS = new CarsLv2("Type", "Lexus", "Japanese", 0);
-    CarsLv2 GMC_Yukon = new CarsLv2("Type", "GMC", "American", 0);
-    CarsLv2 Opel_Astra = new CarsLv2("Type", "Opel", "Germany", 0);
-    CarsLv2 Audi_Coupe = new CarsLv2("Type", "Audi", "Germany", 0);
-}
-class CarsObjLv3{
-    CarsLv3 Mini_Moke = new CarsLv3("Type", "Mini", "British", 0);
-    CarsLv3 Kia_Rondo = new CarsLv3("Type", "Kia", "Korean", 0);
-    CarsLv3 GMC_Suburban = new CarsLv3("Type", "GMC", "American", 0);
-    CarsLv3 Honda_Prelude = new CarsLv3("Type", "Honda", "Japanese", 0);
-    CarsLv3 Citroen_Saxo = new CarsLv3("Type", "Citroen", "French", 0);
-    CarsLv3 Volkswagen_Tiguan = new CarsLv3("Type", "Volkswagen", "Germany", 0);
-    CarsLv3 Volkswagen_Phaeton = new CarsLv3("Type", "Volkswagen", "Germany", 0);
-    CarsLv3 Buick_Centry = new CarsLv3("Type", "Buick", "American", 0);
-    CarsLv3 Land_Rover_Discovery = new CarsLv3("Type", "Land_Rover", "British", 0);
-    CarsLv3 Infiniti_Etherea = new CarsLv3("Type", "Infiniti", "Japanese", 0);
-    CarsLv3 Peugeot_308 = new CarsLv3("Type", "Peugeot", "French", 0);
-    CarsLv3 Toyota_Auris = new CarsLv3("Type", "Toyota", "Japanese", 0);
-    CarsLv3 Pagani_ZondaF = new CarsLv3("Type", "Pagani", "Italian", 0);
-    CarsLv3 Lancia_Phedra = new CarsLv3("Type", "Lancia", "Italian", 0);
-    CarsLv3 Chevrolet_Impala = new CarsLv3("Type", "Chevrolet", "American", 0);
-    CarsLv3 Porsche_Boxster = new CarsLv3("Type", "Porsche", "Germany", 0);
-    CarsLv3 Aston_Martin_DB6 = new CarsLv3("Type", "Aston_Martin", "British", 0);
-    CarsLv3 Vaz_2103 = new CarsLv3("Type", "Lada", "Russian", 0);
-    CarsLv3 Hyundai_Mistra = new CarsLv3("Type", "Hyundai", "Korean", 0);
-    CarsLv3 Mini_Countryman = new CarsLv3("Type", "Mini", "British", 0);
-}
-class CarsObjLv4{
-    CarsLv4 Mazda_MX6 = new CarsLv4("Type", "Mazda", "Japanese", 0);
-    CarsLv4 Chrysler_Daytona = new CarsLv4("Type", "Chrysler", "American", 0);
-    CarsLv4 Buick_Roadmaster = new CarsLv4("Type", "Buick", "American", 0);
-    CarsLv4 Volvo_S80 = new CarsLv4("Type", "Volvo", "Swedish", 0);
-    CarsLv4 Porsche_Cayman = new CarsLv4("Type", "Porsche", "Germany", 0);
-    CarsLv4 Volkswagen_Beetle = new CarsLv4("Type", "Volkswagen", "Germany", 0);
-    CarsLv4 Bugatti_EB110 = new CarsLv4("Type", "Bugatti", "French", 0);
-    CarsLv4 Opel_Zafira = new CarsLv4("Type", "Opel", "Germany", 0);
-    CarsLv4 Saab_9000 = new CarsLv4("Type", "Saab", "Swedish", 0);
-    CarsLv4 McLaren_F1 = new CarsLv4("Type", "McLaren", "British", 0);
-    CarsLv4 Audi_R8 = new CarsLv4("Type", "Audi", "Germany", 0);
-    CarsLv4 Alfa_Romeo_8C = new CarsLv4("Type", "Alfa_Romeo", "Italian", 0);
-    CarsLv4 Ford_Fiesta = new CarsLv4("Type", "Ford", "American", 0);
-    CarsLv4 Infiniti_Q50 = new CarsLv4("Type", "Infiniti", "Japanese", 0);
-    CarsLv4 Maserati_5000GT = new CarsLv4("Type", "Maserati", "Italian", 0);
-    CarsLv4 Mercedes_Benz_CLA250 = new CarsLv4("Type", "Mercedes_Benz", "Germany", 0);
-    CarsLv4 Lamborghini_Gallardo = new CarsLv4("Type", "Lamborghini", "Italian", 0);
-    CarsLv4 Mazda_RX7 = new CarsLv4("Type", "Mazda", "Japanese", 0);
-    CarsLv4 Mitsubishi_Colt = new CarsLv4("Type", "Mitsubishi", "Japanese", 0);
-    CarsLv4 Kia_Sorento = new CarsLv4("Type", "Kia", "Korean", 0);
-}
-class CarsObjLv5{
-    CarsLv5 Rolls_Royce_Wraith = new CarsLv5("Type", "Rolls_Royce", "British", 0);
-    CarsLv5 Lamborghini_Diablo = new CarsLv5("Type", "Lamborghini", "Italian", 0);
-    CarsLv5 Jeep_Scrambler = new CarsLv5("Type", "Jeep", "American", 0);
-    CarsLv5 Bentley_Continental = new CarsLv5("Type", "Bentley", "British", 0);
-    CarsLv5 Bentley_Azure = new CarsLv5("Type", "Bentley", "British", 0);
-    CarsLv5 Koenigsegg_One = new CarsLv5("Type", "Koenigsegg", "Swedish", 0);
-    CarsLv5 Cadilliac_XTS = new CarsLv5("Type", "Cadilliac", "American", 0);
-    CarsLv5 Fiat_500 = new CarsLv5("Type", "Fiat", "Italian", 0);
-    CarsLv5 Mitsubishi_Pajero = new CarsLv5("Type", "Mitsubishi", "Japanese", 0);
-    CarsLv5 Moskvich_2140 = new CarsLv5("Type", "Moskvich", "Russian", 0);
-    CarsLv5 Opel_GT = new CarsLv5("Type", "Opel", "Germany", 0);
-    CarsLv5 Hyundai_Getz = new CarsLv5("Type", "Hyundai", "Korean", 0);
-    CarsLv5 Maserati_Coupe = new CarsLv5("Type", "Maserati", "Italian", 0);
-    CarsLv5 Honda_S2000 = new CarsLv5("Type", "Honda", "Japanese", 0);
-    CarsLv5 Alfa_Romeo_Spider = new CarsLv5("Type", "Alfa_Romeo", "Italian", 0 );
-    CarsLv5 BMW_M5 = new CarsLv5("Type", "BMW", "Germany", 0);
-    CarsLv5 BMW_I8 = new CarsLv5("Type", "BMW", "Germany", 0);
-    CarsLv5 Citroen_C5 = new CarsLv5("Type", "Citroen", "French", 0);
-    CarsLv5 Fiat_Punto = new CarsLv5("Type", "Fiat", "Italian", 0);
-    CarsLv5 Audi_100 = new CarsLv5("Type", "Audi", "Germany", 0);
-}
-class CarsObjLv6{
-    CarsLv6 Rolls_Royce_Phantom = new CarsLv6("Type", "Rolls_Royce", "British", 0);
-    CarsLv6 Toyota_86 = new CarsLv6("Type", "Toyota", "Japanese", 0);
-    CarsLv6 BMW_e70 = new CarsLv6("Type", "BMW", "Germany", 0);
-    CarsLv6 Chrysler_Voyager = new CarsLv6("Type", "Chrysler", "American", 0);
-    CarsLv6 Rolls_Royce_PhantomIII = new CarsLv6("Type", "Rolls_Royce", "British", 0);
-    CarsLv6 Honda_CRX = new CarsLv6("Type", "Honda", "Japanese", 0);
-    CarsLv6 Subaru_1000 = new CarsLv6("Type", "Subaru", "Japanese", 0);
-    CarsLv6 Cadilliac_Eldorado = new CarsLv6("Type", "Cadilliac", "American", 0);
-    CarsLv6 Land_Rover_Freelander = new CarsLv6("Type", "Land_Rover", "British", 0);
-    CarsLv6 Renault_Spider = new CarsLv6("Type", "Renault", "French", 0);
-    CarsLv6 Gaz_21 = new CarsLv6("Type", "GAZ", "Russian", 0);
-    CarsLv6 Acura_EL = new CarsLv6("Type", "Acura", "Japanese", 0);
-    CarsLv6 Bugatti_Veyron = new CarsLv6("Type", "Bugatti", "French", 0);
-    CarsLv6 Mercedes_Benz_SL600 = new CarsLv6("Type", "Mercedes_Benz", "Germany", 0);
-    CarsLv6 Rolls_Royce_Silver = new CarsLv6("Type", "Rolls_Royce", "British", 0);
-    CarsLv6 Mini_Paceman = new CarsLv6("Type", "Mini", "British", 0);
-    CarsLv6 Hyundai_Excel = new CarsLv6("Type", "Hyundai", "Korean", 0);
-    CarsLv6 Gaz_24 = new CarsLv6("Type", "GAZ", "Russian", 0);
-    CarsLv6 Peugeot_107 = new CarsLv6("Type", "Peugeot", "French", 0);
-    CarsLv6 Audi_A4 = new CarsLv6("Type", "Audi", "Germany", 0);
-}
-class CarsObjLv7{
-    CarsLv7 Lamborghini_Aventador = new CarsLv7("Type", "Lamborghini", "Italian", 0);
-    CarsLv7 Nissan_350z = new CarsLv7("Type", "Nissan", "Japanese", 0);
-    CarsLv7 Jaguar_XJ6 = new CarsLv7("Type", "Jaguar", "British", 0);
-    CarsLv7 Renault_Clio = new CarsLv7("Type", "Renault", "French", 0);
-    CarsLv7 Toyota_Avensis = new CarsLv7("Type", "Toyota", "Japanese", 0);
-    CarsLv7 Subaru_Outback = new CarsLv7("Type", "Subaru", "Japanese", 0);
-    CarsLv7 Saab_900 = new CarsLv7("Type", "Saab", "Swedish", 0);
-    CarsLv7 Opel_Vectra = new CarsLv7("Type", "Opel", "Germany", 0);
-    CarsLv7 Chrysler_Charger = new CarsLv7("Type", "Chrysler", "American", 0);
-    CarsLv7 Ferrari_348 = new CarsLv7("Type", "Ferrari", "Italian", 0);
-    CarsLv7 Hyundai_XG = new CarsLv7("Type", "Hyundai", "Korean", 0);
-    CarsLv7 Lexus_RX = new CarsLv7("Type", "Lexus", "Japanese", 0);
-    CarsLv7 Dodge_400 = new CarsLv7("Type", "Dodge", "American", 0);
-    CarsLv7 GMC_Terrain = new CarsLv7("Type", "GMC", "American", 0);
-    CarsLv7 Volvo_C70 = new CarsLv7("Type", "Volvo", "Swedish", 0);
-    CarsLv7 Ford_Sierra = new CarsLv7("Type", "Ford", "American", 0);
-    CarsLv7 Subaru_Impreza = new CarsLv7("Type", "Subaru", "Japanese", 0);
-    CarsLv7 BMW_e90 = new CarsLv7("Type", "BMW", "Germany", 0);
-    CarsLv7 Nissan_Skyline = new CarsLv7("Type", "Nissan", "Japanese", 0);
-    CarsLv7 Audi_Q7 = new CarsLv7("Type", "Audi", "Germany", 0);
-}
-class CarsObjLv8{
-    CarsLv8 Bentley_Arnage = new CarsLv8("Type", "Bentley", "British", 0);
-    CarsLv8 Volvo_850 = new CarsLv8("Type", "Volvo", "Swedish", 0);
-    CarsLv8 Toyota_Rav4 = new CarsLv8("Type", "Toyota", "Japanese", 0);
-    CarsLv8 Ford_Focus = new CarsLv8("Type", "Ford", "American", 0);
-    CarsLv8 Chevrolet_Spin = new CarsLv8("Type", "Chevrolet", "American", 0);
-    CarsLv8 Bentley_GTZ = new CarsLv8("Type", "Bentley", "British", 0);
-    CarsLv8 Lexus_LS = new CarsLv8("Type", "Lexus", "Japanese", 0);
-    CarsLv8 Land_Rover_RangeRover = new CarsLv8("Type", "Land_Rover", "British", 0);
-    CarsLv8 Lexus_GX = new CarsLv8("Type", "Lexus", "Japanese", 0);
-    CarsLv8 Jeep_Wrangler = new CarsLv8("Type", "Jeep", "American", 0);
-    CarsLv8 Maserati_GranTurismo = new CarsLv8("Type", "Maserati", "Italian", 0);
-    CarsLv8 Koenigsegg_Agera = new CarsLv8("Type", "Koenigsegg", "Swedish", 0);
-    CarsLv8 Acura_MDX = new CarsLv8("Type", "Acura", "Japanese", 0);
-    CarsLv8 Audi_RS6 = new CarsLv8("Type", "Audi", "Germany", 0);
-    CarsLv8 Cadilliac_DeVille = new CarsLv8("Type", "Cadilliac", "American", 0);
-    CarsLv8 McLaren_Veneno = new CarsLv8("Type", "McLaren", "British", 0);
-    CarsLv8 Tesla_X = new CarsLv8("Type", "Tesla", "American", 0);
-    CarsLv8 Mercedes_Benz_G55 = new CarsLv8("Type", "Mercedes_Benz", "Germany", 0);
-    CarsLv8 Lancia_Lybra = new CarsLv8("Type", "Lancia", "Italian", 0);
-    CarsLv8 Infiniti_QX60 = new CarsLv8("Type", "Infiniti", "Japanese", 0);
-}
-class CarsObjLv9{
-    CarsLv9 Kia_Forte = new CarsLv9("Type", "Kia", "Korean", 0);
-    CarsLv9 Lancia_Voyager = new CarsLv9("Type", "Lancia", "Italian", 0);
-    CarsLv9 Porsche_Cayenne = new CarsLv9("Type", "Porsche", "Germany", 0);
-    CarsLv9 McLaren_650s = new CarsLv9("Type", "McLaren", "British", 0);
-    CarsLv9 Jaguar_E_Type = new CarsLv9("Type", "Jaguar", "British", 0);
-    CarsLv9 Peugeot_601 = new CarsLv9("Type", "Peugeot", "French", 0);
-    CarsLv9 Jaguar_F_Type = new CarsLv9("Type", "Jaguar", "British", 0);
-    CarsLv9 Fiat_Doblo = new CarsLv9("Type", "Fiat", "Italian", 0);
-    CarsLv9 Vaz_2101 = new CarsLv9("Type", "Lada", "Russian", 0);
-    CarsLv9 McLaren_P1 = new CarsLv9("Type", "McLaren", "British", 0);
-    CarsLv9 Peugeot_405 = new CarsLv9("Type", "Peugeot", "French", 0);
-    CarsLv9 GMC_Envoy = new CarsLv9("Type", "GMC", "American", 0);
-    CarsLv9 Chevrolet_Corvete = new CarsLv9("Type", "Chevrolet", "American", 0);
-    CarsLv9 Pagani_Huayra = new CarsLv9("Type", "Pagani", "Italian", 0);
-    CarsLv9 Moskvich_402 = new CarsLv9("Type", "Moskvich", "Russian", 0);
-    CarsLv9 Alfa_Romeo_159 = new CarsLv9("Type", "Alfa_Romeo", "Italian", 0);
-    CarsLv9 Renault_Fregate = new CarsLv9("Type", "Renault", "French", 0);
-    CarsLv9 Mini_Cooper = new CarsLv9("Type", "Mini", "British", 0);
-    CarsLv9 Dodge_Viper = new CarsLv9("Type", "Dodge", "American", 0);
-    CarsLv9 Vaz_Niva = new CarsLv9("Type", "Lada", "Russian", 0);
-}
-class CarsObjLv10{
-    CarsLv10 Jaguar_X_Type = new CarsLv10("Type", "Jaguar", "British", 0);
-    CarsLv10 Ferrari_308 = new CarsLv10("Type", "Ferrari", "Italian", 0);
-    CarsLv10 Mazda_626 = new CarsLv10("Type", "Mazda", "Japanese", 0);
-    CarsLv10 Maserati_Shamal = new CarsLv10("Type", "Maserati", "Italian", 0);
-    CarsLv10 Nissan_240sx = new CarsLv10("Type", "Nissan", "Japanese", 0);
-    CarsLv10 Alfa_Romeo_4C = new CarsLv10("Type", "Alfa_Romeo", "Italian", 0);
-    CarsLv10 Nissan_Juke = new CarsLv10("Type", "Nissan", "Japanese", 0);
-    CarsLv10 Volkswagen_Golf1 = new CarsLv10("Type", "Volkswagen", "Germany", 0);
-    CarsLv10 Jeep_Gladiator = new CarsLv10("Type", "Jeep", "American", 0);
-    CarsLv10 Dodge_Matador = new CarsLv10("Type", "Dodge", "American", 0);
-    CarsLv10 Bugatti_Royale = new CarsLv10("Type", "Bugatti", "French", 0);
-    CarsLv10 Citroen_CX = new CarsLv10("Type", "Citroen", "French", 0);
-    CarsLv10 Lamborghini_350GT = new CarsLv10("Type", "Lamborghini", "Italian", 0);
-    CarsLv10 Mitsubishi_GTO = new CarsLv10("Type", "Mitsubishi", "Japanese", 0);
-    CarsLv10 Buick_Invicta = new CarsLv10("Type", "Buick", "American", 0);
-    CarsLv10 Porsche_911 = new CarsLv10("Type", "Porsche", "Germany", 0);
-    CarsLv10 Subaru_Forester = new CarsLv10("Type", "Subaru", "Japanese", 0);
-    CarsLv10 Citroen_BX = new CarsLv10("Type", "Citroen", "French", 0);
-    CarsLv10 Bugatti_Type252 = new CarsLv10("Type", "Bugatti", "French", 0);
-    CarsLv10 Ferrari_488 = new CarsLv10("Type", "Ferrari", "Italian", 0);
-}
-
-
-
-class Part{
-    public int PartCount;
-   
-    Part(int c) {
-        PartCount = c;
-    }
-}
-class PartObj{
-    Part AccessoriesLv1 = new Part(0);
-    Part BodyLv1 = new Part(0);
-    Part BrakesLv1 = new Part(0);
-    Part CoolingLv1 = new Part(0);
-    Part ElectronicsLv1 = new Part(0);
-    Part EngineLv1 = new Part(0);
-    Part ExaustLv1 = new Part(0);
-    Part FuelLv1 = new Part(0);
-    Part InteriorLv1 = new Part(0);
-    Part SteeringLv1 = new Part(0);
-    Part SuspensionLv1 = new Part(0);
-    Part TransmissionLv1 = new Part(0);
-    Part TiresLv1 = new Part(0);
-    
-    Part AccessoriesLv2 = new Part(0);
-    Part BodyLv2 = new Part(0);
-    Part BrakesLv2 = new Part(0);
-    Part CoolingLv2 = new Part(0);
-    Part ElectronicsLv2 = new Part(0);
-    Part EngineLv2 = new Part(0);
-    Part ExaustLv2 = new Part(0);
-    Part FuelLv2 = new Part(0);
-    Part InteriorLv2 = new Part(0);
-    Part SteeringLv2 = new Part(0);
-    Part SuspensionLv2 = new Part(0);
-    Part TransmissionLv2 = new Part(0);
-    Part TiresLv2 = new Part(0);
-    
-    Part AccessoriesLv3 = new Part(0);
-    Part BodyLv3 = new Part(0);
-    Part BrakesLv3 = new Part(0);
-    Part CoolingLv3 = new Part(0);
-    Part ElectronicsLv3 = new Part(0);
-    Part EngineLv3 = new Part(0);
-    Part ExaustLv3 = new Part(0);
-    Part FuelLv3 = new Part(0);
-    Part InteriorLv3 = new Part(0);
-    Part SteeringLv3 = new Part(0);
-    Part SuspensionLv3 = new Part(0);
-    Part TransmissionLv3 = new Part(0);
-    Part TiresLv3 = new Part(0);
-    
-    Part AccessoriesLv4 = new Part(0);
-    Part BodyLv4 = new Part(0);
-    Part BrakesLv4 = new Part(0);
-    Part CoolingLv4 = new Part(0);
-    Part ElectronicsLv4 = new Part(0);
-    Part EngineLv4 = new Part(0);
-    Part ExaustLv4 = new Part(0);
-    Part FuelLv4 = new Part(0);
-    Part InteriorLv4 = new Part(0);
-    Part SteeringLv4 = new Part(0);
-    Part SuspensionLv4 = new Part(0);
-    Part TransmissionLv4 = new Part(0);
-    Part TiresLv4 = new Part(0);
-    
-    Part AccessoriesLv5 = new Part(0);
-    Part BodyLv5 = new Part(0);
-    Part BrakesLv5 = new Part(0);
-    Part CoolingLv5 = new Part(0);
-    Part ElectronicsLv5 = new Part(0);
-    Part EngineLv5 = new Part(0);
-    Part ExaustLv5 = new Part(0);
-    Part FuelLv5 = new Part(0);
-    Part InteriorLv5 = new Part(0);
-    Part SteeringLv5 = new Part(0);
-    Part SuspensionLv5 = new Part(0);
-    Part TransmissionLv5 = new Part(0);
-    Part TiresLv5 = new Part(0);
-    
-    Part AccessoriesLv6 = new Part(0);
-    Part BodyLv6 = new Part(0);
-    Part BrakesLv6 = new Part(0);
-    Part CoolingLv6 = new Part(0);
-    Part ElectronicsLv6 = new Part(0);
-    Part EngineLv6 = new Part(0);
-    Part ExaustLv6 = new Part(0);
-    Part FuelLv6 = new Part(0);
-    Part InteriorLv6 = new Part(0);
-    Part SteeringLv6 = new Part(0);
-    Part SuspensionLv6 = new Part(0);
-    Part TransmissionLv6 = new Part(0);
-    Part TiresLv6 = new Part(0);
-    
-    Part AccessoriesLv7 = new Part(0);
-    Part BodyLv7 = new Part(0);
-    Part BrakesLv7 = new Part(0);
-    Part CoolingLv7 = new Part(0);
-    Part ElectronicsLv7 = new Part(0);
-    Part EngineLv7 = new Part(0);
-    Part ExaustLv7 = new Part(0);
-    Part FuelLv7 = new Part(0);
-    Part InteriorLv7 = new Part(0);
-    Part SteeringLv7 = new Part(0);
-    Part SuspensionLv7 = new Part(0);
-    Part TransmissionLv7 = new Part(0);
-    Part TiresLv7 = new Part(0);
-    
-    Part AccessoriesLv8 = new Part(0);
-    Part BodyLv8 = new Part(0);
-    Part BrakesLv8 = new Part(0);
-    Part CoolingLv8 = new Part(0);
-    Part ElectronicsLv8 = new Part(0);
-    Part EngineLv8 = new Part(0);
-    Part ExaustLv8 = new Part(0);
-    Part FuelLv8 = new Part(0);
-    Part InteriorLv8 = new Part(0);
-    Part SteeringLv8 = new Part(0);
-    Part SuspensionLv8 = new Part(0);
-    Part TransmissionLv8 = new Part(0);
-    Part TiresLv8 = new Part(0);
-    
-    Part AccessoriesLv9 = new Part(0);
-    Part BodyLv9 = new Part(0);
-    Part BrakesLv9 = new Part(0);
-    Part CoolingLv9 = new Part(0);
-    Part ElectronicsLv9 = new Part(0);
-    Part EngineLv9 = new Part(0);
-    Part ExaustLv9 = new Part(0);
-    Part FuelLv9 = new Part(0);
-    Part InteriorLv9 = new Part(0);
-    Part SteeringLv9 = new Part(0);
-    Part SuspensionLv9 = new Part(0);
-    Part TransmissionLv9 = new Part(0);
-    Part TiresLv9 = new Part(0);
-    
-    Part AccessoriesLv10 = new Part(0);
-    Part BodyLv10 = new Part(0);
-    Part BrakesLv10 = new Part(0);
-    Part CoolingLv10 = new Part(0);
-    Part ElectronicsLv10 = new Part(0);
-    Part EngineLv10 = new Part(0);
-    Part ExaustLv10 = new Part(0);
-    Part FuelLv10 = new Part(0);
-    Part InteriorLv10 = new Part(0);
-    Part SteeringLv10 = new Part(0);
-    Part SuspensionLv10 = new Part(0);
-    Part TransmissionLv10 = new Part(0);
-    Part TiresLv10 = new Part(0);
-   
-}
- 
-class Garages{
-    public int GarageLevel;
-    public int GarageSlots;
-}   
-
-class Boxes{
-    public int BoxCount;
-   
-    Boxes(int c){
-        BoxCount = c;
-    }
-}
-class BoxesObj{
-    Boxes BoxLv1 = new Boxes(0);
-    Boxes BoxLv2 = new Boxes(0);
-    Boxes BoxLv3 = new Boxes(0);
-    Boxes BoxLv4 = new Boxes(0);
-    Boxes BoxLv5 = new Boxes(0);
-    Boxes BoxLv6 = new Boxes(0);
-    Boxes BoxLv7 = new Boxes(0);
-    Boxes BoxLv8 = new Boxes(0);
-    Boxes BoxLv9 = new Boxes(0);
-    Boxes BoxLv10 = new Boxes(0);
-}
- 
-class CarFrames{
-	public int FrameCount;
-
-	CarFrames(int c){
-		FrameCount = c;
-	}
-	}
-class FramesObj{
-	CarFrames FrameLv1 = new CarFrames(0);
-	CarFrames FrameLv2 = new CarFrames(0);
-	CarFrames FrameLv3 = new CarFrames(0);
-	CarFrames FrameLv4 = new CarFrames(0);
-	CarFrames FrameLv5 = new CarFrames(0);
-	CarFrames FrameLv6 = new CarFrames(0);
-	CarFrames FrameLv7 = new CarFrames(0);
-	CarFrames FrameLv8 = new CarFrames(0);
-	CarFrames FrameLv9 = new CarFrames(0);
-	CarFrames FrameLv10 = new CarFrames(0);
-}
-
-
 public class ClickerGame implements ActionListener {
-	
-	CarMain CarMain;
-    BoxesObj Box;
-    PartObj Part;
-    Garages Garage;
-    FramesObj CarFrame;
-    CarLevel1Holder CarsLv1 = new CarLevel1Holder();
-    CarsObjLv2 CarsLv2;
-    CarsObjLv3 CarsLv3;
-    CarsObjLv4 CarsLv4;
-    CarsObjLv5 CarsLv5;
-    CarsObjLv6 CarsLv6;
-    CarsObjLv7 CarsLv7;
-    CarsObjLv8 CarsLv8;
-    CarsObjLv9 CarsLv9;
-    CarsObjLv10 CarsLv10;
-    
-   PoguKlase pogas;
-    
-    
+		
+    //Strings
     final static String Click = "Click";
     final static String Upgrades = "Upgrades";
     final static String BuyBoxes = "Buy Boxes";
@@ -577,6 +27,7 @@ public class ClickerGame implements ActionListener {
     final static String LVL9 = "Level 9";
     final static String LVL10 = "Level 10";
     
+    // Buttons
     
     JButton jbtnMoney = new JButton("Click");
     JButton jbtnBoxes = new JButton("Click");
@@ -606,16 +57,6 @@ public class ClickerGame implements ActionListener {
     JButton jbtnPartsLv8 = new JButton("Open");
     JButton jbtnPartsLv9 = new JButton("Open");
     JButton jbtnPartsLv10 = new JButton("Open");
-    
-    JButton jbtnBuildCarLv2 = new JButton("Build");
-    JButton jbtnBuildCarLv3 = new JButton("Build");
-    JButton jbtnBuildCarLv4 = new JButton("Build");
-    JButton jbtnBuildCarLv5 = new JButton("Build");
-    JButton jbtnBuildCarLv6 = new JButton("Build");
-    JButton jbtnBuildCarLv7 = new JButton("Build");
-    JButton jbtnBuildCarLv8 = new JButton("Build");
-    JButton jbtnBuildCarLv9 = new JButton("Build");
-    JButton jbtnBuildCarLv10 = new JButton("Build");
     
     JButton jbtnBuyFrameLv1 = new JButton("Buy");
     JButton jbtnBuyFrameLv2 = new JButton("Buy");
@@ -768,12 +209,9 @@ public class ClickerGame implements ActionListener {
     JButton jbtnSellTransmissionLv10 = new JButton("Sell");
     JButton jbtnSellTiresLv10 = new JButton("Sell");
 
-    
+    //Make TabbedPane
     public void addComponentToPane(Container pane){
        
-    	
-    	pogas = new PoguKlase();
-    	
     	jbtnMoney.addActionListener(this);
         jbtnBoxes.addActionListener(this);
         
@@ -953,226 +391,16 @@ public class ClickerGame implements ActionListener {
         jbtnSellSuspensionLv10.addActionListener(this);
         jbtnSellTransmissionLv10.addActionListener(this);
         jbtnSellTiresLv10.addActionListener(this);
-        
       
-        jbtnBuildCarLv2.addActionListener(this);
-        jbtnBuildCarLv3.addActionListener(this);
-        jbtnBuildCarLv4.addActionListener(this);
-        jbtnBuildCarLv5.addActionListener(this);
-        jbtnBuildCarLv6.addActionListener(this);
-        jbtnBuildCarLv7.addActionListener(this);
-        jbtnBuildCarLv8.addActionListener(this);
-        jbtnBuildCarLv9.addActionListener(this);
-        jbtnBuildCarLv10.addActionListener(this);
-        
-        jbtnPartsLv1.setEnabled(true);
-        jbtnPartsLv2.setEnabled(false);
-        jbtnPartsLv3.setEnabled(false);
-        jbtnPartsLv4.setEnabled(false);
-        jbtnPartsLv5.setEnabled(false);
-        jbtnPartsLv6.setEnabled(false);
-        jbtnPartsLv7.setEnabled(false);
-        jbtnPartsLv8.setEnabled(false);
-        jbtnPartsLv9.setEnabled(false);
-        jbtnPartsLv10.setEnabled(false);
-        
-        jbtnBuyBoxLv1.setEnabled(false);
-        jbtnBuyBoxLv2.setEnabled(false);
-        jbtnBuyBoxLv3.setEnabled(false);
-        jbtnBuyBoxLv4.setEnabled(false);
-        jbtnBuyBoxLv5.setEnabled(false);
-        jbtnBuyBoxLv6.setEnabled(false);
-        jbtnBuyBoxLv7.setEnabled(false);
-        jbtnBuyBoxLv8.setEnabled(false);
-        jbtnBuyBoxLv9.setEnabled(false);
-        jbtnBuyBoxLv10.setEnabled(false);
-        
-        jbtnBuyFrameLv1.setEnabled(true);
-        jbtnBuyFrameLv2.setEnabled(false);
-        jbtnBuyFrameLv3.setEnabled(false);
-        jbtnBuyFrameLv4.setEnabled(false);
-        jbtnBuyFrameLv5.setEnabled(false);
-        jbtnBuyFrameLv6.setEnabled(false);
-        jbtnBuyFrameLv7.setEnabled(false);
-        jbtnBuyFrameLv8.setEnabled(false);
-        jbtnBuyFrameLv9.setEnabled(false);
-        jbtnBuyFrameLv10.setEnabled(false);
-        
-        jbtnSellAccessoriesLv1.setEnabled(false);
-        jbtnSellBodyLv1.setEnabled(false);
-        jbtnSellBrakesLv1.setEnabled(false);
-        jbtnSellCoolingLv1.setEnabled(false);
-        jbtnSellElectronicsLv1.setEnabled(false);
-        jbtnSellEngineLv1.setEnabled(false);
-        jbtnSellExaustLv1.setEnabled(false);
-        jbtnSellFuelLv1.setEnabled(false);
-        jbtnSellInteriorLv1.setEnabled(false);
-        jbtnSellSteeringLv1.setEnabled(false);
-        jbtnSellSuspensionLv1.setEnabled(false);
-        jbtnSellTransmissionLv1.setEnabled(false);
-        jbtnSellTiresLv1.setEnabled(false);
-        
-        jbtnSellAccessoriesLv2.setEnabled(false);
-        jbtnSellBodyLv2.setEnabled(false);
-        jbtnSellBrakesLv2.setEnabled(false);
-        jbtnSellCoolingLv2.setEnabled(false);
-        jbtnSellElectronicsLv2.setEnabled(false);
-        jbtnSellEngineLv2.setEnabled(false);
-        jbtnSellExaustLv2.setEnabled(false);
-        jbtnSellFuelLv2.setEnabled(false);
-        jbtnSellInteriorLv2.setEnabled(false);
-        jbtnSellSteeringLv2.setEnabled(false);
-        jbtnSellSuspensionLv2.setEnabled(false);
-        jbtnSellTransmissionLv2.setEnabled(false);
-        jbtnSellTiresLv2.setEnabled(false);
-        
-        jbtnSellAccessoriesLv3.setEnabled(false);
-        jbtnSellBodyLv3.setEnabled(false);
-        jbtnSellBrakesLv3.setEnabled(false);
-        jbtnSellCoolingLv3.setEnabled(false);
-        jbtnSellElectronicsLv3.setEnabled(false);
-        jbtnSellEngineLv3.setEnabled(false);
-        jbtnSellExaustLv3.setEnabled(false);
-        jbtnSellFuelLv3.setEnabled(false);
-        jbtnSellInteriorLv3.setEnabled(false);
-        jbtnSellSteeringLv3.setEnabled(false);
-        jbtnSellSuspensionLv3.setEnabled(false);
-        jbtnSellTransmissionLv3.setEnabled(false);
-        jbtnSellTiresLv3.setEnabled(false);
-        
-        jbtnSellAccessoriesLv4.setEnabled(false);
-        jbtnSellBodyLv4.setEnabled(false);
-        jbtnSellBrakesLv4.setEnabled(false);
-        jbtnSellCoolingLv4.setEnabled(false);
-        jbtnSellElectronicsLv4.setEnabled(false);
-        jbtnSellEngineLv4.setEnabled(false);
-        jbtnSellExaustLv4.setEnabled(false);
-        jbtnSellFuelLv4.setEnabled(false);
-        jbtnSellInteriorLv4.setEnabled(false);
-        jbtnSellSteeringLv4.setEnabled(false);
-        jbtnSellSuspensionLv4.setEnabled(false);
-        jbtnSellTransmissionLv4.setEnabled(false);
-        jbtnSellTiresLv4.setEnabled(false);
-        
-        jbtnSellAccessoriesLv5.setEnabled(false);
-        jbtnSellBodyLv5.setEnabled(false);
-        jbtnSellBrakesLv5.setEnabled(false);
-        jbtnSellCoolingLv5.setEnabled(false);
-        jbtnSellElectronicsLv5.setEnabled(false);
-        jbtnSellEngineLv5.setEnabled(false);
-        jbtnSellExaustLv5.setEnabled(false);
-        jbtnSellFuelLv5.setEnabled(false);
-        jbtnSellInteriorLv5.setEnabled(false);
-        jbtnSellSteeringLv5.setEnabled(false);
-        jbtnSellSuspensionLv5.setEnabled(false);
-        jbtnSellTransmissionLv5.setEnabled(false);
-        jbtnSellTiresLv5.setEnabled(false);
-        
-        jbtnSellAccessoriesLv6.setEnabled(false);
-        jbtnSellBodyLv6.setEnabled(false);
-        jbtnSellBrakesLv6.setEnabled(false);
-        jbtnSellCoolingLv6.setEnabled(false);
-        jbtnSellElectronicsLv6.setEnabled(false);
-        jbtnSellEngineLv6.setEnabled(false);
-        jbtnSellExaustLv6.setEnabled(false);
-        jbtnSellFuelLv6.setEnabled(false);
-        jbtnSellInteriorLv6.setEnabled(false);
-        jbtnSellSteeringLv6.setEnabled(false);
-        jbtnSellSuspensionLv6.setEnabled(false);
-        jbtnSellTransmissionLv6.setEnabled(false);
-        jbtnSellTiresLv6.setEnabled(false);
-        
-        jbtnSellAccessoriesLv7.setEnabled(false);
-        jbtnSellBodyLv7.setEnabled(false);
-        jbtnSellBrakesLv7.setEnabled(false);
-        jbtnSellCoolingLv7.setEnabled(false);
-        jbtnSellElectronicsLv7.setEnabled(false);
-        jbtnSellEngineLv7.setEnabled(false);
-        jbtnSellExaustLv7.setEnabled(false);
-        jbtnSellFuelLv7.setEnabled(false);
-        jbtnSellInteriorLv7.setEnabled(false);
-        jbtnSellSteeringLv7.setEnabled(false);
-        jbtnSellSuspensionLv7.setEnabled(false);
-        jbtnSellTransmissionLv7.setEnabled(false);
-        jbtnSellTiresLv7.setEnabled(false);
-        
-        jbtnSellAccessoriesLv8.setEnabled(false);
-        jbtnSellBodyLv8.setEnabled(false);
-        jbtnSellBrakesLv8.setEnabled(false);
-        jbtnSellCoolingLv8.setEnabled(false);
-        jbtnSellElectronicsLv8.setEnabled(false);
-        jbtnSellEngineLv8.setEnabled(false);
-        jbtnSellExaustLv8.setEnabled(false);
-        jbtnSellFuelLv8.setEnabled(false);
-        jbtnSellInteriorLv8.setEnabled(false);
-        jbtnSellSteeringLv8.setEnabled(false);
-        jbtnSellSuspensionLv8.setEnabled(false);
-        jbtnSellTransmissionLv8.setEnabled(false);
-        jbtnSellTiresLv8.setEnabled(false);
-        
-        jbtnSellAccessoriesLv9.setEnabled(false);
-        jbtnSellBodyLv9.setEnabled(false);
-        jbtnSellBrakesLv9.setEnabled(false);
-        jbtnSellCoolingLv9.setEnabled(false);
-        jbtnSellElectronicsLv9.setEnabled(false);
-        jbtnSellEngineLv9.setEnabled(false);
-        jbtnSellExaustLv9.setEnabled(false);
-        jbtnSellFuelLv9.setEnabled(false);
-        jbtnSellInteriorLv9.setEnabled(false);
-        jbtnSellSteeringLv9.setEnabled(false);
-        jbtnSellSuspensionLv9.setEnabled(false);
-        jbtnSellTransmissionLv9.setEnabled(false);
-        jbtnSellTiresLv9.setEnabled(false);
-        
-        jbtnSellAccessoriesLv10.setEnabled(false);
-        jbtnSellBodyLv10.setEnabled(false);
-        jbtnSellBrakesLv10.setEnabled(false);
-        jbtnSellCoolingLv10.setEnabled(false);
-        jbtnSellElectronicsLv10.setEnabled(false);
-        jbtnSellEngineLv10.setEnabled(false);
-        jbtnSellExaustLv10.setEnabled(false);
-        jbtnSellFuelLv10.setEnabled(false);
-        jbtnSellInteriorLv10.setEnabled(false);
-        jbtnSellSteeringLv10.setEnabled(false);
-        jbtnSellSuspensionLv10.setEnabled(false);
-        jbtnSellTransmissionLv10.setEnabled(false);
-        jbtnSellTiresLv10.setEnabled(false);
-        
-     
-        jbtnBuildCarLv2.setEnabled(true);
-        jbtnBuildCarLv3.setEnabled(false);
-        jbtnBuildCarLv4.setEnabled(false);
-        jbtnBuildCarLv5.setEnabled(false);
-        jbtnBuildCarLv6.setEnabled(false);
-        jbtnBuildCarLv7.setEnabled(false);
-        jbtnBuildCarLv8.setEnabled(false);
-        jbtnBuildCarLv9.setEnabled(false);
-        jbtnBuildCarLv10.setEnabled(false);
-      
-        CarMain = new CarMain();
-        Box = new BoxesObj();
-        Part = new PartObj(); 
-        Garage = new Garages();
-        CarFrame = new FramesObj();
-        CarsLv2 = new CarsObjLv2();
-        CarsLv3 = new CarsObjLv3();
-        CarsLv4 = new CarsObjLv4();
-        CarsLv5 = new CarsObjLv5();
-        CarsLv6 = new CarsObjLv6();
-        CarsLv7 = new CarsObjLv7();
-        CarsLv8 = new CarsObjLv8();
-        CarsLv9 = new CarsObjLv9();
-        CarsLv10 = new CarsObjLv10();
-
-        jbtnBuyBoxLv2.setEnabled(false);
-        if(CarMain.PlayerLevel >=2){
-        	jbtnBuyBoxLv2.setEnabled(true);
-        }
-       
+        MainHolder CarMain = new MainHolder();
+        BoxesHolder Box = new BoxesHolder();
+        FramesHolder CarFrame = new FramesHolder();
+        PartHolder Part = new PartHolder();
  	            
     	JTabbedPane tabbedPane = new JTabbedPane();
     	tabbedPane.setTabPlacement(JTabbedPane.TOP);
     	
+    	//MainPanel
     	JPanel MainPanel = new JPanel();
     	
     	JPanel MainPanelSub = new JPanel();
@@ -1184,22 +412,22 @@ public class ClickerGame implements ActionListener {
         JLabel MoneyLabel = new JLabel(MoneyIcon);    	
     	MoneyLabel.setHorizontalTextPosition(JLabel.CENTER);
     	MoneyLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	MoneyLabel.setText("Money: " + CarMain.Money);
+    	MoneyLabel.setText("Money: " + CarMain.main[0]);
     	
     	JLabel MoneyClicksLabel = new JLabel();
     	MoneyClicksLabel.setHorizontalTextPosition(JLabel.CENTER);
     	MoneyClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	MoneyClicksLabel.setText("Money Clicks: " + CarMain.MoneyClicks);
+    	MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
     	
         JLabel BoxesLabel = new JLabel(BoxLv9_10Icon);  	
     	BoxesLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesLabel.setText("Boxes: " + CarMain.Boxes);
+    	BoxesLabel.setText("Boxes: " + CarMain.main[2]);
     	
     	JLabel BoxesClicksLabel = new JLabel();
     	BoxesClicksLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesClicksLabel.setText("Boxes Clicks: " + CarMain.BoxesClicks);
+    	BoxesClicksLabel.setText("Boxes Clicks: " + CarMain.main[3]);
 
     	MainPanelSub.add(MoneyLabel);
     	MainPanelSub.add(MoneyClicksLabel);
@@ -1210,7 +438,8 @@ public class ClickerGame implements ActionListener {
     	MainPanel.add(MainPanelSub);
     	MainPanel.add(MainPanelSub2);
         
-        
+        //Upgrades Panel
+    	
         JPanel UpgradesPanel = new JPanel();
         
         JPanel UpgradesPanelSub = new JPanel();
@@ -1225,17 +454,17 @@ public class ClickerGame implements ActionListener {
         JLabel PlayerLabel = new JLabel(PlayerIcon);    	
     	PlayerLabel.setHorizontalTextPosition(JLabel.CENTER);
     	PlayerLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	PlayerLabel.setText("Player Level: " + CarMain.PlayerLevel);
+    	PlayerLabel.setText("Player Level: " + CarMain.main[5]);
         
     	JLabel GarageLabel = new JLabel(GarageIcon);    	
     	GarageLabel.setHorizontalTextPosition(JLabel.CENTER);
     	GarageLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	GarageLabel.setText("Garage Level: " + Garage.GarageLevel);
+    	GarageLabel.setText("Garage Level: " + CarMain.main[6]);
     	
     	JLabel BoxesLVLLabel = new JLabel(BoxLv9_10Icon);    	
     	BoxesLVLLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLVLLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesLVLLabel.setText("Box Level: " + CarMain.BoxLevel);
+    	BoxesLVLLabel.setText("Box Level: " + CarMain.main[4]);
     	
         UpgradesPanelSub.add(PlayerLabel);
         UpgradesPanelSub.add(jbtnUpgradeLevel);
@@ -1247,6 +476,8 @@ public class ClickerGame implements ActionListener {
         UpgradesPanel.add(UpgradesPanelSub2);
         UpgradesPanel.add(UpgradesPanelSub3);
       
+        // Buy Boxes Panel
+       
         JPanel BuyBoxesPanel = new JPanel();
         
         JPanel BuyBoxesPanelSub = new JPanel();
@@ -1283,52 +514,52 @@ public class ClickerGame implements ActionListener {
         JLabel BoxesLVL1Label = new JLabel(BoxLv1_2Icon);    	
     	BoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.BoxLv1.BoxCount);
+    	BoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
     	
     	JLabel BoxesLVL2Label = new JLabel(BoxLv1_2Icon);    	
      	BoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.BoxLv2.BoxCount);
+     	BoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
     	
      	JLabel BoxesLVL3Label = new JLabel(BoxLv3_4Icon);    	
      	BoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.BoxLv3.BoxCount);
+     	BoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
     	
      	JLabel BoxesLVL4Label = new JLabel(BoxLv3_4Icon);    	
      	BoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.BoxLv4.BoxCount);
+     	BoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
      	
      	JLabel BoxesLVL5Label = new JLabel(BoxLv5_6Icon);    	
      	BoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.BoxLv5.BoxCount);
+     	BoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
      	
      	JLabel BoxesLVL6Label = new JLabel(BoxLv5_6Icon);    	
      	BoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.BoxLv6.BoxCount);
+     	BoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
      	
      	JLabel BoxesLVL7Label = new JLabel(BoxLv7_8Icon);    	
      	BoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.BoxLv7.BoxCount);
+     	BoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
      	
      	JLabel BoxesLVL8Label = new JLabel(BoxLv7_8Icon);    	
      	BoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.BoxLv8.BoxCount);
+     	BoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
      	
      	JLabel BoxesLVL9Label = new JLabel(BoxLv9_10Icon);    	
      	BoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.BoxLv9.BoxCount);
+     	BoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
      	
      	JLabel BoxesLVL10Label = new JLabel(BoxLv9_10Icon);    	
      	BoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.BoxLv10.BoxCount);
+     	BoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
     	    
         BuyBoxesPanelSub.add(BoxesLVL1Label);
         BuyBoxesPanelSub.add(jbtnBuyBoxLv1);
@@ -1362,6 +593,7 @@ public class ClickerGame implements ActionListener {
         BuyBoxesPanel.add(BuyBoxesPanelSub9);
         BuyBoxesPanel.add(BuyBoxesPanelSub10);
         
+        // Open Boxes Panel
         
         JPanel OpenBoxesPanel = new JPanel();
         
@@ -1398,52 +630,52 @@ public class ClickerGame implements ActionListener {
         JLabel OpenBoxesLVL1Label = new JLabel(BoxLv1_2Icon);    	
     	OpenBoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
     	OpenBoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-    	OpenBoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.BoxLv1.BoxCount);
+    	OpenBoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
     	
     	JLabel OpenBoxesLVL2Label = new JLabel(BoxLv1_2Icon);    	
      	OpenBoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.BoxLv2.BoxCount);
+     	OpenBoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
     	
      	JLabel OpenBoxesLVL3Label = new JLabel(BoxLv3_4Icon);    	
      	OpenBoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.BoxLv3.BoxCount);
+     	OpenBoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
     	
      	JLabel OpenBoxesLVL4Label = new JLabel(BoxLv3_4Icon);    	
      	OpenBoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.BoxLv4.BoxCount);
+     	OpenBoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
      	
      	JLabel OpenBoxesLVL5Label = new JLabel(BoxLv5_6Icon);    	
      	OpenBoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.BoxLv5.BoxCount);
+     	OpenBoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
      	
      	JLabel OpenBoxesLVL6Label = new JLabel(BoxLv5_6Icon);    	
      	OpenBoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.BoxLv6.BoxCount);
+     	OpenBoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
      	
      	JLabel OpenBoxesLVL7Label = new JLabel(BoxLv7_8Icon);    	
      	OpenBoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.BoxLv7.BoxCount);
+     	OpenBoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
      	
      	JLabel OpenBoxesLVL8Label = new JLabel(BoxLv7_8Icon);    	
      	OpenBoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.BoxLv8.BoxCount);
+     	OpenBoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
      	
      	JLabel OpenBoxesLVL9Label = new JLabel(BoxLv9_10Icon);    	
      	OpenBoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.BoxLv9.BoxCount);
+     	OpenBoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
      	
      	JLabel OpenBoxesLVL10Label = new JLabel(BoxLv9_10Icon);    	
      	OpenBoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.BoxLv10.BoxCount);
+     	OpenBoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
                     
         OpenBoxesPanelSub.add(OpenBoxesLVL1Label);
         OpenBoxesPanelSub.add(jbtnPartsLv1);
@@ -1477,6 +709,7 @@ public class ClickerGame implements ActionListener {
         OpenBoxesPanel.add(OpenBoxesPanelSub9);
         OpenBoxesPanel.add(OpenBoxesPanelSub10);
          
+        // Build Cars Panel
         
         JPanel BuildCarsPanel = new JPanel();
         
@@ -1562,26 +795,25 @@ public class ClickerGame implements ActionListener {
         
      	
      	BuildCarsPanelSub.add(CarsLv1Label);
-     	BuildCarsPanelSub.add(pogas.jbtnBuildCarLv1);
-     	//BuildCarsPanelSub.add(pogas.jbtnBuildCarLv1);
+     	BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1);
      	BuildCarsPanelSub2.add(CarsLv2Label);
-     	BuildCarsPanelSub2.add(jbtnBuildCarLv2);
+     	BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
      	BuildCarsPanelSub3.add(CarsLv3Label);
-     	BuildCarsPanelSub3.add(jbtnBuildCarLv3);
+     	BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
      	BuildCarsPanelSub4.add(CarsLv4Label);
-     	BuildCarsPanelSub4.add(jbtnBuildCarLv4);
+     	BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
      	BuildCarsPanelSub5.add(CarsLv5Label);
-     	BuildCarsPanelSub5.add(jbtnBuildCarLv5);
+     	BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
      	BuildCarsPanelSub6.add(CarsLv6Label);
-     	BuildCarsPanelSub6.add(jbtnBuildCarLv6);
+     	BuildCarsPanelSub6.add(BuildCarsClass.jbtnBuildCarLv6);
      	BuildCarsPanelSub7.add(CarsLv7Label);
-     	BuildCarsPanelSub7.add(jbtnBuildCarLv7);
+     	BuildCarsPanelSub7.add(BuildCarsClass.jbtnBuildCarLv7);
      	BuildCarsPanelSub8.add(CarsLv8Label);
-     	BuildCarsPanelSub8.add(jbtnBuildCarLv8);
+     	BuildCarsPanelSub8.add(BuildCarsClass.jbtnBuildCarLv8);
      	BuildCarsPanelSub9.add(CarsLv9Label);
-     	BuildCarsPanelSub9.add(jbtnBuildCarLv9);
+     	BuildCarsPanelSub9.add(BuildCarsClass.jbtnBuildCarLv9);
      	BuildCarsPanelSub10.add(CarsLv10Label);
-     	BuildCarsPanelSub10.add(jbtnBuildCarLv10);
+     	BuildCarsPanelSub10.add(BuildCarsClass.jbtnBuildCarLv10);
      	
      	BuildCarsPanel.add(BuildCarsPanelSub);
      	BuildCarsPanel.add(BuildCarsPanelSub2);
@@ -1594,6 +826,8 @@ public class ClickerGame implements ActionListener {
      	BuildCarsPanel.add(BuildCarsPanelSub9);
      	BuildCarsPanel.add(BuildCarsPanelSub10);
         
+     	// Buy Frames Panel
+     	
         JPanel BuyFramesPanel = new JPanel();
         
         JPanel BuyFramesPanelSub = new JPanel();
@@ -1629,52 +863,52 @@ public class ClickerGame implements ActionListener {
         JLabel FrameLv1Label = new JLabel(CarFrameIcon);    	
      	FrameLv1Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv1Label.setText("<html>1 LVL Frame<br>" + "Count: " + CarFrame.FrameLv1.FrameCount);
+     	FrameLv1Label.setText("<html>1 LVL Frame<br>" + "Count: " + CarFrame.frames[1]);
      	
      	JLabel FrameLv2Label = new JLabel(CarFrameIcon);    	
      	FrameLv2Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv2Label.setText("<html>2 LVL Frame<br>" + "Count: " + CarFrame.FrameLv2.FrameCount);
+     	FrameLv2Label.setText("<html>2 LVL Frame<br>" + "Count: " + CarFrame.frames[3]);
      	
      	JLabel FrameLv3Label = new JLabel(CarFrameIcon);    	
      	FrameLv3Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv3Label.setText("<html>3 LVL Frame<br>" + "Count: " + CarFrame.FrameLv3.FrameCount);
+     	FrameLv3Label.setText("<html>3 LVL Frame<br>" + "Count: " + CarFrame.frames[5]);
      	
      	JLabel FrameLv4Label = new JLabel(CarFrameIcon);    	
      	FrameLv4Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv4Label.setText("<html>4 LVL Frame<br>" + "Count: " + CarFrame.FrameLv4.FrameCount);
+     	FrameLv4Label.setText("<html>4 LVL Frame<br>" + "Count: " + CarFrame.frames[7]);
      	
      	JLabel FrameLv5Label = new JLabel(CarFrameIcon);    	
      	FrameLv5Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv5Label.setText("<html>5 LVL Frame<br>" + "Count: " + CarFrame.FrameLv5.FrameCount);
+     	FrameLv5Label.setText("<html>5 LVL Frame<br>" + "Count: " + CarFrame.frames[9]);
      	
      	JLabel FrameLv6Label = new JLabel(CarFrameIcon);    	
      	FrameLv6Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv6Label.setText("<html>6 LVL Frame<br>" + "Count: " + CarFrame.FrameLv6.FrameCount);
+     	FrameLv6Label.setText("<html>6 LVL Frame<br>" + "Count: " + CarFrame.frames[11]);
      	
      	JLabel FrameLv7Label = new JLabel(CarFrameIcon);    	
      	FrameLv7Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv7Label.setText("<html>7 LVL Frame<br>" + "Count: " + CarFrame.FrameLv7.FrameCount);
+     	FrameLv7Label.setText("<html>7 LVL Frame<br>" + "Count: " + CarFrame.frames[13]);
      	
      	JLabel FrameLv8Label = new JLabel(CarFrameIcon);    	
      	FrameLv8Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv8Label.setText("<html>8 LVL Frame<br>" + "Count: " + CarFrame.FrameLv8.FrameCount);
+     	FrameLv8Label.setText("<html>8 LVL Frame<br>" + "Count: " + CarFrame.frames[15]);
      	
      	JLabel FrameLv9Label = new JLabel(CarFrameIcon);    	
      	FrameLv9Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv9Label.setText("<html>9 LVL Frame<br>" + "Count: " + CarFrame.FrameLv9.FrameCount);
+     	FrameLv9Label.setText("<html>9 LVL Frame<br>" + "Count: " + CarFrame.frames[17]);
      	
      	JLabel FrameLv10Label = new JLabel(CarFrameIcon);    	
      	FrameLv10Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv10Label.setText("<html>10 LVL Frame<br>" + "Count: " + CarFrame.FrameLv10.FrameCount);
+     	FrameLv10Label.setText("<html>10 LVL Frame<br>" + "Count: " + CarFrame.frames[19]);
           	
      	BuyFramesPanelSub.add(FrameLv1Label);
      	BuyFramesPanelSub.add(jbtnBuyFrameLv1);
@@ -1708,8 +942,8 @@ public class ClickerGame implements ActionListener {
      	BuyFramesPanel.add(BuyFramesPanelSub9);
      	BuyFramesPanel.add(BuyFramesPanelSub10);
         
-        JPanel SellPartsPanel = new JPanel();
-        
+     	// Sell Parts Level 1 Panel
+     	
         JPanel SellPartsLVL1Panel = new JPanel();
         
         JPanel SellPartsLVL1PanelSub = new JPanel();
@@ -1754,67 +988,67 @@ public class ClickerGame implements ActionListener {
         JLabel AccessoriesLVL1Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.AccessoriesLv1.PartCount);
+        AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.parts[1]);
         
         JLabel BodyLVL1Label = new JLabel(BodyIcon);    	
         BodyLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.BodyLv1.PartCount);
+        BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.parts[3]);
         
         JLabel BrakesLVL1Label = new JLabel(BrakesIcon);    	
         BrakesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.BrakesLv1.PartCount);
+        BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.parts[5]);
         
         JLabel CoolingLVL1Label = new JLabel(CoolingIcon);    	
         CoolingLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL1Label.setText("<html>Cooling LVL 1<br>" + "Count: " + Part.CoolingLv1.PartCount);
+        CoolingLVL1Label.setText("<html>Cooling LVL 1<br>" + "Count: " + Part.parts[7]);
         
         JLabel ElectronicsLVL1Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL1Label.setText("<html>Electronics LVL 1<br>" + "Count: " + Part.ElectronicsLv1.PartCount);
+        ElectronicsLVL1Label.setText("<html>Electronics LVL 1<br>" + "Count: " + Part.parts[9]);
         
         JLabel EngineLVL1Label = new JLabel(EngineIcon);    	
         EngineLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL1Label.setText("<html>Engine LVL 1<br>" + "Count: " + Part.EngineLv1.PartCount);
+        EngineLVL1Label.setText("<html>Engine LVL 1<br>" + "Count: " + Part.parts[11]);
         
         JLabel ExaustLVL1Label = new JLabel(ExaustIcon);    	
         ExaustLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL1Label.setText("<html>Exaust LVL 1<br>" + "Count: " + Part.ExaustLv1.PartCount);
+        ExaustLVL1Label.setText("<html>Exaust LVL 1<br>" + "Count: " + Part.parts[13]);
         
         JLabel FuelLVL1Label = new JLabel(FuelIcon);    	
         FuelLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL1Label.setText("<html>Fuel LVL 1<br>" + "Count: " + Part.FuelLv1.PartCount);
+        FuelLVL1Label.setText("<html>Fuel LVL 1<br>" + "Count: " + Part.parts[15]);
         
         JLabel InteriorLVL1Label = new JLabel(InteriorIcon);    	
         InteriorLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL1Label.setText("<html>Interior LVL 1<br>" + "Count: " + Part.InteriorLv1.PartCount);
+        InteriorLVL1Label.setText("<html>Interior LVL 1<br>" + "Count: " + Part.parts[17]);
         
         JLabel SteeringLVL1Label = new JLabel(SteeringIcon);    	
         SteeringLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.SteeringLv1.PartCount);
+        SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.parts[19]);
         
         JLabel SuspensionLVL1Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL1Label.setText("<html>Suspension LVL 1<br>" + "Count: " + Part.SuspensionLv1.PartCount);
+        SuspensionLVL1Label.setText("<html>Suspension LVL 1<br>" + "Count: " + Part.parts[21]);
         
         JLabel TransmissionLVL1Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL1Label.setText("<html>Transmission LVL 1<br>" + "Count: " + Part.TransmissionLv1.PartCount);
+        TransmissionLVL1Label.setText("<html>Transmission LVL 1<br>" + "Count: " + Part.parts[23]);
         
         JLabel TiresLVL1Label = new JLabel(TiresIcon);    	
         TiresLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL1Label.setText("<html>Tires LVL 1<br>" + "Count: " + Part.TiresLv1.PartCount);
+        TiresLVL1Label.setText("<html>Tires LVL 1<br>" + "Count: " + Part.parts[25]);
                
         SellPartsLVL1PanelSub.add(AccessoriesLVL1Label);
         SellPartsLVL1PanelSub.add(jbtnSellAccessoriesLv1);
@@ -1857,6 +1091,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub12);
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub13);
 
+        // Sell Parts Level 2 Panel
         
    	 	JPanel SellPartsLVL2Panel = new JPanel();
    	 	
@@ -1902,67 +1137,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL2Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL2Label.setText("<html>Accessories LVL 2<br>" + "Count: " + Part.AccessoriesLv2.PartCount);
+        AccessoriesLVL2Label.setText("<html>Accessories LVL 2<br>" + "Count: " + Part.parts[27]);
         
         JLabel BodyLVL2Label = new JLabel(BodyIcon);    	
         BodyLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL2Label.setText("<html>Body LVL 2<br>" + "Count: " + Part.BodyLv2.PartCount);
+        BodyLVL2Label.setText("<html>Body LVL 2<br>" + "Count: " + Part.parts[29]);
         
         JLabel BrakesLVL2Label = new JLabel(BrakesIcon);    	
         BrakesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL2Label.setText("<html>Brakes LVL 2<br>" + "Count: " + Part.BrakesLv2.PartCount);
+        BrakesLVL2Label.setText("<html>Brakes LVL 2<br>" + "Count: " + Part.parts[31]);
         
         JLabel CoolingLVL2Label = new JLabel(CoolingIcon);    	
         CoolingLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL2Label.setText("<html>Cooling LVL 2<br>" + "Count: " + Part.CoolingLv2.PartCount);
+        CoolingLVL2Label.setText("<html>Cooling LVL 2<br>" + "Count: " + Part.parts[33]);
         
         JLabel ElectronicsLVL2Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL2Label.setText("<html>Electronics LVL 2<br>" + "Count: " + Part.ElectronicsLv2.PartCount);
+        ElectronicsLVL2Label.setText("<html>Electronics LVL 2<br>" + "Count: " + Part.parts[35]);
         
         JLabel EngineLVL2Label = new JLabel(EngineIcon);    	
         EngineLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL2Label.setText("<html>Engine LVL 2<br>" + "Count: " + Part.EngineLv2.PartCount);
+        EngineLVL2Label.setText("<html>Engine LVL 2<br>" + "Count: " + Part.parts[37]);
         
         JLabel ExaustLVL2Label = new JLabel(ExaustIcon);    	
         ExaustLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL2Label.setText("<html>Exaust LVL 2<br>" + "Count: " + Part.ExaustLv2.PartCount);
+        ExaustLVL2Label.setText("<html>Exaust LVL 2<br>" + "Count: " + Part.parts[39]);
         
         JLabel FuelLVL2Label = new JLabel(FuelIcon);    	
         FuelLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL2Label.setText("<html>Fuel LVL 2<br>" + "Count: " + Part.FuelLv2.PartCount);
+        FuelLVL2Label.setText("<html>Fuel LVL 2<br>" + "Count: " + Part.parts[41]);
         
         JLabel InteriorLVL2Label = new JLabel(InteriorIcon);    	
         InteriorLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL2Label.setText("<html>Interior LVL 2<br>" + "Count: " + Part.InteriorLv2.PartCount);
+        InteriorLVL2Label.setText("<html>Interior LVL 2<br>" + "Count: " + Part.parts[43]);
         
         JLabel SteeringLVL2Label = new JLabel(SteeringIcon);    	
         SteeringLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.SteeringLv2.PartCount);
+        SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.parts[45]);
         
         JLabel SuspensionLVL2Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL2Label.setText("<html>Suspension LVL 2<br>" + "Count: " + Part.SuspensionLv2.PartCount);
+        SuspensionLVL2Label.setText("<html>Suspension LVL 2<br>" + "Count: " + Part.parts[47]);
         
         JLabel TransmissionLVL2Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL2Label.setText("<html>Transmission LVL 2<br>" + "Count: " + Part.TransmissionLv2.PartCount);
+        TransmissionLVL2Label.setText("<html>Transmission LVL 2<br>" + "Count: " + Part.parts[49]);
         
         JLabel TiresLVL2Label = new JLabel(TiresIcon);    	
         TiresLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL2Label.setText("<html>Tires LVL 2<br>" + "Count: " + Part.TiresLv2.PartCount);
+        TiresLVL2Label.setText("<html>Tires LVL 2<br>" + "Count: " + Part.parts[51]);
                
         SellPartsLVL2PanelSub.add(AccessoriesLVL2Label);
         SellPartsLVL2PanelSub.add(jbtnSellAccessoriesLv2);
@@ -2005,6 +1240,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub12);
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub13);
    	 
+        // Sell Parts Level 3 Panel
+        
    	 	JPanel SellPartsLVL3Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL3PanelSub = new JPanel();
@@ -2049,67 +1286,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL3Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL3Label.setText("<html>Accessories LVL 3<br>" + "Count: " + Part.AccessoriesLv3.PartCount);
+        AccessoriesLVL3Label.setText("<html>Accessories LVL 3<br>" + "Count: " + Part.parts[53]);
         
         JLabel BodyLVL3Label = new JLabel(BodyIcon);    	
         BodyLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL3Label.setText("<html>Body LVL 3<br>" + "Count: " + Part.BodyLv3.PartCount);
+        BodyLVL3Label.setText("<html>Body LVL 3<br>" + "Count: " + Part.parts[55]);
         
         JLabel BrakesLVL3Label = new JLabel(BrakesIcon);    	
         BrakesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL3Label.setText("<html>Brakes LVL 3<br>" + "Count: " + Part.BrakesLv3.PartCount);
+        BrakesLVL3Label.setText("<html>Brakes LVL 3<br>" + "Count: " + Part.parts[57]);
         
         JLabel CoolingLVL3Label = new JLabel(CoolingIcon);    	
         CoolingLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL3Label.setText("<html>Cooling LVL 3<br>" + "Count: " + Part.CoolingLv3.PartCount);
+        CoolingLVL3Label.setText("<html>Cooling LVL 3<br>" + "Count: " + Part.parts[59]);
         
         JLabel ElectronicsLVL3Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL3Label.setText("<html>Electronics LVL 3<br>" + "Count: " + Part.ElectronicsLv3.PartCount);
+        ElectronicsLVL3Label.setText("<html>Electronics LVL 3<br>" + "Count: " + Part.parts[61]);
         
         JLabel EngineLVL3Label = new JLabel(EngineIcon);    	
         EngineLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL3Label.setText("<html>Engine LVL 3<br>" + "Count: " + Part.EngineLv3.PartCount);
+        EngineLVL3Label.setText("<html>Engine LVL 3<br>" + "Count: " + Part.parts[63]);
         
         JLabel ExaustLVL3Label = new JLabel(ExaustIcon);    	
         ExaustLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL3Label.setText("<html>Exaust LVL 3<br>" + "Count: " + Part.ExaustLv3.PartCount);
+        ExaustLVL3Label.setText("<html>Exaust LVL 3<br>" + "Count: " + Part.parts[65]);
         
         JLabel FuelLVL3Label = new JLabel(FuelIcon);    	
         FuelLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL3Label.setText("<html>Fuel LVL 3<br>" + "Count: " + Part.FuelLv3.PartCount);
+        FuelLVL3Label.setText("<html>Fuel LVL 3<br>" + "Count: " + Part.parts[67]);
         
         JLabel InteriorLVL3Label = new JLabel(InteriorIcon);    	
         InteriorLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL3Label.setText("<html>Interior LVL 3<br>" + "Count: " + Part.InteriorLv3.PartCount);
+        InteriorLVL3Label.setText("<html>Interior LVL 3<br>" + "Count: " + Part.parts[69]);
         
         JLabel SteeringLVL3Label = new JLabel(SteeringIcon);    	
         SteeringLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.SteeringLv3.PartCount);
+        SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.parts[71]);
         
         JLabel SuspensionLVL3Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL3Label.setText("<html>Suspension LVL 3<br>" + "Count: " + Part.SuspensionLv3.PartCount);
+        SuspensionLVL3Label.setText("<html>Suspension LVL 3<br>" + "Count: " + Part.parts[73]);
         
         JLabel TransmissionLVL3Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL3Label.setText("<html>Transmission LVL 3<br>" + "Count: " + Part.TransmissionLv3.PartCount);
+        TransmissionLVL3Label.setText("<html>Transmission LVL 3<br>" + "Count: " + Part.parts[75]);
         
         JLabel TiresLVL3Label = new JLabel(TiresIcon);    	
         TiresLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL3Label.setText("<html>Tires LVL 3<br>" + "Count: " + Part.TiresLv3.PartCount);
+        TiresLVL3Label.setText("<html>Tires LVL 3<br>" + "Count: " + Part.parts[77]);
                 
         SellPartsLVL3PanelSub.add(AccessoriesLVL3Label);
         SellPartsLVL3PanelSub.add(jbtnSellAccessoriesLv3);
@@ -2152,6 +1389,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub12);
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub13);
    	 	
+        // Sell Parts Level 4 Panel
+        
    	 	JPanel SellPartsLVL4Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL4PanelSub = new JPanel();
@@ -2196,67 +1435,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL4Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL4Label.setText("<html>Accessories LVL 4<br>" + "Count: " + Part.AccessoriesLv4.PartCount);
+        AccessoriesLVL4Label.setText("<html>Accessories LVL 4<br>" + "Count: " + Part.parts[79]);
         
         JLabel BodyLVL4Label = new JLabel(BodyIcon);    	
         BodyLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL4Label.setText("<html>Body LVL 4<br>" + "Count: " + Part.BodyLv4.PartCount);
+        BodyLVL4Label.setText("<html>Body LVL 4<br>" + "Count: " + Part.parts[81]);
         
         JLabel BrakesLVL4Label = new JLabel(BrakesIcon);    	
         BrakesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL4Label.setText("<html>Brakes LVL 4<br>" + "Count: " + Part.BrakesLv4.PartCount);
+        BrakesLVL4Label.setText("<html>Brakes LVL 4<br>" + "Count: " + Part.parts[83]);
         
         JLabel CoolingLVL4Label = new JLabel(CoolingIcon);    	
         CoolingLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL4Label.setText("<html>Cooling LVL 4<br>" + "Count: " + Part.CoolingLv4.PartCount);
+        CoolingLVL4Label.setText("<html>Cooling LVL 4<br>" + "Count: " + Part.parts[85]);
         
         JLabel ElectronicsLVL4Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL4Label.setText("<html>Electronics LVL 4<br>" + "Count: " + Part.ElectronicsLv4.PartCount);
+        ElectronicsLVL4Label.setText("<html>Electronics LVL 4<br>" + "Count: " + Part.parts[87]);
         
         JLabel EngineLVL4Label = new JLabel(EngineIcon);    	
         EngineLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL4Label.setText("<html>Engine LVL 4<br>" + "Count: " + Part.EngineLv4.PartCount);
+        EngineLVL4Label.setText("<html>Engine LVL 4<br>" + "Count: " + Part.parts[89]);
         
         JLabel ExaustLVL4Label = new JLabel(ExaustIcon);    	
         ExaustLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL4Label.setText("<html>Exaust LVL 4<br>" + "Count: " + Part.ExaustLv4.PartCount);
+        ExaustLVL4Label.setText("<html>Exaust LVL 4<br>" + "Count: " + Part.parts[91]);
         
         JLabel FuelLVL4Label = new JLabel(FuelIcon);    	
         FuelLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL4Label.setText("<html>Fuel LVL 4<br>" + "Count: " + Part.FuelLv4.PartCount);
+        FuelLVL4Label.setText("<html>Fuel LVL 4<br>" + "Count: " + Part.parts[93]);
         
         JLabel InteriorLVL4Label = new JLabel(InteriorIcon);    	
         InteriorLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL4Label.setText("<html>Interior LVL 4<br>" + "Count: " + Part.InteriorLv4.PartCount);
+        InteriorLVL4Label.setText("<html>Interior LVL 4<br>" + "Count: " + Part.parts[95]);
         
         JLabel SteeringLVL4Label = new JLabel(SteeringIcon);    	
         SteeringLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.SteeringLv4.PartCount);
+        SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.parts[97]);
         
         JLabel SuspensionLVL4Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL4Label.setText("<html>Suspension LVL 4<br>" + "Count: " + Part.SuspensionLv4.PartCount);
+        SuspensionLVL4Label.setText("<html>Suspension LVL 4<br>" + "Count: " + Part.parts[99]);
         
         JLabel TransmissionLVL4Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL4Label.setText("<html>Transmission LVL 4<br>" + "Count: " + Part.TransmissionLv4.PartCount);
+        TransmissionLVL4Label.setText("<html>Transmission LVL 4<br>" + "Count: " + Part.parts[101]);
         
         JLabel TiresLVL4Label = new JLabel(TiresIcon);    	
         TiresLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL4Label.setText("<html>Tires LVL 4<br>" + "Count: " + Part.TiresLv4.PartCount);
+        TiresLVL4Label.setText("<html>Tires LVL 4<br>" + "Count: " + Part.parts[103]);
                
         SellPartsLVL4PanelSub.add(AccessoriesLVL4Label);
         SellPartsLVL4PanelSub.add(jbtnSellAccessoriesLv4);
@@ -2299,6 +1538,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub12);
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub13);
    	 	
+        // Sell Parts Level 5 Panel
+        
    	 	JPanel SellPartsLVL5Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL5PanelSub = new JPanel();
@@ -2343,67 +1584,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL5Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL5Label.setText("<html>Accessories LVL 5<br>" + "Count: " + Part.AccessoriesLv5.PartCount);
+        AccessoriesLVL5Label.setText("<html>Accessories LVL 5<br>" + "Count: " + Part.parts[105]);
         
         JLabel BodyLVL5Label = new JLabel(BodyIcon);    	
         BodyLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL5Label.setText("<html>Body LVL 5<br>" + "Count: " + Part.BodyLv5.PartCount);
+        BodyLVL5Label.setText("<html>Body LVL 5<br>" + "Count: " + Part.parts[107]);
         
         JLabel BrakesLVL5Label = new JLabel(BrakesIcon);    	
         BrakesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL5Label.setText("<html>Brakes LVL 5<br>" + "Count: " + Part.BrakesLv5.PartCount);
+        BrakesLVL5Label.setText("<html>Brakes LVL 5<br>" + "Count: " + Part.parts[109]);
         
         JLabel CoolingLVL5Label = new JLabel(CoolingIcon);    	
         CoolingLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL5Label.setText("<html>Cooling LVL 5<br>" + "Count: " + Part.CoolingLv5.PartCount);
+        CoolingLVL5Label.setText("<html>Cooling LVL 5<br>" + "Count: " + Part.parts[111]);
         
         JLabel ElectronicsLVL5Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL5Label.setText("<html>Electronics LVL 5<br>" + "Count: " + Part.ElectronicsLv5.PartCount);
+        ElectronicsLVL5Label.setText("<html>Electronics LVL 5<br>" + "Count: " + Part.parts[113]);
         
         JLabel EngineLVL5Label = new JLabel(EngineIcon);    	
         EngineLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL5Label.setText("<html>Engine LVL 5<br>" + "Count: " + Part.EngineLv5.PartCount);
+        EngineLVL5Label.setText("<html>Engine LVL 5<br>" + "Count: " + Part.parts[115]);
         
         JLabel ExaustLVL5Label = new JLabel(ExaustIcon);    	
         ExaustLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL5Label.setText("<html>Exaust LVL 5<br>" + "Count: " + Part.ExaustLv5.PartCount);
+        ExaustLVL5Label.setText("<html>Exaust LVL 5<br>" + "Count: " + Part.parts[117]);
         
         JLabel FuelLVL5Label = new JLabel(FuelIcon);    	
         FuelLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL5Label.setText("<html>Fuel LVL 5<br>" + "Count: " + Part.FuelLv5.PartCount);
+        FuelLVL5Label.setText("<html>Fuel LVL 5<br>" + "Count: " + Part.parts[119]);
         
         JLabel InteriorLVL5Label = new JLabel(InteriorIcon);    	
         InteriorLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL5Label.setText("<html>Interior LVL 5<br>" + "Count: " + Part.InteriorLv5.PartCount);
+        InteriorLVL5Label.setText("<html>Interior LVL 5<br>" + "Count: " + Part.parts[121]);
         
         JLabel SteeringLVL5Label = new JLabel(SteeringIcon);    	
         SteeringLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.SteeringLv5.PartCount);
+        SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.parts[123]);
         
         JLabel SuspensionLVL5Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL5Label.setText("<html>Suspension LVL 5<br>" + "Count: " + Part.SuspensionLv5.PartCount);
+        SuspensionLVL5Label.setText("<html>Suspension LVL 5<br>" + "Count: " + Part.parts[125]);
         
         JLabel TransmissionLVL5Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL5Label.setText("<html>Transmission LVL 5<br>" + "Count: " + Part.TransmissionLv5.PartCount);
+        TransmissionLVL5Label.setText("<html>Transmission LVL 5<br>" + "Count: " + Part.parts[127]);
         
         JLabel TiresLVL5Label = new JLabel(TiresIcon);    	
         TiresLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL5Label.setText("<html>Tires LVL 5<br>" + "Count: " + Part.TiresLv5.PartCount);
+        TiresLVL5Label.setText("<html>Tires LVL 5<br>" + "Count: " + Part.parts[129]);
                
         SellPartsLVL5PanelSub.add(AccessoriesLVL5Label);
         SellPartsLVL5PanelSub.add(jbtnSellAccessoriesLv5);
@@ -2446,6 +1687,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub12);
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub13);
    	 	
+        // Sell Parts Level 6 Panel
+        
    	 	JPanel SellPartsLVL6Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL6PanelSub = new JPanel();
@@ -2490,67 +1733,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL6Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL6Label.setText("<html>Accessories LVL 6<br>" + "Count: " + Part.AccessoriesLv6.PartCount);
+        AccessoriesLVL6Label.setText("<html>Accessories LVL 6<br>" + "Count: " + Part.parts[131]);
         
         JLabel BodyLVL6Label = new JLabel(BodyIcon);    	
         BodyLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL6Label.setText("<html>Body LVL 6<br>" + "Count: " + Part.BodyLv6.PartCount);
+        BodyLVL6Label.setText("<html>Body LVL 6<br>" + "Count: " + Part.parts[133]);
         
         JLabel BrakesLVL6Label = new JLabel(BrakesIcon);    	
         BrakesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL6Label.setText("<html>Brakes LVL 6<br>" + "Count: " + Part.BrakesLv6.PartCount);
+        BrakesLVL6Label.setText("<html>Brakes LVL 6<br>" + "Count: " + Part.parts[135]);
         
         JLabel CoolingLVL6Label = new JLabel(CoolingIcon);    	
         CoolingLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL6Label.setText("<html>Cooling LVL 6<br>" + "Count: " + Part.CoolingLv6.PartCount);
+        CoolingLVL6Label.setText("<html>Cooling LVL 6<br>" + "Count: " + Part.parts[137]);
         
         JLabel ElectronicsLVL6Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL6Label.setText("<html>Electronics LVL 6<br>" + "Count: " + Part.ElectronicsLv6.PartCount);
+        ElectronicsLVL6Label.setText("<html>Electronics LVL 6<br>" + "Count: " + Part.parts[139]);
         
         JLabel EngineLVL6Label = new JLabel(EngineIcon);    	
         EngineLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL6Label.setText("<html>Engine LVL 6<br>" + "Count: " + Part.EngineLv6.PartCount);
+        EngineLVL6Label.setText("<html>Engine LVL 6<br>" + "Count: " + Part.parts[141]);
         
         JLabel ExaustLVL6Label = new JLabel(ExaustIcon);    	
         ExaustLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL6Label.setText("<html>Exaust LVL 6<br>" + "Count: " + Part.ExaustLv6.PartCount);
+        ExaustLVL6Label.setText("<html>Exaust LVL 6<br>" + "Count: " + Part.parts[143]);
         
         JLabel FuelLVL6Label = new JLabel(FuelIcon);    	
         FuelLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL6Label.setText("<html>Fuel LVL 6<br>" + "Count: " + Part.FuelLv6.PartCount);
+        FuelLVL6Label.setText("<html>Fuel LVL 6<br>" + "Count: " + Part.parts[145]);
         
         JLabel InteriorLVL6Label = new JLabel(InteriorIcon);    	
         InteriorLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL6Label.setText("<html>Interior LVL 6<br>" + "Count: " + Part.InteriorLv6.PartCount);
+        InteriorLVL6Label.setText("<html>Interior LVL 6<br>" + "Count: " + Part.parts[147]);
         
         JLabel SteeringLVL6Label = new JLabel(SteeringIcon);    	
         SteeringLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.SteeringLv6.PartCount);
+        SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.parts[149]);
         
         JLabel SuspensionLVL6Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL6Label.setText("<html>Suspension LVL 6<br>" + "Count: " + Part.SuspensionLv6.PartCount);
+        SuspensionLVL6Label.setText("<html>Suspension LVL 6<br>" + "Count: " + Part.parts[151]);
         
         JLabel TransmissionLVL6Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL6Label.setText("<html>Transmission LVL 6<br>" + "Count: " + Part.TransmissionLv6.PartCount);
+        TransmissionLVL6Label.setText("<html>Transmission LVL 6<br>" + "Count: " + Part.parts[153]);
         
         JLabel TiresLVL6Label = new JLabel(TiresIcon);    	
         TiresLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL6Label.setText("<html>Tires LVL 6<br>" + "Count: " + Part.TiresLv6.PartCount);
+        TiresLVL6Label.setText("<html>Tires LVL 6<br>" + "Count: " + Part.parts[155]);
                
         SellPartsLVL6PanelSub.add(AccessoriesLVL6Label);
         SellPartsLVL6PanelSub.add(jbtnSellAccessoriesLv6);
@@ -2593,6 +1836,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub12);
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub13);
    	 	
+        // Sell Parts Level 7 Panel
+        
    	 	JPanel SellPartsLVL7Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL7PanelSub = new JPanel();
@@ -2637,67 +1882,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL7Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL7Label.setText("<html>Accessories LVL 7<br>" + "Count: " + Part.AccessoriesLv7.PartCount);
+        AccessoriesLVL7Label.setText("<html>Accessories LVL 7<br>" + "Count: " + Part.parts[157]);
         
         JLabel BodyLVL7Label = new JLabel(BodyIcon);    	
         BodyLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL7Label.setText("<html>Body LVL 7<br>" + "Count: " + Part.BodyLv7.PartCount);
+        BodyLVL7Label.setText("<html>Body LVL 7<br>" + "Count: " + Part.parts[159]);
         
         JLabel BrakesLVL7Label = new JLabel(BrakesIcon);    	
         BrakesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL7Label.setText("<html>Brakes LVL 7<br>" + "Count: " + Part.BrakesLv7.PartCount);
+        BrakesLVL7Label.setText("<html>Brakes LVL 7<br>" + "Count: " + Part.parts[161]);
         
         JLabel CoolingLVL7Label = new JLabel(CoolingIcon);    	
         CoolingLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL7Label.setText("<html>Cooling LVL 7<br>" + "Count: " + Part.CoolingLv7.PartCount);
+        CoolingLVL7Label.setText("<html>Cooling LVL 7<br>" + "Count: " + Part.parts[163]);
         
         JLabel ElectronicsLVL7Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL7Label.setText("<html>Electronics LVL 7<br>" + "Count: " + Part.ElectronicsLv7.PartCount);
+        ElectronicsLVL7Label.setText("<html>Electronics LVL 7<br>" + "Count: " + Part.parts[165]);
         
         JLabel EngineLVL7Label = new JLabel(EngineIcon);    	
         EngineLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL7Label.setText("<html>Engine LVL 7<br>" + "Count: " + Part.EngineLv7.PartCount);
+        EngineLVL7Label.setText("<html>Engine LVL 7<br>" + "Count: " + Part.parts[167]);
         
         JLabel ExaustLVL7Label = new JLabel(ExaustIcon);    	
         ExaustLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL7Label.setText("<html>Exaust LVL 7<br>" + "Count: " + Part.ExaustLv7.PartCount);
+        ExaustLVL7Label.setText("<html>Exaust LVL 7<br>" + "Count: " + Part.parts[169]);
         
         JLabel FuelLVL7Label = new JLabel(FuelIcon);    	
         FuelLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL7Label.setText("<html>Fuel LVL 7<br>" + "Count: " + Part.FuelLv7.PartCount);
+        FuelLVL7Label.setText("<html>Fuel LVL 7<br>" + "Count: " + Part.parts[171]);
         
         JLabel InteriorLVL7Label = new JLabel(InteriorIcon);    	
         InteriorLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL7Label.setText("<html>Interior LVL 7<br>" + "Count: " + Part.InteriorLv7.PartCount);
+        InteriorLVL7Label.setText("<html>Interior LVL 7<br>" + "Count: " + Part.parts[173]);
         
         JLabel SteeringLVL7Label = new JLabel(SteeringIcon);    	
         SteeringLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.SteeringLv7.PartCount);
+        SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.parts[175]);
         
         JLabel SuspensionLVL7Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL7Label.setText("<html>Suspension LVL 7<br>" + "Count: " + Part.SuspensionLv7.PartCount);
+        SuspensionLVL7Label.setText("<html>Suspension LVL 7<br>" + "Count: " + Part.parts[177]);
         
         JLabel TransmissionLVL7Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL7Label.setText("<html>Transmission LVL 7<br>" + "Count: " + Part.TransmissionLv7.PartCount);
+        TransmissionLVL7Label.setText("<html>Transmission LVL 7<br>" + "Count: " + Part.parts[179]);
         
         JLabel TiresLVL7Label = new JLabel(TiresIcon);    	
         TiresLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL7Label.setText("<html>Tires LVL 7<br>" + "Count: " + Part.TiresLv7.PartCount);
+        TiresLVL7Label.setText("<html>Tires LVL 7<br>" + "Count: " + Part.parts[181]);
                
         SellPartsLVL7PanelSub.add(AccessoriesLVL7Label);
         SellPartsLVL7PanelSub.add(jbtnSellAccessoriesLv7);
@@ -2740,6 +1985,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub12);
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub13);
    	 	
+        // Sell Parts Level 8 Panel
+        
    	 	JPanel SellPartsLVL8Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL8PanelSub = new JPanel();
@@ -2784,67 +2031,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL8Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL8Label.setText("<html>Accessories LVL 8<br>" + "Count: " + Part.AccessoriesLv8.PartCount);
+        AccessoriesLVL8Label.setText("<html>Accessories LVL 8<br>" + "Count: " + Part.parts[183]);
         
         JLabel BodyLVL8Label = new JLabel(BodyIcon);    	
         BodyLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL8Label.setText("<html>Body LVL 8<br>" + "Count: " + Part.BodyLv8.PartCount);
+        BodyLVL8Label.setText("<html>Body LVL 8<br>" + "Count: " + Part.parts[185]);
         
         JLabel BrakesLVL8Label = new JLabel(BrakesIcon);    	
         BrakesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL8Label.setText("<html>Brakes LVL 8<br>" + "Count: " + Part.BrakesLv8.PartCount);
+        BrakesLVL8Label.setText("<html>Brakes LVL 8<br>" + "Count: " + Part.parts[187]);
         
         JLabel CoolingLVL8Label = new JLabel(CoolingIcon);    	
         CoolingLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL8Label.setText("<html>Cooling LVL 8<br>" + "Count: " + Part.CoolingLv8.PartCount);
+        CoolingLVL8Label.setText("<html>Cooling LVL 8<br>" + "Count: " + Part.parts[189]);
         
         JLabel ElectronicsLVL8Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL8Label.setText("<html>Electronics LVL 8<br>" + "Count: " + Part.ElectronicsLv8.PartCount);
+        ElectronicsLVL8Label.setText("<html>Electronics LVL 8<br>" + "Count: " + Part.parts[191]);
         
         JLabel EngineLVL8Label = new JLabel(EngineIcon);    	
         EngineLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL8Label.setText("<html>Engine LVL 8<br>" + "Count: " + Part.EngineLv8.PartCount);
+        EngineLVL8Label.setText("<html>Engine LVL 8<br>" + "Count: " + Part.parts[193]);
         
         JLabel ExaustLVL8Label = new JLabel(ExaustIcon);    	
         ExaustLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL8Label.setText("<html>Exaust LVL 8<br>" + "Count: " + Part.ExaustLv8.PartCount);
+        ExaustLVL8Label.setText("<html>Exaust LVL 8<br>" + "Count: " + Part.parts[195]);
         
         JLabel FuelLVL8Label = new JLabel(FuelIcon);    	
         FuelLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL8Label.setText("<html>Fuel LVL 8<br>" + "Count: " + Part.FuelLv8.PartCount);
+        FuelLVL8Label.setText("<html>Fuel LVL 8<br>" + "Count: " + Part.parts[197]);
         
         JLabel InteriorLVL8Label = new JLabel(InteriorIcon);    	
         InteriorLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL8Label.setText("<html>Interior LVL 8<br>" + "Count: " + Part.InteriorLv8.PartCount);
+        InteriorLVL8Label.setText("<html>Interior LVL 8<br>" + "Count: " + Part.parts[199]);
         
         JLabel SteeringLVL8Label = new JLabel(SteeringIcon);    	
         SteeringLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL8Label.setText("<html>Steering LVL 8<br>" + "Count: " + Part.SteeringLv8.PartCount);
+        SteeringLVL8Label.setText("<html>Steering LVL 8<br>" + "Count: " + Part.parts[201]);
         
         JLabel SuspensionLVL8Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL8Label.setText("<html>Suspension LVL 8<br>" + "Count: " + Part.SuspensionLv8.PartCount);
+        SuspensionLVL8Label.setText("<html>Suspension LVL 8<br>" + "Count: " + Part.parts[203]);
         
         JLabel TransmissionLVL8Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL8Label.setText("<html>Transmission LVL 8<br>" + "Count: " + Part.TransmissionLv8.PartCount);
+        TransmissionLVL8Label.setText("<html>Transmission LVL 8<br>" + "Count: " + Part.parts[205]);
         
         JLabel TiresLVL8Label = new JLabel(TiresIcon);    	
         TiresLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL8Label.setText("<html>Tires LVL 8<br>" + "Count: " + Part.TiresLv8.PartCount);
+        TiresLVL8Label.setText("<html>Tires LVL 8<br>" + "Count: " + Part.parts[207]);
     
         SellPartsLVL8PanelSub.add(AccessoriesLVL8Label);
         SellPartsLVL8PanelSub.add(jbtnSellAccessoriesLv8);
@@ -2887,6 +2134,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub12);
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub13);
    	 	
+        // Sell Parts Level 9 Panel
+        
    	 	JPanel SellPartsLVL9Panel = new JPanel();
    	 	
    	 	JPanel SellPartsLVL9PanelSub = new JPanel();
@@ -2931,67 +2180,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL9Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL9Label.setText("<html>Accessories LVL 9<br>" + "Count: " + Part.AccessoriesLv9.PartCount);
+        AccessoriesLVL9Label.setText("<html>Accessories LVL 9<br>" + "Count: " + Part.parts[209]);
         
         JLabel BodyLVL9Label = new JLabel(BodyIcon);    	
         BodyLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL9Label.setText("<html>Body LVL 9<br>" + "Count: " + Part.BodyLv9.PartCount);
+        BodyLVL9Label.setText("<html>Body LVL 9<br>" + "Count: " + Part.parts[211]);
         
         JLabel BrakesLVL9Label = new JLabel(BrakesIcon);    	
         BrakesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL9Label.setText("<html>Brakes LVL 9<br>" + "Count: " + Part.BrakesLv9.PartCount);
+        BrakesLVL9Label.setText("<html>Brakes LVL 9<br>" + "Count: " + Part.parts[213]);
         
         JLabel CoolingLVL9Label = new JLabel(CoolingIcon);    	
         CoolingLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL9Label.setText("<html>Cooling LVL 9<br>" + "Count: " + Part.CoolingLv9.PartCount);
+        CoolingLVL9Label.setText("<html>Cooling LVL 9<br>" + "Count: " + Part.parts[215]);
         
         JLabel ElectronicsLVL9Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL9Label.setText("<html>Electronics LVL 9<br>" + "Count: " + Part.ElectronicsLv9.PartCount);
+        ElectronicsLVL9Label.setText("<html>Electronics LVL 9<br>" + "Count: " + Part.parts[217]);
         
         JLabel EngineLVL9Label = new JLabel(EngineIcon);    	
         EngineLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL9Label.setText("<html>Engine LVL 9<br>" + "Count: " + Part.EngineLv9.PartCount);
+        EngineLVL9Label.setText("<html>Engine LVL 9<br>" + "Count: " + Part.parts[219]);
         
         JLabel ExaustLVL9Label = new JLabel(ExaustIcon);    	
         ExaustLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL9Label.setText("<html>Exaust LVL 9<br>" + "Count: " + Part.ExaustLv9.PartCount);
+        ExaustLVL9Label.setText("<html>Exaust LVL 9<br>" + "Count: " + Part.parts[221]);
         
         JLabel FuelLVL9Label = new JLabel(FuelIcon);    	
         FuelLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL9Label.setText("<html>Fuel LVL 9<br>" + "Count: " + Part.FuelLv9.PartCount);
+        FuelLVL9Label.setText("<html>Fuel LVL 9<br>" + "Count: " + Part.parts[223]);
         
         JLabel InteriorLVL9Label = new JLabel(InteriorIcon);    	
         InteriorLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL9Label.setText("<html>Interior LVL 9<br>" + "Count: " + Part.InteriorLv9.PartCount);
+        InteriorLVL9Label.setText("<html>Interior LVL 9<br>" + "Count: " + Part.parts[225]);
         
         JLabel SteeringLVL9Label = new JLabel(SteeringIcon);    	
         SteeringLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL9Label.setText("<html>Steering LVL 9<br>" + "Count: " + Part.SteeringLv9.PartCount);
+        SteeringLVL9Label.setText("<html>Steering LVL 9<br>" + "Count: " + Part.parts[227]);
         
         JLabel SuspensionLVL9Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL9Label.setText("<html>Suspension LVL 9<br>" + "Count: " + Part.SuspensionLv9.PartCount);
+        SuspensionLVL9Label.setText("<html>Suspension LVL 9<br>" + "Count: " + Part.parts[229]);
         
         JLabel TransmissionLVL9Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL9Label.setText("<html>Transmission LVL 9<br>" + "Count: " + Part.TransmissionLv9.PartCount);
+        TransmissionLVL9Label.setText("<html>Transmission LVL 9<br>" + "Count: " + Part.parts[231]);
         
         JLabel TiresLVL9Label = new JLabel(TiresIcon);    	
         TiresLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL9Label.setText("<html>Tires LVL 9<br>" + "Count: " + Part.TiresLv9.PartCount);
+        TiresLVL9Label.setText("<html>Tires LVL 9<br>" + "Count: " + Part.parts[233]);
                
         SellPartsLVL9PanelSub.add(AccessoriesLVL9Label);
         SellPartsLVL9PanelSub.add(jbtnSellAccessoriesLv9);
@@ -3034,6 +2283,8 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub12);
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub13);
    	 	
+        // Sell Parts Level 10 Panel
+        
    	 	JPanel SellPartsLVL10Panel = new JPanel();
    	 	
    		JPanel SellPartsLVL10PanelSub = new JPanel();
@@ -3078,67 +2329,67 @@ public class ClickerGame implements ActionListener {
 	 	JLabel AccessoriesLVL10Label = new JLabel(AccessoriesIcon);    	
         AccessoriesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL10Label.setText("<html>Accessories LVL 10<br>" + "Count: " + Part.AccessoriesLv10.PartCount);
+        AccessoriesLVL10Label.setText("<html>Accessories LVL 10<br>" + "Count: " + Part.parts[235]);
         
         JLabel BodyLVL10Label = new JLabel(BodyIcon);    	
         BodyLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL10Label.setText("<html>Body LVL 10<br>" + "Count: " + Part.BodyLv10.PartCount);
+        BodyLVL10Label.setText("<html>Body LVL 10<br>" + "Count: " + Part.parts[237]);
         
         JLabel BrakesLVL10Label = new JLabel(BrakesIcon);    	
         BrakesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL10Label.setText("<html>Brakes LVL 10<br>" + "Count: " + Part.BrakesLv10.PartCount);
+        BrakesLVL10Label.setText("<html>Brakes LVL 10<br>" + "Count: " + Part.parts[239]);
         
         JLabel CoolingLVL10Label = new JLabel(CoolingIcon);    	
         CoolingLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL10Label.setText("<html>Cooling LVL 10<br>" + "Count: " + Part.CoolingLv10.PartCount);
+        CoolingLVL10Label.setText("<html>Cooling LVL 10<br>" + "Count: " + Part.parts[241]);
         
         JLabel ElectronicsLVL10Label = new JLabel(ElectronicsIcon);    	
         ElectronicsLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL10Label.setText("<html>Electronics LVL 10<br>" + "Count: " + Part.ElectronicsLv10.PartCount);
+        ElectronicsLVL10Label.setText("<html>Electronics LVL 10<br>" + "Count: " + Part.parts[243]);
         
         JLabel EngineLVL10Label = new JLabel(EngineIcon);    	
         EngineLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL10Label.setText("<html>Engine LVL 10<br>" + "Count: " + Part.EngineLv10.PartCount);
+        EngineLVL10Label.setText("<html>Engine LVL 10<br>" + "Count: " + Part.parts[245]);
         
         JLabel ExaustLVL10Label = new JLabel(ExaustIcon);    	
         ExaustLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL10Label.setText("<html>Exaust LVL 10<br>" + "Count: " + Part.ExaustLv10.PartCount);
+        ExaustLVL10Label.setText("<html>Exaust LVL 10<br>" + "Count: " + Part.parts[247]);
         
         JLabel FuelLVL10Label = new JLabel(FuelIcon);    	
         FuelLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL10Label.setText("<html>Fuel LVL 10<br>" + "Count: " + Part.FuelLv10.PartCount);
+        FuelLVL10Label.setText("<html>Fuel LVL 10<br>" + "Count: " + Part.parts[249]);
         
         JLabel InteriorLVL10Label = new JLabel(InteriorIcon);    	
         InteriorLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL10Label.setText("<html>Interior LVL 10<br>" + "Count: " + Part.InteriorLv10.PartCount);
+        InteriorLVL10Label.setText("<html>Interior LVL 10<br>" + "Count: " + Part.parts[251]);
         
         JLabel SteeringLVL10Label = new JLabel(SteeringIcon);    	
         SteeringLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL10Label.setText("<html>Steering LVL 10<br>" + "Count: " + Part.SteeringLv10.PartCount);
+        SteeringLVL10Label.setText("<html>Steering LVL 10<br>" + "Count: " + Part.parts[253]);
         
         JLabel SuspensionLVL10Label = new JLabel(SuspensionIcon);    	
         SuspensionLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL10Label.setText("<html>Suspension LVL 10<br>" + "Count: " + Part.SuspensionLv10.PartCount);
+        SuspensionLVL10Label.setText("<html>Suspension LVL 10<br>" + "Count: " + Part.parts[255]);
         
         JLabel TransmissionLVL10Label = new JLabel(TransmissionIcon);    	
         TransmissionLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL10Label.setText("<html>Transmission LVL 10<br>" + "Count: " + Part.TransmissionLv10.PartCount);
+        TransmissionLVL10Label.setText("<html>Transmission LVL 10<br>" + "Count: " + Part.parts[257]);
         
         JLabel TiresLVL10Label = new JLabel(TiresIcon);    	
         TiresLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL10Label.setText("<html>Tires LVL 10<br>" + "Count: " + Part.TiresLv10.PartCount);
+        TiresLVL10Label.setText("<html>Tires LVL 10<br>" + "Count: " + Part.parts[259]);
                
         SellPartsLVL10PanelSub.add(AccessoriesLVL10Label);
         SellPartsLVL10PanelSub.add(jbtnSellAccessoriesLv10);
@@ -3205,329 +2456,119 @@ public class ClickerGame implements ActionListener {
       tabbedPane2.addTab(LVL9, SellPartsLVL9Panel);
       tabbedPane2.addTab(LVL10, SellPartsLVL10Panel);
    	
-   	tabbedPane.add(SellParts ,tabbedPane2);
+   	  tabbedPane.add(SellParts ,tabbedPane2);
       
-        CarMain = new CarMain();
-        Box = new BoxesObj();
-        Part = new PartObj(); 
-        Garage = new Garages();
-        CarFrame = new FramesObj();
-        CarsLv2 = new CarsObjLv2();
-        CarsLv3 = new CarsObjLv3();
-        CarsLv4 = new CarsObjLv4();
-        CarsLv5 = new CarsObjLv5();
-        CarsLv6 = new CarsObjLv6();
-        CarsLv7 = new CarsObjLv7();
-        CarsLv8 = new CarsObjLv8();
-        CarsLv9 = new CarsObjLv9();
-        CarsLv10 = new CarsObjLv10();
-        
-        CarMain.PlayerLevel = 1;
-        CarMain.BoxLevel = 1;
-        Garage.GarageLevel = 1;
-        Garage.GarageSlots = 20;
     }
     
-    
+    // Counting
     
     public  int Aboxes(){
-    	return Box.BoxLv1.BoxCount + Box.BoxLv2.BoxCount + Box.BoxLv3.BoxCount +
-    			Box.BoxLv4.BoxCount + Box.BoxLv5.BoxCount + Box.BoxLv6.BoxCount +
-    			Box.BoxLv7.BoxCount + Box.BoxLv8.BoxCount + Box.BoxLv9.BoxCount +
-    			Box.BoxLv10.BoxCount;
+    	int countboxes = 0;
+    	for(int i = 1; i > Box.boxes.length; i+=2){
+    		countboxes+= Integer.parseInt(Box.boxes[i]);
+    	}
+    	return countboxes;
     }
     
-    //Skaita Pirma limena masinu skaitu
     public int CountLv1Cars(){
-    	//Initilize countccars intiger lai velak varetu izmantot lai varetu skaitit masinas
-    	 int countcars = 0;
-    	 //for loop kas sakas no 3 un katru nakamo gajienu skaitas pa +4 jo CountCars variable in cars array atrodas 
-    	 //3 vieniba pirmajai masinai un katrai nakosajai
-    	 //pa 4 vienibam talak
+    	int countcarsLv1 = 0;
     	for(int i = 3;i > CarsLv1.cars.length;i+=4){
-    		//Panem to array string variable un parvers to pa int
-    		countcars+= Integer.parseInt(CarsLv1.cars[i]);
+    		countcarsLv1+= Integer.parseInt(CarsLv1.cars[i]);
     	} 
-    	//Returno varibale uz spaceship
-    	return countcars;
-    	
-    	
+    	return countcarsLv1;
+    	    	
     }
     
     public int CountLv2Cars(){
-    	return CarsLv2.Buick_Riviera.CarCount + CarsLv2.Tesla_Roadster.CarCount + CarsLv2.Audi_80.CarCount + CarsLv2.BMW_e36.CarCount +
-    			CarsLv2.Volkswagen_Scirocco.CarCount + CarsLv2.Mazda_3.CarCount + CarsLv2.Chevrolet_Viking.CarCount + CarsLv2.Tesla_s.CarCount +
-    			CarsLv2.Jeep_ZJ.CarCount + CarsLv2.Dodge_Neon.CarCount + CarsLv2.BMW_e30.CarCount + CarsLv2.Mercedes_Benz_W123.CarCount +
-    			CarsLv2.Land_Rover_Defender.CarCount + CarsLv2.Saab_9_5.CarCount + CarsLv2.Aston_Martin_One.CarCount + CarsLv2.Koenigsegg_Regera.CarCount +
-    			CarsLv2.Lexus_IS.CarCount + CarsLv2.GMC_Yukon.CarCount + CarsLv2.Opel_Astra.CarCount + CarsLv2.Audi_Coupe.CarCount;
+    	int countcarsLv2 = 0;
+    	for(int i = 3;i > CarsLv2.cars.length;i+=4){
+    		countcarsLv2+= Integer.parseInt(CarsLv2.cars[i]);
+    	} 
+    	return countcarsLv2;
+    
     }
     
     public int CountLv3Cars(){
-    	return CarsLv3.Mini_Moke.CarCount + CarsLv3.Kia_Rondo.CarCount + CarsLv3.GMC_Suburban.CarCount + CarsLv3.Honda_Prelude.CarCount +
-    			CarsLv3.Citroen_Saxo.CarCount + CarsLv3.Volkswagen_Tiguan.CarCount + CarsLv3.Volkswagen_Phaeton.CarCount + CarsLv3.Buick_Centry.CarCount +
-    			CarsLv3.Land_Rover_Discovery.CarCount + CarsLv3.Infiniti_Etherea.CarCount + CarsLv3.Peugeot_308.CarCount + CarsLv3.Toyota_Auris.CarCount +
-    			CarsLv3.Pagani_ZondaF.CarCount + CarsLv3.Lancia_Phedra.CarCount + CarsLv3.Chevrolet_Impala.CarCount + CarsLv3.Porsche_Boxster.CarCount +
-    			CarsLv3.Aston_Martin_DB6.CarCount + CarsLv3.Vaz_2103.CarCount + CarsLv3.Hyundai_Mistra.CarCount + CarsLv3.Mini_Countryman.CarCount;
+    	int countcarsLv3 = 0;
+    	for(int i = 3;i > CarsLv3.cars.length;i+=4){
+    		countcarsLv3+= Integer.parseInt(CarsLv3.cars[i]);
+    	} 
+    	return countcarsLv3;
+    
     }
     
     public int CountLv4Cars(){
-    	return CarsLv4.Mazda_MX6.CarCount + CarsLv4.Chrysler_Daytona.CarCount + CarsLv4.Buick_Roadmaster.CarCount + CarsLv4.Volvo_S80.CarCount +
-    			CarsLv4.Porsche_Cayman.CarCount + CarsLv4.Volkswagen_Beetle.CarCount + CarsLv4.Bugatti_EB110.CarCount + CarsLv4.Opel_Zafira.CarCount +
-    			CarsLv4.Saab_9000.CarCount + CarsLv4.McLaren_F1.CarCount + CarsLv4.Audi_R8.CarCount + CarsLv4.Alfa_Romeo_8C.CarCount +
-    			CarsLv4.Ford_Fiesta.CarCount + CarsLv4.Infiniti_Q50.CarCount + CarsLv4.Maserati_5000GT.CarCount + CarsLv4.Mercedes_Benz_CLA250.CarCount +
-    			CarsLv4.Lamborghini_Gallardo.CarCount + CarsLv4.Mazda_RX7.CarCount + CarsLv4.Mitsubishi_Colt.CarCount + CarsLv4.Kia_Sorento.CarCount;
+    	int countcarsLv4 = 0;
+    	for(int i = 3;i > CarsLv4.cars.length;i+=4){
+    		countcarsLv4+= Integer.parseInt(CarsLv4.cars[i]);
+    	} 
+    	return countcarsLv4;
+    
     }
     
     public int CountLv5Cars(){
-    	return CarsLv5.Rolls_Royce_Wraith.CarCount + CarsLv5.Lamborghini_Diablo.CarCount + CarsLv5.Jeep_Scrambler.CarCount + CarsLv5.Bentley_Continental.CarCount +
-    			CarsLv5.Bentley_Azure.CarCount + CarsLv5.Koenigsegg_One.CarCount + CarsLv5.Cadilliac_XTS.CarCount + CarsLv5.Fiat_500.CarCount +
-    			CarsLv5.Mitsubishi_Pajero.CarCount + CarsLv5.Moskvich_2140.CarCount + CarsLv5.Opel_GT.CarCount + CarsLv5.Hyundai_Getz.CarCount +
-    			CarsLv5.Maserati_Coupe.CarCount + CarsLv5.Honda_S2000.CarCount + CarsLv5.Alfa_Romeo_Spider.CarCount + CarsLv5.BMW_M5.CarCount +
-    			CarsLv5.BMW_I8.CarCount + CarsLv5.Citroen_C5.CarCount + CarsLv5.Fiat_Punto.CarCount + CarsLv5.Audi_100.CarCount;
+    	int countcarsLv5 = 0;
+    	for(int i = 3;i > CarsLv5.cars.length;i+=4){
+    		countcarsLv5+= Integer.parseInt(CarsLv5.cars[i]);
+    	} 
+    	return countcarsLv5;
+    
     }
     
     public int CountLv6Cars(){
-    	return CarsLv6.Rolls_Royce_Phantom.CarCount + CarsLv6.Toyota_86.CarCount + CarsLv6.BMW_e70.CarCount + CarsLv6.Chrysler_Voyager.CarCount +
-    			CarsLv6.Rolls_Royce_PhantomIII.CarCount + CarsLv6.Honda_CRX.CarCount + CarsLv6.Subaru_1000.CarCount + CarsLv6.Cadilliac_Eldorado.CarCount +
-    			CarsLv6.Land_Rover_Freelander.CarCount + CarsLv6.Renault_Spider.CarCount + CarsLv6.Gaz_21.CarCount + CarsLv6.Acura_EL.CarCount +
-    			CarsLv6.Bugatti_Veyron.CarCount + CarsLv6.Mercedes_Benz_SL600.CarCount + CarsLv6.Rolls_Royce_Silver.CarCount + CarsLv6.Mini_Paceman.CarCount +
-    			CarsLv6.Hyundai_Excel.CarCount + CarsLv6.Gaz_24.CarCount + CarsLv6.Peugeot_107.CarCount + CarsLv6.Audi_A4.CarCount;
+    	int countcarsLv6 = 0;
+    	for(int i = 3;i > CarsLv6.cars.length;i+=4){
+    		countcarsLv6+= Integer.parseInt(CarsLv6.cars[i]);
+    	} 
+    	return countcarsLv6;
+    
     }
     
     public int CountLv7Cars(){
-    	return CarsLv7.Lamborghini_Aventador.CarCount + CarsLv7.Nissan_350z.CarCount + CarsLv7.Jaguar_XJ6.CarCount + CarsLv7.Renault_Clio.CarCount +
-    			CarsLv7.Toyota_Avensis.CarCount + CarsLv7.Subaru_Outback.CarCount + CarsLv7.Saab_900.CarCount + CarsLv7.Opel_Vectra.CarCount +
-    			CarsLv7.Chrysler_Charger.CarCount + CarsLv7.Ferrari_348.CarCount + CarsLv7.Hyundai_XG.CarCount + CarsLv7.Lexus_RX.CarCount +
-    			CarsLv7.Dodge_400.CarCount + CarsLv7.GMC_Terrain.CarCount + CarsLv7.Volvo_C70.CarCount + CarsLv7.Ford_Sierra.CarCount +
-    			CarsLv7.Subaru_Impreza.CarCount + CarsLv7.BMW_e90.CarCount + CarsLv7.Nissan_Skyline.CarCount + CarsLv7.Audi_Q7.CarCount;
+    	int countcarsLv7 = 0;
+    	for(int i = 3;i > CarsLv7.cars.length;i+=4){
+    		countcarsLv7+= Integer.parseInt(CarsLv7.cars[i]);
+    	} 
+    	return countcarsLv7;
+    
     }
     
     public int CountLv8Cars(){
-    	return CarsLv8.Bentley_Arnage.CarCount + CarsLv8.Volvo_850.CarCount + CarsLv8.Toyota_Rav4.CarCount + CarsLv8.Ford_Focus.CarCount +
-    			CarsLv8.Chevrolet_Spin.CarCount + CarsLv8.Bentley_GTZ.CarCount + CarsLv8.Lexus_LS.CarCount + CarsLv8.Land_Rover_RangeRover.CarCount +
-    			CarsLv8.Lexus_GX.CarCount + CarsLv8.Jeep_Wrangler.CarCount + CarsLv8.Maserati_GranTurismo.CarCount + CarsLv8.Koenigsegg_Agera.CarCount +
-    			CarsLv8.Acura_MDX.CarCount + CarsLv8.Audi_RS6.CarCount + CarsLv8.Cadilliac_DeVille.CarCount + CarsLv8.McLaren_Veneno.CarCount +
-    			CarsLv8.Tesla_X.CarCount + CarsLv8.Mercedes_Benz_G55.CarCount + CarsLv8.Lancia_Lybra.CarCount + CarsLv8.Infiniti_QX60.CarCount;
+    	int countcarsLv8 = 0;
+    	for(int i = 3;i > CarsLv8.cars.length;i+=4){
+    		countcarsLv8+= Integer.parseInt(CarsLv8.cars[i]);
+    	} 
+    	return countcarsLv8;
+    
     }
     
     public int CountLv9Cars(){
-    	return CarsLv9.Kia_Forte.CarCount + CarsLv9.Lancia_Voyager.CarCount + CarsLv9.Porsche_Cayenne.CarCount + CarsLv9.McLaren_650s.CarCount +
-    			CarsLv9.Jaguar_E_Type.CarCount + CarsLv9.Peugeot_601.CarCount + CarsLv9.Jaguar_F_Type.CarCount + CarsLv9.Fiat_Doblo.CarCount +
-    			CarsLv9.Vaz_2101.CarCount + CarsLv9.McLaren_P1.CarCount + CarsLv9.Peugeot_405.CarCount + CarsLv9.GMC_Envoy.CarCount +
-    			CarsLv9.Chevrolet_Corvete.CarCount + CarsLv9.Pagani_Huayra.CarCount + CarsLv9.Moskvich_402.CarCount + CarsLv9.Alfa_Romeo_159.CarCount +
-    			CarsLv9.Renault_Fregate.CarCount + CarsLv9.Mini_Cooper.CarCount + CarsLv9.Dodge_Viper.CarCount + CarsLv9.Vaz_Niva.CarCount;
+    	int countcarsLv9 = 0;
+    	for(int i = 3;i > CarsLv9.cars.length;i+=4){
+    		countcarsLv9+= Integer.parseInt(CarsLv9.cars[i]);
+    	} 
+    	return countcarsLv9;
+    
     }
     
     public int CountLv10Cars(){
-    	return CarsLv10.Jaguar_X_Type.CarCount + CarsLv10.Ferrari_308.CarCount + CarsLv10.Mazda_626.CarCount + CarsLv10.Maserati_Shamal.CarCount + 
-    			CarsLv10.Nissan_240sx.CarCount + CarsLv10.Alfa_Romeo_4C.CarCount + CarsLv10.Nissan_Juke.CarCount + CarsLv10.Volkswagen_Golf1.CarCount +
-    			CarsLv10.Jeep_Gladiator.CarCount + CarsLv10.Dodge_Matador.CarCount + CarsLv10.Bugatti_Royale.CarCount + CarsLv10.Citroen_CX.CarCount +
-    			CarsLv10.Lamborghini_350GT.CarCount + CarsLv10.Mitsubishi_GTO.CarCount + CarsLv10.Buick_Invicta.CarCount + CarsLv10.Porsche_911.CarCount +
-    			CarsLv10.Subaru_Forester.CarCount + CarsLv10.Citroen_BX.CarCount + CarsLv10.Bugatti_Type252.CarCount + CarsLv10.Ferrari_488.CarCount;
+    	int countcarsLv10 = 0;
+    	for(int i = 3;i > CarsLv10.cars.length;i+=4){
+    		countcarsLv10+= Integer.parseInt(CarsLv10.cars[i]);
+    	} 
+    	return countcarsLv10;
+    
     }
     
     public int AllClicks(){
-    	return CarMain.MoneyClicks + CarMain.BoxesClicks;
+    	int allclicks = 0;
+    	allclicks+= Integer.parseInt(CarMain.main[1]) + Integer.parseInt(CarMain.main[3]);
+    	return allclicks;
     }   
  	
-
-
-//    protected static void checks(){
-//			if(CarMain.PlayerLevel >=1){
-//		    	jbtnPartsLv1.setEnabled(true);
-//		    	jbtnBuyBoxLv1.setEnabled(true);
-//		    	jbtnBuyFrameLv1.setEnabled(true);
-//		    	jbtnBuildCarLv1.setEnabled(true);
-//		    	jbtnSellAccessoriesLv1.setEnabled(true);
-//		        jbtnSellBodyLv1.setEnabled(true);
-//		        jbtnSellBrakesLv1.setEnabled(true);
-//		        jbtnSellCoolingLv1.setEnabled(true);
-//		        jbtnSellElectronicsLv1.setEnabled(true);
-//		        jbtnSellEngineLv1.setEnabled(true);
-//		        jbtnSellExaustLv1.setEnabled(true);
-//		        jbtnSellFuelLv1.setEnabled(true);
-//		        jbtnSellInteriorLv1.setEnabled(true);
-//		        jbtnSellSteeringLv1.setEnabled(true);
-//		        jbtnSellSuspensionLv1.setEnabled(true);
-//		        jbtnSellTransmissionLv1.setEnabled(true);
-//		        jbtnSellTiresLv1.setEnabled(true);
-//		    }
-//			
-//			if(CarMain.PlayerLevel >=2){
-//				jbtnPartsLv2.setEnabled(true);
-//		    	jbtnBuyBoxLv2.setEnabled(true);
-//		    	jbtnBuyFrameLv2.setEnabled(true);
-//		    	jbtnBuildCarLv2.setEnabled(true);
-//		    	jbtnSellAccessoriesLv2.setEnabled(true);
-//		        jbtnSellBodyLv2.setEnabled(true);
-//		        jbtnSellBrakesLv2.setEnabled(true);
-//		        jbtnSellCoolingLv2.setEnabled(true);
-//		        jbtnSellElectronicsLv2.setEnabled(true);
-//		        jbtnSellEngineLv2.setEnabled(true);
-//		        jbtnSellExaustLv2.setEnabled(true);
-//		        jbtnSellFuelLv2.setEnabled(true);
-//		        jbtnSellInteriorLv2.setEnabled(true);
-//		        jbtnSellSteeringLv2.setEnabled(true);
-//		        jbtnSellSuspensionLv2.setEnabled(true);
-//		        jbtnSellTransmissionLv2.setEnabled(true);
-//		        jbtnSellTiresLv2.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=3){
-//				jbtnPartsLv3.setEnabled(true);
-//		    	jbtnBuyBoxLv3.setEnabled(true);
-//		    	jbtnBuyFrameLv3.setEnabled(true);
-//		    	jbtnBuildCarLv3.setEnabled(true);
-//		    	jbtnSellAccessoriesLv3.setEnabled(true);
-//		        jbtnSellBodyLv3.setEnabled(true);
-//		        jbtnSellBrakesLv3.setEnabled(true);
-//		        jbtnSellCoolingLv3.setEnabled(true);
-//		        jbtnSellElectronicsLv3.setEnabled(true);
-//		        jbtnSellEngineLv3.setEnabled(true);
-//		        jbtnSellExaustLv3.setEnabled(true);
-//		        jbtnSellFuelLv3.setEnabled(true);
-//		        jbtnSellInteriorLv3.setEnabled(true);
-//		        jbtnSellSteeringLv3.setEnabled(true);
-//		        jbtnSellSuspensionLv3.setEnabled(true);
-//		        jbtnSellTransmissionLv3.setEnabled(true);
-//		        jbtnSellTiresLv3.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=4){
-//				jbtnPartsLv4.setEnabled(true);
-//		    	jbtnBuyBoxLv4.setEnabled(true);
-//		    	jbtnBuyFrameLv4.setEnabled(true);
-//		    	jbtnBuildCarLv4.setEnabled(true);
-//		    	jbtnSellAccessoriesLv4.setEnabled(true);
-//		        jbtnSellBodyLv4.setEnabled(true);
-//		        jbtnSellBrakesLv4.setEnabled(true);
-//		        jbtnSellCoolingLv4.setEnabled(true);
-//		        jbtnSellElectronicsLv4.setEnabled(true);
-//		        jbtnSellEngineLv4.setEnabled(true);
-//		        jbtnSellExaustLv4.setEnabled(true);
-//		        jbtnSellFuelLv4.setEnabled(true);
-//		        jbtnSellInteriorLv4.setEnabled(true);
-//		        jbtnSellSteeringLv4.setEnabled(true);
-//		        jbtnSellSuspensionLv4.setEnabled(true);
-//		        jbtnSellTransmissionLv4.setEnabled(true);
-//		        jbtnSellTiresLv4.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=5){
-//				jbtnPartsLv5.setEnabled(true);
-//		    	jbtnBuyBoxLv5.setEnabled(true);
-//		    	jbtnBuyFrameLv5.setEnabled(true);
-//		    	jbtnBuildCarLv5.setEnabled(true);
-//		    	jbtnSellAccessoriesLv5.setEnabled(true);
-//		        jbtnSellBodyLv5.setEnabled(true);
-//		        jbtnSellBrakesLv5.setEnabled(true);
-//		        jbtnSellCoolingLv5.setEnabled(true);
-//		        jbtnSellElectronicsLv5.setEnabled(true);
-//		        jbtnSellEngineLv5.setEnabled(true);
-//		        jbtnSellExaustLv5.setEnabled(true);
-//		        jbtnSellFuelLv5.setEnabled(true);
-//		        jbtnSellInteriorLv5.setEnabled(true);
-//		        jbtnSellSteeringLv5.setEnabled(true);
-//		        jbtnSellSuspensionLv5.setEnabled(true);
-//		        jbtnSellTransmissionLv5.setEnabled(true);
-//		        jbtnSellTiresLv5.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=6){
-//				jbtnPartsLv6.setEnabled(true);
-//		    	jbtnBuyBoxLv6.setEnabled(true);
-//		    	jbtnBuyFrameLv6.setEnabled(true);
-//		    	jbtnBuildCarLv6.setEnabled(true);
-//		    	jbtnSellAccessoriesLv6.setEnabled(true);
-//		        jbtnSellBodyLv6.setEnabled(true);
-//		        jbtnSellBrakesLv6.setEnabled(true);
-//		        jbtnSellCoolingLv6.setEnabled(true);
-//		        jbtnSellElectronicsLv6.setEnabled(true);
-//		        jbtnSellEngineLv6.setEnabled(true);
-//		        jbtnSellExaustLv6.setEnabled(true);
-//		        jbtnSellFuelLv6.setEnabled(true);
-//		        jbtnSellInteriorLv6.setEnabled(true);
-//		        jbtnSellSteeringLv6.setEnabled(true);
-//		        jbtnSellSuspensionLv6.setEnabled(true);
-//		        jbtnSellTransmissionLv6.setEnabled(true);
-//		        jbtnSellTiresLv6.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=7){
-//				jbtnPartsLv7.setEnabled(true);
-//		    	jbtnBuyBoxLv7.setEnabled(true);
-//		    	jbtnBuyFrameLv7.setEnabled(true);
-//		    	jbtnBuildCarLv7.setEnabled(true);
-//		    	jbtnSellAccessoriesLv7.setEnabled(true);
-//		        jbtnSellBodyLv7.setEnabled(true);
-//		        jbtnSellBrakesLv7.setEnabled(true);
-//		        jbtnSellCoolingLv7.setEnabled(true);
-//		        jbtnSellElectronicsLv7.setEnabled(true);
-//		        jbtnSellEngineLv7.setEnabled(true);
-//		        jbtnSellExaustLv7.setEnabled(true);
-//		        jbtnSellFuelLv7.setEnabled(true);
-//		        jbtnSellInteriorLv7.setEnabled(true);
-//		        jbtnSellSteeringLv7.setEnabled(true);
-//		        jbtnSellSuspensionLv7.setEnabled(true);
-//		        jbtnSellTransmissionLv7.setEnabled(true);
-//		        jbtnSellTiresLv7.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=8){
-//				jbtnPartsLv8.setEnabled(true);
-//		    	jbtnBuyBoxLv8.setEnabled(true);
-//		    	jbtnBuyFrameLv8.setEnabled(true);
-//		    	jbtnBuildCarLv8.setEnabled(true);
-//		    	jbtnSellAccessoriesLv8.setEnabled(true);
-//		        jbtnSellBodyLv8.setEnabled(true);
-//		        jbtnSellBrakesLv8.setEnabled(true);
-//		        jbtnSellCoolingLv8.setEnabled(true);
-//		        jbtnSellElectronicsLv8.setEnabled(true);
-//		        jbtnSellEngineLv8.setEnabled(true);
-//		        jbtnSellExaustLv8.setEnabled(true);
-//		        jbtnSellFuelLv8.setEnabled(true);
-//		        jbtnSellInteriorLv8.setEnabled(true);
-//		        jbtnSellSteeringLv8.setEnabled(true);
-//		        jbtnSellSuspensionLv8.setEnabled(true);
-//		        jbtnSellTransmissionLv8.setEnabled(true);
-//		        jbtnSellTiresLv8.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=9){
-//				jbtnPartsLv9.setEnabled(true);
-//		    	jbtnBuyBoxLv9.setEnabled(true);
-//		    	jbtnBuyFrameLv9.setEnabled(true);
-//		    	jbtnBuildCarLv9.setEnabled(true);
-//		    	jbtnSellAccessoriesLv9.setEnabled(true);
-//		        jbtnSellBodyLv9.setEnabled(true);
-//		        jbtnSellBrakesLv9.setEnabled(true);
-//		        jbtnSellCoolingLv9.setEnabled(true);
-//		        jbtnSellElectronicsLv9.setEnabled(true);
-//		        jbtnSellEngineLv9.setEnabled(true);
-//		        jbtnSellExaustLv9.setEnabled(true);
-//		        jbtnSellFuelLv9.setEnabled(true);
-//		        jbtnSellInteriorLv9.setEnabled(true);
-//		        jbtnSellSteeringLv9.setEnabled(true);
-//		        jbtnSellSuspensionLv9.setEnabled(true);
-//		        jbtnSellTransmissionLv9.setEnabled(true);
-//		        jbtnSellTiresLv9.setEnabled(true);
-//			}		
-//			if(CarMain.PlayerLevel >=10){
-//				jbtnPartsLv10.setEnabled(true);
-//		    	jbtnBuyBoxLv10.setEnabled(true);
-//		    	jbtnBuyFrameLv10.setEnabled(true);
-//		    	jbtnBuildCarLv10.setEnabled(true);
-//		    	jbtnSellAccessoriesLv10.setEnabled(true);
-//		        jbtnSellBodyLv10.setEnabled(true);
-//		        jbtnSellBrakesLv10.setEnabled(true);
-//		        jbtnSellCoolingLv10.setEnabled(true);
-//		        jbtnSellElectronicsLv10.setEnabled(true);
-//		        jbtnSellEngineLv10.setEnabled(true);
-//		        jbtnSellExaustLv10.setEnabled(true);
-//		        jbtnSellFuelLv10.setEnabled(true);
-//		        jbtnSellInteriorLv10.setEnabled(true);
-//		        jbtnSellSteeringLv10.setEnabled(true);
-//		        jbtnSellSuspensionLv10.setEnabled(true);
-//		        jbtnSellTransmissionLv10.setEnabled(true);
-//		        jbtnSellTiresLv10.setEnabled(true);
-//			}
-			//}
-		
-	//}
  
+    // Image Icons
+    
     final ImageIcon MoneyIcon = new ImageIcon("Images/Money.png");   
     final ImageIcon GarageIcon = new ImageIcon("Images/Garage.png");	
     final ImageIcon LockedIcon = new ImageIcon("Images/Locked.png");	
@@ -3779,552 +2820,680 @@ public class ClickerGame implements ActionListener {
 	final ImageIcon Ferrari_488Icon = new ImageIcon("Images/Ferrari_488.jpg");
 	
 
+	MainHolder CarMain = new MainHolder();
+    BoxesHolder Box = new BoxesHolder();
+    FramesHolder CarFrame = new FramesHolder();
+    PartHolder Part = new PartHolder();
+    BuildCarsClass BuildCarsClass = new BuildCarsClass();
+    CarLevel1Holder CarsLv1 = new CarLevel1Holder();
+    CarLevel2Holder CarsLv2 = new CarLevel2Holder();
+    CarLevel3Holder CarsLv3 = new CarLevel3Holder();
+    CarLevel4Holder CarsLv4 = new CarLevel4Holder();
+    CarLevel5Holder CarsLv5 = new CarLevel5Holder();
+    CarLevel6Holder CarsLv6 = new CarLevel6Holder();
+    CarLevel7Holder CarsLv7 = new CarLevel7Holder();
+    CarLevel8Holder CarsLv8 = new CarLevel8Holder();
+    CarLevel9Holder CarsLv9 = new CarLevel9Holder();
+    CarLevel10Holder CarsLv10 = new CarLevel10Holder();
 
-	
-  //  @Override
+    //Button Click
+    
+   @Override
     public void actionPerformed(ActionEvent ae) {
+	   
+	    //Money Button Click
+	   
         if(ae.getSource() == jbtnMoney) {
-            CarMain.Money +=1;
-            CarMain.MoneyClicks +=1;
+            CarMain.main[0] +=1;
+            CarMain.main[1] +=1;
         }
         
+        //Boxes Button Click
+        
         if(ae.getSource() == jbtnBoxes){
-        	CarMain.Boxes +=1;
-            CarMain.BoxesClicks +=1;          
-            if(CarMain.Boxes == 2){
-                CarMain.Boxes -=2;
-                if(CarMain.BoxLevel == 1){
-                    Box.BoxLv1.BoxCount +=1;                            
+        	CarMain.main[2] +=1;
+            CarMain.main[3] +=1;          
+            if(CarMain.main[2].equals("5")){
+                CarMain.main[2] =Integer.toString(Integer.parseInt(CarMain.main[2])-5);
+                if(CarMain.main[4].equals("1")){
+                    Box.boxes[1] +=1;                            
                     JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     }
-                if(CarMain.BoxLevel == 2){ 
+                if(CarMain.main[4].equals("2")){ 
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(2)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     }
-                if(CarMain.BoxLevel == 3){
+                if(CarMain.main[4].equals("3")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(3)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     }
-                if(CarMain.BoxLevel == 4){
+                if(CarMain.main[4].equals("4")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(4)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     }
                
-                if(CarMain.BoxLevel == 5){
+                if(CarMain.main[4].equals("5")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(5)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.BoxLv5.BoxCount +=1;
+                        Box.boxes[9] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     }
                
-                if(CarMain.BoxLevel == 6){
+                if(CarMain.main[4].equals("6")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(6)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.BoxLv5.BoxCount +=1;
+                        Box.boxes[9] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.BoxLv6.BoxCount +=1;
+                        Box.boxes[11] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     }
-                if(CarMain.BoxLevel == 7){
+                if(CarMain.main[4].equals("7")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(7)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.BoxLv5.BoxCount +=1;
+                        Box.boxes[9] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.BoxLv6.BoxCount +=1;
+                        Box.boxes[11] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.BoxLv7.BoxCount +=1;
+                        Box.boxes[13] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     }              
-                if(CarMain.BoxLevel == 8){
+                if(CarMain.main[4].equals("8")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(8)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.BoxLv5.BoxCount +=1;
+                        Box.boxes[9] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.BoxLv6.BoxCount +=1;
+                        Box.boxes[11] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.BoxLv7.BoxCount +=1;
+                        Box.boxes[13] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 8){
-                        Box.BoxLv8.BoxCount +=1;
+                        Box.boxes[15] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     }  
-                if(CarMain.BoxLevel == 9){
+                if(CarMain.main[4].equals("9")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(9)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.BoxLv5.BoxCount +=1;
+                        Box.boxes[9] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.BoxLv6.BoxCount +=1;
+                        Box.boxes[11] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.BoxLv7.BoxCount +=1;
+                        Box.boxes[13] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 8){
-                        Box.BoxLv8.BoxCount +=1;
+                        Box.boxes[15] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 9){
-                        Box.BoxLv9.BoxCount +=1;
+                        Box.boxes[17] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
                     }  
-                if(CarMain.BoxLevel == 10){
+                if(CarMain.main[4].equals("10")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(10)+1;
                     if (randomInt == 1){
-                        Box.BoxLv1.BoxCount +=1;
+                        Box.boxes[1] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.BoxLv2.BoxCount +=1;
+                        Box.boxes[3] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.BoxLv3.BoxCount +=1;
+                        Box.boxes[5] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.BoxLv4.BoxCount +=1;
+                        Box.boxes[7] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.BoxLv5.BoxCount +=1;
+                        Box.boxes[9] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.BoxLv6.BoxCount +=1;
+                        Box.boxes[11] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.BoxLv7.BoxCount +=1;
+                        Box.boxes[13] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 8){
-                        Box.BoxLv8.BoxCount +=1;
+                        Box.boxes[15] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 9){
-                        Box.BoxLv9.BoxCount +=1;
+                        Box.boxes[17] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                  
                     if (randomInt == 10){
-                        Box.BoxLv10.BoxCount +=1;
+                        Box.boxes[19] +=1;
                         JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
                     }     
             }
         
+        // Upgrade Player Level Button Click
+        
         if(ae.getSource() == jbtnUpgradeLevel){          	
         	for (int i =9; i >=0; i--){            		
-        		   if (CarMain.PlayerLevel == i){
-                   	if (CarMain.Money >= 2){
-                   		CarMain.Money -= 2;
-                   		CarMain.PlayerLevel +=1;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.PlayerLevel + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, PlayerIcon);}                      	
+        		   if (CarMain.main[5].equals(i)){
+                   	if (Integer.parseInt(CarMain.main[0]) >= 100*i){
+                   		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (100*i));
+                   		CarMain.main[5] +=1;
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[5] + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, PlayerIcon);}                      	
                    	else{                       	
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
                    }            		   
         	}
-        	if (CarMain.PlayerLevel == 10){
+        	if (CarMain.main[5].equals("10")){
  			   JOptionPane.showMessageDialog(null, "You have gained MAX Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
  		   }
         } 
-              
+        
+        // Upgrade Garage Level Button Click
+        
         if(ae.getSource() == jbtnUpgradeGarageLevel){          	
         	for (int i =9; i >=0; i--){            		
-        		   if (Garage.GarageLevel == i){
-                   	if (CarMain.Money >= 2){
-                   		CarMain.Money -= 2;
-                   		Garage.GarageLevel +=1;
-                   		Garage.GarageSlots +=25;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + Garage.GarageLevel + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, GarageIcon);}                      	
+        		   if (CarMain.main[6].equals(i)){
+                   	if (Integer.parseInt(CarMain.main[0]) >= 100*i){
+                   		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (100*i));
+                   		CarMain.main[6] +=1;
+                   		CarMain.main[7] +=25;
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[6] + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, GarageIcon);}                      	
                    	else{                       	
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
                    }            		   
         	}
-        	if (Garage.GarageLevel == 10){
+        	if (CarMain.main[6].equals("10")){
  			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
  		   }
         } 
         
+        // Upgrade Boxes Level Button Click
+        
         if(ae.getSource() == jbtnUpgradeBoxesLevel){          	
         	for (int i =9; i >=0; i--){            		
-        		   if (CarMain.BoxLevel == i){
-                   	if (CarMain.Money >= 2){
-                   		CarMain.Money -= 2;
-                   		CarMain.BoxLevel +=1;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.BoxLevel + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                      	
+        		   if (CarMain.main[4].equals(i)){
+                   	if (Integer.parseInt(CarMain.main[0]) >= 100*i){
+                   		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (100*i));
+                   		CarMain.main[4] +=1;
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[4] + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                      	
                    	else{                       	
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
                    }
         	}
-        	if (CarMain.BoxLevel == 10){
+        	if (CarMain.main[4].equals("10")){
   			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
   		   }
         }
         
+        // Buy Frame Level 1 Button Click
+        
         if(ae.getSource() == jbtnBuyFrameLv1){
-        	if (CarMain.PlayerLevel >=1){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv1.FrameCount +=1;
-        			CarMain.Money -=10;       			
+        	if (Integer.parseInt(CarMain.main[5]) >=1){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[0]))){
+        			CarFrame.frames[1] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[0])));      			
         			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 2 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv2){
-        	if (CarMain.PlayerLevel >=2){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv2.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=2){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[2]))){
+        			CarFrame.frames[3] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[2])));
         			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[2], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 3 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv3){
-        	if (CarMain.PlayerLevel >=3){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv3.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=3){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[4]))){
+        			CarFrame.frames[5] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[4])));
         			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[4], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 4 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv4){
-        	if (CarMain.PlayerLevel >=4){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv4.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=4){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[6]))){
+        			CarFrame.frames[7] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[6])));
         			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[6], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 5 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv5){
-        	if (CarMain.PlayerLevel >=5){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv5.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=5){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[8]))){
+        			CarFrame.frames[9] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[8])));
         			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[8], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 6 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv6){
-        	if (CarMain.PlayerLevel >=6){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv6.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=6){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[10]))){
+        			CarFrame.frames[11] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[10])));
         			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[10], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 7 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv7){
-        	if (CarMain.PlayerLevel >=7){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv7.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=7){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[12]))){
+        			CarFrame.frames[13] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[12])));
         			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[12], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 8 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv8){
-        	if (CarMain.PlayerLevel >=8){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv8.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=8){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[14]))){
+        			CarFrame.frames[15] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[14])));
         			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[14], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 9 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv9){
-        	if (CarMain.PlayerLevel >=9){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv9.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=9){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[16]))){
+        			CarFrame.frames[17] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[16])));
         			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[16], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
         	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         }
+        
+        // Buy Frame Level 10 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv10){
-        	if (CarMain.PlayerLevel >=10){
-        		if (CarMain.Money >= 10){
-        			CarFrame.FrameLv10.FrameCount +=1;
-        			CarMain.Money -=10;
+        	if (Integer.parseInt(CarMain.main[5]) >=10){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[18]))){
+        			CarFrame.frames[19] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[18])));
         			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[18], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
         		}
+        	}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
         }
         
+        // Buy Box Level 1 Button Click
+        
         if(ae.getSource() == jbtnBuyBoxLv1){
-        	if (CarMain.PlayerLevel >=1){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv1.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=1){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[0]))){
+        			Box.boxes[1] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[0])));
         			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[0], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 2 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv2){
-        	if (CarMain.PlayerLevel >=2){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv2.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=2){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[2]))){
+        			Box.boxes[3] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[2])));
         			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[2], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 3 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv3){
-        	if (CarMain.PlayerLevel >=3){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv3.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=3){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[4]))){
+        			Box.boxes[5] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[4])));
         			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[4], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 4 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv4){
-        	if (CarMain.PlayerLevel >=4){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv4.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=4){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[6]))){
+        			Box.boxes[7] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[6])));
         			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[6], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 5 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv5){
-        	if (CarMain.PlayerLevel >=5){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv5.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=5){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[8]))){
+        			Box.boxes[9] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[8])));
         			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[8], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 6 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv6){
-        	if (CarMain.PlayerLevel >=6){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv6.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=6){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[10]))){
+        			Box.boxes[11] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[10])));
         			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[10], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 7 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv7){
-        	if (CarMain.PlayerLevel >=7){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv7.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=7){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[12]))){
+        			Box.boxes[13] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[12])));;
         			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[12], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 8 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv8){
-        	if (CarMain.PlayerLevel >=8){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv8.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=8){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[14]))){
+        			Box.boxes[15] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[14])));
         			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[14], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 9 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv9){
-        	if (CarMain.PlayerLevel >=9){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv9.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=9){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[16]))){
+        			Box.boxes[17] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[16])));
         			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[16], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
         	}
+        	}
+        
+        // Buy Box Level 10 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv10){
-        	if (CarMain.PlayerLevel >=10){
-        		if (CarMain.Money >= 10){
-        			Box.BoxLv10.BoxCount +=1;
-        			CarMain.Money -= 10;
+        	if (Integer.parseInt(CarMain.main[5]) >=10){
+        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[18]))){
+        			Box.boxes[19] +=1;
+        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[18])));
         			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[18], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
         		}
+        	else{
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        	}
         	}
         
+        // Open Box Level 1 Button Click
         
         if(ae.getSource() == jbtnPartsLv1){
-        	if (Box.BoxLv1.BoxCount > 0){
-        		if(CarMain.BoxLevel >=1){
-        			if (CarMain.PlayerLevel >=1){
-        				Box.BoxLv1.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[1]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=1){
+        			if (Integer.parseInt(CarMain.main[5]) >=1){
+        				Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) - 1);
         				Random randomGenerator = new Random();
         				for (int i =0; i <2; i++ ){
         					int randomInt = randomGenerator.nextInt(13)+1;           					
                  		    if (randomInt == 1){
-                		    	Part.AccessoriesLv1.PartCount +=1;                 		    	
+                		    	Part.parts[1] +=1;                 		    	
                  		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
                 		    if (randomInt == 2){
-                		    	Part.BodyLv1.PartCount +=1;
+                		    	Part.parts[3] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
                 		    if (randomInt == 3){
-                		    	Part.BrakesLv1.PartCount +=1;
+                		    	Part.parts[5] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
                 		    if (randomInt == 4){
-                		    	Part.CoolingLv1.PartCount +=1;
+                		    	Part.parts[7] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
                 		    if (randomInt == 5){
-         		    	   		Part.ElectronicsLv1.PartCount +=1;
+         		    	   		Part.parts[9] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
                 		    if (randomInt == 6){
-         		    	   		Part.EngineLv1.PartCount +=1;             		    	   		
+         		    	   		Part.parts[11] +=1;             		    	   		
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
                 		    if (randomInt == 7){
-         		    	   		Part.ExaustLv1.PartCount +=1;
+         		    	   		Part.parts[13] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL !1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
                 		    if (randomInt == 8){
-         		    	   		Part.FuelLv1.PartCount +=1;
+         		    	   		Part.parts[15] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
                 		    if (randomInt == 9){
-         		    	   		Part.InteriorLv1.PartCount +=1;
+         		    	   		Part.parts[17] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
                 		    if (randomInt == 10){
-         		    	   		Part.SteeringLv1.PartCount +=1;
+         		    	   		Part.parts[19] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
                 		    if (randomInt == 11){
-         		    	   		Part.SuspensionLv1.PartCount +=1;
+         		    	   		Part.parts[21] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
                 		    if (randomInt == 12){
-         		    	   		Part.TransmissionLv1.PartCount +=1;
+         		    	   		Part.parts[23] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
                 		    if (randomInt == 13){
-         		    	   		Part.TiresLv1.PartCount +=1;
+         		    	   		Part.parts[25] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
         					}
         				}
@@ -4337,52 +3506,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 2 Button Click
+        
         if(ae.getSource() == jbtnPartsLv2){
-        	if (Box.BoxLv2.BoxCount > 0){
-        		if(CarMain.BoxLevel >=2){
-        			if (CarMain.PlayerLevel >=2){
-        				Box.BoxLv2.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[3]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=2){
+        			if (Integer.parseInt(CarMain.main[5]) >=2){
+        				Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) - 1);
         				Random randomGenerator = new Random();
         				for (int i =0; i <2; i++ ){
         					int randomInt = randomGenerator.nextInt(13)+1;     					
                 		    if (randomInt == 1){
-                		    	Part.AccessoriesLv2.PartCount +=1;
+                		    	Part.parts[27] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
                 		    if (randomInt == 2){
-                		    	Part.BodyLv2.PartCount +=1;
+                		    	Part.parts[29] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
                 		    if (randomInt == 3){
-                		    	Part.BrakesLv2.PartCount +=1;
+                		    	Part.parts[31] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
                 		    if (randomInt == 4){
-                		    	Part.CoolingLv2.PartCount +=1;
+                		    	Part.parts[33] +=1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
                 		    if (randomInt == 5){
-         		    	   		Part.ElectronicsLv2.PartCount +=1;
+         		    	   		Part.parts[35] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
                 		    if (randomInt == 6){
-         		    	   		Part.EngineLv2.PartCount +=1;
+         		    	   		Part.parts[37] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
                 		    if (randomInt == 7){
-         		    	   		Part.ExaustLv2.PartCount +=1;
+         		    	   		Part.parts[39] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
                 		    if (randomInt == 8){
-         		    	   		Part.FuelLv2.PartCount +=1;
+         		    	   		Part.parts[41] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
                 		    if (randomInt == 9){
-         		    	   		Part.InteriorLv2.PartCount +=1;
+         		    	   		Part.parts[43] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
                 		    if (randomInt == 10){
-         		    	   		Part.SteeringLv2.PartCount +=1;
+         		    	   		Part.parts[45] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
                 		    if (randomInt == 11){
-         		    	   		Part.SuspensionLv2.PartCount +=1;
+         		    	   		Part.parts[47]+=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
                 		    if (randomInt == 12){
-         		    	   		Part.TransmissionLv2.PartCount +=1;
+         		    	   		Part.parts[49] +=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
                 		    if (randomInt == 13){
-         		    	   		Part.TiresLv2.PartCount +=1;
+         		    	   		Part.parts[51]+=1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
         					}
         				}
@@ -4394,52 +3565,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 3 Button Click
+        
         if(ae.getSource() == jbtnPartsLv3){
-        	if (Box.BoxLv3.BoxCount > 0){
-        		if(CarMain.BoxLevel >=3){
-        			if (CarMain.PlayerLevel >=3){
-            		    Box.BoxLv3.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[5]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=3){
+        			if (Integer.parseInt(CarMain.main[5]) >=3){
+        				Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv3.PartCount +=1;
+            		    	Part.parts[53] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv3.PartCount +=1;
+            		    	Part.parts[55] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv3.PartCount +=1;
+            		    	Part.parts[57] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv3.PartCount +=1;
+            		    	Part.parts[59] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv3.PartCount +=1;
+     		    	   		Part.parts[61] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv3.PartCount +=1;
+     		    	   		Part.parts[63] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv3.PartCount +=1;
+     		    	   		Part.parts[65] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv3.PartCount +=1;
+     		    	   		Part.parts[67] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv3.PartCount +=1;
+     		    	   		Part.parts[69] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv3.PartCount +=1;
+     		    	   		Part.parts[71] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv3.PartCount +=1;
+     		    	   		Part.parts[73] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv3.PartCount +=1;
+     		    	   		Part.parts[75] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv3.PartCount +=1;
+     		    	   		Part.parts[77] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -4451,52 +3624,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 4 Button Click
+        
         if(ae.getSource() == jbtnPartsLv4){
-        	if (Box.BoxLv4.BoxCount > 0){
-        		if(CarMain.BoxLevel >=4){
-        			if (CarMain.PlayerLevel >=4){
-            		    Box.BoxLv4.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[7]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=4){
+        			if (Integer.parseInt(CarMain.main[5]) >=4){
+        				Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv4.PartCount +=1;
+            		    	Part.parts[79] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv4.PartCount +=1;
+            		    	Part.parts[81] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv4.PartCount +=1;
+            		    	Part.parts[83] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv4.PartCount +=1;
+            		    	Part.parts[85] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv4.PartCount +=1;
+     		    	   		Part.parts[87] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv4.PartCount +=1;
+     		    	   		Part.parts[89] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv4.PartCount +=1;
+     		    	   		Part.parts[91] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv4.PartCount +=1;
+     		    	   		Part.parts[93] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv4.PartCount +=1;
+     		    	   		Part.parts[95] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv4.PartCount +=1;
+     		    	   		Part.parts[97] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv4.PartCount +=1;
+     		    	   		Part.parts[99] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv4.PartCount +=1;
+     		    	   		Part.parts[101] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv4.PartCount +=1;
+     		    	   		Part.parts[103] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -4508,52 +3683,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 5 Button Click
+        
         if(ae.getSource() == jbtnPartsLv5){
-        	if (Box.BoxLv5.BoxCount > 0){
-        		if(CarMain.BoxLevel >=5){
-        			if (CarMain.PlayerLevel >=5){
-            		    Box.BoxLv5.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[9]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=5){
+        			if (Integer.parseInt(CarMain.main[5]) >=5){
+        				Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv5.PartCount +=1;
+            		    	Part.parts[105] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv5.PartCount +=1;
+            		    	Part.parts[107] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv5.PartCount +=1;
+            		    	Part.parts[109] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv5.PartCount +=1;
+            		    	Part.parts[111] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv5.PartCount +=1;
+     		    	   		Part.parts[113] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv5.PartCount +=1;
+     		    	   		Part.parts[115] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv5.PartCount +=1;
+     		    	   		Part.parts[117] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv5.PartCount +=1;
+     		    	   		Part.parts[119] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv5.PartCount +=1;
+     		    	   		Part.parts[121] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv5.PartCount +=1;
+     		    	   		Part.parts[123] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv5.PartCount +=1;
+     		    	   		Part.parts[125] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv5.PartCount +=1;
+     		    	   		Part.parts[127] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmisson LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv5.PartCount +=1;
+     		    	   		Part.parts[129] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -4565,52 +3742,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 6 Button Click
+        
         if(ae.getSource() == jbtnPartsLv6){
-        	if (Box.BoxLv6.BoxCount > 0){
-        		if(CarMain.BoxLevel >=6){
-        			if (CarMain.PlayerLevel >=6){
-            		    Box.BoxLv6.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[11]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=6){
+        			if (Integer.parseInt(CarMain.main[5]) >=6){
+        				Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv6.PartCount +=1;
+            		    	Part.parts[131] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv6.PartCount +=1;
+            		    	Part.parts[133] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv6.PartCount +=1;
+            		    	Part.parts[135] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv6.PartCount +=1;
+            		    	Part.parts[137] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv6.PartCount +=1;
+     		    	   		Part.parts[139] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv6.PartCount +=1;
+     		    	   		Part.parts[141] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv6.PartCount +=1;
+     		    	   		Part.parts[143] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv6.PartCount +=1;
+     		    	   		Part.parts[145] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv6.PartCount +=1;
+     		    	   		Part.parts[147] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv6.PartCount +=1;
+     		    	   		Part.parts[149] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv6.PartCount +=1;
+     		    	   		Part.parts[151] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv6.PartCount +=1;
+     		    	   		Part.parts[153] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv6.PartCount +=1;
+     		    	   		Part.parts[155] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -4621,53 +3800,55 @@ public class ClickerGame implements ActionListener {
         	else{
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
- 
+        
+        // Open Box Level 7 Button Click
+        
         if(ae.getSource() == jbtnPartsLv7){
-        	if (Box.BoxLv7.BoxCount > 0){
-        		if(CarMain.BoxLevel >=7){
-        			if (CarMain.PlayerLevel >=7){
-            		    Box.BoxLv7.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[13]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=7){
+        			if (Integer.parseInt(CarMain.main[5]) >=7){
+        				Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv7.PartCount +=1;
+            		    	Part.parts[157] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv7.PartCount +=1;
+            		    	Part.parts[159] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv7.PartCount +=1;
+            		    	Part.parts[161] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv7.PartCount +=1;
+            		    	Part.parts[163] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv7.PartCount +=1;
+     		    	   		Part.parts[165] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv7.PartCount +=1;
+     		    	   		Part.parts[167] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv7.PartCount +=1;
+     		    	   		Part.parts[169] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv7.PartCount +=1;
+     		    	   		Part.parts[171] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv7.PartCount +=1;
+     		    	   		Part.parts[173] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv7.PartCount +=1;
+     		    	   		Part.parts[175] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv7.PartCount +=1;
+     		    	   		Part.parts[177] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv7.PartCount +=1;
+     		    	   		Part.parts[179] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv7.PartCount +=1;
+     		    	   		Part.parts[181] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -4679,52 +3860,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 8 Button Click
+        
         if(ae.getSource() == jbtnPartsLv8){
-        	if (Box.BoxLv8.BoxCount > 0){
-        		if(CarMain.BoxLevel >=8){
-        			if (CarMain.PlayerLevel >=8){
-            		    Box.BoxLv8.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[15]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=8){
+        			if (Integer.parseInt(CarMain.main[5]) >=8){
+        				Box.boxes[15] = Integer.toString(Integer.parseInt(Box.boxes[15]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv8.PartCount +=1;
+            		    	Part.parts[183] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv8.PartCount +=1;
+            		    	Part.parts[185] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv8.PartCount +=1;
+            		    	Part.parts[187] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv8.PartCount +=1;
+            		    	Part.parts[189] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv8.PartCount +=1;
+     		    	   		Part.parts[191] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv8.PartCount +=1;
+     		    	   		Part.parts[193] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv8.PartCount +=1;
+     		    	   		Part.parts[195] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}                    		
      		    	   	if (randomInt == 8){
-     		    	   		Part.FuelLv8.PartCount +=1;
+     		    	   		Part.parts[197] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv8.PartCount +=1;
+     		    	   		Part.parts[199] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv8.PartCount +=1;
+     		    	   		Part.parts[201] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv8.PartCount +=1;
+     		    	   		Part.parts[203] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv8.PartCount +=1;
+     		    	   		Part.parts[205] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv8.PartCount +=1;
+     		    	   		Part.parts[207] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
      		    	   		}
         				}
@@ -4736,52 +3919,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         }
         
+        // Open Box Level 9 Button Click
+        
         if(ae.getSource() == jbtnPartsLv9){
-        	if (Box.BoxLv9.BoxCount > 0){
-        		if(CarMain.BoxLevel >=9){
-        			if (CarMain.PlayerLevel >=9){
-            		    Box.BoxLv9.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[17]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=9){
+        			if (Integer.parseInt(CarMain.main[5]) >=9){
+        				Box.boxes[17] = Integer.toString(Integer.parseInt(Box.boxes[17]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv9.PartCount +=1;
+            		    	Part.parts[209] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv9.PartCount +=1;
+            		    	Part.parts[211] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv9.PartCount +=1;
+            		    	Part.parts[213] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv9.PartCount +=1;
+            		    	Part.parts[215] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv9.PartCount +=1;
+     		    	   		Part.parts[217] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv9.PartCount +=1;
+     		    	   		Part.parts[219] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv9.PartCount +=1;
+     		    	   		Part.parts[221] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv9.PartCount +=1;
+     		    	   		Part.parts[223] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv9.PartCount +=1;
+     		    	   		Part.parts[225] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv9.PartCount +=1;
+     		    	   		Part.parts[227] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv9.PartCount +=1;
+     		    	   		Part.parts[229] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv9.PartCount +=1;
+     		    	   		Part.parts[231] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv9.PartCount +=1;
+     		    	   		Part.parts[233] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -4793,52 +3978,54 @@ public class ClickerGame implements ActionListener {
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
         
+        // Open Box Level 10 Button Click
+        
         if(ae.getSource() == jbtnPartsLv10){
-        	if (Box.BoxLv10.BoxCount > 0){
-        		if(CarMain.BoxLevel >=10){
-        			if (CarMain.PlayerLevel >=10){
-            		    Box.BoxLv10.BoxCount -=1;
+        	if (Integer.parseInt(Box.boxes[19]) > 0){
+        		if (Integer.parseInt(CarMain.main[4]) >=10){
+        			if (Integer.parseInt(CarMain.main[5]) >=10){
+        				Box.boxes[19] = Integer.toString(Integer.parseInt(Box.boxes[19]) - 1);
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.AccessoriesLv10.PartCount +=1;
+            		    	Part.parts[235] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.BodyLv10.PartCount +=1;
+            		    	Part.parts[237] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.BrakesLv10.PartCount +=1;
+            		    	Part.parts[239] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.CoolingLv10.PartCount +=1;
+            		    	Part.parts[241] +=1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-     		    	   		Part.ElectronicsLv10.PartCount +=1;
+     		    	   		Part.parts[243] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-     		    	   		Part.EngineLv10.PartCount +=1;
+     		    	   		Part.parts[245] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-     		    	   		Part.ExaustLv10.PartCount +=1;
+     		    	   		Part.parts[247] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-     		    	   		Part.FuelLv10.PartCount +=1;
+     		    	   		Part.parts[249]+=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-     		    	   		Part.InteriorLv10.PartCount +=1;
+     		    	   		Part.parts[251] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-     		    	   		Part.SteeringLv10.PartCount +=1;
+     		    	   		Part.parts[253] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-     		    	   		Part.SuspensionLv10.PartCount +=1;
+     		    	   		Part.parts[255] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-     		    	   		Part.TransmissionLv10.PartCount +=1;
+     		    	   		Part.parts[257] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-     		    	   		Part.TiresLv10.PartCount +=1;
+     		    	   		Part.parts[259] +=1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}          					   
         				}
@@ -4849,5469 +4036,1564 @@ public class ClickerGame implements ActionListener {
         	else{
         		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
         	}
-            
-        
+               
+        // Sell Accessories Level 1 Button Click
+         
         if(ae.getSource() == jbtnSellAccessoriesLv1){
-        	if (Part.AccessoriesLv1.PartCount >0){
-        		Part.AccessoriesLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[1]) >0){
+        		Part.parts[1] = Integer.toString(Integer.parseInt(Part.parts[1]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[0])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For: " +Part.parts[0], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
+            
+        // Sell Accessories Level 2 Button Click
+      	
         }
         if(ae.getSource() == jbtnSellAccessoriesLv2){
-        	if (Part.AccessoriesLv2.PartCount >0){
-        		Part.AccessoriesLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[27]) >0){
+        		Part.parts[27] = Integer.toString(Integer.parseInt(Part.parts[27]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[26])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For: " +Part.parts[26], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 3 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv3){
-        	if (Part.AccessoriesLv3.PartCount >0){
-        		Part.AccessoriesLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[53]) >0){
+        		Part.parts[53] = Integer.toString(Integer.parseInt(Part.parts[53]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[52])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For: " +Part.parts[52], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 4 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv4){
-        	if (Part.AccessoriesLv4.PartCount >0){
-        		Part.AccessoriesLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[79]) >0){
+        		Part.parts[79] = Integer.toString(Integer.parseInt(Part.parts[79]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[78])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For: " +Part.parts[78], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 5 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv5){
-        	if (Part.AccessoriesLv5.PartCount >0){
-        		Part.AccessoriesLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[105]) >0){
+        		Part.parts[105] = Integer.toString(Integer.parseInt(Part.parts[105]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[104])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For: " +Part.parts[104], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 6 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv6){
-        	if (Part.AccessoriesLv6.PartCount >0){
-        		Part.AccessoriesLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[131]) >0){
+        		Part.parts[131] = Integer.toString(Integer.parseInt(Part.parts[131]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[130])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For: " +Part.parts[130], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 7 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv7){
-        	if (Part.AccessoriesLv7.PartCount >0){
-        		Part.AccessoriesLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[157]) >0){
+        		Part.parts[157] = Integer.toString(Integer.parseInt(Part.parts[157]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[156])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For: " +Part.parts[156], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 8 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv8){
-        	if (Part.AccessoriesLv8.PartCount >0){
-        		Part.AccessoriesLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[183]) >0){
+        		Part.parts[183] = Integer.toString(Integer.parseInt(Part.parts[183]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[182])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For: " +Part.parts[182], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Accessories Level 9 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv9){
-        	if (Part.AccessoriesLv9.PartCount >0){
-        		Part.AccessoriesLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[209]) >0){
+        		Part.parts[209] = Integer.toString(Integer.parseInt(Part.parts[209]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[208])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For: " +Part.parts[208], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+         // Sell Accessories Level 10 Button Click
+  
         if(ae.getSource() == jbtnSellAccessoriesLv10){
-        	if (Part.AccessoriesLv10.PartCount >0){
-        		Part.AccessoriesLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[235]) >0){
+        		Part.parts[235] = Integer.toString(Integer.parseInt(Part.parts[235]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[234])));
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For: " +Part.parts[234], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Body Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv1){
-        	if (Part.BodyLv1.PartCount >0){
-        		Part.BodyLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[3]) >0){
+        		Part.parts[3] = Integer.toString(Integer.parseInt(Part.parts[3]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[2])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For: " +Part.parts[2], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv2){
-        	if (Part.BodyLv2.PartCount >0){
-        		Part.BodyLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[29]) >0){
+        		Part.parts[29] = Integer.toString(Integer.parseInt(Part.parts[29]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[28])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For: " +Part.parts[28], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv3){
-        	if (Part.BodyLv3.PartCount >0){
-        		Part.BodyLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[55]) >0){
+        		Part.parts[55] = Integer.toString(Integer.parseInt(Part.parts[55]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[54])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVLFor: " + Part.parts[54], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv4){
-        	if (Part.BodyLv4.PartCount >0){
-        		Part.BodyLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[81]) >0){
+        		Part.parts[81] = Integer.toString(Integer.parseInt(Part.parts[81]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[80])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For: " +Part.parts[80], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv5){
-        	if (Part.BodyLv5.PartCount >0){
-        		Part.BodyLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[107]) >0){
+        		Part.parts[107] = Integer.toString(Integer.parseInt(Part.parts[107]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[106])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For: " +Part.parts[106], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv6){
-        	if (Part.BodyLv6.PartCount >0){
-        		Part.BodyLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[133]) >0){
+        		Part.parts[133] = Integer.toString(Integer.parseInt(Part.parts[133]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[132])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For: " +Part.parts[132], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv7){
-        	if (Part.BodyLv7.PartCount >0){
-        		Part.BodyLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[159]) >0){
+        		Part.parts[159] = Integer.toString(Integer.parseInt(Part.parts[159]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[158])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For: " +Part.parts[158], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv8){
-        	if (Part.BodyLv8.PartCount >0){
-        		Part.BodyLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[185]) >0){
+        		Part.parts[185] = Integer.toString(Integer.parseInt(Part.parts[185]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[184])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For: " +Part.parts[184], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv9){
-        	if (Part.BodyLv9.PartCount >0){
-        		Part.BodyLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[211]) >0){
+        		Part.parts[211] = Integer.toString(Integer.parseInt(Part.parts[211]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[210])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For: " +Part.parts[210], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Body Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellBodyLv10){
-        	if (Part.BodyLv10.PartCount >0){
-        		Part.BodyLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        	if (Integer.parseInt(Part.parts[237]) >0){
+        		Part.parts[237] = Integer.toString(Integer.parseInt(Part.parts[237]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[236])));
+        		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For: " +Part.parts[236], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Brakes Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellBrakesLv1){
-        	if (Part.BrakesLv1.PartCount >0){
-        		Part.BrakesLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-        if(ae.getSource() == jbtnSellBrakesLv2){
-        	if (Part.BrakesLv2.PartCount >0){
-        		Part.BrakesLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv3){
-        	if (Part.BrakesLv3.PartCount >0){
-        		Part.BrakesLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv4){
-        	if (Part.BrakesLv4.PartCount >0){
-        		Part.BrakesLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv5){
-        	if (Part.BrakesLv5.PartCount >0){
-        		Part.BrakesLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv6){
-        	if (Part.BrakesLv6.PartCount >0){
-        		Part.BrakesLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv7){
-        	if (Part.BrakesLv7.PartCount >0){
-        		Part.BrakesLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv8){
-        	if (Part.BrakesLv8.PartCount >0){
-        		Part.BrakesLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv9){
-        	if (Part.BrakesLv9.PartCount >0){
-        		Part.BrakesLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
-        	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
-        	
-        }
-
-        if(ae.getSource() == jbtnSellBrakesLv10){
-        	if (Part.BrakesLv10.PartCount >0){
-        		Part.BrakesLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	if (Integer.parseInt(Part.parts[5]) >0){
+        		Part.parts[5] = Integer.toString(Integer.parseInt(Part.parts[5]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[4])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For: " +Part.parts[4], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Brakes Level 2 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv2){
+        	if (Integer.parseInt(Part.parts[31]) >0){
+        		Part.parts[31] = Integer.toString(Integer.parseInt(Part.parts[31]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[30])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For: " +Part.parts[30], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 3 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv3){
+        	if (Integer.parseInt(Part.parts[57]) >0){
+        		Part.parts[57] = Integer.toString(Integer.parseInt(Part.parts[57]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[56])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For: " +Part.parts[56], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 4 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv4){
+        	if (Integer.parseInt(Part.parts[83]) >0){
+        		Part.parts[83] = Integer.toString(Integer.parseInt(Part.parts[83]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[82])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For: " +Part.parts[82], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 5 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv5){
+        	if (Integer.parseInt(Part.parts[109]) >0){
+        		Part.parts[109] = Integer.toString(Integer.parseInt(Part.parts[109]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[108])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For: " +Part.parts[108], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 6 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv6){
+        	if (Integer.parseInt(Part.parts[135]) >0){
+        		Part.parts[135] = Integer.toString(Integer.parseInt(Part.parts[135]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[134])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For: " +Part.parts[134], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 7 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv7){
+        	if (Integer.parseInt(Part.parts[161]) >0){
+        		Part.parts[161] = Integer.toString(Integer.parseInt(Part.parts[161]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[160])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For: " +Part.parts[160], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 8 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv8){
+        	if (Integer.parseInt(Part.parts[187]) >0){
+        		Part.parts[187] = Integer.toString(Integer.parseInt(Part.parts[187]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[186])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For: " +Part.parts[186], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 9 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv9){
+        	if (Integer.parseInt(Part.parts[213]) >0){
+        		Part.parts[213] = Integer.toString(Integer.parseInt(Part.parts[213]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[212])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For: " +Part.parts[212], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Brakes Level 10 Button Click
+ 
+        if(ae.getSource() == jbtnSellBrakesLv10){
+        	if (Integer.parseInt(Part.parts[239]) >0){
+        		Part.parts[239] = Integer.toString(Integer.parseInt(Part.parts[239]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[238])));
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For: " +Part.parts[238], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        	else{
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        	
+        }
+        
+        // Sell Cooling Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellCoolingLv1){
-        	if (Part.CoolingLv1.PartCount >0){
-        		Part.CoolingLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[7]) >0){
+        		Part.parts[7] = Integer.toString(Integer.parseInt(Part.parts[7]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[6])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For: " +Part.parts[6], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
-
+        
+        // Sell Cooling Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellCoolingLv2){
-        	if (Part.CoolingLv2.PartCount >0){
-        		Part.CoolingLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[33]) >0){
+        		Part.parts[33] = Integer.toString(Integer.parseInt(Part.parts[33]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[32])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For: " +Part.parts[32], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
+        
+        // Sell Cooling Level 3 Button Click
         
         if(ae.getSource() == jbtnSellCoolingLv3){
-        	if (Part.CoolingLv3.PartCount >0){
-        		Part.CoolingLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[59]) >0){
+        		Part.parts[59] = Integer.toString(Integer.parseInt(Part.parts[59]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[58])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For: " +Part.parts[58], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 4 Button Click
+      
         if(ae.getSource() == jbtnSellCoolingLv4){
-        	if (Part.CoolingLv4.PartCount >0){
-        		Part.CoolingLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[85]) >0){
+        		Part.parts[85] = Integer.toString(Integer.parseInt(Part.parts[85]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[84])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For: " +Part.parts[84], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 5 Button Click
+  
         if(ae.getSource() == jbtnSellCoolingLv1){
-        	if (Part.CoolingLv5.PartCount >0){
-        		Part.CoolingLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[111]) >0){
+        		Part.parts[111] = Integer.toString(Integer.parseInt(Part.parts[111]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[110])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For: " +Part.parts[110], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellCoolingLv6){
-        	if (Part.CoolingLv6.PartCount >0){
-        		Part.CoolingLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[137]) >0){
+        		Part.parts[137] = Integer.toString(Integer.parseInt(Part.parts[137]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[136])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For: " +Part.parts[136], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 7 Button Click
+  
         if(ae.getSource() == jbtnSellCoolingLv7){
-        	if (Part.CoolingLv7.PartCount >0){
-        		Part.CoolingLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[163]) >0){
+        		Part.parts[163] = Integer.toString(Integer.parseInt(Part.parts[163]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[162])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For: " +Part.parts[162], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellCoolingLv8){
-        	if (Part.CoolingLv8.PartCount >0){
-        		Part.CoolingLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[189]) >0){
+        		Part.parts[189] = Integer.toString(Integer.parseInt(Part.parts[189]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[188])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For: " +Part.parts[188], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellCoolingLv9){
-        	if (Part.CoolingLv9.PartCount >0){
-        		Part.CoolingLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[215]) >0){
+        		Part.parts[215] = Integer.toString(Integer.parseInt(Part.parts[215]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[214])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL FFor: " +Part.parts[214], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Cooling Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellCoolingLv10){
-        	if (Part.CoolingLv10.PartCount >0){
-        		Part.CoolingLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        	if (Integer.parseInt(Part.parts[241]) >0){
+        		Part.parts[241] = Integer.toString(Integer.parseInt(Part.parts[241]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[240])));
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For: " +Part.parts[240], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv1){
-        	if (Part.ElectronicsLv1.PartCount >0){
-        		Part.ElectronicsLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[9]) >0){
+        		Part.parts[9] = Integer.toString(Integer.parseInt(Part.parts[9]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[8])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For: " +Part.parts[8], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
-
+        
+        // Sell Electronics Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv2){
-        	if (Part.ElectronicsLv2.PartCount >0){
-        		Part.ElectronicsLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[35]) >0){
+        		Part.parts[35] = Integer.toString(Integer.parseInt(Part.parts[35]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[34])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For: " +Part.parts[34], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv3){
-        	if (Part.ElectronicsLv3.PartCount >0){
-        		Part.ElectronicsLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[61]) >0){
+        		Part.parts[61] = Integer.toString(Integer.parseInt(Part.parts[61]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[60])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For: " +Part.parts[60], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv4){
-        	if (Part.ElectronicsLv4.PartCount >0){
-        		Part.ElectronicsLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[87]) >0){
+        		Part.parts[87] = Integer.toString(Integer.parseInt(Part.parts[87]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[86])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For: " +Part.parts[86], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv5){
-        	if (Part.ElectronicsLv5.PartCount >0){
-        		Part.ElectronicsLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[113]) >0){
+        		Part.parts[113] = Integer.toString(Integer.parseInt(Part.parts[113]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[112])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For: " +Part.parts[112], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv6){
-        	if (Part.ElectronicsLv6.PartCount >0){
-        		Part.ElectronicsLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[139]) >0){
+        		Part.parts[139] = Integer.toString(Integer.parseInt(Part.parts[139]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[138])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For: " +Part.parts[138], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv7){
-        	if (Part.ElectronicsLv7.PartCount >0){
-        		Part.ElectronicsLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[165]) >0){
+        		Part.parts[165] = Integer.toString(Integer.parseInt(Part.parts[165]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[164])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For: " +Part.parts[164], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv8){
-        	if (Part.ElectronicsLv8.PartCount >0){
-        		Part.ElectronicsLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[191]) >0){
+        		Part.parts[191] = Integer.toString(Integer.parseInt(Part.parts[191]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[190])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For: " +Part.parts[190], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv9){
-        	if (Part.ElectronicsLv9.PartCount >0){
-        		Part.ElectronicsLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[217]) >0){
+        		Part.parts[217] = Integer.toString(Integer.parseInt(Part.parts[217]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[216])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For: " +Part.parts[216], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Electronics Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellElectronicsLv10){
-        	if (Part.ElectronicsLv10.PartCount >0){
-        		Part.ElectronicsLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        	if (Integer.parseInt(Part.parts[243]) >0){
+        		Part.parts[243] = Integer.toString(Integer.parseInt(Part.parts[243]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[242])));
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For: " +Part.parts[242], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv1){
-        	if (Part.EngineLv1.PartCount >0){
-        		Part.EngineLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[11]) >0){
+        		Part.parts[11] = Integer.toString(Integer.parseInt(Part.parts[11]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[10])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For For: " +Part.parts[10], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv2){
-        	if (Part.EngineLv2.PartCount >0){
-        		Part.EngineLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[37]) >0){
+        		Part.parts[37] = Integer.toString(Integer.parseInt(Part.parts[37]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[36])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For: " +Part.parts[36], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv3){
-        	if (Part.EngineLv3.PartCount >0){
-        		Part.EngineLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[63]) >0){
+        		Part.parts[63] = Integer.toString(Integer.parseInt(Part.parts[63]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[62])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For: " +Part.parts[62], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv4){
-        	if (Part.EngineLv4.PartCount >0){
-        		Part.EngineLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[89]) >0){
+        		Part.parts[89] = Integer.toString(Integer.parseInt(Part.parts[89]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[88])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For: " +Part.parts[88], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv5){
-        	if (Part.EngineLv5.PartCount >0){
-        		Part.EngineLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[115]) >0){
+        		Part.parts[115] = Integer.toString(Integer.parseInt(Part.parts[115]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[114])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For: " +Part.parts[114], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv6){
-        	if (Part.EngineLv6.PartCount >0){
-        		Part.EngineLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[141]) >0){
+        		Part.parts[141] = Integer.toString(Integer.parseInt(Part.parts[141]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[140])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For: " +Part.parts[140], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv7){
-        	if (Part.EngineLv7.PartCount >0){
-        		Part.EngineLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[167]) >0){
+        		Part.parts[167] = Integer.toString(Integer.parseInt(Part.parts[167]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[166])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For: " +Part.parts[166], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv8){
-        	if (Part.EngineLv8.PartCount >0){
-        		Part.EngineLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[193]) >0){
+        		Part.parts[193] = Integer.toString(Integer.parseInt(Part.parts[193]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[192])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For: " +Part.parts[192], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv9){
-        	if (Part.EngineLv9.PartCount >0){
-        		Part.EngineLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[219]) >0){
+        		Part.parts[219] = Integer.toString(Integer.parseInt(Part.parts[219]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[218])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For: " +Part.parts[218], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Engine Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellEngineLv10){
-        	if (Part.EngineLv10.PartCount >0){
-        		Part.EngineLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        	if (Integer.parseInt(Part.parts[245]) >0){
+        		Part.parts[245] = Integer.toString(Integer.parseInt(Part.parts[245]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[244])));
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For: " +Part.parts[244], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv1){
-        	if (Part.ExaustLv1.PartCount >0){
-        		Part.ExaustLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[13]) >0){
+        		Part.parts[13] = Integer.toString(Integer.parseInt(Part.parts[13]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[12])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For: " +Part.parts[12], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv2){
-        	if (Part.ExaustLv2.PartCount >0){
-        		Part.ExaustLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[39]) >0){
+        		Part.parts[39] = Integer.toString(Integer.parseInt(Part.parts[39]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[38])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For: " +Part.parts[38], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv3){
-        	if (Part.ExaustLv3.PartCount >0){
-        		Part.ExaustLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[65]) >0){
+        		Part.parts[65] = Integer.toString(Integer.parseInt(Part.parts[65]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[64])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For: " +Part.parts[64], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv4){
-        	if (Part.ExaustLv4.PartCount >0){
-        		Part.ExaustLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[91]) >0){
+        		Part.parts[91] = Integer.toString(Integer.parseInt(Part.parts[91]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[90])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For: " +Part.parts[90], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv5){
-        	if (Part.ExaustLv5.PartCount >0){
-        		Part.ExaustLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[117]) >0){
+        		Part.parts[117] = Integer.toString(Integer.parseInt(Part.parts[117]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[116])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For: " +Part.parts[116], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv6){
-        	if (Part.ExaustLv6.PartCount >0){
-        		Part.ExaustLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[143]) >0){
+        		Part.parts[143] = Integer.toString(Integer.parseInt(Part.parts[143]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[142])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For: " +Part.parts[142], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv7){
-        	if (Part.ExaustLv7.PartCount >0){
-        		Part.ExaustLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[169]) >0){
+        		Part.parts[169] = Integer.toString(Integer.parseInt(Part.parts[169]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[168])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For: " +Part.parts[168], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv8){
-        	if (Part.ExaustLv8.PartCount >0){
-        		Part.ExaustLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[195]) >0){
+        		Part.parts[195] = Integer.toString(Integer.parseInt(Part.parts[195]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[194])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For: " +Part.parts[194], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv9){
-        	if (Part.ExaustLv9.PartCount >0){
-        		Part.ExaustLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[221]) >0){
+        		Part.parts[221] = Integer.toString(Integer.parseInt(Part.parts[221]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[220])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For: " +Part.parts[220], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Exaust Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellExaustLv10){
-        	if (Part.ExaustLv10.PartCount >0){
-        		Part.ExaustLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        	if (Integer.parseInt(Part.parts[247]) >0){
+        		Part.parts[247] = Integer.toString(Integer.parseInt(Part.parts[247]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[246])));
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For: " +Part.parts[246], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv1){
-        	if (Part.FuelLv1.PartCount >0){
-        		Part.FuelLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[15]) >0){
+        		Part.parts[15] = Integer.toString(Integer.parseInt(Part.parts[15]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[14])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For: " +Part.parts[14], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv2){
-        	if (Part.FuelLv2.PartCount >0){
-        		Part.FuelLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[41]) >0){
+        		Part.parts[41] = Integer.toString(Integer.parseInt(Part.parts[41]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[40])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For: " +Part.parts[40], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv3){
-        	if (Part.FuelLv3.PartCount >0){
-        		Part.FuelLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[67]) >0){
+        		Part.parts[67] = Integer.toString(Integer.parseInt(Part.parts[67]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[66])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For: " +Part.parts[66], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv4){
-        	if (Part.FuelLv4.PartCount >0){
-        		Part.FuelLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[93]) >0){
+        		Part.parts[93] = Integer.toString(Integer.parseInt(Part.parts[93]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[92])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For: " +Part.parts[92], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv5){
-        	if (Part.FuelLv5.PartCount >0){
-        		Part.FuelLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[119]) >0){
+        		Part.parts[119] = Integer.toString(Integer.parseInt(Part.parts[119]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[118])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For: " +Part.parts[118], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv6){
-        	if (Part.FuelLv6.PartCount >0){
-        		Part.FuelLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[145]) >0){
+        		Part.parts[145] = Integer.toString(Integer.parseInt(Part.parts[145]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[144])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL FFor: " +Part.parts[144], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv7){
-        	if (Part.FuelLv7.PartCount >0){
-        		Part.FuelLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[171]) >0){
+        		Part.parts[171] = Integer.toString(Integer.parseInt(Part.parts[171]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[170])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For: " +Part.parts[170], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv8){
-        	if (Part.FuelLv8.PartCount >0){
-        		Part.FuelLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[197]) >0){
+        		Part.parts[197] = Integer.toString(Integer.parseInt(Part.parts[197]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[196])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For: " +Part.parts[196], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv9){
-        	if (Part.FuelLv9.PartCount >0){
-        		Part.FuelLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[223]) >0){
+        		Part.parts[223] = Integer.toString(Integer.parseInt(Part.parts[223]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[222])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For: " +Part.parts[222], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Fuel Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellFuelLv10){
-        	if (Part.FuelLv10.PartCount >0){
-        		Part.FuelLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        	if (Integer.parseInt(Part.parts[249]) >0){
+        		Part.parts[249] = Integer.toString(Integer.parseInt(Part.parts[249]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[248])));
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For: " +Part.parts[248], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv1){
-        	if (Part.InteriorLv1.PartCount >0){
-        		Part.InteriorLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[17]) >0){
+        		Part.parts[17] = Integer.toString(Integer.parseInt(Part.parts[17]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[16])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL LVL For: " +Part.parts[16], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
-        
+                
+        // Sell Interior Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv2){
-        	if (Part.InteriorLv2.PartCount >0){
-        		Part.InteriorLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[43]) >0){
+        		Part.parts[43] = Integer.toString(Integer.parseInt(Part.parts[43]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[42])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For: " +Part.parts[42], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv3){
-        	if (Part.InteriorLv3.PartCount >0){
-        		Part.InteriorLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[69]) >0){
+        		Part.parts[69] = Integer.toString(Integer.parseInt(Part.parts[69]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[68])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For: " +Part.parts[68], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv4){
-        	if (Part.InteriorLv4.PartCount >0){
-        		Part.InteriorLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[95]) >0){
+        		Part.parts[95] = Integer.toString(Integer.parseInt(Part.parts[95]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[94])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For: " +Part.parts[94], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv5){
-        	if (Part.InteriorLv5.PartCount >0){
-        		Part.InteriorLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[121]) >0){
+        		Part.parts[121] = Integer.toString(Integer.parseInt(Part.parts[121]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[120])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For: " +Part.parts[120], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv6){
-        	if (Part.InteriorLv6.PartCount >0){
-        		Part.InteriorLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[147]) >0){
+        		Part.parts[147] = Integer.toString(Integer.parseInt(Part.parts[147]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[146])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For: " +Part.parts[146], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv7){
-        	if (Part.InteriorLv7.PartCount >0){
-        		Part.InteriorLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[173]) >0){
+        		Part.parts[173] = Integer.toString(Integer.parseInt(Part.parts[173]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[172])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For: " +Part.parts[172], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv8){
-        	if (Part.InteriorLv8.PartCount >0){
-        		Part.InteriorLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[199]) >0){
+        		Part.parts[199] = Integer.toString(Integer.parseInt(Part.parts[199]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[198])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For: " +Part.parts[198], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv9){
-        	if (Part.InteriorLv9.PartCount >0){
-        		Part.InteriorLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[225]) >0){
+        		Part.parts[225] = Integer.toString(Integer.parseInt(Part.parts[225]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[224])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For: " +Part.parts[224], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Interior Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellInteriorLv10){
-        	if (Part.InteriorLv10.PartCount >0){
-        		Part.InteriorLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        	if (Integer.parseInt(Part.parts[251]) >0){
+        		Part.parts[251] = Integer.toString(Integer.parseInt(Part.parts[251]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[250])));
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For: " +Part.parts[250], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv1){
-        	if (Part.SteeringLv1.PartCount >0){
-        		Part.SteeringLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[19]) >0){
+        		Part.parts[19] = Integer.toString(Integer.parseInt(Part.parts[19]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[18])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL FFor: " +Part.parts[18], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv2){
-        	if (Part.SteeringLv2.PartCount >0){
-        		Part.SteeringLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[45]) >0){
+        		Part.parts[45] = Integer.toString(Integer.parseInt(Part.parts[45]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[44])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For: " +Part.parts[44], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv3){
-        	if (Part.SteeringLv3.PartCount >0){
-        		Part.SteeringLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[71]) >0){
+        		Part.parts[71] = Integer.toString(Integer.parseInt(Part.parts[71]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[70])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For: " +Part.parts[70], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv4){
-        	if (Part.SteeringLv4.PartCount >0){
-        		Part.SteeringLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[97]) >0){
+        		Part.parts[97] = Integer.toString(Integer.parseInt(Part.parts[97]) - 1);;
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[96])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For: " +Part.parts[96], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv5){
-        	if (Part.SteeringLv5.PartCount >0){
-        		Part.SteeringLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[123]) >0){
+        		Part.parts[123] = Integer.toString(Integer.parseInt(Part.parts[123]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[122])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For: " +Part.parts[122], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv6){
-        	if (Part.SteeringLv6.PartCount >0){
-        		Part.SteeringLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[149]) >0){
+        		Part.parts[149] = Integer.toString(Integer.parseInt(Part.parts[149]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[148])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For: " +Part.parts[148], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv7){
-        	if (Part.SteeringLv7.PartCount >0){
-        		Part.SteeringLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[175]) >0){
+        		Part.parts[175] = Integer.toString(Integer.parseInt(Part.parts[175]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[174])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For: " +Part.parts[174], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv8){
-        	if (Part.SteeringLv8.PartCount >0){
-        		Part.SteeringLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[201]) >0){
+        		Part.parts[201] = Integer.toString(Integer.parseInt(Part.parts[201]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[200])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For: " +Part.parts[200], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv9){
-        	if (Part.SteeringLv9.PartCount >0){
-        		Part.SteeringLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[227]) >0){
+        		Part.parts[227] = Integer.toString(Integer.parseInt(Part.parts[227]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[266])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For: " +Part.parts[266], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Steering Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellSteeringLv10){
-        	if (Part.SteeringLv10.PartCount >0){
-        		Part.SteeringLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        	if (Integer.parseInt(Part.parts[253]) >0){
+        		Part.parts[253] = Integer.toString(Integer.parseInt(Part.parts[253]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[252])));
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For: " +Part.parts[252], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv1){
-        	if (Part.SuspensionLv1.PartCount >0){
-        		Part.SuspensionLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[21]) >0){
+        		Part.parts[21] = Integer.toString(Integer.parseInt(Part.parts[21]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[20])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For: " +Part.parts[20], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv2){
-        	if (Part.SuspensionLv2.PartCount >0){
-        		Part.SuspensionLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[47]) >0){
+        		Part.parts[47] = Integer.toString(Integer.parseInt(Part.parts[47]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[46])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For: " +Part.parts[46], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv3){
-        	if (Part.SuspensionLv3.PartCount >0){
-        		Part.SuspensionLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[73]) >0){
+        		Part.parts[73] = Integer.toString(Integer.parseInt(Part.parts[73]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[72])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For: " +Part.parts[72], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv4){
-        	if (Part.SuspensionLv4.PartCount >0){
-        		Part.SuspensionLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[99]) >0){
+        		Part.parts[99] = Integer.toString(Integer.parseInt(Part.parts[99]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[98])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For: " +Part.parts[98], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv5){
-        	if (Part.SuspensionLv5.PartCount >0){
-        		Part.SuspensionLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[125]) >0){
+        		Part.parts[125] = Integer.toString(Integer.parseInt(Part.parts[125]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[124])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For: " +Part.parts[124], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv6){
-        	if (Part.SuspensionLv6.PartCount >0){
-        		Part.SuspensionLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[151]) >0){
+        		Part.parts[151] = Integer.toString(Integer.parseInt(Part.parts[151]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[150])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For: " +Part.parts[150], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv7){
-        	if (Part.SuspensionLv7.PartCount >0){
-        		Part.SuspensionLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[177]) >0){
+        		Part.parts[177] = Integer.toString(Integer.parseInt(Part.parts[177]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[176])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For: " +Part.parts[176], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv8){
-        	if (Part.SuspensionLv8.PartCount >0){
-        		Part.SuspensionLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[203]) >0){
+        		Part.parts[203] = Integer.toString(Integer.parseInt(Part.parts[203]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[202])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For: " +Part.parts[202], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv9){
-        	if (Part.SuspensionLv9.PartCount >0){
-        		Part.SuspensionLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[229]) >0){
+        		Part.parts[229] = Integer.toString(Integer.parseInt(Part.parts[229]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[228])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For: " +Part.parts[228], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Suspension Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellSuspensionLv10){
-        	if (Part.SuspensionLv10.PartCount >0){
-        		Part.SuspensionLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[255]) >0){
+        		Part.parts[255] = Integer.toString(Integer.parseInt(Part.parts[255]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[254])));
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For: " +Part.parts[254], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv1){
-        	if (Part.TransmissionLv1.PartCount >0){
-        		Part.TransmissionLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[23]) >0){
+        		Part.parts[23] = Integer.toString(Integer.parseInt(Part.parts[23]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[22])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For: " +Part.parts[22], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv2){
-        	if (Part.TransmissionLv2.PartCount >0){
-        		Part.TransmissionLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[49]) >0){
+        		Part.parts[49] = Integer.toString(Integer.parseInt(Part.parts[49]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[48])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For: " +Part.parts[48], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv3){
-        	if (Part.TransmissionLv3.PartCount >0){
-        		Part.TransmissionLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[75]) >0){
+        		Part.parts[75] = Integer.toString(Integer.parseInt(Part.parts[75]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[74])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For: " +Part.parts[74], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv4){
-        	if (Part.TransmissionLv4.PartCount >0){
-        		Part.TransmissionLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[101]) >0){
+        		Part.parts[101] = Integer.toString(Integer.parseInt(Part.parts[101]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[100])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For: " +Part.parts[100], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv5){
-        	if (Part.TransmissionLv5.PartCount >0){
-        		Part.TransmissionLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[127])>0){
+        		Part.parts[127] = Integer.toString(Integer.parseInt(Part.parts[127]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[126])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For: " +Part.parts[126], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv6){
-        	if (Part.TransmissionLv6.PartCount >0){
-        		Part.TransmissionLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[153]) >0){
+        		Part.parts[153] = Integer.toString(Integer.parseInt(Part.parts[153]) - 1);;
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[152])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For: " +Part.parts[152], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv7){
-        	if (Part.TransmissionLv7.PartCount >0){
-        		Part.TransmissionLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[179]) >0){
+        		Part.parts[179] = Integer.toString(Integer.parseInt(Part.parts[179]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[178])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For: " +Part.parts[178], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv8){
-        	if (Part.TransmissionLv8.PartCount >0){
-        		Part.TransmissionLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[205]) >0){
+        		Part.parts[205] = Integer.toString(Integer.parseInt(Part.parts[205]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[204])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For: " +Part.parts[204], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv9){
-        	if (Part.TransmissionLv9.PartCount >0){
-        		Part.TransmissionLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[231]) >0){
+        		Part.parts[231] = Integer.toString(Integer.parseInt(Part.parts[231]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[230])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For: " +Part.parts[230], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Transmission Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellTransmissionLv10){
-        	if (Part.TransmissionLv10.PartCount >0){
-        		Part.TransmissionLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        	if (Integer.parseInt(Part.parts[257]) >0){
+        		Part.parts[257] = Integer.toString(Integer.parseInt(Part.parts[257]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[256])));
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For: " +Part.parts[256], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 1 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv1){
-        	if (Part.TiresLv1.PartCount >0){
-        		Part.TiresLv1.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[25]) >0){
+        		Part.parts[25] = Integer.toString(Integer.parseInt(Part.parts[25]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[24])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For: " +Part.parts[24], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 2 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv2){
-        	if (Part.TiresLv2.PartCount >0){
-        		Part.TiresLv2.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[51]) >0){
+        		Part.parts[51] = Integer.toString(Integer.parseInt(Part.parts[51]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[50])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For: " +Part.parts[50], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
         }
         
+        // Sell Tires Level 3 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv3){
-        	if (Part.TiresLv3.PartCount >0){
-        		Part.TiresLv3.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[77]) >0){
+        		Part.parts[77] = Integer.toString(Integer.parseInt(Part.parts[77]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[76])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For: " +Part.parts[76], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
         }
         
+        // Sell Tires Level 4 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv4){
-        	if (Part.TiresLv4.PartCount >0){
-        		Part.TiresLv4.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[103]) >0){
+        		Part.parts[103] = Integer.toString(Integer.parseInt(Part.parts[103]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[102])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For: " +Part.parts[102], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
         }
         
+        // Sell Tires Level 5 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv5){
-        	if (Part.TiresLv5.PartCount >0){
-        		Part.TiresLv5.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[129]) >0){
+        		Part.parts[129] = Integer.toString(Integer.parseInt(Part.parts[129]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[128])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For: " +Part.parts[128], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 6 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv6){
-        	if (Part.TiresLv6.PartCount >0){
-        		Part.TiresLv6.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[155]) >0){
+        		Part.parts[155] = Integer.toString(Integer.parseInt(Part.parts[155]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[154])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For: " +Part.parts[154], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 7 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv7){
-        	if (Part.TiresLv7.PartCount >0){
-        		Part.TiresLv7.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[181]) >0){
+        		Part.parts[181] = Integer.toString(Integer.parseInt(Part.parts[181]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[180])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For: " +Part.parts[180], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 8 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv8){
-        	if (Part.TiresLv8.PartCount >0){
-        		Part.TiresLv8.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[207]) >0){
+        		Part.parts[207] = Integer.toString(Integer.parseInt(Part.parts[207]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[206])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For: " +Part.parts[206], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 9 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv9){
-        	if (Part.TiresLv9.PartCount >0){
-        		Part.TiresLv9.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[233]) >0){
+        		Part.parts[233] = Integer.toString(Integer.parseInt(Part.parts[233]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[232])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For: " +Part.parts[232], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }
         
+        // Sell Tires Level 10 Button Click
+ 
         if(ae.getSource() == jbtnSellTiresLv10){
-        	if (Part.TiresLv10.PartCount >0){
-        		Part.TiresLv10.PartCount -=1;
-        		CarMain.Money +=5;
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For 5 Money!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        	if (Integer.parseInt(Part.parts[259]) >0){
+        		Part.parts[259] = Integer.toString(Integer.parseInt(Part.parts[259]) - 1);
+        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[258])));
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For: " +Part.parts[258], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
         	
         }      
-    }
-     
-   public void actionPerformed2(ActionEvent ae) {
-    
-    if(ae.getSource() == jbtnBuildCarLv2){
-    	if(CarMain.PlayerLevel >=2){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv2.FrameCount >0){
-    				if(Part.AccessoriesLv2.PartCount >0){
-    					if(Part.BodyLv2.PartCount >0){
-    						if(Part.BrakesLv2.PartCount >0){
-    							if(Part.CoolingLv2.PartCount >0){
-    								if(Part.ElectronicsLv2.PartCount >0){
-    									if(Part.EngineLv2.PartCount >0){
-    										if(Part.ExaustLv2.PartCount >0){
-    											if(Part.FuelLv2.PartCount >0){
-    												if(Part.InteriorLv2.PartCount >0){
-    													if(Part.SteeringLv2.PartCount >0){
-    														if(Part.SuspensionLv2.PartCount >0){
-    															if(Part.TransmissionLv2.PartCount >0){
-    																if(Part.TiresLv2.PartCount >0){
-    																	if(CarsLv2.Buick_Riviera.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Buick_Riviera.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Buick Riviera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Buick_RivieraIcon);
-    																	}
-    																	if(CarsLv2.Tesla_Roadster.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Tesla_Roadster.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Tesla Roadster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Tesla_RoadsterIcon);
-    																	}
-    																	if(CarsLv2.Audi_80.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Audi_80.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi 80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_80Icon);
-    																	}
-    																	if(CarsLv2.BMW_e36.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.BMW_e36.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained BMW e36!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_e36Icon);
-    																	}
-    																	if(CarsLv2.Volkswagen_Scirocco.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Volkswagen_Scirocco.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volkswagen Scirocco!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volkswagen_SciroccoIcon);
-    																	}
-    																	if(CarsLv2.Mazda_3.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Mazda_3.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mazda 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mazda_3Icon);
-    																	}
-    																	if(CarsLv2.Chevrolet_Viking.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Chevrolet_Viking.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chevrolet Viking!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chevrolet_VikingIcon);
-    																	}
-    																	if(CarsLv2.Tesla_s.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Tesla_s.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Tesla S!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Tesla_SIcon);
-    																	}
-    																	if(CarsLv2.Jeep_ZJ.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Jeep_ZJ.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jeep ZJ!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jeep_ZJIcon);
-    																	}
-    																	if(CarsLv2.Dodge_Neon.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Dodge_Neon.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Dodge Neon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Dodge_NeonIcon);
-    																	}
-    																	if(CarsLv2.BMW_e30.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.BMW_e30.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained BMW e30!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_e30Icon);
-    																	}
-    																	if(CarsLv2.Mercedes_Benz_W123.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Mercedes_Benz_W123.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz W123!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mercedes_Benz_W123Icon);
-    																	}
-    																	if(CarsLv2.Land_Rover_Defender.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Land_Rover_Defender.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Land Rover Defender!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Land_Rover_DefenderIcon);
-    																	}
-    																	if(CarsLv2.Saab_9_5.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Saab_9_5.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Saab 9_5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Saab_9_5Icon);
-    																	}
-    																	if(CarsLv2.Aston_Martin_One.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Aston_Martin_One.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Aston Martin One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Aston_Martin_OneIcon);
-    																	}
-    																	if(CarsLv2.Koenigsegg_Regera.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Koenigsegg_Regera.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Regera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Koenigsegg_RegeraIcon);
-    																	}
-    																	if(CarsLv2.Lexus_IS.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Lexus_IS.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lexus IS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lexus_ISIcon);
-    																	}
-    																	if(CarsLv2.GMC_Yukon.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.GMC_Yukon.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained GMC Yukon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, GMC_YukonIcon);
-    																	}
-    																	if(CarsLv2.Opel_Astra.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Opel_Astra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Opel_Astra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Opel_AstraIcon);
-    																	}
-    																	if(CarsLv2.Audi_Coupe.CarCount == 0){
-    																		CarFrame.FrameLv2.FrameCount -=1;
-    																		Part.AccessoriesLv2.PartCount -=1;
-    																		Part.BodyLv2.PartCount -=1;
-    																		Part.BrakesLv2.PartCount -=1;
-    																		Part.CoolingLv2.PartCount -=1;
-    																		Part.ElectronicsLv2.PartCount -=1;
-    																		Part.EngineLv2.PartCount -=1;
-    																		Part.ExaustLv2.PartCount -=1;
-    																		Part.FuelLv2.PartCount -=1;
-    																		Part.InteriorLv2.PartCount -=1;
-    																		Part.SteeringLv2.PartCount -=1;
-    																		Part.SuspensionLv2.PartCount -=1;
-    																		Part.TransmissionLv2.PartCount -=1;
-    																		Part.TiresLv2.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv2.Audi_Coupe.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_CoupeIcon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 2 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 2 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv3){
-    	if(CarMain.PlayerLevel >=3){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv3.FrameCount >0){
-    				if(Part.AccessoriesLv3.PartCount >0){
-    					if(Part.BodyLv3.PartCount >0){
-    						if(Part.BrakesLv3.PartCount >0){
-    							if(Part.CoolingLv3.PartCount >0){
-    								if(Part.ElectronicsLv3.PartCount >0){
-    									if(Part.EngineLv3.PartCount >0){
-    										if(Part.ExaustLv3.PartCount >0){
-    											if(Part.FuelLv3.PartCount >0){
-    												if(Part.InteriorLv3.PartCount >0){
-    													if(Part.SteeringLv3.PartCount >0){
-    														if(Part.SuspensionLv3.PartCount >0){
-    															if(Part.TransmissionLv3.PartCount >0){
-    																if(Part.TiresLv3.PartCount >0){
-    																	if(CarsLv3.Mini_Moke.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Mini_Moke.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mini Moke!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mini_MokeIcon);
-    																	}
-    																	if(CarsLv3.Kia_Rondo.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Kia_Rondo.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Kia Rondo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Kia_RondoIcon);
-    																	}
-    																	if(CarsLv3.GMC_Suburban.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.GMC_Suburban.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained GMC Suburban!", "Congralations", JOptionPane.INFORMATION_MESSAGE, GMC_SuburbanIcon);
-    																	}
-    																	if(CarsLv3.Honda_Prelude.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Honda_Prelude.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Honda Prelude!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Honda_PreludeIcon);
-    																	}
-    																	if(CarsLv3.Citroen_Saxo.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Citroen_Saxo.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Citroen_Saxo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Citroen_SaxoIcon);
-    																	}
-    																	if(CarsLv3.Volkswagen_Tiguan.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Volkswagen_Tiguan.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volkswagen Tiguan!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volkswagen_TiguanIcon);
-    																	}
-    																	if(CarsLv3.Mini_Moke.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Mini_Moke.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mini Moke!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mini_MokeIcon);
-    																	}
-    																	if(CarsLv3.Volkswagen_Phaeton.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Volkswagen_Phaeton.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volkswagen Phaeton!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volkswagen_PhaetonIcon);
-    																	}
-    																	if(CarsLv3.Buick_Centry.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Buick_Centry.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Buick Centry!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Buick_CentryIcon);
-    																	}
-    																	if(CarsLv3.Land_Rover_Discovery.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Land_Rover_Discovery.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Land Rover Discovery!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Land_Rover_DiscoveryIcon);
-    																	}
-    																	if(CarsLv3.Infiniti_Etherea.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Infiniti_Etherea.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Infiniti Etherea!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Infiniti_EthereaIcon);
-    																	}
-    																	if(CarsLv3.Peugeot_308.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Peugeot_308.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Peugeot 308!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Peugeot_308Icon);
-    																	}
-    																	if(CarsLv3.Toyota_Auris.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Toyota_Auris.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Toyota Auris!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Toyota_AurisIcon);
-    																	}
-    																	if(CarsLv3.Pagani_ZondaF.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Pagani_ZondaF.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Pagani ZondaF!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Pagani_ZondaFIcon);
-    																	}
-    																	if(CarsLv3.Lancia_Phedra.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Lancia_Phedra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lancia Phedra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lancia_PhedraIcon);
-    																	}
-    																	if(CarsLv3.Chevrolet_Impala.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Chevrolet_Impala.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chevrolet Impala!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chevrolet_ImpalaIcon);
-    																	}
-    																	if(CarsLv3.Porsche_Boxster.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Porsche_Boxster.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Porsche Boxster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Porsche_BoxsterIcon);
-    																	}
-    																	if(CarsLv3.Aston_Martin_DB6.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Aston_Martin_DB6.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Aston_Martin_DB6Icon);
-    																	}
-    																	if(CarsLv3.Vaz_2103.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Vaz_2103.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Vaz 2103!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Vaz_2103Icon);
-    																	}
-    																	if(CarsLv3.Hyundai_Mistra.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Hyundai_Mistra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Hyundai Mistra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Hyundai_MistraIcon);
-    																	}
-    																	if(CarsLv3.Mini_Countryman.CarCount == 0){
-    																		CarFrame.FrameLv3.FrameCount -=1;
-    																		Part.AccessoriesLv3.PartCount -=1;
-    																		Part.BodyLv3.PartCount -=1;
-    																		Part.BrakesLv3.PartCount -=1;
-    																		Part.CoolingLv3.PartCount -=1;
-    																		Part.ElectronicsLv3.PartCount -=1;
-    																		Part.EngineLv3.PartCount -=1;
-    																		Part.ExaustLv3.PartCount -=1;
-    																		Part.FuelLv3.PartCount -=1;
-    																		Part.InteriorLv3.PartCount -=1;
-    																		Part.SteeringLv3.PartCount -=1;
-    																		Part.SuspensionLv3.PartCount -=1;
-    																		Part.TransmissionLv3.PartCount -=1;
-    																		Part.TiresLv3.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv3.Mini_Countryman.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mini Countryman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mini_CountrymanIcon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 3 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 3 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv4){
-    	if(CarMain.PlayerLevel >=4){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv4.FrameCount >0){
-    				if(Part.AccessoriesLv4.PartCount >0){
-    					if(Part.BodyLv4.PartCount >0){
-    						if(Part.BrakesLv4.PartCount >0){
-    							if(Part.CoolingLv4.PartCount >0){
-    								if(Part.ElectronicsLv4.PartCount >0){
-    									if(Part.EngineLv4.PartCount >0){
-    										if(Part.ExaustLv4.PartCount >0){
-    											if(Part.FuelLv4.PartCount >0){
-    												if(Part.InteriorLv4.PartCount >0){
-    													if(Part.SteeringLv4.PartCount >0){
-    														if(Part.SuspensionLv4.PartCount >0){
-    															if(Part.TransmissionLv4.PartCount >0){
-    																if(Part.TiresLv4.PartCount >0){
-    																	if(CarsLv4.Mazda_MX6.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Mazda_MX6.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mazda MX6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mazda_MX6Icon);
-    																	}
-    																	if(CarsLv4.Chrysler_Daytona.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Chrysler_Daytona.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chrysler Daytona!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chrysler_DaytonaIcon);
-    																	}
-    																	if(CarsLv4.Buick_Roadmaster.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Buick_Roadmaster.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Buick Roadmaster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Buick_RoadmasterIcon);
-    																	}
-    																	if(CarsLv4.Volvo_S80.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Volvo_S80.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volvo S80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volvo_S80Icon);
-    																	}
-    																	if(CarsLv4.Porsche_Cayman.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Porsche_Cayman.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Porsche Cayman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Porsche_CaymanIcon);
-    																	}
-    																	if(CarsLv4.Volkswagen_Beetle.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Volkswagen_Beetle.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volkswagen Beetle!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volkswagen_BeetleIcon);
-    																	}
-    																	if(CarsLv4.Bugatti_EB110.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Bugatti_EB110.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bugatti EB110!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bugatti_EB110Icon);
-    																	}
-    																	if(CarsLv4.Opel_Zafira.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Opel_Zafira.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Opel Zafira!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Opel_ZafiraIcon);
-    																	}
-    																	if(CarsLv4.Saab_9000.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Saab_9000.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Saab 9000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Saab_9000Icon);
-    																	}
-    																	if(CarsLv4.McLaren_F1.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.McLaren_F1.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained McLaren F1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, McLaren_F1Icon);
-    																	}
-    																	if(CarsLv4.Audi_R8.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Audi_R8.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi R8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_R8Icon);
-    																	}
-    																	if(CarsLv4.Alfa_Romeo_8C.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Alfa_Romeo_8C.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 8C!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Alfa_Romeo_8CIcon);
-    																	}
-    																	if(CarsLv4.Ford_Fiesta.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Ford_Fiesta.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Ford_Fiesta!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ford_FiestaIcon);
-    																	}
-    																	if(CarsLv4.Infiniti_Q50.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Infiniti_Q50.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Infiniti Q50!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Infiniti_Q50Icon);
-    																	}
-    																	if(CarsLv4.Maserati_5000GT.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Maserati_5000GT.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Maserati 5000GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Maserati_5000GTIcon);
-    																	}
-    																	if(CarsLv4.Mercedes_Benz_CLA250.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Mercedes_Benz_CLA250.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz CLA250!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mercedes_Benz_CLA250Icon);
-    																	}
-    																	if(CarsLv4.Lamborghini_Gallardo.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Lamborghini_Gallardo.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lamborghini Gallardo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lamborghini_GallardoIcon);
-    																	}
-    																	if(CarsLv4.Mazda_RX7.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Mazda_RX7.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mazda RX7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mazda_RX7Icon);
-    																	}
-    																	if(CarsLv4.Mitsubishi_Colt.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Mitsubishi_Colt.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Colt!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mitsubishi_ColtIcon);
-    																	}
-    																	if(CarsLv4.Kia_Sorento.CarCount == 0){
-    																		CarFrame.FrameLv4.FrameCount -=1;
-    																		Part.AccessoriesLv4.PartCount -=1;
-    																		Part.BodyLv4.PartCount -=1;
-    																		Part.BrakesLv4.PartCount -=1;
-    																		Part.CoolingLv4.PartCount -=1;
-    																		Part.ElectronicsLv4.PartCount -=1;
-    																		Part.EngineLv4.PartCount -=1;
-    																		Part.ExaustLv4.PartCount -=1;
-    																		Part.FuelLv4.PartCount -=1;
-    																		Part.InteriorLv4.PartCount -=1;
-    																		Part.SteeringLv4.PartCount -=1;
-    																		Part.SuspensionLv4.PartCount -=1;
-    																		Part.TransmissionLv4.PartCount -=1;
-    																		Part.TiresLv4.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv4.Kia_Sorento.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Kia Sorento!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Kia_SorentoIcon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 4 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 4 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv5){
-    	if(CarMain.PlayerLevel >=5){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv5.FrameCount >0){
-    				if(Part.AccessoriesLv5.PartCount >0){
-    					if(Part.BodyLv5.PartCount >0){
-    						if(Part.BrakesLv5.PartCount >0){
-    							if(Part.CoolingLv5.PartCount >0){
-    								if(Part.ElectronicsLv5.PartCount >0){
-    									if(Part.EngineLv5.PartCount >0){
-    										if(Part.ExaustLv5.PartCount >0){
-    											if(Part.FuelLv5.PartCount >0){
-    												if(Part.InteriorLv5.PartCount >0){
-    													if(Part.SteeringLv5.PartCount >0){
-    														if(Part.SuspensionLv5.PartCount >0){
-    															if(Part.TransmissionLv5.PartCount >0){
-    																if(Part.TiresLv5.PartCount >0){
-    																	if(CarsLv5.Rolls_Royce_Wraith.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Rolls_Royce_Wraith.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Wraith!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Rolls_Royce_WraithIcon);
-    																	}
-    																	if(CarsLv5.Lamborghini_Diablo.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Lamborghini_Diablo.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lamborghini Diablo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lamborghini_DiabloIcon);
-    																	}
-    																	if(CarsLv5.Jeep_Scrambler.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Jeep_Scrambler.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jeep Scrambler!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jeep_ScramblerIcon);
-    																	}
-    																	if(CarsLv5.Bentley_Continental.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Bentley_Continental.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bentley Continental!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bentley_ContinentalIcon);
-    																	}
-    																	if(CarsLv5.Bentley_Azure.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Bentley_Azure.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bentley Azure!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bentley_AzureIcon);
-    																	}
-    																	if(CarsLv5.Koenigsegg_One.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Koenigsegg_One.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Koenigsegg One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Koenigsegg_OneIcon);
-    																	}
-    																	if(CarsLv5.Cadilliac_XTS.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Cadilliac_XTS.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Cadilliac XTS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Cadilliac_XTSIcon);
-    																	}
-    																	if(CarsLv5.Fiat_500.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Fiat_500.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Fiat 500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Fiat_500Icon);
-    																	}
-    																	if(CarsLv5.Mitsubishi_Pajero.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Mitsubishi_Pajero.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Pajero!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mitsubishi_PajeroIcon);
-    																	}
-    																	if(CarsLv5.Moskvich_2140.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Moskvich_2140.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Moskvich 2140!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Moskvich_2140Icon);
-    																	}
-    																	if(CarsLv5.Opel_GT.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Opel_GT.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Opel GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Opel_GTIcon);
-    																	}
-    																	if(CarsLv5.Hyundai_Getz.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Hyundai_Getz.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Hyundai Getz!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Hyundai_GetzIcon);
-    																	}
-    																	if(CarsLv5.Maserati_Coupe.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Maserati_Coupe.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Maserati Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Maserati_CoupeIcon);
-    																	}
-    																	if(CarsLv5.Honda_S2000.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Honda_S2000.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Honda S2000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Honda_S2000Icon);
-    																	}
-    																	if(CarsLv5.Alfa_Romeo_Spider.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Alfa_Romeo_Spider.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Alfa_Romeo_SpiderIcon);
-    																	}
-    																	if(CarsLv5.BMW_M5.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.BMW_M5.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained BMW M5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_M5Icon);
-    																	}
-    																	if(CarsLv5.BMW_I8.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.BMW_I8.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained BMW I8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_I8Icon);
-    																	}
-    																	if(CarsLv5.Citroen_C5.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Citroen_C5.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Citroen C5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Citroen_C5Icon);
-    																	}
-    																	if(CarsLv5.Fiat_Punto.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Fiat_Punto.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Fiat Punto!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Fiat_PuntoIcon);
-    																	}
-    																	if(CarsLv5.Audi_100.CarCount == 0){
-    																		CarFrame.FrameLv5.FrameCount -=1;
-    																		Part.AccessoriesLv5.PartCount -=1;
-    																		Part.BodyLv5.PartCount -=1;
-    																		Part.BrakesLv5.PartCount -=1;
-    																		Part.CoolingLv5.PartCount -=1;
-    																		Part.ElectronicsLv5.PartCount -=1;
-    																		Part.EngineLv5.PartCount -=1;
-    																		Part.ExaustLv5.PartCount -=1;
-    																		Part.FuelLv5.PartCount -=1;
-    																		Part.InteriorLv5.PartCount -=1;
-    																		Part.SteeringLv5.PartCount -=1;
-    																		Part.SuspensionLv5.PartCount -=1;
-    																		Part.TransmissionLv5.PartCount -=1;
-    																		Part.TiresLv5.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv5.Audi_100.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi 100!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_100Icon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 5 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 5 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv6){
-    	if(CarMain.PlayerLevel >=6){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv6.FrameCount >0){
-    				if(Part.AccessoriesLv6.PartCount >0){
-    					if(Part.BodyLv6.PartCount >0){
-    						if(Part.BrakesLv6.PartCount >0){
-    							if(Part.CoolingLv6.PartCount >0){
-    								if(Part.ElectronicsLv6.PartCount >0){
-    									if(Part.EngineLv6.PartCount >0){
-    										if(Part.ExaustLv6.PartCount >0){
-    											if(Part.FuelLv6.PartCount >0){
-    												if(Part.InteriorLv6.PartCount >0){
-    													if(Part.SteeringLv6.PartCount >0){
-    														if(Part.SuspensionLv6.PartCount >0){
-    															if(Part.TransmissionLv6.PartCount >0){
-    																if(Part.TiresLv6.PartCount >0){
-    																	if(CarsLv6.Rolls_Royce_Phantom.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Rolls_Royce_Phantom.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Phantom", "Congralations", JOptionPane.INFORMATION_MESSAGE, Rolls_Royce_PhantomIcon);
-    																	}
-    																	if(CarsLv6.Toyota_86.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Toyota_86.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Toyota 86!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Toyota_86Icon);
-    																	}
-    																	if(CarsLv6.BMW_e70.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.BMW_e70.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained BMW e70!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_e70Icon);
-    																	}
-    																	if(CarsLv6.Chrysler_Voyager.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Chrysler_Voyager.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chrysler Voyager!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chrysler_VoyagerIcon);
-    																	}
-    																	if(CarsLv6.Rolls_Royce_PhantomIII.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Rolls_Royce_PhantomIII.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Rolls Royce PhantomIII!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Rolls_Royce_PhantomIIIIcon);
-    																	}
-    																	if(CarsLv6.Honda_CRX.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Honda_CRX.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Honda CRX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Honda_CRXIcon);
-    																	}
-    																	if(CarsLv6.Subaru_1000.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Subaru_1000.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Subaru 1000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Subaru_1000Icon);
-    																	}
-    																	if(CarsLv6.Cadilliac_Eldorado.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Cadilliac_Eldorado.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Cadilliac Eldorado!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Cadilliac_EldoradoIcon);
-    																	}
-    																	if(CarsLv6.Land_Rover_Freelander.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Land_Rover_Freelander.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Land Rover Freelander!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Land_Rover_FreelanderIcon);
-    																	}
-    																	if(CarsLv6.Renault_Spider.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Renault_Spider.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Renault_Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Renault_SpiderIcon);
-    																	}
-    																	if(CarsLv6.Gaz_21.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Gaz_21.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Gaz 21!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Gaz_21Icon);
-    																	}
-    																	if(CarsLv6.Acura_EL.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Acura_EL.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Acura EL!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Acura_ELIcon);
-    																	}
-    																	if(CarsLv6.Bugatti_Veyron.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Bugatti_Veyron.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bugatti Veyron!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bugatti_VeyronIcon);
-    																	}
-    																	if(CarsLv6.Mercedes_Benz_SL600.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Mercedes_Benz_SL600.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz SL600!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mercedes_Benz_SL600Icon);
-    																	}
-    																	if(CarsLv6.Rolls_Royce_Silver.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Rolls_Royce_Silver.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Silver!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Rolls_Royce_SilverIcon);
-    																	}
-    																	if(CarsLv6.Mini_Paceman.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Mini_Paceman.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mini Paceman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mini_PacemanIcon);
-    																	}
-    																	if(CarsLv6.Hyundai_Excel.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Hyundai_Excel.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Hyundai Excel!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Hyundai_ExcelIcon);
-    																	}
-    																	if(CarsLv6.Gaz_24.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Gaz_24.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Gaz 24!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Gaz_24Icon);
-    																	}
-    																	if(CarsLv6.Peugeot_107.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Peugeot_107.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Peugeot 107!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Peugeot_107Icon);
-    																	}
-    																	if(CarsLv6.Audi_A4.CarCount == 0){
-    																		CarFrame.FrameLv6.FrameCount -=1;
-    																		Part.AccessoriesLv6.PartCount -=1;
-    																		Part.BodyLv6.PartCount -=1;
-    																		Part.BrakesLv6.PartCount -=1;
-    																		Part.CoolingLv6.PartCount -=1;
-    																		Part.ElectronicsLv6.PartCount -=1;
-    																		Part.EngineLv6.PartCount -=1;
-    																		Part.ExaustLv6.PartCount -=1;
-    																		Part.FuelLv6.PartCount -=1;
-    																		Part.InteriorLv6.PartCount -=1;
-    																		Part.SteeringLv6.PartCount -=1;
-    																		Part.SuspensionLv6.PartCount -=1;
-    																		Part.TransmissionLv6.PartCount -=1;
-    																		Part.TiresLv6.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv6.Audi_A4.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi_A4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_A4Icon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 6 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 6 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv7){
-    	if(CarMain.PlayerLevel >=7){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv7.FrameCount >0){
-    				if(Part.AccessoriesLv7.PartCount >0){
-    					if(Part.BodyLv7.PartCount >0){
-    						if(Part.BrakesLv7.PartCount >0){
-    							if(Part.CoolingLv7.PartCount >0){
-    								if(Part.ElectronicsLv7.PartCount >0){
-    									if(Part.EngineLv7.PartCount >0){
-    										if(Part.ExaustLv7.PartCount >0){
-    											if(Part.FuelLv7.PartCount >0){
-    												if(Part.InteriorLv7.PartCount >0){
-    													if(Part.SteeringLv7.PartCount >0){
-    														if(Part.SuspensionLv7.PartCount >0){
-    															if(Part.TransmissionLv7.PartCount >0){
-    																if(Part.TiresLv7.PartCount >0){
-    																	if(CarsLv7.Lamborghini_Aventador.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Lamborghini_Aventador.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lamborghini Aventador", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lamborghini_AventadorIcon);
-    																	}
-    																	if(CarsLv7.Nissan_350z.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Nissan_350z.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Nissan 350z", "Congralations", JOptionPane.INFORMATION_MESSAGE, Nissan_350zIcon);
-    																	}
-    																	if(CarsLv7.Jaguar_XJ6.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Jaguar_XJ6.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jaguar XJ6", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jaguar_XJ6Icon);
-    																	}
-    																	if(CarsLv7.Renault_Clio.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Renault_Clio.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Renault Clio", "Congralations", JOptionPane.INFORMATION_MESSAGE, Renault_ClioIcon);
-    																	}
-    																	if(CarsLv7.Toyota_Avensis.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Toyota_Avensis.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Toyota Avensis", "Congralations", JOptionPane.INFORMATION_MESSAGE, Toyota_AvensisIcon);
-    																	}
-    																	if(CarsLv7.Subaru_Outback.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Subaru_Outback.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Subaru Outback", "Congralations", JOptionPane.INFORMATION_MESSAGE, Subaru_OutbackIcon);
-    																	}
-    																	if(CarsLv7.Saab_900.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Saab_900.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Saab 900", "Congralations", JOptionPane.INFORMATION_MESSAGE, Saab_900Icon);
-    																	}
-    																	if(CarsLv7.Opel_Vectra.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Opel_Vectra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Opel Vectra", "Congralations", JOptionPane.INFORMATION_MESSAGE, Opel_VectraIcon);
-    																	}
-    																	if(CarsLv7.Chrysler_Charger.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Chrysler_Charger.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chrysler Charger", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chrysler_ChargerIcon);
-    																	}
-    																	if(CarsLv7.Ferrari_348.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Ferrari_348.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Ferrari_348", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ferrari_348Icon);
-    																	}
-    																	if(CarsLv7.Hyundai_XG.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Hyundai_XG.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Hyundai XG", "Congralations", JOptionPane.INFORMATION_MESSAGE, Hyundai_XGIcon);
-    																	}
-    																	if(CarsLv7.Lexus_RX.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Lexus_RX.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lexus RX", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lexus_RXIcon);
-    																	}
-    																	if(CarsLv7.Dodge_400.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Dodge_400.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Dodge 400", "Congralations", JOptionPane.INFORMATION_MESSAGE, Dodge_400Icon);
-    																	}
-    																	if(CarsLv7.GMC_Terrain.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.GMC_Terrain.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained GMC Terrain", "Congralations", JOptionPane.INFORMATION_MESSAGE, GMC_TerrainIcon);
-    																	}
-    																	if(CarsLv7.Volvo_C70.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Volvo_C70.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volvo C70", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volvo_C70Icon);
-    																	}
-    																	if(CarsLv7.Ford_Sierra.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Ford_Sierra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Ford_Sierra", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ford_SierraIcon);
-    																	}
-    																	if(CarsLv7.Subaru_Impreza.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Subaru_Impreza.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Subaru Impreza", "Congralations", JOptionPane.INFORMATION_MESSAGE, Subaru_ImprezaIcon);
-    																	}
-    																	if(CarsLv7.BMW_e90.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.BMW_e90.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained BMW e90", "Congralations", JOptionPane.INFORMATION_MESSAGE, BMW_e90Icon);
-    																	}
-    																	if(CarsLv7.Nissan_Skyline.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Nissan_Skyline.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Nissan Skyline", "Congralations", JOptionPane.INFORMATION_MESSAGE, Nissan_SkylineIcon);
-    																	}
-    																	if(CarsLv7.Audi_Q7.CarCount == 0){
-    																		CarFrame.FrameLv7.FrameCount -=1;
-    																		Part.AccessoriesLv7.PartCount -=1;
-    																		Part.BodyLv7.PartCount -=1;
-    																		Part.BrakesLv7.PartCount -=1;
-    																		Part.CoolingLv7.PartCount -=1;
-    																		Part.ElectronicsLv7.PartCount -=1;
-    																		Part.EngineLv7.PartCount -=1;
-    																		Part.ExaustLv7.PartCount -=1;
-    																		Part.FuelLv7.PartCount -=1;
-    																		Part.InteriorLv7.PartCount -=1;
-    																		Part.SteeringLv7.PartCount -=1;
-    																		Part.SuspensionLv7.PartCount -=1;
-    																		Part.TransmissionLv7.PartCount -=1;
-    																		Part.TiresLv7.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv7.Audi_Q7.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi Q7", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_Q7Icon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 7 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 7 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv8){
-    	if(CarMain.PlayerLevel >=8){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv8.FrameCount >0){
-    				if(Part.AccessoriesLv8.PartCount >0){
-    					if(Part.BodyLv8.PartCount >0){
-    						if(Part.BrakesLv8.PartCount >0){
-    							if(Part.CoolingLv8.PartCount >0){
-    								if(Part.ElectronicsLv8.PartCount >0){
-    									if(Part.EngineLv8.PartCount >0){
-    										if(Part.ExaustLv8.PartCount >0){
-    											if(Part.FuelLv8.PartCount >0){
-    												if(Part.InteriorLv8.PartCount >0){
-    													if(Part.SteeringLv8.PartCount >0){
-    														if(Part.SuspensionLv8.PartCount >0){
-    															if(Part.TransmissionLv8.PartCount >0){
-    																if(Part.TiresLv8.PartCount >0){
-    																	if(CarsLv8.Bentley_Arnage.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Bentley_Arnage.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bentley Arnage", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bentley_ArnageIcon);
-    																	}
-    																	if(CarsLv8.Volvo_850.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Volvo_850.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volvo 850", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volvo_850Icon);
-    																	}
-    																	if(CarsLv8.Toyota_Rav4.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Toyota_Rav4.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Toyota Rav4", "Congralations", JOptionPane.INFORMATION_MESSAGE, Toyota_Rav4Icon);
-    																	}
-    																	if(CarsLv8.Ford_Focus.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Ford_Focus.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Ford Focus", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ford_FocusIcon);
-    																	}
-    																	if(CarsLv8.Chevrolet_Spin.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Chevrolet_Spin.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chevrolet Spin", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chevrolet_SpinIcon);
-    																	}
-    																	if(CarsLv8.Bentley_GTZ.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Bentley_GTZ.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bentley GTZ", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bentley_GTZIcon);
-    																	}
-    																	if(CarsLv8.Lexus_LS.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Lexus_LS.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lexus LS", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lexus_LSIcon);
-    																	}
-    																	if(CarsLv8.Land_Rover_RangeRover.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Land_Rover_RangeRover.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Land Rover RangeRover", "Congralations", JOptionPane.INFORMATION_MESSAGE, Land_Rover_RangeRoverIcon);
-    																	}
-    																	if(CarsLv8.Lexus_GX.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Lexus_GX.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lexus GX", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lexus_GXIcon);
-    																	}
-    																	if(CarsLv8.Jeep_Wrangler.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Jeep_Wrangler.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jeep Wrangler", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jeep_WranglerIcon);
-    																	}
-    																	if(CarsLv8.Maserati_GranTurismo.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Maserati_GranTurismo.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Maserati GranTurismo", "Congralations", JOptionPane.INFORMATION_MESSAGE, Maserati_GranTurismoIcon);
-    																	}
-    																	if(CarsLv8.Koenigsegg_Agera.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Koenigsegg_Agera.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Agera", "Congralations", JOptionPane.INFORMATION_MESSAGE, Koenigsegg_AgeraIcon);
-    																	}
-    																	if(CarsLv8.Acura_MDX.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Acura_MDX.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Acura MDX", "Congralations", JOptionPane.INFORMATION_MESSAGE, Acura_MDXIcon);
-    																	}
-    																	if(CarsLv8.Audi_RS6.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Audi_RS6.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Audi RS6", "Congralations", JOptionPane.INFORMATION_MESSAGE, Audi_RS6Icon);
-    																	}
-    																	if(CarsLv8.Cadilliac_DeVille.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Cadilliac_DeVille.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Cadilliac DeVille", "Congralations", JOptionPane.INFORMATION_MESSAGE, Cadilliac_DeVilleIcon);
-    																	}
-    																	if(CarsLv8.McLaren_Veneno.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.McLaren_Veneno.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained McLaren Veneno", "Congralations", JOptionPane.INFORMATION_MESSAGE, McLaren_VenenoIcon);
-    																	}
-    																	if(CarsLv8.Tesla_X.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Tesla_X.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Tesla X", "Congralations", JOptionPane.INFORMATION_MESSAGE, Tesla_XIcon);
-    																	}
-    																	if(CarsLv8.Mercedes_Benz_G55.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Mercedes_Benz_G55.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz G55", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mercedes_Benz_G55Icon);
-    																	}
-    																	if(CarsLv8.Lancia_Lybra.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Lancia_Lybra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lancia Lybra", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lancia_LybraIcon);
-    																	}
-    																	if(CarsLv8.Infiniti_QX60.CarCount == 0){
-    																		CarFrame.FrameLv8.FrameCount -=1;
-    																		Part.AccessoriesLv8.PartCount -=1;
-    																		Part.BodyLv8.PartCount -=1;
-    																		Part.BrakesLv8.PartCount -=1;
-    																		Part.CoolingLv8.PartCount -=1;
-    																		Part.ElectronicsLv8.PartCount -=1;
-    																		Part.EngineLv8.PartCount -=1;
-    																		Part.ExaustLv8.PartCount -=1;
-    																		Part.FuelLv8.PartCount -=1;
-    																		Part.InteriorLv8.PartCount -=1;
-    																		Part.SteeringLv8.PartCount -=1;
-    																		Part.SuspensionLv8.PartCount -=1;
-    																		Part.TransmissionLv8.PartCount -=1;
-    																		Part.TiresLv8.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv8.Infiniti_QX60.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Infiniti QX60", "Congralations", JOptionPane.INFORMATION_MESSAGE, Infiniti_QX60Icon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 8 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 8 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv9){
-    	if(CarMain.PlayerLevel >=9){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv9.FrameCount >0){
-    				if(Part.AccessoriesLv9.PartCount >0){
-    					if(Part.BodyLv9.PartCount >0){
-    						if(Part.BrakesLv9.PartCount >0){
-    							if(Part.CoolingLv9.PartCount >0){
-    								if(Part.ElectronicsLv9.PartCount >0){
-    									if(Part.EngineLv9.PartCount >0){
-    										if(Part.ExaustLv9.PartCount >0){
-    											if(Part.FuelLv9.PartCount >0){
-    												if(Part.InteriorLv9.PartCount >0){
-    													if(Part.SteeringLv9.PartCount >0){
-    														if(Part.SuspensionLv9.PartCount >0){
-    															if(Part.TransmissionLv9.PartCount >0){
-    																if(Part.TiresLv9.PartCount >0){
-    																	if(CarsLv9.Kia_Forte.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Kia_Forte.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Kia Forte", "Congralations", JOptionPane.INFORMATION_MESSAGE, Kia_ForteIcon);
-    																	}
-    																	if(CarsLv9.Lancia_Voyager.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Lancia_Voyager.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lancia Voyager", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lancia_VoyagerIcon);
-    																	}
-    																	if(CarsLv9.Porsche_Cayenne.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Porsche_Cayenne.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Porsche_Cayenne", "Congralations", JOptionPane.INFORMATION_MESSAGE, Porsche_CayenneIcon);
-    																	}
-    																	if(CarsLv9.McLaren_650s.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.McLaren_650s.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained McLaren_650s", "Congralations", JOptionPane.INFORMATION_MESSAGE, McLaren_650sIcon);
-    																	}
-    																	if(CarsLv9.Jaguar_E_Type.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Jaguar_E_Type.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jaguar E-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jaguar_E_TypeIcon);
-    																	}
-    																	if(CarsLv9.Peugeot_601.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Peugeot_601.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Peugeot 601", "Congralations", JOptionPane.INFORMATION_MESSAGE, Peugeot_601Icon);
-    																	}
-    																	if(CarsLv9.Jaguar_F_Type.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Jaguar_F_Type.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jaguar F-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jaguar_F_TypeIcon);
-    																	}
-    																	if(CarsLv9.Fiat_Doblo.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Fiat_Doblo.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Fiat Doblo", "Congralations", JOptionPane.INFORMATION_MESSAGE, Fiat_DobloIcon);
-    																	}
-    																	if(CarsLv9.Vaz_2101.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Vaz_2101.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Vaz 2101", "Congralations", JOptionPane.INFORMATION_MESSAGE, Vaz_2101Icon);
-    																	}
-    																	if(CarsLv9.McLaren_P1.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.McLaren_P1.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained McLaren P1", "Congralations", JOptionPane.INFORMATION_MESSAGE, McLaren_P1Icon);
-    																	}
-    																	if(CarsLv9.Peugeot_405.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Peugeot_405.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Peugeot 405", "Congralations", JOptionPane.INFORMATION_MESSAGE, Peugeot_405Icon);
-    																	}
-    																	if(CarsLv9.GMC_Envoy.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.GMC_Envoy.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained GMC Envoy", "Congralations", JOptionPane.INFORMATION_MESSAGE, GMC_EnvoyIcon);
-    																	}
-    																	if(CarsLv9.Chevrolet_Corvete.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Chevrolet_Corvete.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Chevrolet Corvete", "Congralations", JOptionPane.INFORMATION_MESSAGE, Chevrolet_CorveteIcon);
-    																	}
-    																	if(CarsLv9.Pagani_Huayra.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Pagani_Huayra.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Pagani Huayra", "Congralations", JOptionPane.INFORMATION_MESSAGE, Pagani_HuayraIcon);
-    																	}
-    																	if(CarsLv9.Moskvich_402.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Moskvich_402.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Moskvich 402", "Congralations", JOptionPane.INFORMATION_MESSAGE, Moskvich_402Icon);
-    																	}
-    																	if(CarsLv9.Alfa_Romeo_159.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Alfa_Romeo_159.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 159", "Congralations", JOptionPane.INFORMATION_MESSAGE, Alfa_Romeo_159Icon);
-    																	}
-    																	if(CarsLv9.Renault_Fregate.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Renault_Fregate.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Renault Fregate", "Congralations", JOptionPane.INFORMATION_MESSAGE, Renault_FregateIcon);
-    																	}
-    																	if(CarsLv9.Mini_Cooper.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Mini_Cooper.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mini Cooper", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mini_CooperIcon);
-    																	}
-    																	if(CarsLv9.Dodge_Viper.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Dodge_Viper.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Dodge Viper", "Congralations", JOptionPane.INFORMATION_MESSAGE, Dodge_ViperIcon);
-    																	}
-    																	if(CarsLv9.Vaz_Niva.CarCount == 0){
-    																		CarFrame.FrameLv9.FrameCount -=1;
-    																		Part.AccessoriesLv9.PartCount -=1;
-    																		Part.BodyLv9.PartCount -=1;
-    																		Part.BrakesLv9.PartCount -=1;
-    																		Part.CoolingLv9.PartCount -=1;
-    																		Part.ElectronicsLv9.PartCount -=1;
-    																		Part.EngineLv9.PartCount -=1;
-    																		Part.ExaustLv9.PartCount -=1;
-    																		Part.FuelLv9.PartCount -=1;
-    																		Part.InteriorLv9.PartCount -=1;
-    																		Part.SteeringLv9.PartCount -=1;
-    																		Part.SuspensionLv9.PartCount -=1;
-    																		Part.TransmissionLv9.PartCount -=1;
-    																		Part.TiresLv9.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv9.Vaz_Niva.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Vaz Niva", "Congralations", JOptionPane.INFORMATION_MESSAGE, Vaz_NivaIcon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 9 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 9 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
-    if(ae.getSource() == jbtnBuildCarLv10){
-    	if(CarMain.PlayerLevel >=10){
-    		if(Garage.GarageSlots >0){
-    			if(CarFrame.FrameLv10.FrameCount >0){
-    				if(Part.AccessoriesLv10.PartCount >0){
-    					if(Part.BodyLv10.PartCount >0){
-    						if(Part.BrakesLv10.PartCount >0){
-    							if(Part.CoolingLv10.PartCount >0){
-    								if(Part.ElectronicsLv10.PartCount >0){
-    									if(Part.EngineLv10.PartCount >0){
-    										if(Part.ExaustLv10.PartCount >0){
-    											if(Part.FuelLv10.PartCount >0){
-    												if(Part.InteriorLv10.PartCount >0){
-    													if(Part.SteeringLv10.PartCount >0){
-    														if(Part.SuspensionLv10.PartCount >0){
-    															if(Part.TransmissionLv10.PartCount >0){
-    																if(Part.TiresLv10.PartCount >0){
-    																	if(CarsLv10.Jaguar_X_Type.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Jaguar_X_Type.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jaguar X-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jaguar_X_TypeIcon);
-    																	}
-    																	if(CarsLv10.Ferrari_308.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Ferrari_308.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Ferrari 308", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ferrari_308Icon);
-    																	}
-    																	if(CarsLv10.Mazda_626.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Mazda_626.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mazda 626", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mazda_626Icon);
-    																	}
-    																	if(CarsLv10.Maserati_Shamal.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Maserati_Shamal.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Maserati Shamal", "Congralations", JOptionPane.INFORMATION_MESSAGE, Maserati_ShamalIcon);
-    																	}
-    																	if(CarsLv10.Nissan_240sx.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Nissan_240sx.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Nissan 240sx", "Congralations", JOptionPane.INFORMATION_MESSAGE, Nissan_240sxIcon);
-    																	}
-    																	if(CarsLv10.Alfa_Romeo_4C.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Alfa_Romeo_4C.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 4C", "Congralations", JOptionPane.INFORMATION_MESSAGE, Alfa_Romeo_4CIcon);
-    																	}
-    																	if(CarsLv10.Nissan_Juke.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Nissan_Juke.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Nissan Juke", "Congralations", JOptionPane.INFORMATION_MESSAGE, Nissan_JukeIcon);
-    																	}
-    																	if(CarsLv10.Volkswagen_Golf1.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Volkswagen_Golf1.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Volkswagen Golf1", "Congralations", JOptionPane.INFORMATION_MESSAGE, Volkswagen_Golf1Icon);
-    																	}
-    																	if(CarsLv10.Jeep_Gladiator.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Jeep_Gladiator.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Jeep Gladiator", "Congralations", JOptionPane.INFORMATION_MESSAGE, Jeep_GladiatorIcon);
-    																	}
-    																	if(CarsLv10.Dodge_Matador.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Dodge_Matador.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Dodge Matador", "Congralations", JOptionPane.INFORMATION_MESSAGE, Dodge_MatadorIcon);
-    																	}
-    																	if(CarsLv10.Bugatti_Royale.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Bugatti_Royale.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bugatti Royale", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bugatti_RoyaleIcon);
-    																	}
-    																	if(CarsLv10.Citroen_CX.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Citroen_CX.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Citroen CX", "Congralations", JOptionPane.INFORMATION_MESSAGE, Citroen_CXIcon);
-    																	}
-    																	if(CarsLv10.Lamborghini_350GT.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Lamborghini_350GT.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Lamborghini 350GT", "Congralations", JOptionPane.INFORMATION_MESSAGE, Lamborghini_350GTIcon);
-    																	}
-    																	if(CarsLv10.Mitsubishi_GTO.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Mitsubishi_GTO.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Mitsubishi GTO", "Congralations", JOptionPane.INFORMATION_MESSAGE, Mitsubishi_GTOIcon);
-    																	}
-    																	if(CarsLv10.Buick_Invicta.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Buick_Invicta.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Buick Invicta", "Congralations", JOptionPane.INFORMATION_MESSAGE, Buick_InvictaIcon);
-    																	}
-    																	if(CarsLv10.Porsche_911.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Porsche_911.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Porsche 911", "Congralations", JOptionPane.INFORMATION_MESSAGE, Porsche_911Icon);
-    																	}
-    																	if(CarsLv10.Subaru_Forester.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Subaru_Forester.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Subaru Forester", "Congralations", JOptionPane.INFORMATION_MESSAGE, Subaru_ForesterIcon);
-    																	}
-    																	if(CarsLv10.Citroen_BX.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Citroen_BX.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Citroen BX", "Congralations", JOptionPane.INFORMATION_MESSAGE, Citroen_BXIcon);
-    																	}
-    																	if(CarsLv10.Bugatti_Type252.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Bugatti_Type252.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Bugatti Type252", "Congralations", JOptionPane.INFORMATION_MESSAGE, Bugatti_Type252Icon);
-    																	}
-    																	if(CarsLv10.Ferrari_488.CarCount == 0){
-    																		CarFrame.FrameLv10.FrameCount -=1;
-    																		Part.AccessoriesLv10.PartCount -=1;
-    																		Part.BodyLv10.PartCount -=1;
-    																		Part.BrakesLv10.PartCount -=1;
-    																		Part.CoolingLv10.PartCount -=1;
-    																		Part.ElectronicsLv10.PartCount -=1;
-    																		Part.EngineLv10.PartCount -=1;
-    																		Part.ExaustLv10.PartCount -=1;
-    																		Part.FuelLv10.PartCount -=1;
-    																		Part.InteriorLv10.PartCount -=1;
-    																		Part.SteeringLv10.PartCount -=1;
-    																		Part.SuspensionLv10.PartCount -=1;
-    																		Part.TransmissionLv10.PartCount -=1;
-    																		Part.TiresLv10.PartCount -=1;
-    																		Garage.GarageSlots -=1;
-    																		CarsLv10.Ferrari_488.CarCount +=1;
-    																		JOptionPane.showMessageDialog (null, "You have gained Ferrari 488", "Congralations", JOptionPane.INFORMATION_MESSAGE, Ferrari_488Icon);
-    																	}
-    																}
-    																else{
-    																	JOptionPane.showMessageDialog(null, "You have colected all 10 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
-    																}
-    															}
-    															else{
-    								                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    								                        	}
-    														}
-    														else{
-    							                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    							                        	}
-    													}
-    													else{
-    						                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    						                        	}
-    												}
-    												else{
-    					                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    					                        	}
-    											}
-    											else{
-    				                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    				                        	}
-    										}
-    										else{
-    			                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    			                        	}
-    									}
-    									else{
-    		                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    		                        	}
-    								}
-    								else{
-    	                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-    	                        	}
-    							}
-    							else{
-                            		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                            	}
-    						}
-    						else{
-                        		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                        	}
-    					}
-    					else{
-                    		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                    	}
-    				}
-    				else{
-                		JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);
-                	}
-    			}
-    			else{
-            		JOptionPane.showMessageDialog (null, "You don't have 10 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, NoFrameIcon);
-            	}
-    		}
-    		else{
-        		JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, NoGarageIcon);
-        	}
-    	}
-    	else{
-    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
-    	}
-    }
 }
 }
-
