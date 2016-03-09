@@ -21,11 +21,6 @@ public class BuildCarsClass implements ActionListener {
 	CarLevel3Holder CarsLv3 = new CarLevel3Holder(); 
 	CarLevel4Holder CarsLv4 = new CarLevel4Holder(); 
 	CarLevel5Holder CarsLv5 = new CarLevel5Holder(); 
-	CarLevel6Holder CarsLv6 = new CarLevel6Holder(); 
-	CarLevel7Holder CarsLv7 = new CarLevel7Holder(); 
-	CarLevel8Holder CarsLv8 = new CarLevel8Holder(); 
-	CarLevel9Holder CarsLv9 = new CarLevel9Holder(); 
-	CarLevel10Holder CarsLv10 = new CarLevel10Holder();
 	
 	public BuildCarsClass(){
 		
