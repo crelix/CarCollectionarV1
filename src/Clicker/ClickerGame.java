@@ -2861,16 +2861,16 @@ public class ClickerGame implements ActionListener {
         
         if(ae.getSource() == jbtnBoxes){
         	CarMain.main[2] += 1;
-        	BoxesLabel.setText("Boxes:" + CarMain.main[2]);
+  
             CarMain.main[3] += 1;
-            BoxesClicksLabel.setText("Boxes:" + CarMain.main[3]);
-            if(CarMain.main[2].equals("5")){
+
+            if(CarMain.main[2] == 5){
                 CarMain.main[2] -= 5;
-                if(CarMain.main[4].equals("1")){
+                if(CarMain.main[4] == 1){
                     Box.boxes[1] = Box.boxes[1] + 1;
                     JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     }
-                if(CarMain.main[4].equals("2")){ 
+                if(CarMain.main[4] == 2){ 
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(2)+1;
                     if (randomInt == 1){
@@ -2880,7 +2880,7 @@ public class ClickerGame implements ActionListener {
                     	Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     }
-                if(CarMain.main[4].equals("3")){
+                if(CarMain.main[4] == 3){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(3)+1;
                     if (randomInt == 1){
@@ -2893,7 +2893,7 @@ public class ClickerGame implements ActionListener {
                     	Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     }
-                if(CarMain.main[4].equals("4")){
+                if(CarMain.main[4] == 4){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(4)+1;
                     if (randomInt == 1){
@@ -2910,7 +2910,7 @@ public class ClickerGame implements ActionListener {
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     }
                
-                if(CarMain.main[4].equals("5")){
+                if(CarMain.main[4] == 5){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(5)+1;
                     if (randomInt == 1){
@@ -2930,7 +2930,7 @@ public class ClickerGame implements ActionListener {
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     }
                
-                if(CarMain.main[4].equals("6")){
+                if(CarMain.main[4] == 6){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(6)+1;
                     if (randomInt == 1){
@@ -2952,7 +2952,7 @@ public class ClickerGame implements ActionListener {
                         Box.boxes[11] = Box.boxes[11] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     }
-                if(CarMain.main[4].equals("7")){
+                if(CarMain.main[4] == 7){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(7)+1;
                     if (randomInt == 1){
@@ -2977,7 +2977,7 @@ public class ClickerGame implements ActionListener {
                         Box.boxes[13] = Box.boxes[13] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     }              
-                if(CarMain.main[4].equals("8")){
+                if(CarMain.main[4] == 8){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(8)+1;
                     if (randomInt == 1){
@@ -3005,7 +3005,7 @@ public class ClickerGame implements ActionListener {
                         Box.boxes[15] = Box.boxes[15] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     }  
-                if(CarMain.main[4].equals("9")){
+                if(CarMain.main[4] == 9){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(9)+1;
                     if (randomInt == 1){
@@ -3036,7 +3036,7 @@ public class ClickerGame implements ActionListener {
                         Box.boxes[17] = Box.boxes[17] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
                     }  
-                if(CarMain.main[4].equals("10")){
+                if(CarMain.main[4] == 10){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(10)+1;
                     if (randomInt == 1){
@@ -3076,7 +3076,7 @@ public class ClickerGame implements ActionListener {
         
         if(ae.getSource() == jbtnUpgradeLevel){          	
         	for (int i =9; i >=0; i--){            		
-        		   if (CarMain.main[5].equals(i)){
+        		   if (CarMain.main[5] == i){
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[5] = CarMain.main[5] + 1;
@@ -3085,7 +3085,7 @@ public class ClickerGame implements ActionListener {
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
                    }            		   
         	}
-        	if (CarMain.main[5].equals("10")){
+        	if (CarMain.main[5] == 10){
  			   JOptionPane.showMessageDialog(null, "You have gained MAX Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
  		   }
         } 
@@ -3094,7 +3094,7 @@ public class ClickerGame implements ActionListener {
         
         if(ae.getSource() == jbtnUpgradeGarageLevel){          	
         	for (int i =9; i >=0; i--){            		
-        		   if (CarMain.main[6].equals(i)){
+        		   if (CarMain.main[6] == i){
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[6] = CarMain.main[6] + 1;
@@ -3104,7 +3104,7 @@ public class ClickerGame implements ActionListener {
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
                    }            		   
         	}
-        	if (CarMain.main[6].equals("10")){
+        	if (CarMain.main[6] == 10){
  			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
  		   }
         } 
@@ -3113,7 +3113,7 @@ public class ClickerGame implements ActionListener {
         
         if(ae.getSource() == jbtnUpgradeBoxesLevel){          	
         	for (int i =9; i >=0; i--){            		
-        		   if (CarMain.main[4].equals(i)){
+        		   if (CarMain.main[4] == i){
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[4] = CarMain.main[4] + 1;
@@ -3122,7 +3122,7 @@ public class ClickerGame implements ActionListener {
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
                    }
         	}
-        	if (CarMain.main[4].equals("10")){
+        	if (CarMain.main[4] == 10){
   			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
   		   }
         }

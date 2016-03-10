@@ -10,10 +10,10 @@ public Integer boxes[] = new Integer[20];
 		}
 	
 	
-	public void BoxesMaker(int k, int a, int k1, int a1){
+	public void BoxesMaker(int k, int a1, int k1, int a2){
 		
-		boxes[a] = k;
-		boxes[a1] = k1;
+		boxes[a1] = k;
+		boxes[a2] = k1;
 	}
 	
 	public void MakeBoxes(){
