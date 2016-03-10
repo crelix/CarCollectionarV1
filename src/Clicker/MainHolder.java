@@ -5,31 +5,36 @@ public class MainHolder {
 public Integer main[] = new Integer[8];
 	
 	public MainHolder(){
-		
-		
+			
+		MakeMain();		
 	}
 	
-	public void MainMaker(int k){
+	public void MainMaker(int k,int p){
+
+		main[p] = k;
 		
 	}
 	
 	public void MakeMain(){
 		
-		MainMaker(0); // Money
-		
-		MainMaker(0); // Money Clicks
-		
-		MainMaker(0); // Boxes
-		
-		MainMaker(0); // Boxes Clicks
-		
-		MainMaker(1); // Boxes Level
-		
-		MainMaker(1); // Player Level
-		
-		MainMaker(1); // Garage Level
-		
-		MainMaker(0); // Garage Slots
+
+
+		int i=0;
+		MainMaker(0,i); // Money
+		i++;
+		MainMaker(0,i); // Money Clicks
+		i++;
+		MainMaker(0,i); // Boxes
+		i++;
+		MainMaker(0,i); // Boxes Clicks
+		i++;
+		MainMaker(1,i); // Boxes Level
+		i++;
+		MainMaker(1,i); // Player Level
+		i++;
+		MainMaker(1,i); // Garage Level
+		i++;
+		MainMaker(0,i); // Garage Slots
 		
 	}
 }

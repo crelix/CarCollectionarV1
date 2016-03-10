@@ -27,6 +27,13 @@ public class ClickerGame implements ActionListener {
     final static String LVL9 = "Level 9";
     final static String LVL10 = "Level 10";
     
+
+    
+    //LABELS
+    JLabel MoneyLabel;  
+    JLabel MoneyClicksLabel;
+    JLabel BoxesLabel;
+    JLabel BoxesClicksLabel;
     // Buttons
     
     JButton jbtnMoney = new JButton("Click");
@@ -409,12 +416,12 @@ public class ClickerGame implements ActionListener {
     	JPanel MainPanelSub2 = new JPanel();
     	MainPanelSub2.setLayout(new BoxLayout(MainPanelSub2, BoxLayout.PAGE_AXIS));
     	
-        JLabel MoneyLabel = new JLabel(MoneyIcon);    	
+    	MoneyLabel = new JLabel(MoneyIcon);  
     	MoneyLabel.setHorizontalTextPosition(JLabel.CENTER);
     	MoneyLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	MoneyLabel.setText("Money: " + CarMain.main[0]);
     	
-    	JLabel MoneyClicksLabel = new JLabel();
+    	MoneyClicksLabel = new JLabel();
     	MoneyClicksLabel.setHorizontalTextPosition(JLabel.CENTER);
     	MoneyClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
@@ -2839,22 +2846,24 @@ public class ClickerGame implements ActionListener {
 
     //Button Click
     
-   @Override
-    public void actionPerformed(ActionEvent ae) {
+   public void actionPerformed(ActionEvent ae) {
 	   
 	    //Money Button Click
-	   
         if(ae.getSource() == jbtnMoney) {
-            CarMain.main[0] += 1;     
+        	
+            CarMain.main[0] += 1;   
+            MoneyLabel.setText("Money: " + CarMain.main[0]);
             CarMain.main[1] += 1;     
-            System.out.println(CarMain.main[0]);
+            MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
         }
         
         //Boxes Button Click
         
         if(ae.getSource() == jbtnBoxes){
         	CarMain.main[2] += 1;
-            CarMain.main[3] += 1;          
+        	BoxesLabel.setText("Boxes:" + CarMain.main[2]);
+            CarMain.main[3] += 1;
+            BoxesClicksLabel.setText("Boxes:" + CarMain.main[3]);
             if(CarMain.main[2].equals("5")){
                 CarMain.main[2] -= 5;
                 if(CarMain.main[4].equals("1")){
