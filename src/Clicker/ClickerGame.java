@@ -795,25 +795,25 @@ public class ClickerGame implements ActionListener {
         
      	
      	BuildCarsPanelSub.add(CarsLv1Label);
-     	BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1);
+     	//BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1;
      	BuildCarsPanelSub2.add(CarsLv2Label);
-     	BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
+     	//BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
      	BuildCarsPanelSub3.add(CarsLv3Label);
-     	BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
+     	//BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
      	BuildCarsPanelSub4.add(CarsLv4Label);
-     	BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
+     	//BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
      	BuildCarsPanelSub5.add(CarsLv5Label);
-     	BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
+     	//BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
      	BuildCarsPanelSub6.add(CarsLv6Label);
-     	BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
+     	//BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
      	BuildCarsPanelSub7.add(CarsLv7Label);
-     	BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
+     	//BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
      	BuildCarsPanelSub8.add(CarsLv8Label);
-     	BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
+     	//BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
      	BuildCarsPanelSub9.add(CarsLv9Label);
-     	BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
+     	//BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
      	BuildCarsPanelSub10.add(CarsLv10Label);
-     	BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
+     	//BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
      	
      	BuildCarsPanel.add(BuildCarsPanelSub);
      	BuildCarsPanel.add(BuildCarsPanelSub2);
@@ -2465,7 +2465,7 @@ public class ClickerGame implements ActionListener {
     public  int Aboxes(){
     	int countboxes = 0;
     	for(int i = 1; i > Box.boxes.length; i+=2){
-    		countboxes+= Integer.parseInt(Box.boxes[i]);
+    		countboxes+= Box.boxes[i];
     	}
     	return countboxes;
     }
@@ -2562,7 +2562,7 @@ public class ClickerGame implements ActionListener {
     
     public int AllClicks(){
     	int allclicks = 0;
-    	allclicks+= Integer.parseInt(CarMain.main[1]) + Integer.parseInt(CarMain.main[3]);
+    	allclicks+= CarMain.main[1] + CarMain.main[3];
     	return allclicks;
     }   
  	
@@ -2824,8 +2824,8 @@ public class ClickerGame implements ActionListener {
     BoxesHolder Box = new BoxesHolder();
     FramesHolder CarFrame = new FramesHolder();
     PartHolder Part = new PartHolder();
-    BuildCarsClass BuildCarsClass = new BuildCarsClass();
-    BuildCarsClass2 BuildCarsClass2 = new BuildCarsClass2();
+    //BuildCarsClass BuildCarsClass = new BuildCarsClass();
+    //BuildCarsClass2 BuildCarsClass2 = new BuildCarsClass2();
     CarLevel1Holder CarsLv1 = new CarLevel1Holder();
     CarLevel2Holder CarsLv2 = new CarLevel2Holder();
     CarLevel3Holder CarsLv3 = new CarLevel3Holder();
@@ -2845,58 +2845,59 @@ public class ClickerGame implements ActionListener {
 	    //Money Button Click
 	   
         if(ae.getSource() == jbtnMoney) {
-            CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + 1);
-            CarMain.main[1] = Integer.toString(Integer.parseInt(CarMain.main[1]) + 1);
+            CarMain.main[0] += 1;     
+            CarMain.main[1] += 1;     
+            System.out.println(CarMain.main[0]);
         }
         
         //Boxes Button Click
         
         if(ae.getSource() == jbtnBoxes){
-        	CarMain.main[2] = Integer.toString(Integer.parseInt(CarMain.main[2]) + 1);
-            CarMain.main[3] = Integer.toString(Integer.parseInt(CarMain.main[3]) + 1);         
+        	CarMain.main[2] += 1;
+            CarMain.main[3] += 1;          
             if(CarMain.main[2].equals("5")){
-                CarMain.main[2] =Integer.toString(Integer.parseInt(CarMain.main[2])-5);
+                CarMain.main[2] -= 5;
                 if(CarMain.main[4].equals("1")){
-                    Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                    Box.boxes[1] = Box.boxes[1] + 1;
                     JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     }
                 if(CarMain.main[4].equals("2")){ 
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(2)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                    	Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     }
                 if(CarMain.main[4].equals("3")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(3)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                    	Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                    	Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     }
                 if(CarMain.main[4].equals("4")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(4)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                    	Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                    	Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                    	Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     }
                
@@ -2904,19 +2905,19 @@ public class ClickerGame implements ActionListener {
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(5)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                    	Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                    	Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                    	Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
+                    	Box.boxes[9] = Box.boxes[9] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     }
                
@@ -2924,140 +2925,140 @@ public class ClickerGame implements ActionListener {
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(6)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                        Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                        Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                        Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
+                        Box.boxes[9] = Box.boxes[9] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) + 1);
+                        Box.boxes[11] = Box.boxes[11] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     }
                 if(CarMain.main[4].equals("7")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(7)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                        Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                        Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                        Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
+                        Box.boxes[9] = Box.boxes[9] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) + 1);
+                        Box.boxes[11] = Box.boxes[11] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) + 1);
+                        Box.boxes[13] = Box.boxes[13] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     }              
                 if(CarMain.main[4].equals("8")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(8)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                        Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                        Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                        Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
+                        Box.boxes[9] = Box.boxes[9] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) + 1);
+                        Box.boxes[11] = Box.boxes[11] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) + 1);
+                        Box.boxes[13] = Box.boxes[13] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 8){
-                        Box.boxes[15] = Integer.toString(Integer.parseInt(Box.boxes[15]) + 1);
+                        Box.boxes[15] = Box.boxes[15] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     }  
                 if(CarMain.main[4].equals("9")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(9)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                        Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                        Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                        Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
+                        Box.boxes[9] = Box.boxes[9] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) + 1);
+                        Box.boxes[11] = Box.boxes[11] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) + 1);
+                        Box.boxes[13] = Box.boxes[13] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 8){
-                        Box.boxes[15] = Integer.toString(Integer.parseInt(Box.boxes[15]) + 1);
+                        Box.boxes[15] = Box.boxes[15] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 9){
-                        Box.boxes[17] = Integer.toString(Integer.parseInt(Box.boxes[17]) + 1);
+                        Box.boxes[17] = Box.boxes[17] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
                     }  
                 if(CarMain.main[4].equals("10")){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(10)+1;
                     if (randomInt == 1){
-                        Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
+                        Box.boxes[1] = Box.boxes[1] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 2){
-                        Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
+                        Box.boxes[3] = Box.boxes[3] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
                     if (randomInt == 3){
-                        Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
+                        Box.boxes[5] = Box.boxes[5] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 4){
-                        Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
+                        Box.boxes[7] = Box.boxes[7] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
                     if (randomInt == 5){
-                        Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
+                        Box.boxes[9] = Box.boxes[9] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 6){
-                        Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) + 1);
+                        Box.boxes[11] = Box.boxes[11] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
                     if (randomInt == 7){
-                        Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) + 1);
+                        Box.boxes[13] = Box.boxes[13] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 8){
-                        Box.boxes[15] = Integer.toString(Integer.parseInt(Box.boxes[15]) + 1);
+                        Box.boxes[15] = Box.boxes[15] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
                     if (randomInt == 9){
-                        Box.boxes[17] = Integer.toString(Integer.parseInt(Box.boxes[17]) + 1);
+                        Box.boxes[17] = Box.boxes[17] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                  
                     if (randomInt == 10){
-                        Box.boxes[19] = Integer.toString(Integer.parseInt(Box.boxes[19]) + 1);
+                        Box.boxes[19] = Box.boxes[19] + 1;
                         JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
                     }     
             }
@@ -3067,9 +3068,9 @@ public class ClickerGame implements ActionListener {
         if(ae.getSource() == jbtnUpgradeLevel){          	
         	for (int i =9; i >=0; i--){            		
         		   if (CarMain.main[5].equals(i)){
-                   	if (Integer.parseInt(CarMain.main[0]) >= 100*i){
-                   		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (100*i));
-                   		CarMain.main[5] = Integer.toString(Integer.parseInt(CarMain.main[5]) + 1);
+                   	if (CarMain.main[0] >= 100*i){
+                   		CarMain.main[0] = CarMain.main[0] - (100*i);
+                   		CarMain.main[5] = CarMain.main[5] + 1;
                    		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[5] + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, PlayerIcon);}                      	
                    	else{                       	
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
@@ -3085,10 +3086,10 @@ public class ClickerGame implements ActionListener {
         if(ae.getSource() == jbtnUpgradeGarageLevel){          	
         	for (int i =9; i >=0; i--){            		
         		   if (CarMain.main[6].equals(i)){
-                   	if (Integer.parseInt(CarMain.main[0]) >= 100*i){
-                   		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (100*i));
-                   		CarMain.main[6] = Integer.toString(Integer.parseInt(CarMain.main[6]) + 1);
-                   		CarMain.main[7] = Integer.toString(Integer.parseInt(CarMain.main[7]) + 25);
+                   	if (CarMain.main[0] >= 100*i){
+                   		CarMain.main[0] = CarMain.main[0] - (100*i);
+                   		CarMain.main[6] = CarMain.main[6] + 1;
+                   		CarMain.main[7] = CarMain.main[7] + 25;
                    		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[6] + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, GarageIcon);}                      	
                    	else{                       	
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
@@ -3104,9 +3105,9 @@ public class ClickerGame implements ActionListener {
         if(ae.getSource() == jbtnUpgradeBoxesLevel){          	
         	for (int i =9; i >=0; i--){            		
         		   if (CarMain.main[4].equals(i)){
-                   	if (Integer.parseInt(CarMain.main[0]) >= 100*i){
-                   		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (100*i));
-                   		CarMain.main[4] = Integer.toString(Integer.parseInt(CarMain.main[4]) + 1);
+                   	if (CarMain.main[0] >= 100*i){
+                   		CarMain.main[0] = CarMain.main[0] - (100*i);
+                   		CarMain.main[4] = CarMain.main[4] + 1;
                    		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[4] + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                      	
                    	else{                       	
                    		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
@@ -3120,10 +3121,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 1 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv1){
-        	if (Integer.parseInt(CarMain.main[5]) >=1){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[0]))){
-        			CarFrame.frames[1] = Integer.toString(Integer.parseInt(CarFrame.frames[1]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[0])));      			
+        	if (CarMain.main[5] >=1){
+        		if (CarMain.main[0] >= CarFrame.frames[0]){
+        			CarFrame.frames[1] = CarFrame.frames[1] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[0];      			
         			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3137,10 +3138,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 2 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv2){
-        	if (Integer.parseInt(CarMain.main[5]) >=2){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[2]))){
-        			CarFrame.frames[3] = Integer.toString(Integer.parseInt(CarFrame.frames[3]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[2])));
+        	if (CarMain.main[5] >=2){
+        		if (CarMain.main[0] >= CarFrame.frames[2]){
+        			CarFrame.frames[3] = CarFrame.frames[3] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[2];
         			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[2], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3154,10 +3155,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 3 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv3){
-        	if (Integer.parseInt(CarMain.main[5]) >=3){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[4]))){
-        			CarFrame.frames[5] = Integer.toString(Integer.parseInt(CarFrame.frames[5]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[4])));
+        	if (CarMain.main[5] >=3){
+        		if (CarMain.main[0] >= CarFrame.frames[4]){
+        			CarFrame.frames[5] = CarFrame.frames[5] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[4];
         			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[4], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3171,10 +3172,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 4 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv4){
-        	if (Integer.parseInt(CarMain.main[5]) >=4){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[6]))){
-        			CarFrame.frames[7] = Integer.toString(Integer.parseInt(CarFrame.frames[7]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[6])));
+        	if (CarMain.main[5] >=4){
+        		if (CarMain.main[0] >= CarFrame.frames[6]){
+        			CarFrame.frames[7] = CarFrame.frames[7] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[6];
         			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[6], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3188,10 +3189,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 5 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv5){
-        	if (Integer.parseInt(CarMain.main[5]) >=5){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[8]))){
-        			CarFrame.frames[9] = Integer.toString(Integer.parseInt(CarFrame.frames[9]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[8])));
+        	if (CarMain.main[5] >=5){
+        		if (CarMain.main[0] >= CarFrame.frames[8]){
+        			CarFrame.frames[9] = CarFrame.frames[9] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[8];
         			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[8], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3205,10 +3206,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 6 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv6){
-        	if (Integer.parseInt(CarMain.main[5]) >=6){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[10]))){
-        			CarFrame.frames[11] = Integer.toString(Integer.parseInt(CarFrame.frames[11]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[10])));
+        	if (CarMain.main[5] >=6){
+        		if (CarMain.main[0] >= CarFrame.frames[10]){
+        			CarFrame.frames[11] = CarFrame.frames[11] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[10];
         			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[10], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3222,10 +3223,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 7 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv7){
-        	if (Integer.parseInt(CarMain.main[5]) >=7){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[12]))){
-        			CarFrame.frames[13] = Integer.toString(Integer.parseInt(CarFrame.frames[13]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[12])));
+        	if (CarMain.main[5] >=7){
+        		if (CarMain.main[0] >= CarFrame.frames[12]){
+        			CarFrame.frames[13] = CarFrame.frames[13] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[12];
         			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[12], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3239,10 +3240,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 8 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv8){
-        	if (Integer.parseInt(CarMain.main[5]) >=8){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[14]))){
-        			CarFrame.frames[15] = Integer.toString(Integer.parseInt(CarFrame.frames[15]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[14])));
+        	if (CarMain.main[5] >=8){
+        		if (CarMain.main[0] >= CarFrame.frames[14]){
+        			CarFrame.frames[15] = CarFrame.frames[15] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[14];
         			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[14], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3256,10 +3257,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 9 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv9){
-        	if (Integer.parseInt(CarMain.main[5]) >=9){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[16]))){
-        			CarFrame.frames[17] = Integer.toString(Integer.parseInt(CarFrame.frames[17]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[16])));
+        	if (CarMain.main[5] >=9){
+        		if (CarMain.main[0] >= CarFrame.frames[16]){
+        			CarFrame.frames[17] = CarFrame.frames[17] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[16];
         			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[16], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3273,10 +3274,10 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 10 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv10){
-        	if (Integer.parseInt(CarMain.main[5]) >=10){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(CarFrame.frames[18]))){
-        			CarFrame.frames[19] = Integer.toString(Integer.parseInt(CarFrame.frames[19]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(CarFrame.frames[18])));
+        	if (CarMain.main[5] >=10){
+        		if (CarMain.main[0] >= CarFrame.frames[18]){
+        			CarFrame.frames[19] = CarFrame.frames[19] + 1;
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[18];
         			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[18], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
@@ -3290,10 +3291,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 1 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv1){
-        	if (Integer.parseInt(CarMain.main[5]) >=1){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[0]))){
-        			Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[0])));
+        	if (CarMain.main[5] >=1){
+        		if (CarMain.main[0] >= Box.boxes[0]){
+        			Box.boxes[1] = Box.boxes[1] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[0];
         			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[0], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3306,10 +3307,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 2 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv2){
-        	if (Integer.parseInt(CarMain.main[5]) >=2){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[2]))){
-        			Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[2])));
+        	if (CarMain.main[5] >=2){
+        		if (CarMain.main[0] >= Box.boxes[2]){
+        			Box.boxes[3] = Box.boxes[3] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[2];
         			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[2], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3322,10 +3323,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 3 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv3){
-        	if (Integer.parseInt(CarMain.main[5]) >=3){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[4]))){
-        			Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[4])));
+        	if (CarMain.main[5] >=3){
+        		if (CarMain.main[0] >= Box.boxes[4]){
+        			Box.boxes[5] = Box.boxes[5] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[4];
         			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[4], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3338,10 +3339,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 4 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv4){
-        	if (Integer.parseInt(CarMain.main[5]) >=4){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[6]))){
-        			Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[6])));
+        	if (CarMain.main[5] >=4){
+        		if (CarMain.main[0] >= Box.boxes[6]){
+        			Box.boxes[7] = Box.boxes[7] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[6];
         			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[6], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3354,10 +3355,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 5 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv5){
-        	if (Integer.parseInt(CarMain.main[5]) >=5){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[8]))){
-        			Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[8])));
+        	if (CarMain.main[5] >=5){
+        		if (CarMain.main[0] >= Box.boxes[8]){
+        			Box.boxes[9] = Box.boxes[9] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[8];
         			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[8], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3370,10 +3371,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 6 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv6){
-        	if (Integer.parseInt(CarMain.main[5]) >=6){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[10]))){
-        			Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[10])));
+        	if (CarMain.main[5] >=6){
+        		if (CarMain.main[0] >= Box.boxes[10]){
+        			Box.boxes[11] = Box.boxes[11] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[10];
         			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[10], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3386,10 +3387,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 7 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv7){
-        	if (Integer.parseInt(CarMain.main[5]) >=7){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[12]))){
-        			Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[12])));;
+        	if (CarMain.main[5] >=7){
+        		if (CarMain.main[0] >= Box.boxes[12]){
+        			Box.boxes[13] = Box.boxes[13] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[12];;
         			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[12], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3402,10 +3403,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 8 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv8){
-        	if (Integer.parseInt(CarMain.main[5]) >=8){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[14]))){
-        			Box.boxes[15] = Integer.toString(Integer.parseInt(Box.boxes[15]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[14])));
+        	if (CarMain.main[5] >=8){
+        		if (CarMain.main[0] >= Box.boxes[14]){
+        			Box.boxes[15] = Box.boxes[15] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[14];
         			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[14], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3418,10 +3419,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 9 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv9){
-        	if (Integer.parseInt(CarMain.main[5]) >=9){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[16]))){
-        			Box.boxes[17] = Integer.toString(Integer.parseInt(Box.boxes[17]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[16])));
+        	if (CarMain.main[5] >=9){
+        		if (CarMain.main[0] >= Box.boxes[16]){
+        			Box.boxes[17] = Box.boxes[17] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[16];
         			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[16], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3434,10 +3435,10 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 10 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv10){
-        	if (Integer.parseInt(CarMain.main[5]) >=10){
-        		if (Integer.parseInt(CarMain.main[0]) >= (Integer.parseInt(Box.boxes[18]))){
-        			Box.boxes[19] = Integer.toString(Integer.parseInt(Box.boxes[19]) + 1);
-        			CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) - (Integer.parseInt(Box.boxes[18])));
+        	if (CarMain.main[5] >=10){
+        		if (CarMain.main[0] >= Box.boxes[18]){
+        			Box.boxes[19] = Box.boxes[19] + 1;
+        			CarMain.main[0] = CarMain.main[0] - Box.boxes[18];
         			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[18], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
@@ -3450,51 +3451,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 1 Button Click
         
         if(ae.getSource() == jbtnPartsLv1){
-        	if (Integer.parseInt(Box.boxes[1]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=1){
-        			if (Integer.parseInt(CarMain.main[5]) >=1){
-        				Box.boxes[1] = Integer.toString(Integer.parseInt(Box.boxes[1]) - 1);
+        	if (Box.boxes[1] > 0){
+        		if (CarMain.main[4] >=1){
+        			if (CarMain.main[5] >=1){
+        				Box.boxes[1] = Box.boxes[1] - 1;
         				Random randomGenerator = new Random();
         				for (int i =0; i <2; i++ ){
         					int randomInt = randomGenerator.nextInt(13)+1;           					
                  		    if (randomInt == 1){
-                		    	Part.parts[1] = Integer.toString(Integer.parseInt(Part.parts[1]) + 1);
+                		    	Part.parts[1] = Part.parts[1] + 1;
                  		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
                 		    if (randomInt == 2){
-                		    	Part.parts[3] = Integer.toString(Integer.parseInt(Part.parts[3]) + 1);;
+                		    	Part.parts[3] = Part.parts[3] + 1;;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
                 		    if (randomInt == 3){
-                		    	Part.parts[5] = Integer.toString(Integer.parseInt(Part.parts[5]) + 1);
+                		    	Part.parts[5] = Part.parts[5] + 1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
                 		    if (randomInt == 4){
-                		    	Part.parts[7] = Integer.toString(Integer.parseInt(Part.parts[7]) + 1);
+                		    	Part.parts[7] = Part.parts[7] + 1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
                 		    if (randomInt == 5){
-                		    	Part.parts[9] = Integer.toString(Integer.parseInt(Part.parts[9]) + 1);
+                		    	Part.parts[9] = Part.parts[9] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
                 		    if (randomInt == 6){
-                		    	Part.parts[11] = Integer.toString(Integer.parseInt(Part.parts[11]) + 1);           		    	   		
+                		    	Part.parts[11] = Part.parts[11] + 1;           		    	   		
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
                 		    if (randomInt == 7){
-                		    	Part.parts[13] = Integer.toString(Integer.parseInt(Part.parts[13]) + 1);
+                		    	Part.parts[13] = Part.parts[13] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL !1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
                 		    if (randomInt == 8){
-                		    	Part.parts[15] = Integer.toString(Integer.parseInt(Part.parts[15]) + 1);
+                		    	Part.parts[15] = Part.parts[15] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
                 		    if (randomInt == 9){
-                		    	Part.parts[17] = Integer.toString(Integer.parseInt(Part.parts[17]) + 1);
+                		    	Part.parts[17] = Part.parts[17] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
                 		    if (randomInt == 10){
-                		    	Part.parts[19] = Integer.toString(Integer.parseInt(Part.parts[19]) + 1);
+                		    	Part.parts[19] = Part.parts[19] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
                 		    if (randomInt == 11){
-                		    	Part.parts[21] = Integer.toString(Integer.parseInt(Part.parts[21]) + 1);
+                		    	Part.parts[21] = Part.parts[21] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
                 		    if (randomInt == 12){
-                		    	Part.parts[23] = Integer.toString(Integer.parseInt(Part.parts[23]) + 1);
+                		    	Part.parts[23] = Part.parts[23] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
                 		    if (randomInt == 13){
-                		    	Part.parts[25] = Integer.toString(Integer.parseInt(Part.parts[25]) + 1);
+                		    	Part.parts[25] = Part.parts[25] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
         					}
         				}
@@ -3510,51 +3511,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 2 Button Click
         
         if(ae.getSource() == jbtnPartsLv2){
-        	if (Integer.parseInt(Box.boxes[3]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=2){
-        			if (Integer.parseInt(CarMain.main[5]) >=2){
-        				Box.boxes[3] = Integer.toString(Integer.parseInt(Box.boxes[3]) - 1);
+        	if (Box.boxes[3] > 0){
+        		if (CarMain.main[4] >=2){
+        			if (CarMain.main[5] >=2){
+        				Box.boxes[3] = Box.boxes[3] - 1;
         				Random randomGenerator = new Random();
         				for (int i =0; i <2; i++ ){
         					int randomInt = randomGenerator.nextInt(13)+1;     					
                 		    if (randomInt == 1){
-                		    	Part.parts[27] = Integer.toString(Integer.parseInt(Part.parts[27]) + 1);
+                		    	Part.parts[27] = Part.parts[27] + 1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
                 		    if (randomInt == 2){
-                		    	Part.parts[29] = Integer.toString(Integer.parseInt(Part.parts[29]) + 1);
+                		    	Part.parts[29] = Part.parts[29] + 1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
                 		    if (randomInt == 3){
-                		    	Part.parts[31] = Integer.toString(Integer.parseInt(Part.parts[31]) + 1);
+                		    	Part.parts[31] = Part.parts[31] + 1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
                 		    if (randomInt == 4){
-                		    	Part.parts[33] = Integer.toString(Integer.parseInt(Part.parts[33]) + 1);
+                		    	Part.parts[33] = Part.parts[33] + 1;
                 		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
                 		    if (randomInt == 5){
-                		    	Part.parts[35] = Integer.toString(Integer.parseInt(Part.parts[35]) + 1);
+                		    	Part.parts[35] = Part.parts[35] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
                 		    if (randomInt == 6){
-                		    	Part.parts[37] = Integer.toString(Integer.parseInt(Part.parts[37]) + 1);
+                		    	Part.parts[37] = Part.parts[37] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
                 		    if (randomInt == 7){
-                		    	Part.parts[39] = Integer.toString(Integer.parseInt(Part.parts[39]) + 1);
+                		    	Part.parts[39] = Part.parts[39] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
                 		    if (randomInt == 8){
-                		    	Part.parts[41] = Integer.toString(Integer.parseInt(Part.parts[41]) + 1);
+                		    	Part.parts[41] = Part.parts[41] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
                 		    if (randomInt == 9){
-                		    	Part.parts[43] = Integer.toString(Integer.parseInt(Part.parts[43]) + 1);
+                		    	Part.parts[43] = Part.parts[43] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
                 		    if (randomInt == 10){
-                		    	Part.parts[45] = Integer.toString(Integer.parseInt(Part.parts[45]) + 1);
+                		    	Part.parts[45] = Part.parts[45] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
                 		    if (randomInt == 11){
-                		    	Part.parts[47] = Integer.toString(Integer.parseInt(Part.parts[47]) + 1);
+                		    	Part.parts[47] = Part.parts[47] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
                 		    if (randomInt == 12){
-                		    	Part.parts[49] = Integer.toString(Integer.parseInt(Part.parts[49]) + 1);
+                		    	Part.parts[49] = Part.parts[49] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
                 		    if (randomInt == 13){
-                		    	Part.parts[51] = Integer.toString(Integer.parseInt(Part.parts[51]) + 1);
+                		    	Part.parts[51] = Part.parts[51] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
         					}
         				}
@@ -3569,51 +3570,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 3 Button Click
         
         if(ae.getSource() == jbtnPartsLv3){
-        	if (Integer.parseInt(Box.boxes[5]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=3){
-        			if (Integer.parseInt(CarMain.main[5]) >=3){
-        				Box.boxes[5] = Integer.toString(Integer.parseInt(Box.boxes[5]) - 1);
+        	if (Box.boxes[5] > 0){
+        		if (CarMain.main[4] >=3){
+        			if (CarMain.main[5] >=3){
+        				Box.boxes[5] = Box.boxes[5] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[53] = Integer.toString(Integer.parseInt(Part.parts[53]) + 1);
+            		    	Part.parts[53] = Part.parts[53] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[55] = Integer.toString(Integer.parseInt(Part.parts[55]) + 1);
+            		    	Part.parts[55] = Part.parts[55] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[57] = Integer.toString(Integer.parseInt(Part.parts[57]) + 1);
+            		    	Part.parts[57] = Part.parts[57] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[59] = Integer.toString(Integer.parseInt(Part.parts[59]) + 1);
+            		    	Part.parts[59] = Part.parts[59] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[61] = Integer.toString(Integer.parseInt(Part.parts[61]) + 1);
+            		    	Part.parts[61] = Part.parts[61] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[63] = Integer.toString(Integer.parseInt(Part.parts[63]) + 1);
+            		    	Part.parts[63] = Part.parts[63] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[65] = Integer.toString(Integer.parseInt(Part.parts[65]) + 1);
+            		    	Part.parts[65] = Part.parts[65] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[67] = Integer.toString(Integer.parseInt(Part.parts[67]) + 1);
+            		    	Part.parts[67] = Part.parts[67] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[69] = Integer.toString(Integer.parseInt(Part.parts[69]) + 1);
+            		    	Part.parts[69] = Part.parts[69] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[71] = Integer.toString(Integer.parseInt(Part.parts[71]) + 1);
+            		    	Part.parts[71] = Part.parts[71] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[73] = Integer.toString(Integer.parseInt(Part.parts[73]) + 1);;
+            		    	Part.parts[73] = Part.parts[73] + 1;;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[75] = Integer.toString(Integer.parseInt(Part.parts[75]) + 1);;
+            		    	Part.parts[75] = Part.parts[75] + 1;;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[77] = Integer.toString(Integer.parseInt(Part.parts[77]) + 1);
+            		    	Part.parts[77] = Part.parts[77] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -3628,51 +3629,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 4 Button Click
         
         if(ae.getSource() == jbtnPartsLv4){
-        	if (Integer.parseInt(Box.boxes[7]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=4){
-        			if (Integer.parseInt(CarMain.main[5]) >=4){
-        				Box.boxes[7] = Integer.toString(Integer.parseInt(Box.boxes[7]) - 1);
+        	if (Box.boxes[7] > 0){
+        		if (CarMain.main[4] >=4){
+        			if (CarMain.main[5] >=4){
+        				Box.boxes[7] = Box.boxes[7] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[79] = Integer.toString(Integer.parseInt(Part.parts[79]) + 1);
+            		    	Part.parts[79] = Part.parts[79] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[81] = Integer.toString(Integer.parseInt(Part.parts[81]) + 1);
+            		    	Part.parts[81] = Part.parts[81] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[83] = Integer.toString(Integer.parseInt(Part.parts[83]) + 1);
+            		    	Part.parts[83] = Part.parts[83] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[85] = Integer.toString(Integer.parseInt(Part.parts[85]) + 1);
+            		    	Part.parts[85] = Part.parts[85] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[87] = Integer.toString(Integer.parseInt(Part.parts[87]) + 1);
+            		    	Part.parts[87] = Part.parts[87] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[89] = Integer.toString(Integer.parseInt(Part.parts[89]) + 1);
+            		    	Part.parts[89] = Part.parts[89] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[91] = Integer.toString(Integer.parseInt(Part.parts[91]) + 1);
+            		    	Part.parts[91] = Part.parts[91] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[93] = Integer.toString(Integer.parseInt(Part.parts[93]) + 1);
+            		    	Part.parts[93] = Part.parts[93] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[95] = Integer.toString(Integer.parseInt(Part.parts[95]) + 1);
+            		    	Part.parts[95] = Part.parts[95] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[97] = Integer.toString(Integer.parseInt(Part.parts[97]) + 1);
+            		    	Part.parts[97] = Part.parts[97] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[99] = Integer.toString(Integer.parseInt(Part.parts[99]) + 1);
+            		    	Part.parts[99] = Part.parts[99] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[101] = Integer.toString(Integer.parseInt(Part.parts[101]) + 1);
+            		    	Part.parts[101] = Part.parts[101] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[103] = Integer.toString(Integer.parseInt(Part.parts[103]) + 1);
+            		    	Part.parts[103] = Part.parts[103] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -3687,51 +3688,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 5 Button Click
         
         if(ae.getSource() == jbtnPartsLv5){
-        	if (Integer.parseInt(Box.boxes[9]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=5){
-        			if (Integer.parseInt(CarMain.main[5]) >=5){
-        				Box.boxes[9] = Integer.toString(Integer.parseInt(Box.boxes[9]) - 1);
+        	if (Box.boxes[9] > 0){
+        		if (CarMain.main[4] >=5){
+        			if (CarMain.main[5] >=5){
+        				Box.boxes[9] = Box.boxes[9] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[105] = Integer.toString(Integer.parseInt(Part.parts[105]) + 1);
+            		    	Part.parts[105] = Part.parts[105] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[107] = Integer.toString(Integer.parseInt(Part.parts[107]) + 1);;
+            		    	Part.parts[107] = Part.parts[107] + 1;;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[109] = Integer.toString(Integer.parseInt(Part.parts[109]) + 1);
+            		    	Part.parts[109] = Part.parts[109] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[111] = Integer.toString(Integer.parseInt(Part.parts[111]) + 1);
+            		    	Part.parts[111] = Part.parts[111] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[113] = Integer.toString(Integer.parseInt(Part.parts[113]) + 1);;
+            		    	Part.parts[113] = Part.parts[113] + 1;;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[115] = Integer.toString(Integer.parseInt(Part.parts[115]) + 1);
+            		    	Part.parts[115] = Part.parts[115] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[117] = Integer.toString(Integer.parseInt(Part.parts[117]) + 1);
+            		    	Part.parts[117] = Part.parts[117] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[119] = Integer.toString(Integer.parseInt(Part.parts[119]) + 1);
+            		    	Part.parts[119] = Part.parts[119] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[121] = Integer.toString(Integer.parseInt(Part.parts[121]) + 1);
+            		    	Part.parts[121] = Part.parts[121] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[123] = Integer.toString(Integer.parseInt(Part.parts[123]) + 1);
+            		    	Part.parts[123] = Part.parts[123] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[125] = Integer.toString(Integer.parseInt(Part.parts[125]) + 1);
+            		    	Part.parts[125] = Part.parts[125] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[127] = Integer.toString(Integer.parseInt(Part.parts[127]) + 1);
+            		    	Part.parts[127] = Part.parts[127] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmisson LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[129] = Integer.toString(Integer.parseInt(Part.parts[129]) + 1);
+            		    	Part.parts[129] = Part.parts[129] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -3746,51 +3747,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 6 Button Click
         
         if(ae.getSource() == jbtnPartsLv6){
-        	if (Integer.parseInt(Box.boxes[11]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=6){
-        			if (Integer.parseInt(CarMain.main[5]) >=6){
-        				Box.boxes[11] = Integer.toString(Integer.parseInt(Box.boxes[11]) - 1);
+        	if (Box.boxes[11] > 0){
+        		if (CarMain.main[4] >=6){
+        			if (CarMain.main[5] >=6){
+        				Box.boxes[11] = Box.boxes[11] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[131] = Integer.toString(Integer.parseInt(Part.parts[131]) + 1);
+            		    	Part.parts[131] = Part.parts[131] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[133] = Integer.toString(Integer.parseInt(Part.parts[133]) + 1);
+            		    	Part.parts[133] = Part.parts[133] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[135] = Integer.toString(Integer.parseInt(Part.parts[135]) + 1);;
+            		    	Part.parts[135] = Part.parts[135] + 1;;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[137] = Integer.toString(Integer.parseInt(Part.parts[137]) + 1);
+            		    	Part.parts[137] = Part.parts[137] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[139] = Integer.toString(Integer.parseInt(Part.parts[139]) + 1);
+            		    	Part.parts[139] = Part.parts[139] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[141] = Integer.toString(Integer.parseInt(Part.parts[141]) + 1);
+            		    	Part.parts[141] = Part.parts[141] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[143] = Integer.toString(Integer.parseInt(Part.parts[143]) + 1);
+            		    	Part.parts[143] = Part.parts[143] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[145] = Integer.toString(Integer.parseInt(Part.parts[145]) + 1);;
+            		    	Part.parts[145] = Part.parts[145] + 1;;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[147] = Integer.toString(Integer.parseInt(Part.parts[147]) + 1);
+            		    	Part.parts[147] = Part.parts[147] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[149] = Integer.toString(Integer.parseInt(Part.parts[149]) + 1);
+            		    	Part.parts[149] = Part.parts[149] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[151] = Integer.toString(Integer.parseInt(Part.parts[151]) + 1);
+            		    	Part.parts[151] = Part.parts[151] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[153] = Integer.toString(Integer.parseInt(Part.parts[153]) + 1);
+            		    	Part.parts[153] = Part.parts[153] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[155] = Integer.toString(Integer.parseInt(Part.parts[155]) + 1);
+            		    	Part.parts[155] = Part.parts[155] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -3805,51 +3806,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 7 Button Click
         
         if(ae.getSource() == jbtnPartsLv7){
-        	if (Integer.parseInt(Box.boxes[13]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=7){
-        			if (Integer.parseInt(CarMain.main[5]) >=7){
-        				Box.boxes[13] = Integer.toString(Integer.parseInt(Box.boxes[13]) - 1);
+        	if (Box.boxes[13] > 0){
+        		if (CarMain.main[4] >=7){
+        			if (CarMain.main[5] >=7){
+        				Box.boxes[13] = Box.boxes[13] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[157] = Integer.toString(Integer.parseInt(Part.parts[157]) + 1);
+            		    	Part.parts[157] = Part.parts[157] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[159] = Integer.toString(Integer.parseInt(Part.parts[159]) + 1);
+            		    	Part.parts[159] = Part.parts[159] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[161] = Integer.toString(Integer.parseInt(Part.parts[161]) + 1);
+            		    	Part.parts[161] = Part.parts[161] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[163] = Integer.toString(Integer.parseInt(Part.parts[163]) + 1);
+            		    	Part.parts[163] = Part.parts[163] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[165] = Integer.toString(Integer.parseInt(Part.parts[165]) + 1);
+            		    	Part.parts[165] = Part.parts[165] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[167] = Integer.toString(Integer.parseInt(Part.parts[167]) + 1);
+            		    	Part.parts[167] = Part.parts[167] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[169] = Integer.toString(Integer.parseInt(Part.parts[169]) + 1);
+            		    	Part.parts[169] = Part.parts[169] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[171] = Integer.toString(Integer.parseInt(Part.parts[171]) + 1);
+            		    	Part.parts[171] = Part.parts[171] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[173] = Integer.toString(Integer.parseInt(Part.parts[173]) + 1);
+            		    	Part.parts[173] = Part.parts[173] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[175] = Integer.toString(Integer.parseInt(Part.parts[175]) + 1);
+            		    	Part.parts[175] = Part.parts[175] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[177] = Integer.toString(Integer.parseInt(Part.parts[177]) + 1);
+            		    	Part.parts[177] = Part.parts[177] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[179] = Integer.toString(Integer.parseInt(Part.parts[179]) + 1);
+            		    	Part.parts[179] = Part.parts[179] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[181] = Integer.toString(Integer.parseInt(Part.parts[181]) + 1);
+            		    	Part.parts[181] = Part.parts[181] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -3864,51 +3865,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 8 Button Click
         
         if(ae.getSource() == jbtnPartsLv8){
-        	if (Integer.parseInt(Box.boxes[15]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=8){
-        			if (Integer.parseInt(CarMain.main[5]) >=8){
-        				Box.boxes[15] = Integer.toString(Integer.parseInt(Box.boxes[15]) - 1);
+        	if (Box.boxes[15] > 0){
+        		if (CarMain.main[4] >=8){
+        			if (CarMain.main[5] >=8){
+        				Box.boxes[15] = Box.boxes[15] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[183] = Integer.toString(Integer.parseInt(Part.parts[183]) + 1);
+            		    	Part.parts[183] = Part.parts[183] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[185] = Integer.toString(Integer.parseInt(Part.parts[185]) + 1);
+            		    	Part.parts[185] = Part.parts[185] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[187] = Integer.toString(Integer.parseInt(Part.parts[187]) + 1);
+            		    	Part.parts[187] = Part.parts[187] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[189] = Integer.toString(Integer.parseInt(Part.parts[189]) + 1);
+            		    	Part.parts[189] = Part.parts[189] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[191] = Integer.toString(Integer.parseInt(Part.parts[191]) + 1);
+            		    	Part.parts[191] = Part.parts[191] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[193] = Integer.toString(Integer.parseInt(Part.parts[193]) + 1);
+            		    	Part.parts[193] = Part.parts[193] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[195] = Integer.toString(Integer.parseInt(Part.parts[195]) + 1);
+            		    	Part.parts[195] = Part.parts[195] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}                    		
      		    	   	if (randomInt == 8){
-     		    	   		Part.parts[197] = Integer.toString(Integer.parseInt(Part.parts[197]) + 1);
+     		    	   		Part.parts[197] = Part.parts[197] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[199] = Integer.toString(Integer.parseInt(Part.parts[199]) + 1);
+            		    	Part.parts[199] = Part.parts[199] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[201] = Integer.toString(Integer.parseInt(Part.parts[201]) + 1);
+            		    	Part.parts[201] = Part.parts[201] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[203] = Integer.toString(Integer.parseInt(Part.parts[203]) + 1);
+            		    	Part.parts[203] = Part.parts[203] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[205] = Integer.toString(Integer.parseInt(Part.parts[205]) + 1);
+            		    	Part.parts[205] = Part.parts[205] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[207] = Integer.toString(Integer.parseInt(Part.parts[207]) + 1);
+            		    	Part.parts[207] = Part.parts[207] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
      		    	   		}
         				}
@@ -3923,51 +3924,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 9 Button Click
         
         if(ae.getSource() == jbtnPartsLv9){
-        	if (Integer.parseInt(Box.boxes[17]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=9){
-        			if (Integer.parseInt(CarMain.main[5]) >=9){
-        				Box.boxes[17] = Integer.toString(Integer.parseInt(Box.boxes[17]) - 1);
+        	if (Box.boxes[17] > 0){
+        		if (CarMain.main[4] >=9){
+        			if (CarMain.main[5] >=9){
+        				Box.boxes[17] = Box.boxes[17] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[209] = Integer.toString(Integer.parseInt(Part.parts[209]) + 1);
+            		    	Part.parts[209] = Part.parts[209] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[211] = Integer.toString(Integer.parseInt(Part.parts[211]) + 1);
+            		    	Part.parts[211] = Part.parts[211] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[213] = Integer.toString(Integer.parseInt(Part.parts[213]) + 1);
+            		    	Part.parts[213] = Part.parts[213] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[215] = Integer.toString(Integer.parseInt(Part.parts[215]) + 1);
+            		    	Part.parts[215] = Part.parts[215] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[217] = Integer.toString(Integer.parseInt(Part.parts[217]) + 1);
+            		    	Part.parts[217] = Part.parts[217] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[219] = Integer.toString(Integer.parseInt(Part.parts[219]) + 1);
+            		    	Part.parts[219] = Part.parts[219] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[221] = Integer.toString(Integer.parseInt(Part.parts[221]) + 1);
+            		    	Part.parts[221] = Part.parts[221] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[223] = Integer.toString(Integer.parseInt(Part.parts[223]) + 1);
+            		    	Part.parts[223] = Part.parts[223] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[225] = Integer.toString(Integer.parseInt(Part.parts[225]) + 1);
+            		    	Part.parts[225] = Part.parts[225] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[227] = Integer.toString(Integer.parseInt(Part.parts[227]) + 1);
+            		    	Part.parts[227] = Part.parts[227] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[229] = Integer.toString(Integer.parseInt(Part.parts[229]) + 1);
+            		    	Part.parts[229] = Part.parts[229] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[231] = Integer.toString(Integer.parseInt(Part.parts[231]) + 1);
+            		    	Part.parts[231] = Part.parts[231] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[233] = Integer.toString(Integer.parseInt(Part.parts[233]) + 1);
+            		    	Part.parts[233] = Part.parts[233] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}
         				}
@@ -3982,51 +3983,51 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 10 Button Click
         
         if(ae.getSource() == jbtnPartsLv10){
-        	if (Integer.parseInt(Box.boxes[19]) > 0){
-        		if (Integer.parseInt(CarMain.main[4]) >=10){
-        			if (Integer.parseInt(CarMain.main[5]) >=10){
-        				Box.boxes[19] = Integer.toString(Integer.parseInt(Box.boxes[19]) - 1);
+        	if (Box.boxes[19] > 0){
+        		if (CarMain.main[4] >=10){
+        			if (CarMain.main[5] >=10){
+        				Box.boxes[19] = Box.boxes[19] - 1;
         				Random randomGenerator = new Random();
     					for (int i =0; i <2; i++){
     					int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
-            		    	Part.parts[235] = Integer.toString(Integer.parseInt(Part.parts[235]) + 1);
+            		    	Part.parts[235] = Part.parts[235] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
             		    if (randomInt == 2){
-            		    	Part.parts[237] = Integer.toString(Integer.parseInt(Part.parts[237]) + 1);
+            		    	Part.parts[237] = Part.parts[237] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
             		    if (randomInt == 3){
-            		    	Part.parts[239] = Integer.toString(Integer.parseInt(Part.parts[239]) + 1);
+            		    	Part.parts[239] = Part.parts[239] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
             		    if (randomInt == 4){
-            		    	Part.parts[241] = Integer.toString(Integer.parseInt(Part.parts[241]) + 1);
+            		    	Part.parts[241] = Part.parts[241] + 1;
             		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
             		    if (randomInt == 5){
-            		    	Part.parts[243] = Integer.toString(Integer.parseInt(Part.parts[243]) + 1);
+            		    	Part.parts[243] = Part.parts[243] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
             		    if (randomInt == 6){
-            		    	Part.parts[245] = Integer.toString(Integer.parseInt(Part.parts[245]) + 1);
+            		    	Part.parts[245] = Part.parts[245] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
             		    if (randomInt == 7){
-            		    	Part.parts[247] = Integer.toString(Integer.parseInt(Part.parts[247]) + 1);
+            		    	Part.parts[247] = Part.parts[247] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
             		    if (randomInt == 8){
-            		    	Part.parts[249] = Integer.toString(Integer.parseInt(Part.parts[249]) + 1);
+            		    	Part.parts[249] = Part.parts[249] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
             		    if (randomInt == 9){
-            		    	Part.parts[251] = Integer.toString(Integer.parseInt(Part.parts[251]) + 1);
+            		    	Part.parts[251] = Part.parts[251] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
             		    if (randomInt == 10){
-            		    	Part.parts[253] = Integer.toString(Integer.parseInt(Part.parts[253]) + 1);
+            		    	Part.parts[253] = Part.parts[253] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
             		    if (randomInt == 11){
-            		    	Part.parts[255] = Integer.toString(Integer.parseInt(Part.parts[255]) + 1);
+            		    	Part.parts[255] = Part.parts[255] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
             		    if (randomInt == 12){
-            		    	Part.parts[257] = Integer.toString(Integer.parseInt(Part.parts[257]) + 1);
+            		    	Part.parts[257] = Part.parts[257] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
             		    if (randomInt == 13){
-            		    	Part.parts[259] = Integer.toString(Integer.parseInt(Part.parts[259]) + 1);
+            		    	Part.parts[259] = Part.parts[259] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
     					}          					   
         				}
@@ -4041,9 +4042,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 1 Button Click
          
         if(ae.getSource() == jbtnSellAccessoriesLv1){
-        	if (Integer.parseInt(Part.parts[1]) >0){
-        		Part.parts[1] = Integer.toString(Integer.parseInt(Part.parts[1]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[0])));
+        	if (Part.parts[1] >0){
+        		Part.parts[1] = Part.parts[1] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[0];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For: " +Part.parts[0], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4052,9 +4053,9 @@ public class ClickerGame implements ActionListener {
       	
         }
         if(ae.getSource() == jbtnSellAccessoriesLv2){
-        	if (Integer.parseInt(Part.parts[27]) >0){
-        		Part.parts[27] = Integer.toString(Integer.parseInt(Part.parts[27]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[26])));
+        	if (Part.parts[27] >0){
+        		Part.parts[27] = Part.parts[27] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[26];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For: " +Part.parts[26], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4064,9 +4065,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 3 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv3){
-        	if (Integer.parseInt(Part.parts[53]) >0){
-        		Part.parts[53] = Integer.toString(Integer.parseInt(Part.parts[53]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[52])));
+        	if (Part.parts[53] >0){
+        		Part.parts[53] = Part.parts[53] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[52];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For: " +Part.parts[52], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4076,9 +4077,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 4 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv4){
-        	if (Integer.parseInt(Part.parts[79]) >0){
-        		Part.parts[79] = Integer.toString(Integer.parseInt(Part.parts[79]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[78])));
+        	if (Part.parts[79] >0){
+        		Part.parts[79] = Part.parts[79] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[78];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For: " +Part.parts[78], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4088,9 +4089,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 5 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv5){
-        	if (Integer.parseInt(Part.parts[105]) >0){
-        		Part.parts[105] = Integer.toString(Integer.parseInt(Part.parts[105]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[104])));
+        	if (Part.parts[105] >0){
+        		Part.parts[105] = Part.parts[105] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[104];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For: " +Part.parts[104], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4100,9 +4101,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 6 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv6){
-        	if (Integer.parseInt(Part.parts[131]) >0){
-        		Part.parts[131] = Integer.toString(Integer.parseInt(Part.parts[131]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[130])));
+        	if (Part.parts[131] >0){
+        		Part.parts[131] = Part.parts[131] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[130];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For: " +Part.parts[130], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4112,9 +4113,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 7 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv7){
-        	if (Integer.parseInt(Part.parts[157]) >0){
-        		Part.parts[157] = Integer.toString(Integer.parseInt(Part.parts[157]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[156])));
+        	if (Part.parts[157] >0){
+        		Part.parts[157] = Part.parts[157] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[156];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For: " +Part.parts[156], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4124,9 +4125,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 8 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv8){
-        	if (Integer.parseInt(Part.parts[183]) >0){
-        		Part.parts[183] = Integer.toString(Integer.parseInt(Part.parts[183]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[182])));
+        	if (Part.parts[183] >0){
+        		Part.parts[183] = Part.parts[183] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[182];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For: " +Part.parts[182], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4136,9 +4137,9 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 9 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv9){
-        	if (Integer.parseInt(Part.parts[209]) >0){
-        		Part.parts[209] = Integer.toString(Integer.parseInt(Part.parts[209]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[208])));
+        	if (Part.parts[209] >0){
+        		Part.parts[209] = Part.parts[209] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[208];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For: " +Part.parts[208], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4148,9 +4149,9 @@ public class ClickerGame implements ActionListener {
          // Sell Accessories Level 10 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv10){
-        	if (Integer.parseInt(Part.parts[235]) >0){
-        		Part.parts[235] = Integer.toString(Integer.parseInt(Part.parts[235]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[234])));
+        	if (Part.parts[235] >0){
+        		Part.parts[235] = Part.parts[235] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[234];
         		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For: " +Part.parts[234], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4160,9 +4161,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 1 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv1){
-        	if (Integer.parseInt(Part.parts[3]) >0){
-        		Part.parts[3] = Integer.toString(Integer.parseInt(Part.parts[3]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[2])));
+        	if (Part.parts[3] >0){
+        		Part.parts[3] = Part.parts[3] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[2];
         		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For: " +Part.parts[2], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4172,9 +4173,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 2 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv2){
-        	if (Integer.parseInt(Part.parts[29]) >0){
-        		Part.parts[29] = Integer.toString(Integer.parseInt(Part.parts[29]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[28])));
+        	if (Part.parts[29] >0){
+        		Part.parts[29] = Part.parts[29] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[28];
         		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For: " +Part.parts[28], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4184,9 +4185,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 3 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv3){
-        	if (Integer.parseInt(Part.parts[55]) >0){
-        		Part.parts[55] = Integer.toString(Integer.parseInt(Part.parts[55]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[54])));
+        	if (Part.parts[55] >0){
+        		Part.parts[55] = Part.parts[55] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[54];
         		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVLFor: " + Part.parts[54], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4196,9 +4197,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 4 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv4){
-        	if (Integer.parseInt(Part.parts[81]) >0){
-        		Part.parts[81] = Integer.toString(Integer.parseInt(Part.parts[81]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[80])));
+        	if (Part.parts[81] >0){
+        		Part.parts[81] = Part.parts[81] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[80];
         		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For: " +Part.parts[80], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4208,9 +4209,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 5 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv5){
-        	if (Integer.parseInt(Part.parts[107]) >0){
-        		Part.parts[107] = Integer.toString(Integer.parseInt(Part.parts[107]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[106])));
+        	if (Part.parts[107] >0){
+        		Part.parts[107] = Part.parts[107] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[106];
         		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For: " +Part.parts[106], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4220,9 +4221,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 6 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv6){
-        	if (Integer.parseInt(Part.parts[133]) >0){
-        		Part.parts[133] = Integer.toString(Integer.parseInt(Part.parts[133]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[132])));
+        	if (Part.parts[133] >0){
+        		Part.parts[133] = Part.parts[133] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[132];
         		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For: " +Part.parts[132], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4232,9 +4233,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 7 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv7){
-        	if (Integer.parseInt(Part.parts[159]) >0){
-        		Part.parts[159] = Integer.toString(Integer.parseInt(Part.parts[159]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[158])));
+        	if (Part.parts[159] >0){
+        		Part.parts[159] = Part.parts[159] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[158];
         		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For: " +Part.parts[158], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4244,9 +4245,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 8 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv8){
-        	if (Integer.parseInt(Part.parts[185]) >0){
-        		Part.parts[185] = Integer.toString(Integer.parseInt(Part.parts[185]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[184])));
+        	if (Part.parts[185] >0){
+        		Part.parts[185] = Part.parts[185] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[184];
         		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For: " +Part.parts[184], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4256,9 +4257,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 9 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv9){
-        	if (Integer.parseInt(Part.parts[211]) >0){
-        		Part.parts[211] = Integer.toString(Integer.parseInt(Part.parts[211]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[210])));
+        	if (Part.parts[211] >0){
+        		Part.parts[211] = Part.parts[211] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[210];
         		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For: " +Part.parts[210], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4268,9 +4269,9 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 10 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv10){
-        	if (Integer.parseInt(Part.parts[237]) >0){
-        		Part.parts[237] = Integer.toString(Integer.parseInt(Part.parts[237]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[236])));
+        	if (Part.parts[237] >0){
+        		Part.parts[237] = Part.parts[237] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[236];
         		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For: " +Part.parts[236], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4280,9 +4281,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 1 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv1){
-        	if (Integer.parseInt(Part.parts[5]) >0){
-        		Part.parts[5] = Integer.toString(Integer.parseInt(Part.parts[5]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[4])));
+        	if (Part.parts[5] >0){
+        		Part.parts[5] = Part.parts[5] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[4];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For: " +Part.parts[4], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4292,9 +4293,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 2 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv2){
-        	if (Integer.parseInt(Part.parts[31]) >0){
-        		Part.parts[31] = Integer.toString(Integer.parseInt(Part.parts[31]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[30])));
+        	if (Part.parts[31] >0){
+        		Part.parts[31] = Part.parts[31] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[30];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For: " +Part.parts[30], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4304,9 +4305,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 3 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv3){
-        	if (Integer.parseInt(Part.parts[57]) >0){
-        		Part.parts[57] = Integer.toString(Integer.parseInt(Part.parts[57]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[56])));
+        	if (Part.parts[57] >0){
+        		Part.parts[57] = Part.parts[57] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[56];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For: " +Part.parts[56], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4316,9 +4317,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 4 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv4){
-        	if (Integer.parseInt(Part.parts[83]) >0){
-        		Part.parts[83] = Integer.toString(Integer.parseInt(Part.parts[83]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[82])));
+        	if (Part.parts[83] >0){
+        		Part.parts[83] = Part.parts[83] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[82];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For: " +Part.parts[82], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4328,9 +4329,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 5 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv5){
-        	if (Integer.parseInt(Part.parts[109]) >0){
-        		Part.parts[109] = Integer.toString(Integer.parseInt(Part.parts[109]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[108])));
+        	if (Part.parts[109] >0){
+        		Part.parts[109] = Part.parts[109] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[108];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For: " +Part.parts[108], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4340,9 +4341,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 6 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv6){
-        	if (Integer.parseInt(Part.parts[135]) >0){
-        		Part.parts[135] = Integer.toString(Integer.parseInt(Part.parts[135]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[134])));
+        	if (Part.parts[135] >0){
+        		Part.parts[135] = Part.parts[135] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[134];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For: " +Part.parts[134], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4352,9 +4353,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 7 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv7){
-        	if (Integer.parseInt(Part.parts[161]) >0){
-        		Part.parts[161] = Integer.toString(Integer.parseInt(Part.parts[161]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[160])));
+        	if (Part.parts[161] >0){
+        		Part.parts[161] = Part.parts[161] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[160];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For: " +Part.parts[160], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4364,9 +4365,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 8 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv8){
-        	if (Integer.parseInt(Part.parts[187]) >0){
-        		Part.parts[187] = Integer.toString(Integer.parseInt(Part.parts[187]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[186])));
+        	if (Part.parts[187] >0){
+        		Part.parts[187] = Part.parts[187] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[186];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For: " +Part.parts[186], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4376,9 +4377,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 9 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv9){
-        	if (Integer.parseInt(Part.parts[213]) >0){
-        		Part.parts[213] = Integer.toString(Integer.parseInt(Part.parts[213]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[212])));
+        	if (Part.parts[213] >0){
+        		Part.parts[213] = Part.parts[213] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[212];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For: " +Part.parts[212], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4388,9 +4389,9 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 10 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv10){
-        	if (Integer.parseInt(Part.parts[239]) >0){
-        		Part.parts[239] = Integer.toString(Integer.parseInt(Part.parts[239]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[238])));
+        	if (Part.parts[239] >0){
+        		Part.parts[239] = Part.parts[239] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[238];
         		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For: " +Part.parts[238], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4400,9 +4401,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 1 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv1){
-        	if (Integer.parseInt(Part.parts[7]) >0){
-        		Part.parts[7] = Integer.toString(Integer.parseInt(Part.parts[7]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[6])));
+        	if (Part.parts[7] >0){
+        		Part.parts[7] = Part.parts[7] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[6];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For: " +Part.parts[6], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4412,9 +4413,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 2 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv2){
-        	if (Integer.parseInt(Part.parts[33]) >0){
-        		Part.parts[33] = Integer.toString(Integer.parseInt(Part.parts[33]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[32])));
+        	if (Part.parts[33] >0){
+        		Part.parts[33] = Part.parts[33] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[32];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For: " +Part.parts[32], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4424,9 +4425,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 3 Button Click
         
         if(ae.getSource() == jbtnSellCoolingLv3){
-        	if (Integer.parseInt(Part.parts[59]) >0){
-        		Part.parts[59] = Integer.toString(Integer.parseInt(Part.parts[59]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[58])));
+        	if (Part.parts[59] >0){
+        		Part.parts[59] = Part.parts[59] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[58];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For: " +Part.parts[58], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4436,9 +4437,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 4 Button Click
       
         if(ae.getSource() == jbtnSellCoolingLv4){
-        	if (Integer.parseInt(Part.parts[85]) >0){
-        		Part.parts[85] = Integer.toString(Integer.parseInt(Part.parts[85]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[84])));
+        	if (Part.parts[85] >0){
+        		Part.parts[85] = Part.parts[85] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[84];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For: " +Part.parts[84], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4448,9 +4449,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 5 Button Click
   
         if(ae.getSource() == jbtnSellCoolingLv1){
-        	if (Integer.parseInt(Part.parts[111]) >0){
-        		Part.parts[111] = Integer.toString(Integer.parseInt(Part.parts[111]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[110])));
+        	if (Part.parts[111] >0){
+        		Part.parts[111] = Part.parts[111] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[110];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For: " +Part.parts[110], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4460,9 +4461,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 6 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv6){
-        	if (Integer.parseInt(Part.parts[137]) >0){
-        		Part.parts[137] = Integer.toString(Integer.parseInt(Part.parts[137]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[136])));
+        	if (Part.parts[137] >0){
+        		Part.parts[137] = Part.parts[137] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[136];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For: " +Part.parts[136], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4472,9 +4473,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 7 Button Click
   
         if(ae.getSource() == jbtnSellCoolingLv7){
-        	if (Integer.parseInt(Part.parts[163]) >0){
-        		Part.parts[163] = Integer.toString(Integer.parseInt(Part.parts[163]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[162])));
+        	if (Part.parts[163] >0){
+        		Part.parts[163] = Part.parts[163] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[162];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For: " +Part.parts[162], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4484,9 +4485,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 8 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv8){
-        	if (Integer.parseInt(Part.parts[189]) >0){
-        		Part.parts[189] = Integer.toString(Integer.parseInt(Part.parts[189]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[188])));
+        	if (Part.parts[189] >0){
+        		Part.parts[189] = Part.parts[189] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[188];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For: " +Part.parts[188], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4496,9 +4497,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 9 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv9){
-        	if (Integer.parseInt(Part.parts[215]) >0){
-        		Part.parts[215] = Integer.toString(Integer.parseInt(Part.parts[215]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[214])));
+        	if (Part.parts[215] >0){
+        		Part.parts[215] = Part.parts[215] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[214];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL FFor: " +Part.parts[214], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4508,9 +4509,9 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 10 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv10){
-        	if (Integer.parseInt(Part.parts[241]) >0){
-        		Part.parts[241] = Integer.toString(Integer.parseInt(Part.parts[241]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[240])));
+        	if (Part.parts[241] >0){
+        		Part.parts[241] = Part.parts[241] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[240];
         		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For: " +Part.parts[240], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4520,9 +4521,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 1 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv1){
-        	if (Integer.parseInt(Part.parts[9]) >0){
-        		Part.parts[9] = Integer.toString(Integer.parseInt(Part.parts[9]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[8])));
+        	if (Part.parts[9] >0){
+        		Part.parts[9] = Part.parts[9] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[8];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For: " +Part.parts[8], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4532,9 +4533,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 2 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv2){
-        	if (Integer.parseInt(Part.parts[35]) >0){
-        		Part.parts[35] = Integer.toString(Integer.parseInt(Part.parts[35]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[34])));
+        	if (Part.parts[35] >0){
+        		Part.parts[35] = Part.parts[35] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[34];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For: " +Part.parts[34], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4544,9 +4545,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 3 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv3){
-        	if (Integer.parseInt(Part.parts[61]) >0){
-        		Part.parts[61] = Integer.toString(Integer.parseInt(Part.parts[61]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[60])));
+        	if (Part.parts[61] >0){
+        		Part.parts[61] = Part.parts[61] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[60];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For: " +Part.parts[60], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4556,9 +4557,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 4 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv4){
-        	if (Integer.parseInt(Part.parts[87]) >0){
-        		Part.parts[87] = Integer.toString(Integer.parseInt(Part.parts[87]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[86])));
+        	if (Part.parts[87] >0){
+        		Part.parts[87] = Part.parts[87] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[86];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For: " +Part.parts[86], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4568,9 +4569,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 5 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv5){
-        	if (Integer.parseInt(Part.parts[113]) >0){
-        		Part.parts[113] = Integer.toString(Integer.parseInt(Part.parts[113]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[112])));
+        	if (Part.parts[113] >0){
+        		Part.parts[113] = Part.parts[113] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[112];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For: " +Part.parts[112], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4580,9 +4581,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 6 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv6){
-        	if (Integer.parseInt(Part.parts[139]) >0){
-        		Part.parts[139] = Integer.toString(Integer.parseInt(Part.parts[139]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[138])));
+        	if (Part.parts[139] >0){
+        		Part.parts[139] = Part.parts[139] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[138];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For: " +Part.parts[138], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4592,9 +4593,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 7 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv7){
-        	if (Integer.parseInt(Part.parts[165]) >0){
-        		Part.parts[165] = Integer.toString(Integer.parseInt(Part.parts[165]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[164])));
+        	if (Part.parts[165] >0){
+        		Part.parts[165] = Part.parts[165] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[164];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For: " +Part.parts[164], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4604,9 +4605,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 8 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv8){
-        	if (Integer.parseInt(Part.parts[191]) >0){
-        		Part.parts[191] = Integer.toString(Integer.parseInt(Part.parts[191]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[190])));
+        	if (Part.parts[191] >0){
+        		Part.parts[191] = Part.parts[191] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[190];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For: " +Part.parts[190], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4616,9 +4617,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 9 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv9){
-        	if (Integer.parseInt(Part.parts[217]) >0){
-        		Part.parts[217] = Integer.toString(Integer.parseInt(Part.parts[217]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[216])));
+        	if (Part.parts[217] >0){
+        		Part.parts[217] = Part.parts[217] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[216];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For: " +Part.parts[216], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4628,9 +4629,9 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 10 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv10){
-        	if (Integer.parseInt(Part.parts[243]) >0){
-        		Part.parts[243] = Integer.toString(Integer.parseInt(Part.parts[243]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[242])));
+        	if (Part.parts[243] >0){
+        		Part.parts[243] = Part.parts[243] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[242];
         		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For: " +Part.parts[242], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4640,9 +4641,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 1 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv1){
-        	if (Integer.parseInt(Part.parts[11]) >0){
-        		Part.parts[11] = Integer.toString(Integer.parseInt(Part.parts[11]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[10])));
+        	if (Part.parts[11] >0){
+        		Part.parts[11] = Part.parts[11] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[10];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For For: " +Part.parts[10], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4652,9 +4653,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 2 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv2){
-        	if (Integer.parseInt(Part.parts[37]) >0){
-        		Part.parts[37] = Integer.toString(Integer.parseInt(Part.parts[37]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[36])));
+        	if (Part.parts[37] >0){
+        		Part.parts[37] = Part.parts[37] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[36];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For: " +Part.parts[36], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4664,9 +4665,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 3 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv3){
-        	if (Integer.parseInt(Part.parts[63]) >0){
-        		Part.parts[63] = Integer.toString(Integer.parseInt(Part.parts[63]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[62])));
+        	if (Part.parts[63] >0){
+        		Part.parts[63] = Part.parts[63] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[62];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For: " +Part.parts[62], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4676,9 +4677,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 4 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv4){
-        	if (Integer.parseInt(Part.parts[89]) >0){
-        		Part.parts[89] = Integer.toString(Integer.parseInt(Part.parts[89]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[88])));
+        	if (Part.parts[89] >0){
+        		Part.parts[89] = Part.parts[89] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[88];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For: " +Part.parts[88], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4688,9 +4689,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 5 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv5){
-        	if (Integer.parseInt(Part.parts[115]) >0){
-        		Part.parts[115] = Integer.toString(Integer.parseInt(Part.parts[115]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[114])));
+        	if (Part.parts[115] >0){
+        		Part.parts[115] = Part.parts[115] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[114];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For: " +Part.parts[114], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4700,9 +4701,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 6 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv6){
-        	if (Integer.parseInt(Part.parts[141]) >0){
-        		Part.parts[141] = Integer.toString(Integer.parseInt(Part.parts[141]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[140])));
+        	if (Part.parts[141] >0){
+        		Part.parts[141] = Part.parts[141] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[140];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For: " +Part.parts[140], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4712,9 +4713,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 7 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv7){
-        	if (Integer.parseInt(Part.parts[167]) >0){
-        		Part.parts[167] = Integer.toString(Integer.parseInt(Part.parts[167]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[166])));
+        	if (Part.parts[167] >0){
+        		Part.parts[167] = Part.parts[167] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[166];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For: " +Part.parts[166], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4724,9 +4725,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 8 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv8){
-        	if (Integer.parseInt(Part.parts[193]) >0){
-        		Part.parts[193] = Integer.toString(Integer.parseInt(Part.parts[193]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[192])));
+        	if (Part.parts[193] >0){
+        		Part.parts[193] = Part.parts[193] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[192];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For: " +Part.parts[192], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4736,9 +4737,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 9 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv9){
-        	if (Integer.parseInt(Part.parts[219]) >0){
-        		Part.parts[219] = Integer.toString(Integer.parseInt(Part.parts[219]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[218])));
+        	if (Part.parts[219] >0){
+        		Part.parts[219] = Part.parts[219] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[218];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For: " +Part.parts[218], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4748,9 +4749,9 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 10 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv10){
-        	if (Integer.parseInt(Part.parts[245]) >0){
-        		Part.parts[245] = Integer.toString(Integer.parseInt(Part.parts[245]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[244])));
+        	if (Part.parts[245] >0){
+        		Part.parts[245] = Part.parts[245] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[244];
         		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For: " +Part.parts[244], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4760,9 +4761,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 1 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv1){
-        	if (Integer.parseInt(Part.parts[13]) >0){
-        		Part.parts[13] = Integer.toString(Integer.parseInt(Part.parts[13]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[12])));
+        	if (Part.parts[13] >0){
+        		Part.parts[13] = Part.parts[13] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[12];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For: " +Part.parts[12], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4772,9 +4773,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 2 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv2){
-        	if (Integer.parseInt(Part.parts[39]) >0){
-        		Part.parts[39] = Integer.toString(Integer.parseInt(Part.parts[39]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[38])));
+        	if (Part.parts[39] >0){
+        		Part.parts[39] = Part.parts[39] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[38];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For: " +Part.parts[38], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4784,9 +4785,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 3 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv3){
-        	if (Integer.parseInt(Part.parts[65]) >0){
-        		Part.parts[65] = Integer.toString(Integer.parseInt(Part.parts[65]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[64])));
+        	if (Part.parts[65] >0){
+        		Part.parts[65] = Part.parts[65] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[64];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For: " +Part.parts[64], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4796,9 +4797,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 4 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv4){
-        	if (Integer.parseInt(Part.parts[91]) >0){
-        		Part.parts[91] = Integer.toString(Integer.parseInt(Part.parts[91]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[90])));
+        	if (Part.parts[91] >0){
+        		Part.parts[91] = Part.parts[91] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[90];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For: " +Part.parts[90], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4808,9 +4809,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 5 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv5){
-        	if (Integer.parseInt(Part.parts[117]) >0){
-        		Part.parts[117] = Integer.toString(Integer.parseInt(Part.parts[117]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[116])));
+        	if (Part.parts[117] >0){
+        		Part.parts[117] = Part.parts[117] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[116];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For: " +Part.parts[116], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4820,9 +4821,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 6 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv6){
-        	if (Integer.parseInt(Part.parts[143]) >0){
-        		Part.parts[143] = Integer.toString(Integer.parseInt(Part.parts[143]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[142])));
+        	if (Part.parts[143] >0){
+        		Part.parts[143] = Part.parts[143] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[142];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For: " +Part.parts[142], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4832,9 +4833,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 7 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv7){
-        	if (Integer.parseInt(Part.parts[169]) >0){
-        		Part.parts[169] = Integer.toString(Integer.parseInt(Part.parts[169]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[168])));
+        	if (Part.parts[169] >0){
+        		Part.parts[169] = Part.parts[169] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[168];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For: " +Part.parts[168], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4844,9 +4845,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 8 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv8){
-        	if (Integer.parseInt(Part.parts[195]) >0){
-        		Part.parts[195] = Integer.toString(Integer.parseInt(Part.parts[195]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[194])));
+        	if (Part.parts[195] >0){
+        		Part.parts[195] = Part.parts[195] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[194];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For: " +Part.parts[194], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4856,9 +4857,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 9 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv9){
-        	if (Integer.parseInt(Part.parts[221]) >0){
-        		Part.parts[221] = Integer.toString(Integer.parseInt(Part.parts[221]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[220])));
+        	if (Part.parts[221] >0){
+        		Part.parts[221] = Part.parts[221] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[220];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For: " +Part.parts[220], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4868,9 +4869,9 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 10 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv10){
-        	if (Integer.parseInt(Part.parts[247]) >0){
-        		Part.parts[247] = Integer.toString(Integer.parseInt(Part.parts[247]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[246])));
+        	if (Part.parts[247] >0){
+        		Part.parts[247] = Part.parts[247] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[246];
         		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For: " +Part.parts[246], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4880,9 +4881,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 1 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv1){
-        	if (Integer.parseInt(Part.parts[15]) >0){
-        		Part.parts[15] = Integer.toString(Integer.parseInt(Part.parts[15]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[14])));
+        	if (Part.parts[15] >0){
+        		Part.parts[15] = Part.parts[15] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[14];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For: " +Part.parts[14], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4892,9 +4893,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 2 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv2){
-        	if (Integer.parseInt(Part.parts[41]) >0){
-        		Part.parts[41] = Integer.toString(Integer.parseInt(Part.parts[41]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[40])));
+        	if (Part.parts[41] >0){
+        		Part.parts[41] = Part.parts[41] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[40];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For: " +Part.parts[40], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4904,9 +4905,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 3 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv3){
-        	if (Integer.parseInt(Part.parts[67]) >0){
-        		Part.parts[67] = Integer.toString(Integer.parseInt(Part.parts[67]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[66])));
+        	if (Part.parts[67] >0){
+        		Part.parts[67] = Part.parts[67] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[66];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For: " +Part.parts[66], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4916,9 +4917,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 4 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv4){
-        	if (Integer.parseInt(Part.parts[93]) >0){
-        		Part.parts[93] = Integer.toString(Integer.parseInt(Part.parts[93]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[92])));
+        	if (Part.parts[93] >0){
+        		Part.parts[93] = Part.parts[93] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[92];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For: " +Part.parts[92], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4928,9 +4929,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 5 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv5){
-        	if (Integer.parseInt(Part.parts[119]) >0){
-        		Part.parts[119] = Integer.toString(Integer.parseInt(Part.parts[119]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[118])));
+        	if (Part.parts[119] >0){
+        		Part.parts[119] = Part.parts[119] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[118];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For: " +Part.parts[118], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4940,9 +4941,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 6 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv6){
-        	if (Integer.parseInt(Part.parts[145]) >0){
-        		Part.parts[145] = Integer.toString(Integer.parseInt(Part.parts[145]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[144])));
+        	if (Part.parts[145] >0){
+        		Part.parts[145] = Part.parts[145] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[144];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL FFor: " +Part.parts[144], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4952,9 +4953,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 7 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv7){
-        	if (Integer.parseInt(Part.parts[171]) >0){
-        		Part.parts[171] = Integer.toString(Integer.parseInt(Part.parts[171]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[170])));
+        	if (Part.parts[171] >0){
+        		Part.parts[171] = Part.parts[171] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[170];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For: " +Part.parts[170], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4964,9 +4965,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 8 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv8){
-        	if (Integer.parseInt(Part.parts[197]) >0){
-        		Part.parts[197] = Integer.toString(Integer.parseInt(Part.parts[197]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[196])));
+        	if (Part.parts[197] >0){
+        		Part.parts[197] = Part.parts[197] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[196];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For: " +Part.parts[196], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4976,9 +4977,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 9 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv9){
-        	if (Integer.parseInt(Part.parts[223]) >0){
-        		Part.parts[223] = Integer.toString(Integer.parseInt(Part.parts[223]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[222])));
+        	if (Part.parts[223] >0){
+        		Part.parts[223] = Part.parts[223] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[222];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For: " +Part.parts[222], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -4988,9 +4989,9 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 10 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv10){
-        	if (Integer.parseInt(Part.parts[249]) >0){
-        		Part.parts[249] = Integer.toString(Integer.parseInt(Part.parts[249]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[248])));
+        	if (Part.parts[249] >0){
+        		Part.parts[249] = Part.parts[249] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[248];
         		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For: " +Part.parts[248], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5000,9 +5001,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 1 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv1){
-        	if (Integer.parseInt(Part.parts[17]) >0){
-        		Part.parts[17] = Integer.toString(Integer.parseInt(Part.parts[17]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[16])));
+        	if (Part.parts[17] >0){
+        		Part.parts[17] = Part.parts[17] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[16];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL LVL For: " +Part.parts[16], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5012,9 +5013,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 2 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv2){
-        	if (Integer.parseInt(Part.parts[43]) >0){
-        		Part.parts[43] = Integer.toString(Integer.parseInt(Part.parts[43]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[42])));
+        	if (Part.parts[43] >0){
+        		Part.parts[43] = Part.parts[43] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[42];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For: " +Part.parts[42], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5024,9 +5025,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 3 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv3){
-        	if (Integer.parseInt(Part.parts[69]) >0){
-        		Part.parts[69] = Integer.toString(Integer.parseInt(Part.parts[69]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[68])));
+        	if (Part.parts[69] >0){
+        		Part.parts[69] = Part.parts[69] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[68];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For: " +Part.parts[68], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5036,9 +5037,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 4 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv4){
-        	if (Integer.parseInt(Part.parts[95]) >0){
-        		Part.parts[95] = Integer.toString(Integer.parseInt(Part.parts[95]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[94])));
+        	if (Part.parts[95] >0){
+        		Part.parts[95] = Part.parts[95] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[94];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For: " +Part.parts[94], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5048,9 +5049,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 5 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv5){
-        	if (Integer.parseInt(Part.parts[121]) >0){
-        		Part.parts[121] = Integer.toString(Integer.parseInt(Part.parts[121]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[120])));
+        	if (Part.parts[121] >0){
+        		Part.parts[121] = Part.parts[121] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[120];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For: " +Part.parts[120], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5060,9 +5061,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 6 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv6){
-        	if (Integer.parseInt(Part.parts[147]) >0){
-        		Part.parts[147] = Integer.toString(Integer.parseInt(Part.parts[147]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[146])));
+        	if (Part.parts[147] >0){
+        		Part.parts[147] = Part.parts[147] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[146];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For: " +Part.parts[146], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5072,9 +5073,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 7 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv7){
-        	if (Integer.parseInt(Part.parts[173]) >0){
-        		Part.parts[173] = Integer.toString(Integer.parseInt(Part.parts[173]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[172])));
+        	if (Part.parts[173] >0){
+        		Part.parts[173] = Part.parts[173] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[172];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For: " +Part.parts[172], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5084,9 +5085,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 8 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv8){
-        	if (Integer.parseInt(Part.parts[199]) >0){
-        		Part.parts[199] = Integer.toString(Integer.parseInt(Part.parts[199]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[198])));
+        	if (Part.parts[199] >0){
+        		Part.parts[199] = Part.parts[199] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[198];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For: " +Part.parts[198], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5096,9 +5097,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 9 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv9){
-        	if (Integer.parseInt(Part.parts[225]) >0){
-        		Part.parts[225] = Integer.toString(Integer.parseInt(Part.parts[225]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[224])));
+        	if (Part.parts[225] >0){
+        		Part.parts[225] = Part.parts[225] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[224];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For: " +Part.parts[224], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5108,9 +5109,9 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 10 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv10){
-        	if (Integer.parseInt(Part.parts[251]) >0){
-        		Part.parts[251] = Integer.toString(Integer.parseInt(Part.parts[251]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[250])));
+        	if (Part.parts[251] >0){
+        		Part.parts[251] = Part.parts[251] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[250];
         		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For: " +Part.parts[250], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5120,9 +5121,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 1 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv1){
-        	if (Integer.parseInt(Part.parts[19]) >0){
-        		Part.parts[19] = Integer.toString(Integer.parseInt(Part.parts[19]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[18])));
+        	if (Part.parts[19] >0){
+        		Part.parts[19] = Part.parts[19] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[18];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL FFor: " +Part.parts[18], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5132,9 +5133,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 2 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv2){
-        	if (Integer.parseInt(Part.parts[45]) >0){
-        		Part.parts[45] = Integer.toString(Integer.parseInt(Part.parts[45]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[44])));
+        	if (Part.parts[45] >0){
+        		Part.parts[45] = Part.parts[45] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[44];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For: " +Part.parts[44], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5144,9 +5145,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 3 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv3){
-        	if (Integer.parseInt(Part.parts[71]) >0){
-        		Part.parts[71] = Integer.toString(Integer.parseInt(Part.parts[71]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[70])));
+        	if (Part.parts[71] >0){
+        		Part.parts[71] = Part.parts[71] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[70];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For: " +Part.parts[70], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5156,9 +5157,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 4 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv4){
-        	if (Integer.parseInt(Part.parts[97]) >0){
-        		Part.parts[97] = Integer.toString(Integer.parseInt(Part.parts[97]) - 1);;
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[96])));
+        	if (Part.parts[97] >0){
+        		Part.parts[97] = Part.parts[97] - 1;;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[96];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For: " +Part.parts[96], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5168,9 +5169,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 5 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv5){
-        	if (Integer.parseInt(Part.parts[123]) >0){
-        		Part.parts[123] = Integer.toString(Integer.parseInt(Part.parts[123]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[122])));
+        	if (Part.parts[123] >0){
+        		Part.parts[123] = Part.parts[123] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[122];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For: " +Part.parts[122], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5180,9 +5181,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 6 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv6){
-        	if (Integer.parseInt(Part.parts[149]) >0){
-        		Part.parts[149] = Integer.toString(Integer.parseInt(Part.parts[149]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[148])));
+        	if (Part.parts[149] >0){
+        		Part.parts[149] = Part.parts[149] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[148];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For: " +Part.parts[148], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5192,9 +5193,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 7 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv7){
-        	if (Integer.parseInt(Part.parts[175]) >0){
-        		Part.parts[175] = Integer.toString(Integer.parseInt(Part.parts[175]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[174])));
+        	if (Part.parts[175] >0){
+        		Part.parts[175] = Part.parts[175] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[174];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For: " +Part.parts[174], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5204,9 +5205,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 8 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv8){
-        	if (Integer.parseInt(Part.parts[201]) >0){
-        		Part.parts[201] = Integer.toString(Integer.parseInt(Part.parts[201]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[200])));
+        	if (Part.parts[201] >0){
+        		Part.parts[201] = Part.parts[201] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[200];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For: " +Part.parts[200], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5216,9 +5217,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 9 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv9){
-        	if (Integer.parseInt(Part.parts[227]) >0){
-        		Part.parts[227] = Integer.toString(Integer.parseInt(Part.parts[227]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[266])));
+        	if (Part.parts[227] >0){
+        		Part.parts[227] = Part.parts[227] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[266];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For: " +Part.parts[266], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5228,9 +5229,9 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 10 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv10){
-        	if (Integer.parseInt(Part.parts[253]) >0){
-        		Part.parts[253] = Integer.toString(Integer.parseInt(Part.parts[253]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[252])));
+        	if (Part.parts[253] >0){
+        		Part.parts[253] = Part.parts[253] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[252];
         		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For: " +Part.parts[252], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5240,9 +5241,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 1 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv1){
-        	if (Integer.parseInt(Part.parts[21]) >0){
-        		Part.parts[21] = Integer.toString(Integer.parseInt(Part.parts[21]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[20])));
+        	if (Part.parts[21] >0){
+        		Part.parts[21] = Part.parts[21] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[20];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For: " +Part.parts[20], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5252,9 +5253,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 2 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv2){
-        	if (Integer.parseInt(Part.parts[47]) >0){
-        		Part.parts[47] = Integer.toString(Integer.parseInt(Part.parts[47]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[46])));
+        	if (Part.parts[47] >0){
+        		Part.parts[47] = Part.parts[47] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[46];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For: " +Part.parts[46], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5264,9 +5265,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 3 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv3){
-        	if (Integer.parseInt(Part.parts[73]) >0){
-        		Part.parts[73] = Integer.toString(Integer.parseInt(Part.parts[73]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[72])));
+        	if (Part.parts[73] >0){
+        		Part.parts[73] = Part.parts[73] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[72];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For: " +Part.parts[72], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5276,9 +5277,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 4 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv4){
-        	if (Integer.parseInt(Part.parts[99]) >0){
-        		Part.parts[99] = Integer.toString(Integer.parseInt(Part.parts[99]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[98])));
+        	if (Part.parts[99] >0){
+        		Part.parts[99] = Part.parts[99] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[98];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For: " +Part.parts[98], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5288,9 +5289,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 5 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv5){
-        	if (Integer.parseInt(Part.parts[125]) >0){
-        		Part.parts[125] = Integer.toString(Integer.parseInt(Part.parts[125]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[124])));
+        	if (Part.parts[125] >0){
+        		Part.parts[125] = Part.parts[125] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[124];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For: " +Part.parts[124], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5300,9 +5301,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 6 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv6){
-        	if (Integer.parseInt(Part.parts[151]) >0){
-        		Part.parts[151] = Integer.toString(Integer.parseInt(Part.parts[151]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[150])));
+        	if (Part.parts[151] >0){
+        		Part.parts[151] = Part.parts[151] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[150];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For: " +Part.parts[150], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5312,9 +5313,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 7 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv7){
-        	if (Integer.parseInt(Part.parts[177]) >0){
-        		Part.parts[177] = Integer.toString(Integer.parseInt(Part.parts[177]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[176])));
+        	if (Part.parts[177] >0){
+        		Part.parts[177] = Part.parts[177] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[176];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For: " +Part.parts[176], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5324,9 +5325,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 8 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv8){
-        	if (Integer.parseInt(Part.parts[203]) >0){
-        		Part.parts[203] = Integer.toString(Integer.parseInt(Part.parts[203]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[202])));
+        	if (Part.parts[203] >0){
+        		Part.parts[203] = Part.parts[203] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[202];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For: " +Part.parts[202], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5336,9 +5337,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 9 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv9){
-        	if (Integer.parseInt(Part.parts[229]) >0){
-        		Part.parts[229] = Integer.toString(Integer.parseInt(Part.parts[229]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[228])));
+        	if (Part.parts[229] >0){
+        		Part.parts[229] = Part.parts[229] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[228];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For: " +Part.parts[228], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5348,9 +5349,9 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 10 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv10){
-        	if (Integer.parseInt(Part.parts[255]) >0){
-        		Part.parts[255] = Integer.toString(Integer.parseInt(Part.parts[255]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[254])));
+        	if (Part.parts[255] >0){
+        		Part.parts[255] = Part.parts[255] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[254];
         		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For: " +Part.parts[254], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5360,9 +5361,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 1 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv1){
-        	if (Integer.parseInt(Part.parts[23]) >0){
-        		Part.parts[23] = Integer.toString(Integer.parseInt(Part.parts[23]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[22])));
+        	if (Part.parts[23] >0){
+        		Part.parts[23] = Part.parts[23] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[22];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For: " +Part.parts[22], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5372,9 +5373,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 2 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv2){
-        	if (Integer.parseInt(Part.parts[49]) >0){
-        		Part.parts[49] = Integer.toString(Integer.parseInt(Part.parts[49]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[48])));
+        	if (Part.parts[49] >0){
+        		Part.parts[49] = Part.parts[49] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[48];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For: " +Part.parts[48], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5384,9 +5385,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 3 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv3){
-        	if (Integer.parseInt(Part.parts[75]) >0){
-        		Part.parts[75] = Integer.toString(Integer.parseInt(Part.parts[75]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[74])));
+        	if (Part.parts[75] >0){
+        		Part.parts[75] = Part.parts[75] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[74];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For: " +Part.parts[74], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5396,9 +5397,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 4 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv4){
-        	if (Integer.parseInt(Part.parts[101]) >0){
-        		Part.parts[101] = Integer.toString(Integer.parseInt(Part.parts[101]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[100])));
+        	if (Part.parts[101] >0){
+        		Part.parts[101] = Part.parts[101] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[100];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For: " +Part.parts[100], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5408,9 +5409,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 5 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv5){
-        	if (Integer.parseInt(Part.parts[127])>0){
-        		Part.parts[127] = Integer.toString(Integer.parseInt(Part.parts[127]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[126])));
+        	if (Part.parts[127]>0){
+        		Part.parts[127] = Part.parts[127] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[126];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For: " +Part.parts[126], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5420,9 +5421,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 6 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv6){
-        	if (Integer.parseInt(Part.parts[153]) >0){
-        		Part.parts[153] = Integer.toString(Integer.parseInt(Part.parts[153]) - 1);;
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[152])));
+        	if (Part.parts[153] >0){
+        		Part.parts[153] = Part.parts[153] - 1;;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[152];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For: " +Part.parts[152], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5432,9 +5433,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 7 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv7){
-        	if (Integer.parseInt(Part.parts[179]) >0){
-        		Part.parts[179] = Integer.toString(Integer.parseInt(Part.parts[179]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[178])));
+        	if (Part.parts[179] >0){
+        		Part.parts[179] = Part.parts[179] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[178];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For: " +Part.parts[178], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5444,9 +5445,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 8 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv8){
-        	if (Integer.parseInt(Part.parts[205]) >0){
-        		Part.parts[205] = Integer.toString(Integer.parseInt(Part.parts[205]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[204])));
+        	if (Part.parts[205] >0){
+        		Part.parts[205] = Part.parts[205] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[204];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For: " +Part.parts[204], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5456,9 +5457,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 9 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv9){
-        	if (Integer.parseInt(Part.parts[231]) >0){
-        		Part.parts[231] = Integer.toString(Integer.parseInt(Part.parts[231]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[230])));
+        	if (Part.parts[231] >0){
+        		Part.parts[231] = Part.parts[231] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[230];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For: " +Part.parts[230], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5468,9 +5469,9 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 10 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv10){
-        	if (Integer.parseInt(Part.parts[257]) >0){
-        		Part.parts[257] = Integer.toString(Integer.parseInt(Part.parts[257]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[256])));
+        	if (Part.parts[257] >0){
+        		Part.parts[257] = Part.parts[257] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[256];
         		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For: " +Part.parts[256], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5480,9 +5481,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 1 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv1){
-        	if (Integer.parseInt(Part.parts[25]) >0){
-        		Part.parts[25] = Integer.toString(Integer.parseInt(Part.parts[25]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[24])));
+        	if (Part.parts[25] >0){
+        		Part.parts[25] = Part.parts[25] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[24];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For: " +Part.parts[24], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5492,9 +5493,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 2 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv2){
-        	if (Integer.parseInt(Part.parts[51]) >0){
-        		Part.parts[51] = Integer.toString(Integer.parseInt(Part.parts[51]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[50])));
+        	if (Part.parts[51] >0){
+        		Part.parts[51] = Part.parts[51] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[50];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For: " +Part.parts[50], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
@@ -5504,9 +5505,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 3 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv3){
-        	if (Integer.parseInt(Part.parts[77]) >0){
-        		Part.parts[77] = Integer.toString(Integer.parseInt(Part.parts[77]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[76])));
+        	if (Part.parts[77] >0){
+        		Part.parts[77] = Part.parts[77] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[76];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For: " +Part.parts[76], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
@@ -5516,9 +5517,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 4 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv4){
-        	if (Integer.parseInt(Part.parts[103]) >0){
-        		Part.parts[103] = Integer.toString(Integer.parseInt(Part.parts[103]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[102])));
+        	if (Part.parts[103] >0){
+        		Part.parts[103] = Part.parts[103] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[102];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For: " +Part.parts[102], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
@@ -5528,9 +5529,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 5 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv5){
-        	if (Integer.parseInt(Part.parts[129]) >0){
-        		Part.parts[129] = Integer.toString(Integer.parseInt(Part.parts[129]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[128])));
+        	if (Part.parts[129] >0){
+        		Part.parts[129] = Part.parts[129] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[128];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For: " +Part.parts[128], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5540,9 +5541,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 6 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv6){
-        	if (Integer.parseInt(Part.parts[155]) >0){
-        		Part.parts[155] = Integer.toString(Integer.parseInt(Part.parts[155]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[154])));
+        	if (Part.parts[155] >0){
+        		Part.parts[155] = Part.parts[155] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[154];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For: " +Part.parts[154], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5552,9 +5553,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 7 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv7){
-        	if (Integer.parseInt(Part.parts[181]) >0){
-        		Part.parts[181] = Integer.toString(Integer.parseInt(Part.parts[181]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[180])));
+        	if (Part.parts[181] >0){
+        		Part.parts[181] = Part.parts[181] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[180];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For: " +Part.parts[180], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5564,9 +5565,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 8 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv8){
-        	if (Integer.parseInt(Part.parts[207]) >0){
-        		Part.parts[207] = Integer.toString(Integer.parseInt(Part.parts[207]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[206])));
+        	if (Part.parts[207] >0){
+        		Part.parts[207] = Part.parts[207] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[206];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For: " +Part.parts[206], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5576,9 +5577,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 9 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv9){
-        	if (Integer.parseInt(Part.parts[233]) >0){
-        		Part.parts[233] = Integer.toString(Integer.parseInt(Part.parts[233]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[232])));
+        	if (Part.parts[233] >0){
+        		Part.parts[233] = Part.parts[233] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[232];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For: " +Part.parts[232], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
@@ -5588,9 +5589,9 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 10 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv10){
-        	if (Integer.parseInt(Part.parts[259]) >0){
-        		Part.parts[259] = Integer.toString(Integer.parseInt(Part.parts[259]) - 1);
-        		CarMain.main[0] = Integer.toString(Integer.parseInt(CarMain.main[0]) + (Integer.parseInt(Part.parts[258])));
+        	if (Part.parts[259] >0){
+        		Part.parts[259] = Part.parts[259] - 1;
+        		CarMain.main[0] = CarMain.main[0] + Part.parts[258];
         		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For: " +Part.parts[258], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
