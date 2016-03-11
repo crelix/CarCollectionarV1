@@ -77,6 +77,136 @@ public class ClickerGame implements ActionListener {
     JLabel CarsLv8Label;
     JLabel CarsLv9Label;
     JLabel CarsLv10Label;
+    JLabel AccessoriesLVL1Label;
+    JLabel AccessoriesLVL2Label;
+    JLabel AccessoriesLVL3Label;
+    JLabel AccessoriesLVL4Label;
+    JLabel AccessoriesLVL5Label;
+    JLabel AccessoriesLVL6Label;
+    JLabel AccessoriesLVL7Label;
+    JLabel AccessoriesLVL8Label;
+    JLabel AccessoriesLVL9Label;
+    JLabel AccessoriesLVL10Label;
+    JLabel BodyLVL1Label;
+    JLabel BodyLVL2Label;
+    JLabel BodyLVL3Label;
+    JLabel BodyLVL4Label;
+    JLabel BodyLVL5Label;
+    JLabel BodyLVL6Label;
+    JLabel BodyLVL7Label;
+    JLabel BodyLVL8Label;
+    JLabel BodyLVL9Label;
+    JLabel BodyLVL10Label;
+    JLabel BrakesLVL1Label;
+    JLabel BrakesLVL2Label;
+    JLabel BrakesLVL3Label;
+    JLabel BrakesLVL4Label;
+    JLabel BrakesLVL5Label;
+    JLabel BrakesLVL6Label;
+    JLabel BrakesLVL7Label;
+    JLabel BrakesLVL8Label;
+    JLabel BrakesLVL9Label;
+    JLabel BrakesLVL10Label;
+    JLabel CoolingLVL1Label;
+    JLabel CoolingLVL2Label;
+    JLabel CoolingLVL3Label;
+    JLabel CoolingLVL4Label;
+    JLabel CoolingLVL5Label;
+    JLabel CoolingLVL6Label;
+    JLabel CoolingLVL7Label;
+    JLabel CoolingLVL8Label;
+    JLabel CoolingLVL9Label;
+    JLabel CoolingLVL10Label;
+    JLabel ElectronicsLVL1Label;
+    JLabel ElectronicsLVL2Label;
+    JLabel ElectronicsLVL3Label;
+    JLabel ElectronicsLVL4Label;
+    JLabel ElectronicsLVL5Label;
+    JLabel ElectronicsLVL6Label;
+    JLabel ElectronicsLVL7Label;
+    JLabel ElectronicsLVL8Label;
+    JLabel ElectronicsLVL9Label;
+    JLabel ElectronicsLVL10Label;
+    JLabel EngineLVL1Label;
+    JLabel EngineLVL2Label;
+    JLabel EngineLVL3Label;
+    JLabel EngineLVL4Label;
+    JLabel EngineLVL5Label;
+    JLabel EngineLVL6Label;
+    JLabel EngineLVL7Label;
+    JLabel EngineLVL8Label;
+    JLabel EngineLVL9Label;
+    JLabel EngineLVL10Label;
+    JLabel ExaustLVL1Label;
+    JLabel ExaustLVL2Label;
+    JLabel ExaustLVL3Label;
+    JLabel ExaustLVL4Label;
+    JLabel ExaustLVL5Label;
+    JLabel ExaustLVL6Label;
+    JLabel ExaustLVL7Label;
+    JLabel ExaustLVL8Label;
+    JLabel ExaustLVL9Label;
+    JLabel ExaustLVL10Label;
+    JLabel FuelLVL1Label;
+    JLabel FuelLVL2Label;
+    JLabel FuelLVL3Label;
+    JLabel FuelLVL4Label;
+    JLabel FuelLVL5Label;
+    JLabel FuelLVL6Label;
+    JLabel FuelLVL7Label;
+    JLabel FuelLVL8Label;
+    JLabel FuelLVL9Label;
+    JLabel FuelLVL10Label;
+    JLabel InteriorLVL1Label;
+    JLabel InteriorLVL2Label;
+    JLabel InteriorLVL3Label;
+    JLabel InteriorLVL4Label;
+    JLabel InteriorLVL5Label;
+    JLabel InteriorLVL6Label;
+    JLabel InteriorLVL7Label;
+    JLabel InteriorLVL8Label;
+    JLabel InteriorLVL9Label;
+    JLabel InteriorLVL10Label;
+    JLabel SteeringLVL1Label;
+    JLabel SteeringLVL2Label;
+    JLabel SteeringLVL3Label;
+    JLabel SteeringLVL4Label;
+    JLabel SteeringLVL5Label;
+    JLabel SteeringLVL6Label;
+    JLabel SteeringLVL7Label;
+    JLabel SteeringLVL8Label;
+    JLabel SteeringLVL9Label;
+    JLabel SteeringLVL10Label;
+    JLabel SuspensionLVL1Label;
+    JLabel SuspensionLVL2Label;
+    JLabel SuspensionLVL3Label;
+    JLabel SuspensionLVL4Label;
+    JLabel SuspensionLVL5Label;
+    JLabel SuspensionLVL6Label;
+    JLabel SuspensionLVL7Label;
+    JLabel SuspensionLVL8Label;
+    JLabel SuspensionLVL9Label;
+    JLabel SuspensionLVL10Label;
+    JLabel TransmissionLVL1Label;
+    JLabel TransmissionLVL2Label;
+    JLabel TransmissionLVL3Label;
+    JLabel TransmissionLVL4Label;
+    JLabel TransmissionLVL5Label;
+    JLabel TransmissionLVL6Label;
+    JLabel TransmissionLVL7Label;
+    JLabel TransmissionLVL8Label;
+    JLabel TransmissionLVL9Label;
+    JLabel TransmissionLVL10Label;
+    JLabel TiresLVL1Label;
+    JLabel TiresLVL2Label;
+    JLabel TiresLVL3Label;
+    JLabel TiresLVL4Label;
+    JLabel TiresLVL5Label;
+    JLabel TiresLVL6Label;
+    JLabel TiresLVL7Label;
+    JLabel TiresLVL8Label;
+    JLabel TiresLVL9Label;
+    JLabel TiresLVL10Label;
     // Buttons
     
     JButton jbtnMoney = new JButton("Click");
@@ -1035,67 +1165,67 @@ public class ClickerGame implements ActionListener {
         JPanel SellPartsLVL1PanelSub13 = new JPanel();
         SellPartsLVL1PanelSub13.setLayout(new BoxLayout(SellPartsLVL1PanelSub13, BoxLayout.PAGE_AXIS));
         
-        JLabel AccessoriesLVL1Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+        AccessoriesLVL1Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.parts[1]);
         
-        JLabel BodyLVL1Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL1Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.parts[3]);
         
-        JLabel BrakesLVL1Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL1Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.parts[5]);
         
-        JLabel CoolingLVL1Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL1Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL1Label.setText("<html>Cooling LVL 1<br>" + "Count: " + Part.parts[7]);
         
-        JLabel ElectronicsLVL1Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL1Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL1Label.setText("<html>Electronics LVL 1<br>" + "Count: " + Part.parts[9]);
         
-        JLabel EngineLVL1Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL1Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL1Label.setText("<html>Engine LVL 1<br>" + "Count: " + Part.parts[11]);
         
-        JLabel ExaustLVL1Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL1Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL1Label.setText("<html>Exaust LVL 1<br>" + "Count: " + Part.parts[13]);
         
-        JLabel FuelLVL1Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL1Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL1Label.setText("<html>Fuel LVL 1<br>" + "Count: " + Part.parts[15]);
         
-        JLabel InteriorLVL1Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL1Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL1Label.setText("<html>Interior LVL 1<br>" + "Count: " + Part.parts[17]);
         
-        JLabel SteeringLVL1Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL1Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.parts[19]);
         
-        JLabel SuspensionLVL1Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL1Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL1Label.setText("<html>Suspension LVL 1<br>" + "Count: " + Part.parts[21]);
         
-        JLabel TransmissionLVL1Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL1Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL1Label.setText("<html>Transmission LVL 1<br>" + "Count: " + Part.parts[23]);
         
-        JLabel TiresLVL1Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL1Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL1Label.setText("<html>Tires LVL 1<br>" + "Count: " + Part.parts[25]);
@@ -1184,67 +1314,67 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL2PanelSub13 = new JPanel();
 	 	SellPartsLVL2PanelSub13.setLayout(new BoxLayout(SellPartsLVL2PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL2Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+	 	AccessoriesLVL2Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL2Label.setText("<html>Accessories LVL 2<br>" + "Count: " + Part.parts[27]);
         
-        JLabel BodyLVL2Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL2Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL2Label.setText("<html>Body LVL 2<br>" + "Count: " + Part.parts[29]);
         
-        JLabel BrakesLVL2Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL2Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL2Label.setText("<html>Brakes LVL 2<br>" + "Count: " + Part.parts[31]);
         
-        JLabel CoolingLVL2Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL2Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL2Label.setText("<html>Cooling LVL 2<br>" + "Count: " + Part.parts[33]);
         
-        JLabel ElectronicsLVL2Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL2Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL2Label.setText("<html>Electronics LVL 2<br>" + "Count: " + Part.parts[35]);
         
-        JLabel EngineLVL2Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL2Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL2Label.setText("<html>Engine LVL 2<br>" + "Count: " + Part.parts[37]);
         
-        JLabel ExaustLVL2Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL2Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL2Label.setText("<html>Exaust LVL 2<br>" + "Count: " + Part.parts[39]);
         
-        JLabel FuelLVL2Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL2Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL2Label.setText("<html>Fuel LVL 2<br>" + "Count: " + Part.parts[41]);
         
-        JLabel InteriorLVL2Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL2Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL2Label.setText("<html>Interior LVL 2<br>" + "Count: " + Part.parts[43]);
         
-        JLabel SteeringLVL2Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL2Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.parts[45]);
         
-        JLabel SuspensionLVL2Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL2Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL2Label.setText("<html>Suspension LVL 2<br>" + "Count: " + Part.parts[47]);
         
-        JLabel TransmissionLVL2Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL2Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL2Label.setText("<html>Transmission LVL 2<br>" + "Count: " + Part.parts[49]);
         
-        JLabel TiresLVL2Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL2Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL2Label.setText("<html>Tires LVL 2<br>" + "Count: " + Part.parts[51]);
@@ -1333,67 +1463,67 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL3PanelSub13 = new JPanel();
 	 	SellPartsLVL3PanelSub13.setLayout(new BoxLayout(SellPartsLVL3PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL3Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+	 	AccessoriesLVL3Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL3Label.setText("<html>Accessories LVL 3<br>" + "Count: " + Part.parts[53]);
         
-        JLabel BodyLVL3Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL3Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL3Label.setText("<html>Body LVL 3<br>" + "Count: " + Part.parts[55]);
         
-        JLabel BrakesLVL3Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL3Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL3Label.setText("<html>Brakes LVL 3<br>" + "Count: " + Part.parts[57]);
         
-        JLabel CoolingLVL3Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL3Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL3Label.setText("<html>Cooling LVL 3<br>" + "Count: " + Part.parts[59]);
         
-        JLabel ElectronicsLVL3Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL3Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL3Label.setText("<html>Electronics LVL 3<br>" + "Count: " + Part.parts[61]);
         
-        JLabel EngineLVL3Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL3Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL3Label.setText("<html>Engine LVL 3<br>" + "Count: " + Part.parts[63]);
         
-        JLabel ExaustLVL3Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL3Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL3Label.setText("<html>Exaust LVL 3<br>" + "Count: " + Part.parts[65]);
         
-        JLabel FuelLVL3Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL3Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL3Label.setText("<html>Fuel LVL 3<br>" + "Count: " + Part.parts[67]);
         
-        JLabel InteriorLVL3Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL3Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL3Label.setText("<html>Interior LVL 3<br>" + "Count: " + Part.parts[69]);
         
-        JLabel SteeringLVL3Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL3Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.parts[71]);
         
-        JLabel SuspensionLVL3Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL3Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL3Label.setText("<html>Suspension LVL 3<br>" + "Count: " + Part.parts[73]);
         
-        JLabel TransmissionLVL3Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL3Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL3Label.setText("<html>Transmission LVL 3<br>" + "Count: " + Part.parts[75]);
         
-        JLabel TiresLVL3Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL3Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL3Label.setText("<html>Tires LVL 3<br>" + "Count: " + Part.parts[77]);
@@ -1482,67 +1612,67 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL4PanelSub13 = new JPanel();
 	 	SellPartsLVL4PanelSub13.setLayout(new BoxLayout(SellPartsLVL4PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL4Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+	 	AccessoriesLVL4Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL4Label.setText("<html>Accessories LVL 4<br>" + "Count: " + Part.parts[79]);
         
-        JLabel BodyLVL4Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL4Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL4Label.setText("<html>Body LVL 4<br>" + "Count: " + Part.parts[81]);
         
-        JLabel BrakesLVL4Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL4Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL4Label.setText("<html>Brakes LVL 4<br>" + "Count: " + Part.parts[83]);
         
-        JLabel CoolingLVL4Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL4Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL4Label.setText("<html>Cooling LVL 4<br>" + "Count: " + Part.parts[85]);
         
-        JLabel ElectronicsLVL4Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL4Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL4Label.setText("<html>Electronics LVL 4<br>" + "Count: " + Part.parts[87]);
         
-        JLabel EngineLVL4Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL4Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL4Label.setText("<html>Engine LVL 4<br>" + "Count: " + Part.parts[89]);
         
-        JLabel ExaustLVL4Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL4Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL4Label.setText("<html>Exaust LVL 4<br>" + "Count: " + Part.parts[91]);
         
-        JLabel FuelLVL4Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL4Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL4Label.setText("<html>Fuel LVL 4<br>" + "Count: " + Part.parts[93]);
         
-        JLabel InteriorLVL4Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL4Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL4Label.setText("<html>Interior LVL 4<br>" + "Count: " + Part.parts[95]);
         
-        JLabel SteeringLVL4Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL4Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.parts[97]);
         
-        JLabel SuspensionLVL4Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL4Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL4Label.setText("<html>Suspension LVL 4<br>" + "Count: " + Part.parts[99]);
         
-        JLabel TransmissionLVL4Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL4Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL4Label.setText("<html>Transmission LVL 4<br>" + "Count: " + Part.parts[101]);
         
-        JLabel TiresLVL4Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL4Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL4Label.setText("<html>Tires LVL 4<br>" + "Count: " + Part.parts[103]);
@@ -1631,67 +1761,67 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL5PanelSub13 = new JPanel();
 	 	SellPartsLVL5PanelSub13.setLayout(new BoxLayout(SellPartsLVL5PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL5Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+	 	AccessoriesLVL5Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL5Label.setText("<html>Accessories LVL 5<br>" + "Count: " + Part.parts[105]);
         
-        JLabel BodyLVL5Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL5Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL5Label.setText("<html>Body LVL 5<br>" + "Count: " + Part.parts[107]);
         
-        JLabel BrakesLVL5Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL5Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL5Label.setText("<html>Brakes LVL 5<br>" + "Count: " + Part.parts[109]);
         
-        JLabel CoolingLVL5Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL5Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL5Label.setText("<html>Cooling LVL 5<br>" + "Count: " + Part.parts[111]);
         
-        JLabel ElectronicsLVL5Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL5Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL5Label.setText("<html>Electronics LVL 5<br>" + "Count: " + Part.parts[113]);
         
-        JLabel EngineLVL5Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL5Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL5Label.setText("<html>Engine LVL 5<br>" + "Count: " + Part.parts[115]);
         
-        JLabel ExaustLVL5Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL5Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL5Label.setText("<html>Exaust LVL 5<br>" + "Count: " + Part.parts[117]);
         
-        JLabel FuelLVL5Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL5Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL5Label.setText("<html>Fuel LVL 5<br>" + "Count: " + Part.parts[119]);
         
-        JLabel InteriorLVL5Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL5Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL5Label.setText("<html>Interior LVL 5<br>" + "Count: " + Part.parts[121]);
         
-        JLabel SteeringLVL5Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL5Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.parts[123]);
         
-        JLabel SuspensionLVL5Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL5Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL5Label.setText("<html>Suspension LVL 5<br>" + "Count: " + Part.parts[125]);
         
-        JLabel TransmissionLVL5Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL5Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL5Label.setText("<html>Transmission LVL 5<br>" + "Count: " + Part.parts[127]);
         
-        JLabel TiresLVL5Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL5Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL5Label.setText("<html>Tires LVL 5<br>" + "Count: " + Part.parts[129]);
@@ -1780,67 +1910,67 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL6PanelSub13 = new JPanel();
 	 	SellPartsLVL6PanelSub13.setLayout(new BoxLayout(SellPartsLVL6PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL6Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+	 	AccessoriesLVL6Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL6Label.setText("<html>Accessories LVL 6<br>" + "Count: " + Part.parts[131]);
         
-        JLabel BodyLVL6Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL6Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL6Label.setText("<html>Body LVL 6<br>" + "Count: " + Part.parts[133]);
         
-        JLabel BrakesLVL6Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL6Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL6Label.setText("<html>Brakes LVL 6<br>" + "Count: " + Part.parts[135]);
         
-        JLabel CoolingLVL6Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL6Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL6Label.setText("<html>Cooling LVL 6<br>" + "Count: " + Part.parts[137]);
         
-        JLabel ElectronicsLVL6Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL6Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL6Label.setText("<html>Electronics LVL 6<br>" + "Count: " + Part.parts[139]);
         
-        JLabel EngineLVL6Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL6Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL6Label.setText("<html>Engine LVL 6<br>" + "Count: " + Part.parts[141]);
         
-        JLabel ExaustLVL6Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL6Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL6Label.setText("<html>Exaust LVL 6<br>" + "Count: " + Part.parts[143]);
         
-        JLabel FuelLVL6Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL6Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL6Label.setText("<html>Fuel LVL 6<br>" + "Count: " + Part.parts[145]);
         
-        JLabel InteriorLVL6Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL6Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL6Label.setText("<html>Interior LVL 6<br>" + "Count: " + Part.parts[147]);
         
-        JLabel SteeringLVL6Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL6Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.parts[149]);
         
-        JLabel SuspensionLVL6Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL6Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL6Label.setText("<html>Suspension LVL 6<br>" + "Count: " + Part.parts[151]);
         
-        JLabel TransmissionLVL6Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL6Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL6Label.setText("<html>Transmission LVL 6<br>" + "Count: " + Part.parts[153]);
         
-        JLabel TiresLVL6Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL6Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL6Label.setText("<html>Tires LVL 6<br>" + "Count: " + Part.parts[155]);
@@ -1929,67 +2059,67 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL7PanelSub13 = new JPanel();
 	 	SellPartsLVL7PanelSub13.setLayout(new BoxLayout(SellPartsLVL7PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL7Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
+	 	AccessoriesLVL7Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL7Label.setText("<html>Accessories LVL 7<br>" + "Count: " + Part.parts[157]);
         
-        JLabel BodyLVL7Label = new JLabel(ImagesHolder.BodyIcon);    	
+        BodyLVL7Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL7Label.setText("<html>Body LVL 7<br>" + "Count: " + Part.parts[159]);
         
-        JLabel BrakesLVL7Label = new JLabel(ImagesHolder.BrakesIcon);    	
+        BrakesLVL7Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL7Label.setText("<html>Brakes LVL 7<br>" + "Count: " + Part.parts[161]);
         
-        JLabel CoolingLVL7Label = new JLabel(ImagesHolder.CoolingIcon);    	
+        CoolingLVL7Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL7Label.setText("<html>Cooling LVL 7<br>" + "Count: " + Part.parts[163]);
         
-        JLabel ElectronicsLVL7Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
+        ElectronicsLVL7Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL7Label.setText("<html>Electronics LVL 7<br>" + "Count: " + Part.parts[165]);
         
-        JLabel EngineLVL7Label = new JLabel(ImagesHolder.EngineIcon);    	
+        EngineLVL7Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL7Label.setText("<html>Engine LVL 7<br>" + "Count: " + Part.parts[167]);
         
-        JLabel ExaustLVL7Label = new JLabel(ImagesHolder.ExaustIcon);    	
+        ExaustLVL7Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL7Label.setText("<html>Exaust LVL 7<br>" + "Count: " + Part.parts[169]);
         
-        JLabel FuelLVL7Label = new JLabel(ImagesHolder.FuelIcon);    	
+        FuelLVL7Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL7Label.setText("<html>Fuel LVL 7<br>" + "Count: " + Part.parts[171]);
         
-        JLabel InteriorLVL7Label = new JLabel(ImagesHolder.InteriorIcon);    	
+        InteriorLVL7Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL7Label.setText("<html>Interior LVL 7<br>" + "Count: " + Part.parts[173]);
         
-        JLabel SteeringLVL7Label = new JLabel(ImagesHolder.SteeringIcon);    	
+        SteeringLVL7Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.parts[175]);
         
-        JLabel SuspensionLVL7Label = new JLabel(ImagesHolder.SuspensionIcon);    	
+        SuspensionLVL7Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL7Label.setText("<html>Suspension LVL 7<br>" + "Count: " + Part.parts[177]);
         
-        JLabel TransmissionLVL7Label = new JLabel(ImagesHolder.TransmissionIcon);    	
+        TransmissionLVL7Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL7Label.setText("<html>Transmission LVL 7<br>" + "Count: " + Part.parts[179]);
         
-        JLabel TiresLVL7Label = new JLabel(ImagesHolder.TiresIcon);    	
+        TiresLVL7Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL7Label.setText("<html>Tires LVL 7<br>" + "Count: " + Part.parts[181]);
