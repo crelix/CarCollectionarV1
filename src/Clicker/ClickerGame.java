@@ -992,17 +992,17 @@ public class ClickerGame implements ActionListener {
         JPanel SellPartsLVL1PanelSub13 = new JPanel();
         SellPartsLVL1PanelSub13.setLayout(new BoxLayout(SellPartsLVL1PanelSub13, BoxLayout.PAGE_AXIS));
         
-        JLabel AccessoriesLVL1Label = new JLabel(ImagesHolder.ImagesHolder.AccessoriesIcon);    	
+        JLabel AccessoriesLVL1Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.parts[1]);
         
-        JLabel BodyLVL1Label = new JLabel(ImagesHolder.ImagesHolder.BodyIcon);    	
+        JLabel BodyLVL1Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.parts[3]);
         
-        JLabel BrakesLVL1Label = new JLabel(ImagesHolder.ImagesHolder.BrakesIcon);    	
+        JLabel BrakesLVL1Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.parts[5]);
@@ -1042,17 +1042,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.parts[19]);
         
-        JLabel SuspensionLVL1Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL1Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL1Label.setText("<html>Suspension LVL 1<br>" + "Count: " + Part.parts[21]);
         
-        JLabel TransmissionLVL1Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL1Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL1Label.setText("<html>Transmission LVL 1<br>" + "Count: " + Part.parts[23]);
         
-        JLabel TiresLVL1Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL1Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL1Label.setText("<html>Tires LVL 1<br>" + "Count: " + Part.parts[25]);
@@ -1191,17 +1191,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.parts[45]);
         
-        JLabel SuspensionLVL2Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL2Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL2Label.setText("<html>Suspension LVL 2<br>" + "Count: " + Part.parts[47]);
         
-        JLabel TransmissionLVL2Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL2Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL2Label.setText("<html>Transmission LVL 2<br>" + "Count: " + Part.parts[49]);
         
-        JLabel TiresLVL2Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL2Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL2Label.setText("<html>Tires LVL 2<br>" + "Count: " + Part.parts[51]);
@@ -1340,17 +1340,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.parts[71]);
         
-        JLabel SuspensionLVL3Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL3Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL3Label.setText("<html>Suspension LVL 3<br>" + "Count: " + Part.parts[73]);
         
-        JLabel TransmissionLVL3Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL3Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL3Label.setText("<html>Transmission LVL 3<br>" + "Count: " + Part.parts[75]);
         
-        JLabel TiresLVL3Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL3Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL3Label.setText("<html>Tires LVL 3<br>" + "Count: " + Part.parts[77]);
@@ -1489,17 +1489,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.parts[97]);
         
-        JLabel SuspensionLVL4Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL4Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL4Label.setText("<html>Suspension LVL 4<br>" + "Count: " + Part.parts[99]);
         
-        JLabel TransmissionLVL4Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL4Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL4Label.setText("<html>Transmission LVL 4<br>" + "Count: " + Part.parts[101]);
         
-        JLabel TiresLVL4Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL4Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL4Label.setText("<html>Tires LVL 4<br>" + "Count: " + Part.parts[103]);
@@ -1638,17 +1638,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.parts[123]);
         
-        JLabel SuspensionLVL5Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL5Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL5Label.setText("<html>Suspension LVL 5<br>" + "Count: " + Part.parts[125]);
         
-        JLabel TransmissionLVL5Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL5Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL5Label.setText("<html>Transmission LVL 5<br>" + "Count: " + Part.parts[127]);
         
-        JLabel TiresLVL5Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL5Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL5Label.setText("<html>Tires LVL 5<br>" + "Count: " + Part.parts[129]);
@@ -1787,17 +1787,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.parts[149]);
         
-        JLabel SuspensionLVL6Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL6Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL6Label.setText("<html>Suspension LVL 6<br>" + "Count: " + Part.parts[151]);
         
-        JLabel TransmissionLVL6Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL6Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL6Label.setText("<html>Transmission LVL 6<br>" + "Count: " + Part.parts[153]);
         
-        JLabel TiresLVL6Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL6Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL6Label.setText("<html>Tires LVL 6<br>" + "Count: " + Part.parts[155]);
@@ -1936,17 +1936,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.parts[175]);
         
-        JLabel SuspensionLVL7Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL7Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL7Label.setText("<html>Suspension LVL 7<br>" + "Count: " + Part.parts[177]);
         
-        JLabel TransmissionLVL7Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL7Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL7Label.setText("<html>Transmission LVL 7<br>" + "Count: " + Part.parts[179]);
         
-        JLabel TiresLVL7Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL7Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL7Label.setText("<html>Tires LVL 7<br>" + "Count: " + Part.parts[181]);
@@ -2085,17 +2085,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL8Label.setText("<html>Steering LVL 8<br>" + "Count: " + Part.parts[201]);
         
-        JLabel SuspensionLVL8Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL8Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL8Label.setText("<html>Suspension LVL 8<br>" + "Count: " + Part.parts[203]);
         
-        JLabel TransmissionLVL8Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL8Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL8Label.setText("<html>Transmission LVL 8<br>" + "Count: " + Part.parts[205]);
         
-        JLabel TiresLVL8Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL8Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL8Label.setText("<html>Tires LVL 8<br>" + "Count: " + Part.parts[207]);
@@ -2234,17 +2234,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL9Label.setText("<html>Steering LVL 9<br>" + "Count: " + Part.parts[227]);
         
-        JLabel SuspensionLVL9Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL9Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL9Label.setText("<html>Suspension LVL 9<br>" + "Count: " + Part.parts[229]);
         
-        JLabel TransmissionLVL9Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL9Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL9Label.setText("<html>Transmission LVL 9<br>" + "Count: " + Part.parts[231]);
         
-        JLabel TiresLVL9Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL9Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL9Label.setText("<html>Tires LVL 9<br>" + "Count: " + Part.parts[233]);
@@ -2383,17 +2383,17 @@ public class ClickerGame implements ActionListener {
         SteeringLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL10Label.setText("<html>Steering LVL 10<br>" + "Count: " + Part.parts[253]);
         
-        JLabel SuspensionLVL10Label = new JLabel(SuspensionIcon);    	
+        JLabel SuspensionLVL10Label = new JLabel(ImagesHolder.SuspensionIcon);    	
         SuspensionLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         SuspensionLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         SuspensionLVL10Label.setText("<html>Suspension LVL 10<br>" + "Count: " + Part.parts[255]);
         
-        JLabel TransmissionLVL10Label = new JLabel(TransmissionIcon);    	
+        JLabel TransmissionLVL10Label = new JLabel(ImagesHolder.TransmissionIcon);    	
         TransmissionLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         TransmissionLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         TransmissionLVL10Label.setText("<html>Transmission LVL 10<br>" + "Count: " + Part.parts[257]);
         
-        JLabel TiresLVL10Label = new JLabel(TiresIcon);    	
+        JLabel TiresLVL10Label = new JLabel(ImagesHolder.TiresIcon);    	
         TiresLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         TiresLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         TiresLVL10Label.setText("<html>Tires LVL 10<br>" + "Count: " + Part.parts[259]);
@@ -2634,29 +2634,29 @@ public class ClickerGame implements ActionListener {
                     int randomInt = randomGenerator.nextInt(3)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                     	Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     }
                 if(CarMain.main[4] == 4){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(4)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                     	Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                     	Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     }
                
                 if(CarMain.main[4] == 5){
@@ -2664,19 +2664,19 @@ public class ClickerGame implements ActionListener {
                     int randomInt = randomGenerator.nextInt(5)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                     	Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                     	Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 5){
                     	Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     }
                
                 if(CarMain.main[4] == 6){
@@ -2684,140 +2684,140 @@ public class ClickerGame implements ActionListener {
                     int randomInt = randomGenerator.nextInt(6)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     }
                 if(CarMain.main[4] == 7){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(7)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     }              
                 if(CarMain.main[4] == 8){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(8)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     if (randomInt == 8){
                         Box.boxes[15] = Box.boxes[15] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     }  
                 if(CarMain.main[4] == 9){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(9)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     if (randomInt == 8){
                         Box.boxes[15] = Box.boxes[15] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     if (randomInt == 9){
                         Box.boxes[17] = Box.boxes[17] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
                     }  
                 if(CarMain.main[4] == 10){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(10)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     if (randomInt == 8){
                         Box.boxes[15] = Box.boxes[15] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
                     if (randomInt == 9){
                         Box.boxes[17] = Box.boxes[17] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                  
+                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}                  
                     if (randomInt == 10){
                         Box.boxes[19] = Box.boxes[19] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
                     }     
             }
         
@@ -2829,13 +2829,13 @@ public class ClickerGame implements ActionListener {
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[5] = CarMain.main[5] + 1;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[5] + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, PlayerIcon);}                      	
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[5] + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.PlayerIcon);}                      	
                    	else{                       	
-                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
+                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}               
                    }            		   
         	}
         	if (CarMain.main[5] == 10){
- 			   JOptionPane.showMessageDialog(null, "You have gained MAX Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
+ 			   JOptionPane.showMessageDialog(null, "You have gained MAX Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
  		   }
         } 
         
@@ -2848,13 +2848,13 @@ public class ClickerGame implements ActionListener {
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[6] = CarMain.main[6] + 1;
                    		CarMain.main[7] = CarMain.main[7] + 25;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[6] + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, GarageIcon);}                      	
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[6] + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GarageIcon);}                      	
                    	else{                       	
-                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
+                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}               
                    }            		   
         	}
         	if (CarMain.main[6] == 10){
- 			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
+ 			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
  		   }
         } 
         
@@ -2866,13 +2866,13 @@ public class ClickerGame implements ActionListener {
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[4] = CarMain.main[4] + 1;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[4] + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}                      	
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[4] + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}                      	
                    	else{                       	
-                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}               
+                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}               
                    }
         	}
         	if (CarMain.main[4] == 10){
-  			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, MaxUpgradeIcon);
+  			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
   		   }
         }
         
@@ -2883,13 +2883,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[0]){
         			CarFrame.frames[1] = CarFrame.frames[1] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[0];      			
-        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -2900,13 +2900,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[2]){
         			CarFrame.frames[3] = CarFrame.frames[3] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[2];
-        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[2], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[2], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -2917,13 +2917,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[4]){
         			CarFrame.frames[5] = CarFrame.frames[5] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[4];
-        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[4], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[4], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -2934,13 +2934,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[6]){
         			CarFrame.frames[7] = CarFrame.frames[7] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[6];
-        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[6], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[6], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -2951,13 +2951,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[8]){
         			CarFrame.frames[9] = CarFrame.frames[9] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[8];
-        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[8], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[8], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -2968,13 +2968,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[10]){
         			CarFrame.frames[11] = CarFrame.frames[11] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[10];
-        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[10], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[10], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -2985,13 +2985,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[12]){
         			CarFrame.frames[13] = CarFrame.frames[13] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[12];
-        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[12], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[12], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -3002,13 +3002,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[14]){
         			CarFrame.frames[15] = CarFrame.frames[15] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[14];
-        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[14], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[14], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -3019,13 +3019,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[16]){
         			CarFrame.frames[17] = CarFrame.frames[17] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[16];
-        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[16], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[16], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -3036,13 +3036,13 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= CarFrame.frames[18]){
         			CarFrame.frames[19] = CarFrame.frames[19] + 1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[18];
-        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[18], "No money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[18], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         }
         
@@ -3053,12 +3053,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[0]){
         			Box.boxes[1] = Box.boxes[1] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[0];
-        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[0], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[0], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3069,12 +3069,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[2]){
         			Box.boxes[3] = Box.boxes[3] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[2];
-        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[2], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[2], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3085,12 +3085,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[4]){
         			Box.boxes[5] = Box.boxes[5] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[4];
-        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[4], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[4], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3101,12 +3101,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[6]){
         			Box.boxes[7] = Box.boxes[7] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[6];
-        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv3_4Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[6], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[6], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3117,12 +3117,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[8]){
         			Box.boxes[9] = Box.boxes[9] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[8];
-        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[8], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[8], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3133,12 +3133,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[10]){
         			Box.boxes[11] = Box.boxes[11] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[10];
-        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv5_6Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[10], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[10], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3149,12 +3149,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[12]){
         			Box.boxes[13] = Box.boxes[13] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[12];;
-        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[12], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[12], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3165,12 +3165,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[14]){
         			Box.boxes[15] = Box.boxes[15] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[14];
-        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv7_8Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[14], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[14], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3181,12 +3181,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[16]){
         			Box.boxes[17] = Box.boxes[17] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[16];
-        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[16], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[16], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3197,12 +3197,12 @@ public class ClickerGame implements ActionListener {
         		if (CarMain.main[0] >= Box.boxes[18]){
         			Box.boxes[19] = Box.boxes[19] + 1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[18];
-        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv9_10Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[18], "No Money", JOptionPane.ERROR_MESSAGE, NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[18], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
         	}
         	}
         
@@ -3248,22 +3248,22 @@ public class ClickerGame implements ActionListener {
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
                 		    if (randomInt == 11){
                 		    	Part.parts[21] = Part.parts[21] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
                 		    if (randomInt == 12){
                 		    	Part.parts[23] = Part.parts[23] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
                 		    if (randomInt == 13){
                 		    	Part.parts[25] = Part.parts[25] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
         					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 2 Button Click
@@ -3308,21 +3308,21 @@ public class ClickerGame implements ActionListener {
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
                 		    if (randomInt == 11){
                 		    	Part.parts[47] = Part.parts[47] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
                 		    if (randomInt == 12){
                 		    	Part.parts[49] = Part.parts[49] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
                 		    if (randomInt == 13){
                 		    	Part.parts[51] = Part.parts[51] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
         					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 3 Button Click
@@ -3367,21 +3367,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[73] = Part.parts[73] + 1;;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[75] = Part.parts[75] + 1;;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[77] = Part.parts[77] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 4 Button Click
@@ -3426,21 +3426,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[99] = Part.parts[99] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[101] = Part.parts[101] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[103] = Part.parts[103] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 5 Button Click
@@ -3485,21 +3485,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[125] = Part.parts[125] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[127] = Part.parts[127] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmisson LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmisson LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[129] = Part.parts[129] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 6 Button Click
@@ -3544,21 +3544,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[151] = Part.parts[151] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[153] = Part.parts[153] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[155] = Part.parts[155] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 7 Button Click
@@ -3603,21 +3603,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[177] = Part.parts[177] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[179] = Part.parts[179] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[181] = Part.parts[181] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 8 Button Click
@@ -3662,21 +3662,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[203] = Part.parts[203] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[205] = Part.parts[205] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[207] = Part.parts[207] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
      		    	   		}
         				}
         			}
         			else{
-            				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}        			        			
+            				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}        			        			
         		}                	        	
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         }
         
         // Open Box Level 9 Button Click
@@ -3721,21 +3721,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[229] = Part.parts[229] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[231] = Part.parts[231] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[233] = Part.parts[233] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
         
         // Open Box Level 10 Button Click
@@ -3780,21 +3780,21 @@ public class ClickerGame implements ActionListener {
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[255] = Part.parts[255] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
             		    if (randomInt == 12){
             		    	Part.parts[257] = Part.parts[257] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
             		    if (randomInt == 13){
             		    	Part.parts[259] = Part.parts[259] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
     					}          					   
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
         	}
                
         // Sell Accessories Level 1 Button Click
@@ -3803,9 +3803,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[1] >0){
         		Part.parts[1] = Part.parts[1] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[0];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For: " +Part.parts[0], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For: " +Part.parts[0], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
             
         // Sell Accessories Level 2 Button Click
       	
@@ -3814,9 +3814,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[27] >0){
         		Part.parts[27] = Part.parts[27] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[26];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For: " +Part.parts[26], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For: " +Part.parts[26], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3826,9 +3826,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[53] >0){
         		Part.parts[53] = Part.parts[53] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[52];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For: " +Part.parts[52], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For: " +Part.parts[52], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3838,9 +3838,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[79] >0){
         		Part.parts[79] = Part.parts[79] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[78];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For: " +Part.parts[78], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For: " +Part.parts[78], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3850,9 +3850,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[105] >0){
         		Part.parts[105] = Part.parts[105] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[104];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For: " +Part.parts[104], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For: " +Part.parts[104], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3862,9 +3862,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[131] >0){
         		Part.parts[131] = Part.parts[131] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[130];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For: " +Part.parts[130], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For: " +Part.parts[130], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3874,9 +3874,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[157] >0){
         		Part.parts[157] = Part.parts[157] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[156];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For: " +Part.parts[156], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For: " +Part.parts[156], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3886,9 +3886,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[183] >0){
         		Part.parts[183] = Part.parts[183] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[182];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For: " +Part.parts[182], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For: " +Part.parts[182], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3898,9 +3898,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[209] >0){
         		Part.parts[209] = Part.parts[209] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[208];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For: " +Part.parts[208], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For: " +Part.parts[208], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3910,9 +3910,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[235] >0){
         		Part.parts[235] = Part.parts[235] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[234];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For: " +Part.parts[234], "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For: " +Part.parts[234], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3922,9 +3922,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[3] >0){
         		Part.parts[3] = Part.parts[3] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[2];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For: " +Part.parts[2], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For: " +Part.parts[2], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3934,9 +3934,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[29] >0){
         		Part.parts[29] = Part.parts[29] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[28];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For: " +Part.parts[28], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For: " +Part.parts[28], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3946,9 +3946,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[55] >0){
         		Part.parts[55] = Part.parts[55] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[54];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVLFor: " + Part.parts[54], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVLFor: " + Part.parts[54], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3958,9 +3958,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[81] >0){
         		Part.parts[81] = Part.parts[81] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[80];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For: " +Part.parts[80], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For: " +Part.parts[80], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3970,9 +3970,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[107] >0){
         		Part.parts[107] = Part.parts[107] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[106];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For: " +Part.parts[106], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For: " +Part.parts[106], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3982,9 +3982,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[133] >0){
         		Part.parts[133] = Part.parts[133] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[132];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For: " +Part.parts[132], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For: " +Part.parts[132], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -3994,9 +3994,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[159] >0){
         		Part.parts[159] = Part.parts[159] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[158];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For: " +Part.parts[158], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For: " +Part.parts[158], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4006,9 +4006,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[185] >0){
         		Part.parts[185] = Part.parts[185] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[184];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For: " +Part.parts[184], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For: " +Part.parts[184], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4018,9 +4018,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[211] >0){
         		Part.parts[211] = Part.parts[211] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[210];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For: " +Part.parts[210], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For: " +Part.parts[210], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4030,9 +4030,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[237] >0){
         		Part.parts[237] = Part.parts[237] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[236];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For: " +Part.parts[236], "Congralations", JOptionPane.INFORMATION_MESSAGE, BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For: " +Part.parts[236], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4042,9 +4042,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[5] >0){
         		Part.parts[5] = Part.parts[5] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[4];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For: " +Part.parts[4], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For: " +Part.parts[4], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4054,9 +4054,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[31] >0){
         		Part.parts[31] = Part.parts[31] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[30];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For: " +Part.parts[30], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For: " +Part.parts[30], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4066,9 +4066,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[57] >0){
         		Part.parts[57] = Part.parts[57] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[56];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For: " +Part.parts[56], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For: " +Part.parts[56], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4078,9 +4078,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[83] >0){
         		Part.parts[83] = Part.parts[83] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[82];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For: " +Part.parts[82], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For: " +Part.parts[82], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4090,9 +4090,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[109] >0){
         		Part.parts[109] = Part.parts[109] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[108];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For: " +Part.parts[108], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For: " +Part.parts[108], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4102,9 +4102,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[135] >0){
         		Part.parts[135] = Part.parts[135] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[134];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For: " +Part.parts[134], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For: " +Part.parts[134], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4114,9 +4114,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[161] >0){
         		Part.parts[161] = Part.parts[161] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[160];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For: " +Part.parts[160], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For: " +Part.parts[160], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4126,9 +4126,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[187] >0){
         		Part.parts[187] = Part.parts[187] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[186];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For: " +Part.parts[186], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For: " +Part.parts[186], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4138,9 +4138,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[213] >0){
         		Part.parts[213] = Part.parts[213] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[212];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For: " +Part.parts[212], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For: " +Part.parts[212], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4150,9 +4150,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[239] >0){
         		Part.parts[239] = Part.parts[239] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[238];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For: " +Part.parts[238], "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For: " +Part.parts[238], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4162,9 +4162,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[7] >0){
         		Part.parts[7] = Part.parts[7] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[6];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For: " +Part.parts[6], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For: " +Part.parts[6], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4174,9 +4174,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[33] >0){
         		Part.parts[33] = Part.parts[33] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[32];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For: " +Part.parts[32], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For: " +Part.parts[32], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4186,9 +4186,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[59] >0){
         		Part.parts[59] = Part.parts[59] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[58];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For: " +Part.parts[58], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For: " +Part.parts[58], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4198,9 +4198,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[85] >0){
         		Part.parts[85] = Part.parts[85] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[84];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For: " +Part.parts[84], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For: " +Part.parts[84], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4210,9 +4210,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[111] >0){
         		Part.parts[111] = Part.parts[111] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[110];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For: " +Part.parts[110], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For: " +Part.parts[110], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4222,9 +4222,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[137] >0){
         		Part.parts[137] = Part.parts[137] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[136];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For: " +Part.parts[136], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For: " +Part.parts[136], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4234,9 +4234,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[163] >0){
         		Part.parts[163] = Part.parts[163] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[162];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For: " +Part.parts[162], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For: " +Part.parts[162], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4246,9 +4246,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[189] >0){
         		Part.parts[189] = Part.parts[189] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[188];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For: " +Part.parts[188], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For: " +Part.parts[188], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4258,9 +4258,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[215] >0){
         		Part.parts[215] = Part.parts[215] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[214];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL FFor: " +Part.parts[214], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL FFor: " +Part.parts[214], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4270,9 +4270,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[241] >0){
         		Part.parts[241] = Part.parts[241] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[240];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For: " +Part.parts[240], "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For: " +Part.parts[240], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4282,9 +4282,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[9] >0){
         		Part.parts[9] = Part.parts[9] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[8];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For: " +Part.parts[8], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For: " +Part.parts[8], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4294,9 +4294,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[35] >0){
         		Part.parts[35] = Part.parts[35] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[34];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For: " +Part.parts[34], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For: " +Part.parts[34], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4306,9 +4306,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[61] >0){
         		Part.parts[61] = Part.parts[61] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[60];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For: " +Part.parts[60], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For: " +Part.parts[60], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4318,9 +4318,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[87] >0){
         		Part.parts[87] = Part.parts[87] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[86];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For: " +Part.parts[86], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For: " +Part.parts[86], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4330,9 +4330,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[113] >0){
         		Part.parts[113] = Part.parts[113] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[112];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For: " +Part.parts[112], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For: " +Part.parts[112], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4342,9 +4342,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[139] >0){
         		Part.parts[139] = Part.parts[139] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[138];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For: " +Part.parts[138], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For: " +Part.parts[138], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4354,9 +4354,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[165] >0){
         		Part.parts[165] = Part.parts[165] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[164];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For: " +Part.parts[164], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For: " +Part.parts[164], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4366,9 +4366,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[191] >0){
         		Part.parts[191] = Part.parts[191] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[190];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For: " +Part.parts[190], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For: " +Part.parts[190], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4378,9 +4378,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[217] >0){
         		Part.parts[217] = Part.parts[217] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[216];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For: " +Part.parts[216], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For: " +Part.parts[216], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4390,9 +4390,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[243] >0){
         		Part.parts[243] = Part.parts[243] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[242];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For: " +Part.parts[242], "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For: " +Part.parts[242], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4402,9 +4402,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[11] >0){
         		Part.parts[11] = Part.parts[11] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[10];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For For: " +Part.parts[10], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For For: " +Part.parts[10], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4414,9 +4414,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[37] >0){
         		Part.parts[37] = Part.parts[37] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[36];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For: " +Part.parts[36], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For: " +Part.parts[36], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4426,9 +4426,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[63] >0){
         		Part.parts[63] = Part.parts[63] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[62];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For: " +Part.parts[62], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For: " +Part.parts[62], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4438,9 +4438,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[89] >0){
         		Part.parts[89] = Part.parts[89] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[88];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For: " +Part.parts[88], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For: " +Part.parts[88], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4450,9 +4450,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[115] >0){
         		Part.parts[115] = Part.parts[115] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[114];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For: " +Part.parts[114], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For: " +Part.parts[114], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4462,9 +4462,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[141] >0){
         		Part.parts[141] = Part.parts[141] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[140];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For: " +Part.parts[140], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For: " +Part.parts[140], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4474,9 +4474,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[167] >0){
         		Part.parts[167] = Part.parts[167] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[166];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For: " +Part.parts[166], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For: " +Part.parts[166], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4486,9 +4486,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[193] >0){
         		Part.parts[193] = Part.parts[193] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[192];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For: " +Part.parts[192], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For: " +Part.parts[192], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4498,9 +4498,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[219] >0){
         		Part.parts[219] = Part.parts[219] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[218];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For: " +Part.parts[218], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For: " +Part.parts[218], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4510,9 +4510,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[245] >0){
         		Part.parts[245] = Part.parts[245] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[244];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For: " +Part.parts[244], "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For: " +Part.parts[244], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4522,9 +4522,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[13] >0){
         		Part.parts[13] = Part.parts[13] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[12];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For: " +Part.parts[12], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For: " +Part.parts[12], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4534,9 +4534,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[39] >0){
         		Part.parts[39] = Part.parts[39] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[38];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For: " +Part.parts[38], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For: " +Part.parts[38], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4546,9 +4546,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[65] >0){
         		Part.parts[65] = Part.parts[65] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[64];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For: " +Part.parts[64], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For: " +Part.parts[64], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4558,9 +4558,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[91] >0){
         		Part.parts[91] = Part.parts[91] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[90];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For: " +Part.parts[90], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For: " +Part.parts[90], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4570,9 +4570,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[117] >0){
         		Part.parts[117] = Part.parts[117] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[116];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For: " +Part.parts[116], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For: " +Part.parts[116], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4582,9 +4582,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[143] >0){
         		Part.parts[143] = Part.parts[143] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[142];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For: " +Part.parts[142], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For: " +Part.parts[142], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4594,9 +4594,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[169] >0){
         		Part.parts[169] = Part.parts[169] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[168];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For: " +Part.parts[168], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For: " +Part.parts[168], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4606,9 +4606,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[195] >0){
         		Part.parts[195] = Part.parts[195] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[194];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For: " +Part.parts[194], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For: " +Part.parts[194], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4618,9 +4618,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[221] >0){
         		Part.parts[221] = Part.parts[221] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[220];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For: " +Part.parts[220], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For: " +Part.parts[220], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4630,9 +4630,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[247] >0){
         		Part.parts[247] = Part.parts[247] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[246];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For: " +Part.parts[246], "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For: " +Part.parts[246], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4642,9 +4642,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[15] >0){
         		Part.parts[15] = Part.parts[15] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[14];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For: " +Part.parts[14], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For: " +Part.parts[14], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4654,9 +4654,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[41] >0){
         		Part.parts[41] = Part.parts[41] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[40];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For: " +Part.parts[40], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For: " +Part.parts[40], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4666,9 +4666,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[67] >0){
         		Part.parts[67] = Part.parts[67] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[66];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For: " +Part.parts[66], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For: " +Part.parts[66], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4678,9 +4678,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[93] >0){
         		Part.parts[93] = Part.parts[93] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[92];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For: " +Part.parts[92], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For: " +Part.parts[92], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4690,9 +4690,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[119] >0){
         		Part.parts[119] = Part.parts[119] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[118];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For: " +Part.parts[118], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For: " +Part.parts[118], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4702,9 +4702,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[145] >0){
         		Part.parts[145] = Part.parts[145] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[144];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL FFor: " +Part.parts[144], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL FFor: " +Part.parts[144], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4714,9 +4714,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[171] >0){
         		Part.parts[171] = Part.parts[171] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[170];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For: " +Part.parts[170], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For: " +Part.parts[170], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4726,9 +4726,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[197] >0){
         		Part.parts[197] = Part.parts[197] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[196];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For: " +Part.parts[196], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For: " +Part.parts[196], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4738,9 +4738,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[223] >0){
         		Part.parts[223] = Part.parts[223] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[222];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For: " +Part.parts[222], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For: " +Part.parts[222], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4750,9 +4750,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[249] >0){
         		Part.parts[249] = Part.parts[249] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[248];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For: " +Part.parts[248], "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For: " +Part.parts[248], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4762,9 +4762,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[17] >0){
         		Part.parts[17] = Part.parts[17] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[16];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL LVL For: " +Part.parts[16], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL LVL For: " +Part.parts[16], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
                 
@@ -4774,9 +4774,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[43] >0){
         		Part.parts[43] = Part.parts[43] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[42];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For: " +Part.parts[42], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For: " +Part.parts[42], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4786,9 +4786,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[69] >0){
         		Part.parts[69] = Part.parts[69] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[68];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For: " +Part.parts[68], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For: " +Part.parts[68], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4798,9 +4798,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[95] >0){
         		Part.parts[95] = Part.parts[95] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[94];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For: " +Part.parts[94], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For: " +Part.parts[94], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4810,9 +4810,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[121] >0){
         		Part.parts[121] = Part.parts[121] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[120];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For: " +Part.parts[120], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For: " +Part.parts[120], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4822,9 +4822,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[147] >0){
         		Part.parts[147] = Part.parts[147] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[146];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For: " +Part.parts[146], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For: " +Part.parts[146], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4834,9 +4834,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[173] >0){
         		Part.parts[173] = Part.parts[173] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[172];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For: " +Part.parts[172], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For: " +Part.parts[172], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4846,9 +4846,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[199] >0){
         		Part.parts[199] = Part.parts[199] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[198];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For: " +Part.parts[198], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For: " +Part.parts[198], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4858,9 +4858,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[225] >0){
         		Part.parts[225] = Part.parts[225] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[224];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For: " +Part.parts[224], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For: " +Part.parts[224], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4870,9 +4870,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[251] >0){
         		Part.parts[251] = Part.parts[251] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[250];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For: " +Part.parts[250], "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For: " +Part.parts[250], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4882,9 +4882,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[19] >0){
         		Part.parts[19] = Part.parts[19] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[18];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL FFor: " +Part.parts[18], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL FFor: " +Part.parts[18], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4894,9 +4894,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[45] >0){
         		Part.parts[45] = Part.parts[45] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[44];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For: " +Part.parts[44], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For: " +Part.parts[44], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4906,9 +4906,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[71] >0){
         		Part.parts[71] = Part.parts[71] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[70];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For: " +Part.parts[70], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For: " +Part.parts[70], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4918,9 +4918,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[97] >0){
         		Part.parts[97] = Part.parts[97] - 1;;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[96];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For: " +Part.parts[96], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For: " +Part.parts[96], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4930,9 +4930,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[123] >0){
         		Part.parts[123] = Part.parts[123] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[122];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For: " +Part.parts[122], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For: " +Part.parts[122], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4942,9 +4942,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[149] >0){
         		Part.parts[149] = Part.parts[149] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[148];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For: " +Part.parts[148], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For: " +Part.parts[148], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4954,9 +4954,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[175] >0){
         		Part.parts[175] = Part.parts[175] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[174];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For: " +Part.parts[174], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For: " +Part.parts[174], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4966,9 +4966,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[201] >0){
         		Part.parts[201] = Part.parts[201] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[200];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For: " +Part.parts[200], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For: " +Part.parts[200], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4978,9 +4978,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[227] >0){
         		Part.parts[227] = Part.parts[227] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[266];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For: " +Part.parts[266], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For: " +Part.parts[266], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -4990,9 +4990,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[253] >0){
         		Part.parts[253] = Part.parts[253] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[252];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For: " +Part.parts[252], "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For: " +Part.parts[252], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5002,9 +5002,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[21] >0){
         		Part.parts[21] = Part.parts[21] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[20];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For: " +Part.parts[20], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For: " +Part.parts[20], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5014,9 +5014,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[47] >0){
         		Part.parts[47] = Part.parts[47] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[46];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For: " +Part.parts[46], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For: " +Part.parts[46], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5026,9 +5026,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[73] >0){
         		Part.parts[73] = Part.parts[73] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[72];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For: " +Part.parts[72], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For: " +Part.parts[72], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5038,9 +5038,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[99] >0){
         		Part.parts[99] = Part.parts[99] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[98];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For: " +Part.parts[98], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For: " +Part.parts[98], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5050,9 +5050,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[125] >0){
         		Part.parts[125] = Part.parts[125] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[124];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For: " +Part.parts[124], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For: " +Part.parts[124], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5062,9 +5062,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[151] >0){
         		Part.parts[151] = Part.parts[151] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[150];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For: " +Part.parts[150], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For: " +Part.parts[150], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5074,9 +5074,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[177] >0){
         		Part.parts[177] = Part.parts[177] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[176];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For: " +Part.parts[176], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For: " +Part.parts[176], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5086,9 +5086,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[203] >0){
         		Part.parts[203] = Part.parts[203] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[202];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For: " +Part.parts[202], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For: " +Part.parts[202], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5098,9 +5098,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[229] >0){
         		Part.parts[229] = Part.parts[229] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[228];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For: " +Part.parts[228], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For: " +Part.parts[228], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5110,9 +5110,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[255] >0){
         		Part.parts[255] = Part.parts[255] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[254];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For: " +Part.parts[254], "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For: " +Part.parts[254], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5122,9 +5122,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[23] >0){
         		Part.parts[23] = Part.parts[23] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[22];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For: " +Part.parts[22], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For: " +Part.parts[22], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5134,9 +5134,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[49] >0){
         		Part.parts[49] = Part.parts[49] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[48];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For: " +Part.parts[48], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For: " +Part.parts[48], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5146,9 +5146,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[75] >0){
         		Part.parts[75] = Part.parts[75] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[74];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For: " +Part.parts[74], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For: " +Part.parts[74], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5158,9 +5158,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[101] >0){
         		Part.parts[101] = Part.parts[101] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[100];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For: " +Part.parts[100], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For: " +Part.parts[100], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5170,9 +5170,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[127]>0){
         		Part.parts[127] = Part.parts[127] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[126];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For: " +Part.parts[126], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For: " +Part.parts[126], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5182,9 +5182,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[153] >0){
         		Part.parts[153] = Part.parts[153] - 1;;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[152];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For: " +Part.parts[152], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For: " +Part.parts[152], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5194,9 +5194,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[179] >0){
         		Part.parts[179] = Part.parts[179] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[178];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For: " +Part.parts[178], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For: " +Part.parts[178], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5206,9 +5206,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[205] >0){
         		Part.parts[205] = Part.parts[205] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[204];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For: " +Part.parts[204], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For: " +Part.parts[204], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5218,9 +5218,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[231] >0){
         		Part.parts[231] = Part.parts[231] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[230];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For: " +Part.parts[230], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For: " +Part.parts[230], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5230,9 +5230,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[257] >0){
         		Part.parts[257] = Part.parts[257] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[256];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For: " +Part.parts[256], "Congralations", JOptionPane.INFORMATION_MESSAGE, TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For: " +Part.parts[256], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5242,9 +5242,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[25] >0){
         		Part.parts[25] = Part.parts[25] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[24];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For: " +Part.parts[24], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For: " +Part.parts[24], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5254,7 +5254,7 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[51] >0){
         		Part.parts[51] = Part.parts[51] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[50];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For: " +Part.parts[50], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For: " +Part.parts[50], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
@@ -5266,7 +5266,7 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[77] >0){
         		Part.parts[77] = Part.parts[77] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[76];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For: " +Part.parts[76], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For: " +Part.parts[76], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
@@ -5278,7 +5278,7 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[103] >0){
         		Part.parts[103] = Part.parts[103] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[102];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For: " +Part.parts[102], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For: " +Part.parts[102], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
@@ -5290,9 +5290,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[129] >0){
         		Part.parts[129] = Part.parts[129] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[128];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For: " +Part.parts[128], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For: " +Part.parts[128], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5302,9 +5302,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[155] >0){
         		Part.parts[155] = Part.parts[155] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[154];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For: " +Part.parts[154], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For: " +Part.parts[154], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5314,9 +5314,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[181] >0){
         		Part.parts[181] = Part.parts[181] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[180];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For: " +Part.parts[180], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For: " +Part.parts[180], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5326,9 +5326,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[207] >0){
         		Part.parts[207] = Part.parts[207] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[206];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For: " +Part.parts[206], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For: " +Part.parts[206], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5338,9 +5338,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[233] >0){
         		Part.parts[233] = Part.parts[233] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[232];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For: " +Part.parts[232], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For: " +Part.parts[232], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }
         
@@ -5350,9 +5350,9 @@ public class ClickerGame implements ActionListener {
         	if (Part.parts[259] >0){
         		Part.parts[259] = Part.parts[259] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[258];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For: " +Part.parts[258], "Congralations", JOptionPane.INFORMATION_MESSAGE, TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For: " +Part.parts[258], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
         }      
 }
