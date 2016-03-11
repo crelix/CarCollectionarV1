@@ -3,7 +3,7 @@ package Clicker;
 import java.awt.event.*;
 import javax.swing.*;
 
-   int skaits;
+//   int skaits;
 //    int skaits0 = 0;
 //    
 //    ClickerGame CG = new ClickerGame();
