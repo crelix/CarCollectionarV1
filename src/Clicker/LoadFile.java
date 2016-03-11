@@ -28,10 +28,10 @@ public class LoadFile {
 			FileInputStream SaveFileSub = new FileInputStream(SaveFile);
 			ObjectInputStream load = new ObjectInputStream(SaveFileSub);
 
-			CarMain.main = (Integer[]) load.readObject();
-			Box.boxes = (Integer[]) load.readObject();
-			CarFrame.frames = (Integer[]) load.readObject();
-			Part.parts = (Integer[]) load.readObject();
+			CarMain.main = (int[]) load.readObject();
+			Box.boxes = (int[]) load.readObject();
+			CarFrame.frames = (int[]) load.readObject();
+			Part.parts = (int[]) load.readObject();
 			CarsLv1.cars = (String[]) load.readObject();
 			CarsLv2.cars = (String[]) load.readObject();
 			CarsLv3.cars = (String[]) load.readObject();

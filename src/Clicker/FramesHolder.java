@@ -2,7 +2,7 @@ package Clicker;
 
 public class FramesHolder {
 
-public Integer frames[] = new Integer[20];
+public int frames[] = new int[20];
 	
 	public FramesHolder(){
 		

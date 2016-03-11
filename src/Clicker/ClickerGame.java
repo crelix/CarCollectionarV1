@@ -27,10 +27,10 @@ public class ClickerGame implements ActionListener {
     final static String LVL9 = "Level 9";
     final static String LVL10 = "Level 10";
     
-
+ImagesHolder ih = new ImagesHolder();
     
     //LABELS
-    public JLabel MoneyLabel;  
+    public JLabel MoneyLabel = new JLabel(ih.MoneyIcon);   
     public JLabel MoneyClicksLabel;
     public JLabel BoxesLabel;
     public JLabel BoxesClicksLabel;
@@ -589,7 +589,7 @@ public class ClickerGame implements ActionListener {
     	JPanel MainPanelSub2 = new JPanel();
     	MainPanelSub2.setLayout(new BoxLayout(MainPanelSub2, BoxLayout.PAGE_AXIS));
     	
-    	MoneyLabel = new JLabel(ImagesHolder.MoneyIcon);  
+    	
     	MoneyLabel.setHorizontalTextPosition(JLabel.CENTER);
     	MoneyLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	MoneyLabel.setText("Money: " + CarMain.main[0]);

@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 public class mainClass {
 
 	 public static void main(String[] args) {
-	    	
+	    	System.out.println("VIZMAZ AIZGAJA");
 		 Refresher Refresh = new Refresher();
 		 ClickerGame game = new ClickerGame();
 
@@ -21,7 +21,7 @@ public class mainClass {
 	    	
 	    	LoadFile load = new LoadFile();
 	    	boolean GameLoop = true;
-	    	Refresh.refresher();
+	    	
 	    	
 	 Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
 

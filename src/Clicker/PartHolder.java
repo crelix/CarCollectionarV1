@@ -3,7 +3,7 @@ package Clicker;
 public class PartHolder {
 
 	
-	public Integer parts[] = new Integer[260];
+	public int parts[] = new int[260];
 	
 	public PartHolder(){
 		
