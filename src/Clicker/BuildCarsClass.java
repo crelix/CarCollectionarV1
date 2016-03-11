@@ -11,7 +11,7 @@ public class BuildCarsClass implements ActionListener {
     JButton jbtnBuildCarLv4 = new JButton("Build");
     JButton jbtnBuildCarLv5 = new JButton("Build");
 
-	ClickerGame CG =new ClickerGame();
+    ClickerGame CG = new ClickerGame();
 	MainHolder CarMain = new MainHolder();
     BoxesHolder Box = new BoxesHolder();
     FramesHolder CarFrame = new FramesHolder();

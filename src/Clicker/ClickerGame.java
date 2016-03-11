@@ -416,7 +416,7 @@ public class ClickerGame implements ActionListener {
     	JPanel MainPanelSub2 = new JPanel();
     	MainPanelSub2.setLayout(new BoxLayout(MainPanelSub2, BoxLayout.PAGE_AXIS));
     	
-    	MoneyLabel = new JLabel(MoneyIcon);  
+    	MoneyLabel = new JLabel(ImagesHolder.MoneyIcon);  
     	MoneyLabel.setHorizontalTextPosition(JLabel.CENTER);
     	MoneyLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	MoneyLabel.setText("Money: " + CarMain.main[0]);
@@ -426,7 +426,7 @@ public class ClickerGame implements ActionListener {
     	MoneyClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
     	
-        JLabel BoxesLabel = new JLabel(BoxLv9_10Icon);  	
+        JLabel BoxesLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);  	
     	BoxesLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesLabel.setText("Boxes: " + CarMain.main[2]);
@@ -458,17 +458,17 @@ public class ClickerGame implements ActionListener {
         JPanel UpgradesPanelSub3 = new JPanel();
         UpgradesPanelSub3.setLayout(new BoxLayout(UpgradesPanelSub3, BoxLayout.PAGE_AXIS));
         
-        JLabel PlayerLabel = new JLabel(PlayerIcon);    	
+        JLabel PlayerLabel = new JLabel(ImagesHolder.PlayerIcon);    	
     	PlayerLabel.setHorizontalTextPosition(JLabel.CENTER);
     	PlayerLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	PlayerLabel.setText("Player Level: " + CarMain.main[5]);
         
-    	JLabel GarageLabel = new JLabel(GarageIcon);    	
+    	JLabel GarageLabel = new JLabel(ImagesHolder.GarageIcon);    	
     	GarageLabel.setHorizontalTextPosition(JLabel.CENTER);
     	GarageLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	GarageLabel.setText("Garage Level: " + CarMain.main[6]);
     	
-    	JLabel BoxesLVLLabel = new JLabel(BoxLv9_10Icon);    	
+    	JLabel BoxesLVLLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
     	BoxesLVLLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLVLLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesLVLLabel.setText("Box Level: " + CarMain.main[4]);
@@ -518,52 +518,52 @@ public class ClickerGame implements ActionListener {
         BuyBoxesPanelSub10.setLayout(new BoxLayout(BuyBoxesPanelSub10, BoxLayout.PAGE_AXIS));
         
         
-        JLabel BoxesLVL1Label = new JLabel(BoxLv1_2Icon);    	
+        JLabel BoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
     	BoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
     	
-    	JLabel BoxesLVL2Label = new JLabel(BoxLv1_2Icon);    	
+    	JLabel BoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
      	BoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
     	
-     	JLabel BoxesLVL3Label = new JLabel(BoxLv3_4Icon);    	
+     	JLabel BoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	BoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
     	
-     	JLabel BoxesLVL4Label = new JLabel(BoxLv3_4Icon);    	
+     	JLabel BoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	BoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
      	
-     	JLabel BoxesLVL5Label = new JLabel(BoxLv5_6Icon);    	
+     	JLabel BoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	BoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
      	
-     	JLabel BoxesLVL6Label = new JLabel(BoxLv5_6Icon);    	
+     	JLabel BoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	BoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
      	
-     	JLabel BoxesLVL7Label = new JLabel(BoxLv7_8Icon);    	
+     	JLabel BoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	BoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
      	
-     	JLabel BoxesLVL8Label = new JLabel(BoxLv7_8Icon);    	
+     	JLabel BoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	BoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
      	
-     	JLabel BoxesLVL9Label = new JLabel(BoxLv9_10Icon);    	
+     	JLabel BoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	BoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
      	
-     	JLabel BoxesLVL10Label = new JLabel(BoxLv9_10Icon);    	
+     	JLabel BoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	BoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
@@ -634,52 +634,52 @@ public class ClickerGame implements ActionListener {
         JPanel OpenBoxesPanelSub10 = new JPanel();
         OpenBoxesPanelSub10.setLayout(new BoxLayout(OpenBoxesPanelSub10, BoxLayout.PAGE_AXIS));
         
-        JLabel OpenBoxesLVL1Label = new JLabel(BoxLv1_2Icon);    	
+        JLabel OpenBoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
     	OpenBoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
     	OpenBoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
     	OpenBoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
     	
-    	JLabel OpenBoxesLVL2Label = new JLabel(BoxLv1_2Icon);    	
+    	JLabel OpenBoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
      	OpenBoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
     	
-     	JLabel OpenBoxesLVL3Label = new JLabel(BoxLv3_4Icon);    	
+     	JLabel OpenBoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	OpenBoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
     	
-     	JLabel OpenBoxesLVL4Label = new JLabel(BoxLv3_4Icon);    	
+     	JLabel OpenBoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	OpenBoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
      	
-     	JLabel OpenBoxesLVL5Label = new JLabel(BoxLv5_6Icon);    	
+     	JLabel OpenBoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	OpenBoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
      	
-     	JLabel OpenBoxesLVL6Label = new JLabel(BoxLv5_6Icon);    	
+     	JLabel OpenBoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	OpenBoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
      	
-     	JLabel OpenBoxesLVL7Label = new JLabel(BoxLv7_8Icon);    	
+     	JLabel OpenBoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	OpenBoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
      	
-     	JLabel OpenBoxesLVL8Label = new JLabel(BoxLv7_8Icon);    	
+     	JLabel OpenBoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	OpenBoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
      	
-     	JLabel OpenBoxesLVL9Label = new JLabel(BoxLv9_10Icon);    	
+     	JLabel OpenBoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	OpenBoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
      	
-     	JLabel OpenBoxesLVL10Label = new JLabel(BoxLv9_10Icon);    	
+     	JLabel OpenBoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	OpenBoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
@@ -750,77 +750,77 @@ public class ClickerGame implements ActionListener {
         JPanel BuildCarsPanelSub10 = new JPanel();
         BuildCarsPanelSub10.setLayout(new BoxLayout(BuildCarsPanelSub10, BoxLayout.PAGE_AXIS));
         
-        JLabel CarsLv1Label = new JLabel(Opel_ZafiraIcon);    	
+        JLabel CarsLv1Label = new JLabel(ImagesHolder.Opel_ZafiraIcon);    	
      	CarsLv1Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv1Label.setText("<html>1 LVL Cars<br>" + "Owned: " + CountLv1Cars() + " of 20");
      	
-     	JLabel CarsLv2Label = new JLabel(Ferrari_EnzoIcon);    	
+     	JLabel CarsLv2Label = new JLabel(ImagesHolder.Ferrari_EnzoIcon);    	
      	CarsLv2Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv2Label.setText("<html>2 LVL Cars<br>" + "Owned: " + CountLv2Cars() + " of 20");
      	
-     	JLabel CarsLv3Label = new JLabel(Fiat_500Icon);    	
+     	JLabel CarsLv3Label = new JLabel(ImagesHolder.Fiat_500Icon);    	
      	CarsLv3Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv3Label.setText("<html>3 LVL Cars<br>" + "Owned: " + CountLv3Cars() + " of 20");
      	
-     	JLabel CarsLv4Label = new JLabel(BMW_e30Icon);    	
+     	JLabel CarsLv4Label = new JLabel(ImagesHolder.BMW_e30Icon);    	
      	CarsLv4Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv4Label.setText("<html>4 LVL Cars<br>" + "Owned: " + CountLv4Cars() + " of 20");
      	
-     	JLabel CarsLv5Label = new JLabel(Pagani_ZondaFIcon);    	
+     	JLabel CarsLv5Label = new JLabel(ImagesHolder.Pagani_ZondaFIcon);    	
      	CarsLv5Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv5Label.setText("<html>5 LVL Cars<br>" + "Owned: " + CountLv5Cars() + " of 20");
      	
-     	JLabel CarsLv6Label = new JLabel(Vaz_2103Icon);    	
+     	JLabel CarsLv6Label = new JLabel(ImagesHolder.Vaz_2103Icon);    	
      	CarsLv6Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv6Label.setText("<html>6 LVL Cars<br>" + "Owned: " + CountLv6Cars() + " of 20");
      	
-     	JLabel CarsLv7Label = new JLabel(Audi_CoupeIcon);    	
+     	JLabel CarsLv7Label = new JLabel(ImagesHolder.Audi_CoupeIcon);    	
      	CarsLv7Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv7Label.setText("<html>7 LVL Cars<br>" + "Owned: " + CountLv7Cars() + " of 20");
      	
-     	JLabel CarsLv8Label = new JLabel(Ford_MustangIcon);    	
+     	JLabel CarsLv8Label = new JLabel(ImagesHolder.Ford_MustangIcon);    	
      	CarsLv8Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv8Label.setText("<html>8 LVL Cars<br>" + "Owned: " + CountLv8Cars() + " of 20");
      	
-     	JLabel CarsLv9Label = new JLabel(GMC_YukonIcon);    	
+     	JLabel CarsLv9Label = new JLabel(ImagesHolder.GMC_YukonIcon);    	
      	CarsLv9Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv9Label.setText("<html>9 LVL Cars<br>" + "Owned: " + CountLv9Cars() + " of 20");
      	
-     	JLabel CarsLv10Label = new JLabel(Cadilliac_EldoradoIcon);    	
+     	JLabel CarsLv10Label = new JLabel(ImagesHolder.Cadilliac_EldoradoIcon);    	
      	CarsLv10Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv10Label.setText("<html>10 LVL Cars<br>" + "Owned: " + CountLv10Cars() + " of 20");
         
      	
      	BuildCarsPanelSub.add(CarsLv1Label);
-     	//BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1;
+     	BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1);
      	BuildCarsPanelSub2.add(CarsLv2Label);
-     	//BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
+     	BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
      	BuildCarsPanelSub3.add(CarsLv3Label);
-     	//BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
+     	BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
      	BuildCarsPanelSub4.add(CarsLv4Label);
-     	//BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
+     	BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
      	BuildCarsPanelSub5.add(CarsLv5Label);
-     	//BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
+     	BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
      	BuildCarsPanelSub6.add(CarsLv6Label);
-     	//BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
+     	BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
      	BuildCarsPanelSub7.add(CarsLv7Label);
-     	//BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
+     	BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
      	BuildCarsPanelSub8.add(CarsLv8Label);
-     	//BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
+     	BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
      	BuildCarsPanelSub9.add(CarsLv9Label);
-     	//BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
+     	BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
      	BuildCarsPanelSub10.add(CarsLv10Label);
-     	//BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
+     	BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
      	
      	BuildCarsPanel.add(BuildCarsPanelSub);
      	BuildCarsPanel.add(BuildCarsPanelSub2);
@@ -867,52 +867,52 @@ public class ClickerGame implements ActionListener {
         JPanel BuyFramesPanelSub10 = new JPanel();
         BuyFramesPanelSub10.setLayout(new BoxLayout(BuyFramesPanelSub10, BoxLayout.PAGE_AXIS));
         
-        JLabel FrameLv1Label = new JLabel(CarFrameIcon);    	
+        JLabel FrameLv1Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv1Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv1Label.setText("<html>1 LVL Frame<br>" + "Count: " + CarFrame.frames[1]);
      	
-     	JLabel FrameLv2Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv2Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv2Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv2Label.setText("<html>2 LVL Frame<br>" + "Count: " + CarFrame.frames[3]);
      	
-     	JLabel FrameLv3Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv3Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv3Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv3Label.setText("<html>3 LVL Frame<br>" + "Count: " + CarFrame.frames[5]);
      	
-     	JLabel FrameLv4Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv4Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv4Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv4Label.setText("<html>4 LVL Frame<br>" + "Count: " + CarFrame.frames[7]);
      	
-     	JLabel FrameLv5Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv5Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv5Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv5Label.setText("<html>5 LVL Frame<br>" + "Count: " + CarFrame.frames[9]);
      	
-     	JLabel FrameLv6Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv6Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv6Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv6Label.setText("<html>6 LVL Frame<br>" + "Count: " + CarFrame.frames[11]);
      	
-     	JLabel FrameLv7Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv7Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv7Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv7Label.setText("<html>7 LVL Frame<br>" + "Count: " + CarFrame.frames[13]);
      	
-     	JLabel FrameLv8Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv8Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv8Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv8Label.setText("<html>8 LVL Frame<br>" + "Count: " + CarFrame.frames[15]);
      	
-     	JLabel FrameLv9Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv9Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv9Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv9Label.setText("<html>9 LVL Frame<br>" + "Count: " + CarFrame.frames[17]);
      	
-     	JLabel FrameLv10Label = new JLabel(CarFrameIcon);    	
+     	JLabel FrameLv10Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv10Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv10Label.setText("<html>10 LVL Frame<br>" + "Count: " + CarFrame.frames[19]);
@@ -992,52 +992,52 @@ public class ClickerGame implements ActionListener {
         JPanel SellPartsLVL1PanelSub13 = new JPanel();
         SellPartsLVL1PanelSub13.setLayout(new BoxLayout(SellPartsLVL1PanelSub13, BoxLayout.PAGE_AXIS));
         
-        JLabel AccessoriesLVL1Label = new JLabel(AccessoriesIcon);    	
+        JLabel AccessoriesLVL1Label = new JLabel(ImagesHolder.ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.parts[1]);
         
-        JLabel BodyLVL1Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL1Label = new JLabel(ImagesHolder.ImagesHolder.BodyIcon);    	
         BodyLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.parts[3]);
         
-        JLabel BrakesLVL1Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL1Label = new JLabel(ImagesHolder.ImagesHolder.BrakesIcon);    	
         BrakesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.parts[5]);
         
-        JLabel CoolingLVL1Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL1Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL1Label.setText("<html>Cooling LVL 1<br>" + "Count: " + Part.parts[7]);
         
-        JLabel ElectronicsLVL1Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL1Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL1Label.setText("<html>Electronics LVL 1<br>" + "Count: " + Part.parts[9]);
         
-        JLabel EngineLVL1Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL1Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL1Label.setText("<html>Engine LVL 1<br>" + "Count: " + Part.parts[11]);
         
-        JLabel ExaustLVL1Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL1Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL1Label.setText("<html>Exaust LVL 1<br>" + "Count: " + Part.parts[13]);
         
-        JLabel FuelLVL1Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL1Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL1Label.setText("<html>Fuel LVL 1<br>" + "Count: " + Part.parts[15]);
         
-        JLabel InteriorLVL1Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL1Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL1Label.setText("<html>Interior LVL 1<br>" + "Count: " + Part.parts[17]);
         
-        JLabel SteeringLVL1Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL1Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.parts[19]);
@@ -1141,52 +1141,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL2PanelSub13 = new JPanel();
 	 	SellPartsLVL2PanelSub13.setLayout(new BoxLayout(SellPartsLVL2PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL2Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL2Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL2Label.setText("<html>Accessories LVL 2<br>" + "Count: " + Part.parts[27]);
         
-        JLabel BodyLVL2Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL2Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL2Label.setText("<html>Body LVL 2<br>" + "Count: " + Part.parts[29]);
         
-        JLabel BrakesLVL2Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL2Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL2Label.setText("<html>Brakes LVL 2<br>" + "Count: " + Part.parts[31]);
         
-        JLabel CoolingLVL2Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL2Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL2Label.setText("<html>Cooling LVL 2<br>" + "Count: " + Part.parts[33]);
         
-        JLabel ElectronicsLVL2Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL2Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL2Label.setText("<html>Electronics LVL 2<br>" + "Count: " + Part.parts[35]);
         
-        JLabel EngineLVL2Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL2Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL2Label.setText("<html>Engine LVL 2<br>" + "Count: " + Part.parts[37]);
         
-        JLabel ExaustLVL2Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL2Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL2Label.setText("<html>Exaust LVL 2<br>" + "Count: " + Part.parts[39]);
         
-        JLabel FuelLVL2Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL2Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL2Label.setText("<html>Fuel LVL 2<br>" + "Count: " + Part.parts[41]);
         
-        JLabel InteriorLVL2Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL2Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL2Label.setText("<html>Interior LVL 2<br>" + "Count: " + Part.parts[43]);
         
-        JLabel SteeringLVL2Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL2Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.parts[45]);
@@ -1290,52 +1290,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL3PanelSub13 = new JPanel();
 	 	SellPartsLVL3PanelSub13.setLayout(new BoxLayout(SellPartsLVL3PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL3Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL3Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL3Label.setText("<html>Accessories LVL 3<br>" + "Count: " + Part.parts[53]);
         
-        JLabel BodyLVL3Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL3Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL3Label.setText("<html>Body LVL 3<br>" + "Count: " + Part.parts[55]);
         
-        JLabel BrakesLVL3Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL3Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL3Label.setText("<html>Brakes LVL 3<br>" + "Count: " + Part.parts[57]);
         
-        JLabel CoolingLVL3Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL3Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL3Label.setText("<html>Cooling LVL 3<br>" + "Count: " + Part.parts[59]);
         
-        JLabel ElectronicsLVL3Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL3Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL3Label.setText("<html>Electronics LVL 3<br>" + "Count: " + Part.parts[61]);
         
-        JLabel EngineLVL3Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL3Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL3Label.setText("<html>Engine LVL 3<br>" + "Count: " + Part.parts[63]);
         
-        JLabel ExaustLVL3Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL3Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL3Label.setText("<html>Exaust LVL 3<br>" + "Count: " + Part.parts[65]);
         
-        JLabel FuelLVL3Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL3Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL3Label.setText("<html>Fuel LVL 3<br>" + "Count: " + Part.parts[67]);
         
-        JLabel InteriorLVL3Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL3Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL3Label.setText("<html>Interior LVL 3<br>" + "Count: " + Part.parts[69]);
         
-        JLabel SteeringLVL3Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL3Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.parts[71]);
@@ -1439,52 +1439,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL4PanelSub13 = new JPanel();
 	 	SellPartsLVL4PanelSub13.setLayout(new BoxLayout(SellPartsLVL4PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL4Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL4Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL4Label.setText("<html>Accessories LVL 4<br>" + "Count: " + Part.parts[79]);
         
-        JLabel BodyLVL4Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL4Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL4Label.setText("<html>Body LVL 4<br>" + "Count: " + Part.parts[81]);
         
-        JLabel BrakesLVL4Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL4Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL4Label.setText("<html>Brakes LVL 4<br>" + "Count: " + Part.parts[83]);
         
-        JLabel CoolingLVL4Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL4Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL4Label.setText("<html>Cooling LVL 4<br>" + "Count: " + Part.parts[85]);
         
-        JLabel ElectronicsLVL4Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL4Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL4Label.setText("<html>Electronics LVL 4<br>" + "Count: " + Part.parts[87]);
         
-        JLabel EngineLVL4Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL4Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL4Label.setText("<html>Engine LVL 4<br>" + "Count: " + Part.parts[89]);
         
-        JLabel ExaustLVL4Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL4Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL4Label.setText("<html>Exaust LVL 4<br>" + "Count: " + Part.parts[91]);
         
-        JLabel FuelLVL4Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL4Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL4Label.setText("<html>Fuel LVL 4<br>" + "Count: " + Part.parts[93]);
         
-        JLabel InteriorLVL4Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL4Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL4Label.setText("<html>Interior LVL 4<br>" + "Count: " + Part.parts[95]);
         
-        JLabel SteeringLVL4Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL4Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.parts[97]);
@@ -1588,52 +1588,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL5PanelSub13 = new JPanel();
 	 	SellPartsLVL5PanelSub13.setLayout(new BoxLayout(SellPartsLVL5PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL5Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL5Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL5Label.setText("<html>Accessories LVL 5<br>" + "Count: " + Part.parts[105]);
         
-        JLabel BodyLVL5Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL5Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL5Label.setText("<html>Body LVL 5<br>" + "Count: " + Part.parts[107]);
         
-        JLabel BrakesLVL5Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL5Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL5Label.setText("<html>Brakes LVL 5<br>" + "Count: " + Part.parts[109]);
         
-        JLabel CoolingLVL5Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL5Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL5Label.setText("<html>Cooling LVL 5<br>" + "Count: " + Part.parts[111]);
         
-        JLabel ElectronicsLVL5Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL5Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL5Label.setText("<html>Electronics LVL 5<br>" + "Count: " + Part.parts[113]);
         
-        JLabel EngineLVL5Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL5Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL5Label.setText("<html>Engine LVL 5<br>" + "Count: " + Part.parts[115]);
         
-        JLabel ExaustLVL5Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL5Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL5Label.setText("<html>Exaust LVL 5<br>" + "Count: " + Part.parts[117]);
         
-        JLabel FuelLVL5Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL5Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL5Label.setText("<html>Fuel LVL 5<br>" + "Count: " + Part.parts[119]);
         
-        JLabel InteriorLVL5Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL5Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL5Label.setText("<html>Interior LVL 5<br>" + "Count: " + Part.parts[121]);
         
-        JLabel SteeringLVL5Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL5Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.parts[123]);
@@ -1737,52 +1737,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL6PanelSub13 = new JPanel();
 	 	SellPartsLVL6PanelSub13.setLayout(new BoxLayout(SellPartsLVL6PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL6Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL6Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL6Label.setText("<html>Accessories LVL 6<br>" + "Count: " + Part.parts[131]);
         
-        JLabel BodyLVL6Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL6Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL6Label.setText("<html>Body LVL 6<br>" + "Count: " + Part.parts[133]);
         
-        JLabel BrakesLVL6Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL6Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL6Label.setText("<html>Brakes LVL 6<br>" + "Count: " + Part.parts[135]);
         
-        JLabel CoolingLVL6Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL6Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL6Label.setText("<html>Cooling LVL 6<br>" + "Count: " + Part.parts[137]);
         
-        JLabel ElectronicsLVL6Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL6Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL6Label.setText("<html>Electronics LVL 6<br>" + "Count: " + Part.parts[139]);
         
-        JLabel EngineLVL6Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL6Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL6Label.setText("<html>Engine LVL 6<br>" + "Count: " + Part.parts[141]);
         
-        JLabel ExaustLVL6Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL6Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL6Label.setText("<html>Exaust LVL 6<br>" + "Count: " + Part.parts[143]);
         
-        JLabel FuelLVL6Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL6Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL6Label.setText("<html>Fuel LVL 6<br>" + "Count: " + Part.parts[145]);
         
-        JLabel InteriorLVL6Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL6Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL6Label.setText("<html>Interior LVL 6<br>" + "Count: " + Part.parts[147]);
         
-        JLabel SteeringLVL6Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL6Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.parts[149]);
@@ -1886,52 +1886,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL7PanelSub13 = new JPanel();
 	 	SellPartsLVL7PanelSub13.setLayout(new BoxLayout(SellPartsLVL7PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL7Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL7Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL7Label.setText("<html>Accessories LVL 7<br>" + "Count: " + Part.parts[157]);
         
-        JLabel BodyLVL7Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL7Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL7Label.setText("<html>Body LVL 7<br>" + "Count: " + Part.parts[159]);
         
-        JLabel BrakesLVL7Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL7Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL7Label.setText("<html>Brakes LVL 7<br>" + "Count: " + Part.parts[161]);
         
-        JLabel CoolingLVL7Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL7Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL7Label.setText("<html>Cooling LVL 7<br>" + "Count: " + Part.parts[163]);
         
-        JLabel ElectronicsLVL7Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL7Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL7Label.setText("<html>Electronics LVL 7<br>" + "Count: " + Part.parts[165]);
         
-        JLabel EngineLVL7Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL7Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL7Label.setText("<html>Engine LVL 7<br>" + "Count: " + Part.parts[167]);
         
-        JLabel ExaustLVL7Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL7Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL7Label.setText("<html>Exaust LVL 7<br>" + "Count: " + Part.parts[169]);
         
-        JLabel FuelLVL7Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL7Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL7Label.setText("<html>Fuel LVL 7<br>" + "Count: " + Part.parts[171]);
         
-        JLabel InteriorLVL7Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL7Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL7Label.setText("<html>Interior LVL 7<br>" + "Count: " + Part.parts[173]);
         
-        JLabel SteeringLVL7Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL7Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.parts[175]);
@@ -2035,52 +2035,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL8PanelSub13 = new JPanel();
 	 	SellPartsLVL8PanelSub13.setLayout(new BoxLayout(SellPartsLVL8PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL8Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL8Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL8Label.setText("<html>Accessories LVL 8<br>" + "Count: " + Part.parts[183]);
         
-        JLabel BodyLVL8Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL8Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL8Label.setText("<html>Body LVL 8<br>" + "Count: " + Part.parts[185]);
         
-        JLabel BrakesLVL8Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL8Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL8Label.setText("<html>Brakes LVL 8<br>" + "Count: " + Part.parts[187]);
         
-        JLabel CoolingLVL8Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL8Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL8Label.setText("<html>Cooling LVL 8<br>" + "Count: " + Part.parts[189]);
         
-        JLabel ElectronicsLVL8Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL8Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL8Label.setText("<html>Electronics LVL 8<br>" + "Count: " + Part.parts[191]);
         
-        JLabel EngineLVL8Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL8Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL8Label.setText("<html>Engine LVL 8<br>" + "Count: " + Part.parts[193]);
         
-        JLabel ExaustLVL8Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL8Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL8Label.setText("<html>Exaust LVL 8<br>" + "Count: " + Part.parts[195]);
         
-        JLabel FuelLVL8Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL8Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL8Label.setText("<html>Fuel LVL 8<br>" + "Count: " + Part.parts[197]);
         
-        JLabel InteriorLVL8Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL8Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL8Label.setText("<html>Interior LVL 8<br>" + "Count: " + Part.parts[199]);
         
-        JLabel SteeringLVL8Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL8Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL8Label.setText("<html>Steering LVL 8<br>" + "Count: " + Part.parts[201]);
@@ -2184,52 +2184,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL9PanelSub13 = new JPanel();
 	 	SellPartsLVL9PanelSub13.setLayout(new BoxLayout(SellPartsLVL9PanelSub13, BoxLayout.PAGE_AXIS));
    	 	
-	 	JLabel AccessoriesLVL9Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL9Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL9Label.setText("<html>Accessories LVL 9<br>" + "Count: " + Part.parts[209]);
         
-        JLabel BodyLVL9Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL9Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL9Label.setText("<html>Body LVL 9<br>" + "Count: " + Part.parts[211]);
         
-        JLabel BrakesLVL9Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL9Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL9Label.setText("<html>Brakes LVL 9<br>" + "Count: " + Part.parts[213]);
         
-        JLabel CoolingLVL9Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL9Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL9Label.setText("<html>Cooling LVL 9<br>" + "Count: " + Part.parts[215]);
         
-        JLabel ElectronicsLVL9Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL9Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL9Label.setText("<html>Electronics LVL 9<br>" + "Count: " + Part.parts[217]);
         
-        JLabel EngineLVL9Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL9Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL9Label.setText("<html>Engine LVL 9<br>" + "Count: " + Part.parts[219]);
         
-        JLabel ExaustLVL9Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL9Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL9Label.setText("<html>Exaust LVL 9<br>" + "Count: " + Part.parts[221]);
         
-        JLabel FuelLVL9Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL9Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL9Label.setText("<html>Fuel LVL 9<br>" + "Count: " + Part.parts[223]);
         
-        JLabel InteriorLVL9Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL9Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL9Label.setText("<html>Interior LVL 9<br>" + "Count: " + Part.parts[225]);
         
-        JLabel SteeringLVL9Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL9Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL9Label.setText("<html>Steering LVL 9<br>" + "Count: " + Part.parts[227]);
@@ -2333,52 +2333,52 @@ public class ClickerGame implements ActionListener {
 	 	JPanel SellPartsLVL10PanelSub13 = new JPanel();
 	 	SellPartsLVL10PanelSub13.setLayout(new BoxLayout(SellPartsLVL10PanelSub13, BoxLayout.PAGE_AXIS));
         
-	 	JLabel AccessoriesLVL10Label = new JLabel(AccessoriesIcon);    	
+	 	JLabel AccessoriesLVL10Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
         AccessoriesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         AccessoriesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         AccessoriesLVL10Label.setText("<html>Accessories LVL 10<br>" + "Count: " + Part.parts[235]);
         
-        JLabel BodyLVL10Label = new JLabel(BodyIcon);    	
+        JLabel BodyLVL10Label = new JLabel(ImagesHolder.BodyIcon);    	
         BodyLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         BodyLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         BodyLVL10Label.setText("<html>Body LVL 10<br>" + "Count: " + Part.parts[237]);
         
-        JLabel BrakesLVL10Label = new JLabel(BrakesIcon);    	
+        JLabel BrakesLVL10Label = new JLabel(ImagesHolder.BrakesIcon);    	
         BrakesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         BrakesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         BrakesLVL10Label.setText("<html>Brakes LVL 10<br>" + "Count: " + Part.parts[239]);
         
-        JLabel CoolingLVL10Label = new JLabel(CoolingIcon);    	
+        JLabel CoolingLVL10Label = new JLabel(ImagesHolder.CoolingIcon);    	
         CoolingLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         CoolingLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         CoolingLVL10Label.setText("<html>Cooling LVL 10<br>" + "Count: " + Part.parts[241]);
         
-        JLabel ElectronicsLVL10Label = new JLabel(ElectronicsIcon);    	
+        JLabel ElectronicsLVL10Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
         ElectronicsLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         ElectronicsLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         ElectronicsLVL10Label.setText("<html>Electronics LVL 10<br>" + "Count: " + Part.parts[243]);
         
-        JLabel EngineLVL10Label = new JLabel(EngineIcon);    	
+        JLabel EngineLVL10Label = new JLabel(ImagesHolder.EngineIcon);    	
         EngineLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         EngineLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         EngineLVL10Label.setText("<html>Engine LVL 10<br>" + "Count: " + Part.parts[245]);
         
-        JLabel ExaustLVL10Label = new JLabel(ExaustIcon);    	
+        JLabel ExaustLVL10Label = new JLabel(ImagesHolder.ExaustIcon);    	
         ExaustLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         ExaustLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         ExaustLVL10Label.setText("<html>Exaust LVL 10<br>" + "Count: " + Part.parts[247]);
         
-        JLabel FuelLVL10Label = new JLabel(FuelIcon);    	
+        JLabel FuelLVL10Label = new JLabel(ImagesHolder.FuelIcon);    	
         FuelLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         FuelLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         FuelLVL10Label.setText("<html>Fuel LVL 10<br>" + "Count: " + Part.parts[249]);
         
-        JLabel InteriorLVL10Label = new JLabel(InteriorIcon);    	
+        JLabel InteriorLVL10Label = new JLabel(ImagesHolder.InteriorIcon);    	
         InteriorLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         InteriorLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         InteriorLVL10Label.setText("<html>Interior LVL 10<br>" + "Count: " + Part.parts[251]);
         
-        JLabel SteeringLVL10Label = new JLabel(SteeringIcon);    	
+        JLabel SteeringLVL10Label = new JLabel(ImagesHolder.SteeringIcon);    	
         SteeringLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
         SteeringLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
         SteeringLVL10Label.setText("<html>Steering LVL 10<br>" + "Count: " + Part.parts[253]);
@@ -2573,266 +2573,15 @@ public class ClickerGame implements ActionListener {
     	return allclicks;
     }   
  	
- 
-    // Image Icons
-    
-    final ImageIcon MoneyIcon = new ImageIcon("Images/Money.png");   
-    final ImageIcon GarageIcon = new ImageIcon("Images/Garage.png");	
-    final ImageIcon LockedIcon = new ImageIcon("Images/Locked.png");	
-    final ImageIcon PlayerIcon = new ImageIcon("Images/Player.png");
-    final ImageIcon CarFrameIcon = new ImageIcon("Images/Frame.png");
-	
-    final ImageIcon NoMoneyIcon = new ImageIcon("Images/NoMoney.png");
-    final ImageIcon NoPartsIcon = new ImageIcon("Images/NoParts.png");
-    final ImageIcon NoPlayerIcon = new ImageIcon("Images/NoPlayer.png");
-    final ImageIcon NoGarageIcon = new ImageIcon("Images/NoGarage.png");
-    final ImageIcon NoBoxesIcon = new ImageIcon("Images/NoBoxes.png");
-    final ImageIcon NoFrameIcon = new ImageIcon("Images/NoFrame.png");
-	
-    final ImageIcon MaxUpgradeIcon = new ImageIcon("Images/Congralations.png");
-    
-    final ImageIcon BoxLv1_2Icon = new ImageIcon("Images/BoxLv1_2.png");
-    final ImageIcon BoxLv3_4Icon = new ImageIcon("Images/BoxLv3_4.png");
-    final ImageIcon BoxLv5_6Icon = new ImageIcon("Images/BoxLv5_6.png");
-    final ImageIcon BoxLv7_8Icon = new ImageIcon("Images/BoxLv7_8.png");
-    final ImageIcon BoxLv9_10Icon = new ImageIcon("Images/BoxLv9_10.png");
-	
-    final ImageIcon AccessoriesIcon = new ImageIcon("Images/Part_Accessories.png");
-    final ImageIcon BodyIcon = new ImageIcon("Images/Part_Body.png");
-    final ImageIcon BrakesIcon = new ImageIcon("Images/Part_Brakes.png");
-    final ImageIcon CoolingIcon = new ImageIcon("Images/Part_Cooling.png");
-    final ImageIcon ElectronicsIcon = new ImageIcon("Images/Part_Electronics.png");
-    final ImageIcon EngineIcon = new ImageIcon("Images/Part_Engine.png");
-    final ImageIcon ExaustIcon = new ImageIcon("Images/Part_Exaust.png");
-    final ImageIcon FuelIcon = new ImageIcon("Images/Part_Fuel.png");
-    final ImageIcon InteriorIcon = new ImageIcon("Images/Part_Interior.png");
-    final ImageIcon SteeringIcon = new ImageIcon("Images/Part_Steering.png");
-    final ImageIcon SuspensionIcon = new ImageIcon("Images/Part_Suspension.png");
-    final ImageIcon TransmissionIcon = new ImageIcon("Images/Part_Transmission.png");
-    final ImageIcon TiresIcon = new ImageIcon("Images/Part_Tires.png");
-	
-    final ImageIcon AccessoriesSoldIcon = new ImageIcon("Images/Part_Accessories_Sold.png");
-    final ImageIcon BodySoldIcon = new ImageIcon("Images/Part_Body_Sold.png");
-    final ImageIcon BrakesSoldIcon = new ImageIcon("Images/Part_Brakes_Sold.png");
-    final ImageIcon CoolingSoldIcon = new ImageIcon("Images/Part_Cooling_Sold.png");
-    final ImageIcon ElectronicsSoldIcon = new ImageIcon("Images/Part_Electronics_Sold.png");
-    final ImageIcon EngineSoldIcon = new ImageIcon("Images/Part_Engine_Sold.png");
-    final ImageIcon ExaustSoldIcon = new ImageIcon("Images/Part_Exaust_Sold.png");
-    final ImageIcon FuelSoldIcon = new ImageIcon("Images/Part_Fuel_Sold.png");
-    final ImageIcon InteriorSoldIcon = new ImageIcon("Images/Part_Interior_Sold.png");
-    final ImageIcon SteeringSoldIcon = new ImageIcon("Images/Part_Steering_Sold.png");
-    final ImageIcon SuspensionSoldIcon = new ImageIcon("Images/Part_Suspension_Sold.png");
-    final ImageIcon TransmissionSoldIcon = new ImageIcon("Images/Part_Transmission_Sold.png");
-    final ImageIcon TiresSoldIcon = new ImageIcon("Images/Part_Tires_Sold.png");
-		
-    final ImageIcon Aston_Martin_DB9Icon = new ImageIcon("Images/Aston_Martin_DB9.jpg");
-    final ImageIcon Acura_NSXIcon = new ImageIcon("Images/Acura_NSX.jpg");
-    final ImageIcon Ford_MustangIcon = new ImageIcon("Images/Ford_Mustang.jpg");
-    final ImageIcon Moskvich_412Icon = new ImageIcon("Images/Moskvich_412.jpg");
-    final ImageIcon Kia_VengaIcon = new ImageIcon("Images/Kia_Venga.jpg");
-    final ImageIcon Fiat_1500Icon = new ImageIcon("Images/Fiat_1500.jpg");
-    final ImageIcon Ferrari_EnzoIcon = new ImageIcon("Images/Ferrari_Enzo.jpg");
-    final ImageIcon Aston_Martin_RapideIcon = new ImageIcon("Images/Aston_Martin_Rapide.jpg");
-    final ImageIcon Koenigsegg_CCXIcon = new ImageIcon("Images/Koenigsegg_CCX.jpg");
-    final ImageIcon Honda_CivicIcon = new ImageIcon("Images/Honda_Civic.jpg");
-    final ImageIcon Cadilliac_ATSIcon = new ImageIcon("Images/Cadilliac_ATS.jpg");
-    final ImageIcon Mitsubishi_LancerEvolutionXIcon = new ImageIcon("Images/Mitsubishi_LancerEvolutionX.jpg");
-    final ImageIcon Infiniti_FXIcon = new ImageIcon("Images/Infiniti_FX.jpg");
-    final ImageIcon Lancia_ThemaIcon = new ImageIcon("Images/Lancia_Thema.jpg");
-    final ImageIcon Volvo_XC90Icon = new ImageIcon("Images/Volvo_XC90.jpg");
-    final ImageIcon Acura_CSXIcon = new ImageIcon("Images/Acura_CSX.jpg");
-    final ImageIcon Saab_SonettIIIcon = new ImageIcon("Images/Saab_SonettII.jpg");
-    final ImageIcon Renault_FlorideIcon = new ImageIcon("Images/Renault_Floride.jpg");
-    final ImageIcon BMW_e34Icon = new ImageIcon("Images/BMW_e34.jpg");
-    final ImageIcon Chrysler_CordobaIcon = new ImageIcon("Images/Chrysler_Cordoba.jpg");
-    final ImageIcon Buick_RivieraIcon = new ImageIcon("Images/Buick_Riviera.jpg");
-    final ImageIcon Tesla_RoadsterIcon = new ImageIcon("Images/Tesla_Roadster.jpg");
-    final ImageIcon Audi_80Icon = new ImageIcon("Images/Audi_80.jpg");
-    final ImageIcon BMW_e36Icon = new ImageIcon("Images/BMW_e36.jpg");
-    final ImageIcon Volkswagen_SciroccoIcon = new ImageIcon("Images/Volkswagen_Scirocco.jpg");
-    final ImageIcon Mazda_3Icon = new ImageIcon("Images/Mazda_3.jpg");
-    final ImageIcon Chevrolet_VikingIcon = new ImageIcon("Images/Chevrolet_Viking.jpg");
-    final ImageIcon Tesla_SIcon = new ImageIcon("Images/Tesla_S.jpg");
-    final ImageIcon Jeep_ZJIcon = new ImageIcon("Images/Jeep_ZJ.jpg");
-    final ImageIcon Dodge_NeonIcon = new ImageIcon("Images/Dodge_Neon.jpg");
-    final ImageIcon BMW_e30Icon = new ImageIcon("Images/BMW_e30.jpg");
-    final ImageIcon Mercedes_Benz_W123Icon = new ImageIcon("Images/Mercedes_Benz_W123.jpg");
-    final ImageIcon Land_Rover_DefenderIcon = new ImageIcon("Images/Land_Rover_Defender.jpg");
-    final ImageIcon Saab_9_5Icon = new ImageIcon("Images/Saab_9_5.jpg");
-    final ImageIcon Aston_Martin_OneIcon = new ImageIcon("Images/Aston_Martin_One.jpg");
-    final ImageIcon Koenigsegg_RegeraIcon = new ImageIcon("Images/Koenigsegg_Regera.jpg");
-    final ImageIcon Lexus_ISIcon = new ImageIcon("Images/Lexus_IS.jpg");
-    final ImageIcon GMC_YukonIcon = new ImageIcon("Images/GMC_Yukon.jpg");
-    final ImageIcon Opel_AstraIcon = new ImageIcon("Images/Opel_Astra.jpg");
-    final ImageIcon Audi_CoupeIcon = new ImageIcon("Images/Audi_Coupe.jpg");
-    final ImageIcon Mini_MokeIcon = new ImageIcon("Images/Mini_Moke.jpg");
-    final ImageIcon Kia_RondoIcon = new ImageIcon("Images/Kia_Rondo.jpg");
-    final ImageIcon GMC_SuburbanIcon = new ImageIcon("Images/GMC_Suburban.jpg");
-    final ImageIcon Honda_PreludeIcon = new ImageIcon("Images/Honda_Prelude.jpg");
-    final ImageIcon Citroen_SaxoIcon = new ImageIcon("Images/Citroen_Saxo.jpg");
-    final ImageIcon Volkswagen_TiguanIcon = new ImageIcon("Images/Volkswagen_Tiguan.jpg");
-    final ImageIcon Volkswagen_PhaetonIcon = new ImageIcon("Images/Volkswagen_Phaeton.jpg");
-    final ImageIcon Buick_CentryIcon = new ImageIcon("Images/Buick_Centry.jpg");
-    final ImageIcon Land_Rover_DiscoveryIcon = new ImageIcon("Images/Land_Rover_Discovery.jpg");
-    final ImageIcon Infiniti_EthereaIcon = new ImageIcon("Images/Infiniti_Etherea.jpg");
-    final ImageIcon Peugeot_308Icon = new ImageIcon("Images/Peugeot_308.jpg");
-    final ImageIcon Toyota_AurisIcon = new ImageIcon("Images/Toyota_Auris.jpg");
-    final ImageIcon Pagani_ZondaFIcon = new ImageIcon("Images/Pagani_ZondaF.jpg");
-    final ImageIcon Lancia_PhedraIcon = new ImageIcon("Images/Lancia_Phedra.jpg");
-    final ImageIcon Chevrolet_ImpalaIcon = new ImageIcon("Images/Chevrolet_Impala.jpg");
-    final ImageIcon Porsche_BoxsterIcon = new ImageIcon("Images/Porsche_Boxster.jpg");
-    final ImageIcon Aston_Martin_DB6Icon = new ImageIcon("Images/Aston_Martin_DB6.jpg");
-    final ImageIcon Vaz_2103Icon = new ImageIcon("Images/Vaz_2103.jpg");
-    final ImageIcon Hyundai_MistraIcon = new ImageIcon("Images/Hyundai_Mistra.jpg");
-    final ImageIcon Mini_CountrymanIcon = new ImageIcon("Images/Mini_Countryman.jpg");
-    final ImageIcon Mazda_MX6Icon = new ImageIcon("Images/Mazda_MX6.jpg");
-    final ImageIcon Chrysler_DaytonaIcon = new ImageIcon("Images/Chrysler_Daytona.jpg");
-    final ImageIcon Buick_RoadmasterIcon = new ImageIcon("Images/Buick_Roadmaster.jpg");
-    final ImageIcon Volvo_S80Icon = new ImageIcon("Images/Volvo_S80.jpg");
-    final ImageIcon Porsche_CaymanIcon = new ImageIcon("Images/Porsche_Cayman.jpg");
-    final ImageIcon Volkswagen_BeetleIcon = new ImageIcon("Images/Volkswagen_Beetle.jpg");
-	final ImageIcon Bugatti_EB110Icon = new ImageIcon("Images/Bugatti_EB110.jpg");
-	final ImageIcon Opel_ZafiraIcon = new ImageIcon("Images/Opel_Zafira.jpg");
-	final ImageIcon Saab_9000Icon = new ImageIcon("Images/Saab_9000.jpg");
-	final ImageIcon McLaren_F1Icon = new ImageIcon("Images/McLaren_F1.jpg");
-	final ImageIcon Audi_R8Icon = new ImageIcon("Images/Audi_R8.jpg");
-	final ImageIcon Alfa_Romeo_8CIcon = new ImageIcon("Images/Alfa_Romeo_8C.jpg");
-	final ImageIcon Ford_FiestaIcon = new ImageIcon("Images/Ford_Fiesta.jpg");
-	final ImageIcon Infiniti_Q50Icon = new ImageIcon("Images/Infiniti_Q50.jpg");
-	final ImageIcon Maserati_5000GTIcon = new ImageIcon("Images/Maserati_5000GT.jpg");
-	final ImageIcon Mercedes_Benz_CLA250Icon = new ImageIcon("Images/Mercedes_Benz_CLA250.jpg");
-	final ImageIcon Lamborghini_GallardoIcon = new ImageIcon("Images/Lamborghini_Gallardo.jpg");
-	final ImageIcon Mazda_RX7Icon = new ImageIcon("Images/Mazda_RX7.jpg");
-	final ImageIcon Mitsubishi_ColtIcon = new ImageIcon("Images/Mitsubishi_Colt.jpg");
-	final ImageIcon Kia_SorentoIcon = new ImageIcon("Images/Kia_Sorento.jpg");
-	final ImageIcon Rolls_Royce_WraithIcon = new ImageIcon("Images/Rolls_Royce_Wraith.jpg");
-	final ImageIcon Lamborghini_DiabloIcon = new ImageIcon("Images/Lamborghini_Diablo.jpg");
-	final ImageIcon Jeep_ScramblerIcon = new ImageIcon("Images/Jeep_Scrambler.jpg");
-	final ImageIcon Bentley_ContinentalIcon = new ImageIcon("Images/Bentley_Continental.jpg");
-	final ImageIcon Bentley_AzureIcon = new ImageIcon("Images/Bentley_Azure.jpg");
-	final ImageIcon Koenigsegg_OneIcon = new ImageIcon("Images/Koenigsegg_One.jpg");
-	final ImageIcon Cadilliac_XTSIcon = new ImageIcon("Images/Cadilliac_XTS.jpg");
-	final ImageIcon Fiat_500Icon = new ImageIcon("Images/Fiat_500.jpg");
-	final ImageIcon Mitsubishi_PajeroIcon = new ImageIcon("Images/Mitsubishi_Pajero.jpg");
-	final ImageIcon Moskvich_2140Icon = new ImageIcon("Images/Moskvich_2140.jpg");
-	final ImageIcon Opel_GTIcon = new ImageIcon("Images/Opel_GT.jpg");
-	final ImageIcon Hyundai_GetzIcon = new ImageIcon("Images/Hyundai_Getz.jpg");
-	final ImageIcon Maserati_CoupeIcon = new ImageIcon("Images/Maserati_Coupe.jpg");
-	final ImageIcon Honda_S2000Icon = new ImageIcon("Images/Honda_S2000.jpg");
-	final ImageIcon Alfa_Romeo_SpiderIcon = new ImageIcon("Images/Alfa_Romeo_Spider.jpg");
-	final ImageIcon BMW_M5Icon = new ImageIcon("Images/BMW_M5.jpg");
-	final ImageIcon BMW_I8Icon = new ImageIcon("Images/BMW_I8.jpg");
-	final ImageIcon Citroen_C5Icon = new ImageIcon("Images/Citroen_C5.jpg");
-	final ImageIcon Fiat_PuntoIcon = new ImageIcon("Images/Fiat_Punto.jpg");
-	final ImageIcon Audi_100Icon = new ImageIcon("Images/Audi_100.jpg");
-	final ImageIcon Rolls_Royce_PhantomIcon = new ImageIcon("Images/Rolls_Royce_Phantom.jpg");
-	final ImageIcon Toyota_86Icon = new ImageIcon("Images/Toyota_86.jpg");
-	final ImageIcon BMW_e70Icon = new ImageIcon("Images/BMW_e70.jpg");
-	final ImageIcon Chrysler_VoyagerIcon = new ImageIcon("Images/Chrysler_Voyager.jpg");
-	final ImageIcon Rolls_Royce_PhantomIIIIcon = new ImageIcon("Images/Rolls_Royce_PhantomIII.jpg");
-	final ImageIcon Honda_CRXIcon = new ImageIcon("Images/Honda_CRX.jpg");
-	final ImageIcon Subaru_1000Icon = new ImageIcon("Images/Subaru_1000.jpg");
-	final ImageIcon Cadilliac_EldoradoIcon = new ImageIcon("Images/Cadilliac_Eldorado.jpg");
-	final ImageIcon Land_Rover_FreelanderIcon = new ImageIcon("Images/Land_Rover_Freelander.jpg");
-	final ImageIcon Renault_SpiderIcon = new ImageIcon("Images/Renault_Spider.jpg");
-	final ImageIcon Gaz_21Icon = new ImageIcon("Images/Gaz_21.jpg");
-	final ImageIcon Acura_ELIcon = new ImageIcon("Images/Acura_EL.jpg");
-	final ImageIcon Bugatti_VeyronIcon = new ImageIcon("Images/Bugatti_Veyron.jpg");
-	final ImageIcon Mercedes_Benz_SL600Icon = new ImageIcon("Images/Mercedes_Benz_SL600.jpg");
-	final ImageIcon Rolls_Royce_SilverIcon = new ImageIcon("Images/Rolls_Royce_Silver.jpg");
-	final ImageIcon Mini_PacemanIcon = new ImageIcon("Images/Mini_Paceman.jpg");
-	final ImageIcon Hyundai_ExcelIcon = new ImageIcon("Images/Hyundai_Excel.jpg");
-	final ImageIcon Gaz_24Icon = new ImageIcon("Images/Gaz_24.jpg");
-	final ImageIcon Peugeot_107Icon = new ImageIcon("Images/Peugeot_107.jpg");
-	final ImageIcon Audi_A4Icon = new ImageIcon("Images/Audi_A4.jpg");
-	final ImageIcon Lamborghini_AventadorIcon = new ImageIcon("Images/Lamborghini_Aventador.jpg");
-	final ImageIcon Nissan_350zIcon = new ImageIcon("Images/Nissan_350z.jpg");
-	final ImageIcon Jaguar_XJ6Icon = new ImageIcon("Images/Jaguar_XJ6.jpg");
-	final ImageIcon Renault_ClioIcon = new ImageIcon("Images/Renault_Clio.jpg");
-	final ImageIcon Toyota_AvensisIcon = new ImageIcon("Images/Toyota_Avensis.jpg");
-	final ImageIcon Subaru_OutbackIcon = new ImageIcon("Images/Subaru_Outback.jpg");
-	final ImageIcon Saab_900Icon = new ImageIcon("Images/Saab_900.jpg");
-	final ImageIcon Opel_VectraIcon = new ImageIcon("Images/Opel_Vectra.jpg");
-	final ImageIcon Chrysler_ChargerIcon = new ImageIcon("Images/Chrysler_Charger.jpg");
-	final ImageIcon Ferrari_348Icon = new ImageIcon("Images/Ferrari_348.jpg");
-	final ImageIcon Hyundai_XGIcon = new ImageIcon("Images/Hyundai_XG.jpg");
-	final ImageIcon Lexus_RXIcon = new ImageIcon("Images/Lexus_RX.jpg");
-	final ImageIcon Dodge_400Icon = new ImageIcon("Images/Dodge_400.jpg");
-	final ImageIcon GMC_TerrainIcon = new ImageIcon("Images/GMC_Terrain.jpg");
-	final ImageIcon Volvo_C70Icon = new ImageIcon("Images/Volvo_C70.jpg");
-	final ImageIcon Ford_SierraIcon = new ImageIcon("Images/Ford_Sierra.jpg");
-	final ImageIcon Subaru_ImprezaIcon = new ImageIcon("Images/Subaru_Impreza.jpg");
-	final ImageIcon BMW_e90Icon = new ImageIcon("Images/BMW_e90.jpg");
-	final ImageIcon Nissan_SkylineIcon = new ImageIcon("Images/Nissan_Skyline.jpg");
-	final ImageIcon Audi_Q7Icon = new ImageIcon("Images/Audi_Q7.jpg");
-	final ImageIcon Bentley_ArnageIcon = new ImageIcon("Images/Bentley_Arnage.jpg");
-	final ImageIcon Volvo_850Icon = new ImageIcon("Images/Volvo_850.jpg");
-	final ImageIcon Toyota_Rav4Icon = new ImageIcon("Images/Toyota_Rav4.jpg");
-	final ImageIcon Ford_FocusIcon = new ImageIcon("Images/Ford_Focus.jpg");
-	final ImageIcon Chevrolet_SpinIcon = new ImageIcon("Images/Chevrolet_Spin.jpg");
-	final ImageIcon Bentley_GTZIcon = new ImageIcon("Images/Bentley_GTZ.jpg");
-	final ImageIcon Lexus_LSIcon = new ImageIcon("Images/Lexus_LS.jpg");
-	final ImageIcon Land_Rover_RangeRoverIcon = new ImageIcon("Images/Land_Rover_RangeRover.jpg");
-	final ImageIcon Lexus_GXIcon = new ImageIcon("Images/Lexus_GX.jpg");
-	final ImageIcon Jeep_WranglerIcon = new ImageIcon("Images/Jeep_Wrangler.jpg");
-	final ImageIcon Maserati_GranTurismoIcon = new ImageIcon("Images/Maserati_GranTurismo.jpg");
-	final ImageIcon Koenigsegg_AgeraIcon = new ImageIcon("Images/Koenigsegg_Agera.jpg");
-	final ImageIcon Acura_MDXIcon = new ImageIcon("Images/Acura_MDX.jpg");
-	final ImageIcon Audi_RS6Icon = new ImageIcon("Images/Audi_RS6.jpg");
-	final ImageIcon Cadilliac_DeVilleIcon = new ImageIcon("Images/Cadilliac_DeVille.jpg");
-	final ImageIcon McLaren_VenenoIcon = new ImageIcon("Images/McLaren_Veneno.jpg");
-	final ImageIcon Tesla_XIcon = new ImageIcon("Images/Tesla_XI.jpg");
-	final ImageIcon Mercedes_Benz_G55Icon = new ImageIcon("Images/Mercedes_Benz_G55.jpg");
-	final ImageIcon Lancia_LybraIcon = new ImageIcon("Images/Lancia_Lybra.jpg");
-	final ImageIcon Infiniti_QX60Icon = new ImageIcon("Images/Infiniti_QX60.jpg");
-	final ImageIcon Kia_ForteIcon = new ImageIcon("Images/Kia_Forte.jpg");
-	final ImageIcon Lancia_VoyagerIcon = new ImageIcon("Images/Lancia_Voyager.jpg");
-	final ImageIcon Porsche_CayenneIcon = new ImageIcon("Images/Porsche_Cayenne.jpg");
-	final ImageIcon McLaren_650sIcon = new ImageIcon("Images/McLaren_650s.jpg");
-	final ImageIcon Jaguar_E_TypeIcon = new ImageIcon("Images/Jaguar_E_Type.jpg");
-	final ImageIcon Peugeot_601Icon = new ImageIcon("Images/Peugeot_601.jpg");
-	final ImageIcon Jaguar_F_TypeIcon = new ImageIcon("Images/Jaguar_F_Type.jpg");
-	final ImageIcon Fiat_DobloIcon = new ImageIcon("Images/Fiat_Doblo.jpg");
-	final ImageIcon Vaz_2101Icon = new ImageIcon("Images/Vaz_2101.jpg");
-	final ImageIcon McLaren_P1Icon = new ImageIcon("Images/McLaren_P1.jpg");
-	final ImageIcon Peugeot_405Icon = new ImageIcon("Images/Peugeot_405.jpg");
-	final ImageIcon GMC_EnvoyIcon = new ImageIcon("Images/GMC_Envoy.jpg");
-	final ImageIcon Chevrolet_CorveteIcon = new ImageIcon("Images/Chevrolet_Corvete.jpg");
-	final ImageIcon Pagani_HuayraIcon = new ImageIcon("Images/Pagani_Huayra.jpg");
-	final ImageIcon Moskvich_402Icon = new ImageIcon("Images/Moskvich_402.jpg");
-	final ImageIcon Alfa_Romeo_159Icon = new ImageIcon("Images/Alfa_Romeo_159.jpg");
-	final ImageIcon Renault_FregateIcon = new ImageIcon("Images/Renault_Fregate.jpg");
-	final ImageIcon Mini_CooperIcon = new ImageIcon("Images/Mini_Cooper.jpg");
-	final ImageIcon Dodge_ViperIcon = new ImageIcon("Images/Dodge_Viper.jpg");
-	final ImageIcon Vaz_NivaIcon = new ImageIcon("Images/Vaz_Niva.jpg");
-	final ImageIcon Jaguar_X_TypeIcon = new ImageIcon("Images/Jaguar_X_Type.jpg");
-	final ImageIcon Ferrari_308Icon = new ImageIcon("Images/Ferrari_308.jpg");
-	final ImageIcon Mazda_626Icon = new ImageIcon("Images/Mazda_626.jpg");
-	final ImageIcon Maserati_ShamalIcon = new ImageIcon("Images/Maserati_Shamal.jpg");
-	final ImageIcon Nissan_240sxIcon = new ImageIcon("Images/Nissan_240sx.jpg");
-	final ImageIcon Alfa_Romeo_4CIcon = new ImageIcon("Images/Alfa_Romeo_4C.jpg");
-	final ImageIcon Nissan_JukeIcon = new ImageIcon("Images/Nisssan_Juke.jpg");
-	final ImageIcon Volkswagen_Golf1Icon = new ImageIcon("Images/Volkswagen_Golf1.jpg");
-	final ImageIcon Jeep_GladiatorIcon = new ImageIcon("Images/Jeep_Gladiator.jpg");
-	final ImageIcon Dodge_MatadorIcon = new ImageIcon("Images/Dodge_Matador.jpg");
-	final ImageIcon Bugatti_RoyaleIcon = new ImageIcon("Images/Bugatti_Royale.jpg");
-	final ImageIcon Citroen_CXIcon = new ImageIcon("Images/Citroen_CX.jpg");
-	final ImageIcon Lamborghini_350GTIcon = new ImageIcon("Images/Lamborghini_350GT.jpg");
-	final ImageIcon Mitsubishi_GTOIcon = new ImageIcon("Images/Mitsubishi_GTO.jpg");
-	final ImageIcon Buick_InvictaIcon = new ImageIcon("Images/Buick_Invicta.jpg");
-	final ImageIcon Porsche_911Icon = new ImageIcon("Images/Porsche_911.jpg");
-	final ImageIcon Subaru_ForesterIcon = new ImageIcon("Images/Subaru_Forester.jpg");
-	final ImageIcon Citroen_BXIcon = new ImageIcon("Images/Citroen_BX.jpg");
-	final ImageIcon Bugatti_Type252Icon = new ImageIcon("Images/Bugatti_Type252.jpg");
-	final ImageIcon Ferrari_488Icon = new ImageIcon("Images/Ferrari_488.jpg");
-	
+ 	
 
 	MainHolder CarMain = new MainHolder();
+	ImagesHolder ImagesHolder = new ImagesHolder();
     BoxesHolder Box = new BoxesHolder();
     FramesHolder CarFrame = new FramesHolder();
     PartHolder Part = new PartHolder();
-    //BuildCarsClass BuildCarsClass = new BuildCarsClass();
-    //BuildCarsClass2 BuildCarsClass2 = new BuildCarsClass2();
+    BuildCarsClass BuildCarsClass = new BuildCarsClass();
+    BuildCarsClass2 BuildCarsClass2 = new BuildCarsClass2();
     CarLevel1Holder CarsLv1 = new CarLevel1Holder();
     CarLevel2Holder CarsLv2 = new CarLevel2Holder();
     CarLevel3Holder CarsLv3 = new CarLevel3Holder();
@@ -2868,17 +2617,17 @@ public class ClickerGame implements ActionListener {
                 CarMain.main[2] -= 5;
                 if(CarMain.main[4] == 1){
                     Box.boxes[1] = Box.boxes[1] + 1;
-                    JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                    JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     }
                 if(CarMain.main[4] == 2){ 
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(2)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
                     }
                 if(CarMain.main[4] == 3){
                     Random randomGenerator = new Random();
@@ -3469,34 +3218,34 @@ public class ClickerGame implements ActionListener {
         					int randomInt = randomGenerator.nextInt(13)+1;           					
                  		    if (randomInt == 1){
                 		    	Part.parts[1] = Part.parts[1] + 1;
-                 		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+                 		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
                 		    if (randomInt == 2){
                 		    	Part.parts[3] = Part.parts[3] + 1;;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
                 		    if (randomInt == 3){
                 		    	Part.parts[5] = Part.parts[5] + 1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
                 		    if (randomInt == 4){
                 		    	Part.parts[7] = Part.parts[7] + 1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
                 		    if (randomInt == 5){
                 		    	Part.parts[9] = Part.parts[9] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
                 		    if (randomInt == 6){
                 		    	Part.parts[11] = Part.parts[11] + 1;           		    	   		
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
                 		    if (randomInt == 7){
                 		    	Part.parts[13] = Part.parts[13] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL !1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL !1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
                 		    if (randomInt == 8){
                 		    	Part.parts[15] = Part.parts[15] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
                 		    if (randomInt == 9){
                 		    	Part.parts[17] = Part.parts[17] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
                 		    if (randomInt == 10){
                 		    	Part.parts[19] = Part.parts[19] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
                 		    if (randomInt == 11){
                 		    	Part.parts[21] = Part.parts[21] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3529,34 +3278,34 @@ public class ClickerGame implements ActionListener {
         					int randomInt = randomGenerator.nextInt(13)+1;     					
                 		    if (randomInt == 1){
                 		    	Part.parts[27] = Part.parts[27] + 1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
                 		    if (randomInt == 2){
                 		    	Part.parts[29] = Part.parts[29] + 1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
                 		    if (randomInt == 3){
                 		    	Part.parts[31] = Part.parts[31] + 1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
                 		    if (randomInt == 4){
                 		    	Part.parts[33] = Part.parts[33] + 1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
                 		    if (randomInt == 5){
                 		    	Part.parts[35] = Part.parts[35] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
                 		    if (randomInt == 6){
                 		    	Part.parts[37] = Part.parts[37] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
                 		    if (randomInt == 7){
                 		    	Part.parts[39] = Part.parts[39] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
                 		    if (randomInt == 8){
                 		    	Part.parts[41] = Part.parts[41] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
                 		    if (randomInt == 9){
                 		    	Part.parts[43] = Part.parts[43] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
                 		    if (randomInt == 10){
                 		    	Part.parts[45] = Part.parts[45] + 1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
                 		    if (randomInt == 11){
                 		    	Part.parts[47] = Part.parts[47] + 1;
          		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3588,34 +3337,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[53] = Part.parts[53] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[55] = Part.parts[55] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[57] = Part.parts[57] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[59] = Part.parts[59] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[61] = Part.parts[61] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[63] = Part.parts[63] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[65] = Part.parts[65] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[67] = Part.parts[67] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[69] = Part.parts[69] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[71] = Part.parts[71] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[73] = Part.parts[73] + 1;;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3647,34 +3396,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[79] = Part.parts[79] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[81] = Part.parts[81] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[83] = Part.parts[83] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[85] = Part.parts[85] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[87] = Part.parts[87] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[89] = Part.parts[89] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[91] = Part.parts[91] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[93] = Part.parts[93] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[95] = Part.parts[95] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[97] = Part.parts[97] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[99] = Part.parts[99] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3706,34 +3455,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[105] = Part.parts[105] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[107] = Part.parts[107] + 1;;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[109] = Part.parts[109] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[111] = Part.parts[111] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[113] = Part.parts[113] + 1;;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[115] = Part.parts[115] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[117] = Part.parts[117] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[119] = Part.parts[119] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[121] = Part.parts[121] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[123] = Part.parts[123] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[125] = Part.parts[125] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3765,34 +3514,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[131] = Part.parts[131] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[133] = Part.parts[133] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[135] = Part.parts[135] + 1;;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[137] = Part.parts[137] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[139] = Part.parts[139] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[141] = Part.parts[141] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[143] = Part.parts[143] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[145] = Part.parts[145] + 1;;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[147] = Part.parts[147] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[149] = Part.parts[149] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[151] = Part.parts[151] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3824,34 +3573,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[157] = Part.parts[157] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[159] = Part.parts[159] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[161] = Part.parts[161] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[163] = Part.parts[163] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[165] = Part.parts[165] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[167] = Part.parts[167] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[169] = Part.parts[169] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[171] = Part.parts[171] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[173] = Part.parts[173] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[175] = Part.parts[175] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[177] = Part.parts[177] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3883,34 +3632,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[183] = Part.parts[183] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[185] = Part.parts[185] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[187] = Part.parts[187] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[189] = Part.parts[189] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[191] = Part.parts[191] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[193] = Part.parts[193] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[195] = Part.parts[195] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}                    		
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}                    		
      		    	   	if (randomInt == 8){
      		    	   		Part.parts[197] = Part.parts[197] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[199] = Part.parts[199] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[201] = Part.parts[201] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[203] = Part.parts[203] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -3942,34 +3691,34 @@ public class ClickerGame implements ActionListener {
             		    int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[209] = Part.parts[209] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[211] = Part.parts[211] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[213] = Part.parts[213] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[215] = Part.parts[215] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[217] = Part.parts[217] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[219] = Part.parts[219] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[221] = Part.parts[221] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[223] = Part.parts[223] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[225] = Part.parts[225] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[227] = Part.parts[227] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[229] = Part.parts[229] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}
@@ -4001,34 +3750,34 @@ public class ClickerGame implements ActionListener {
     					int randomInt = randomGenerator.nextInt(13)+1;
             		    if (randomInt == 1){
             		    	Part.parts[235] = Part.parts[235] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
             		    if (randomInt == 2){
             		    	Part.parts[237] = Part.parts[237] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
             		    if (randomInt == 3){
             		    	Part.parts[239] = Part.parts[239] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
             		    if (randomInt == 4){
             		    	Part.parts[241] = Part.parts[241] + 1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
             		    if (randomInt == 5){
             		    	Part.parts[243] = Part.parts[243] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
             		    if (randomInt == 6){
             		    	Part.parts[245] = Part.parts[245] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
             		    if (randomInt == 7){
             		    	Part.parts[247] = Part.parts[247] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
             		    if (randomInt == 8){
             		    	Part.parts[249] = Part.parts[249] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
             		    if (randomInt == 9){
             		    	Part.parts[251] = Part.parts[251] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
             		    if (randomInt == 10){
             		    	Part.parts[253] = Part.parts[253] + 1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
             		    if (randomInt == 11){
             		    	Part.parts[255] = Part.parts[255] + 1;
      		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, SuspensionIcon);}

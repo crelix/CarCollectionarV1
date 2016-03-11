@@ -7,275 +7,277 @@ public class PartHolder {
 	
 	public PartHolder(){
 		
-		
+		MakeParts();
 	}
 	
-	public void PartsMaker(int k, int k1){
+	public void PartsMaker(int k, int a1, int k1, int a2){
 		
-		
+		parts[a1] = k;
+		parts[a2] = k1;
 	}
 	
 	public void MakeParts(){
 		
-		PartsMaker(2, 0); // Accessories Level 1
-		
-		PartsMaker(2, 0); // Body Level 1
-		
-		PartsMaker(2, 0); // Brakes Level 1
-		
-		PartsMaker(2, 0); // Cooling Level 1
-		
-		PartsMaker(2, 0); // Electronics Level 1
-		
-		PartsMaker(2, 0); // Engine Level 1
-		
-		PartsMaker(2, 0); // Exaust Level 1
-		
-		PartsMaker(2, 0); // Fuel Level 1
-		
-		PartsMaker(2, 0); // Interior Level 1
-		
-		PartsMaker(2, 0); // Steering Level 1
-		
-		PartsMaker(2, 0); // Suspension Level 1
-		
-		PartsMaker(2, 0); // Transmission Level 1
-		
-		PartsMaker(2, 0); // Tires Level 1
-		
-		PartsMaker(3, 0); // Accessories Level 2
-		
-		PartsMaker(3, 0); // Body Level 2
-		
-		PartsMaker(3, 0); // Brakes Level 2
-		
-		PartsMaker(3, 0); // Cooling Level 2
-		
-		PartsMaker(3, 0); // Electronics Level 2
-		
-		PartsMaker(3, 0); // Engine Level 2
-		
-		PartsMaker(3, 0); // Exaust Level 2
-		
-		PartsMaker(3, 0); // Fuel Level 2
-		
-		PartsMaker(3, 0); // Interior Level 2
-		
-		PartsMaker(3, 0); // Steering Level 2
-		
-		PartsMaker(3, 0); // Suspension Level 2
-		
-		PartsMaker(3, 0); // Transmission Level 2
-		
-		PartsMaker(3, 0); // Tires Level 2
-		
-		PartsMaker(4, 0); // Accessories Level 3
-		
-		PartsMaker(4, 0); // Body Level 3
-		
-		PartsMaker(4, 0); // Brakes Level 3
-		
-		PartsMaker(4, 0); // Cooling Level 3
-		
-		PartsMaker(4, 0); // Electronics Level 3
-		
-		PartsMaker(4, 0); // Engine Level 3
-		
-		PartsMaker(4, 0); // Exaust Level 3
-		
-		PartsMaker(4, 0); // Fuel Level 3
-		
-		PartsMaker(4, 0); // Interior Level 3
-		
-		PartsMaker(4, 0); // Steering Level 3
-		
-		PartsMaker(4, 0); // Suspension Level 3
-		
-		PartsMaker(4, 0); // Transmission Level 3
-		
-		PartsMaker(4, 0); // Tires Level 3
-		
-		PartsMaker(5, 0); // Accessories Level 4
-		
-		PartsMaker(5, 0); // Body Level 4
-		
-		PartsMaker(5, 0); // Brakes Level 4
-		
-		PartsMaker(5, 0); // Cooling Level 4
-		
-		PartsMaker(5, 0); // Electronics Level 4
-		
-		PartsMaker(5, 0); // Engine Level 4
-		
-		PartsMaker(5, 0); // Exaust Level 4
-		
-		PartsMaker(5, 0); // Fuel Level 4
-		
-		PartsMaker(5, 0); // Interior Level 4
-		
-		PartsMaker(5, 0); // Steering Level 4
-		
-		PartsMaker(5, 0); // Suspension Level 4
-		
-		PartsMaker(5, 0); // Transmission Level 4
-		
-		PartsMaker(5, 0); // Tires Level 4
-		
-		PartsMaker(6, 0); // Accessories Level 5
-		
-		PartsMaker(6, 0); // Body Level 5
-		
-		PartsMaker(6, 0); // Brakes Level 5
-		
-		PartsMaker(6, 0); // Cooling Level 5
-		
-		PartsMaker(6, 0); // Electronics Level 5
-		
-		PartsMaker(6, 0); // Engine Level 5
-		
-		PartsMaker(6, 0); // Exaust Level 5
-		
-		PartsMaker(6, 0); // Fuel Level 5
-		
-		PartsMaker(6, 0); // Interior Level 5
-		
-		PartsMaker(6, 0); // Steering Level 5
-		
-		PartsMaker(6, 0); // Suspension Level 5
-		
-		PartsMaker(6, 0); // Transmission Level 5
-		
-		PartsMaker(6, 0); // Tires Level 5
-		
-		PartsMaker(7, 0); // Accessories Level 6
-		
-		PartsMaker(7, 0); // Body Level 6
-		
-		PartsMaker(7, 0); // Brakes Level 6
-		
-		PartsMaker(7, 0); // Cooling Level 6
-		
-		PartsMaker(7, 0); // Electronics Level 6
-		
-		PartsMaker(7, 0); // Engine Level 6
-		
-		PartsMaker(7, 0); // Exaust Level 6
-		
-		PartsMaker(7, 0); // Fuel Level 6
-		
-		PartsMaker(7, 0); // Interior Level 6
-		
-		PartsMaker(7, 0); // Steering Level 6
-		
-		PartsMaker(7, 0); // Suspension Level 6
-		
-		PartsMaker(7, 0); // Transmission Level 6
-		
-		PartsMaker(7, 0); // Tires Level 6
-		
-		PartsMaker(8, 0); // Accessories Level 7
-		
-		PartsMaker(8, 0); // Body Level 7
-		
-		PartsMaker(8, 0); // Brakes Level 7
-		
-		PartsMaker(8, 0); // Cooling Level 7
-		
-		PartsMaker(8, 0); // Electronics Level 7
-		
-		PartsMaker(8, 0); // Engine Level 7
-		
-		PartsMaker(8, 0); // Exaust Level 7
-		
-		PartsMaker(8, 0); // Fuel Level 7
-		
-		PartsMaker(8, 0); // Interior Level 7
-		
-		PartsMaker(8, 0); // Steering Level 7
-		
-		PartsMaker(8, 0); // Suspension Level 7
-		
-		PartsMaker(8, 0); // Transmission Level 7
-		
-		PartsMaker(8, 0); // Tires Level 7
-		
-		PartsMaker(9, 0); // Accessories Level 8
-		
-		PartsMaker(9, 0); // Body Level 8
-		
-		PartsMaker(9, 0); // Brakes Level 8
-		
-		PartsMaker(9, 0); // Cooling Level 8
-		
-		PartsMaker(9, 0); // Electronics Level 8
-		
-		PartsMaker(9, 0); // Engine Level 8
-		
-		PartsMaker(9, 0); // Exaust Level 8
-		
-		PartsMaker(9, 0); // Fuel Level 8
-		
-		PartsMaker(9, 0); // Interior Level 8
-		
-		PartsMaker(9, 0); // Steering Level 8
-		
-		PartsMaker(9, 0); // Suspension Level 8
-		
-		PartsMaker(9, 0); // Transmission Level 8
-		
-		PartsMaker(9, 0); // Tires Level 8
-		
-		PartsMaker(10, 0); // Accessories Level 9
-		
-		PartsMaker(10, 0); // Body Level 9
-		
-		PartsMaker(10, 0); // Brakes Level 9
-		
-		PartsMaker(10, 0); // Cooling Level 9
-		
-		PartsMaker(10, 0); // Electronics Level 9
-		
-		PartsMaker(10, 0); // Engine Level 9
-		
-		PartsMaker(10, 0); // Exaust Level 9
-		
-		PartsMaker(10, 0); // Fuel Level 9
-		
-		PartsMaker(10, 0); // Interior Level 9
-		
-		PartsMaker(10, 0); // Steering Level 9
-		
-		PartsMaker(10, 0); // Suspension Level 9
-		
-		PartsMaker(10, 0); // Transmission Level 9
-		
-		PartsMaker(10, 0); // Tires Level 9
-		
-		PartsMaker(11, 0); // Accessories Level 10
-		
-		PartsMaker(11, 0); // Body Level 10
-		
-		PartsMaker(11, 0); // Brakes Level 10
-		
-		PartsMaker(11, 0); // Cooling Level 10
-		
-		PartsMaker(11, 0); // Electronics Level 10
-		
-		PartsMaker(11, 0); // Engine Level 10
-		
-		PartsMaker(11, 0); // Exaust Level 10
-		
-		PartsMaker(11, 0); // Fuel Level 10
-		
-		PartsMaker(11, 0); // Interior Level 10
-		
-		PartsMaker(11, 0); // Steering Level 10
-		
-		PartsMaker(11, 0); // Suspension Level 10
-		
-		PartsMaker(11, 0); // Transmission Level 10
-		
-		PartsMaker(11, 0); // Tires Level 10
-		
+		int i =0; int j =1;
+		PartsMaker(2, i, 0, j); // Accessories Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Body Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Brakes Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Cooling Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Electronics Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Engine Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Exaust Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Fuel Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Interior Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Steering Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Suspension Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Transmission Level 1
+		i +=2; j +=2;
+		PartsMaker(2, i, 0, j); // Tires Level 1
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Accessories Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Body Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Brakes Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Cooling Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Electronics Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Engine Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Exaust Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Fuel Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Interior Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Steering Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Suspension Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Transmission Level 2
+		i +=2; j +=2;
+		PartsMaker(3, i, 0, j); // Tires Level 2
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Accessories Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Body Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Brakes Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Cooling Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Electronics Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Engine Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Exaust Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Fuel Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Interior Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Steering Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Suspension Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Transmission Level 3
+		i +=2; j +=2;
+		PartsMaker(4, i, 0, j); // Tires Level 3
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Accessories Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Body Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Brakes Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Cooling Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Electronics Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Engine Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Exaust Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Fuel Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Interior Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Steering Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Suspension Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Transmission Level 4
+		i +=2; j +=2;
+		PartsMaker(5, i, 0, j); // Tires Level 4
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Accessories Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Body Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Brakes Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Cooling Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Electronics Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Engine Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Exaust Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Fuel Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Interior Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Steering Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Suspension Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Transmission Level 5
+		i +=2; j +=2;
+		PartsMaker(6, i, 0, j); // Tires Level 5
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Accessories Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Body Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Brakes Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Cooling Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Electronics Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Engine Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Exaust Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Fuel Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Interior Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Steering Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Suspension Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Transmission Level 6
+		i +=2; j +=2;
+		PartsMaker(7, i, 0, j); // Tires Level 6
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Accessories Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Body Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Brakes Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Cooling Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Electronics Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Engine Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Exaust Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Fuel Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Interior Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Steering Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Suspension Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Transmission Level 7
+		i +=2; j +=2;
+		PartsMaker(8, i, 0, j); // Tires Level 7
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Accessories Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Body Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Brakes Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Cooling Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Electronics Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Engine Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Exaust Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Fuel Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Interior Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Steering Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Suspension Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Transmission Level 8
+		i +=2; j +=2;
+		PartsMaker(9, i, 0, j); // Tires Level 8
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Accessories Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Body Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Brakes Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Cooling Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Electronics Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Engine Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Exaust Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Fuel Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Interior Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Steering Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Suspension Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Transmission Level 9
+		i +=2; j +=2;
+		PartsMaker(10, i, 0, j); // Tires Level 9
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Accessories Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Body Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Brakes Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Cooling Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Electronics Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Engine Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Exaust Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Fuel Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Interior Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Steering Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Suspension Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Transmission Level 10
+		i +=2; j +=2;
+		PartsMaker(11, i, 0, j); // Tires Level 10
+		i +=2; j +=2;
 	}
 }
