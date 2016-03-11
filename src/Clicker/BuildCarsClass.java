@@ -3,6 +3,74 @@ package Clicker;
 import java.awt.event.*;
 import javax.swing.*;
 
+   int skaits;
+//    int skaits0 = 0;
+//    
+//    ClickerGame CG = new ClickerGame();
+//	MainHolder CarMain = new MainHolder();
+//    BoxesHolder Box = new BoxesHolder();
+//    FramesHolder CarFrame = new FramesHolder();
+//    PartHolder Part = new PartHolder();
+//	CarLevel1Holder CarsLv1 = new CarLevel1Holder(); 
+//	CarLevel2Holder CarsLv2 = new CarLevel2Holder(); 
+//	CarLevel3Holder CarsLv3 = new CarLevel3Holder(); 
+//	CarLevel4Holder CarsLv4 = new CarLevel4Holder(); 
+//	CarLevel5Holder CarsLv5 = new CarLevel5Holder(); 
+//	
+//	public BuildCarsClass(){
+//		
+//		jbtnBuildCarLv1.addActionListener(this);
+//        jbtnBuildCarLv2.addActionListener(this);
+//        jbtnBuildCarLv3.addActionListener(this);
+//        jbtnBuildCarLv4.addActionListener(this);
+//        jbtnBuildCarLv5.addActionListener(this);
+//        
+//        for(int i=1;i <= 25;i+=2){
+//			skaits+=1;
+//		}
+//	}
+//
+//	public void actionPerformed(ActionEvent ae) {
+//		skaits=0;
+//		if(ae.getSource() == jbtnBuildCarLv1){
+//	    	if(CarMain.main[5] >=1){
+//	    		if(CarMain.main[7] >0){
+//	    			if(CarFrame.frames[1] >0){
+//	    				
+//	    				for(int i=1;i <= 25;i+=2){
+//	    					if(Part.parts[i] >0){
+//	    						skaits0+=1;
+//	    					}else{
+//	    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, CG.NoPartsIcon);
+//	    					}
+//						}
+//					if (skaits0 == skaits){
+//						for (int j =3;j  >= 80; j+=4){
+//							if(Integer.parseInt(CarsLv1.cars[j]) == 0){
+//								for(int i=1;i <= 25;i+=2){
+//									Part.parts[i] --;
+//								
+//									int skaitlis = 	Integer.parseInt(CarsLv1.cars[3]); skaitlis+=1; 
+//									CarsLv1.cars[j] = Integer.toString(skaitlis);
+//									
+//									if(j == 3){
+//										JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CG.Aston_Martin_DB9Icon);
+//										
+//									}else if(j ==7){
+//										JOptionPane.showMessageDialog (null, "You have gained Acura NSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE,CG.Acura_NSXIcon);
+//									}else if(j ==11){
+//										JOptionPane.showMessageDialog (null, "You have gained Moskvich 412!", "Congralations", JOptionPane.INFORMATION_MESSAGE, CG.Moskvich_412Icon);
+//									}
+//									
+//									
+//								}
+//								
+//							}
+//						}
+//					}
+//	    			}}}}
+
+
 public class BuildCarsClass implements ActionListener {
 
 	JButton jbtnBuildCarLv1 = new JButton("Build");
