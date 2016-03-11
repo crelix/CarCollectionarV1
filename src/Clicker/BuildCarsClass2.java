@@ -53,19 +53,22 @@ public class BuildCarsClass2 implements ActionListener {
 		    																	int level6carticker= 3;
 		    																	if(Integer.parseInt(CarsLv6.cars[level6carticker]) == 0){  
 		    																		CarFrame.frames[11] = CarFrame.frames[11] - 1;
-		    																		Part.parts[131] = Part.parts[131] - 1;
-		    																		Part.parts[133] = Part.parts[133] - 1;
-		    																		Part.parts[135] = Part.parts[135] - 1;
-		    																		Part.parts[137] = Part.parts[137] - 1;
-		    																		Part.parts[139] = Part.parts[139] - 1;
-		    																		Part.parts[141] = Part.parts[141] - 1;
-		    																		Part.parts[143] = Part.parts[143] - 1;
-		    																		Part.parts[145] = Part.parts[145] - 1;
-		    																		Part.parts[147] = Part.parts[147] - 1;
-		    																		Part.parts[149] = Part.parts[149] - 1;
-		    																		Part.parts[151] = Part.parts[151] - 1;
-		    																		Part.parts[153] = Part.parts[153] - 1;
-		    																		Part.parts[155] = Part.parts[155] - 1;
+		    																		for(int i=131; i <=155; i +=2){
+		    																			Part.parts[i] --;
+		    																		}
+		    																	//	Part.parts[131] = Part.parts[131] - 1;
+		    																	//	Part.parts[133] = Part.parts[133] - 1;
+		    																	//	Part.parts[135] = Part.parts[135] - 1;
+		    																	//	Part.parts[137] = Part.parts[137] - 1;
+		    																	//	Part.parts[139] = Part.parts[139] - 1;
+		    																	//	Part.parts[141] = Part.parts[141] - 1;
+		    																	//	Part.parts[143] = Part.parts[143] - 1;
+		    																	//	Part.parts[145] = Part.parts[145] - 1;
+		    																	//	Part.parts[147] = Part.parts[147] - 1;
+		    																	//	Part.parts[149] = Part.parts[149] - 1;
+		    																	//	Part.parts[151] = Part.parts[151] - 1;
+		    																	//	Part.parts[153] = Part.parts[153] - 1;
+		    																	//	Part.parts[155] = Part.parts[155] - 1;
 		    																		CarMain.main[7] = CarMain.main[7] - 1;
 		    																		int skaitlis = 	Integer.parseInt(CarsLv6.cars[3]); skaitlis+=1; 
 		    																		CarsLv6.cars[3] = Integer.toString(skaitlis);

@@ -34,6 +34,9 @@ public class ClickerGame implements ActionListener {
     JLabel MoneyClicksLabel;
     JLabel BoxesLabel;
     JLabel BoxesClicksLabel;
+    JLabel PlayerLabel;
+    JLabel GarageLabel;
+    JLabel BoxesLVLLabel;
     // Buttons
     
     JButton jbtnMoney = new JButton("Click");
@@ -426,12 +429,12 @@ public class ClickerGame implements ActionListener {
     	MoneyClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
     	
-        JLabel BoxesLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);  	
+        BoxesLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);  	
     	BoxesLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesLabel.setText("Boxes: " + CarMain.main[2]);
     	
-    	JLabel BoxesClicksLabel = new JLabel();
+    	BoxesClicksLabel = new JLabel();
     	BoxesClicksLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesClicksLabel.setText("Boxes Clicks: " + CarMain.main[3]);
@@ -458,17 +461,17 @@ public class ClickerGame implements ActionListener {
         JPanel UpgradesPanelSub3 = new JPanel();
         UpgradesPanelSub3.setLayout(new BoxLayout(UpgradesPanelSub3, BoxLayout.PAGE_AXIS));
         
-        JLabel PlayerLabel = new JLabel(ImagesHolder.PlayerIcon);    	
+        PlayerLabel = new JLabel(ImagesHolder.PlayerIcon);    	
     	PlayerLabel.setHorizontalTextPosition(JLabel.CENTER);
     	PlayerLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	PlayerLabel.setText("Player Level: " + CarMain.main[5]);
         
-    	JLabel GarageLabel = new JLabel(ImagesHolder.GarageIcon);    	
+    	GarageLabel = new JLabel(ImagesHolder.GarageIcon);    	
     	GarageLabel.setHorizontalTextPosition(JLabel.CENTER);
     	GarageLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	GarageLabel.setText("Garage Level: " + CarMain.main[6]);
     	
-    	JLabel BoxesLVLLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
+    	BoxesLVLLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
     	BoxesLVLLabel.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLVLLabel.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesLVLLabel.setText("Box Level: " + CarMain.main[4]);
@@ -2598,21 +2601,17 @@ public class ClickerGame implements ActionListener {
    public void actionPerformed(ActionEvent ae) {
 	   
 	    //Money Button Click
-        if(ae.getSource() == jbtnMoney) {
-        	
+        if(ae.getSource() == jbtnMoney) {       	
             CarMain.main[0] += 1;   
-            MoneyLabel.setText("Money: " + CarMain.main[0]);
             CarMain.main[1] += 1;     
-            MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
         }
         
         //Boxes Button Click
         
         if(ae.getSource() == jbtnBoxes){
         	CarMain.main[2] += 1;
-  
             CarMain.main[3] += 1;
-
+            
             if(CarMain.main[2] == 5){
                 CarMain.main[2] -= 5;
                 if(CarMain.main[4] == 1){
@@ -2882,7 +2881,7 @@ public class ClickerGame implements ActionListener {
         	if (CarMain.main[5] >=1){
         		if (CarMain.main[0] >= CarFrame.frames[0]){
         			CarFrame.frames[1] = CarFrame.frames[1] + 1;
-        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[0];      			
+        			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[0]; 
         			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
         		else{
         			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);

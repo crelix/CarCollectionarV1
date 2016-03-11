@@ -6,6 +6,7 @@ public class mainClass {
 
 	 public static void main(String[] args) {
 	    	
+		 
 		 ClickerGame game = new ClickerGame();
 
 	        JFrame frame = new JFrame("CarCollectionarV1");

@@ -34,7 +34,7 @@ public Integer main[] = new Integer[8];
 		i++;
 		MainMaker(1,i); // Garage Level
 		i++;
-		MainMaker(0,i); // Garage Slots
+		MainMaker(25,i); // Garage Slots
 		
 	}
 }
