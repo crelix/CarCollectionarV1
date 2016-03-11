@@ -37,6 +37,46 @@ public class ClickerGame implements ActionListener {
     JLabel PlayerLabel;
     JLabel GarageLabel;
     JLabel BoxesLVLLabel;
+    JLabel BoxesLVL1Label;
+    JLabel BoxesLVL2Label;
+    JLabel BoxesLVL3Label;
+    JLabel BoxesLVL4Label;
+    JLabel BoxesLVL5Label;
+    JLabel BoxesLVL6Label;
+    JLabel BoxesLVL7Label;
+    JLabel BoxesLVL8Label;
+    JLabel BoxesLVL9Label;
+    JLabel BoxesLVL10Label;
+    JLabel OpenBoxesLVL1Label;
+    JLabel OpenBoxesLVL2Label;
+    JLabel OpenBoxesLVL3Label;
+    JLabel OpenBoxesLVL4Label;
+    JLabel OpenBoxesLVL5Label;
+    JLabel OpenBoxesLVL6Label;
+    JLabel OpenBoxesLVL7Label;
+    JLabel OpenBoxesLVL8Label;
+    JLabel OpenBoxesLVL9Label;
+    JLabel OpenBoxesLVL10Label;
+    JLabel FrameLv1Label;
+    JLabel FrameLv2Label;
+    JLabel FrameLv3Label;
+    JLabel FrameLv4Label;
+    JLabel FrameLv5Label;
+    JLabel FrameLv6Label;
+    JLabel FrameLv7Label;
+    JLabel FrameLv8Label;
+    JLabel FrameLv9Label;
+    JLabel FrameLv10Label;
+    JLabel CarsLv1Label;
+    JLabel CarsLv2Label;
+    JLabel CarsLv3Label;
+    JLabel CarsLv4Label;
+    JLabel CarsLv5Label;
+    JLabel CarsLv6Label;
+    JLabel CarsLv7Label;
+    JLabel CarsLv8Label;
+    JLabel CarsLv9Label;
+    JLabel CarsLv10Label;
     // Buttons
     
     JButton jbtnMoney = new JButton("Click");
@@ -521,52 +561,52 @@ public class ClickerGame implements ActionListener {
         BuyBoxesPanelSub10.setLayout(new BoxLayout(BuyBoxesPanelSub10, BoxLayout.PAGE_AXIS));
         
         
-        JLabel BoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
+        BoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
     	BoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
     	BoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
     	BoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
     	
-    	JLabel BoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
+    	BoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
      	BoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
     	
-     	JLabel BoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
+     	BoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	BoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
     	
-     	JLabel BoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
+     	BoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	BoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
      	
-     	JLabel BoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
+     	BoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	BoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
      	
-     	JLabel BoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
+     	BoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	BoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
      	
-     	JLabel BoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
+     	BoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	BoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
      	
-     	JLabel BoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
+     	BoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	BoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
      	
-     	JLabel BoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
+     	BoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	BoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
      	
-     	JLabel BoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
+     	BoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	BoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
      	BoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	BoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
@@ -637,52 +677,52 @@ public class ClickerGame implements ActionListener {
         JPanel OpenBoxesPanelSub10 = new JPanel();
         OpenBoxesPanelSub10.setLayout(new BoxLayout(OpenBoxesPanelSub10, BoxLayout.PAGE_AXIS));
         
-        JLabel OpenBoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
+        OpenBoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
     	OpenBoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
     	OpenBoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
     	OpenBoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
     	
-    	JLabel OpenBoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
+    	OpenBoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
      	OpenBoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
     	
-     	JLabel OpenBoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
+     	OpenBoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	OpenBoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
     	
-     	JLabel OpenBoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
+     	OpenBoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
      	OpenBoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
      	
-     	JLabel OpenBoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
+     	OpenBoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	OpenBoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
      	
-     	JLabel OpenBoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
+     	OpenBoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
      	OpenBoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
      	
-     	JLabel OpenBoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
+     	OpenBoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	OpenBoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
      	
-     	JLabel OpenBoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
+     	OpenBoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
      	OpenBoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
      	
-     	JLabel OpenBoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
+     	OpenBoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	OpenBoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
      	
-     	JLabel OpenBoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
+     	OpenBoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
      	OpenBoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
      	OpenBoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	OpenBoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
@@ -753,52 +793,52 @@ public class ClickerGame implements ActionListener {
         JPanel BuildCarsPanelSub10 = new JPanel();
         BuildCarsPanelSub10.setLayout(new BoxLayout(BuildCarsPanelSub10, BoxLayout.PAGE_AXIS));
         
-        JLabel CarsLv1Label = new JLabel(ImagesHolder.Opel_ZafiraIcon);    	
+        CarsLv1Label = new JLabel(ImagesHolder.Opel_ZafiraIcon);    	
      	CarsLv1Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv1Label.setText("<html>1 LVL Cars<br>" + "Owned: " + CountLv1Cars() + " of 20");
      	
-     	JLabel CarsLv2Label = new JLabel(ImagesHolder.Ferrari_EnzoIcon);    	
+     	CarsLv2Label = new JLabel(ImagesHolder.Ferrari_EnzoIcon);    	
      	CarsLv2Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv2Label.setText("<html>2 LVL Cars<br>" + "Owned: " + CountLv2Cars() + " of 20");
      	
-     	JLabel CarsLv3Label = new JLabel(ImagesHolder.Fiat_500Icon);    	
+     	CarsLv3Label = new JLabel(ImagesHolder.Fiat_500Icon);    	
      	CarsLv3Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv3Label.setText("<html>3 LVL Cars<br>" + "Owned: " + CountLv3Cars() + " of 20");
      	
-     	JLabel CarsLv4Label = new JLabel(ImagesHolder.BMW_e30Icon);    	
+     	CarsLv4Label = new JLabel(ImagesHolder.BMW_e30Icon);    	
      	CarsLv4Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv4Label.setText("<html>4 LVL Cars<br>" + "Owned: " + CountLv4Cars() + " of 20");
      	
-     	JLabel CarsLv5Label = new JLabel(ImagesHolder.Pagani_ZondaFIcon);    	
+     	CarsLv5Label = new JLabel(ImagesHolder.Pagani_ZondaFIcon);    	
      	CarsLv5Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv5Label.setText("<html>5 LVL Cars<br>" + "Owned: " + CountLv5Cars() + " of 20");
      	
-     	JLabel CarsLv6Label = new JLabel(ImagesHolder.Vaz_2103Icon);    	
+     	CarsLv6Label = new JLabel(ImagesHolder.Vaz_2103Icon);    	
      	CarsLv6Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv6Label.setText("<html>6 LVL Cars<br>" + "Owned: " + CountLv6Cars() + " of 20");
      	
-     	JLabel CarsLv7Label = new JLabel(ImagesHolder.Audi_CoupeIcon);    	
+     	CarsLv7Label = new JLabel(ImagesHolder.Audi_CoupeIcon);    	
      	CarsLv7Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv7Label.setText("<html>7 LVL Cars<br>" + "Owned: " + CountLv7Cars() + " of 20");
      	
-     	JLabel CarsLv8Label = new JLabel(ImagesHolder.Ford_MustangIcon);    	
+     	CarsLv8Label = new JLabel(ImagesHolder.Ford_MustangIcon);    	
      	CarsLv8Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv8Label.setText("<html>8 LVL Cars<br>" + "Owned: " + CountLv8Cars() + " of 20");
      	
-     	JLabel CarsLv9Label = new JLabel(ImagesHolder.GMC_YukonIcon);    	
+     	CarsLv9Label = new JLabel(ImagesHolder.GMC_YukonIcon);    	
      	CarsLv9Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv9Label.setText("<html>9 LVL Cars<br>" + "Owned: " + CountLv9Cars() + " of 20");
      	
-     	JLabel CarsLv10Label = new JLabel(ImagesHolder.Cadilliac_EldoradoIcon);    	
+     	CarsLv10Label = new JLabel(ImagesHolder.Cadilliac_EldoradoIcon);    	
      	CarsLv10Label.setHorizontalTextPosition(JLabel.CENTER);
      	CarsLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	CarsLv10Label.setText("<html>10 LVL Cars<br>" + "Owned: " + CountLv10Cars() + " of 20");
@@ -870,52 +910,52 @@ public class ClickerGame implements ActionListener {
         JPanel BuyFramesPanelSub10 = new JPanel();
         BuyFramesPanelSub10.setLayout(new BoxLayout(BuyFramesPanelSub10, BoxLayout.PAGE_AXIS));
         
-        JLabel FrameLv1Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+        FrameLv1Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv1Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv1Label.setText("<html>1 LVL Frame<br>" + "Count: " + CarFrame.frames[1]);
      	
-     	JLabel FrameLv2Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv2Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv2Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv2Label.setText("<html>2 LVL Frame<br>" + "Count: " + CarFrame.frames[3]);
      	
-     	JLabel FrameLv3Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv3Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv3Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv3Label.setText("<html>3 LVL Frame<br>" + "Count: " + CarFrame.frames[5]);
      	
-     	JLabel FrameLv4Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv4Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv4Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv4Label.setText("<html>4 LVL Frame<br>" + "Count: " + CarFrame.frames[7]);
      	
-     	JLabel FrameLv5Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv5Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv5Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv5Label.setText("<html>5 LVL Frame<br>" + "Count: " + CarFrame.frames[9]);
      	
-     	JLabel FrameLv6Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv6Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv6Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv6Label.setText("<html>6 LVL Frame<br>" + "Count: " + CarFrame.frames[11]);
      	
-     	JLabel FrameLv7Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv7Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv7Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv7Label.setText("<html>7 LVL Frame<br>" + "Count: " + CarFrame.frames[13]);
      	
-     	JLabel FrameLv8Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv8Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv8Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv8Label.setText("<html>8 LVL Frame<br>" + "Count: " + CarFrame.frames[15]);
      	
-     	JLabel FrameLv9Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv9Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv9Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv9Label.setText("<html>9 LVL Frame<br>" + "Count: " + CarFrame.frames[17]);
      	
-     	JLabel FrameLv10Label = new JLabel(ImagesHolder.CarFrameIcon);    	
+     	FrameLv10Label = new JLabel(ImagesHolder.CarFrameIcon);    	
      	FrameLv10Label.setHorizontalTextPosition(JLabel.CENTER);
      	FrameLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
      	FrameLv10Label.setText("<html>10 LVL Frame<br>" + "Count: " + CarFrame.frames[19]);
