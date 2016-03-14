@@ -9,6 +9,7 @@ public class ImagesHolder {
 	   final public ImageIcon LockedIcon = new ImageIcon("Images/Locked.png");	
 	   final public ImageIcon PlayerIcon = new ImageIcon("Images/Player.png");
 	   final public ImageIcon CarFrameIcon = new ImageIcon("Images/Frame.png");
+	   final public ImageIcon CarCollectionarIcon = new ImageIcon("Images/CarCollectionar.jpg");
 		
 	   final public ImageIcon NoMoneyIcon = new ImageIcon("Images/NoMoney.png");
 	   final public ImageIcon NoPartsIcon = new ImageIcon("Images/NoParts.png");

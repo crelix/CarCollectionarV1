@@ -2,7 +2,7 @@ package Clicker;
 
 public class BoxesHolder {
 
-public int boxes[] = new int[20];
+public Integer boxes[] = new Integer[20];
 	
 	public BoxesHolder(){
 		

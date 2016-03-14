@@ -2,6 +2,11 @@ package Clicker;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 import javax.swing.*;
 import java.util.Random;
@@ -16,6 +21,7 @@ public class ClickerGame implements ActionListener {
     final static String BuildCars = "Build Cars";
     final static String BuyFrames = "Buy Frames";
     final static String SellParts = "Sell Parts";
+    final static String Settings = "Settings";
     final static String LVL1 = "Level 1";
     final static String LVL2 = "Level 2";
     final static String LVL3 = "Level 3";
@@ -27,186 +33,10 @@ public class ClickerGame implements ActionListener {
     final static String LVL9 = "Level 9";
     final static String LVL10 = "Level 10";
     
-ImagesHolder ih = new ImagesHolder();
-    
-    //LABELS
-    public JLabel MoneyLabel = new JLabel(ih.MoneyIcon);   
-    public JLabel MoneyClicksLabel;
-    public JLabel BoxesLabel;
-    public JLabel BoxesClicksLabel;
-    public JLabel PlayerLabel;
-    public JLabel GarageLabel;
-    public JLabel BoxesLVLLabel;
-    public JLabel BoxesLVL1Label;
-    public JLabel BoxesLVL2Label;
-    public JLabel BoxesLVL3Label;
-    public JLabel BoxesLVL4Label;
-    public JLabel BoxesLVL5Label;
-    public JLabel BoxesLVL6Label;
-    public JLabel BoxesLVL7Label;
-    public JLabel BoxesLVL8Label;
-    public JLabel BoxesLVL9Label;
-    public JLabel BoxesLVL10Label;
-    public JLabel OpenBoxesLVL1Label;
-    public JLabel OpenBoxesLVL2Label;
-    public JLabel OpenBoxesLVL3Label;
-    public JLabel OpenBoxesLVL4Label;
-    public JLabel OpenBoxesLVL5Label;
-    public JLabel OpenBoxesLVL6Label;
-    public JLabel OpenBoxesLVL7Label;
-    public JLabel OpenBoxesLVL8Label;
-    public JLabel OpenBoxesLVL9Label;
-    public JLabel OpenBoxesLVL10Label;
-    public JLabel FrameLv1Label;
-    public JLabel FrameLv2Label;
-    public JLabel FrameLv3Label;
-    public JLabel FrameLv4Label;
-    public JLabel FrameLv5Label;
-    public JLabel FrameLv6Label;
-    public JLabel FrameLv7Label;
-    public JLabel FrameLv8Label;
-    public JLabel FrameLv9Label;
-    public JLabel FrameLv10Label;
-    public JLabel CarsLv1Label;
-    public JLabel CarsLv2Label;
-    public JLabel CarsLv3Label;
-    public JLabel CarsLv4Label;
-    public JLabel CarsLv5Label;
-    public JLabel CarsLv6Label;
-    public JLabel CarsLv7Label;
-    public JLabel CarsLv8Label;
-    public JLabel CarsLv9Label;
-    public JLabel CarsLv10Label;
-    public JLabel AccessoriesLVL1Label;
-    public JLabel AccessoriesLVL2Label;
-    public JLabel AccessoriesLVL3Label;
-    public JLabel AccessoriesLVL4Label;
-    public JLabel AccessoriesLVL5Label;
-    public JLabel AccessoriesLVL6Label;
-    public JLabel AccessoriesLVL7Label;
-    public JLabel AccessoriesLVL8Label;
-    public JLabel AccessoriesLVL9Label;
-    public JLabel AccessoriesLVL10Label;
-    public JLabel BodyLVL1Label;
-    public JLabel BodyLVL2Label;
-    public JLabel BodyLVL3Label;
-    public JLabel BodyLVL4Label;
-    public JLabel BodyLVL5Label;
-    public JLabel BodyLVL6Label;
-    public JLabel BodyLVL7Label;
-    public JLabel BodyLVL8Label;
-    public JLabel BodyLVL9Label;
-    public JLabel BodyLVL10Label;
-    public JLabel BrakesLVL1Label;
-    public JLabel BrakesLVL2Label;
-    public JLabel BrakesLVL3Label;
-    public JLabel BrakesLVL4Label;
-    public JLabel BrakesLVL5Label;
-    public JLabel BrakesLVL6Label;
-    public JLabel BrakesLVL7Label;
-    public JLabel BrakesLVL8Label;
-    public JLabel BrakesLVL9Label;
-    public JLabel BrakesLVL10Label;
-    public JLabel CoolingLVL1Label;
-    public JLabel CoolingLVL2Label;
-    public JLabel CoolingLVL3Label;
-    public JLabel CoolingLVL4Label;
-    public JLabel CoolingLVL5Label;
-    public JLabel CoolingLVL6Label;
-    public JLabel CoolingLVL7Label;
-    public JLabel CoolingLVL8Label;
-    public JLabel CoolingLVL9Label;
-    public JLabel CoolingLVL10Label;
-    public JLabel ElectronicsLVL1Label;
-    public JLabel ElectronicsLVL2Label;
-    public JLabel ElectronicsLVL3Label;
-    public JLabel ElectronicsLVL4Label;
-    public JLabel ElectronicsLVL5Label;
-    public JLabel ElectronicsLVL6Label;
-    public JLabel ElectronicsLVL7Label;
-    public JLabel ElectronicsLVL8Label;
-    public JLabel ElectronicsLVL9Label;
-    public JLabel ElectronicsLVL10Label;
-    public JLabel EngineLVL1Label;
-    public JLabel EngineLVL2Label;
-    public JLabel EngineLVL3Label;
-    public JLabel EngineLVL4Label;
-    public JLabel EngineLVL5Label;
-    public JLabel EngineLVL6Label;
-    public JLabel EngineLVL7Label;
-    public JLabel EngineLVL8Label;
-    public JLabel EngineLVL9Label;
-    public JLabel EngineLVL10Label;
-    public JLabel ExaustLVL1Label;
-    public JLabel ExaustLVL2Label;
-    public JLabel ExaustLVL3Label;
-    public JLabel ExaustLVL4Label;
-    public JLabel ExaustLVL5Label;
-    public JLabel ExaustLVL6Label;
-    public JLabel ExaustLVL7Label;
-    public JLabel ExaustLVL8Label;
-    public JLabel ExaustLVL9Label;
-    public JLabel ExaustLVL10Label;
-    public JLabel FuelLVL1Label;
-    public JLabel FuelLVL2Label;
-    public JLabel FuelLVL3Label;
-    public JLabel FuelLVL4Label;
-    public JLabel FuelLVL5Label;
-    public JLabel FuelLVL6Label;
-    public JLabel FuelLVL7Label;
-    public JLabel FuelLVL8Label;
-    public JLabel FuelLVL9Label;
-    public JLabel FuelLVL10Label;
-    public JLabel InteriorLVL1Label;
-    public JLabel InteriorLVL2Label;
-    public JLabel InteriorLVL3Label;
-    public JLabel InteriorLVL4Label;
-    public JLabel InteriorLVL5Label;
-    public JLabel InteriorLVL6Label;
-    public JLabel InteriorLVL7Label;
-    public JLabel InteriorLVL8Label;
-    public JLabel InteriorLVL9Label;
-    public JLabel InteriorLVL10Label;
-    public JLabel SteeringLVL1Label;
-    public JLabel SteeringLVL2Label;
-    public JLabel SteeringLVL3Label;
-    public JLabel SteeringLVL4Label;
-    public JLabel SteeringLVL5Label;
-    public JLabel SteeringLVL6Label;
-    public JLabel SteeringLVL7Label;
-    public JLabel SteeringLVL8Label;
-    public JLabel SteeringLVL9Label;
-    public JLabel SteeringLVL10Label;
-    public JLabel SuspensionLVL1Label;
-    public JLabel SuspensionLVL2Label;
-    public JLabel SuspensionLVL3Label;
-    public JLabel SuspensionLVL4Label;
-    public JLabel SuspensionLVL5Label;
-    public JLabel SuspensionLVL6Label;
-    public JLabel SuspensionLVL7Label;
-    public JLabel SuspensionLVL8Label;
-    public JLabel SuspensionLVL9Label;
-    public JLabel SuspensionLVL10Label;
-    public JLabel TransmissionLVL1Label;
-    public JLabel TransmissionLVL2Label;
-    public JLabel TransmissionLVL3Label;
-    public JLabel TransmissionLVL4Label;
-    public JLabel TransmissionLVL5Label;
-    public JLabel TransmissionLVL6Label;
-    public JLabel TransmissionLVL7Label;
-    public JLabel TransmissionLVL8Label;
-    public JLabel TransmissionLVL9Label;
-    public JLabel TransmissionLVL10Label;
-    public JLabel TiresLVL1Label;
-    public JLabel TiresLVL2Label;
-    public JLabel TiresLVL3Label;
-    public JLabel TiresLVL4Label;
-    public JLabel TiresLVL5Label;
-    public JLabel TiresLVL6Label;
-    public JLabel TiresLVL7Label;
-    public JLabel TiresLVL8Label;
-    public JLabel TiresLVL9Label;
-    public JLabel TiresLVL10Label;
+
+    ImagesHolder ImagesHolder = new ImagesHolder();
+    LabelsHolder Labels = new LabelsHolder();
+ 
     // Buttons
     
     JButton jbtnMoney = new JButton("Click");
@@ -388,6 +218,7 @@ ImagesHolder ih = new ImagesHolder();
     JButton jbtnSellSuspensionLv10 = new JButton("Sell");
     JButton jbtnSellTransmissionLv10 = new JButton("Sell");
     JButton jbtnSellTiresLv10 = new JButton("Sell");
+    
 
     //Make TabbedPane
     public void addComponentToPane(Container pane){
@@ -571,11 +402,187 @@ ImagesHolder ih = new ImagesHolder();
         jbtnSellSuspensionLv10.addActionListener(this);
         jbtnSellTransmissionLv10.addActionListener(this);
         jbtnSellTiresLv10.addActionListener(this);
-      
-        MainHolder CarMain = new MainHolder();
-        BoxesHolder Box = new BoxesHolder();
-        FramesHolder CarFrame = new FramesHolder();
-        PartHolder Part = new PartHolder();
+        
+    	jbtnPartsLv1.setEnabled(false);
+    	jbtnBuyBoxLv1.setEnabled(false);
+    	jbtnBuyFrameLv1.setEnabled(false);
+    	BuildCarsClass.jbtnBuildCarLv1.setEnabled(false);
+    	jbtnSellAccessoriesLv1.setEnabled(false);
+        jbtnSellBodyLv1.setEnabled(false);
+        jbtnSellBrakesLv1.setEnabled(false);
+        jbtnSellCoolingLv1.setEnabled(false);
+        jbtnSellElectronicsLv1.setEnabled(false);
+        jbtnSellEngineLv1.setEnabled(false);
+        jbtnSellExaustLv1.setEnabled(false);
+        jbtnSellFuelLv1.setEnabled(false);
+        jbtnSellInteriorLv1.setEnabled(false);
+        jbtnSellSteeringLv1.setEnabled(false);
+        jbtnSellSuspensionLv1.setEnabled(false);
+        jbtnSellTransmissionLv1.setEnabled(false);
+        jbtnSellTiresLv1.setEnabled(false);
+
+		jbtnPartsLv2.setEnabled(false);
+    	jbtnBuyBoxLv2.setEnabled(false);
+    	jbtnBuyFrameLv2.setEnabled(false);
+    	BuildCarsClass.jbtnBuildCarLv2.setEnabled(false);
+    	jbtnSellAccessoriesLv2.setEnabled(false);
+        jbtnSellBodyLv2.setEnabled(false);
+        jbtnSellBrakesLv2.setEnabled(false);
+        jbtnSellCoolingLv2.setEnabled(false);
+        jbtnSellElectronicsLv2.setEnabled(false);
+        jbtnSellEngineLv2.setEnabled(false);
+        jbtnSellExaustLv2.setEnabled(false);
+        jbtnSellFuelLv2.setEnabled(false);
+        jbtnSellInteriorLv2.setEnabled(false);
+        jbtnSellSteeringLv2.setEnabled(false);
+        jbtnSellSuspensionLv2.setEnabled(false);
+        jbtnSellTransmissionLv2.setEnabled(false);
+        jbtnSellTiresLv2.setEnabled(false);
+
+		jbtnPartsLv3.setEnabled(false);
+    	jbtnBuyBoxLv3.setEnabled(false);
+    	jbtnBuyFrameLv3.setEnabled(false);
+    	BuildCarsClass.jbtnBuildCarLv3.setEnabled(false);
+    	jbtnSellAccessoriesLv3.setEnabled(false);
+        jbtnSellBodyLv3.setEnabled(false);
+        jbtnSellBrakesLv3.setEnabled(false);
+        jbtnSellCoolingLv3.setEnabled(false);
+        jbtnSellElectronicsLv3.setEnabled(false);
+        jbtnSellEngineLv3.setEnabled(false);
+        jbtnSellExaustLv3.setEnabled(false);
+        jbtnSellFuelLv3.setEnabled(false);
+        jbtnSellInteriorLv3.setEnabled(false);
+        jbtnSellSteeringLv3.setEnabled(false);
+        jbtnSellSuspensionLv3.setEnabled(false);
+        jbtnSellTransmissionLv3.setEnabled(false);
+        jbtnSellTiresLv3.setEnabled(false);
+
+		jbtnPartsLv4.setEnabled(false);
+    	jbtnBuyBoxLv4.setEnabled(false);
+    	jbtnBuyFrameLv4.setEnabled(false);
+    	BuildCarsClass.jbtnBuildCarLv4.setEnabled(false);
+    	jbtnSellAccessoriesLv4.setEnabled(false);
+        jbtnSellBodyLv4.setEnabled(false);
+        jbtnSellBrakesLv4.setEnabled(false);
+        jbtnSellCoolingLv4.setEnabled(false);
+        jbtnSellElectronicsLv4.setEnabled(false);
+        jbtnSellEngineLv4.setEnabled(false);
+        jbtnSellExaustLv4.setEnabled(false);
+        jbtnSellFuelLv4.setEnabled(false);
+        jbtnSellInteriorLv4.setEnabled(false);
+        jbtnSellSteeringLv4.setEnabled(false);
+        jbtnSellSuspensionLv4.setEnabled(false);
+        jbtnSellTransmissionLv4.setEnabled(false);
+        jbtnSellTiresLv4.setEnabled(false);
+
+		jbtnPartsLv5.setEnabled(false);
+    	jbtnBuyBoxLv5.setEnabled(false);
+    	jbtnBuyFrameLv5.setEnabled(false);
+    	BuildCarsClass.jbtnBuildCarLv5.setEnabled(false);
+    	jbtnSellAccessoriesLv5.setEnabled(false);
+        jbtnSellBodyLv5.setEnabled(false);
+        jbtnSellBrakesLv5.setEnabled(false);
+        jbtnSellCoolingLv5.setEnabled(false);
+        jbtnSellElectronicsLv5.setEnabled(false);
+        jbtnSellEngineLv5.setEnabled(false);
+        jbtnSellExaustLv5.setEnabled(false);
+        jbtnSellFuelLv5.setEnabled(false);
+        jbtnSellInteriorLv5.setEnabled(false);
+        jbtnSellSteeringLv5.setEnabled(false);
+        jbtnSellSuspensionLv5.setEnabled(false);
+        jbtnSellTransmissionLv5.setEnabled(false);
+        jbtnSellTiresLv5.setEnabled(false);
+
+		jbtnPartsLv6.setEnabled(false);
+    	jbtnBuyBoxLv6.setEnabled(false);
+    	jbtnBuyFrameLv6.setEnabled(false);
+    	BuildCarsClass2.jbtnBuildCarLv6.setEnabled(false);
+    	jbtnSellAccessoriesLv6.setEnabled(false);
+        jbtnSellBodyLv6.setEnabled(false);
+        jbtnSellBrakesLv6.setEnabled(false);
+        jbtnSellCoolingLv6.setEnabled(false);
+        jbtnSellElectronicsLv6.setEnabled(false);
+        jbtnSellEngineLv6.setEnabled(false);
+        jbtnSellExaustLv6.setEnabled(false);
+        jbtnSellFuelLv6.setEnabled(false);
+        jbtnSellInteriorLv6.setEnabled(false);
+        jbtnSellSteeringLv6.setEnabled(false);
+        jbtnSellSuspensionLv6.setEnabled(false);
+        jbtnSellTransmissionLv6.setEnabled(false);
+        jbtnSellTiresLv6.setEnabled(false);
+
+		jbtnPartsLv7.setEnabled(false);
+    	jbtnBuyBoxLv7.setEnabled(false);
+    	jbtnBuyFrameLv7.setEnabled(false);
+    	BuildCarsClass2.jbtnBuildCarLv7.setEnabled(false);
+    	jbtnSellAccessoriesLv7.setEnabled(false);
+        jbtnSellBodyLv7.setEnabled(false);
+        jbtnSellBrakesLv7.setEnabled(false);
+        jbtnSellCoolingLv7.setEnabled(false);
+        jbtnSellElectronicsLv7.setEnabled(false);
+        jbtnSellEngineLv7.setEnabled(false);
+        jbtnSellExaustLv7.setEnabled(false);
+        jbtnSellFuelLv7.setEnabled(false);
+        jbtnSellInteriorLv7.setEnabled(false);
+        jbtnSellSteeringLv7.setEnabled(false);
+        jbtnSellSuspensionLv7.setEnabled(false);
+        jbtnSellTransmissionLv7.setEnabled(false);
+        jbtnSellTiresLv7.setEnabled(false);
+
+		jbtnPartsLv8.setEnabled(false);
+    	jbtnBuyBoxLv8.setEnabled(false);
+    	jbtnBuyFrameLv8.setEnabled(false);
+    	BuildCarsClass2.jbtnBuildCarLv8.setEnabled(false);
+    	jbtnSellAccessoriesLv8.setEnabled(false);
+        jbtnSellBodyLv8.setEnabled(false);
+        jbtnSellBrakesLv8.setEnabled(false);
+        jbtnSellCoolingLv8.setEnabled(false);
+        jbtnSellElectronicsLv8.setEnabled(false);
+        jbtnSellEngineLv8.setEnabled(false);
+        jbtnSellExaustLv8.setEnabled(false);
+        jbtnSellFuelLv8.setEnabled(false);
+        jbtnSellInteriorLv8.setEnabled(false);
+        jbtnSellSteeringLv8.setEnabled(false);
+        jbtnSellSuspensionLv8.setEnabled(false);
+        jbtnSellTransmissionLv8.setEnabled(false);
+        jbtnSellTiresLv8.setEnabled(false);
+
+		jbtnPartsLv9.setEnabled(false);
+    	jbtnBuyBoxLv9.setEnabled(false);
+    	jbtnBuyFrameLv9.setEnabled(false);
+    	BuildCarsClass2.jbtnBuildCarLv9.setEnabled(false);
+    	jbtnSellAccessoriesLv9.setEnabled(false);
+        jbtnSellBodyLv9.setEnabled(false);
+        jbtnSellBrakesLv9.setEnabled(false);
+        jbtnSellCoolingLv9.setEnabled(false);
+        jbtnSellElectronicsLv9.setEnabled(false);
+        jbtnSellEngineLv9.setEnabled(false);
+        jbtnSellExaustLv9.setEnabled(false);
+        jbtnSellFuelLv9.setEnabled(false);
+        jbtnSellInteriorLv9.setEnabled(false);
+        jbtnSellSteeringLv9.setEnabled(false);
+        jbtnSellSuspensionLv9.setEnabled(false);
+        jbtnSellTransmissionLv9.setEnabled(false);
+        jbtnSellTiresLv9.setEnabled(false);
+
+		jbtnPartsLv10.setEnabled(false);
+    	jbtnBuyBoxLv10.setEnabled(false);
+    	jbtnBuyFrameLv10.setEnabled(false);
+    	BuildCarsClass2.jbtnBuildCarLv10.setEnabled(false);
+    	jbtnSellAccessoriesLv10.setEnabled(false);
+        jbtnSellBodyLv10.setEnabled(false);
+        jbtnSellBrakesLv10.setEnabled(false);
+        jbtnSellCoolingLv10.setEnabled(false);
+        jbtnSellElectronicsLv10.setEnabled(false);
+        jbtnSellEngineLv10.setEnabled(false);
+        jbtnSellExaustLv10.setEnabled(false);
+        jbtnSellFuelLv10.setEnabled(false);
+        jbtnSellInteriorLv10.setEnabled(false);
+        jbtnSellSteeringLv10.setEnabled(false);
+        jbtnSellSuspensionLv10.setEnabled(false);
+        jbtnSellTransmissionLv10.setEnabled(false);
+        jbtnSellTiresLv10.setEnabled(false);
+
  	            
     	JTabbedPane tabbedPane = new JTabbedPane();
     	tabbedPane.setTabPlacement(JTabbedPane.TOP);
@@ -589,31 +596,9 @@ ImagesHolder ih = new ImagesHolder();
     	JPanel MainPanelSub2 = new JPanel();
     	MainPanelSub2.setLayout(new BoxLayout(MainPanelSub2, BoxLayout.PAGE_AXIS));
     	
-    	
-    	MoneyLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	MoneyLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	MoneyLabel.setText("Money: " + CarMain.main[0]);
-    	
-    	MoneyClicksLabel = new JLabel();
-    	MoneyClicksLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	MoneyClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	MoneyClicksLabel.setText("Money Clicks: " + CarMain.main[1]);
-    	
-        BoxesLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);  	
-    	BoxesLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	BoxesLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesLabel.setText("Boxes: " + CarMain.main[2]);
-    	
-    	BoxesClicksLabel = new JLabel();
-    	BoxesClicksLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	BoxesClicksLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesClicksLabel.setText("Boxes Clicks: " + CarMain.main[3]);
-
-    	MainPanelSub.add(MoneyLabel);
-    	MainPanelSub.add(MoneyClicksLabel);
+    	MainPanelSub.add(Labels.MoneyLabel);
     	MainPanelSub.add(jbtnMoney);
-    	MainPanelSub2.add(BoxesLabel);
-    	MainPanelSub2.add(BoxesClicksLabel);
+    	MainPanelSub2.add(Labels.BoxesLabel);
        	MainPanelSub2.add(jbtnBoxes);
     	MainPanel.add(MainPanelSub);
     	MainPanel.add(MainPanelSub2);
@@ -630,27 +615,12 @@ ImagesHolder ih = new ImagesHolder();
         
         JPanel UpgradesPanelSub3 = new JPanel();
         UpgradesPanelSub3.setLayout(new BoxLayout(UpgradesPanelSub3, BoxLayout.PAGE_AXIS));
-        
-        PlayerLabel = new JLabel(ImagesHolder.PlayerIcon);    	
-    	PlayerLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	PlayerLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	PlayerLabel.setText("Player Level: " + CarMain.main[5]);
-        
-    	GarageLabel = new JLabel(ImagesHolder.GarageIcon);    	
-    	GarageLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	GarageLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	GarageLabel.setText("Garage Level: " + CarMain.main[6]);
     	
-    	BoxesLVLLabel = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
-    	BoxesLVLLabel.setHorizontalTextPosition(JLabel.CENTER);
-    	BoxesLVLLabel.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesLVLLabel.setText("Box Level: " + CarMain.main[4]);
-    	
-        UpgradesPanelSub.add(PlayerLabel);
+        UpgradesPanelSub.add(Labels.PlayerLabel);
         UpgradesPanelSub.add(jbtnUpgradeLevel);
-        UpgradesPanelSub2.add(GarageLabel);
+        UpgradesPanelSub2.add(Labels.GarageLabel);
         UpgradesPanelSub2.add(jbtnUpgradeGarageLevel);
-        UpgradesPanelSub3.add(BoxesLVLLabel);
+        UpgradesPanelSub3.add(Labels.BoxesLVLLabel);
         UpgradesPanelSub3.add(jbtnUpgradeBoxesLevel);
         UpgradesPanel.add(UpgradesPanelSub);
         UpgradesPanel.add(UpgradesPanelSub2);
@@ -689,77 +659,26 @@ ImagesHolder ih = new ImagesHolder();
         
         JPanel BuyBoxesPanelSub10 = new JPanel();
         BuyBoxesPanelSub10.setLayout(new BoxLayout(BuyBoxesPanelSub10, BoxLayout.PAGE_AXIS));
-        
-        
-        BoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
-    	BoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-    	BoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-    	BoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
-    	
-    	BoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
-     	BoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
-    	
-     	BoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
-     	BoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
-    	
-     	BoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
-     	BoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
-     	
-     	BoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
-     	BoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
-     	
-     	BoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
-     	BoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
-     	
-     	BoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
-     	BoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
-     	
-     	BoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
-     	BoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
-     	
-     	BoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
-     	BoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
-     	
-     	BoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
-     	BoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-     	BoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	BoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
-    	    
-        BuyBoxesPanelSub.add(BoxesLVL1Label);
+ 	
+        BuyBoxesPanelSub.add(Labels.BoxesLVL1Label);
         BuyBoxesPanelSub.add(jbtnBuyBoxLv1);
-        BuyBoxesPanelSub2.add(BoxesLVL2Label);
+        BuyBoxesPanelSub2.add(Labels.BoxesLVL2Label);
         BuyBoxesPanelSub2.add(jbtnBuyBoxLv2);
-        BuyBoxesPanelSub3.add(BoxesLVL3Label);
+        BuyBoxesPanelSub3.add(Labels.BoxesLVL3Label);
         BuyBoxesPanelSub3.add(jbtnBuyBoxLv3);
-        BuyBoxesPanelSub4.add(BoxesLVL4Label);
+        BuyBoxesPanelSub4.add(Labels.BoxesLVL4Label);
         BuyBoxesPanelSub4.add(jbtnBuyBoxLv4);
-        BuyBoxesPanelSub5.add(BoxesLVL5Label);
+        BuyBoxesPanelSub5.add(Labels.BoxesLVL5Label);
         BuyBoxesPanelSub5.add(jbtnBuyBoxLv5);
-        BuyBoxesPanelSub6.add(BoxesLVL6Label);
+        BuyBoxesPanelSub6.add(Labels.BoxesLVL6Label);
         BuyBoxesPanelSub6.add(jbtnBuyBoxLv6);
-        BuyBoxesPanelSub7.add(BoxesLVL7Label);
+        BuyBoxesPanelSub7.add(Labels.BoxesLVL7Label);
         BuyBoxesPanelSub7.add(jbtnBuyBoxLv7);
-        BuyBoxesPanelSub8.add(BoxesLVL8Label);
+        BuyBoxesPanelSub8.add(Labels.BoxesLVL8Label);
         BuyBoxesPanelSub8.add(jbtnBuyBoxLv8);
-        BuyBoxesPanelSub9.add(BoxesLVL9Label);
+        BuyBoxesPanelSub9.add(Labels.BoxesLVL9Label);
         BuyBoxesPanelSub9.add(jbtnBuyBoxLv9);
-        BuyBoxesPanelSub10.add(BoxesLVL10Label);
+        BuyBoxesPanelSub10.add(Labels.BoxesLVL10Label);
         BuyBoxesPanelSub10.add(jbtnBuyBoxLv10);
         
         BuyBoxesPanel.add(BuyBoxesPanelSub);
@@ -806,76 +725,26 @@ ImagesHolder ih = new ImagesHolder();
         
         JPanel OpenBoxesPanelSub10 = new JPanel();
         OpenBoxesPanelSub10.setLayout(new BoxLayout(OpenBoxesPanelSub10, BoxLayout.PAGE_AXIS));
-        
-        OpenBoxesLVL1Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
-    	OpenBoxesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-    	OpenBoxesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-    	OpenBoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
-    	
-    	OpenBoxesLVL2Label = new JLabel(ImagesHolder.BoxLv1_2Icon);    	
-     	OpenBoxesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
-    	
-     	OpenBoxesLVL3Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
-     	OpenBoxesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
-    	
-     	OpenBoxesLVL4Label = new JLabel(ImagesHolder.BoxLv3_4Icon);    	
-     	OpenBoxesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
-     	
-     	OpenBoxesLVL5Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
-     	OpenBoxesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
-     	
-     	OpenBoxesLVL6Label = new JLabel(ImagesHolder.BoxLv5_6Icon);    	
-     	OpenBoxesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
-     	
-     	OpenBoxesLVL7Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
-     	OpenBoxesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
-     	
-     	OpenBoxesLVL8Label = new JLabel(ImagesHolder.BoxLv7_8Icon);    	
-     	OpenBoxesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
-     	
-     	OpenBoxesLVL9Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
-     	OpenBoxesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
-     	
-     	OpenBoxesLVL10Label = new JLabel(ImagesHolder.BoxLv9_10Icon);    	
-     	OpenBoxesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-     	OpenBoxesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	OpenBoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
-                    
-        OpenBoxesPanelSub.add(OpenBoxesLVL1Label);
+            	  	
+        OpenBoxesPanelSub.add(Labels.OpenBoxesLVL1Label);
         OpenBoxesPanelSub.add(jbtnPartsLv1);
-        OpenBoxesPanelSub2.add(OpenBoxesLVL2Label);
+        OpenBoxesPanelSub2.add(Labels.OpenBoxesLVL2Label);
         OpenBoxesPanelSub2.add(jbtnPartsLv2);
-        OpenBoxesPanelSub3.add(OpenBoxesLVL3Label);
+        OpenBoxesPanelSub3.add(Labels.OpenBoxesLVL3Label);
         OpenBoxesPanelSub3.add(jbtnPartsLv3);
-        OpenBoxesPanelSub4.add(OpenBoxesLVL4Label);
+        OpenBoxesPanelSub4.add(Labels.OpenBoxesLVL4Label);
         OpenBoxesPanelSub4.add(jbtnPartsLv4);
-        OpenBoxesPanelSub5.add(OpenBoxesLVL5Label);
+        OpenBoxesPanelSub5.add(Labels.OpenBoxesLVL5Label);
         OpenBoxesPanelSub5.add(jbtnPartsLv5);
-        OpenBoxesPanelSub6.add(OpenBoxesLVL6Label);
+        OpenBoxesPanelSub6.add(Labels.OpenBoxesLVL6Label);
         OpenBoxesPanelSub6.add(jbtnPartsLv6);
-        OpenBoxesPanelSub7.add(OpenBoxesLVL7Label);
+        OpenBoxesPanelSub7.add(Labels.OpenBoxesLVL7Label);
         OpenBoxesPanelSub7.add(jbtnPartsLv7);
-        OpenBoxesPanelSub8.add(OpenBoxesLVL8Label);
+        OpenBoxesPanelSub8.add(Labels.OpenBoxesLVL8Label);
         OpenBoxesPanelSub8.add(jbtnPartsLv8);
-        OpenBoxesPanelSub9.add(OpenBoxesLVL9Label);
+        OpenBoxesPanelSub9.add(Labels.OpenBoxesLVL9Label);
         OpenBoxesPanelSub9.add(jbtnPartsLv9);
-        OpenBoxesPanelSub10.add(OpenBoxesLVL10Label);
+        OpenBoxesPanelSub10.add(Labels.OpenBoxesLVL10Label);
         OpenBoxesPanelSub10.add(jbtnPartsLv10);
         
         OpenBoxesPanel.add(OpenBoxesPanelSub);
@@ -922,77 +791,26 @@ ImagesHolder ih = new ImagesHolder();
         
         JPanel BuildCarsPanelSub10 = new JPanel();
         BuildCarsPanelSub10.setLayout(new BoxLayout(BuildCarsPanelSub10, BoxLayout.PAGE_AXIS));
-        
-        CarsLv1Label = new JLabel(ImagesHolder.Opel_ZafiraIcon);    	
-     	CarsLv1Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv1Label.setText("<html>1 LVL Cars<br>" + "Owned: " + CountLv1Cars() + " of 20");
      	
-     	CarsLv2Label = new JLabel(ImagesHolder.Ferrari_EnzoIcon);    	
-     	CarsLv2Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv2Label.setText("<html>2 LVL Cars<br>" + "Owned: " + CountLv2Cars() + " of 20");
-     	
-     	CarsLv3Label = new JLabel(ImagesHolder.Fiat_500Icon);    	
-     	CarsLv3Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv3Label.setText("<html>3 LVL Cars<br>" + "Owned: " + CountLv3Cars() + " of 20");
-     	
-     	CarsLv4Label = new JLabel(ImagesHolder.BMW_e30Icon);    	
-     	CarsLv4Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv4Label.setText("<html>4 LVL Cars<br>" + "Owned: " + CountLv4Cars() + " of 20");
-     	
-     	CarsLv5Label = new JLabel(ImagesHolder.Pagani_ZondaFIcon);    	
-     	CarsLv5Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv5Label.setText("<html>5 LVL Cars<br>" + "Owned: " + CountLv5Cars() + " of 20");
-     	
-     	CarsLv6Label = new JLabel(ImagesHolder.Vaz_2103Icon);    	
-     	CarsLv6Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv6Label.setText("<html>6 LVL Cars<br>" + "Owned: " + CountLv6Cars() + " of 20");
-     	
-     	CarsLv7Label = new JLabel(ImagesHolder.Audi_CoupeIcon);    	
-     	CarsLv7Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv7Label.setText("<html>7 LVL Cars<br>" + "Owned: " + CountLv7Cars() + " of 20");
-     	
-     	CarsLv8Label = new JLabel(ImagesHolder.Ford_MustangIcon);    	
-     	CarsLv8Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv8Label.setText("<html>8 LVL Cars<br>" + "Owned: " + CountLv8Cars() + " of 20");
-     	
-     	CarsLv9Label = new JLabel(ImagesHolder.GMC_YukonIcon);    	
-     	CarsLv9Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv9Label.setText("<html>9 LVL Cars<br>" + "Owned: " + CountLv9Cars() + " of 20");
-     	
-     	CarsLv10Label = new JLabel(ImagesHolder.Cadilliac_EldoradoIcon);    	
-     	CarsLv10Label.setHorizontalTextPosition(JLabel.CENTER);
-     	CarsLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	CarsLv10Label.setText("<html>10 LVL Cars<br>" + "Owned: " + CountLv10Cars() + " of 20");
-        
-     	
-     	BuildCarsPanelSub.add(CarsLv1Label);
+     	BuildCarsPanelSub.add(Labels.CarsLv1Label);
      	BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1);
-     	BuildCarsPanelSub2.add(CarsLv2Label);
+     	BuildCarsPanelSub2.add(Labels.CarsLv2Label);
      	BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
-     	BuildCarsPanelSub3.add(CarsLv3Label);
+     	BuildCarsPanelSub3.add(Labels.CarsLv3Label);
      	BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
-     	BuildCarsPanelSub4.add(CarsLv4Label);
+     	BuildCarsPanelSub4.add(Labels.CarsLv4Label);
      	BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
-     	BuildCarsPanelSub5.add(CarsLv5Label);
+     	BuildCarsPanelSub5.add(Labels.CarsLv5Label);
      	BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
-     	BuildCarsPanelSub6.add(CarsLv6Label);
+     	BuildCarsPanelSub6.add(Labels.CarsLv6Label);
      	BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
-     	BuildCarsPanelSub7.add(CarsLv7Label);
+     	BuildCarsPanelSub7.add(Labels.CarsLv7Label);
      	BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
-     	BuildCarsPanelSub8.add(CarsLv8Label);
+     	BuildCarsPanelSub8.add(Labels.CarsLv8Label);
      	BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
-     	BuildCarsPanelSub9.add(CarsLv9Label);
+     	BuildCarsPanelSub9.add(Labels.CarsLv9Label);
      	BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
-     	BuildCarsPanelSub10.add(CarsLv10Label);
+     	BuildCarsPanelSub10.add(Labels.CarsLv10Label);
      	BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
      	
      	BuildCarsPanel.add(BuildCarsPanelSub);
@@ -1039,76 +857,26 @@ ImagesHolder ih = new ImagesHolder();
         
         JPanel BuyFramesPanelSub10 = new JPanel();
         BuyFramesPanelSub10.setLayout(new BoxLayout(BuyFramesPanelSub10, BoxLayout.PAGE_AXIS));
-        
-        FrameLv1Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv1Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv1Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv1Label.setText("<html>1 LVL Frame<br>" + "Count: " + CarFrame.frames[1]);
-     	
-     	FrameLv2Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv2Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv2Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv2Label.setText("<html>2 LVL Frame<br>" + "Count: " + CarFrame.frames[3]);
-     	
-     	FrameLv3Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv3Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv3Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv3Label.setText("<html>3 LVL Frame<br>" + "Count: " + CarFrame.frames[5]);
-     	
-     	FrameLv4Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv4Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv4Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv4Label.setText("<html>4 LVL Frame<br>" + "Count: " + CarFrame.frames[7]);
-     	
-     	FrameLv5Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv5Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv5Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv5Label.setText("<html>5 LVL Frame<br>" + "Count: " + CarFrame.frames[9]);
-     	
-     	FrameLv6Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv6Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv6Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv6Label.setText("<html>6 LVL Frame<br>" + "Count: " + CarFrame.frames[11]);
-     	
-     	FrameLv7Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv7Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv7Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv7Label.setText("<html>7 LVL Frame<br>" + "Count: " + CarFrame.frames[13]);
-     	
-     	FrameLv8Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv8Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv8Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv8Label.setText("<html>8 LVL Frame<br>" + "Count: " + CarFrame.frames[15]);
-     	
-     	FrameLv9Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv9Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv9Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv9Label.setText("<html>9 LVL Frame<br>" + "Count: " + CarFrame.frames[17]);
-     	
-     	FrameLv10Label = new JLabel(ImagesHolder.CarFrameIcon);    	
-     	FrameLv10Label.setHorizontalTextPosition(JLabel.CENTER);
-     	FrameLv10Label.setVerticalTextPosition(JLabel.BOTTOM);
-     	FrameLv10Label.setText("<html>10 LVL Frame<br>" + "Count: " + CarFrame.frames[19]);
-          	
-     	BuyFramesPanelSub.add(FrameLv1Label);
+          	         	
+     	BuyFramesPanelSub.add(Labels.FrameLv1Label);
      	BuyFramesPanelSub.add(jbtnBuyFrameLv1);
-     	BuyFramesPanelSub2.add(FrameLv2Label);
+     	BuyFramesPanelSub2.add(Labels.FrameLv2Label);
      	BuyFramesPanelSub2.add(jbtnBuyFrameLv2);
-     	BuyFramesPanelSub3.add(FrameLv3Label);
+     	BuyFramesPanelSub3.add(Labels.FrameLv3Label);
      	BuyFramesPanelSub3.add(jbtnBuyFrameLv3);
-     	BuyFramesPanelSub4.add(FrameLv4Label);
+     	BuyFramesPanelSub4.add(Labels.FrameLv4Label);
      	BuyFramesPanelSub4.add(jbtnBuyFrameLv4);
-     	BuyFramesPanelSub5.add(FrameLv5Label);
+     	BuyFramesPanelSub5.add(Labels.FrameLv5Label);
      	BuyFramesPanelSub5.add(jbtnBuyFrameLv5);
-     	BuyFramesPanelSub6.add(FrameLv6Label);
+     	BuyFramesPanelSub6.add(Labels.FrameLv6Label);
      	BuyFramesPanelSub6.add(jbtnBuyFrameLv6);
-     	BuyFramesPanelSub7.add(FrameLv7Label);
+     	BuyFramesPanelSub7.add(Labels.FrameLv7Label);
      	BuyFramesPanelSub7.add(jbtnBuyFrameLv7);
-     	BuyFramesPanelSub8.add(FrameLv8Label);
+     	BuyFramesPanelSub8.add(Labels.FrameLv8Label);
      	BuyFramesPanelSub8.add(jbtnBuyFrameLv8);
-     	BuyFramesPanelSub9.add(FrameLv9Label);
+     	BuyFramesPanelSub9.add(Labels.FrameLv9Label);
      	BuyFramesPanelSub9.add(jbtnBuyFrameLv9);
-     	BuyFramesPanelSub10.add(FrameLv10Label);
+     	BuyFramesPanelSub10.add(Labels.FrameLv10Label);
      	BuyFramesPanelSub10.add(jbtnBuyFrameLv10);
      	
      	BuyFramesPanel.add(BuyFramesPanelSub);
@@ -1164,97 +932,32 @@ ImagesHolder ih = new ImagesHolder();
         
         JPanel SellPartsLVL1PanelSub13 = new JPanel();
         SellPartsLVL1PanelSub13.setLayout(new BoxLayout(SellPartsLVL1PanelSub13, BoxLayout.PAGE_AXIS));
-        
-        AccessoriesLVL1Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.parts[1]);
-        
-        BodyLVL1Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.parts[3]);
-        
-        BrakesLVL1Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.parts[5]);
-        
-        CoolingLVL1Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL1Label.setText("<html>Cooling LVL 1<br>" + "Count: " + Part.parts[7]);
-        
-        ElectronicsLVL1Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL1Label.setText("<html>Electronics LVL 1<br>" + "Count: " + Part.parts[9]);
-        
-        EngineLVL1Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL1Label.setText("<html>Engine LVL 1<br>" + "Count: " + Part.parts[11]);
-        
-        ExaustLVL1Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL1Label.setText("<html>Exaust LVL 1<br>" + "Count: " + Part.parts[13]);
-        
-        FuelLVL1Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL1Label.setText("<html>Fuel LVL 1<br>" + "Count: " + Part.parts[15]);
-        
-        InteriorLVL1Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL1Label.setText("<html>Interior LVL 1<br>" + "Count: " + Part.parts[17]);
-        
-        SteeringLVL1Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.parts[19]);
-        
-        SuspensionLVL1Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL1Label.setText("<html>Suspension LVL 1<br>" + "Count: " + Part.parts[21]);
-        
-        TransmissionLVL1Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL1Label.setText("<html>Transmission LVL 1<br>" + "Count: " + Part.parts[23]);
-        
-        TiresLVL1Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL1Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL1Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL1Label.setText("<html>Tires LVL 1<br>" + "Count: " + Part.parts[25]);
-               
-        SellPartsLVL1PanelSub.add(AccessoriesLVL1Label);
+            	               
+        SellPartsLVL1PanelSub.add(Labels.AccessoriesLVL1Label);
         SellPartsLVL1PanelSub.add(jbtnSellAccessoriesLv1);
-        SellPartsLVL1PanelSub2.add(BodyLVL1Label);
+        SellPartsLVL1PanelSub2.add(Labels.BodyLVL1Label);
         SellPartsLVL1PanelSub2.add(jbtnSellBodyLv1);
-        SellPartsLVL1PanelSub3.add(BrakesLVL1Label);
+        SellPartsLVL1PanelSub3.add(Labels.BrakesLVL1Label);
         SellPartsLVL1PanelSub3.add(jbtnSellBrakesLv1);
-        SellPartsLVL1PanelSub4.add(CoolingLVL1Label);
+        SellPartsLVL1PanelSub4.add(Labels.CoolingLVL1Label);
         SellPartsLVL1PanelSub4.add(jbtnSellCoolingLv1);
-        SellPartsLVL1PanelSub5.add(ElectronicsLVL1Label);
+        SellPartsLVL1PanelSub5.add(Labels.ElectronicsLVL1Label);
         SellPartsLVL1PanelSub5.add(jbtnSellElectronicsLv1);
-        SellPartsLVL1PanelSub6.add(EngineLVL1Label);
+        SellPartsLVL1PanelSub6.add(Labels.EngineLVL1Label);
         SellPartsLVL1PanelSub6.add(jbtnSellEngineLv1);
-        SellPartsLVL1PanelSub7.add(ExaustLVL1Label);
+        SellPartsLVL1PanelSub7.add(Labels.ExaustLVL1Label);
         SellPartsLVL1PanelSub7.add(jbtnSellExaustLv1);
-        SellPartsLVL1PanelSub8.add(FuelLVL1Label);
+        SellPartsLVL1PanelSub8.add(Labels.FuelLVL1Label);
         SellPartsLVL1PanelSub8.add(jbtnSellFuelLv1);
-        SellPartsLVL1PanelSub9.add(InteriorLVL1Label);
+        SellPartsLVL1PanelSub9.add(Labels.InteriorLVL1Label);
         SellPartsLVL1PanelSub9.add(jbtnSellInteriorLv1);
-        SellPartsLVL1PanelSub10.add(SteeringLVL1Label);
+        SellPartsLVL1PanelSub10.add(Labels.SteeringLVL1Label);
         SellPartsLVL1PanelSub10.add(jbtnSellSteeringLv1);
-        SellPartsLVL1PanelSub11.add(SuspensionLVL1Label);
+        SellPartsLVL1PanelSub11.add(Labels.SuspensionLVL1Label);
         SellPartsLVL1PanelSub11.add(jbtnSellSuspensionLv1);
-        SellPartsLVL1PanelSub12.add(TransmissionLVL1Label);
+        SellPartsLVL1PanelSub12.add(Labels.TransmissionLVL1Label);
         SellPartsLVL1PanelSub12.add(jbtnSellTransmissionLv1);
-        SellPartsLVL1PanelSub13.add(TiresLVL1Label);
+        SellPartsLVL1PanelSub13.add(Labels.TiresLVL1Label);
         SellPartsLVL1PanelSub13.add(jbtnSellTiresLv1);
         
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub);
@@ -1313,97 +1016,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL2PanelSub13 = new JPanel();
 	 	SellPartsLVL2PanelSub13.setLayout(new BoxLayout(SellPartsLVL2PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL2Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL2Label.setText("<html>Accessories LVL 2<br>" + "Count: " + Part.parts[27]);
-        
-        BodyLVL2Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL2Label.setText("<html>Body LVL 2<br>" + "Count: " + Part.parts[29]);
-        
-        BrakesLVL2Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL2Label.setText("<html>Brakes LVL 2<br>" + "Count: " + Part.parts[31]);
-        
-        CoolingLVL2Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL2Label.setText("<html>Cooling LVL 2<br>" + "Count: " + Part.parts[33]);
-        
-        ElectronicsLVL2Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL2Label.setText("<html>Electronics LVL 2<br>" + "Count: " + Part.parts[35]);
-        
-        EngineLVL2Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL2Label.setText("<html>Engine LVL 2<br>" + "Count: " + Part.parts[37]);
-        
-        ExaustLVL2Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL2Label.setText("<html>Exaust LVL 2<br>" + "Count: " + Part.parts[39]);
-        
-        FuelLVL2Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL2Label.setText("<html>Fuel LVL 2<br>" + "Count: " + Part.parts[41]);
-        
-        InteriorLVL2Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL2Label.setText("<html>Interior LVL 2<br>" + "Count: " + Part.parts[43]);
-        
-        SteeringLVL2Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.parts[45]);
-        
-        SuspensionLVL2Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL2Label.setText("<html>Suspension LVL 2<br>" + "Count: " + Part.parts[47]);
-        
-        TransmissionLVL2Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL2Label.setText("<html>Transmission LVL 2<br>" + "Count: " + Part.parts[49]);
-        
-        TiresLVL2Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL2Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL2Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL2Label.setText("<html>Tires LVL 2<br>" + "Count: " + Part.parts[51]);
                
-        SellPartsLVL2PanelSub.add(AccessoriesLVL2Label);
+        SellPartsLVL2PanelSub.add(Labels.AccessoriesLVL2Label);
         SellPartsLVL2PanelSub.add(jbtnSellAccessoriesLv2);
-        SellPartsLVL2PanelSub2.add(BodyLVL2Label);
+        SellPartsLVL2PanelSub2.add(Labels.BodyLVL2Label);
         SellPartsLVL2PanelSub2.add(jbtnSellBodyLv2);
-        SellPartsLVL2PanelSub3.add(BrakesLVL2Label);
+        SellPartsLVL2PanelSub3.add(Labels.BrakesLVL2Label);
         SellPartsLVL2PanelSub3.add(jbtnSellBrakesLv2);
-        SellPartsLVL2PanelSub4.add(CoolingLVL2Label);
+        SellPartsLVL2PanelSub4.add(Labels.CoolingLVL2Label);
         SellPartsLVL2PanelSub4.add(jbtnSellCoolingLv2);
-        SellPartsLVL2PanelSub5.add(ElectronicsLVL2Label);
+        SellPartsLVL2PanelSub5.add(Labels.ElectronicsLVL2Label);
         SellPartsLVL2PanelSub5.add(jbtnSellElectronicsLv2);
-        SellPartsLVL2PanelSub6.add(EngineLVL2Label);
+        SellPartsLVL2PanelSub6.add(Labels.EngineLVL2Label);
         SellPartsLVL2PanelSub6.add(jbtnSellEngineLv2);
-        SellPartsLVL2PanelSub7.add(ExaustLVL2Label);
+        SellPartsLVL2PanelSub7.add(Labels.ExaustLVL2Label);
         SellPartsLVL2PanelSub7.add(jbtnSellExaustLv2);
-        SellPartsLVL2PanelSub8.add(FuelLVL2Label);
+        SellPartsLVL2PanelSub8.add(Labels.FuelLVL2Label);
         SellPartsLVL2PanelSub8.add(jbtnSellFuelLv2);
-        SellPartsLVL2PanelSub9.add(InteriorLVL2Label);
+        SellPartsLVL2PanelSub9.add(Labels.InteriorLVL2Label);
         SellPartsLVL2PanelSub9.add(jbtnSellInteriorLv2);
-        SellPartsLVL2PanelSub10.add(SteeringLVL2Label);
+        SellPartsLVL2PanelSub10.add(Labels.SteeringLVL2Label);
         SellPartsLVL2PanelSub10.add(jbtnSellSteeringLv2);
-        SellPartsLVL2PanelSub11.add(SuspensionLVL2Label);
+        SellPartsLVL2PanelSub11.add(Labels.SuspensionLVL2Label);
         SellPartsLVL2PanelSub11.add(jbtnSellSuspensionLv2);
-        SellPartsLVL2PanelSub12.add(TransmissionLVL2Label);
+        SellPartsLVL2PanelSub12.add(Labels.TransmissionLVL2Label);
         SellPartsLVL2PanelSub12.add(jbtnSellTransmissionLv2);
-        SellPartsLVL2PanelSub13.add(TiresLVL2Label);
+        SellPartsLVL2PanelSub13.add(Labels.TiresLVL2Label);
         SellPartsLVL2PanelSub13.add(jbtnSellTiresLv2);
         
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub);
@@ -1462,97 +1100,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL3PanelSub13 = new JPanel();
 	 	SellPartsLVL3PanelSub13.setLayout(new BoxLayout(SellPartsLVL3PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL3Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL3Label.setText("<html>Accessories LVL 3<br>" + "Count: " + Part.parts[53]);
-        
-        BodyLVL3Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL3Label.setText("<html>Body LVL 3<br>" + "Count: " + Part.parts[55]);
-        
-        BrakesLVL3Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL3Label.setText("<html>Brakes LVL 3<br>" + "Count: " + Part.parts[57]);
-        
-        CoolingLVL3Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL3Label.setText("<html>Cooling LVL 3<br>" + "Count: " + Part.parts[59]);
-        
-        ElectronicsLVL3Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL3Label.setText("<html>Electronics LVL 3<br>" + "Count: " + Part.parts[61]);
-        
-        EngineLVL3Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL3Label.setText("<html>Engine LVL 3<br>" + "Count: " + Part.parts[63]);
-        
-        ExaustLVL3Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL3Label.setText("<html>Exaust LVL 3<br>" + "Count: " + Part.parts[65]);
-        
-        FuelLVL3Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL3Label.setText("<html>Fuel LVL 3<br>" + "Count: " + Part.parts[67]);
-        
-        InteriorLVL3Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL3Label.setText("<html>Interior LVL 3<br>" + "Count: " + Part.parts[69]);
-        
-        SteeringLVL3Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.parts[71]);
-        
-        SuspensionLVL3Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL3Label.setText("<html>Suspension LVL 3<br>" + "Count: " + Part.parts[73]);
-        
-        TransmissionLVL3Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL3Label.setText("<html>Transmission LVL 3<br>" + "Count: " + Part.parts[75]);
-        
-        TiresLVL3Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL3Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL3Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL3Label.setText("<html>Tires LVL 3<br>" + "Count: " + Part.parts[77]);
-                
-        SellPartsLVL3PanelSub.add(AccessoriesLVL3Label);
+   	 	    	                
+        SellPartsLVL3PanelSub.add(Labels.AccessoriesLVL3Label);
         SellPartsLVL3PanelSub.add(jbtnSellAccessoriesLv3);
-        SellPartsLVL3PanelSub2.add(BodyLVL3Label);
+        SellPartsLVL3PanelSub2.add(Labels.BodyLVL3Label);
         SellPartsLVL3PanelSub2.add(jbtnSellBodyLv3);
-        SellPartsLVL3PanelSub3.add(BrakesLVL3Label);
+        SellPartsLVL3PanelSub3.add(Labels.BrakesLVL3Label);
         SellPartsLVL3PanelSub3.add(jbtnSellBrakesLv3);
-        SellPartsLVL3PanelSub4.add(CoolingLVL3Label);
+        SellPartsLVL3PanelSub4.add(Labels.CoolingLVL3Label);
         SellPartsLVL3PanelSub4.add(jbtnSellCoolingLv3);
-        SellPartsLVL3PanelSub5.add(ElectronicsLVL3Label);
+        SellPartsLVL3PanelSub5.add(Labels.ElectronicsLVL3Label);
         SellPartsLVL3PanelSub5.add(jbtnSellElectronicsLv3);
-        SellPartsLVL3PanelSub6.add(EngineLVL3Label);
+        SellPartsLVL3PanelSub6.add(Labels.EngineLVL3Label);
         SellPartsLVL3PanelSub6.add(jbtnSellEngineLv3);
-        SellPartsLVL3PanelSub7.add(ExaustLVL3Label);
+        SellPartsLVL3PanelSub7.add(Labels.ExaustLVL3Label);
         SellPartsLVL3PanelSub7.add(jbtnSellExaustLv3);
-        SellPartsLVL3PanelSub8.add(FuelLVL3Label);
+        SellPartsLVL3PanelSub8.add(Labels.FuelLVL3Label);
         SellPartsLVL3PanelSub8.add(jbtnSellFuelLv3);
-        SellPartsLVL3PanelSub9.add(InteriorLVL3Label);
+        SellPartsLVL3PanelSub9.add(Labels.InteriorLVL3Label);
         SellPartsLVL3PanelSub9.add(jbtnSellInteriorLv3);
-        SellPartsLVL3PanelSub10.add(SteeringLVL3Label);
+        SellPartsLVL3PanelSub10.add(Labels.SteeringLVL3Label);
         SellPartsLVL3PanelSub10.add(jbtnSellSteeringLv3);
-        SellPartsLVL3PanelSub11.add(SuspensionLVL3Label);
+        SellPartsLVL3PanelSub11.add(Labels.SuspensionLVL3Label);
         SellPartsLVL3PanelSub11.add(jbtnSellSuspensionLv3);
-        SellPartsLVL3PanelSub12.add(TransmissionLVL3Label);
+        SellPartsLVL3PanelSub12.add(Labels.TransmissionLVL3Label);
         SellPartsLVL3PanelSub12.add(jbtnSellTransmissionLv3);
-        SellPartsLVL3PanelSub13.add(TiresLVL3Label);
+        SellPartsLVL3PanelSub13.add(Labels.TiresLVL3Label);
         SellPartsLVL3PanelSub13.add(jbtnSellTiresLv3);
         
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub);
@@ -1611,97 +1184,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL4PanelSub13 = new JPanel();
 	 	SellPartsLVL4PanelSub13.setLayout(new BoxLayout(SellPartsLVL4PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL4Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL4Label.setText("<html>Accessories LVL 4<br>" + "Count: " + Part.parts[79]);
-        
-        BodyLVL4Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL4Label.setText("<html>Body LVL 4<br>" + "Count: " + Part.parts[81]);
-        
-        BrakesLVL4Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL4Label.setText("<html>Brakes LVL 4<br>" + "Count: " + Part.parts[83]);
-        
-        CoolingLVL4Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL4Label.setText("<html>Cooling LVL 4<br>" + "Count: " + Part.parts[85]);
-        
-        ElectronicsLVL4Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL4Label.setText("<html>Electronics LVL 4<br>" + "Count: " + Part.parts[87]);
-        
-        EngineLVL4Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL4Label.setText("<html>Engine LVL 4<br>" + "Count: " + Part.parts[89]);
-        
-        ExaustLVL4Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL4Label.setText("<html>Exaust LVL 4<br>" + "Count: " + Part.parts[91]);
-        
-        FuelLVL4Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL4Label.setText("<html>Fuel LVL 4<br>" + "Count: " + Part.parts[93]);
-        
-        InteriorLVL4Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL4Label.setText("<html>Interior LVL 4<br>" + "Count: " + Part.parts[95]);
-        
-        SteeringLVL4Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.parts[97]);
-        
-        SuspensionLVL4Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL4Label.setText("<html>Suspension LVL 4<br>" + "Count: " + Part.parts[99]);
-        
-        TransmissionLVL4Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL4Label.setText("<html>Transmission LVL 4<br>" + "Count: " + Part.parts[101]);
-        
-        TiresLVL4Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL4Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL4Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL4Label.setText("<html>Tires LVL 4<br>" + "Count: " + Part.parts[103]);
-               
-        SellPartsLVL4PanelSub.add(AccessoriesLVL4Label);
+   	 	    	
+        SellPartsLVL4PanelSub.add(Labels.AccessoriesLVL4Label);
         SellPartsLVL4PanelSub.add(jbtnSellAccessoriesLv4);
-        SellPartsLVL4PanelSub2.add(BodyLVL4Label);
+        SellPartsLVL4PanelSub2.add(Labels.BodyLVL4Label);
         SellPartsLVL4PanelSub2.add(jbtnSellBodyLv4);
-        SellPartsLVL4PanelSub3.add(BrakesLVL4Label);
+        SellPartsLVL4PanelSub3.add(Labels.BrakesLVL4Label);
         SellPartsLVL4PanelSub3.add(jbtnSellBrakesLv4);
-        SellPartsLVL4PanelSub4.add(CoolingLVL4Label);
+        SellPartsLVL4PanelSub4.add(Labels.CoolingLVL4Label);
         SellPartsLVL4PanelSub4.add(jbtnSellCoolingLv4);
-        SellPartsLVL4PanelSub5.add(ElectronicsLVL4Label);
+        SellPartsLVL4PanelSub5.add(Labels.ElectronicsLVL4Label);
         SellPartsLVL4PanelSub5.add(jbtnSellElectronicsLv4);
-        SellPartsLVL4PanelSub6.add(EngineLVL4Label);
+        SellPartsLVL4PanelSub6.add(Labels.EngineLVL4Label);
         SellPartsLVL4PanelSub6.add(jbtnSellEngineLv4);
-        SellPartsLVL4PanelSub7.add(ExaustLVL4Label);
+        SellPartsLVL4PanelSub7.add(Labels.ExaustLVL4Label);
         SellPartsLVL4PanelSub7.add(jbtnSellExaustLv4);
-        SellPartsLVL4PanelSub8.add(FuelLVL4Label);
+        SellPartsLVL4PanelSub8.add(Labels.FuelLVL4Label);
         SellPartsLVL4PanelSub8.add(jbtnSellFuelLv4);
-        SellPartsLVL4PanelSub9.add(InteriorLVL4Label);
+        SellPartsLVL4PanelSub9.add(Labels.InteriorLVL4Label);
         SellPartsLVL4PanelSub9.add(jbtnSellInteriorLv4);
-        SellPartsLVL4PanelSub10.add(SteeringLVL4Label);
+        SellPartsLVL4PanelSub10.add(Labels.SteeringLVL4Label);
         SellPartsLVL4PanelSub10.add(jbtnSellSteeringLv4);
-        SellPartsLVL4PanelSub11.add(SuspensionLVL4Label);
+        SellPartsLVL4PanelSub11.add(Labels.SuspensionLVL4Label);
         SellPartsLVL4PanelSub11.add(jbtnSellSuspensionLv4);
-        SellPartsLVL4PanelSub12.add(TransmissionLVL4Label);
+        SellPartsLVL4PanelSub12.add(Labels.TransmissionLVL4Label);
         SellPartsLVL4PanelSub12.add(jbtnSellTransmissionLv4);
-        SellPartsLVL4PanelSub13.add(TiresLVL4Label);
+        SellPartsLVL4PanelSub13.add(Labels.TiresLVL4Label);
         SellPartsLVL4PanelSub13.add(jbtnSellTiresLv4);
         
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub);
@@ -1759,98 +1267,33 @@ ImagesHolder ih = new ImagesHolder();
 	 	SellPartsLVL5PanelSub12.setLayout(new BoxLayout(SellPartsLVL5PanelSub12, BoxLayout.PAGE_AXIS));
 	 	
 	 	JPanel SellPartsLVL5PanelSub13 = new JPanel();
-	 	SellPartsLVL5PanelSub13.setLayout(new BoxLayout(SellPartsLVL5PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL5Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL5Label.setText("<html>Accessories LVL 5<br>" + "Count: " + Part.parts[105]);
-        
-        BodyLVL5Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL5Label.setText("<html>Body LVL 5<br>" + "Count: " + Part.parts[107]);
-        
-        BrakesLVL5Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL5Label.setText("<html>Brakes LVL 5<br>" + "Count: " + Part.parts[109]);
-        
-        CoolingLVL5Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL5Label.setText("<html>Cooling LVL 5<br>" + "Count: " + Part.parts[111]);
-        
-        ElectronicsLVL5Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL5Label.setText("<html>Electronics LVL 5<br>" + "Count: " + Part.parts[113]);
-        
-        EngineLVL5Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL5Label.setText("<html>Engine LVL 5<br>" + "Count: " + Part.parts[115]);
-        
-        ExaustLVL5Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL5Label.setText("<html>Exaust LVL 5<br>" + "Count: " + Part.parts[117]);
-        
-        FuelLVL5Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL5Label.setText("<html>Fuel LVL 5<br>" + "Count: " + Part.parts[119]);
-        
-        InteriorLVL5Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL5Label.setText("<html>Interior LVL 5<br>" + "Count: " + Part.parts[121]);
-        
-        SteeringLVL5Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.parts[123]);
-        
-        SuspensionLVL5Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL5Label.setText("<html>Suspension LVL 5<br>" + "Count: " + Part.parts[125]);
-        
-        TransmissionLVL5Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL5Label.setText("<html>Transmission LVL 5<br>" + "Count: " + Part.parts[127]);
-        
-        TiresLVL5Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL5Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL5Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL5Label.setText("<html>Tires LVL 5<br>" + "Count: " + Part.parts[129]);
+	 	SellPartsLVL5PanelSub13.setLayout(new BoxLayout(SellPartsLVL5PanelSub13, BoxLayout.PAGE_AXIS));   	 	    	      
                
-        SellPartsLVL5PanelSub.add(AccessoriesLVL5Label);
+        SellPartsLVL5PanelSub.add(Labels.AccessoriesLVL5Label);
         SellPartsLVL5PanelSub.add(jbtnSellAccessoriesLv5);
-        SellPartsLVL5PanelSub2.add(BodyLVL5Label);
+        SellPartsLVL5PanelSub2.add(Labels.BodyLVL5Label);
         SellPartsLVL5PanelSub2.add(jbtnSellBodyLv5);
-        SellPartsLVL5PanelSub3.add(BrakesLVL5Label);
+        SellPartsLVL5PanelSub3.add(Labels.BrakesLVL5Label);
         SellPartsLVL5PanelSub3.add(jbtnSellBrakesLv5);
-        SellPartsLVL5PanelSub4.add(CoolingLVL5Label);
+        SellPartsLVL5PanelSub4.add(Labels.CoolingLVL5Label);
         SellPartsLVL5PanelSub4.add(jbtnSellCoolingLv5);
-        SellPartsLVL5PanelSub5.add(ElectronicsLVL5Label);
+        SellPartsLVL5PanelSub5.add(Labels.ElectronicsLVL5Label);
         SellPartsLVL5PanelSub5.add(jbtnSellElectronicsLv5);
-        SellPartsLVL5PanelSub6.add(EngineLVL5Label);
+        SellPartsLVL5PanelSub6.add(Labels.EngineLVL5Label);
         SellPartsLVL5PanelSub6.add(jbtnSellEngineLv5);
-        SellPartsLVL5PanelSub7.add(ExaustLVL5Label);
+        SellPartsLVL5PanelSub7.add(Labels.ExaustLVL5Label);
         SellPartsLVL5PanelSub7.add(jbtnSellExaustLv5);
-        SellPartsLVL5PanelSub8.add(FuelLVL5Label);
+        SellPartsLVL5PanelSub8.add(Labels.FuelLVL5Label);
         SellPartsLVL5PanelSub8.add(jbtnSellFuelLv5);
-        SellPartsLVL5PanelSub9.add(InteriorLVL5Label);
+        SellPartsLVL5PanelSub9.add(Labels.InteriorLVL5Label);
         SellPartsLVL5PanelSub9.add(jbtnSellInteriorLv5);
-        SellPartsLVL5PanelSub10.add(SteeringLVL5Label);
+        SellPartsLVL5PanelSub10.add(Labels.SteeringLVL5Label);
         SellPartsLVL5PanelSub10.add(jbtnSellSteeringLv5);
-        SellPartsLVL5PanelSub11.add(SuspensionLVL5Label);
+        SellPartsLVL5PanelSub11.add(Labels.SuspensionLVL5Label);
         SellPartsLVL5PanelSub11.add(jbtnSellSuspensionLv5);
-        SellPartsLVL5PanelSub12.add(TransmissionLVL5Label);
+        SellPartsLVL5PanelSub12.add(Labels.TransmissionLVL5Label);
         SellPartsLVL5PanelSub12.add(jbtnSellTransmissionLv5);
-        SellPartsLVL5PanelSub13.add(TiresLVL5Label);
+        SellPartsLVL5PanelSub13.add(Labels.TiresLVL5Label);
         SellPartsLVL5PanelSub13.add(jbtnSellTiresLv5);
         
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub);
@@ -1909,97 +1352,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL6PanelSub13 = new JPanel();
 	 	SellPartsLVL6PanelSub13.setLayout(new BoxLayout(SellPartsLVL6PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL6Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL6Label.setText("<html>Accessories LVL 6<br>" + "Count: " + Part.parts[131]);
-        
-        BodyLVL6Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL6Label.setText("<html>Body LVL 6<br>" + "Count: " + Part.parts[133]);
-        
-        BrakesLVL6Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL6Label.setText("<html>Brakes LVL 6<br>" + "Count: " + Part.parts[135]);
-        
-        CoolingLVL6Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL6Label.setText("<html>Cooling LVL 6<br>" + "Count: " + Part.parts[137]);
-        
-        ElectronicsLVL6Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL6Label.setText("<html>Electronics LVL 6<br>" + "Count: " + Part.parts[139]);
-        
-        EngineLVL6Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL6Label.setText("<html>Engine LVL 6<br>" + "Count: " + Part.parts[141]);
-        
-        ExaustLVL6Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL6Label.setText("<html>Exaust LVL 6<br>" + "Count: " + Part.parts[143]);
-        
-        FuelLVL6Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL6Label.setText("<html>Fuel LVL 6<br>" + "Count: " + Part.parts[145]);
-        
-        InteriorLVL6Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL6Label.setText("<html>Interior LVL 6<br>" + "Count: " + Part.parts[147]);
-        
-        SteeringLVL6Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.parts[149]);
-        
-        SuspensionLVL6Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL6Label.setText("<html>Suspension LVL 6<br>" + "Count: " + Part.parts[151]);
-        
-        TransmissionLVL6Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL6Label.setText("<html>Transmission LVL 6<br>" + "Count: " + Part.parts[153]);
-        
-        TiresLVL6Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL6Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL6Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL6Label.setText("<html>Tires LVL 6<br>" + "Count: " + Part.parts[155]);
-               
-        SellPartsLVL6PanelSub.add(AccessoriesLVL6Label);
+   	 	    	                     
+        SellPartsLVL6PanelSub.add(Labels.AccessoriesLVL6Label);
         SellPartsLVL6PanelSub.add(jbtnSellAccessoriesLv6);
-        SellPartsLVL6PanelSub2.add(BodyLVL6Label);
+        SellPartsLVL6PanelSub2.add(Labels.BodyLVL6Label);
         SellPartsLVL6PanelSub2.add(jbtnSellBodyLv6);
-        SellPartsLVL6PanelSub3.add(BrakesLVL6Label);
+        SellPartsLVL6PanelSub3.add(Labels.BrakesLVL6Label);
         SellPartsLVL6PanelSub3.add(jbtnSellBrakesLv6);
-        SellPartsLVL6PanelSub4.add(CoolingLVL6Label);
+        SellPartsLVL6PanelSub4.add(Labels.CoolingLVL6Label);
         SellPartsLVL6PanelSub4.add(jbtnSellCoolingLv6);
-        SellPartsLVL6PanelSub5.add(ElectronicsLVL6Label);
+        SellPartsLVL6PanelSub5.add(Labels.ElectronicsLVL6Label);
         SellPartsLVL6PanelSub5.add(jbtnSellElectronicsLv6);
-        SellPartsLVL6PanelSub6.add(EngineLVL6Label);
+        SellPartsLVL6PanelSub6.add(Labels.EngineLVL6Label);
         SellPartsLVL6PanelSub6.add(jbtnSellEngineLv6);
-        SellPartsLVL6PanelSub7.add(ExaustLVL6Label);
+        SellPartsLVL6PanelSub7.add(Labels.ExaustLVL6Label);
         SellPartsLVL6PanelSub7.add(jbtnSellExaustLv6);
-        SellPartsLVL6PanelSub8.add(FuelLVL6Label);
+        SellPartsLVL6PanelSub8.add(Labels.FuelLVL6Label);
         SellPartsLVL6PanelSub8.add(jbtnSellFuelLv6);
-        SellPartsLVL6PanelSub9.add(InteriorLVL6Label);
+        SellPartsLVL6PanelSub9.add(Labels.InteriorLVL6Label);
         SellPartsLVL6PanelSub9.add(jbtnSellInteriorLv6);
-        SellPartsLVL6PanelSub10.add(SteeringLVL6Label);
+        SellPartsLVL6PanelSub10.add(Labels.SteeringLVL6Label);
         SellPartsLVL6PanelSub10.add(jbtnSellSteeringLv6);
-        SellPartsLVL6PanelSub11.add(SuspensionLVL6Label);
+        SellPartsLVL6PanelSub11.add(Labels.SuspensionLVL6Label);
         SellPartsLVL6PanelSub11.add(jbtnSellSuspensionLv6);
-        SellPartsLVL6PanelSub12.add(TransmissionLVL6Label);
+        SellPartsLVL6PanelSub12.add(Labels.TransmissionLVL6Label);
         SellPartsLVL6PanelSub12.add(jbtnSellTransmissionLv6);
-        SellPartsLVL6PanelSub13.add(TiresLVL6Label);
+        SellPartsLVL6PanelSub13.add(Labels.TiresLVL6Label);
         SellPartsLVL6PanelSub13.add(jbtnSellTiresLv6);
         
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub);
@@ -2058,97 +1436,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL7PanelSub13 = new JPanel();
 	 	SellPartsLVL7PanelSub13.setLayout(new BoxLayout(SellPartsLVL7PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL7Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL7Label.setText("<html>Accessories LVL 7<br>" + "Count: " + Part.parts[157]);
-        
-        BodyLVL7Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL7Label.setText("<html>Body LVL 7<br>" + "Count: " + Part.parts[159]);
-        
-        BrakesLVL7Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL7Label.setText("<html>Brakes LVL 7<br>" + "Count: " + Part.parts[161]);
-        
-        CoolingLVL7Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL7Label.setText("<html>Cooling LVL 7<br>" + "Count: " + Part.parts[163]);
-        
-        ElectronicsLVL7Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL7Label.setText("<html>Electronics LVL 7<br>" + "Count: " + Part.parts[165]);
-        
-        EngineLVL7Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL7Label.setText("<html>Engine LVL 7<br>" + "Count: " + Part.parts[167]);
-        
-        ExaustLVL7Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL7Label.setText("<html>Exaust LVL 7<br>" + "Count: " + Part.parts[169]);
-        
-        FuelLVL7Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL7Label.setText("<html>Fuel LVL 7<br>" + "Count: " + Part.parts[171]);
-        
-        InteriorLVL7Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL7Label.setText("<html>Interior LVL 7<br>" + "Count: " + Part.parts[173]);
-        
-        SteeringLVL7Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.parts[175]);
-        
-        SuspensionLVL7Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL7Label.setText("<html>Suspension LVL 7<br>" + "Count: " + Part.parts[177]);
-        
-        TransmissionLVL7Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL7Label.setText("<html>Transmission LVL 7<br>" + "Count: " + Part.parts[179]);
-        
-        TiresLVL7Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL7Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL7Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL7Label.setText("<html>Tires LVL 7<br>" + "Count: " + Part.parts[181]);
-               
-        SellPartsLVL7PanelSub.add(AccessoriesLVL7Label);
+              
+        SellPartsLVL7PanelSub.add(Labels.AccessoriesLVL7Label);
         SellPartsLVL7PanelSub.add(jbtnSellAccessoriesLv7);
-        SellPartsLVL7PanelSub2.add(BodyLVL7Label);
+        SellPartsLVL7PanelSub2.add(Labels.BodyLVL7Label);
         SellPartsLVL7PanelSub2.add(jbtnSellBodyLv7);
-        SellPartsLVL7PanelSub3.add(BrakesLVL7Label);
+        SellPartsLVL7PanelSub3.add(Labels.BrakesLVL7Label);
         SellPartsLVL7PanelSub3.add(jbtnSellBrakesLv7);
-        SellPartsLVL7PanelSub4.add(CoolingLVL7Label);
+        SellPartsLVL7PanelSub4.add(Labels.CoolingLVL7Label);
         SellPartsLVL7PanelSub4.add(jbtnSellCoolingLv7);
-        SellPartsLVL7PanelSub5.add(ElectronicsLVL7Label);
+        SellPartsLVL7PanelSub5.add(Labels.ElectronicsLVL7Label);
         SellPartsLVL7PanelSub5.add(jbtnSellElectronicsLv7);
-        SellPartsLVL7PanelSub6.add(EngineLVL7Label);
+        SellPartsLVL7PanelSub6.add(Labels.EngineLVL7Label);
         SellPartsLVL7PanelSub6.add(jbtnSellEngineLv7);
-        SellPartsLVL7PanelSub7.add(ExaustLVL7Label);
+        SellPartsLVL7PanelSub7.add(Labels.ExaustLVL7Label);
         SellPartsLVL7PanelSub7.add(jbtnSellExaustLv7);
-        SellPartsLVL7PanelSub8.add(FuelLVL7Label);
+        SellPartsLVL7PanelSub8.add(Labels.FuelLVL7Label);
         SellPartsLVL7PanelSub8.add(jbtnSellFuelLv7);
-        SellPartsLVL7PanelSub9.add(InteriorLVL7Label);
+        SellPartsLVL7PanelSub9.add(Labels.InteriorLVL7Label);
         SellPartsLVL7PanelSub9.add(jbtnSellInteriorLv7);
-        SellPartsLVL7PanelSub10.add(SteeringLVL7Label);
+        SellPartsLVL7PanelSub10.add(Labels.SteeringLVL7Label);
         SellPartsLVL7PanelSub10.add(jbtnSellSteeringLv7);
-        SellPartsLVL7PanelSub11.add(SuspensionLVL7Label);
+        SellPartsLVL7PanelSub11.add(Labels.SuspensionLVL7Label);
         SellPartsLVL7PanelSub11.add(jbtnSellSuspensionLv7);
-        SellPartsLVL7PanelSub12.add(TransmissionLVL7Label);
+        SellPartsLVL7PanelSub12.add(Labels.TransmissionLVL7Label);
         SellPartsLVL7PanelSub12.add(jbtnSellTransmissionLv7);
-        SellPartsLVL7PanelSub13.add(TiresLVL7Label);
+        SellPartsLVL7PanelSub13.add(Labels.TiresLVL7Label);
         SellPartsLVL7PanelSub13.add(jbtnSellTiresLv7);
         
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub);
@@ -2207,97 +1520,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL8PanelSub13 = new JPanel();
 	 	SellPartsLVL8PanelSub13.setLayout(new BoxLayout(SellPartsLVL8PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL8Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL8Label.setText("<html>Accessories LVL 8<br>" + "Count: " + Part.parts[183]);
-        
-        BodyLVL8Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL8Label.setText("<html>Body LVL 8<br>" + "Count: " + Part.parts[185]);
-        
-        BrakesLVL8Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL8Label.setText("<html>Brakes LVL 8<br>" + "Count: " + Part.parts[187]);
-        
-        CoolingLVL8Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL8Label.setText("<html>Cooling LVL 8<br>" + "Count: " + Part.parts[189]);
-        
-        ElectronicsLVL8Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL8Label.setText("<html>Electronics LVL 8<br>" + "Count: " + Part.parts[191]);
-        
-        EngineLVL8Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL8Label.setText("<html>Engine LVL 8<br>" + "Count: " + Part.parts[193]);
-        
-        ExaustLVL8Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL8Label.setText("<html>Exaust LVL 8<br>" + "Count: " + Part.parts[195]);
-        
-        FuelLVL8Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL8Label.setText("<html>Fuel LVL 8<br>" + "Count: " + Part.parts[197]);
-        
-        InteriorLVL8Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL8Label.setText("<html>Interior LVL 8<br>" + "Count: " + Part.parts[199]);
-        
-        SteeringLVL8Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL8Label.setText("<html>Steering LVL 8<br>" + "Count: " + Part.parts[201]);
-        
-        SuspensionLVL8Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL8Label.setText("<html>Suspension LVL 8<br>" + "Count: " + Part.parts[203]);
-        
-        TransmissionLVL8Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL8Label.setText("<html>Transmission LVL 8<br>" + "Count: " + Part.parts[205]);
-        
-        TiresLVL8Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL8Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL8Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL8Label.setText("<html>Tires LVL 8<br>" + "Count: " + Part.parts[207]);
-    
-        SellPartsLVL8PanelSub.add(AccessoriesLVL8Label);
+
+        SellPartsLVL8PanelSub.add(Labels.AccessoriesLVL8Label);
         SellPartsLVL8PanelSub.add(jbtnSellAccessoriesLv8);
-        SellPartsLVL8PanelSub2.add(BodyLVL8Label);
+        SellPartsLVL8PanelSub2.add(Labels.BodyLVL8Label);
         SellPartsLVL8PanelSub2.add(jbtnSellBodyLv8);
-        SellPartsLVL8PanelSub3.add(BrakesLVL8Label);
+        SellPartsLVL8PanelSub3.add(Labels.BrakesLVL8Label);
         SellPartsLVL8PanelSub3.add(jbtnSellBrakesLv8);
-        SellPartsLVL8PanelSub4.add(CoolingLVL8Label);
+        SellPartsLVL8PanelSub4.add(Labels.CoolingLVL8Label);
         SellPartsLVL8PanelSub4.add(jbtnSellCoolingLv8);
-        SellPartsLVL8PanelSub5.add(ElectronicsLVL8Label);
+        SellPartsLVL8PanelSub5.add(Labels.ElectronicsLVL8Label);
         SellPartsLVL8PanelSub5.add(jbtnSellElectronicsLv8);
-        SellPartsLVL8PanelSub6.add(EngineLVL8Label);
+        SellPartsLVL8PanelSub6.add(Labels.EngineLVL8Label);
         SellPartsLVL8PanelSub6.add(jbtnSellEngineLv8);
-        SellPartsLVL8PanelSub7.add(ExaustLVL8Label);
+        SellPartsLVL8PanelSub7.add(Labels.ExaustLVL8Label);
         SellPartsLVL8PanelSub7.add(jbtnSellExaustLv8);
-        SellPartsLVL8PanelSub8.add(FuelLVL8Label);
+        SellPartsLVL8PanelSub8.add(Labels.FuelLVL8Label);
         SellPartsLVL8PanelSub8.add(jbtnSellFuelLv8);
-        SellPartsLVL8PanelSub9.add(InteriorLVL8Label);
+        SellPartsLVL8PanelSub9.add(Labels.InteriorLVL8Label);
         SellPartsLVL8PanelSub9.add(jbtnSellInteriorLv8);
-        SellPartsLVL8PanelSub10.add(SteeringLVL8Label);
+        SellPartsLVL8PanelSub10.add(Labels.SteeringLVL8Label);
         SellPartsLVL8PanelSub10.add(jbtnSellSteeringLv8);
-        SellPartsLVL8PanelSub11.add(SuspensionLVL8Label);
+        SellPartsLVL8PanelSub11.add(Labels.SuspensionLVL8Label);
         SellPartsLVL8PanelSub11.add(jbtnSellSuspensionLv8);
-        SellPartsLVL8PanelSub12.add(TransmissionLVL8Label);
+        SellPartsLVL8PanelSub12.add(Labels.TransmissionLVL8Label);
         SellPartsLVL8PanelSub12.add(jbtnSellTransmissionLv8);
-        SellPartsLVL8PanelSub13.add(TiresLVL8Label);
+        SellPartsLVL8PanelSub13.add(Labels.TiresLVL8Label);
         SellPartsLVL8PanelSub13.add(jbtnSellTiresLv8);
         
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub);
@@ -2356,97 +1604,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL9PanelSub13 = new JPanel();
 	 	SellPartsLVL9PanelSub13.setLayout(new BoxLayout(SellPartsLVL9PanelSub13, BoxLayout.PAGE_AXIS));
-   	 	
-	 	AccessoriesLVL9Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL9Label.setText("<html>Accessories LVL 9<br>" + "Count: " + Part.parts[209]);
-        
-        BodyLVL9Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL9Label.setText("<html>Body LVL 9<br>" + "Count: " + Part.parts[211]);
-        
-        BrakesLVL9Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL9Label.setText("<html>Brakes LVL 9<br>" + "Count: " + Part.parts[213]);
-        
-        CoolingLVL9Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL9Label.setText("<html>Cooling LVL 9<br>" + "Count: " + Part.parts[215]);
-        
-        ElectronicsLVL9Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL9Label.setText("<html>Electronics LVL 9<br>" + "Count: " + Part.parts[217]);
-        
-        EngineLVL9Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL9Label.setText("<html>Engine LVL 9<br>" + "Count: " + Part.parts[219]);
-        
-        ExaustLVL9Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL9Label.setText("<html>Exaust LVL 9<br>" + "Count: " + Part.parts[221]);
-        
-        FuelLVL9Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL9Label.setText("<html>Fuel LVL 9<br>" + "Count: " + Part.parts[223]);
-        
-        InteriorLVL9Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL9Label.setText("<html>Interior LVL 9<br>" + "Count: " + Part.parts[225]);
-        
-        SteeringLVL9Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL9Label.setText("<html>Steering LVL 9<br>" + "Count: " + Part.parts[227]);
-        
-        SuspensionLVL9Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL9Label.setText("<html>Suspension LVL 9<br>" + "Count: " + Part.parts[229]);
-        
-        TransmissionLVL9Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL9Label.setText("<html>Transmission LVL 9<br>" + "Count: " + Part.parts[231]);
-        
-        TiresLVL9Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL9Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL9Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL9Label.setText("<html>Tires LVL 9<br>" + "Count: " + Part.parts[233]);
-               
-        SellPartsLVL9PanelSub.add(AccessoriesLVL9Label);
+	 	
+        SellPartsLVL9PanelSub.add(Labels.AccessoriesLVL9Label);
         SellPartsLVL9PanelSub.add(jbtnSellAccessoriesLv9);
-        SellPartsLVL9PanelSub2.add(BodyLVL9Label);
+        SellPartsLVL9PanelSub2.add(Labels.BodyLVL9Label);
         SellPartsLVL9PanelSub2.add(jbtnSellBodyLv9);
-        SellPartsLVL9PanelSub3.add(BrakesLVL9Label);
+        SellPartsLVL9PanelSub3.add(Labels.BrakesLVL9Label);
         SellPartsLVL9PanelSub3.add(jbtnSellBrakesLv9);
-        SellPartsLVL9PanelSub4.add(CoolingLVL9Label);
+        SellPartsLVL9PanelSub4.add(Labels.CoolingLVL9Label);
         SellPartsLVL9PanelSub4.add(jbtnSellCoolingLv9);
-        SellPartsLVL9PanelSub5.add(ElectronicsLVL9Label);
+        SellPartsLVL9PanelSub5.add(Labels.ElectronicsLVL9Label);
         SellPartsLVL9PanelSub5.add(jbtnSellElectronicsLv9);
-        SellPartsLVL9PanelSub6.add(EngineLVL9Label);
+        SellPartsLVL9PanelSub6.add(Labels.EngineLVL9Label);
         SellPartsLVL9PanelSub6.add(jbtnSellEngineLv9);
-        SellPartsLVL9PanelSub7.add(ExaustLVL9Label);
+        SellPartsLVL9PanelSub7.add(Labels.ExaustLVL9Label);
         SellPartsLVL9PanelSub7.add(jbtnSellExaustLv9);
-        SellPartsLVL9PanelSub8.add(FuelLVL9Label);
+        SellPartsLVL9PanelSub8.add(Labels.FuelLVL9Label);
         SellPartsLVL9PanelSub8.add(jbtnSellFuelLv9);
-        SellPartsLVL9PanelSub9.add(InteriorLVL9Label);
+        SellPartsLVL9PanelSub9.add(Labels.InteriorLVL9Label);
         SellPartsLVL9PanelSub9.add(jbtnSellInteriorLv9);
-        SellPartsLVL9PanelSub10.add(SteeringLVL9Label);
+        SellPartsLVL9PanelSub10.add(Labels.SteeringLVL9Label);
         SellPartsLVL9PanelSub10.add(jbtnSellSteeringLv9);
-        SellPartsLVL9PanelSub11.add(SuspensionLVL9Label);
+        SellPartsLVL9PanelSub11.add(Labels.SuspensionLVL9Label);
         SellPartsLVL9PanelSub11.add(jbtnSellSuspensionLv9);
-        SellPartsLVL9PanelSub12.add(TransmissionLVL9Label);
+        SellPartsLVL9PanelSub12.add(Labels.TransmissionLVL9Label);
         SellPartsLVL9PanelSub12.add(jbtnSellTransmissionLv9);
-        SellPartsLVL9PanelSub13.add(TiresLVL9Label);
+        SellPartsLVL9PanelSub13.add(Labels.TiresLVL9Label);
         SellPartsLVL9PanelSub13.add(jbtnSellTiresLv9);
         
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub);
@@ -2505,97 +1688,32 @@ ImagesHolder ih = new ImagesHolder();
 	 	
 	 	JPanel SellPartsLVL10PanelSub13 = new JPanel();
 	 	SellPartsLVL10PanelSub13.setLayout(new BoxLayout(SellPartsLVL10PanelSub13, BoxLayout.PAGE_AXIS));
-        
-	 	AccessoriesLVL10Label = new JLabel(ImagesHolder.AccessoriesIcon);    	
-        AccessoriesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        AccessoriesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        AccessoriesLVL10Label.setText("<html>Accessories LVL 10<br>" + "Count: " + Part.parts[235]);
-        
-        BodyLVL10Label = new JLabel(ImagesHolder.BodyIcon);    	
-        BodyLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        BodyLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BodyLVL10Label.setText("<html>Body LVL 10<br>" + "Count: " + Part.parts[237]);
-        
-        BrakesLVL10Label = new JLabel(ImagesHolder.BrakesIcon);    	
-        BrakesLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        BrakesLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        BrakesLVL10Label.setText("<html>Brakes LVL 10<br>" + "Count: " + Part.parts[239]);
-        
-        CoolingLVL10Label = new JLabel(ImagesHolder.CoolingIcon);    	
-        CoolingLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        CoolingLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        CoolingLVL10Label.setText("<html>Cooling LVL 10<br>" + "Count: " + Part.parts[241]);
-        
-        ElectronicsLVL10Label = new JLabel(ImagesHolder.ElectronicsIcon);    	
-        ElectronicsLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        ElectronicsLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ElectronicsLVL10Label.setText("<html>Electronics LVL 10<br>" + "Count: " + Part.parts[243]);
-        
-        EngineLVL10Label = new JLabel(ImagesHolder.EngineIcon);    	
-        EngineLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        EngineLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        EngineLVL10Label.setText("<html>Engine LVL 10<br>" + "Count: " + Part.parts[245]);
-        
-        ExaustLVL10Label = new JLabel(ImagesHolder.ExaustIcon);    	
-        ExaustLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        ExaustLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        ExaustLVL10Label.setText("<html>Exaust LVL 10<br>" + "Count: " + Part.parts[247]);
-        
-        FuelLVL10Label = new JLabel(ImagesHolder.FuelIcon);    	
-        FuelLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        FuelLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        FuelLVL10Label.setText("<html>Fuel LVL 10<br>" + "Count: " + Part.parts[249]);
-        
-        InteriorLVL10Label = new JLabel(ImagesHolder.InteriorIcon);    	
-        InteriorLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        InteriorLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        InteriorLVL10Label.setText("<html>Interior LVL 10<br>" + "Count: " + Part.parts[251]);
-        
-        SteeringLVL10Label = new JLabel(ImagesHolder.SteeringIcon);    	
-        SteeringLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        SteeringLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SteeringLVL10Label.setText("<html>Steering LVL 10<br>" + "Count: " + Part.parts[253]);
-        
-        SuspensionLVL10Label = new JLabel(ImagesHolder.SuspensionIcon);    	
-        SuspensionLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        SuspensionLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        SuspensionLVL10Label.setText("<html>Suspension LVL 10<br>" + "Count: " + Part.parts[255]);
-        
-        TransmissionLVL10Label = new JLabel(ImagesHolder.TransmissionIcon);    	
-        TransmissionLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        TransmissionLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TransmissionLVL10Label.setText("<html>Transmission LVL 10<br>" + "Count: " + Part.parts[257]);
-        
-        TiresLVL10Label = new JLabel(ImagesHolder.TiresIcon);    	
-        TiresLVL10Label.setHorizontalTextPosition(JLabel.CENTER);
-        TiresLVL10Label.setVerticalTextPosition(JLabel.BOTTOM);
-        TiresLVL10Label.setText("<html>Tires LVL 10<br>" + "Count: " + Part.parts[259]);
-               
-        SellPartsLVL10PanelSub.add(AccessoriesLVL10Label);
+       
+        SellPartsLVL10PanelSub.add(Labels.AccessoriesLVL10Label);
         SellPartsLVL10PanelSub.add(jbtnSellAccessoriesLv10);
-        SellPartsLVL10PanelSub2.add(BodyLVL10Label);
+        SellPartsLVL10PanelSub2.add(Labels.BodyLVL10Label);
         SellPartsLVL10PanelSub2.add(jbtnSellBodyLv10);
-        SellPartsLVL10PanelSub3.add(BrakesLVL10Label);
+        SellPartsLVL10PanelSub3.add(Labels.BrakesLVL10Label);
         SellPartsLVL10PanelSub3.add(jbtnSellBrakesLv10);
-        SellPartsLVL10PanelSub4.add(CoolingLVL10Label);
+        SellPartsLVL10PanelSub4.add(Labels.CoolingLVL10Label);
         SellPartsLVL10PanelSub4.add(jbtnSellCoolingLv10);
-        SellPartsLVL10PanelSub5.add(ElectronicsLVL10Label);
+        SellPartsLVL10PanelSub5.add(Labels.ElectronicsLVL10Label);
         SellPartsLVL10PanelSub5.add(jbtnSellElectronicsLv10);
-        SellPartsLVL10PanelSub6.add(EngineLVL10Label);
+        SellPartsLVL10PanelSub6.add(Labels.EngineLVL10Label);
         SellPartsLVL10PanelSub6.add(jbtnSellEngineLv10);
-        SellPartsLVL10PanelSub7.add(ExaustLVL10Label);
+        SellPartsLVL10PanelSub7.add(Labels.ExaustLVL10Label);
         SellPartsLVL10PanelSub7.add(jbtnSellExaustLv10);
-        SellPartsLVL10PanelSub8.add(FuelLVL10Label);
+        SellPartsLVL10PanelSub8.add(Labels.FuelLVL10Label);
         SellPartsLVL10PanelSub8.add(jbtnSellFuelLv10);
-        SellPartsLVL10PanelSub9.add(InteriorLVL10Label);
+        SellPartsLVL10PanelSub9.add(Labels.InteriorLVL10Label);
         SellPartsLVL10PanelSub9.add(jbtnSellInteriorLv10);
-        SellPartsLVL10PanelSub10.add(SteeringLVL10Label);
+        SellPartsLVL10PanelSub10.add(Labels.SteeringLVL10Label);
         SellPartsLVL10PanelSub10.add(jbtnSellSteeringLv10);
-        SellPartsLVL10PanelSub11.add(SuspensionLVL10Label);
+        SellPartsLVL10PanelSub11.add(Labels.SuspensionLVL10Label);
         SellPartsLVL10PanelSub11.add(jbtnSellSuspensionLv10);
-        SellPartsLVL10PanelSub12.add(TransmissionLVL10Label);
+        SellPartsLVL10PanelSub12.add(Labels.TransmissionLVL10Label);
         SellPartsLVL10PanelSub12.add(jbtnSellTransmissionLv10);
-        SellPartsLVL10PanelSub13.add(TiresLVL10Label);
+        SellPartsLVL10PanelSub13.add(Labels.TiresLVL10Label);
         SellPartsLVL10PanelSub13.add(jbtnSellTiresLv10);
         
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub);
@@ -2611,18 +1729,13 @@ ImagesHolder ih = new ImagesHolder();
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub11);
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub12);
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub13);
+        
+        // Settings Panel
+        
+   	 	JPanel SettingsPanel = new JPanel();
    	 	
-        tabbedPane.addTab(Click, MainPanel);
-        tabbedPane.addTab(Upgrades, UpgradesPanel);
-        tabbedPane.addTab(BuyBoxes, BuyBoxesPanel);
-        tabbedPane.addTab(OpenBoxes, OpenBoxesPanel);
-        tabbedPane.addTab(BuildCars, BuildCarsPanel);
-        tabbedPane.addTab(BuyFrames, BuyFramesPanel);
-
-        pane.add(tabbedPane, BorderLayout.CENTER);
-
-      
-      
+	 	//TabbedPane 
+     
       JTabbedPane tabbedPane2 = new JTabbedPane();
       tabbedPane2.setTabPlacement(JTabbedPane.RIGHT);
       tabbedPane2.addTab(LVL1, SellPartsLVL1Panel);
@@ -2636,7 +1749,16 @@ ImagesHolder ih = new ImagesHolder();
       tabbedPane2.addTab(LVL9, SellPartsLVL9Panel);
       tabbedPane2.addTab(LVL10, SellPartsLVL10Panel);
    	
-   	  tabbedPane.add(SellParts ,tabbedPane2);
+      tabbedPane.addTab(Click, MainPanel);
+      tabbedPane.addTab(Upgrades, UpgradesPanel);
+      tabbedPane.addTab(BuyBoxes, BuyBoxesPanel);
+      tabbedPane.addTab(OpenBoxes, OpenBoxesPanel);
+      tabbedPane.addTab(BuildCars, BuildCarsPanel);
+      tabbedPane.addTab(BuyFrames, BuyFramesPanel);
+      tabbedPane.add(SellParts ,tabbedPane2);
+      tabbedPane.addTab(Settings, SettingsPanel);
+    
+      pane.add(tabbedPane, BorderLayout.CENTER);
       
     }
     
@@ -2749,7 +1871,6 @@ ImagesHolder ih = new ImagesHolder();
  	
 
 	MainHolder CarMain = new MainHolder();
-	ImagesHolder ImagesHolder = new ImagesHolder();
     BoxesHolder Box = new BoxesHolder();
     FramesHolder CarFrame = new FramesHolder();
     PartHolder Part = new PartHolder();
@@ -2766,18 +1887,624 @@ ImagesHolder ih = new ImagesHolder();
     CarLevel9Holder CarsLv9 = new CarLevel9Holder();
     CarLevel10Holder CarsLv10 = new CarLevel10Holder();
 
+    void refresh() {			
+		Labels.MoneyLabel.setText("<html>Money: " + CarMain.main[0] + "<br>Money Clicks: " + CarMain.main[1]);
+		Labels.BoxesLabel.setText("<html>Boxes: " + CarMain.main[2] + "<br>Boxes Clicks: " + CarMain.main[3]);
+		Labels.BoxesLVLLabel.setText("Boxes Level: " + CarMain.main[4]);
+		Labels.PlayerLabel.setText("Player Level: " + CarMain.main[5]);
+		Labels.GarageLabel.setText("Garage Level: " + CarMain.main[6]);
+		Labels.BoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
+		Labels.BoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
+		Labels.BoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
+		Labels.BoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
+		Labels.BoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
+		Labels.BoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
+		Labels.BoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
+		Labels.BoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
+		Labels.BoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
+		Labels.BoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
+		Labels.OpenBoxesLVL1Label.setText("<html>1 LVL Box<br>" + "Count: " + Box.boxes[1]);
+		Labels.OpenBoxesLVL2Label.setText("<html>2 LVL Box<br>" + "Count: " + Box.boxes[3]);
+		Labels.OpenBoxesLVL3Label.setText("<html>3 LVL Box<br>" + "Count: " + Box.boxes[5]);
+		Labels.OpenBoxesLVL4Label.setText("<html>4 LVL Box<br>" + "Count: " + Box.boxes[7]);
+		Labels.OpenBoxesLVL5Label.setText("<html>5 LVL Box<br>" + "Count: " + Box.boxes[9]);
+		Labels.OpenBoxesLVL6Label.setText("<html>6 LVL Box<br>" + "Count: " + Box.boxes[11]);
+		Labels.OpenBoxesLVL7Label.setText("<html>7 LVL Box<br>" + "Count: " + Box.boxes[13]);
+		Labels.OpenBoxesLVL8Label.setText("<html>8 LVL Box<br>" + "Count: " + Box.boxes[15]);
+		Labels.OpenBoxesLVL9Label.setText("<html>9 LVL Box<br>" + "Count: " + Box.boxes[17]);
+		Labels.OpenBoxesLVL10Label.setText("<html>10 LVL Box<br>" + "Count: " + Box.boxes[19]);
+		Labels.FrameLv1Label.setText("<html>1 LVL Frame<br>" + "Count: " + CarFrame.frames[1]);
+		Labels.FrameLv2Label.setText("<html>2 LVL Frame<br>" + "Count: " + CarFrame.frames[3]);
+		Labels.FrameLv3Label.setText("<html>3 LVL Frame<br>" + "Count: " + CarFrame.frames[5]);
+		Labels.FrameLv4Label.setText("<html>4 LVL Frame<br>" + "Count: " + CarFrame.frames[7]);
+		Labels.FrameLv5Label.setText("<html>5 LVL Frame<br>" + "Count: " + CarFrame.frames[9]);
+		Labels.FrameLv6Label.setText("<html>6 LVL Frame<br>" + "Count: " + CarFrame.frames[11]);
+		Labels.FrameLv7Label.setText("<html>7 LVL Frame<br>" + "Count: " + CarFrame.frames[13]);
+		Labels.FrameLv8Label.setText("<html>8 LVL Frame<br>" + "Count: " + CarFrame.frames[15]);
+		Labels.FrameLv9Label.setText("<html>9 LVL Frame<br>" + "Count: " + CarFrame.frames[17]);
+		Labels.FrameLv10Label.setText("<html>10 LVL Frame<br>" + "Count: " + CarFrame.frames[19]);
+		Labels.CarsLv1Label.setText("<html>1 LVL Cars<br>" + "Owned: " + CountLv1Cars() + " of 20");
+		Labels.CarsLv2Label.setText("<html>2 LVL Cars<br>" + "Owned: " + CountLv2Cars() + " of 20");
+		Labels.CarsLv3Label.setText("<html>3 LVL Cars<br>" + "Owned: " + CountLv3Cars() + " of 20");
+		Labels.CarsLv4Label.setText("<html>4 LVL Cars<br>" + "Owned: " + CountLv4Cars() + " of 20");
+		Labels.CarsLv5Label.setText("<html>5 LVL Cars<br>" + "Owned: " + CountLv5Cars() + " of 20");
+		Labels.CarsLv6Label.setText("<html>6 LVL Cars<br>" + "Owned: " + CountLv6Cars() + " of 20");
+		Labels.CarsLv7Label.setText("<html>7 LVL Cars<br>" + "Owned: " + CountLv7Cars() + " of 20");
+		Labels.CarsLv8Label.setText("<html>8 LVL Cars<br>" + "Owned: " + CountLv8Cars() + " of 20");
+		Labels.CarsLv9Label.setText("<html>9 LVL Cars<br>" + "Owned: " + CountLv9Cars() + " of 20");
+		Labels.CarsLv10Label.setText("<html>10 LVL Cars<br>" + "Owned: " + CountLv10Cars() + " of 20");
+		Labels.AccessoriesLVL1Label.setText("<html>Accessories LVL 1<br>" + "Count: " + Part.parts[1]);
+		Labels.BodyLVL1Label.setText("<html>Body LVL 1<br>" + "Count: " + Part.parts[3]);
+		Labels.BrakesLVL1Label.setText("<html>Brakes LVL 1<br>" + "Count: " + Part.parts[5]);
+		Labels.CoolingLVL1Label.setText("<html>Cooling LVL 1<br>" + "Count: " + Part.parts[7]);
+		Labels.ElectronicsLVL1Label.setText("<html>Electronics LVL 1<br>" + "Count: " + Part.parts[9]);
+		Labels.EngineLVL1Label.setText("<html>Engine LVL 1<br>" + "Count: " + Part.parts[11]);
+		Labels.ExaustLVL1Label.setText("<html>Exaust LVL 1<br>" + "Count: " + Part.parts[13]);
+		Labels.FuelLVL1Label.setText("<html>Fuel LVL 1<br>" + "Count: " + Part.parts[15]);
+		Labels.InteriorLVL1Label.setText("<html>Interior LVL 1<br>" + "Count: " + Part.parts[17]);
+		Labels.SteeringLVL1Label.setText("<html>Steering LVL 1<br>" + "Count: " + Part.parts[19]);
+		Labels.SuspensionLVL1Label.setText("<html>Suspension LVL 1<br>" + "Count: " + Part.parts[21]);
+		Labels.TransmissionLVL1Label.setText("<html>Transmission LVL 1<br>" + "Count: " + Part.parts[23]);
+		Labels.TiresLVL1Label.setText("<html>Tires LVL 1<br>" + "Count: " + Part.parts[25]);
+		Labels.AccessoriesLVL2Label.setText("<html>Accessories LVL 2<br>" + "Count: " + Part.parts[27]);
+		Labels.BodyLVL2Label.setText("<html>Body LVL 2<br>" + "Count: " + Part.parts[29]);
+		Labels.BrakesLVL2Label.setText("<html>Brakes LVL 2<br>" + "Count: " + Part.parts[31]);
+		Labels.CoolingLVL2Label.setText("<html>Cooling LVL 2<br>" + "Count: " + Part.parts[33]);
+		Labels.ElectronicsLVL2Label.setText("<html>Electronics LVL 2<br>" + "Count: " + Part.parts[35]);
+		Labels.EngineLVL2Label.setText("<html>Engine LVL 2<br>" + "Count: " + Part.parts[37]);
+		Labels.ExaustLVL2Label.setText("<html>Exaust LVL 2<br>" + "Count: " + Part.parts[39]);
+		Labels.FuelLVL2Label.setText("<html>Fuel LVL 2<br>" + "Count: " + Part.parts[41]);
+		Labels.InteriorLVL2Label.setText("<html>Interior LVL 2<br>" + "Count: " + Part.parts[43]);
+		Labels.SteeringLVL2Label.setText("<html>Steering LVL 2<br>" + "Count: " + Part.parts[45]);
+		Labels.SuspensionLVL2Label.setText("<html>Suspension LVL 2<br>" + "Count: " + Part.parts[47]);
+		Labels.TransmissionLVL2Label.setText("<html>Transmission LVL 2<br>" + "Count: " + Part.parts[49]);
+		Labels.TiresLVL2Label.setText("<html>Tires LVL 2<br>" + "Count: " + Part.parts[51]);
+		Labels.AccessoriesLVL3Label.setText("<html>Accessories LVL 3<br>" + "Count: " + Part.parts[53]);
+		Labels.BodyLVL3Label.setText("<html>Body LVL 3<br>" + "Count: " + Part.parts[55]);
+		Labels.BrakesLVL3Label.setText("<html>Brakes LVL 3<br>" + "Count: " + Part.parts[57]);
+		Labels.CoolingLVL3Label.setText("<html>Cooling LVL 3<br>" + "Count: " + Part.parts[59]);
+		Labels.ElectronicsLVL3Label.setText("<html>Electronics LVL 3<br>" + "Count: " + Part.parts[61]);
+		Labels.EngineLVL3Label.setText("<html>Engine LVL 3<br>" + "Count: " + Part.parts[63]);
+		Labels.ExaustLVL3Label.setText("<html>Exaust LVL 3<br>" + "Count: " + Part.parts[65]);
+		Labels.FuelLVL3Label.setText("<html>Fuel LVL 3<br>" + "Count: " + Part.parts[67]);
+		Labels.InteriorLVL3Label.setText("<html>Interior LVL 3<br>" + "Count: " + Part.parts[69]);
+		Labels.SteeringLVL3Label.setText("<html>Steering LVL 3<br>" + "Count: " + Part.parts[71]);
+		Labels.SuspensionLVL3Label.setText("<html>Suspension LVL 3<br>" + "Count: " + Part.parts[73]);
+		Labels.TransmissionLVL3Label.setText("<html>Transmission LVL 3<br>" + "Count: " + Part.parts[75]);
+		Labels.TiresLVL3Label.setText("<html>Tires LVL 3<br>" + "Count: " + Part.parts[77]);
+		Labels.AccessoriesLVL4Label.setText("<html>Accessories LVL 4<br>" + "Count: " + Part.parts[79]);
+		Labels.BodyLVL4Label.setText("<html>Body LVL 4<br>" + "Count: " + Part.parts[81]);
+		Labels.BrakesLVL4Label.setText("<html>Brakes LVL 4<br>" + "Count: " + Part.parts[83]);
+		Labels.CoolingLVL4Label.setText("<html>Cooling LVL 4<br>" + "Count: " + Part.parts[85]);
+		Labels.ElectronicsLVL4Label.setText("<html>Electronics LVL 4<br>" + "Count: " + Part.parts[87]);
+		Labels.EngineLVL4Label.setText("<html>Engine LVL 4<br>" + "Count: " + Part.parts[89]);
+		Labels.ExaustLVL4Label.setText("<html>Exaust LVL 4<br>" + "Count: " + Part.parts[91]);
+		Labels.FuelLVL4Label.setText("<html>Fuel LVL 4<br>" + "Count: " + Part.parts[93]);
+		Labels.InteriorLVL4Label.setText("<html>Interior LVL 4<br>" + "Count: " + Part.parts[95]);
+		Labels.SteeringLVL4Label.setText("<html>Steering LVL 4<br>" + "Count: " + Part.parts[97]);
+		Labels.SuspensionLVL4Label.setText("<html>Suspension LVL 4<br>" + "Count: " + Part.parts[99]);
+		Labels.TransmissionLVL4Label.setText("<html>Transmission LVL 4<br>" + "Count: " + Part.parts[101]);
+		Labels.TiresLVL4Label.setText("<html>Tires LVL 4<br>" + "Count: " + Part.parts[103]);
+		Labels.AccessoriesLVL5Label.setText("<html>Accessories LVL 5<br>" + "Count: " + Part.parts[105]);
+		Labels.BodyLVL5Label.setText("<html>Body LVL 5<br>" + "Count: " + Part.parts[107]);
+		Labels.BrakesLVL5Label.setText("<html>Brakes LVL 5<br>" + "Count: " + Part.parts[109]);
+		Labels.CoolingLVL5Label.setText("<html>Cooling LVL 5<br>" + "Count: " + Part.parts[111]);
+		Labels.ElectronicsLVL5Label.setText("<html>Electronics LVL 5<br>" + "Count: " + Part.parts[113]);
+		Labels.EngineLVL5Label.setText("<html>Engine LVL 5<br>" + "Count: " + Part.parts[115]);
+		Labels.ExaustLVL5Label.setText("<html>Exaust LVL 5<br>" + "Count: " + Part.parts[117]);
+		Labels.FuelLVL5Label.setText("<html>Fuel LVL 5<br>" + "Count: " + Part.parts[119]);
+		Labels.InteriorLVL5Label.setText("<html>Interior LVL 5<br>" + "Count: " + Part.parts[121]);
+		Labels.SteeringLVL5Label.setText("<html>Steering LVL 5<br>" + "Count: " + Part.parts[123]);
+		Labels.SuspensionLVL5Label.setText("<html>Suspension LVL 5<br>" + "Count: " + Part.parts[125]);
+		Labels.TransmissionLVL5Label.setText("<html>Transmission LVL 5<br>" + "Count: " + Part.parts[127]);
+		Labels.TiresLVL5Label.setText("<html>Tires LVL 5<br>" + "Count: " + Part.parts[129]);
+		Labels.AccessoriesLVL6Label.setText("<html>Accessories LVL 6<br>" + "Count: " + Part.parts[131]);
+		Labels.BodyLVL6Label.setText("<html>Body LVL 6<br>" + "Count: " + Part.parts[133]);
+		Labels.BrakesLVL6Label.setText("<html>Brakes LVL 6<br>" + "Count: " + Part.parts[135]);
+		Labels.CoolingLVL6Label.setText("<html>Cooling LVL 6<br>" + "Count: " + Part.parts[137]);
+		Labels.ElectronicsLVL6Label.setText("<html>Electronics LVL 6<br>" + "Count: " + Part.parts[139]);
+		Labels.EngineLVL6Label.setText("<html>Engine LVL 6<br>" + "Count: " + Part.parts[141]);
+		Labels.ExaustLVL6Label.setText("<html>Exaust LVL 6<br>" + "Count: " + Part.parts[143]);
+		Labels.FuelLVL6Label.setText("<html>Fuel LVL 6<br>" + "Count: " + Part.parts[145]);
+		Labels.InteriorLVL6Label.setText("<html>Interior LVL 6<br>" + "Count: " + Part.parts[147]);
+		Labels.SteeringLVL6Label.setText("<html>Steering LVL 6<br>" + "Count: " + Part.parts[149]);
+		Labels.SuspensionLVL6Label.setText("<html>Suspension LVL 6<br>" + "Count: " + Part.parts[151]);
+		Labels.TransmissionLVL6Label.setText("<html>Transmission LVL 6<br>" + "Count: " + Part.parts[153]);
+		Labels.TiresLVL6Label.setText("<html>Tires LVL 6<br>" + "Count: " + Part.parts[155]);
+		Labels.AccessoriesLVL7Label.setText("<html>Accessories LVL 7<br>" + "Count: " + Part.parts[157]);
+		Labels.BodyLVL7Label.setText("<html>Body LVL 7<br>" + "Count: " + Part.parts[159]);
+		Labels.BrakesLVL7Label.setText("<html>Brakes LVL 7<br>" + "Count: " + Part.parts[161]);
+		Labels.CoolingLVL7Label.setText("<html>Cooling LVL 7<br>" + "Count: " + Part.parts[163]);
+		Labels.ElectronicsLVL7Label.setText("<html>Electronics LVL 7<br>" + "Count: " + Part.parts[165]);
+		Labels.EngineLVL7Label.setText("<html>Engine LVL 7<br>" + "Count: " + Part.parts[167]);
+		Labels.ExaustLVL7Label.setText("<html>Exaust LVL 7<br>" + "Count: " + Part.parts[169]);
+		Labels.FuelLVL7Label.setText("<html>Fuel LVL 7<br>" + "Count: " + Part.parts[171]);
+		Labels.InteriorLVL7Label.setText("<html>Interior LVL 7<br>" + "Count: " + Part.parts[173]);
+		Labels.SteeringLVL7Label.setText("<html>Steering LVL 7<br>" + "Count: " + Part.parts[175]);
+		Labels.SuspensionLVL7Label.setText("<html>Suspension LVL 7<br>" + "Count: " + Part.parts[177]);
+		Labels.TransmissionLVL7Label.setText("<html>Transmission LVL 7<br>" + "Count: " + Part.parts[179]);
+		Labels.TiresLVL7Label.setText("<html>Tires LVL 7<br>" + "Count: " + Part.parts[181]);
+		Labels.AccessoriesLVL8Label.setText("<html>Accessories LVL 8<br>" + "Count: " + Part.parts[183]);
+		Labels.BodyLVL8Label.setText("<html>Body LVL 8<br>" + "Count: " + Part.parts[185]);
+		Labels.BrakesLVL8Label.setText("<html>Brakes LVL 8<br>" + "Count: " + Part.parts[187]);
+		Labels.CoolingLVL8Label.setText("<html>Cooling LVL 8<br>" + "Count: " + Part.parts[189]);
+		Labels.ElectronicsLVL8Label.setText("<html>Electronics LVL 8<br>" + "Count: " + Part.parts[191]);
+		Labels.EngineLVL8Label.setText("<html>Engine LVL 8<br>" + "Count: " + Part.parts[193]);
+		Labels.ExaustLVL8Label.setText("<html>Exaust LVL 8<br>" + "Count: " + Part.parts[195]);
+		Labels.FuelLVL8Label.setText("<html>Fuel LVL 8<br>" + "Count: " + Part.parts[197]);
+		Labels.InteriorLVL8Label.setText("<html>Interior LVL 8<br>" + "Count: " + Part.parts[199]);
+		Labels.SteeringLVL8Label.setText("<html>Steering LVL 8<br>" + "Count: " + Part.parts[201]);
+		Labels.SuspensionLVL8Label.setText("<html>Suspension LVL 8<br>" + "Count: " + Part.parts[203]);
+		Labels.TransmissionLVL8Label.setText("<html>Transmission LVL 8<br>" + "Count: " + Part.parts[205]);
+		Labels.TiresLVL8Label.setText("<html>Tires LVL 8<br>" + "Count: " + Part.parts[207]);
+		Labels.AccessoriesLVL9Label.setText("<html>Accessories LVL 9<br>" + "Count: " + Part.parts[209]);
+		Labels.BodyLVL9Label.setText("<html>Body LVL 9<br>" + "Count: " + Part.parts[211]);
+		Labels.BrakesLVL9Label.setText("<html>Brakes LVL 9<br>" + "Count: " + Part.parts[213]);
+		Labels.CoolingLVL9Label.setText("<html>Cooling LVL 9<br>" + "Count: " + Part.parts[215]);
+		Labels.ElectronicsLVL9Label.setText("<html>Electronics LVL 9<br>" + "Count: " + Part.parts[217]);
+		Labels.EngineLVL9Label.setText("<html>Engine LVL 9<br>" + "Count: " + Part.parts[219]);
+		Labels.ExaustLVL9Label.setText("<html>Exaust LVL 9<br>" + "Count: " + Part.parts[221]);
+		Labels.FuelLVL9Label.setText("<html>Fuel LVL 9<br>" + "Count: " + Part.parts[223]);
+		Labels.InteriorLVL9Label.setText("<html>Interior LVL 9<br>" + "Count: " + Part.parts[225]);
+		Labels.SteeringLVL9Label.setText("<html>Steering LVL 9<br>" + "Count: " + Part.parts[227]);
+		Labels.SuspensionLVL9Label.setText("<html>Suspension LVL 9<br>" + "Count: " + Part.parts[229]);
+		Labels.TransmissionLVL9Label.setText("<html>Transmission LVL 9<br>" + "Count: " + Part.parts[231]);
+		Labels.TiresLVL9Label.setText("<html>Tires LVL 9<br>" + "Count: " + Part.parts[233]);
+		Labels.AccessoriesLVL10Label.setText("<html>Accessories LVL 10<br>" + "Count: " + Part.parts[235]);
+		Labels.BodyLVL10Label.setText("<html>Body LVL 10<br>" + "Count: " + Part.parts[237]);
+		Labels.BrakesLVL10Label.setText("<html>Brakes LVL 10<br>" + "Count: " + Part.parts[239]);
+		Labels.CoolingLVL10Label.setText("<html>Cooling LVL 10<br>" + "Count: " + Part.parts[241]);
+		Labels.ElectronicsLVL10Label.setText("<html>Electronics LVL 10<br>" + "Count: " + Part.parts[243]);
+		Labels.EngineLVL10Label.setText("<html>Engine LVL 10<br>" + "Count: " + Part.parts[245]);
+		Labels.ExaustLVL10Label.setText("<html>Exaust LVL 10<br>" + "Count: " + Part.parts[247]);
+		Labels.FuelLVL10Label.setText("<html>Fuel LVL 10<br>" + "Count: " + Part.parts[249]);
+		Labels.InteriorLVL10Label.setText("<html>Interior LVL 10<br>" + "Count: " + Part.parts[251]);
+		Labels.SteeringLVL10Label.setText("<html>Steering LVL 10<br>" + "Count: " + Part.parts[253]);
+		Labels.SuspensionLVL10Label.setText("<html>Suspension LVL 10<br>" + "Count: " + Part.parts[255]);
+		Labels.TransmissionLVL10Label.setText("<html>Transmission LVL 10<br>" + "Count: " + Part.parts[257]);
+		Labels.TiresLVL10Label.setText("<html>Tires LVL 10<br>" + "Count: " + Part.parts[259]);
+	
+		if(CarMain.main[5] >=1){
+        	jbtnPartsLv1.setEnabled(true);
+        	jbtnBuyBoxLv1.setEnabled(true);
+        	jbtnBuyFrameLv1.setEnabled(true);
+        	BuildCarsClass.jbtnBuildCarLv1.setEnabled(true);
+        	jbtnSellAccessoriesLv1.setEnabled(true);
+            jbtnSellBodyLv1.setEnabled(true);
+            jbtnSellBrakesLv1.setEnabled(true);
+            jbtnSellCoolingLv1.setEnabled(true);
+            jbtnSellElectronicsLv1.setEnabled(true);
+            jbtnSellEngineLv1.setEnabled(true);
+            jbtnSellExaustLv1.setEnabled(true);
+            jbtnSellFuelLv1.setEnabled(true);
+            jbtnSellInteriorLv1.setEnabled(true);
+            jbtnSellSteeringLv1.setEnabled(true);
+            jbtnSellSuspensionLv1.setEnabled(true);
+            jbtnSellTransmissionLv1.setEnabled(true);
+            jbtnSellTiresLv1.setEnabled(true);
+            Labels.MoneyLabel.setIcon(ImagesHolder.MoneyIcon);
+            Labels.BoxesLabel.setIcon(ImagesHolder.BoxLv9_10Icon);
+            Labels.GarageLabel.setIcon(ImagesHolder.GarageIcon);
+            Labels.PlayerLabel.setIcon(ImagesHolder.PlayerIcon);
+            Labels.BoxesLVLLabel.setIcon(ImagesHolder.BoxLv9_10Icon);
+            Labels.BoxesLVL1Label.setIcon(ImagesHolder.BoxLv1_2Icon);
+            Labels.OpenBoxesLVL1Label.setIcon(ImagesHolder.BoxLv1_2Icon);
+            Labels.FrameLv1Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv1Label.setIcon(ImagesHolder.Saab_900Icon);
+            Labels.AccessoriesLVL1Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL1Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL1Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL1Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL1Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL1Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL1Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL1Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL1Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL1Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL1Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL1Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL1Label.setIcon(ImagesHolder.TiresIcon);
+        }
+		
+		if(CarMain.main[5] >=2){
+			jbtnPartsLv2.setEnabled(true);
+        	jbtnBuyBoxLv2.setEnabled(true);
+        	jbtnBuyFrameLv2.setEnabled(true);
+        	BuildCarsClass.jbtnBuildCarLv2.setEnabled(true);
+        	jbtnSellAccessoriesLv2.setEnabled(true);
+            jbtnSellBodyLv2.setEnabled(true);
+            jbtnSellBrakesLv2.setEnabled(true);
+            jbtnSellCoolingLv2.setEnabled(true);
+            jbtnSellElectronicsLv2.setEnabled(true);
+            jbtnSellEngineLv2.setEnabled(true);
+            jbtnSellExaustLv2.setEnabled(true);
+            jbtnSellFuelLv2.setEnabled(true);
+            jbtnSellInteriorLv2.setEnabled(true);
+            jbtnSellSteeringLv2.setEnabled(true);
+            jbtnSellSuspensionLv2.setEnabled(true);
+            jbtnSellTransmissionLv2.setEnabled(true);
+            jbtnSellTiresLv2.setEnabled(true);
+            Labels.BoxesLVL2Label.setIcon(ImagesHolder.BoxLv1_2Icon);
+            Labels.OpenBoxesLVL2Label.setIcon(ImagesHolder.BoxLv1_2Icon);
+            Labels.FrameLv2Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv2Label.setIcon(ImagesHolder.Bentley_ContinentalIcon);
+            Labels.AccessoriesLVL2Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL2Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL2Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL2Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL2Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL2Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL2Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL2Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL2Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL2Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL2Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL2Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL2Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=3){
+			jbtnPartsLv3.setEnabled(true);
+        	jbtnBuyBoxLv3.setEnabled(true);
+        	jbtnBuyFrameLv3.setEnabled(true);
+        	BuildCarsClass.jbtnBuildCarLv3.setEnabled(true);
+        	jbtnSellAccessoriesLv3.setEnabled(true);
+            jbtnSellBodyLv3.setEnabled(true);
+            jbtnSellBrakesLv3.setEnabled(true);
+            jbtnSellCoolingLv3.setEnabled(true);
+            jbtnSellElectronicsLv3.setEnabled(true);
+            jbtnSellEngineLv3.setEnabled(true);
+            jbtnSellExaustLv3.setEnabled(true);
+            jbtnSellFuelLv3.setEnabled(true);
+            jbtnSellInteriorLv3.setEnabled(true);
+            jbtnSellSteeringLv3.setEnabled(true);
+            jbtnSellSuspensionLv3.setEnabled(true);
+            jbtnSellTransmissionLv3.setEnabled(true);
+            jbtnSellTiresLv3.setEnabled(true);
+            Labels.BoxesLVL3Label.setIcon(ImagesHolder.BoxLv3_4Icon);
+            Labels.OpenBoxesLVL3Label.setIcon(ImagesHolder.BoxLv3_4Icon);
+            Labels.FrameLv3Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv3Label.setIcon(ImagesHolder.Audi_RS6Icon);
+            Labels.AccessoriesLVL3Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL3Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL3Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL3Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL3Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL3Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL3Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL3Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL3Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL3Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL3Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL3Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL3Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=4){
+			jbtnPartsLv4.setEnabled(true);
+        	jbtnBuyBoxLv4.setEnabled(true);
+        	jbtnBuyFrameLv4.setEnabled(true);
+        	BuildCarsClass.jbtnBuildCarLv4.setEnabled(true);
+        	jbtnSellAccessoriesLv4.setEnabled(true);
+            jbtnSellBodyLv4.setEnabled(true);
+            jbtnSellBrakesLv4.setEnabled(true);
+            jbtnSellCoolingLv4.setEnabled(true);
+            jbtnSellElectronicsLv4.setEnabled(true);
+            jbtnSellEngineLv4.setEnabled(true);
+            jbtnSellExaustLv4.setEnabled(true);
+            jbtnSellFuelLv4.setEnabled(true);
+            jbtnSellInteriorLv4.setEnabled(true);
+            jbtnSellSteeringLv4.setEnabled(true);
+            jbtnSellSuspensionLv4.setEnabled(true);
+            jbtnSellTransmissionLv4.setEnabled(true);
+            jbtnSellTiresLv4.setEnabled(true);
+            Labels.BoxesLVL4Label.setIcon(ImagesHolder.BoxLv3_4Icon);
+            Labels.OpenBoxesLVL4Label.setIcon(ImagesHolder.BoxLv3_4Icon);
+            Labels.FrameLv4Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv4Label.setIcon(ImagesHolder.Opel_ZafiraIcon);
+            Labels.AccessoriesLVL4Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL4Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL4Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL4Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL4Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL4Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL4Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL4Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL4Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL4Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL4Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL4Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL4Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=5){
+			jbtnPartsLv5.setEnabled(true);
+        	jbtnBuyBoxLv5.setEnabled(true);
+        	jbtnBuyFrameLv5.setEnabled(true);
+        	BuildCarsClass.jbtnBuildCarLv5.setEnabled(true);
+        	jbtnSellAccessoriesLv5.setEnabled(true);
+            jbtnSellBodyLv5.setEnabled(true);
+            jbtnSellBrakesLv5.setEnabled(true);
+            jbtnSellCoolingLv5.setEnabled(true);
+            jbtnSellElectronicsLv5.setEnabled(true);
+            jbtnSellEngineLv5.setEnabled(true);
+            jbtnSellExaustLv5.setEnabled(true);
+            jbtnSellFuelLv5.setEnabled(true);
+            jbtnSellInteriorLv5.setEnabled(true);
+            jbtnSellSteeringLv5.setEnabled(true);
+            jbtnSellSuspensionLv5.setEnabled(true);
+            jbtnSellTransmissionLv5.setEnabled(true);
+            jbtnSellTiresLv5.setEnabled(true);
+            Labels.BoxesLVL5Label.setIcon(ImagesHolder.BoxLv5_6Icon);
+            Labels.OpenBoxesLVL5Label.setIcon(ImagesHolder.BoxLv5_6Icon);
+            Labels.FrameLv5Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv5Label.setIcon(ImagesHolder.Ferrari_308Icon);
+            Labels.AccessoriesLVL5Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL5Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL5Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL5Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL5Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL5Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL5Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL5Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL5Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL5Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL5Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL5Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL5Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=6){
+			jbtnPartsLv6.setEnabled(true);
+        	jbtnBuyBoxLv6.setEnabled(true);
+        	jbtnBuyFrameLv6.setEnabled(true);
+        	BuildCarsClass2.jbtnBuildCarLv6.setEnabled(true);
+        	jbtnSellAccessoriesLv6.setEnabled(true);
+            jbtnSellBodyLv6.setEnabled(true);
+            jbtnSellBrakesLv6.setEnabled(true);
+            jbtnSellCoolingLv6.setEnabled(true);
+            jbtnSellElectronicsLv6.setEnabled(true);
+            jbtnSellEngineLv6.setEnabled(true);
+            jbtnSellExaustLv6.setEnabled(true);
+            jbtnSellFuelLv6.setEnabled(true);
+            jbtnSellInteriorLv6.setEnabled(true);
+            jbtnSellSteeringLv6.setEnabled(true);
+            jbtnSellSuspensionLv6.setEnabled(true);
+            jbtnSellTransmissionLv6.setEnabled(true);
+            jbtnSellTiresLv6.setEnabled(true);
+            Labels.BoxesLVL6Label.setIcon(ImagesHolder.BoxLv5_6Icon);
+            Labels.OpenBoxesLVL6Label.setIcon(ImagesHolder.BoxLv5_6Icon);
+            Labels.FrameLv6Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv6Label.setIcon(ImagesHolder.Fiat_PuntoIcon);
+            Labels.AccessoriesLVL6Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL6Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL6Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL6Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL6Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL6Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL6Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL6Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL6Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL6Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL6Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL6Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL6Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=7){
+			jbtnPartsLv7.setEnabled(true);
+        	jbtnBuyBoxLv7.setEnabled(true);
+        	jbtnBuyFrameLv7.setEnabled(true);
+        	BuildCarsClass2.jbtnBuildCarLv7.setEnabled(true);
+        	jbtnSellAccessoriesLv7.setEnabled(true);
+            jbtnSellBodyLv7.setEnabled(true);
+            jbtnSellBrakesLv7.setEnabled(true);
+            jbtnSellCoolingLv7.setEnabled(true);
+            jbtnSellElectronicsLv7.setEnabled(true);
+            jbtnSellEngineLv7.setEnabled(true);
+            jbtnSellExaustLv7.setEnabled(true);
+            jbtnSellFuelLv7.setEnabled(true);
+            jbtnSellInteriorLv7.setEnabled(true);
+            jbtnSellSteeringLv7.setEnabled(true);
+            jbtnSellSuspensionLv7.setEnabled(true);
+            jbtnSellTransmissionLv7.setEnabled(true);
+            jbtnSellTiresLv7.setEnabled(true);
+            Labels.BoxesLVL7Label.setIcon(ImagesHolder.BoxLv7_8Icon);
+            Labels.OpenBoxesLVL7Label.setIcon(ImagesHolder.BoxLv7_8Icon);
+            Labels.FrameLv7Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv7Label.setIcon(ImagesHolder.Volkswagen_BeetleIcon);
+            Labels.AccessoriesLVL7Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL7Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL7Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL7Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL7Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL7Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL7Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL7Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL7Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL7Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL7Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL7Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL7Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=8){
+			jbtnPartsLv8.setEnabled(true);
+        	jbtnBuyBoxLv8.setEnabled(true);
+        	jbtnBuyFrameLv8.setEnabled(true);
+        	BuildCarsClass2.jbtnBuildCarLv8.setEnabled(true);
+        	jbtnSellAccessoriesLv8.setEnabled(true);
+            jbtnSellBodyLv8.setEnabled(true);
+            jbtnSellBrakesLv8.setEnabled(true);
+            jbtnSellCoolingLv8.setEnabled(true);
+            jbtnSellElectronicsLv8.setEnabled(true);
+            jbtnSellEngineLv8.setEnabled(true);
+            jbtnSellExaustLv8.setEnabled(true);
+            jbtnSellFuelLv8.setEnabled(true);
+            jbtnSellInteriorLv8.setEnabled(true);
+            jbtnSellSteeringLv8.setEnabled(true);
+            jbtnSellSuspensionLv8.setEnabled(true);
+            jbtnSellTransmissionLv8.setEnabled(true);
+            jbtnSellTiresLv8.setEnabled(true);
+            Labels.BoxesLVL8Label.setIcon(ImagesHolder.BoxLv7_8Icon);
+            Labels.OpenBoxesLVL8Label.setIcon(ImagesHolder.BoxLv7_8Icon);
+            Labels.FrameLv8Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv8Label.setIcon(ImagesHolder.Cadilliac_EldoradoIcon);
+            Labels.AccessoriesLVL8Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL8Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL8Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL8Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL8Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL8Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL8Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL8Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL8Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL8Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL8Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL8Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL8Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=9){
+			jbtnPartsLv9.setEnabled(true);
+        	jbtnBuyBoxLv9.setEnabled(true);
+        	jbtnBuyFrameLv9.setEnabled(true);
+        	BuildCarsClass2.jbtnBuildCarLv9.setEnabled(true);
+        	jbtnSellAccessoriesLv9.setEnabled(true);
+            jbtnSellBodyLv9.setEnabled(true);
+            jbtnSellBrakesLv9.setEnabled(true);
+            jbtnSellCoolingLv9.setEnabled(true);
+            jbtnSellElectronicsLv9.setEnabled(true);
+            jbtnSellEngineLv9.setEnabled(true);
+            jbtnSellExaustLv9.setEnabled(true);
+            jbtnSellFuelLv9.setEnabled(true);
+            jbtnSellInteriorLv9.setEnabled(true);
+            jbtnSellSteeringLv9.setEnabled(true);
+            jbtnSellSuspensionLv9.setEnabled(true);
+            jbtnSellTransmissionLv9.setEnabled(true);
+            jbtnSellTiresLv9.setEnabled(true);
+            Labels.BoxesLVL9Label.setIcon(ImagesHolder.BoxLv9_10Icon);
+            Labels.OpenBoxesLVL9Label.setIcon(ImagesHolder.BoxLv9_10Icon);
+            Labels.FrameLv9Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv9Label.setIcon(ImagesHolder.Honda_S2000Icon);
+            Labels.AccessoriesLVL9Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL9Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL9Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL9Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL9Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL9Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL9Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL9Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL9Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL9Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL9Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL9Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL9Label.setIcon(ImagesHolder.TiresIcon);
+		}		
+		if(CarMain.main[5] >=10){
+			jbtnPartsLv10.setEnabled(true);
+        	jbtnBuyBoxLv10.setEnabled(true);
+        	jbtnBuyFrameLv10.setEnabled(true);
+        	BuildCarsClass2.jbtnBuildCarLv10.setEnabled(true);
+        	jbtnSellAccessoriesLv10.setEnabled(true);
+            jbtnSellBodyLv10.setEnabled(true);
+            jbtnSellBrakesLv10.setEnabled(true);
+            jbtnSellCoolingLv10.setEnabled(true);
+            jbtnSellElectronicsLv10.setEnabled(true);
+            jbtnSellEngineLv10.setEnabled(true);
+            jbtnSellExaustLv10.setEnabled(true);
+            jbtnSellFuelLv10.setEnabled(true);
+            jbtnSellInteriorLv10.setEnabled(true);
+            jbtnSellSteeringLv10.setEnabled(true);
+            jbtnSellSuspensionLv10.setEnabled(true);
+            jbtnSellTransmissionLv10.setEnabled(true);
+            jbtnSellTiresLv10.setEnabled(true);
+            Labels.BoxesLVL10Label.setIcon(ImagesHolder.BoxLv9_10Icon);
+            Labels.OpenBoxesLVL10Label.setIcon(ImagesHolder.BoxLv9_10Icon);
+            Labels.FrameLv10Label.setIcon(ImagesHolder.CarFrameIcon);
+            Labels.CarsLv10Label.setIcon(ImagesHolder.Peugeot_308Icon);
+            Labels.AccessoriesLVL10Label.setIcon(ImagesHolder.AccessoriesIcon);
+            Labels.BodyLVL10Label.setIcon(ImagesHolder.BodyIcon);
+            Labels.BrakesLVL10Label.setIcon(ImagesHolder.BrakesIcon);
+            Labels.CoolingLVL10Label.setIcon(ImagesHolder.CoolingIcon);
+            Labels.ElectronicsLVL10Label.setIcon(ImagesHolder.ElectronicsIcon);
+            Labels.EngineLVL10Label.setIcon(ImagesHolder.EngineIcon);
+            Labels.ExaustLVL10Label.setIcon(ImagesHolder.ExaustIcon);
+            Labels.FuelLVL10Label.setIcon(ImagesHolder.FuelIcon);
+            Labels.InteriorLVL10Label.setIcon(ImagesHolder.InteriorIcon);
+            Labels.SteeringLVL10Label.setIcon(ImagesHolder.SteeringIcon);
+            Labels.SuspensionLVL10Label.setIcon(ImagesHolder.SuspensionIcon);
+            Labels.TransmissionLVL10Label.setIcon(ImagesHolder.TransmissionIcon);
+            Labels.TiresLVL10Label.setIcon(ImagesHolder.TiresIcon);
+	}		
+    }
+
+    public void SaveFile(){
+    	try{
+    		File SaveFile = new File("SaveFile.sav");
+    		if(!SaveFile.exists()) {
+    		    SaveFile.createNewFile();
+    		} 
+    		FileOutputStream saveFileSub = new FileOutputStream(SaveFile);
+    		ObjectOutputStream save = new ObjectOutputStream(saveFileSub);
+    		
+    		save.writeObject(CarMain.main);
+    		save.writeObject(Box.boxes);
+    		save.writeObject(CarFrame.frames);
+    		save.writeObject(Part.parts);
+    		save.writeObject(CarsLv1.cars);
+    		save.writeObject(CarsLv2.cars);
+    		save.writeObject(CarsLv3.cars);
+    		save.writeObject(CarsLv4.cars);
+    		save.writeObject(CarsLv5.cars);
+    		save.writeObject(CarsLv6.cars);
+    		save.writeObject(CarsLv7.cars);
+    		save.writeObject(CarsLv8.cars);
+    		save.writeObject(CarsLv9.cars);
+    		save.writeObject(CarsLv10.cars);
+    		
+    		save.close();
+    		}
+    		catch(Exception exc){
+    		exc.printStackTrace();
+    		}
+    }
+    
+    public void LoadFile(){
+    try{
+		File SaveFile = new File("SaveFile.sav");
+		if(!SaveFile.exists()) {
+		    SaveFile.createNewFile();
+		} 
+		FileInputStream SaveFileSub = new FileInputStream(SaveFile);
+		ObjectInputStream load = new ObjectInputStream(SaveFileSub);
+
+		CarMain.main = (Integer[]) load.readObject();
+		Box.boxes = (Integer[]) load.readObject();
+		CarFrame.frames = (Integer[]) load.readObject();
+		Part.parts = (Integer[]) load.readObject();
+		CarsLv1.cars = (String[]) load.readObject();
+		CarsLv2.cars = (String[]) load.readObject();
+		CarsLv3.cars = (String[]) load.readObject();
+		CarsLv4.cars = (String[]) load.readObject();
+		CarsLv5.cars = (String[]) load.readObject();
+		CarsLv6.cars = (String[]) load.readObject();
+		CarsLv7.cars = (String[]) load.readObject();
+		CarsLv8.cars = (String[]) load.readObject();
+		CarsLv9.cars = (String[]) load.readObject();
+		CarsLv10.cars = (String[]) load.readObject();
+		
+		load.close();
+		}
+		catch(Exception exc){
+		exc.printStackTrace();
+		}
+		}
+    
     //Button Click
     
    public void actionPerformed(ActionEvent ae) {
-	   
+	   	   
 	    //Money Button Click
         if(ae.getSource() == jbtnMoney) {       	
             CarMain.main[0] += 1;   
-            CarMain.main[1] += 1;     
+            CarMain.main[1] += 1;
         }
         
-        //Boxes Button Click
-        
+        //Boxes Button Click       
         if(ae.getSource() == jbtnBoxes){
         	CarMain.main[2] += 1;
             CarMain.main[3] += 1;
