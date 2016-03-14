@@ -2466,9 +2466,6 @@ public class ClickerGame implements ActionListener {
     public void LoadFile(){
     try{
 		File SaveFile = new File("SaveFile.sav");
-		if(!SaveFile.exists()) {
-		    SaveFile.createNewFile();
-		} 
 		FileInputStream SaveFileSub = new FileInputStream(SaveFile);
 		ObjectInputStream load = new ObjectInputStream(SaveFileSub);
 
@@ -2513,8 +2510,7 @@ public class ClickerGame implements ActionListener {
                 CarMain.main[2] -= 5;
                 if(CarMain.main[4] == 1){
                     Box.boxes[1] = Box.boxes[1] + 1;
-                    JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
-                    }
+                    JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}                  
                 if(CarMain.main[4] == 2){ 
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(2)+1;
@@ -2716,7 +2712,7 @@ public class ClickerGame implements ActionListener {
                         JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
                     }     
             }
-        
+        }    
         // Upgrade Player Level Button Click
         
         if(ae.getSource() == jbtnUpgradeLevel){          	
