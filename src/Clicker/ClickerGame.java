@@ -12,7 +12,10 @@ import javax.swing.*;
 import java.util.Random;
 
 public class ClickerGame implements ActionListener {
-		
+	
+	//For CarBuild
+    int count0 = 0;
+    
     //Strings
     final static String Click = "Click";
     final static String Upgrades = "Upgrades";
@@ -219,6 +222,17 @@ public class ClickerGame implements ActionListener {
     JButton jbtnSellTransmissionLv10 = new JButton("Sell");
     JButton jbtnSellTiresLv10 = new JButton("Sell");
     
+    JButton jbtnBuildCarLv1 = new JButton("Build");
+	JButton jbtnBuildCarLv2 = new JButton("Build");
+	JButton jbtnBuildCarLv3 = new JButton("Build");
+	JButton jbtnBuildCarLv4 = new JButton("Build");
+	JButton jbtnBuildCarLv5 = new JButton("Build");
+	JButton jbtnBuildCarLv6 = new JButton("Build");
+	JButton jbtnBuildCarLv7 = new JButton("Build");
+	JButton jbtnBuildCarLv8 = new JButton("Build");
+	JButton jbtnBuildCarLv9 = new JButton("Build");
+	JButton jbtnBuildCarLv10 = new JButton("Build");
+    
 
     //Make TabbedPane
     public void addComponentToPane(Container pane){
@@ -403,10 +417,22 @@ public class ClickerGame implements ActionListener {
         jbtnSellTransmissionLv10.addActionListener(this);
         jbtnSellTiresLv10.addActionListener(this);
         
+        //For BuildCarsClass
+        jbtnBuildCarLv1.addActionListener(this);
+        jbtnBuildCarLv2.addActionListener(this);
+        jbtnBuildCarLv3.addActionListener(this);
+        jbtnBuildCarLv4.addActionListener(this);
+        jbtnBuildCarLv5.addActionListener(this);
+        jbtnBuildCarLv6.addActionListener(this);
+        jbtnBuildCarLv7.addActionListener(this);
+        jbtnBuildCarLv8.addActionListener(this);
+        jbtnBuildCarLv9.addActionListener(this);
+        jbtnBuildCarLv10.addActionListener(this);
+	          
     	jbtnPartsLv1.setEnabled(false);
     	jbtnBuyBoxLv1.setEnabled(false);
     	jbtnBuyFrameLv1.setEnabled(false);
-    	BuildCarsClass.jbtnBuildCarLv1.setEnabled(false);
+    	jbtnBuildCarLv1.setEnabled(false);
     	jbtnSellAccessoriesLv1.setEnabled(false);
         jbtnSellBodyLv1.setEnabled(false);
         jbtnSellBrakesLv1.setEnabled(false);
@@ -424,7 +450,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv2.setEnabled(false);
     	jbtnBuyBoxLv2.setEnabled(false);
     	jbtnBuyFrameLv2.setEnabled(false);
-    	BuildCarsClass.jbtnBuildCarLv2.setEnabled(false);
+    	jbtnBuildCarLv2.setEnabled(false);
     	jbtnSellAccessoriesLv2.setEnabled(false);
         jbtnSellBodyLv2.setEnabled(false);
         jbtnSellBrakesLv2.setEnabled(false);
@@ -442,7 +468,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv3.setEnabled(false);
     	jbtnBuyBoxLv3.setEnabled(false);
     	jbtnBuyFrameLv3.setEnabled(false);
-    	BuildCarsClass.jbtnBuildCarLv3.setEnabled(false);
+    	jbtnBuildCarLv3.setEnabled(false);
     	jbtnSellAccessoriesLv3.setEnabled(false);
         jbtnSellBodyLv3.setEnabled(false);
         jbtnSellBrakesLv3.setEnabled(false);
@@ -460,7 +486,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv4.setEnabled(false);
     	jbtnBuyBoxLv4.setEnabled(false);
     	jbtnBuyFrameLv4.setEnabled(false);
-    	BuildCarsClass.jbtnBuildCarLv4.setEnabled(false);
+    	jbtnBuildCarLv4.setEnabled(false);
     	jbtnSellAccessoriesLv4.setEnabled(false);
         jbtnSellBodyLv4.setEnabled(false);
         jbtnSellBrakesLv4.setEnabled(false);
@@ -478,7 +504,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv5.setEnabled(false);
     	jbtnBuyBoxLv5.setEnabled(false);
     	jbtnBuyFrameLv5.setEnabled(false);
-    	BuildCarsClass.jbtnBuildCarLv5.setEnabled(false);
+    	jbtnBuildCarLv5.setEnabled(false);
     	jbtnSellAccessoriesLv5.setEnabled(false);
         jbtnSellBodyLv5.setEnabled(false);
         jbtnSellBrakesLv5.setEnabled(false);
@@ -496,7 +522,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv6.setEnabled(false);
     	jbtnBuyBoxLv6.setEnabled(false);
     	jbtnBuyFrameLv6.setEnabled(false);
-    	BuildCarsClass2.jbtnBuildCarLv6.setEnabled(false);
+    	jbtnBuildCarLv6.setEnabled(false);
     	jbtnSellAccessoriesLv6.setEnabled(false);
         jbtnSellBodyLv6.setEnabled(false);
         jbtnSellBrakesLv6.setEnabled(false);
@@ -514,7 +540,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv7.setEnabled(false);
     	jbtnBuyBoxLv7.setEnabled(false);
     	jbtnBuyFrameLv7.setEnabled(false);
-    	BuildCarsClass2.jbtnBuildCarLv7.setEnabled(false);
+    	jbtnBuildCarLv7.setEnabled(false);
     	jbtnSellAccessoriesLv7.setEnabled(false);
         jbtnSellBodyLv7.setEnabled(false);
         jbtnSellBrakesLv7.setEnabled(false);
@@ -532,7 +558,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv8.setEnabled(false);
     	jbtnBuyBoxLv8.setEnabled(false);
     	jbtnBuyFrameLv8.setEnabled(false);
-    	BuildCarsClass2.jbtnBuildCarLv8.setEnabled(false);
+    	jbtnBuildCarLv8.setEnabled(false);
     	jbtnSellAccessoriesLv8.setEnabled(false);
         jbtnSellBodyLv8.setEnabled(false);
         jbtnSellBrakesLv8.setEnabled(false);
@@ -550,7 +576,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv9.setEnabled(false);
     	jbtnBuyBoxLv9.setEnabled(false);
     	jbtnBuyFrameLv9.setEnabled(false);
-    	BuildCarsClass2.jbtnBuildCarLv9.setEnabled(false);
+    	jbtnBuildCarLv9.setEnabled(false);
     	jbtnSellAccessoriesLv9.setEnabled(false);
         jbtnSellBodyLv9.setEnabled(false);
         jbtnSellBrakesLv9.setEnabled(false);
@@ -568,7 +594,7 @@ public class ClickerGame implements ActionListener {
 		jbtnPartsLv10.setEnabled(false);
     	jbtnBuyBoxLv10.setEnabled(false);
     	jbtnBuyFrameLv10.setEnabled(false);
-    	BuildCarsClass2.jbtnBuildCarLv10.setEnabled(false);
+    	jbtnBuildCarLv10.setEnabled(false);
     	jbtnSellAccessoriesLv10.setEnabled(false);
         jbtnSellBodyLv10.setEnabled(false);
         jbtnSellBrakesLv10.setEnabled(false);
@@ -793,25 +819,25 @@ public class ClickerGame implements ActionListener {
         BuildCarsPanelSub10.setLayout(new BoxLayout(BuildCarsPanelSub10, BoxLayout.PAGE_AXIS));
      	
      	BuildCarsPanelSub.add(Labels.CarsLv1Label);
-     	BuildCarsPanelSub.add(BuildCarsClass.jbtnBuildCarLv1);
+     	BuildCarsPanelSub.add(jbtnBuildCarLv1);
      	BuildCarsPanelSub2.add(Labels.CarsLv2Label);
-     	BuildCarsPanelSub2.add(BuildCarsClass.jbtnBuildCarLv2);
+     	BuildCarsPanelSub2.add(jbtnBuildCarLv2);
      	BuildCarsPanelSub3.add(Labels.CarsLv3Label);
-     	BuildCarsPanelSub3.add(BuildCarsClass.jbtnBuildCarLv3);
+     	BuildCarsPanelSub3.add(jbtnBuildCarLv3);
      	BuildCarsPanelSub4.add(Labels.CarsLv4Label);
-     	BuildCarsPanelSub4.add(BuildCarsClass.jbtnBuildCarLv4);
+     	BuildCarsPanelSub4.add(jbtnBuildCarLv4);
      	BuildCarsPanelSub5.add(Labels.CarsLv5Label);
-     	BuildCarsPanelSub5.add(BuildCarsClass.jbtnBuildCarLv5);
+     	BuildCarsPanelSub5.add(jbtnBuildCarLv5);
      	BuildCarsPanelSub6.add(Labels.CarsLv6Label);
-     	BuildCarsPanelSub6.add(BuildCarsClass2.jbtnBuildCarLv6);
+     	BuildCarsPanelSub6.add(jbtnBuildCarLv6);
      	BuildCarsPanelSub7.add(Labels.CarsLv7Label);
-     	BuildCarsPanelSub7.add(BuildCarsClass2.jbtnBuildCarLv7);
+     	BuildCarsPanelSub7.add(jbtnBuildCarLv7);
      	BuildCarsPanelSub8.add(Labels.CarsLv8Label);
-     	BuildCarsPanelSub8.add(BuildCarsClass2.jbtnBuildCarLv8);
+     	BuildCarsPanelSub8.add(jbtnBuildCarLv8);
      	BuildCarsPanelSub9.add(Labels.CarsLv9Label);
-     	BuildCarsPanelSub9.add(BuildCarsClass2.jbtnBuildCarLv9);
+     	BuildCarsPanelSub9.add(jbtnBuildCarLv9);
      	BuildCarsPanelSub10.add(Labels.CarsLv10Label);
-     	BuildCarsPanelSub10.add(BuildCarsClass2.jbtnBuildCarLv10);
+     	BuildCarsPanelSub10.add(jbtnBuildCarLv10);
      	
      	BuildCarsPanel.add(BuildCarsPanelSub);
      	BuildCarsPanel.add(BuildCarsPanelSub2);
@@ -1763,19 +1789,11 @@ public class ClickerGame implements ActionListener {
     }
     
     // Counting
-    
-    public  int Aboxes(){
-    	int countboxes = 0;
-    	for(int i = 1; i > Box.boxes.length; i+=2){
-    		countboxes+= Box.boxes[i];
-    	}
-    	return countboxes;
-    }
-    
+       
     public int CountLv1Cars(){
     	int countcarsLv1 = 0;
     	for(int i = 3;i > CarsLv1.cars.length;i+=4){
-    		countcarsLv1+= Integer.parseInt(CarsLv1.cars[i]);
+    		countcarsLv1+= CarsLv1.cars[i];
     	} 
     	return countcarsLv1;
     	    	
@@ -1784,7 +1802,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv2Cars(){
     	int countcarsLv2 = 0;
     	for(int i = 3;i > CarsLv2.cars.length;i+=4){
-    		countcarsLv2+= Integer.parseInt(CarsLv2.cars[i]);
+    		countcarsLv2+= CarsLv2.cars[i];
     	} 
     	return countcarsLv2;
     
@@ -1793,7 +1811,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv3Cars(){
     	int countcarsLv3 = 0;
     	for(int i = 3;i > CarsLv3.cars.length;i+=4){
-    		countcarsLv3+= Integer.parseInt(CarsLv3.cars[i]);
+    		countcarsLv3+= CarsLv3.cars[i];
     	} 
     	return countcarsLv3;
     
@@ -1802,7 +1820,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv4Cars(){
     	int countcarsLv4 = 0;
     	for(int i = 3;i > CarsLv4.cars.length;i+=4){
-    		countcarsLv4+= Integer.parseInt(CarsLv4.cars[i]);
+    		countcarsLv4+= CarsLv4.cars[i];
     	} 
     	return countcarsLv4;
     
@@ -1811,7 +1829,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv5Cars(){
     	int countcarsLv5 = 0;
     	for(int i = 3;i > CarsLv5.cars.length;i+=4){
-    		countcarsLv5+= Integer.parseInt(CarsLv5.cars[i]);
+    		countcarsLv5+= CarsLv5.cars[i];
     	} 
     	return countcarsLv5;
     
@@ -1820,7 +1838,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv6Cars(){
     	int countcarsLv6 = 0;
     	for(int i = 3;i > CarsLv6.cars.length;i+=4){
-    		countcarsLv6+= Integer.parseInt(CarsLv6.cars[i]);
+    		countcarsLv6+= CarsLv6.cars[i];
     	} 
     	return countcarsLv6;
     
@@ -1829,7 +1847,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv7Cars(){
     	int countcarsLv7 = 0;
     	for(int i = 3;i > CarsLv7.cars.length;i+=4){
-    		countcarsLv7+= Integer.parseInt(CarsLv7.cars[i]);
+    		countcarsLv7+= CarsLv7.cars[i];
     	} 
     	return countcarsLv7;
     
@@ -1838,7 +1856,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv8Cars(){
     	int countcarsLv8 = 0;
     	for(int i = 3;i > CarsLv8.cars.length;i+=4){
-    		countcarsLv8+= Integer.parseInt(CarsLv8.cars[i]);
+    		countcarsLv8+= CarsLv8.cars[i];
     	} 
     	return countcarsLv8;
     
@@ -1847,7 +1865,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv9Cars(){
     	int countcarsLv9 = 0;
     	for(int i = 3;i > CarsLv9.cars.length;i+=4){
-    		countcarsLv9+= Integer.parseInt(CarsLv9.cars[i]);
+    		countcarsLv9+= CarsLv9.cars[i];
     	} 
     	return countcarsLv9;
     
@@ -1856,7 +1874,7 @@ public class ClickerGame implements ActionListener {
     public int CountLv10Cars(){
     	int countcarsLv10 = 0;
     	for(int i = 3;i > CarsLv10.cars.length;i+=4){
-    		countcarsLv10+= Integer.parseInt(CarsLv10.cars[i]);
+    		countcarsLv10+= CarsLv10.cars[i];
     	} 
     	return countcarsLv10;
     
@@ -1874,8 +1892,6 @@ public class ClickerGame implements ActionListener {
     BoxesHolder Box = new BoxesHolder();
     FramesHolder CarFrame = new FramesHolder();
     PartHolder Part = new PartHolder();
-    BuildCarsClass BuildCarsClass = new BuildCarsClass();
-    BuildCarsClass2 BuildCarsClass2 = new BuildCarsClass2();
     CarLevel1Holder CarsLv1 = new CarLevel1Holder();
     CarLevel2Holder CarsLv2 = new CarLevel2Holder();
     CarLevel3Holder CarsLv3 = new CarLevel3Holder();
@@ -2068,7 +2084,7 @@ public class ClickerGame implements ActionListener {
         	jbtnPartsLv1.setEnabled(true);
         	jbtnBuyBoxLv1.setEnabled(true);
         	jbtnBuyFrameLv1.setEnabled(true);
-        	BuildCarsClass.jbtnBuildCarLv1.setEnabled(true);
+        	jbtnBuildCarLv1.setEnabled(true);
         	jbtnSellAccessoriesLv1.setEnabled(true);
             jbtnSellBodyLv1.setEnabled(true);
             jbtnSellBrakesLv1.setEnabled(true);
@@ -2110,7 +2126,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv2.setEnabled(true);
         	jbtnBuyBoxLv2.setEnabled(true);
         	jbtnBuyFrameLv2.setEnabled(true);
-        	BuildCarsClass.jbtnBuildCarLv2.setEnabled(true);
+        	jbtnBuildCarLv2.setEnabled(true);
         	jbtnSellAccessoriesLv2.setEnabled(true);
             jbtnSellBodyLv2.setEnabled(true);
             jbtnSellBrakesLv2.setEnabled(true);
@@ -2146,7 +2162,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv3.setEnabled(true);
         	jbtnBuyBoxLv3.setEnabled(true);
         	jbtnBuyFrameLv3.setEnabled(true);
-        	BuildCarsClass.jbtnBuildCarLv3.setEnabled(true);
+        	jbtnBuildCarLv3.setEnabled(true);
         	jbtnSellAccessoriesLv3.setEnabled(true);
             jbtnSellBodyLv3.setEnabled(true);
             jbtnSellBrakesLv3.setEnabled(true);
@@ -2182,7 +2198,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv4.setEnabled(true);
         	jbtnBuyBoxLv4.setEnabled(true);
         	jbtnBuyFrameLv4.setEnabled(true);
-        	BuildCarsClass.jbtnBuildCarLv4.setEnabled(true);
+        	jbtnBuildCarLv4.setEnabled(true);
         	jbtnSellAccessoriesLv4.setEnabled(true);
             jbtnSellBodyLv4.setEnabled(true);
             jbtnSellBrakesLv4.setEnabled(true);
@@ -2218,7 +2234,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv5.setEnabled(true);
         	jbtnBuyBoxLv5.setEnabled(true);
         	jbtnBuyFrameLv5.setEnabled(true);
-        	BuildCarsClass.jbtnBuildCarLv5.setEnabled(true);
+        	jbtnBuildCarLv5.setEnabled(true);
         	jbtnSellAccessoriesLv5.setEnabled(true);
             jbtnSellBodyLv5.setEnabled(true);
             jbtnSellBrakesLv5.setEnabled(true);
@@ -2254,7 +2270,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv6.setEnabled(true);
         	jbtnBuyBoxLv6.setEnabled(true);
         	jbtnBuyFrameLv6.setEnabled(true);
-        	BuildCarsClass2.jbtnBuildCarLv6.setEnabled(true);
+        	jbtnBuildCarLv6.setEnabled(true);
         	jbtnSellAccessoriesLv6.setEnabled(true);
             jbtnSellBodyLv6.setEnabled(true);
             jbtnSellBrakesLv6.setEnabled(true);
@@ -2290,7 +2306,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv7.setEnabled(true);
         	jbtnBuyBoxLv7.setEnabled(true);
         	jbtnBuyFrameLv7.setEnabled(true);
-        	BuildCarsClass2.jbtnBuildCarLv7.setEnabled(true);
+        	jbtnBuildCarLv7.setEnabled(true);
         	jbtnSellAccessoriesLv7.setEnabled(true);
             jbtnSellBodyLv7.setEnabled(true);
             jbtnSellBrakesLv7.setEnabled(true);
@@ -2326,7 +2342,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv8.setEnabled(true);
         	jbtnBuyBoxLv8.setEnabled(true);
         	jbtnBuyFrameLv8.setEnabled(true);
-        	BuildCarsClass2.jbtnBuildCarLv8.setEnabled(true);
+        	jbtnBuildCarLv8.setEnabled(true);
         	jbtnSellAccessoriesLv8.setEnabled(true);
             jbtnSellBodyLv8.setEnabled(true);
             jbtnSellBrakesLv8.setEnabled(true);
@@ -2362,7 +2378,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv9.setEnabled(true);
         	jbtnBuyBoxLv9.setEnabled(true);
         	jbtnBuyFrameLv9.setEnabled(true);
-        	BuildCarsClass2.jbtnBuildCarLv9.setEnabled(true);
+        	jbtnBuildCarLv9.setEnabled(true);
         	jbtnSellAccessoriesLv9.setEnabled(true);
             jbtnSellBodyLv9.setEnabled(true);
             jbtnSellBrakesLv9.setEnabled(true);
@@ -2398,7 +2414,7 @@ public class ClickerGame implements ActionListener {
 			jbtnPartsLv10.setEnabled(true);
         	jbtnBuyBoxLv10.setEnabled(true);
         	jbtnBuyFrameLv10.setEnabled(true);
-        	BuildCarsClass2.jbtnBuildCarLv10.setEnabled(true);
+        	jbtnBuildCarLv10.setEnabled(true);
         	jbtnSellAccessoriesLv10.setEnabled(true);
             jbtnSellBodyLv10.setEnabled(true);
             jbtnSellBrakesLv10.setEnabled(true);
@@ -2473,16 +2489,16 @@ public class ClickerGame implements ActionListener {
 		Box.boxes = (Integer[]) load.readObject();
 		CarFrame.frames = (Integer[]) load.readObject();
 		Part.parts = (Integer[]) load.readObject();
-		CarsLv1.cars = (String[]) load.readObject();
-		CarsLv2.cars = (String[]) load.readObject();
-		CarsLv3.cars = (String[]) load.readObject();
-		CarsLv4.cars = (String[]) load.readObject();
-		CarsLv5.cars = (String[]) load.readObject();
-		CarsLv6.cars = (String[]) load.readObject();
-		CarsLv7.cars = (String[]) load.readObject();
-		CarsLv8.cars = (String[]) load.readObject();
-		CarsLv9.cars = (String[]) load.readObject();
-		CarsLv10.cars = (String[]) load.readObject();
+		CarsLv1.cars = (Integer[]) load.readObject();
+		CarsLv2.cars = (Integer[]) load.readObject();
+		CarsLv3.cars = (Integer[]) load.readObject();
+		CarsLv4.cars = (Integer[]) load.readObject();
+		CarsLv5.cars = (Integer[]) load.readObject();
+		CarsLv6.cars = (Integer[]) load.readObject();
+		CarsLv7.cars = (Integer[]) load.readObject();
+		CarsLv8.cars = (Integer[]) load.readObject();
+		CarsLv9.cars = (Integer[]) load.readObject();
+		CarsLv10.cars = (Integer[]) load.readObject();
 		
 		load.close();
 		}
@@ -5246,6 +5262,1263 @@ public class ClickerGame implements ActionListener {
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
         	
-        }      
+        }
+        
+        // Build Cars 1-5LVL        
+        if(ae.getSource() == jbtnBuildCarLv1){
+	    	if(CarMain.main[5] >=1){
+	    		if(CarMain.main[7] >0){
+	    			if(CarFrame.frames[1] >0){ 
+	    				
+	    				for(int i=1;i <= 25;i+=2){
+	    					if(Part.parts[i] >0){
+	    						count0+=1;
+	    				
+	    					}
+	    					else{
+	    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);
+	    						break;}	    					
+						}
+	    							    				
+					if (count0 == 13){				
+						for (int j = 3;j <= 80; j+=4){
+							if(CarsLv1.cars[j] == 0){
+								for(int i=1;i <= 25;i+=2){
+									Part.parts[i] -=1;
+								}	
+									CarFrame.frames[1] -=1;								
+									CarsLv1.cars[j] +=1;
+								
+									if(j == 3){
+										JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_DB9Icon);
+										break;
+									}
+									if(j == 7){
+										JOptionPane.showMessageDialog (null, "You have gained Acura NSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_NSXIcon);
+										break;
+									}
+									if(j == 11){
+										JOptionPane.showMessageDialog (null, "You have gained Ford Mustang!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_MustangIcon);
+										break;
+									}
+									if(j == 15){
+										JOptionPane.showMessageDialog (null, "You have gained Moskvich 412!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_412Icon);
+										break;
+									}
+									if(j == 19){
+										JOptionPane.showMessageDialog (null, "You have gained Kia Venga!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_VengaIcon);
+										break;
+									}
+									if(j == 23){
+										JOptionPane.showMessageDialog (null, "You have gained Fiat 1500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_1500Icon);
+										break;
+									}
+									if(j == 27){
+										JOptionPane.showMessageDialog (null, "You have gained Ferrari Enzo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_EnzoIcon);
+										break;
+									}
+									if(j == 31){
+										JOptionPane.showMessageDialog (null, "You have gained Aston Martin Rapide!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_RapideIcon);
+										break;
+									}
+									if(j == 35){
+										JOptionPane.showMessageDialog (null, "You have gained Koenigsegg CCX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_CCXIcon);
+										break;
+									}
+									if(j == 39){
+										JOptionPane.showMessageDialog (null, "You have gained Honda Civic!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_CivicIcon);
+										break;
+									}
+									if(j == 43){
+										JOptionPane.showMessageDialog (null, "You have gained Cadilliac ATS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_ATSIcon);
+										break;
+									}
+									if(j == 47){
+										JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Lancer Evolution X!", "Congralations", JOptionPane.INFORMATION_MESSAGE,ImagesHolder.Mitsubishi_LancerEvolutionXIcon);
+										break;
+									}
+									if(j == 51){
+										JOptionPane.showMessageDialog (null, "You have gained Infiniti FX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_FXIcon);
+										break;
+									}
+									if(j == 55){
+										JOptionPane.showMessageDialog (null, "You have gained Lancia Thema!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_ThemaIcon);
+										break;
+									}
+									if(j == 59){
+										JOptionPane.showMessageDialog (null, "You have gained Volvo XC90!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_XC90Icon);
+										break;
+									}
+									if(j == 63){
+										JOptionPane.showMessageDialog (null, "You have gained Acura CSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_CSXIcon);
+										break;
+									}
+									if(j == 67){
+										JOptionPane.showMessageDialog (null, "You have gained Saab Sonett II!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_SonettIIIcon);
+										break;
+									}
+									if(j == 71){
+										JOptionPane.showMessageDialog (null, "You have gained Renault Floride!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_FlorideIcon);
+										break;
+									}
+									if(j == 75){
+										JOptionPane.showMessageDialog (null, "You have gained BMW e34!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e34Icon);
+										break;
+									}
+									if(j == 79){
+										JOptionPane.showMessageDialog (null, "You have gained Chrysler Cordoba!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_CordobaIcon);									
+										break;
+									}
+									}
+									else{
+										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+										break;
+									}
+								
+						
+						}
+					}
+	    			}
+	    			else{
+	    				JOptionPane.showMessageDialog (null, "You don't have 1 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+	    			}
+	    		else{
+	    			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+	    		}
+	    		}
+	    	else{
+	    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+	    	}  
+	    }
+	
+																
+if(ae.getSource() == jbtnBuildCarLv2){
+if(CarMain.main[5] >=2){
+	if(CarMain.main[7] >0){
+		if(CarFrame.frames[3] >0){ 
+			
+			for(int i=27;i <= 51;i+=2){
+				if(Part.parts[i] >0){					
+					count0+=1;					
+				}
+				else{
+					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+					break;}
+			}
+			
+		if (count0 == 13){
+			for (int j = 3;j <= 80; j+= 4){
+				if(CarsLv2.cars[j] == 0){
+					for(int i=27;i <= 51;i+=2){
+						Part.parts[i] --;
+					}	
+						CarFrame.frames[3] -=1;								
+						CarsLv2.cars[j] +=1;
+						
+						if(j == 3){
+							JOptionPane.showMessageDialog (null, "You have gained Buick Riviera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_RivieraIcon);
+							break;
+						}
+						if(j == 7){
+							JOptionPane.showMessageDialog (null, "You have gained Tesla Roadster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_RoadsterIcon);
+							break;
+						}
+						if(j == 11){
+							JOptionPane.showMessageDialog (null, "You have gained Audi 80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_80Icon);
+							break;
+						}
+						if(j == 15){
+							JOptionPane.showMessageDialog (null, "You have gained BMW e36!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e36Icon);
+							break;
+						}
+						if(j == 19){
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Scirocco!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_SciroccoIcon);
+							break;
+						}
+						if(j == 23){
+							JOptionPane.showMessageDialog (null, "You have gained Mazda 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_3Icon);
+							break;
+						}
+						if(j == 27){
+							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Viking!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_VikingIcon);
+							break;
+						}
+						if(j == 31){
+							JOptionPane.showMessageDialog (null, "You have gained Tesla S!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_SIcon);
+							break;
+						}
+						if(j == 35){
+							JOptionPane.showMessageDialog (null, "You have gained Jeep ZJ!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_ZJIcon);
+							break;
+						}
+						if(j == 39){
+							JOptionPane.showMessageDialog (null, "You have gained Dodge Neon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_NeonIcon);
+							break;
+						}
+						if(j == 43){
+							JOptionPane.showMessageDialog (null, "You have gained BMW e30!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e30Icon);
+							break;
+						}
+						if(j == 47){
+							JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz W123!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_W123Icon);
+							break;
+						}
+						if(j == 51){
+							JOptionPane.showMessageDialog (null, "You have gained Land Rover Defender!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_DefenderIcon);
+							break;
+						}
+						if(j == 55){
+							JOptionPane.showMessageDialog (null, "You have gained Saab 9_5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_9_5Icon);
+							break;
+						}
+						if(j == 59){
+							JOptionPane.showMessageDialog (null, "You have gained Aston Martin One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_OneIcon);
+							break;
+						}
+						if(j == 63){
+							JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Regera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_RegeraIcon);
+							break;
+						}
+						if(j == 67){
+							JOptionPane.showMessageDialog (null, "You have gained Lexus IS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_ISIcon);
+							break;
+						}
+						if(j == 71){
+							JOptionPane.showMessageDialog (null, "You have gained GMC Yukon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_YukonIcon);
+							break;
+						}
+						if(j == 75){
+							JOptionPane.showMessageDialog (null, "You have gained Opel_Astra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_AstraIcon);
+							break;
+						}
+						if(j == 79){
+							JOptionPane.showMessageDialog (null, "You have gained Audi Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_CoupeIcon);
+							break;
+						}
+				}
+				else{
+					JOptionPane.showMessageDialog(null, "You have colected all 2 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+					break;
+				}
+			
+	
+			}
+		}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have 2 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+		}
+		}
+	else{
+		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+		}  
+}	
+
+if(ae.getSource() == jbtnBuildCarLv3){
+if(CarMain.main[5] >=3){
+	if(CarMain.main[7] >0){
+		if(CarFrame.frames[5] >0){ 
+			
+			for(int i=53;i <= 77;i+=2){
+				if(Part.parts[i] >0){
+					count0+=1;
+				}
+				else{
+					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+					break;}
+			}
+			
+		if (count0 == 13){
+			for (int j = 3;j <= 80; j+= 4){
+				if(CarsLv3.cars[j] == 0){
+					for(int i=53;i <= 77;i+=2){
+						Part.parts[i] --;
+					}	
+						CarFrame.frames[5] -=1;								
+						CarsLv3.cars[j] +=1;
+						if(j == 3){
+							JOptionPane.showMessageDialog (null, "You have gained Mini Moke!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_MokeIcon);
+							break;
+						}
+						if(j == 7){
+							JOptionPane.showMessageDialog (null, "You have gained Kia Rondo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_RondoIcon);
+							break;
+						}
+						if(j == 11){
+							JOptionPane.showMessageDialog (null, "You have gained GMC Suburban!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_SuburbanIcon);
+							break;
+						}
+						if(j == 15){
+							JOptionPane.showMessageDialog (null, "You have gained Honda Prelude!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_PreludeIcon);
+							break;
+						}
+						if(j == 19){
+							JOptionPane.showMessageDialog (null, "You have gained Citroen_Saxo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_SaxoIcon);
+							break;
+						}
+						if(j == 23){
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Tiguan!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_TiguanIcon);
+							break;
+						}
+						if(j == 27){
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Phaeton!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_PhaetonIcon);
+							break;
+						}
+						if(j == 31){
+							JOptionPane.showMessageDialog (null, "You have gained Buick Centry!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_CentryIcon);
+							break;
+						}
+						if(j == 35){
+							JOptionPane.showMessageDialog (null, "You have gained Land Rover Discovery!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_DiscoveryIcon);
+							break;
+						}
+						if(j == 39){
+							JOptionPane.showMessageDialog (null, "You have gained Infiniti Etherea!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_EthereaIcon);
+							break;
+						}
+						if(j == 43){
+							JOptionPane.showMessageDialog (null, "You have gained Peugeot 308!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_308Icon);
+							break;
+						}
+						if(j == 47){
+							JOptionPane.showMessageDialog (null, "You have gained Toyota Auris!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_AurisIcon);
+							break;
+						}
+						if(j == 51){
+							JOptionPane.showMessageDialog (null, "You have gained Pagani ZondaF!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Pagani_ZondaFIcon);
+							break;
+						}
+						if(j == 55){
+							JOptionPane.showMessageDialog (null, "You have gained Lancia Phedra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_PhedraIcon);
+							break;
+						}
+						if(j == 59){
+							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Impala!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_ImpalaIcon);
+							break;
+						}
+						if(j == 63){
+							JOptionPane.showMessageDialog (null, "You have gained Porsche Boxster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_BoxsterIcon);
+							break;
+						}
+						if(j == 67){
+							JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_DB6Icon);
+							break;
+						}
+						if(j == 71){
+							JOptionPane.showMessageDialog (null, "You have gained Vaz 2103!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_2103Icon);
+							break;
+						}
+						if(j == 75){
+							JOptionPane.showMessageDialog (null, "You have gained Hyundai Mistra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_MistraIcon);
+							break;
+						}
+						if(j == 79){
+							JOptionPane.showMessageDialog (null, "You have gained Mini Countryman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_CountrymanIcon);
+							break;
+						}
+				}
+				else{
+					JOptionPane.showMessageDialog(null, "You have colected all 3 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+					break;
+				}
+			
+	
+			}
+		}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have 3 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+		}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+		}  
 }
+		
+if(ae.getSource() == jbtnBuildCarLv4){
+	if(CarMain.main[5] >=4){
+		if(CarMain.main[7] >0){
+			if(CarFrame.frames[7] >0){ 
+				
+				for(int i=79;i <= 103;i+=2){
+					if(Part.parts[i] >0){
+						count0+=1;
+					}
+					else{
+						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+						break;}
+				}
+				
+			if (count0 == 13){
+				for (int j = 3;j <= 80; j+= 4){
+					if(CarsLv4.cars[j] == 0){
+						for(int i=79;i <= 103;i+=2){
+							Part.parts[i] --;
+						
+						}	
+							CarFrame.frames[7] -=1;								
+							CarsLv4.cars[j] +=1;
+							
+							if(j == 3){
+								JOptionPane.showMessageDialog (null, "You have gained Mazda MX6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_MX6Icon);
+								break;
+							}
+							if(j == 7){
+								JOptionPane.showMessageDialog (null, "You have gained Chrysler Daytona!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_DaytonaIcon);
+								break;
+							}
+							if(j == 11){
+								JOptionPane.showMessageDialog (null, "You have gained Buick Roadmaster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_RoadmasterIcon);
+								break;
+							}
+							if(j == 15){
+								JOptionPane.showMessageDialog (null, "You have gained Volvo S80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_S80Icon);
+								break;
+							}
+							if(j == 19){
+								JOptionPane.showMessageDialog (null, "You have gained Porsche Cayman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_CaymanIcon);
+								break;
+							}
+							if(j == 23){
+								JOptionPane.showMessageDialog (null, "You have gained Volkswagen Beetle!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_BeetleIcon);
+								break;
+							}
+							if(j == 27){
+								JOptionPane.showMessageDialog (null, "You have gained Bugatti EB110!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_EB110Icon);
+								break;
+							}
+							if(j == 31){
+								JOptionPane.showMessageDialog (null, "You have gained Opel Zafira!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_ZafiraIcon);
+								break;
+							}
+							if(j == 35){
+								JOptionPane.showMessageDialog (null, "You have gained Saab 9000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_9000Icon);
+								break;
+							}
+							if(j == 39){
+								JOptionPane.showMessageDialog (null, "You have gained McLaren F1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_F1Icon);
+								break;
+							}
+							if(j == 43){
+								JOptionPane.showMessageDialog (null, "You have gained Audi R8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_R8Icon);
+								break;
+							}
+							if(j == 47){
+								JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 8C!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_8CIcon);
+								break;
+							}
+							if(j == 51){
+								JOptionPane.showMessageDialog (null, "You have gained Ford_Fiesta!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_FiestaIcon);
+								break;
+							}
+							if(j == 55){
+								JOptionPane.showMessageDialog (null, "You have gained Infiniti Q50!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_Q50Icon);
+								break;
+							}
+							if(j == 59){
+								JOptionPane.showMessageDialog (null, "You have gained Maserati 5000GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_5000GTIcon);
+								break;
+							}
+							if(j == 63){
+								JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz CLA250!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_CLA250Icon);
+								break;
+							}
+							if(j == 67){
+								JOptionPane.showMessageDialog (null, "You have gained Lamborghini Gallardo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_GallardoIcon);
+								break;
+							}
+							if(j == 71){
+								JOptionPane.showMessageDialog (null, "You have gained Mazda RX7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_RX7Icon);
+								break;
+							}
+							if(j == 75){
+								JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Colt!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_ColtIcon);
+							}
+							if(j == 79){
+								JOptionPane.showMessageDialog (null, "You have gained Kia Sorento!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_SorentoIcon);
+								break;
+							}
+					}
+					else{
+						JOptionPane.showMessageDialog(null, "You have colected all 4 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+						break;
+					}
+				
+		
+				}
+			}
+			}
+			else{
+				JOptionPane.showMessageDialog (null, "You don't have 4 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+			}
+			else{
+				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+			}
+			}
+			else{
+				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+			}  
 }
+																	
+	if(ae.getSource() == jbtnBuildCarLv5){
+		if(CarMain.main[5] >=5){
+			if(CarMain.main[7] >0){
+				if(CarFrame.frames[9] >0){ 
+					
+					for(int i=105;i <= 129;i+=2){
+						if(Part.parts[i] >0){
+							count0+=1;
+						}
+						else{
+							JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);  					
+							break;}
+					}
+					
+				if (count0 == 13){
+					for (int j = 3;j <= 80; j+= 4){
+						if(CarsLv5.cars[j] == 0){
+							for(int i=105;i <= 129;i+=2){
+								Part.parts[i] --;
+							}	
+								CarFrame.frames[9] -=1;								
+								CarsLv5.cars[j] +=1;
+								
+								if(j == 3){
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Wraith!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_WraithIcon);
+									break;
+								}
+								if(j == 7){
+									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Diablo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_DiabloIcon);
+									break;
+								}
+								if(j == 11){
+									JOptionPane.showMessageDialog (null, "You have gained Jeep Scrambler!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_ScramblerIcon);
+									break;
+								}
+								if(j == 15){
+									JOptionPane.showMessageDialog (null, "You have gained Bentley Continental!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_ContinentalIcon);
+									break;
+								}
+								if(j == 19){
+									JOptionPane.showMessageDialog (null, "You have gained Bentley Azure!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_AzureIcon);
+									break;
+								}
+								if(j == 23){
+									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_OneIcon);
+									break;
+								}
+								if(j == 27){
+									JOptionPane.showMessageDialog (null, "You have gained Cadilliac XTS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_XTSIcon);
+									break;
+								}
+								if(j == 31){
+									JOptionPane.showMessageDialog (null, "You have gained Fiat 500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_500Icon);
+									break;
+								}
+								if(j == 35){
+									JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Pajero!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_PajeroIcon);
+									break;
+								}
+								if(j == 39){
+									JOptionPane.showMessageDialog (null, "You have gained Moskvich 2140!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_2140Icon);
+									break;
+								}
+								if(j == 43){
+									JOptionPane.showMessageDialog (null, "You have gained Opel GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_GTIcon);
+									break;
+								}
+								if(j == 47){
+									JOptionPane.showMessageDialog (null, "You have gained Hyundai Getz!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_GetzIcon);
+									break;
+								}
+								if(j == 51){
+									JOptionPane.showMessageDialog (null, "You have gained Maserati Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_CoupeIcon);
+									break;
+								}
+								if(j == 55){
+									JOptionPane.showMessageDialog (null, "You have gained Honda S2000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_S2000Icon);
+									break;
+								}
+								if(j == 59){
+									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_SpiderIcon);
+									break;
+								}
+								if(j == 63){
+									JOptionPane.showMessageDialog (null, "You have gained BMW M5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_M5Icon);
+									break;
+								}
+								if(j == 67){
+									JOptionPane.showMessageDialog (null, "You have gained BMW I8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_I8Icon);
+									break;
+								}
+								if(j == 71){
+									JOptionPane.showMessageDialog (null, "You have gained Citroen C5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_C5Icon);
+									break;
+								}
+								if(j == 75){
+									JOptionPane.showMessageDialog (null, "You have gained Fiat Punto!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_PuntoIcon);
+									break;
+								}
+								if(j == 79){
+									JOptionPane.showMessageDialog (null, "You have gained Audi 100!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_100Icon);
+									break;
+								}
+						}
+						else{
+							JOptionPane.showMessageDialog(null, "You have colected all 5 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+					
+			
+					}
+				}
+				}
+				else{
+					JOptionPane.showMessageDialog (null, "You don't have 5 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+				}
+				else{
+					JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+				}
+				}
+				else{
+					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+				}  
+}
+	
+	//Build Cars Lv6-10
+	
+	if(ae.getSource() == jbtnBuildCarLv6){
+    	if(CarMain.main[5] >=6){
+    		if(CarMain.main[7] >0){
+    			if(CarFrame.frames[11] >0){ 
+    				
+    				for(int i=131;i <= 155;i+=2){
+    					if(Part.parts[i] >0){
+    						count0+=1;
+    					}
+    					else{
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);    					
+    						break;}
+    				}
+    				
+				if (count0 == 13){
+					for (int j = 3;j <= 80; j+= 4){
+						if(CarsLv6.cars[j] == 0){
+							for(int i=131;i <= 155;i+=2){
+								Part.parts[i] --;
+							}	
+								CarFrame.frames[11] -=1;								
+								CarsLv6.cars[j] +=1;
+								
+								if(j == 3){
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Phantom", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_PhantomIcon);
+									break; 
+								}
+								if(j == 7){
+									JOptionPane.showMessageDialog (null, "You have gained Toyota 86!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_86Icon);
+									break; 
+								}
+								if(j == 11){
+									JOptionPane.showMessageDialog (null, "You have gained BMW e70!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e70Icon);
+									break;
+								}
+								if(j == 15){
+									JOptionPane.showMessageDialog (null, "You have gained Chrysler Voyager!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_VoyagerIcon);
+									break;
+								}
+								if(j == 19){
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce PhantomIII!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_PhantomIIIIcon);
+									break;
+								}
+								if(j == 23){
+									JOptionPane.showMessageDialog (null, "You have gained Honda CRX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_CRXIcon);
+									break;
+								}
+								if(j == 27){
+									JOptionPane.showMessageDialog (null, "You have gained Subaru 1000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_1000Icon);
+									break; 
+								}
+								if(j == 31){
+									JOptionPane.showMessageDialog (null, "You have gained Cadilliac Eldorado!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_EldoradoIcon);
+									break; 
+								}
+								if(j == 35){
+									JOptionPane.showMessageDialog (null, "You have gained Land Rover Freelander!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_FreelanderIcon);
+									break;
+								}
+								if(j == 39){
+									JOptionPane.showMessageDialog (null, "You have gained Renault_Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_SpiderIcon);
+									break;
+								}
+								if(j == 43){
+									JOptionPane.showMessageDialog (null, "You have gained Gaz 21!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Gaz_21Icon);
+									break;
+								}
+								if(j == 47){
+									JOptionPane.showMessageDialog (null, "You have gained Acura EL!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_ELIcon);
+									break;
+								}
+								if(j == 51){
+									JOptionPane.showMessageDialog (null, "You have gained Bugatti Veyron!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_VeyronIcon);
+									break; 
+								}
+								if(j == 55){
+									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz SL600!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_SL600Icon);
+									break;
+								}
+								if(j == 59){
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Silver!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_SilverIcon);
+									break; 
+								}
+								if(j == 63){
+									JOptionPane.showMessageDialog (null, "You have gained Mini Paceman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_PacemanIcon);
+									break; 
+								}
+								if(j == 67){
+									JOptionPane.showMessageDialog (null, "You have gained Hyundai Excel!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_ExcelIcon);
+									break;
+								}
+								if(j == 71){
+									JOptionPane.showMessageDialog (null, "You have gained Gaz 24!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Gaz_24Icon);
+									break; 
+								}
+								if(j == 75){
+									JOptionPane.showMessageDialog (null, "You have gained Peugeot 107!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_107Icon);
+									break; 
+								}
+								if(j == 79){
+									JOptionPane.showMessageDialog (null, "You have gained Audi_A4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_A4Icon);
+									break;
+								}
+						}
+						else{
+							JOptionPane.showMessageDialog(null, "You have colected all 6 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+					
+			
+					}
+				}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have 6 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    			}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    			}  
+}
+
+	
+	if(ae.getSource() == jbtnBuildCarLv7){
+    	if(CarMain.main[5] >=7){
+    		if(CarMain.main[7] >0){
+    			if(CarFrame.frames[13] >0){ 
+    				
+    				for(int i=157;i <= 181;i+=2){
+    					if(Part.parts[i] >0){
+    						count0+=1;
+    					}
+    					else{
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+    						break;}
+    				}
+    				
+				if (count0 == 13){
+					for (int j = 3;j <= 80; j+= 4){
+						if(CarsLv7.cars[j] == 0){
+							for(int i=157;i <= 181;i+=2){
+								Part.parts[i] --;
+							}	
+								CarFrame.frames[13] -=1;								
+								CarsLv7.cars[j] +=1;
+								
+								if(j == 3){
+									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Aventador", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_AventadorIcon);
+									break;
+								}
+								if(j == 7){
+									JOptionPane.showMessageDialog (null, "You have gained Nissan 350z", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_350zIcon);
+									break;
+								}
+								if(j == 11){
+									JOptionPane.showMessageDialog (null, "You have gained Jaguar XJ6", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_XJ6Icon);
+									break;
+								}
+								if(j == 15){
+									JOptionPane.showMessageDialog (null, "You have gained Renault Clio", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_ClioIcon);
+									break;
+								}
+								if(j == 19){
+									JOptionPane.showMessageDialog (null, "You have gained Toyota Avensis", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_AvensisIcon);
+									break;
+								}
+								if(j == 23){
+									JOptionPane.showMessageDialog (null, "You have gained Subaru Outback", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_OutbackIcon);
+									break;
+								}
+								if(j == 27){
+									JOptionPane.showMessageDialog (null, "You have gained Saab 900", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_900Icon);
+									break;
+								}
+								if(j == 31){
+									JOptionPane.showMessageDialog (null, "You have gained Opel Vectra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_VectraIcon);
+									break;
+								}
+								if(j == 35){
+									JOptionPane.showMessageDialog (null, "You have gained Chrysler Charger", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_ChargerIcon);
+									break;
+								}
+								if(j == 39){
+									JOptionPane.showMessageDialog (null, "You have gained Ferrari_348", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_348Icon);
+									break;
+								}
+								if(j == 43){
+									JOptionPane.showMessageDialog (null, "You have gained Hyundai XG", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_XGIcon);
+									break;
+								}
+								if(j == 47){
+									JOptionPane.showMessageDialog (null, "You have gained Lexus RX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_RXIcon);
+									break;
+								}
+								if(j == 51){
+									JOptionPane.showMessageDialog (null, "You have gained Dodge 400", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_400Icon);
+									break;
+								}
+								if(j == 55){
+									JOptionPane.showMessageDialog (null, "You have gained GMC Terrain", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_TerrainIcon);
+									break;
+								}
+								if(j == 59){
+									JOptionPane.showMessageDialog (null, "You have gained Volvo C70", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_C70Icon);
+									break;
+								}
+								if(j == 63){
+									JOptionPane.showMessageDialog (null, "You have gained Ford_Sierra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_SierraIcon);
+									break;
+								}
+								if(j == 67){
+									JOptionPane.showMessageDialog (null, "You have gained Subaru Impreza", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_ImprezaIcon);
+									break;
+								}
+								if(j == 71){
+									JOptionPane.showMessageDialog (null, "You have gained BMW e90", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e90Icon);
+									break;
+								}
+								if(j == 75){
+									JOptionPane.showMessageDialog (null, "You have gained Nissan Skyline", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_SkylineIcon);
+									break;
+								}
+								if(j == 79){
+									JOptionPane.showMessageDialog (null, "You have gained Audi Q7", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_Q7Icon);
+									break;
+								}
+						}
+						else{
+							JOptionPane.showMessageDialog(null, "You have colected all 7 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+					
+			
+					}
+				}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have 7 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    			}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    			}  
+}
+	    																		
+	    																		
+	if(ae.getSource() == jbtnBuildCarLv8){
+    	if(CarMain.main[5] >=8){
+    		if(CarMain.main[7] >0){
+    			if(CarFrame.frames[15] >0){ 
+    				
+    				for(int i=183;i <= 207;i+=2){
+    					if(Part.parts[i] >0){
+    						count0+=1;
+    					}
+    					else{
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+    						break;}
+    				}
+    				
+				if (count0 == 13){
+					for (int j = 3;j <= 80; j+= 4){
+						if(CarsLv8.cars[j] == 0){
+							for(int i=183;i <= 207;i+=2){
+								Part.parts[i] --;
+							}	
+								CarFrame.frames[15] -=1;								
+								CarsLv8.cars[j] +=1;
+								
+								if(j == 3){
+									JOptionPane.showMessageDialog (null, "You have gained Bentley Arnage", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_ArnageIcon);
+									break;
+								}
+								if(j == 7){
+									JOptionPane.showMessageDialog (null, "You have gained Volvo 850", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_850Icon);
+									break;
+								}
+								if(j == 11){
+									JOptionPane.showMessageDialog (null, "You have gained Toyota Rav4", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_Rav4Icon);
+									break;
+								}
+								if(j == 15){
+									JOptionPane.showMessageDialog (null, "You have gained Ford Focus", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_FocusIcon);
+									break;
+								}
+								if(j == 19){
+									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Spin", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_SpinIcon);
+									break;
+								}
+								if(j == 23){
+									JOptionPane.showMessageDialog (null, "You have gained Bentley GTZ", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_GTZIcon);
+									break;
+								}
+								if(j == 27){
+									JOptionPane.showMessageDialog (null, "You have gained Lexus LS", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_LSIcon);
+									break;
+								}
+								if(j == 31){
+									JOptionPane.showMessageDialog (null, "You have gained Land Rover RangeRover", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_RangeRoverIcon);
+									break;
+								}
+								if(j == 35){
+									JOptionPane.showMessageDialog (null, "You have gained Lexus GX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_GXIcon);
+									break;
+								}
+								if(j == 39){
+									JOptionPane.showMessageDialog (null, "You have gained Jeep Wrangler", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_WranglerIcon);
+									break;
+								}
+								if(j == 43){
+									JOptionPane.showMessageDialog (null, "You have gained Maserati GranTurismo", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_GranTurismoIcon);
+									break;
+								}
+								if(j == 47){
+									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Agera", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_AgeraIcon);
+									break;
+								}
+								if(j == 51){
+									JOptionPane.showMessageDialog (null, "You have gained Acura MDX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_MDXIcon);
+									break;
+								}
+								if(j == 55){
+									JOptionPane.showMessageDialog (null, "You have gained Audi RS6", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_RS6Icon);
+									break;
+								}
+								if(j == 59){
+									JOptionPane.showMessageDialog (null, "You have gained Cadilliac DeVille", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_DeVilleIcon);
+									break;
+								}
+								if(j == 63){
+									JOptionPane.showMessageDialog (null, "You have gained McLaren Veneno", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_VenenoIcon);
+									break;
+								}
+								if(j == 67){
+									JOptionPane.showMessageDialog (null, "You have gained Tesla X", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_XIcon);
+									break;
+								}
+								if(j == 71){
+									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz G55", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_G55Icon);
+									break;
+								}
+								if(j == 75){
+									JOptionPane.showMessageDialog (null, "You have gained Lancia Lybra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_LybraIcon);
+									break;
+								}
+								if(j == 79){
+									JOptionPane.showMessageDialog (null, "You have gained Infiniti QX60", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_QX60Icon);
+									break;
+								}
+						}
+						else{
+							JOptionPane.showMessageDialog(null, "You have colected all 8 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+					
+			
+					}
+				}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have 8 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    				}
+    				}
+    				else{
+    					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    				}  
+}												
+	    																		
+	    																		
+	if(ae.getSource() == jbtnBuildCarLv9){
+    	if(CarMain.main[5] >=9){
+    		if(CarMain.main[7] >0){
+    			if(CarFrame.frames[17] >0){ 
+    				
+    				for(int i=209;i <= 233;i+=2){
+    					if(Part.parts[i] >0){
+    						count0+=1;
+    					}
+    					else{
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+    						break;}
+    				}
+    				
+				if (count0 == 13){
+					for (int j = 3;j <= 80; j+= 4){
+						if(CarsLv9.cars[j] == 0){
+							for(int i=209;i <= 233;i+=2){
+								Part.parts[i] --;
+							}	
+								CarFrame.frames[17] -=1;								
+								CarsLv9.cars[j] +=1;
+								
+								if(j == 3){
+									JOptionPane.showMessageDialog (null, "You have gained Kia Forte", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_ForteIcon);
+									break;
+								}
+								if(j == 7){
+									JOptionPane.showMessageDialog (null, "You have gained Lancia Voyager", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_VoyagerIcon);
+									break;
+								}
+								if(j == 11){
+									JOptionPane.showMessageDialog (null, "You have gained Porsche_Cayenne", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_CayenneIcon);
+									break;
+								}
+								if(j == 15){
+									JOptionPane.showMessageDialog (null, "You have gained McLaren_650s", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_650sIcon);
+									break;
+								}
+								if(j == 19){
+									JOptionPane.showMessageDialog (null, "You have gained Jaguar E-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_E_TypeIcon);
+									break;
+								}
+								if(j == 23){
+									JOptionPane.showMessageDialog (null, "You have gained Peugeot 601", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_601Icon);
+									break;
+								}
+								if(j == 27){
+									JOptionPane.showMessageDialog (null, "You have gained Jaguar F-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_F_TypeIcon);
+									break;
+								}
+								if(j == 31){
+									JOptionPane.showMessageDialog (null, "You have gained Fiat Doblo", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_DobloIcon);
+									break;
+								}
+								if(j == 35){
+									JOptionPane.showMessageDialog (null, "You have gained Vaz 2101", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_2101Icon);
+									break;
+								}
+								if(j == 39){
+									JOptionPane.showMessageDialog (null, "You have gained McLaren P1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_P1Icon);
+									break;
+								}
+								if(j == 43){
+									JOptionPane.showMessageDialog (null, "You have gained Peugeot 405", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_405Icon);
+									break;
+								}
+								if(j == 47){
+									JOptionPane.showMessageDialog (null, "You have gained GMC Envoy", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_EnvoyIcon);
+									break;
+								}
+								if(j == 51){
+									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Corvete", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_CorveteIcon);
+									break;
+								}
+								if(j == 55){
+									JOptionPane.showMessageDialog (null, "You have gained Pagani Huayra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Pagani_HuayraIcon);
+									break;
+								}
+								if(j == 59){
+									JOptionPane.showMessageDialog (null, "You have gained Moskvich 402", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_402Icon);
+									break;
+								}
+								if(j == 63){
+									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 159", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_159Icon);
+									break;
+								}
+								if(j == 67){
+									JOptionPane.showMessageDialog (null, "You have gained Renault Fregate", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_FregateIcon);
+									break;
+								}
+								if(j == 71){
+									JOptionPane.showMessageDialog (null, "You have gained Mini Cooper", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_CooperIcon);
+									break;
+								}
+								if(j == 75){
+									JOptionPane.showMessageDialog (null, "You have gained Dodge Viper", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_ViperIcon);
+									break;
+								}
+								if(j == 79){
+									JOptionPane.showMessageDialog (null, "You have gained Vaz Niva", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_NivaIcon);
+									break;
+								}
+						}
+						else{
+							JOptionPane.showMessageDialog(null, "You have colected all 9 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+					
+			
+					}
+				}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have 9 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    			}
+    			}
+    			else{
+    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    			}  
+}											
+	    	
+
+if(ae.getSource() == jbtnBuildCarLv10){
+if(CarMain.main[5] >=10){
+	if(CarMain.main[7] >0){
+		if(CarFrame.frames[19] >0){ 
+			
+			for(int i=235;i <= 259;i+=2){
+				if(Part.parts[i] >0){
+					count0+=1;
+				}
+				else{
+					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+					break;}
+			}
+			
+		if (count0 == 13){
+			for (int j = 3;j <= 80; j+= 4){
+				if(CarsLv10.cars[j] == 0){
+					for(int i=235;i <= 259;i+=2){
+						Part.parts[i] --;
+					}	
+						CarFrame.frames[19] -=1;								
+						CarsLv10.cars[j] +=1;
+						
+						if(j == 3){
+							JOptionPane.showMessageDialog (null, "You have gained Jaguar X-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_X_TypeIcon);
+							break;
+						}
+						if(j == 7){
+							JOptionPane.showMessageDialog (null, "You have gained Ferrari 308", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_308Icon);
+							break;
+						}
+						if(j == 11){
+							JOptionPane.showMessageDialog (null, "You have gained Mazda 626", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_626Icon);
+							break;
+						}
+						if(j == 15){
+							JOptionPane.showMessageDialog (null, "You have gained Maserati Shamal", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_ShamalIcon);
+							break;
+						}
+						if(j == 19){
+							JOptionPane.showMessageDialog (null, "You have gained Nissan 240sx", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_240sxIcon);
+							break;
+						}
+						if(j == 23){
+							JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 4C", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_4CIcon);
+							break;
+						}
+						if(j == 27){
+							JOptionPane.showMessageDialog (null, "You have gained Nissan Juke", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_JukeIcon);
+							break;
+						}
+						if(j == 31){
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Golf1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_Golf1Icon);
+							break;
+						}
+						if(j == 35){
+							JOptionPane.showMessageDialog (null, "You have gained Jeep Gladiator", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_GladiatorIcon);
+							break;
+						}
+						if(j == 39){
+							JOptionPane.showMessageDialog (null, "You have gained Dodge Matador", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_MatadorIcon);
+							break;
+						}
+						if(j == 43){
+							JOptionPane.showMessageDialog (null, "You have gained Bugatti Royale", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_RoyaleIcon);
+							break;
+						}
+						if(j == 47){
+							JOptionPane.showMessageDialog (null, "You have gained Citroen CX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_CXIcon);
+							break;
+						}
+						if(j == 51){
+							JOptionPane.showMessageDialog (null, "You have gained Lamborghini 350GT", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_350GTIcon);
+							break;
+						}
+						if(j == 55){
+							JOptionPane.showMessageDialog (null, "You have gained Mitsubishi GTO", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_GTOIcon);
+							break;
+						}
+						if(j == 59){
+							JOptionPane.showMessageDialog (null, "You have gained Buick Invicta", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_InvictaIcon);
+							break;
+						}
+						if(j == 63){
+							JOptionPane.showMessageDialog (null, "You have gained Porsche 911", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_911Icon);
+							break;
+						}
+						if(j == 67){
+							JOptionPane.showMessageDialog (null, "You have gained Subaru Forester", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_ForesterIcon);
+							break;
+						}
+						if(j == 71){
+							JOptionPane.showMessageDialog (null, "You have gained Citroen BX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_BXIcon);
+							break;
+						}
+						if(j == 75){
+							JOptionPane.showMessageDialog (null, "You have gained Bugatti Type252", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_Type252Icon);
+							break;
+						}
+						if(j == 79){
+							JOptionPane.showMessageDialog (null, "You have gained Ferrari 488", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_488Icon);
+							break;
+						}
+				}
+				else{
+					JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+					break;
+				}
+			
+	
+			}
+		}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have 1 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+		}
+		}
+		else{
+			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+		}  
+}
+}}

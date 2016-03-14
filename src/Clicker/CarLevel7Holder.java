@@ -2,14 +2,14 @@ package Clicker;
 
 public class CarLevel7Holder {
 
-	public String cars[] = new String[80];
+	public Integer cars[] = new Integer[80];
 
 	public CarLevel7Holder(){
 		
-		
+		MakeCars();
 	}
 	
-	public void CarsMaker(String a1,int k, String a2,int k1, String a3,int k2,String a4,int k3){
+	public void CarsMaker(int a1,int k, int a2,int k1, int a3,int k2,int a4,int k3){
 
 		cars[k] = a1;
 		cars[k1] = a2;
@@ -20,45 +20,45 @@ public class CarLevel7Holder {
 		public void MakeCars(){
 			
 			int u = 0;int i = 1;int o = 2;int p = 3;
-			CarsMaker("Type", u,"Lamborghini", i,"Italian",o, "0",p);       //Lamborghini_Aventador
+			CarsMaker(0, u, 35, i, 4,o,  0,p);       //Lamborghini_Aventador
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Nissan", i,"Japanese", o,"0",p);        	//Nissan_350z
+			CarsMaker(0, u, 15, i, 1, o, 0,p);        	//Nissan_350z
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Jaguar", i,"British", o,"0",p);          	//Jaguar_XJ6
+			CarsMaker(0, u, 24, i, 3, o, 0,p);          	//Jaguar_XJ6
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Renault", i,"French",o,"0",p);         	//Renault_Clio
+			CarsMaker(0, u, 39, i, 5,o, 0,p);         	//Renault_Clio
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Toyota", i,"Japanese", o,"0",p);    		//Toyota_Avensis
+			CarsMaker(0, u, 9, i, 1, o, 0,p);    		//Toyota_Avensis
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Subaru", i,"Japanese", o,"0",p);    	 	//Subaru_Outback
+			CarsMaker(0, u, 17, i, 1, o, 0,p);    	 	//Subaru_Outback
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Saab", i,"Swedish", o,"0",p);		 		//Saab_900
+			CarsMaker(0, u, 46, i, 7, o, 0,p);		 		//Saab_900
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Opel", i,"Germany", o,"0",p);  			//Opel_Vectra	
+			CarsMaker(0, u, 23, i, 2, o, 0,p);  			//Opel_Vectra	
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Chrysler", i,"American", o,"0",p);    		//Chrysler_Charger
+			CarsMaker(0, u, 5, i, 0, o, 0,p);    		//Chrysler_Charger
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Ferrari", i,"Italian", o,"0",p);  		 	//Ferrari_348
+			CarsMaker(0, u, 34, i, 4, o, 0,p);  		 	//Ferrari_348
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Hyundai", i,"Korean", o,"0",p); 			//Hyundai_XG	
+			CarsMaker(0, u, 42, i, 6, o, 0,p); 			//Hyundai_XG	
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Lexus", i,"Japanese", o,"0",p); 			//Lexus_RX
+			CarsMaker(0, u, 10, i, 1, o, 0,p); 			//Lexus_RX
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Dodge", i,"American", o,"0",p);    		//Dodge_400
+			CarsMaker(0, u, 6, i, 0, o, 0,p);    		//Dodge_400
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"GMC", i,"American", o,"0",p);    			//GMC_Terrain
+			CarsMaker(0, u, 3, i, 0, o, 0,p);    			//GMC_Terrain
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Volvo", i,"Swedish", o,"0",p);  			//Volvo_C70
+			CarsMaker(0, u, 45, i, 7, o, 0,p);  			//Volvo_C70
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Ford", i,"American", o,"0",p);    			//Ford_Sierra	
+			CarsMaker(0, u, 4, i, 0, o, 0,p);    			//Ford_Sierra	
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Subaru", i,"Japanese", o,"0",p);  			//Subaru_Impreza
+			CarsMaker(0, u, 17, i, 1, o, 0,p);  			//Subaru_Impreza
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"BMW", i,"Germany", o,"0",p);           	//BMW_e90	
+			CarsMaker(0, u, 20, i, 2, o, 0,p);           	//BMW_e90	
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Nissan", i,"Japanese", o,"0",p); 			//Nissan_Skyline
+			CarsMaker(0, u, 15, i, 1, o, 0,p); 			//Nissan_Skyline
 			u += 4; i += 4; o +=4; p+= 4;
-			CarsMaker("Type", u,"Audi", i,"Germany", o,"0",p); 				//Audi_Q7
+			CarsMaker(0, u, 18, i, 2, o, 0,p); 				//Audi_Q7
 			u += 4; i += 4; o +=4; p+= 4;
 			
 	}
