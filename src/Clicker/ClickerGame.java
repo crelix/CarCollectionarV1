@@ -9,6 +9,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import javax.swing.*;
+import javax.swing.border.Border;
+
 import java.util.Random;
 
 public class ClickerGame implements ActionListener {
@@ -24,7 +26,6 @@ public class ClickerGame implements ActionListener {
     final static String BuildCars = "Build Cars";
     final static String BuyFrames = "Buy Frames";
     final static String SellParts = "Sell Parts";
-    final static String Settings = "Settings";
     final static String LVL1 = "Level 1";
     final static String LVL2 = "Level 2";
     final static String LVL3 = "Level 3";
@@ -35,7 +36,73 @@ public class ClickerGame implements ActionListener {
     final static String LVL8 = "Level 8";
     final static String LVL9 = "Level 9";
     final static String LVL10 = "Level 10";
-    
+    final static String Collections = "Collections";
+    final static String ByCountry = "By Country";
+    final static String ByBrand = "By Brand";
+    final static String American = "American";
+    final static String Japanese = "Japanese";
+    final static String German = "German";
+    final static String British = "British";
+    final static String Italian = "Italian";
+    final static String French = "French";
+    final static String Korean = "Korean";
+    final static String Swedish = "Swedish";
+    final static String Russian = "Russian";
+    final static String Chevrolet = "Chevrolet";
+    final static String Cadilliac = "Cadilliac";
+    final static String Buick = "Buick";
+    final static String GMC = "GMC";
+    final static String Ford = "Ford";
+    final static String Chrysler = "Chrysler";
+    final static String Dodge = "Dodge";
+    final static String Jeep = "Jeep";
+    final static String Tesla = "Tesla";
+    final static String Toyota = "Toyota";
+    final static String Lexus = "Lexus";
+    final static String Mazda = "Mazda";
+    final static String Honda = "Honda";
+    final static String Acura = "Acura";
+    final static String Mitsubishi = "Mitsubishi";
+    final static String Nissan = "Nissan";
+    final static String Infiniti = "Infiniti";
+    final static String Subaru = "Subaru";
+    final static String Audi = "Audi";
+    final static String Mercedes_Benz = "Mercedes Benz";
+    final static String BMW = "BMW";
+    final static String Volkswagen = "Volkswagen";
+    final static String Porsche = "Porsche";
+    final static String Opel = "Opel";
+    final static String Jaguar = "Jaguar";
+    final static String Land_Rover = "Land Rover";
+    final static String Mini = "Mini";
+    final static String Aston_Martin = "Aston Martin";
+    final static String Bentley = "Bentley";
+    final static String Rolls_Royce = "Rolls Royce";
+    final static String McLaren = "McLaren";
+    final static String Fiat = "Fiat";
+    final static String Alfa_Romeo = "Alfa Romeo";
+    final static String Maserati = "Maserati";
+    final static String Ferrari = "Ferrari";
+    final static String Lamborghini = "Lamborghini";
+    final static String Pagani = "Pagani";
+    final static String Lancia = "Lancia";
+    final static String Peugeot = "Peugeot";
+    final static String Renault = "Renault";
+    final static String Citroen = "Citroen";
+    final static String Bugatti = "Bugatti";
+    final static String Hyundai = "Hyundai";
+    final static String Kia = "Kia";
+    final static String Koenigsegg = "Koenigsegg";
+    final static String Volvo = "Volvo";
+    final static String Saab = "Saab";
+    final static String VAZ = "VAZ";
+    final static String GAZ = "GAZ";
+    final static String Moskvich = "Moskvich";
+    final static String Statistics = "Statistic";
+    final static String Main = "Main";
+    final static String Boxes = "Boxes";
+    final static String Parts = "Parts";
+
 
     ImagesHolder ImagesHolder = new ImagesHolder();
     LabelsHolder Labels = new LabelsHolder();
@@ -232,8 +299,7 @@ public class ClickerGame implements ActionListener {
 	JButton jbtnBuildCarLv8 = new JButton("Build");
 	JButton jbtnBuildCarLv9 = new JButton("Build");
 	JButton jbtnBuildCarLv10 = new JButton("Build");
-    
-
+    	
     //Make TabbedPane
     public void addComponentToPane(Container pane){
        
@@ -608,39 +674,767 @@ public class ClickerGame implements ActionListener {
         jbtnSellSuspensionLv10.setEnabled(false);
         jbtnSellTransmissionLv10.setEnabled(false);
         jbtnSellTiresLv10.setEnabled(false);
-
- 	            
+        
+        jbtnMoney.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnMoney.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.MoneyLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBoxes.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBoxes.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnUpgradeLevel.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnUpgradeLevel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.PlayerLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnUpgradeBoxesLevel.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnUpgradeBoxesLevel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVLLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnUpgradeGarageLevel.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnUpgradeGarageLevel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.GarageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnPartsLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnPartsLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.OpenBoxesLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyBoxLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyBoxLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BoxesLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuyFrameLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuyFrameLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FrameLv10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnBuildCarLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnBuildCarLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CarsLv10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellAccessoriesLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellAccessoriesLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.AccessoriesLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBodyLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBodyLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BodyLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellBrakesLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellBrakesLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.BrakesLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellCoolingLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellCoolingLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.CoolingLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellElectronicsLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellElectronicsLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ElectronicsLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellEngineLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellEngineLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.EngineLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellExaustLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellExaustLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.ExaustLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellFuelLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellFuelLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.FuelLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellInteriorLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellInteriorLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.InteriorLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSteeringLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSteeringLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SteeringLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellSuspensionLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellSuspensionLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.SuspensionLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTransmissionLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTransmissionLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TransmissionLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv1.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv1.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL1Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv2.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL2Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv3.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv3.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL3Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv4.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL4Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv5.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL5Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv6.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv6.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL6Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv7.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv7.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL7Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv8.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv8.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL8Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv9.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv9.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL9Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+        jbtnSellTiresLv10.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+        jbtnSellTiresLv10.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Labels.TiresLVL10Label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        
+         //Tabbed Pane  
     	JTabbedPane tabbedPane = new JTabbedPane();
     	tabbedPane.setTabPlacement(JTabbedPane.TOP);
     	
+    	//JLabel Border
+    	Border  raisedbevel, loweredbevel;
+    	raisedbevel = BorderFactory.createRaisedBevelBorder();
+    	loweredbevel = BorderFactory.createLoweredBevelBorder();
+    	
     	//MainPanel
+    	GridLayout MainLayout = new GridLayout(3,5);
     	JPanel MainPanel = new JPanel();
+    	MainPanel.setLayout(MainLayout);	
     	
     	JPanel MainPanelSub = new JPanel();
     	MainPanelSub.setLayout(new BoxLayout(MainPanelSub, BoxLayout.PAGE_AXIS));
+    	MainPanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
     	
     	JPanel MainPanelSub2 = new JPanel();
     	MainPanelSub2.setLayout(new BoxLayout(MainPanelSub2, BoxLayout.PAGE_AXIS));
-    	
+    	MainPanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+    	       
     	MainPanelSub.add(Labels.MoneyLabel);
     	MainPanelSub.add(jbtnMoney);
     	MainPanelSub2.add(Labels.BoxesLabel);
        	MainPanelSub2.add(jbtnBoxes);
+       	
+       	MainPanel.add(new JLabel(""));
+       	MainPanel.add(new JLabel(""));
+       	MainPanel.add(new JLabel(""));
+       	MainPanel.add(new JLabel(""));
+       	MainPanel.add(new JLabel(""));
+       	MainPanel.add(new JLabel(""));
     	MainPanel.add(MainPanelSub);
+    	MainPanel.add(new JLabel(""));
     	MainPanel.add(MainPanelSub2);
+    	MainPanel.add(new JLabel(""));
+    	MainPanel.add(new JLabel(""));
+    	MainPanel.add(new JLabel(""));
+    	MainPanel.add(new JLabel(""));
+    	MainPanel.add(new JLabel(""));
+    	
         
         //Upgrades Panel
     	
+    	GridLayout UpgradesLayout = new GridLayout(3,3);
         JPanel UpgradesPanel = new JPanel();
+        UpgradesPanel.setLayout(UpgradesLayout);
         
         JPanel UpgradesPanelSub = new JPanel();
         UpgradesPanelSub.setLayout(new BoxLayout(UpgradesPanelSub, BoxLayout.PAGE_AXIS));
+        UpgradesPanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel UpgradesPanelSub2 = new JPanel();
         UpgradesPanelSub2.setLayout(new BoxLayout(UpgradesPanelSub2, BoxLayout.PAGE_AXIS));
+        UpgradesPanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel UpgradesPanelSub3 = new JPanel();
         UpgradesPanelSub3.setLayout(new BoxLayout(UpgradesPanelSub3, BoxLayout.PAGE_AXIS));
+        UpgradesPanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
     	
         UpgradesPanelSub.add(Labels.PlayerLabel);
         UpgradesPanelSub.add(jbtnUpgradeLevel);
@@ -648,43 +1442,62 @@ public class ClickerGame implements ActionListener {
         UpgradesPanelSub2.add(jbtnUpgradeGarageLevel);
         UpgradesPanelSub3.add(Labels.BoxesLVLLabel);
         UpgradesPanelSub3.add(jbtnUpgradeBoxesLevel);
+        
+        UpgradesPanel.add(new JLabel(""));
+        UpgradesPanel.add(new JLabel(""));
+        UpgradesPanel.add(new JLabel(""));
         UpgradesPanel.add(UpgradesPanelSub);
         UpgradesPanel.add(UpgradesPanelSub2);
         UpgradesPanel.add(UpgradesPanelSub3);
+        UpgradesPanel.add(new JLabel(""));
+        UpgradesPanel.add(new JLabel(""));
+        UpgradesPanel.add(new JLabel(""));
       
         // Buy Boxes Panel
        
+        GridLayout BoxesLayout = new GridLayout(3,5);
         JPanel BuyBoxesPanel = new JPanel();
+        BuyBoxesPanel.setLayout(BoxesLayout);
         
         JPanel BuyBoxesPanelSub = new JPanel();
         BuyBoxesPanelSub.setLayout(new BoxLayout(BuyBoxesPanelSub, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub2 = new JPanel();
         BuyBoxesPanelSub2.setLayout(new BoxLayout(BuyBoxesPanelSub2, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub3 = new JPanel();
         BuyBoxesPanelSub3.setLayout(new BoxLayout(BuyBoxesPanelSub3, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub4 = new JPanel();
         BuyBoxesPanelSub4.setLayout(new BoxLayout(BuyBoxesPanelSub4, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub5 = new JPanel();
         BuyBoxesPanelSub5.setLayout(new BoxLayout(BuyBoxesPanelSub5, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub6 = new JPanel();
         BuyBoxesPanelSub6.setLayout(new BoxLayout(BuyBoxesPanelSub6, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub7 = new JPanel();
         BuyBoxesPanelSub7.setLayout(new BoxLayout(BuyBoxesPanelSub7, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub8 = new JPanel();
         BuyBoxesPanelSub8.setLayout(new BoxLayout(BuyBoxesPanelSub8, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub9 = new JPanel();
         BuyBoxesPanelSub9.setLayout(new BoxLayout(BuyBoxesPanelSub9, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyBoxesPanelSub10 = new JPanel();
         BuyBoxesPanelSub10.setLayout(new BoxLayout(BuyBoxesPanelSub10, BoxLayout.PAGE_AXIS));
+        BuyBoxesPanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
  	
         BuyBoxesPanelSub.add(Labels.BoxesLVL1Label);
         BuyBoxesPanelSub.add(jbtnBuyBoxLv1);
@@ -717,40 +1530,56 @@ public class ClickerGame implements ActionListener {
         BuyBoxesPanel.add(BuyBoxesPanelSub8);
         BuyBoxesPanel.add(BuyBoxesPanelSub9);
         BuyBoxesPanel.add(BuyBoxesPanelSub10);
+        BuyBoxesPanel.add(new JLabel(""));
+        BuyBoxesPanel.add(new JLabel(""));
+        BuyBoxesPanel.add(new JLabel(""));
+        BuyBoxesPanel.add(new JLabel(""));
+        BuyBoxesPanel.add(new JLabel(""));
         
         // Open Boxes Panel
         
         JPanel OpenBoxesPanel = new JPanel();
+        OpenBoxesPanel.setLayout(BoxesLayout);
         
         JPanel OpenBoxesPanelSub = new JPanel();
         OpenBoxesPanelSub.setLayout(new BoxLayout(OpenBoxesPanelSub, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub2 = new JPanel();
         OpenBoxesPanelSub2.setLayout(new BoxLayout(OpenBoxesPanelSub2, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub3 = new JPanel();
         OpenBoxesPanelSub3.setLayout(new BoxLayout(OpenBoxesPanelSub3, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub4 = new JPanel();
         OpenBoxesPanelSub4.setLayout(new BoxLayout(OpenBoxesPanelSub4, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub5 = new JPanel();
         OpenBoxesPanelSub5.setLayout(new BoxLayout(OpenBoxesPanelSub5, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub6 = new JPanel();
         OpenBoxesPanelSub6.setLayout(new BoxLayout(OpenBoxesPanelSub6, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub7 = new JPanel();
         OpenBoxesPanelSub7.setLayout(new BoxLayout(OpenBoxesPanelSub7, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub8 = new JPanel();
         OpenBoxesPanelSub8.setLayout(new BoxLayout(OpenBoxesPanelSub8, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub9 = new JPanel();
         OpenBoxesPanelSub9.setLayout(new BoxLayout(OpenBoxesPanelSub9, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel OpenBoxesPanelSub10 = new JPanel();
         OpenBoxesPanelSub10.setLayout(new BoxLayout(OpenBoxesPanelSub10, BoxLayout.PAGE_AXIS));
+        OpenBoxesPanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
             	  	
         OpenBoxesPanelSub.add(Labels.OpenBoxesLVL1Label);
         OpenBoxesPanelSub.add(jbtnPartsLv1);
@@ -783,40 +1612,57 @@ public class ClickerGame implements ActionListener {
         OpenBoxesPanel.add(OpenBoxesPanelSub8);
         OpenBoxesPanel.add(OpenBoxesPanelSub9);
         OpenBoxesPanel.add(OpenBoxesPanelSub10);
+        OpenBoxesPanel.add(new JLabel(""));
+        OpenBoxesPanel.add(new JLabel(""));
+        OpenBoxesPanel.add(new JLabel(""));
+        OpenBoxesPanel.add(new JLabel(""));
+        OpenBoxesPanel.add(new JLabel(""));
          
         // Build Cars Panel
         
+        GridLayout BuildCarsLayout = new GridLayout(3,5);
         JPanel BuildCarsPanel = new JPanel();
+        BuildCarsPanel.setLayout(BuildCarsLayout);
         
         JPanel BuildCarsPanelSub = new JPanel();
         BuildCarsPanelSub.setLayout(new BoxLayout(BuildCarsPanelSub, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub2 = new JPanel();
         BuildCarsPanelSub2.setLayout(new BoxLayout(BuildCarsPanelSub2, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub3 = new JPanel();
         BuildCarsPanelSub3.setLayout(new BoxLayout(BuildCarsPanelSub3, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub4 = new JPanel();
         BuildCarsPanelSub4.setLayout(new BoxLayout(BuildCarsPanelSub4, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub5 = new JPanel();
         BuildCarsPanelSub5.setLayout(new BoxLayout(BuildCarsPanelSub5, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub6 = new JPanel();
         BuildCarsPanelSub6.setLayout(new BoxLayout(BuildCarsPanelSub6, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub7 = new JPanel();
         BuildCarsPanelSub7.setLayout(new BoxLayout(BuildCarsPanelSub7, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub8 = new JPanel();
         BuildCarsPanelSub8.setLayout(new BoxLayout(BuildCarsPanelSub8, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub9 = new JPanel();
         BuildCarsPanelSub9.setLayout(new BoxLayout(BuildCarsPanelSub9, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuildCarsPanelSub10 = new JPanel();
         BuildCarsPanelSub10.setLayout(new BoxLayout(BuildCarsPanelSub10, BoxLayout.PAGE_AXIS));
+        BuildCarsPanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
      	
      	BuildCarsPanelSub.add(Labels.CarsLv1Label);
      	BuildCarsPanelSub.add(jbtnBuildCarLv1);
@@ -849,40 +1695,57 @@ public class ClickerGame implements ActionListener {
      	BuildCarsPanel.add(BuildCarsPanelSub8);
      	BuildCarsPanel.add(BuildCarsPanelSub9);
      	BuildCarsPanel.add(BuildCarsPanelSub10);
+     	BuildCarsPanel.add(new JLabel(""));
+     	BuildCarsPanel.add(new JLabel(""));
+     	BuildCarsPanel.add(new JLabel(""));
+     	BuildCarsPanel.add(new JLabel(""));
+     	BuildCarsPanel.add(new JLabel(""));
         
      	// Buy Frames Panel
      	
+     	GridLayout BuyFramesLayout = new GridLayout(3,5);
         JPanel BuyFramesPanel = new JPanel();
+        BuyFramesPanel.setLayout(BuyFramesLayout);
         
         JPanel BuyFramesPanelSub = new JPanel();
         BuyFramesPanelSub.setLayout(new BoxLayout(BuyFramesPanelSub, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub2 = new JPanel();
         BuyFramesPanelSub2.setLayout(new BoxLayout(BuyFramesPanelSub2, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub3 = new JPanel();
         BuyFramesPanelSub3.setLayout(new BoxLayout(BuyFramesPanelSub3, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub4 = new JPanel();
         BuyFramesPanelSub4.setLayout(new BoxLayout(BuyFramesPanelSub4, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub5 = new JPanel();
         BuyFramesPanelSub5.setLayout(new BoxLayout(BuyFramesPanelSub5, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub6 = new JPanel();
         BuyFramesPanelSub6.setLayout(new BoxLayout(BuyFramesPanelSub6, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub7 = new JPanel();
         BuyFramesPanelSub7.setLayout(new BoxLayout(BuyFramesPanelSub7, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub8 = new JPanel();
         BuyFramesPanelSub8.setLayout(new BoxLayout(BuyFramesPanelSub8, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub9 = new JPanel();
         BuyFramesPanelSub9.setLayout(new BoxLayout(BuyFramesPanelSub9, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel BuyFramesPanelSub10 = new JPanel();
         BuyFramesPanelSub10.setLayout(new BoxLayout(BuyFramesPanelSub10, BoxLayout.PAGE_AXIS));
+        BuyFramesPanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
           	         	
      	BuyFramesPanelSub.add(Labels.FrameLv1Label);
      	BuyFramesPanelSub.add(jbtnBuyFrameLv1);
@@ -915,49 +1778,69 @@ public class ClickerGame implements ActionListener {
      	BuyFramesPanel.add(BuyFramesPanelSub8);
      	BuyFramesPanel.add(BuyFramesPanelSub9);
      	BuyFramesPanel.add(BuyFramesPanelSub10);
+     	BuyFramesPanel.add(new JLabel(""));
+     	BuyFramesPanel.add(new JLabel(""));
+     	BuyFramesPanel.add(new JLabel(""));
+     	BuyFramesPanel.add(new JLabel(""));
+     	BuyFramesPanel.add(new JLabel(""));
         
      	// Sell Parts Level 1 Panel
      	
+     	GridLayout PartsLayout = new GridLayout(3,5);
         JPanel SellPartsLVL1Panel = new JPanel();
+        SellPartsLVL1Panel.setLayout(PartsLayout);
         
         JPanel SellPartsLVL1PanelSub = new JPanel();
         SellPartsLVL1PanelSub.setLayout(new BoxLayout(SellPartsLVL1PanelSub, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub2 = new JPanel();
         SellPartsLVL1PanelSub2.setLayout(new BoxLayout(SellPartsLVL1PanelSub2, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub3 = new JPanel();
         SellPartsLVL1PanelSub3.setLayout(new BoxLayout(SellPartsLVL1PanelSub3, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub4 = new JPanel();
         SellPartsLVL1PanelSub4.setLayout(new BoxLayout(SellPartsLVL1PanelSub4, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub5 = new JPanel();
         SellPartsLVL1PanelSub5.setLayout(new BoxLayout(SellPartsLVL1PanelSub5, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub6 = new JPanel();
         SellPartsLVL1PanelSub6.setLayout(new BoxLayout(SellPartsLVL1PanelSub6, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub7 = new JPanel();
         SellPartsLVL1PanelSub7.setLayout(new BoxLayout(SellPartsLVL1PanelSub7, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub8 = new JPanel();
         SellPartsLVL1PanelSub8.setLayout(new BoxLayout(SellPartsLVL1PanelSub8, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub9 = new JPanel();
         SellPartsLVL1PanelSub9.setLayout(new BoxLayout(SellPartsLVL1PanelSub9, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub10 = new JPanel();
         SellPartsLVL1PanelSub10.setLayout(new BoxLayout(SellPartsLVL1PanelSub10, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub11 = new JPanel();
         SellPartsLVL1PanelSub11.setLayout(new BoxLayout(SellPartsLVL1PanelSub11, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub12 = new JPanel();
         SellPartsLVL1PanelSub12.setLayout(new BoxLayout(SellPartsLVL1PanelSub12, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
         
         JPanel SellPartsLVL1PanelSub13 = new JPanel();
         SellPartsLVL1PanelSub13.setLayout(new BoxLayout(SellPartsLVL1PanelSub13, BoxLayout.PAGE_AXIS));
+        SellPartsLVL1PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
             	               
         SellPartsLVL1PanelSub.add(Labels.AccessoriesLVL1Label);
         SellPartsLVL1PanelSub.add(jbtnSellAccessoriesLv1);
@@ -996,6 +1879,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub8);
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub9);
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub10);
+        SellPartsLVL1Panel.add(new JLabel(""));
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub11);
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub12);
         SellPartsLVL1Panel.add(SellPartsLVL1PanelSub13);
@@ -1003,45 +1887,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 2 Panel
         
    	 	JPanel SellPartsLVL2Panel = new JPanel();
+   	 	SellPartsLVL2Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL2PanelSub = new JPanel();
    	 	SellPartsLVL2PanelSub.setLayout(new BoxLayout(SellPartsLVL2PanelSub, BoxLayout.PAGE_AXIS));
+   	 	SellPartsLVL2PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
    	 	
    	 	JPanel SellPartsLVL2PanelSub2 = new JPanel();
 	 	SellPartsLVL2PanelSub2.setLayout(new BoxLayout(SellPartsLVL2PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub3 = new JPanel();
 	 	SellPartsLVL2PanelSub3.setLayout(new BoxLayout(SellPartsLVL2PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub4 = new JPanel();
 	 	SellPartsLVL2PanelSub4.setLayout(new BoxLayout(SellPartsLVL2PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub5 = new JPanel();
 	 	SellPartsLVL2PanelSub5.setLayout(new BoxLayout(SellPartsLVL2PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub6 = new JPanel();
 	 	SellPartsLVL2PanelSub6.setLayout(new BoxLayout(SellPartsLVL2PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub7 = new JPanel();
 	 	SellPartsLVL2PanelSub7.setLayout(new BoxLayout(SellPartsLVL2PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub8 = new JPanel();
 	 	SellPartsLVL2PanelSub8.setLayout(new BoxLayout(SellPartsLVL2PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub9 = new JPanel();
 	 	SellPartsLVL2PanelSub9.setLayout(new BoxLayout(SellPartsLVL2PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub10 = new JPanel();
 	 	SellPartsLVL2PanelSub10.setLayout(new BoxLayout(SellPartsLVL2PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub11 = new JPanel();
 	 	SellPartsLVL2PanelSub11.setLayout(new BoxLayout(SellPartsLVL2PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub12 = new JPanel();
 	 	SellPartsLVL2PanelSub12.setLayout(new BoxLayout(SellPartsLVL2PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL2PanelSub13 = new JPanel();
 	 	SellPartsLVL2PanelSub13.setLayout(new BoxLayout(SellPartsLVL2PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL2PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
                
         SellPartsLVL2PanelSub.add(Labels.AccessoriesLVL2Label);
         SellPartsLVL2PanelSub.add(jbtnSellAccessoriesLv2);
@@ -1080,6 +1978,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub8);
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub9);
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub10);
+        SellPartsLVL2Panel.add(new JLabel(""));
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub11);
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub12);
         SellPartsLVL2Panel.add(SellPartsLVL2PanelSub13);
@@ -1087,45 +1986,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 3 Panel
         
    	 	JPanel SellPartsLVL3Panel = new JPanel();
+   	 	SellPartsLVL3Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL3PanelSub = new JPanel();
 	 	SellPartsLVL3PanelSub.setLayout(new BoxLayout(SellPartsLVL3PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub2 = new JPanel();
 	 	SellPartsLVL3PanelSub2.setLayout(new BoxLayout(SellPartsLVL3PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub3 = new JPanel();
 	 	SellPartsLVL3PanelSub3.setLayout(new BoxLayout(SellPartsLVL3PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub4 = new JPanel();
 	 	SellPartsLVL3PanelSub4.setLayout(new BoxLayout(SellPartsLVL3PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub5 = new JPanel();
 	 	SellPartsLVL3PanelSub5.setLayout(new BoxLayout(SellPartsLVL3PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub6 = new JPanel();
 	 	SellPartsLVL3PanelSub6.setLayout(new BoxLayout(SellPartsLVL3PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub7 = new JPanel();
 	 	SellPartsLVL3PanelSub7.setLayout(new BoxLayout(SellPartsLVL3PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub8 = new JPanel();
 	 	SellPartsLVL3PanelSub8.setLayout(new BoxLayout(SellPartsLVL3PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub9 = new JPanel();
 	 	SellPartsLVL3PanelSub9.setLayout(new BoxLayout(SellPartsLVL3PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub10 = new JPanel();
 	 	SellPartsLVL3PanelSub10.setLayout(new BoxLayout(SellPartsLVL3PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub11 = new JPanel();
 	 	SellPartsLVL3PanelSub11.setLayout(new BoxLayout(SellPartsLVL3PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub12 = new JPanel();
 	 	SellPartsLVL3PanelSub12.setLayout(new BoxLayout(SellPartsLVL3PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL3PanelSub13 = new JPanel();
 	 	SellPartsLVL3PanelSub13.setLayout(new BoxLayout(SellPartsLVL3PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL3PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
    	 	    	                
         SellPartsLVL3PanelSub.add(Labels.AccessoriesLVL3Label);
         SellPartsLVL3PanelSub.add(jbtnSellAccessoriesLv3);
@@ -1164,6 +2077,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub8);
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub9);
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub10);
+        SellPartsLVL3Panel.add(new JLabel(""));
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub11);
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub12);
         SellPartsLVL3Panel.add(SellPartsLVL3PanelSub13);
@@ -1171,45 +2085,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 4 Panel
         
    	 	JPanel SellPartsLVL4Panel = new JPanel();
+   	 	SellPartsLVL4Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL4PanelSub = new JPanel();
 	 	SellPartsLVL4PanelSub.setLayout(new BoxLayout(SellPartsLVL4PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub2 = new JPanel();
 	 	SellPartsLVL4PanelSub2.setLayout(new BoxLayout(SellPartsLVL4PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub3 = new JPanel();
 	 	SellPartsLVL4PanelSub3.setLayout(new BoxLayout(SellPartsLVL4PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub4 = new JPanel();
 	 	SellPartsLVL4PanelSub4.setLayout(new BoxLayout(SellPartsLVL4PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub5 = new JPanel();
 	 	SellPartsLVL4PanelSub5.setLayout(new BoxLayout(SellPartsLVL4PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub6 = new JPanel();
 	 	SellPartsLVL4PanelSub6.setLayout(new BoxLayout(SellPartsLVL4PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub7 = new JPanel();
 	 	SellPartsLVL4PanelSub7.setLayout(new BoxLayout(SellPartsLVL4PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub8 = new JPanel();
 	 	SellPartsLVL4PanelSub8.setLayout(new BoxLayout(SellPartsLVL4PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub9 = new JPanel();
 	 	SellPartsLVL4PanelSub9.setLayout(new BoxLayout(SellPartsLVL4PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub10 = new JPanel();
 	 	SellPartsLVL4PanelSub10.setLayout(new BoxLayout(SellPartsLVL4PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub11 = new JPanel();
 	 	SellPartsLVL4PanelSub11.setLayout(new BoxLayout(SellPartsLVL4PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub12 = new JPanel();
 	 	SellPartsLVL4PanelSub12.setLayout(new BoxLayout(SellPartsLVL4PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL4PanelSub13 = new JPanel();
 	 	SellPartsLVL4PanelSub13.setLayout(new BoxLayout(SellPartsLVL4PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL4PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
    	 	    	
         SellPartsLVL4PanelSub.add(Labels.AccessoriesLVL4Label);
         SellPartsLVL4PanelSub.add(jbtnSellAccessoriesLv4);
@@ -1248,6 +2176,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub8);
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub9);
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub10);
+        SellPartsLVL4Panel.add(new JLabel(""));
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub11);
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub12);
         SellPartsLVL4Panel.add(SellPartsLVL4PanelSub13);
@@ -1255,45 +2184,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 5 Panel
         
    	 	JPanel SellPartsLVL5Panel = new JPanel();
+   	 	SellPartsLVL5Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL5PanelSub = new JPanel();
 	 	SellPartsLVL5PanelSub.setLayout(new BoxLayout(SellPartsLVL5PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub2 = new JPanel();
 	 	SellPartsLVL5PanelSub2.setLayout(new BoxLayout(SellPartsLVL5PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub3 = new JPanel();
 	 	SellPartsLVL5PanelSub3.setLayout(new BoxLayout(SellPartsLVL5PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub4 = new JPanel();
 	 	SellPartsLVL5PanelSub4.setLayout(new BoxLayout(SellPartsLVL5PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub5 = new JPanel();
 	 	SellPartsLVL5PanelSub5.setLayout(new BoxLayout(SellPartsLVL5PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub6 = new JPanel();
 	 	SellPartsLVL5PanelSub6.setLayout(new BoxLayout(SellPartsLVL5PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub7 = new JPanel();
 	 	SellPartsLVL5PanelSub7.setLayout(new BoxLayout(SellPartsLVL5PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub8 = new JPanel();
 	 	SellPartsLVL5PanelSub8.setLayout(new BoxLayout(SellPartsLVL5PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub9 = new JPanel();
 	 	SellPartsLVL5PanelSub9.setLayout(new BoxLayout(SellPartsLVL5PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub10 = new JPanel();
 	 	SellPartsLVL5PanelSub10.setLayout(new BoxLayout(SellPartsLVL5PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub11 = new JPanel();
 	 	SellPartsLVL5PanelSub11.setLayout(new BoxLayout(SellPartsLVL5PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub12 = new JPanel();
 	 	SellPartsLVL5PanelSub12.setLayout(new BoxLayout(SellPartsLVL5PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL5PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL5PanelSub13 = new JPanel();
-	 	SellPartsLVL5PanelSub13.setLayout(new BoxLayout(SellPartsLVL5PanelSub13, BoxLayout.PAGE_AXIS));   	 	    	      
+	 	SellPartsLVL5PanelSub13.setLayout(new BoxLayout(SellPartsLVL5PanelSub13, BoxLayout.PAGE_AXIS));  
+	 	SellPartsLVL5PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
                
         SellPartsLVL5PanelSub.add(Labels.AccessoriesLVL5Label);
         SellPartsLVL5PanelSub.add(jbtnSellAccessoriesLv5);
@@ -1332,6 +2275,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub8);
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub9);
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub10);
+        SellPartsLVL5Panel.add(new JLabel(""));
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub11);
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub12);
         SellPartsLVL5Panel.add(SellPartsLVL5PanelSub13);
@@ -1339,45 +2283,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 6 Panel
         
    	 	JPanel SellPartsLVL6Panel = new JPanel();
+   	 	SellPartsLVL6Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL6PanelSub = new JPanel();
 	 	SellPartsLVL6PanelSub.setLayout(new BoxLayout(SellPartsLVL6PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub2 = new JPanel();
 	 	SellPartsLVL6PanelSub2.setLayout(new BoxLayout(SellPartsLVL6PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub3 = new JPanel();
 	 	SellPartsLVL6PanelSub3.setLayout(new BoxLayout(SellPartsLVL6PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub4 = new JPanel();
 	 	SellPartsLVL6PanelSub4.setLayout(new BoxLayout(SellPartsLVL6PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub5 = new JPanel();
 	 	SellPartsLVL6PanelSub5.setLayout(new BoxLayout(SellPartsLVL6PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub6 = new JPanel();
 	 	SellPartsLVL6PanelSub6.setLayout(new BoxLayout(SellPartsLVL6PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub7 = new JPanel();
 	 	SellPartsLVL6PanelSub7.setLayout(new BoxLayout(SellPartsLVL6PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub8 = new JPanel();
 	 	SellPartsLVL6PanelSub8.setLayout(new BoxLayout(SellPartsLVL6PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub9 = new JPanel();
 	 	SellPartsLVL6PanelSub9.setLayout(new BoxLayout(SellPartsLVL6PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub10 = new JPanel();
 	 	SellPartsLVL6PanelSub10.setLayout(new BoxLayout(SellPartsLVL6PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub11 = new JPanel();
 	 	SellPartsLVL6PanelSub11.setLayout(new BoxLayout(SellPartsLVL6PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub12 = new JPanel();
 	 	SellPartsLVL6PanelSub12.setLayout(new BoxLayout(SellPartsLVL6PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL6PanelSub13 = new JPanel();
 	 	SellPartsLVL6PanelSub13.setLayout(new BoxLayout(SellPartsLVL6PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL6PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
    	 	    	                     
         SellPartsLVL6PanelSub.add(Labels.AccessoriesLVL6Label);
         SellPartsLVL6PanelSub.add(jbtnSellAccessoriesLv6);
@@ -1416,6 +2374,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub8);
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub9);
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub10);
+        SellPartsLVL6Panel.add(new JLabel(""));
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub11);
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub12);
         SellPartsLVL6Panel.add(SellPartsLVL6PanelSub13);
@@ -1423,45 +2382,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 7 Panel
         
    	 	JPanel SellPartsLVL7Panel = new JPanel();
+   	 	SellPartsLVL7Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL7PanelSub = new JPanel();
 	 	SellPartsLVL7PanelSub.setLayout(new BoxLayout(SellPartsLVL7PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub2 = new JPanel();
 	 	SellPartsLVL7PanelSub2.setLayout(new BoxLayout(SellPartsLVL7PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub3 = new JPanel();
 	 	SellPartsLVL7PanelSub3.setLayout(new BoxLayout(SellPartsLVL7PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub4 = new JPanel();
 	 	SellPartsLVL7PanelSub4.setLayout(new BoxLayout(SellPartsLVL7PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub5 = new JPanel();
 	 	SellPartsLVL7PanelSub5.setLayout(new BoxLayout(SellPartsLVL7PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub6 = new JPanel();
 	 	SellPartsLVL7PanelSub6.setLayout(new BoxLayout(SellPartsLVL7PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub7 = new JPanel();
 	 	SellPartsLVL7PanelSub7.setLayout(new BoxLayout(SellPartsLVL7PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub8 = new JPanel();
 	 	SellPartsLVL7PanelSub8.setLayout(new BoxLayout(SellPartsLVL7PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub9 = new JPanel();
 	 	SellPartsLVL7PanelSub9.setLayout(new BoxLayout(SellPartsLVL7PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub10 = new JPanel();
 	 	SellPartsLVL7PanelSub10.setLayout(new BoxLayout(SellPartsLVL7PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub11 = new JPanel();
 	 	SellPartsLVL7PanelSub11.setLayout(new BoxLayout(SellPartsLVL7PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub12 = new JPanel();
 	 	SellPartsLVL7PanelSub12.setLayout(new BoxLayout(SellPartsLVL7PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL7PanelSub13 = new JPanel();
 	 	SellPartsLVL7PanelSub13.setLayout(new BoxLayout(SellPartsLVL7PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL7PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
               
         SellPartsLVL7PanelSub.add(Labels.AccessoriesLVL7Label);
         SellPartsLVL7PanelSub.add(jbtnSellAccessoriesLv7);
@@ -1500,6 +2473,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub8);
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub9);
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub10);
+        SellPartsLVL7Panel.add(new JLabel(""));
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub11);
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub12);
         SellPartsLVL7Panel.add(SellPartsLVL7PanelSub13);
@@ -1507,45 +2481,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 8 Panel
         
    	 	JPanel SellPartsLVL8Panel = new JPanel();
+   	 	SellPartsLVL8Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL8PanelSub = new JPanel();
 	 	SellPartsLVL8PanelSub.setLayout(new BoxLayout(SellPartsLVL8PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub2 = new JPanel();
 	 	SellPartsLVL8PanelSub2.setLayout(new BoxLayout(SellPartsLVL8PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub3 = new JPanel();
 	 	SellPartsLVL8PanelSub3.setLayout(new BoxLayout(SellPartsLVL8PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub4 = new JPanel();
 	 	SellPartsLVL8PanelSub4.setLayout(new BoxLayout(SellPartsLVL8PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub5 = new JPanel();
 	 	SellPartsLVL8PanelSub5.setLayout(new BoxLayout(SellPartsLVL8PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub6 = new JPanel();
 	 	SellPartsLVL8PanelSub6.setLayout(new BoxLayout(SellPartsLVL8PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub7 = new JPanel();
 	 	SellPartsLVL8PanelSub7.setLayout(new BoxLayout(SellPartsLVL8PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub8 = new JPanel();
 	 	SellPartsLVL8PanelSub8.setLayout(new BoxLayout(SellPartsLVL8PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub9 = new JPanel();
 	 	SellPartsLVL8PanelSub9.setLayout(new BoxLayout(SellPartsLVL8PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub10 = new JPanel();
 	 	SellPartsLVL8PanelSub10.setLayout(new BoxLayout(SellPartsLVL8PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub11 = new JPanel();
 	 	SellPartsLVL8PanelSub11.setLayout(new BoxLayout(SellPartsLVL8PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub12 = new JPanel();
 	 	SellPartsLVL8PanelSub12.setLayout(new BoxLayout(SellPartsLVL8PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL8PanelSub13 = new JPanel();
 	 	SellPartsLVL8PanelSub13.setLayout(new BoxLayout(SellPartsLVL8PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL8PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 
         SellPartsLVL8PanelSub.add(Labels.AccessoriesLVL8Label);
         SellPartsLVL8PanelSub.add(jbtnSellAccessoriesLv8);
@@ -1584,6 +2572,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub8);
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub9);
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub10);
+        SellPartsLVL8Panel.add(new JLabel(""));
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub11);
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub12);
         SellPartsLVL8Panel.add(SellPartsLVL8PanelSub13);
@@ -1591,45 +2580,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 9 Panel
         
    	 	JPanel SellPartsLVL9Panel = new JPanel();
+   	 	SellPartsLVL9Panel.setLayout(PartsLayout);
    	 	
    	 	JPanel SellPartsLVL9PanelSub = new JPanel();
 	 	SellPartsLVL9PanelSub.setLayout(new BoxLayout(SellPartsLVL9PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub2 = new JPanel();
 	 	SellPartsLVL9PanelSub2.setLayout(new BoxLayout(SellPartsLVL9PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub3 = new JPanel();
 	 	SellPartsLVL9PanelSub3.setLayout(new BoxLayout(SellPartsLVL9PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub4 = new JPanel();
 	 	SellPartsLVL9PanelSub4.setLayout(new BoxLayout(SellPartsLVL9PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub5 = new JPanel();
 	 	SellPartsLVL9PanelSub5.setLayout(new BoxLayout(SellPartsLVL9PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub6 = new JPanel();
 	 	SellPartsLVL9PanelSub6.setLayout(new BoxLayout(SellPartsLVL9PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub7 = new JPanel();
 	 	SellPartsLVL9PanelSub7.setLayout(new BoxLayout(SellPartsLVL9PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub8 = new JPanel();
 	 	SellPartsLVL9PanelSub8.setLayout(new BoxLayout(SellPartsLVL9PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub9 = new JPanel();
 	 	SellPartsLVL9PanelSub9.setLayout(new BoxLayout(SellPartsLVL9PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub10 = new JPanel();
 	 	SellPartsLVL9PanelSub10.setLayout(new BoxLayout(SellPartsLVL9PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub11 = new JPanel();
 	 	SellPartsLVL9PanelSub11.setLayout(new BoxLayout(SellPartsLVL9PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub12 = new JPanel();
 	 	SellPartsLVL9PanelSub12.setLayout(new BoxLayout(SellPartsLVL9PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL9PanelSub13 = new JPanel();
 	 	SellPartsLVL9PanelSub13.setLayout(new BoxLayout(SellPartsLVL9PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL9PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
         SellPartsLVL9PanelSub.add(Labels.AccessoriesLVL9Label);
         SellPartsLVL9PanelSub.add(jbtnSellAccessoriesLv9);
@@ -1668,6 +2671,7 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub8);
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub9);
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub10);
+        SellPartsLVL9Panel.add(new JLabel(""));
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub11);
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub12);
         SellPartsLVL9Panel.add(SellPartsLVL9PanelSub13);
@@ -1675,45 +2679,59 @@ public class ClickerGame implements ActionListener {
         // Sell Parts Level 10 Panel
         
    	 	JPanel SellPartsLVL10Panel = new JPanel();
+   	 	SellPartsLVL10Panel.setLayout(PartsLayout);
    	 	
    		JPanel SellPartsLVL10PanelSub = new JPanel();
 	 	SellPartsLVL10PanelSub.setLayout(new BoxLayout(SellPartsLVL10PanelSub, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub2 = new JPanel();
 	 	SellPartsLVL10PanelSub2.setLayout(new BoxLayout(SellPartsLVL10PanelSub2, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub2.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub3 = new JPanel();
 	 	SellPartsLVL10PanelSub3.setLayout(new BoxLayout(SellPartsLVL10PanelSub3, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub3.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub4 = new JPanel();
 	 	SellPartsLVL10PanelSub4.setLayout(new BoxLayout(SellPartsLVL10PanelSub4, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub4.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub5 = new JPanel();
 	 	SellPartsLVL10PanelSub5.setLayout(new BoxLayout(SellPartsLVL10PanelSub5, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub5.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub6 = new JPanel();
 	 	SellPartsLVL10PanelSub6.setLayout(new BoxLayout(SellPartsLVL10PanelSub6, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub6.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub7 = new JPanel();
 	 	SellPartsLVL10PanelSub7.setLayout(new BoxLayout(SellPartsLVL10PanelSub7, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub7.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub8 = new JPanel();
 	 	SellPartsLVL10PanelSub8.setLayout(new BoxLayout(SellPartsLVL10PanelSub8, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub8.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub9 = new JPanel();
 	 	SellPartsLVL10PanelSub9.setLayout(new BoxLayout(SellPartsLVL10PanelSub9, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub9.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub10 = new JPanel();
 	 	SellPartsLVL10PanelSub10.setLayout(new BoxLayout(SellPartsLVL10PanelSub10, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub10.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub11 = new JPanel();
 	 	SellPartsLVL10PanelSub11.setLayout(new BoxLayout(SellPartsLVL10PanelSub11, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub11.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub12 = new JPanel();
 	 	SellPartsLVL10PanelSub12.setLayout(new BoxLayout(SellPartsLVL10PanelSub12, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub12.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
 	 	
 	 	JPanel SellPartsLVL10PanelSub13 = new JPanel();
 	 	SellPartsLVL10PanelSub13.setLayout(new BoxLayout(SellPartsLVL10PanelSub13, BoxLayout.PAGE_AXIS));
+	 	SellPartsLVL10PanelSub13.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
        
         SellPartsLVL10PanelSub.add(Labels.AccessoriesLVL10Label);
         SellPartsLVL10PanelSub.add(jbtnSellAccessoriesLv10);
@@ -1752,18 +2770,1261 @@ public class ClickerGame implements ActionListener {
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub8);
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub9);
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub10);
+        SellPartsLVL10Panel.add(new JLabel(""));
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub11);
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub12);
         SellPartsLVL10Panel.add(SellPartsLVL10PanelSub13);
         
-        // Settings Panel
+        // Collections
         
-   	 	JPanel SettingsPanel = new JPanel();
+   	 	JTabbedPane CollectionsPanel = new JTabbedPane();
+   	 	
+   	 	GridLayout Car2Layout = new GridLayout(3,5);
+   	 	GridLayout Car3Layout = new GridLayout(3,3);
+   	 	GridLayout Car4Layout = new GridLayout(3,4);
+   	 	GridLayout Car5Layout = new GridLayout(2,3);
+   	 	GridLayout Car7Layout = new GridLayout(2,4);
+   	 	
+   	 	// Collection Acura
+   	 	
+   	 	JPanel CollectionAcuraPanel = new JPanel();
+   	 	CollectionAcuraPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(Labels.Acura_CSXLabel);
+   	 	CollectionAcuraPanel.add(Labels.Acura_ELLabel);
+   	 	CollectionAcuraPanel.add(Labels.Acura_MDXLabel);
+   	 	CollectionAcuraPanel.add(Labels.Acura_NSXLabel);
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	CollectionAcuraPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Acura_CSXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Acura_ELLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Acura_MDXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Acura_NSXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Alfa Romeo
+   	 	
+   	 	JPanel CollectionAlfa_RomeoPanel = new JPanel();
+   	 	CollectionAlfa_RomeoPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(Labels.Alfa_Romeo_159Label);
+   	 	CollectionAlfa_RomeoPanel.add(Labels.Alfa_Romeo_4CLabel);
+   	 	CollectionAlfa_RomeoPanel.add(Labels.Alfa_Romeo_8CLabel);
+   	 	CollectionAlfa_RomeoPanel.add(Labels.Alfa_Romeo_SpiderLabel);
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	CollectionAlfa_RomeoPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Alfa_Romeo_159Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Alfa_Romeo_4CLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Alfa_Romeo_8CLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Alfa_Romeo_SpiderLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Aston Martin
+   	 	
+   	 	JPanel CollectionAston_MartinPanel = new JPanel();
+   	 	CollectionAston_MartinPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(Labels.Aston_Martin_DB6Label);
+   	 	CollectionAston_MartinPanel.add(Labels.Aston_Martin_DB9Label);
+   	 	CollectionAston_MartinPanel.add(Labels.Aston_Martin_OneLabel);
+   	 	CollectionAston_MartinPanel.add(Labels.Aston_Martin_RapideLabel);
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	 	CollectionAston_MartinPanel.add(new JLabel(""));
+   	
+   	 	Labels.Aston_Martin_DB6Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Aston_Martin_DB9Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Aston_Martin_OneLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Aston_Martin_RapideLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Audi
+   	 	
+   	 	JPanel CollectionAudiPanel = new JPanel();
+   	 	CollectionAudiPanel.setLayout(Car7Layout);
+   	 	
+   	 	CollectionAudiPanel.add(Labels.Audi_100Label);
+   	 	CollectionAudiPanel.add(Labels.Audi_80Label);
+   	 	CollectionAudiPanel.add(Labels.Audi_A4Label);
+   	 	CollectionAudiPanel.add(Labels.Audi_CoupeLabel);
+   	 	CollectionAudiPanel.add(Labels.Audi_Q7Label);
+   	 	CollectionAudiPanel.add(Labels.Audi_R8Label);
+   	 	CollectionAudiPanel.add(Labels.Audi_RS6Label);
+   	 	
+   	 	Labels.Audi_100Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Audi_80Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Audi_A4Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Audi_CoupeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Audi_Q7Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Audi_R8Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Audi_RS6Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Bentley
+   	 	
+   	 	JPanel CollectionBentleyPanel = new JPanel();
+   	 	CollectionBentleyPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(Labels.Bentley_ArnageLabel);
+   	 	CollectionBentleyPanel.add(Labels.Bentley_AzureLabel);
+   	 	CollectionBentleyPanel.add(Labels.Bentley_ContinentalLabel);
+   	 	CollectionBentleyPanel.add(Labels.Bentley_GTZLabel);
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	CollectionBentleyPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Bentley_ArnageLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Bentley_AzureLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Bentley_ContinentalLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Bentley_GTZLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection BMW
+   	 	
+   	 	JPanel CollectionBMWPanel = new JPanel();
+   	 	CollectionBMWPanel.setLayout(Car7Layout);
+   	 	
+   	 	CollectionBMWPanel.add(Labels.BMW_e30Label);
+   	 	CollectionBMWPanel.add(Labels.BMW_e34Label);
+   	 	CollectionBMWPanel.add(Labels.BMW_e36Label);
+   	 	CollectionBMWPanel.add(Labels.BMW_e70Label);
+   	 	CollectionBMWPanel.add(Labels.BMW_e90Label);
+   	 	CollectionBMWPanel.add(Labels.BMW_M5Label);
+   	 	CollectionBMWPanel.add(Labels.BMW_I8Label);
+   	 	
+   	 	Labels.BMW_e30Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.BMW_e34Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.BMW_e36Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.BMW_e70Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.BMW_e90Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.BMW_M5Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.BMW_I8Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Bugatti
+   	 	
+   	 	JPanel CollectionBugattiPanel = new JPanel();
+   	 	CollectionBugattiPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(Labels.Bugatti_EB110Label);
+   	 	CollectionBugattiPanel.add(Labels.Bugatti_RoyaleLabel);
+   	 	CollectionBugattiPanel.add(Labels.Bugatti_Type252Label);
+   	 	CollectionBugattiPanel.add(Labels.Bugatti_VeyronLabel);
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	CollectionBugattiPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Bugatti_EB110Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Bugatti_RoyaleLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Bugatti_Type252Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Bugatti_VeyronLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Buick
+   	 	
+   	 	JPanel CollectionBuickPanel = new JPanel();
+   	 	CollectionBuickPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(Labels.Buick_CentryLabel);
+   	 	CollectionBuickPanel.add(Labels.Buick_InvictaLabel);
+   	 	CollectionBuickPanel.add(Labels.Buick_RivieraLabel);
+   	 	CollectionBuickPanel.add(Labels.Buick_RoadmasterLabel);
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	CollectionBuickPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Buick_CentryLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Buick_InvictaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Buick_RivieraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Buick_RoadmasterLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Cadilliac
+   	 	
+   	 	JPanel CollectionCadilliacPanel = new JPanel();
+   	 	CollectionCadilliacPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(Labels.Cadilliac_ATSLabel);
+   	 	CollectionCadilliacPanel.add(Labels.Cadilliac_DeVilleLabel);
+   	 	CollectionCadilliacPanel.add(Labels.Cadilliac_EldoradoLabel);
+   	 	CollectionCadilliacPanel.add(Labels.Cadilliac_XTSLabel);
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	CollectionCadilliacPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Cadilliac_ATSLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Cadilliac_DeVilleLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Cadilliac_EldoradoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Cadilliac_XTSLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Chevrolet
+   	 	
+   	 	JPanel CollectionChevroletPanel = new JPanel();
+   	 	CollectionChevroletPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(Labels.Chevrolet_CorveteLabel);
+   	 	CollectionChevroletPanel.add(Labels.Chevrolet_ImpalaLabel);
+   	 	CollectionChevroletPanel.add(Labels.Chevrolet_SpinLabel);
+   	 	CollectionChevroletPanel.add(Labels.Chevrolet_VikingLabel);
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	CollectionChevroletPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Chevrolet_CorveteLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Chevrolet_ImpalaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Chevrolet_SpinLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Chevrolet_VikingLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Chrysler
+   	 	
+   	 	JPanel CollectionChryslerPanel = new JPanel();
+   	 	CollectionChryslerPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(Labels.Chrysler_ChargerLabel);
+   	 	CollectionChryslerPanel.add(Labels.Chrysler_CordobaLabel);
+   	 	CollectionChryslerPanel.add(Labels.Chrysler_DaytonaLabel);
+   	 	CollectionChryslerPanel.add(Labels.Chrysler_VoyagerLabel);
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	CollectionChryslerPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Chrysler_ChargerLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Chrysler_CordobaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Chrysler_DaytonaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Chrysler_VoyagerLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Citroen
+   	 	
+   	 	JPanel CollectionCitroenPanel = new JPanel();
+   	 	CollectionCitroenPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(Labels.Citroen_BXLabel);
+   	 	CollectionCitroenPanel.add(Labels.Citroen_C5Label);
+   	 	CollectionCitroenPanel.add(Labels.Citroen_CXLabel);
+   	 	CollectionCitroenPanel.add(Labels.Citroen_SaxoLabel);
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	CollectionCitroenPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Citroen_BXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Citroen_C5Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Citroen_CXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Citroen_SaxoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Dodge
+   	 	
+   	 	JPanel CollectionDodgePanel = new JPanel();
+   	 	CollectionDodgePanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(Labels.Dodge_400Label);
+   	 	CollectionDodgePanel.add(Labels.Dodge_MatadorLabel);
+   	 	CollectionDodgePanel.add(Labels.Dodge_NeonLabel);
+   	 	CollectionDodgePanel.add(Labels.Dodge_ViperLabel);
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	CollectionDodgePanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Dodge_400Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Dodge_MatadorLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Dodge_NeonLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Dodge_ViperLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Ferrari
+   	 	
+   	 	JPanel CollectionFerrariPanel = new JPanel();
+   	 	CollectionFerrariPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(Labels.Ferrari_308Label);
+   	 	CollectionFerrariPanel.add(Labels.Ferrari_348Label);
+   	 	CollectionFerrariPanel.add(Labels.Ferrari_488Label);
+   	 	CollectionFerrariPanel.add(Labels.Ferrari_EnzoLabel);
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	CollectionFerrariPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Ferrari_308Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Ferrari_348Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Ferrari_488Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Ferrari_EnzoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Fiat
+   	 	
+   	 	JPanel CollectionFiatPanel = new JPanel();
+   	 	CollectionFiatPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(Labels.Fiat_1500Label);
+   	 	CollectionFiatPanel.add(Labels.Fiat_500Label);
+   	 	CollectionFiatPanel.add(Labels.Fiat_DobloLabel);
+   	 	CollectionFiatPanel.add(Labels.Fiat_PuntoLabel);
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	CollectionFiatPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Fiat_1500Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Fiat_500Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Fiat_DobloLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Fiat_PuntoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Ford
+   	 	
+   	 	JPanel CollectionFordPanel = new JPanel();
+   	 	CollectionFordPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(Labels.Ford_FiestaLabel);
+   	 	CollectionFordPanel.add(Labels.Ford_FocusLabel);
+   	 	CollectionFordPanel.add(Labels.Ford_MustangLabel);
+   	 	CollectionFordPanel.add(Labels.Ford_SierraLabel);
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	CollectionFordPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Ford_FiestaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Ford_FocusLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Ford_MustangLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Ford_SierraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection GAZ
+   	 	
+   	 	JPanel CollectionGAZPanel = new JPanel();
+   	 	CollectionGAZPanel.setLayout(Car2Layout);
+   	 	
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(new JLabel(""));
+ 	 	CollectionGAZPanel.add(new JLabel(""));
+ 	 	CollectionGAZPanel.add(new JLabel(""));
+ 	 	CollectionGAZPanel.add(new JLabel(""));
+ 	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(Labels.Gaz_21Label);
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(Labels.Gaz_24Label);
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	CollectionGAZPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Gaz_21Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Gaz_24Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection GMC
+   	 	
+   	 	JPanel CollectionGMCPanel = new JPanel();
+   	 	CollectionGMCPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(Labels.GMC_EnvoyLabel);
+   	 	CollectionGMCPanel.add(Labels.GMC_SuburbanLabel);
+   	 	CollectionGMCPanel.add(Labels.GMC_TerrainLabel);
+   	 	CollectionGMCPanel.add(Labels.GMC_YukonLabel);
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	CollectionGMCPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.GMC_EnvoyLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.GMC_SuburbanLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.GMC_TerrainLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.GMC_YukonLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Hyundai
+   	 	
+   	 	JPanel CollectionHyundaiPanel = new JPanel();
+   	 	CollectionHyundaiPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(Labels.Hyundai_ExcelLabel);
+   	 	CollectionHyundaiPanel.add(Labels.Hyundai_GetzLabel);
+   	 	CollectionHyundaiPanel.add(Labels.Hyundai_MistraLabel);
+   	 	CollectionHyundaiPanel.add(Labels.Hyundai_XGLabel);
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	CollectionHyundaiPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Hyundai_ExcelLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Hyundai_GetzLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Hyundai_MistraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Hyundai_XGLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Honda
+   	 	
+   	 	JPanel CollectionHondaPanel = new JPanel();
+   	 	CollectionHondaPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(Labels.Honda_CivicLabel);
+   	 	CollectionHondaPanel.add(Labels.Honda_CRXLabel);
+   	 	CollectionHondaPanel.add(Labels.Honda_PreludeLabel);
+   	 	CollectionHondaPanel.add(Labels.Honda_S2000Label);
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	CollectionHondaPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Honda_CivicLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Honda_CRXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Honda_PreludeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Honda_S2000Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Infiniti
+   	 	
+   	 	JPanel CollectionInfinitiPanel = new JPanel();
+   	 	CollectionInfinitiPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(Labels.Infiniti_EthereaLabel);
+   	 	CollectionInfinitiPanel.add(Labels.Infiniti_FXLabel);
+   	 	CollectionInfinitiPanel.add(Labels.Infiniti_Q50Label);
+   	 	CollectionInfinitiPanel.add(Labels.Infiniti_QX60Label);
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	CollectionInfinitiPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Infiniti_EthereaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Infiniti_FXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Infiniti_Q50Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Infiniti_QX60Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Jaguar
+   	 	
+   	 	JPanel CollectionJaguarPanel = new JPanel();
+   	 	CollectionJaguarPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(Labels.Jaguar_E_TypeLabel);
+   	 	CollectionJaguarPanel.add(Labels.Jaguar_F_TypeLabel);
+   	 	CollectionJaguarPanel.add(Labels.Jaguar_X_TypeLabel);
+   	 	CollectionJaguarPanel.add(Labels.Jaguar_XJ6Label);
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	CollectionJaguarPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Jaguar_E_TypeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Jaguar_F_TypeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Jaguar_X_TypeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Jaguar_XJ6Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Jeep
+   	 	
+   	 	JPanel CollectionJeepPanel = new JPanel();
+   	 	CollectionJeepPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(Labels.Jeep_GladiatorLabel);
+   	 	CollectionJeepPanel.add(Labels.Jeep_ScramblerLabel);
+   	 	CollectionJeepPanel.add(Labels.Jeep_WranglerLabel);
+   	 	CollectionJeepPanel.add(Labels.Jeep_ZJLabel);
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	CollectionJeepPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Jeep_GladiatorLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Jeep_ScramblerLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Jeep_WranglerLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Jeep_ZJLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Kia
+   	 	
+   	 	JPanel CollectionKiaPanel = new JPanel();
+   	 	CollectionKiaPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(Labels.Kia_ForteLabel);
+   	 	CollectionKiaPanel.add(Labels.Kia_RondoLabel);
+   	 	CollectionKiaPanel.add(Labels.Kia_SorentoLabel);
+   	 	CollectionKiaPanel.add(Labels.Kia_VengaLabel);
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	CollectionKiaPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Kia_ForteLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Kia_RondoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Kia_SorentoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Kia_VengaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Koenigsegg
+   	 	
+   	 	JPanel CollectionKoenigseggPanel = new JPanel();
+   	 	CollectionKoenigseggPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionKoenigseggPanel.add(new JLabel(""));
+   	 	CollectionKoenigseggPanel.add(new JLabel(""));
+   	 	CollectionKoenigseggPanel.add(new JLabel(""));
+   	 	CollectionKoenigseggPanel.add(new JLabel(""));
+   	 	CollectionKoenigseggPanel.add(new JLabel(""));
+   	 	CollectionKoenigseggPanel.add(Labels.Koenigsegg_AgeraLabel);
+   	 	CollectionKoenigseggPanel.add(Labels.Koenigsegg_CCXLabel);
+   	 	CollectionKoenigseggPanel.add(Labels.Koenigsegg_OneLabel);
+	 	CollectionKoenigseggPanel.add(Labels.Koenigsegg_RegeraLabel);
+	 	CollectionKoenigseggPanel.add(new JLabel(""));
+	 	CollectionKoenigseggPanel.add(new JLabel(""));
+	 	CollectionKoenigseggPanel.add(new JLabel(""));
+	 	CollectionKoenigseggPanel.add(new JLabel(""));
+	 	
+	 	Labels.Koenigsegg_AgeraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+	 	Labels.Koenigsegg_CCXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+	 	Labels.Koenigsegg_OneLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+	 	Labels.Koenigsegg_RegeraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Lamborghini
+   	 	
+   	 	JPanel CollectionLamborghiniPanel = new JPanel();
+   	 	CollectionLamborghiniPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(Labels.Lamborghini_350GTLabel);
+   	 	CollectionLamborghiniPanel.add(Labels.Lamborghini_AventadorLabel);
+   	 	CollectionLamborghiniPanel.add(Labels.Lamborghini_DiabloLabel);
+   	 	CollectionLamborghiniPanel.add(Labels.Lamborghini_GallardoLabel);
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 	CollectionLamborghiniPanel.add(new JLabel(""));
+   	 
+   	 	Labels.Lamborghini_350GTLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lamborghini_AventadorLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lamborghini_DiabloLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lamborghini_GallardoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Lancia
+   	 	
+   	 	JPanel CollectionLanciaPanel = new JPanel();
+   	 	CollectionLanciaPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(Labels.Lancia_LybraLabel);
+   	 	CollectionLanciaPanel.add(Labels.Lancia_PhedraLabel);
+   	 	CollectionLanciaPanel.add(Labels.Lancia_ThemaLabel);
+   	 	CollectionLanciaPanel.add(Labels.Lancia_VoyagerLabel);
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	CollectionLanciaPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Lancia_LybraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lancia_PhedraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lancia_ThemaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lancia_VoyagerLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Land Rover
+   	 	
+   	 	JPanel CollectionLand_RoverPanel = new JPanel();
+   	 	CollectionLand_RoverPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(Labels.Land_Rover_DefenderLabel);
+   	 	CollectionLand_RoverPanel.add(Labels.Land_Rover_DiscoveryLabel);
+   	 	CollectionLand_RoverPanel.add(Labels.Land_Rover_FreelanderLabel);
+   	 	CollectionLand_RoverPanel.add(Labels.Land_Rover_RangeRoverLabel);
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	CollectionLand_RoverPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Land_Rover_DefenderLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Land_Rover_DiscoveryLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Land_Rover_FreelanderLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Land_Rover_RangeRoverLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Lexus
+   	 	
+   	 	JPanel CollectionLexusPanel = new JPanel();
+   	 	CollectionLexusPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(Labels.Lexus_GXLabel);
+   	 	CollectionLexusPanel.add(Labels.Lexus_ISLabel);
+   	 	CollectionLexusPanel.add(Labels.Lexus_LSLabel);
+   	 	CollectionLexusPanel.add(Labels.Lexus_RXLabel);
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	CollectionLexusPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Lexus_GXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lexus_ISLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lexus_LSLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Lexus_RXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Maserati
+   	 	
+   	 	JPanel CollectionMaseratiPanel = new JPanel();
+   	 	CollectionMaseratiPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(Labels.Maserati_5000GTLabel);
+   	 	CollectionMaseratiPanel.add(Labels.Maserati_CoupeLabel);
+   	 	CollectionMaseratiPanel.add(Labels.Maserati_GranTurismoLabel);
+   	 	CollectionMaseratiPanel.add(Labels.Maserati_ShamalLabel);
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	CollectionMaseratiPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Maserati_5000GTLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Maserati_CoupeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Maserati_GranTurismoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Maserati_ShamalLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Mazda
+   	 	
+   	 	JPanel CollectionMazdaPanel = new JPanel();
+   	 	CollectionMazdaPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(Labels.Mazda_3Label);
+   	 	CollectionMazdaPanel.add(Labels.Mazda_626Label);
+   	 	CollectionMazdaPanel.add(Labels.Mazda_MX6Label);
+   	 	CollectionMazdaPanel.add(Labels.Mazda_RX7Label);
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	CollectionMazdaPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Mazda_3Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mazda_626Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mazda_MX6Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mazda_RX7Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection McLaren
+   	 	
+   	 	JPanel CollectionMcLarenPanel = new JPanel();
+   	 	CollectionMcLarenPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(Labels.McLaren_650sLabel);
+   	 	CollectionMcLarenPanel.add(Labels.McLaren_F1Label);
+   	 	CollectionMcLarenPanel.add(Labels.McLaren_P1Label);
+   	 	CollectionMcLarenPanel.add(Labels.McLaren_VenenoLabel);
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	CollectionMcLarenPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.McLaren_650sLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.McLaren_F1Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.McLaren_P1Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.McLaren_VenenoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Mercedes Benz
+   	 	
+   	 	JPanel CollectionMercedes_BenzPanel = new JPanel();
+   	 	CollectionMercedes_BenzPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(Labels.Mercedes_Benz_CLA250Label);
+   	 	CollectionMercedes_BenzPanel.add(Labels.Mercedes_Benz_G55Label);
+   	 	CollectionMercedes_BenzPanel.add(Labels.Mercedes_Benz_SL600Label);
+   	 	CollectionMercedes_BenzPanel.add(Labels.Mercedes_Benz_W123Label);
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	CollectionMercedes_BenzPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Mercedes_Benz_CLA250Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mercedes_Benz_G55Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mercedes_Benz_SL600Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mercedes_Benz_W123Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Mini
+   	 	
+   	 	JPanel CollectionMiniPanel = new JPanel();
+   	 	CollectionMiniPanel.setLayout(Car4Layout);
+   	 	
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(Labels.Mini_CooperLabel);
+   	 	CollectionMiniPanel.add(Labels.Mini_CountrymanLabel);
+   	 	CollectionMiniPanel.add(Labels.Mini_MokeLabel);
+   	 	CollectionMiniPanel.add(Labels.Mini_PacemanLabel);
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	CollectionMiniPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Mini_CooperLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mini_CountrymanLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mini_MokeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mini_PacemanLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Mitsubishi
+   	 	
+   	 	JPanel CollectionMitsubishiPanel = new JPanel();
+   		CollectionMitsubishiPanel.setLayout(Car4Layout);
+   	 
+   		CollectionMitsubishiPanel.add(new JLabel(""));
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+   	 	CollectionMitsubishiPanel.add(Labels.Mitsubishi_ColtLabel);
+   	 	CollectionMitsubishiPanel.add(Labels.Mitsubishi_GTOLabel);
+   	 	CollectionMitsubishiPanel.add(Labels.Mitsubishi_LancerEvolutionXLabel);
+   	 	CollectionMitsubishiPanel.add(Labels.Mitsubishi_PajeroLabel);
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+ 		CollectionMitsubishiPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Mitsubishi_ColtLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mitsubishi_GTOLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mitsubishi_LancerEvolutionXLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Mitsubishi_PajeroLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Moskvich
+   	 	
+   	 	JPanel CollectionMoskvichPanel = new JPanel();
+   	 	CollectionMoskvichPanel.setLayout(Car3Layout);
+   	 
+ 		CollectionMoskvichPanel.add(new JLabel(""));
+ 		CollectionMoskvichPanel.add(new JLabel(""));
+ 		CollectionMoskvichPanel.add(new JLabel(""));
+   	 	CollectionMoskvichPanel.add(Labels.Moskvich_2140Label);
+   	 	CollectionMoskvichPanel.add(Labels.Moskvich_402Label);
+   	 	CollectionMoskvichPanel.add(Labels.Moskvich_412Label);
+   		CollectionMoskvichPanel.add(new JLabel(""));
+   		CollectionMoskvichPanel.add(new JLabel(""));
+   		CollectionMoskvichPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Moskvich_2140Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Moskvich_402Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Moskvich_412Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Nissan
+   	 	
+   	 	JPanel CollectionNissanPanel = new JPanel();
+   	 	CollectionNissanPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionNissanPanel.add(new JLabel(""));
+   		CollectionNissanPanel.add(new JLabel(""));
+   		CollectionNissanPanel.add(new JLabel(""));
+   		CollectionNissanPanel.add(new JLabel(""));
+   	 	CollectionNissanPanel.add(Labels.Nissan_240sxLabel);
+   	 	CollectionNissanPanel.add(Labels.Nissan_350zLabel);
+   	 	CollectionNissanPanel.add(Labels.Nissan_JukeLabel);
+   	 	CollectionNissanPanel.add(Labels.Nissan_SkylineLabel);
+   		CollectionNissanPanel.add(new JLabel(""));
+   		CollectionNissanPanel.add(new JLabel(""));
+   		CollectionNissanPanel.add(new JLabel(""));
+   		CollectionNissanPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Nissan_240sxLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Nissan_350zLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Nissan_JukeLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Nissan_SkylineLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Opel
+   	 	
+   	 	JPanel CollectionOpelPanel = new JPanel();
+   	 	CollectionOpelPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionOpelPanel.add(new JLabel(""));
+   		CollectionOpelPanel.add(new JLabel(""));
+   		CollectionOpelPanel.add(new JLabel(""));
+   		CollectionOpelPanel.add(new JLabel(""));
+   	 	CollectionOpelPanel.add(Labels.Opel_AstraLabel);
+   	 	CollectionOpelPanel.add(Labels.Opel_GTLabel);
+   	 	CollectionOpelPanel.add(Labels.Opel_VectraLabel);
+   	 	CollectionOpelPanel.add(Labels.Opel_ZafiraLabel);
+   		CollectionOpelPanel.add(new JLabel(""));
+   		CollectionOpelPanel.add(new JLabel(""));
+   		CollectionOpelPanel.add(new JLabel(""));
+   		CollectionOpelPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Opel_AstraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Opel_GTLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Opel_VectraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Opel_ZafiraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Pagani
+   	 	
+   	 	JPanel CollectionPaganiPanel = new JPanel();
+   	 	CollectionPaganiPanel.setLayout(Car2Layout);
+   	 	
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   	 	CollectionPaganiPanel.add(Labels.Pagani_HuayraLabel);
+   		CollectionPaganiPanel.add(new JLabel(""));
+   	 	CollectionPaganiPanel.add(Labels.Pagani_ZondaFLabel);
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   		CollectionPaganiPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Pagani_HuayraLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Pagani_ZondaFLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Peugeot
+   	 	
+   	 	JPanel CollectionPeugeotPanel = new JPanel();
+   	 	CollectionPeugeotPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionPeugeotPanel.add(new JLabel(""));
+   		CollectionPeugeotPanel.add(new JLabel(""));
+   		CollectionPeugeotPanel.add(new JLabel(""));
+   		CollectionPeugeotPanel.add(new JLabel(""));
+   	 	CollectionPeugeotPanel.add(Labels.Peugeot_107Label);
+   	 	CollectionPeugeotPanel.add(Labels.Peugeot_308Label);
+   	 	CollectionPeugeotPanel.add(Labels.Peugeot_405Label);
+   	 	CollectionPeugeotPanel.add(Labels.Peugeot_601Label);
+   	 	CollectionPeugeotPanel.add(new JLabel(""));
+   	 	CollectionPeugeotPanel.add(new JLabel(""));
+   	 	CollectionPeugeotPanel.add(new JLabel(""));
+   	 	CollectionPeugeotPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Peugeot_107Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Peugeot_308Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+  		Labels.Peugeot_405Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+  		Labels.Peugeot_601Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Porsche
+   	 	
+   	 	JPanel CollectionPorschePanel = new JPanel();
+   	 	CollectionPorschePanel.setLayout(Car4Layout);
+   	 	
+   		CollectionPorschePanel.add(new JLabel(""));
+   		CollectionPorschePanel.add(new JLabel(""));
+   		CollectionPorschePanel.add(new JLabel(""));
+   		CollectionPorschePanel.add(new JLabel(""));
+   	 	CollectionPorschePanel.add(Labels.Porsche_911Label);
+   	 	CollectionPorschePanel.add(Labels.Porsche_BoxsterLabel);
+   	 	CollectionPorschePanel.add(Labels.Porsche_CayenneLabel);
+   	 	CollectionPorschePanel.add(Labels.Porsche_CaymanLabel);
+   		CollectionPorschePanel.add(new JLabel(""));
+   		CollectionPorschePanel.add(new JLabel(""));
+   		CollectionPorschePanel.add(new JLabel(""));
+   		CollectionPorschePanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Porsche_911Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Porsche_BoxsterLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Porsche_CayenneLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Porsche_CaymanLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Renault
+   	 	
+   	 	JPanel CollectionRenaultPanel = new JPanel();
+   	 	CollectionRenaultPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionRenaultPanel.add(new JLabel(""));
+   		CollectionRenaultPanel.add(new JLabel(""));
+   		CollectionRenaultPanel.add(new JLabel(""));
+   		CollectionRenaultPanel.add(new JLabel(""));
+   	 	CollectionRenaultPanel.add(Labels.Renault_ClioLabel);
+   	 	CollectionRenaultPanel.add(Labels.Renault_FlorideLabel);
+   	 	CollectionRenaultPanel.add(Labels.Renault_FregateLabel);
+   	 	CollectionRenaultPanel.add(Labels.Renault_SpiderLabel);
+   		CollectionRenaultPanel.add(new JLabel(""));
+   		CollectionRenaultPanel.add(new JLabel(""));
+   		CollectionRenaultPanel.add(new JLabel(""));
+   		CollectionRenaultPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Renault_ClioLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Renault_FlorideLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Renault_FregateLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Renault_SpiderLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Rolls Royce
+   	 	
+   	 	JPanel CollectionRolls_RoycePanel = new JPanel();
+   	 	CollectionRolls_RoycePanel.setLayout(Car4Layout);
+   	 	
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   	 	CollectionRolls_RoycePanel.add(Labels.Rolls_Royce_PhantomIIILabel);
+   	 	CollectionRolls_RoycePanel.add(Labels.Rolls_Royce_PhantomLabel);
+   	 	CollectionRolls_RoycePanel.add(Labels.Rolls_Royce_SilverLabel);
+   	 	CollectionRolls_RoycePanel.add(Labels.Rolls_Royce_WraithLabel);
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   		CollectionRolls_RoycePanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Rolls_Royce_PhantomIIILabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Rolls_Royce_PhantomLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Rolls_Royce_SilverLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Rolls_Royce_WraithLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Saab
+   	 	
+   	 	JPanel CollectionSaabPanel = new JPanel();
+   	 	CollectionSaabPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionSaabPanel.add(new JLabel(""));
+   		CollectionSaabPanel.add(new JLabel(""));
+   		CollectionSaabPanel.add(new JLabel(""));
+   		CollectionSaabPanel.add(new JLabel(""));
+   	 	CollectionSaabPanel.add(Labels.Saab_9000Label);
+   	 	CollectionSaabPanel.add(Labels.Saab_900Label);
+   	 	CollectionSaabPanel.add(Labels.Saab_9_5Label);
+   	 	CollectionSaabPanel.add(Labels.Saab_SonettIILabel);
+   		CollectionSaabPanel.add(new JLabel(""));
+   		CollectionSaabPanel.add(new JLabel(""));
+   		CollectionSaabPanel.add(new JLabel(""));
+   		CollectionSaabPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Saab_9000Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Saab_900Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Saab_9_5Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Saab_SonettIILabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Subaru
+   	 	
+   	 	JPanel CollectionSubaruPanel = new JPanel();
+   	 	CollectionSubaruPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionSubaruPanel.add(new JLabel(""));
+   		CollectionSubaruPanel.add(new JLabel(""));
+   		CollectionSubaruPanel.add(new JLabel(""));
+   		CollectionSubaruPanel.add(new JLabel(""));
+   	 	CollectionSubaruPanel.add(Labels.Subaru_1000Label);
+   	 	CollectionSubaruPanel.add(Labels.Subaru_ForesterLabel);
+   	 	CollectionSubaruPanel.add(Labels.Subaru_ImprezaLabel);
+   	 	CollectionSubaruPanel.add(Labels.Subaru_OutbackLabel);
+   	 	CollectionSubaruPanel.add(new JLabel(""));
+   	 	CollectionSubaruPanel.add(new JLabel(""));
+   	 	CollectionSubaruPanel.add(new JLabel(""));
+   	 	CollectionSubaruPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Subaru_1000Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Subaru_ForesterLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Subaru_ImprezaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Subaru_OutbackLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Tesla
+   	 	
+   	 	JPanel CollectionTeslaPanel = new JPanel();
+   	 	CollectionTeslaPanel.setLayout(Car3Layout);
+   	 	
+   	 	CollectionTeslaPanel.add(new JLabel(""));
+   		CollectionTeslaPanel.add(new JLabel(""));
+   		CollectionTeslaPanel.add(new JLabel(""));
+   	 	CollectionTeslaPanel.add(Labels.Tesla_RoadsterLabel);
+   	 	CollectionTeslaPanel.add(Labels.Tesla_SLabel);
+   	 	CollectionTeslaPanel.add(Labels.Tesla_XLabel);
+   		CollectionTeslaPanel.add(new JLabel(""));
+   		CollectionTeslaPanel.add(new JLabel(""));
+   		CollectionTeslaPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Tesla_RoadsterLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Tesla_SLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Tesla_XLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Toyota
+   	 	
+   	 	JPanel CollectionToyotaPanel = new JPanel();
+   	 	CollectionToyotaPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionToyotaPanel.add(new JLabel(""));
+   		CollectionToyotaPanel.add(new JLabel(""));
+   		CollectionToyotaPanel.add(new JLabel(""));
+   		CollectionToyotaPanel.add(new JLabel(""));
+   	 	CollectionToyotaPanel.add(Labels.Toyota_86Label);
+   	 	CollectionToyotaPanel.add(Labels.Toyota_AurisLabel);
+   	 	CollectionToyotaPanel.add(Labels.Toyota_AvensisLabel);
+   	 	CollectionToyotaPanel.add(Labels.Toyota_Rav4Label);
+   		CollectionToyotaPanel.add(new JLabel(""));
+   		CollectionToyotaPanel.add(new JLabel(""));
+   		CollectionToyotaPanel.add(new JLabel(""));
+   		CollectionToyotaPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Toyota_86Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Toyota_AurisLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Toyota_AvensisLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Toyota_Rav4Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Vaz
+   	 	
+   	 	JPanel CollectionVazPanel = new JPanel();
+   	 	CollectionVazPanel.setLayout(Car3Layout);
+   	 	
+   		CollectionVazPanel.add(new JLabel(""));
+   		CollectionVazPanel.add(new JLabel(""));
+   		CollectionVazPanel.add(new JLabel(""));
+   	 	CollectionVazPanel.add(Labels.Vaz_2101Label);
+   	 	CollectionVazPanel.add(Labels.Vaz_2103Label);
+   	 	CollectionVazPanel.add(Labels.Vaz_NivaLabel);
+   		CollectionVazPanel.add(new JLabel(""));
+   		CollectionVazPanel.add(new JLabel(""));
+   		CollectionVazPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Vaz_2101Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Vaz_2103Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Vaz_NivaLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Volkswagen
+   	 	
+   	 	JPanel CollectionVolkswagenPanel = new JPanel();
+   	 	CollectionVolkswagenPanel.setLayout(Car5Layout);
+   	 	
+   	 	CollectionVolkswagenPanel.add(Labels.Volkswagen_BeetleLabel);
+   	 	CollectionVolkswagenPanel.add(Labels.Volkswagen_Golf1Label);
+   	 	CollectionVolkswagenPanel.add(Labels.Volkswagen_PhaetonLabel);
+   	 	CollectionVolkswagenPanel.add(Labels.Volkswagen_SciroccoLabel);
+   	 	CollectionVolkswagenPanel.add(Labels.Volkswagen_TiguanLabel);
+   	 	
+   	 	Labels.Volkswagen_BeetleLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volkswagen_Golf1Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volkswagen_PhaetonLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volkswagen_SciroccoLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volkswagen_TiguanLabel.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	
+   	 	// Collection Volvo
+   	 	
+   	 	JPanel CollectionVolvoPanel = new JPanel();
+   	 	CollectionVolvoPanel.setLayout(Car4Layout);
+   	 	
+   		CollectionVolvoPanel.add(new JLabel(""));
+   		CollectionVolvoPanel.add(new JLabel(""));
+   		CollectionVolvoPanel.add(new JLabel(""));
+   		CollectionVolvoPanel.add(new JLabel(""));
+   	 	CollectionVolvoPanel.add(Labels.Volvo_850Label);
+   	 	CollectionVolvoPanel.add(Labels.Volvo_C70Label);
+   	 	CollectionVolvoPanel.add(Labels.Volvo_S80Label);
+   	 	CollectionVolvoPanel.add(Labels.Volvo_XC90Label);
+   		CollectionVolvoPanel.add(new JLabel(""));
+   		CollectionVolvoPanel.add(new JLabel(""));
+   		CollectionVolvoPanel.add(new JLabel(""));
+   		CollectionVolvoPanel.add(new JLabel(""));
+   	 	
+   	 	Labels.Volvo_850Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volvo_C70Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volvo_S80Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+   	 	Labels.Volvo_XC90Label.setBorder(BorderFactory.createCompoundBorder(raisedbevel, loweredbevel));
+
+   	 	// Statistic Main Panel
+   	 	
+   	 	JPanel StatisticMainPanel = new JPanel();
+   	 	
+   	 	
+   	 	// Statistic Main Money Panel
+   	 	JPanel StatisticMainPanelSub = new JPanel();
+   	 	
+   	 	// Statistic Main Boxes Panel
+   	 	JPanel StatisticMainPanelSub2 = new JPanel();
+   	 	
+   	 	// Statistic Main Frames Panel
+   	 	
+   	 	JPanel StatisticMainPanelSub3 = new JPanel();
+   	 	
+   	 	// Statistic Main Collections Panel
+   	 	
+   	 	JPanel StatisticMainPanelSub4 = new JPanel();
+   	 	
+   	 	// Statistic Boxes Panel
+   	 	
+   	 	JPanel StatisticBoxesPanel = new JPanel();
+   	 	
+   	 	// Statistic Parts Panel
+   	 	
+   	 	JPanel StatisticPartsPanel = new JPanel();
+   	 	
+   	 	StatisticMainPanel.add(StatisticMainPanelSub);
+   	 	StatisticMainPanel.add(StatisticMainPanelSub2);
+   	 	StatisticMainPanel.add(StatisticMainPanelSub3);
+   	 	StatisticMainPanel.add(StatisticMainPanelSub4);
    	 	
 	 	//TabbedPane 
-     
+   	 	
+   	 	JTabbedPane StatisticsPane = new JTabbedPane();
+   	 	StatisticsPane.addTab(Main, StatisticMainPanel);
+   	 	StatisticsPane.addTab(Boxes, StatisticBoxesPanel);
+   	 	StatisticsPane.addTab(Parts, StatisticPartsPanel);
+   	 	
+   	 	JTabbedPane CollectionsAmericanPane = new JTabbedPane();
+   	 	CollectionsAmericanPane.addTab(Buick, CollectionBuickPanel);
+   	 	CollectionsAmericanPane.addTab(Cadilliac, CollectionCadilliacPanel);
+   	 	CollectionsAmericanPane.addTab(Chevrolet, CollectionChevroletPanel);
+   	 	CollectionsAmericanPane.addTab(Chrysler, CollectionChryslerPanel);
+   	 	CollectionsAmericanPane.addTab(Dodge, CollectionDodgePanel);
+   	 	CollectionsAmericanPane.addTab(Ford, CollectionFordPanel);
+   	 	CollectionsAmericanPane.addTab(GMC, CollectionGMCPanel);
+   	 	CollectionsAmericanPane.addTab(Jeep, CollectionJeepPanel);
+   	 	CollectionsAmericanPane.addTab(Tesla, CollectionTeslaPanel);
+   	 	
+   	 	JTabbedPane CollectionsJapanesePane = new JTabbedPane();
+   	 	CollectionsJapanesePane.addTab(Acura, CollectionAcuraPanel);
+   	 	CollectionsJapanesePane.addTab(Honda, CollectionHondaPanel); 
+   	 	CollectionsJapanesePane.addTab(Infiniti, CollectionInfinitiPanel);
+   	 	CollectionsJapanesePane.addTab(Lexus, CollectionLexusPanel);
+   	 	CollectionsJapanesePane.addTab(Mazda, CollectionMazdaPanel);
+   	 	CollectionsJapanesePane.addTab(Mitsubishi, CollectionMitsubishiPanel);
+   	 	CollectionsJapanesePane.addTab(Nissan, CollectionNissanPanel);
+   	 	CollectionsJapanesePane.addTab(Subaru, CollectionSubaruPanel); 
+   	 	CollectionsJapanesePane.addTab(Toyota, CollectionToyotaPanel);
+   	 	
+   	 	JTabbedPane CollectionsGermanPane = new JTabbedPane();
+   	 	CollectionsGermanPane.addTab(Audi, CollectionAudiPanel);
+   	 	CollectionsGermanPane.addTab(BMW, CollectionBMWPanel);
+   	 	CollectionsGermanPane.addTab(Mercedes_Benz, CollectionMercedes_BenzPanel);
+   	 	CollectionsGermanPane.addTab(Opel, CollectionOpelPanel);
+   	 	CollectionsGermanPane.addTab(Porsche, CollectionPorschePanel);
+   	 	CollectionsGermanPane.addTab(Volkswagen, CollectionVolkswagenPanel);
+   	 	
+   	 	JTabbedPane CollectionsBritishPane = new JTabbedPane();
+   	 	CollectionsBritishPane.addTab(Aston_Martin, CollectionAston_MartinPanel); 
+   	 	CollectionsBritishPane.addTab(Bentley, CollectionBentleyPanel);	
+   	 	CollectionsBritishPane.addTab(Jaguar, CollectionJaguarPanel); 
+   	 	CollectionsBritishPane.addTab(Land_Rover, CollectionLand_RoverPanel);
+   	 	CollectionsBritishPane.addTab(McLaren, CollectionMcLarenPanel);
+   	 	CollectionsBritishPane.addTab(Mini, CollectionMiniPanel);
+   	 	CollectionsBritishPane.addTab(Rolls_Royce, CollectionRolls_RoycePanel);
+   	 	
+   	 	JTabbedPane CollectionsItalianPane = new JTabbedPane();
+   	 	CollectionsItalianPane.addTab(Alfa_Romeo, CollectionAlfa_RomeoPanel);  
+   	 	CollectionsItalianPane.addTab(Ferrari, CollectionFerrariPanel);
+   	 	CollectionsItalianPane.addTab(Fiat, CollectionFiatPanel); 
+   	 	CollectionsItalianPane.addTab(Lamborghini, CollectionLamborghiniPanel);
+   	 	CollectionsItalianPane.addTab(Lancia, CollectionLanciaPanel);
+   	 	CollectionsItalianPane.addTab(Maserati, CollectionMaseratiPanel);
+   	 	CollectionsItalianPane.addTab(Pagani, CollectionPaganiPanel);
+   	 	
+   	 	JTabbedPane CollectionsFrenchPane = new JTabbedPane();
+   	 	CollectionsFrenchPane.addTab(Bugatti, CollectionBugattiPanel);  	 
+   	 	CollectionsFrenchPane.addTab(Citroen, CollectionCitroenPanel); 
+   	 	CollectionsFrenchPane.addTab(Peugeot, CollectionPeugeotPanel);
+   	 	CollectionsFrenchPane.addTab(Renault, CollectionRenaultPanel);
+   	 	
+   	 	JTabbedPane CollectionsKoreanPane = new JTabbedPane();
+   	 	CollectionsKoreanPane.addTab(Hyundai, CollectionHyundaiPanel);  
+   	 	CollectionsKoreanPane.addTab(Kia, CollectionKiaPanel);
+   	 	
+   	 	JTabbedPane CollectionsSwedishPane = new JTabbedPane();
+   	 	CollectionsSwedishPane.addTab(Koenigsegg, CollectionKoenigseggPanel);	
+   	 	CollectionsSwedishPane.addTab(Saab, CollectionSaabPanel);
+   	 	CollectionsSwedishPane.addTab(Volvo, CollectionVolvoPanel);
+   	 	
+   	 	JTabbedPane CollectionsRussianPane = new JTabbedPane();  
+   	 	CollectionsRussianPane.addTab(GAZ, CollectionGAZPanel);   	 
+   	 	CollectionsRussianPane.addTab(Moskvich, CollectionMoskvichPanel);  	  
+   	 	CollectionsRussianPane.addTab(VAZ, CollectionVazPanel);
+
+   	     	  
       JTabbedPane tabbedPane2 = new JTabbedPane();
-      tabbedPane2.setTabPlacement(JTabbedPane.RIGHT);
       tabbedPane2.addTab(LVL1, SellPartsLVL1Panel);
       tabbedPane2.addTab(LVL2, SellPartsLVL2Panel);
       tabbedPane2.addTab(LVL3, SellPartsLVL3Panel);
@@ -1774,17 +4035,29 @@ public class ClickerGame implements ActionListener {
       tabbedPane2.addTab(LVL8, SellPartsLVL8Panel);
       tabbedPane2.addTab(LVL9, SellPartsLVL9Panel);
       tabbedPane2.addTab(LVL10, SellPartsLVL10Panel);
-   	
+         
+   	  CollectionsPanel.addTab(American, CollectionsAmericanPane);
+   	  CollectionsPanel.addTab(British, CollectionsBritishPane);
+   	  CollectionsPanel.addTab(French, CollectionsFrenchPane);
+   	  CollectionsPanel.addTab(German, CollectionsGermanPane);	  
+   	  CollectionsPanel.addTab(Italian, CollectionsItalianPane);
+   	  CollectionsPanel.addTab(Japanese, CollectionsJapanesePane);
+   	  CollectionsPanel.addTab(Korean, CollectionsKoreanPane);
+   	  CollectionsPanel.addTab(Russian, CollectionsRussianPane);
+   	  CollectionsPanel.addTab(Swedish, CollectionsSwedishPane);
+      
       tabbedPane.addTab(Click, MainPanel);
       tabbedPane.addTab(Upgrades, UpgradesPanel);
       tabbedPane.addTab(BuyBoxes, BuyBoxesPanel);
       tabbedPane.addTab(OpenBoxes, OpenBoxesPanel);
       tabbedPane.addTab(BuildCars, BuildCarsPanel);
       tabbedPane.addTab(BuyFrames, BuyFramesPanel);
-      tabbedPane.add(SellParts ,tabbedPane2);
-      tabbedPane.addTab(Settings, SettingsPanel);
-    
+      tabbedPane.addTab(SellParts ,tabbedPane2);
+      tabbedPane.addTab(Collections, CollectionsPanel);
+      tabbedPane.addTab(Statistics, StatisticsPane);
+   
       pane.add(tabbedPane, BorderLayout.CENTER);
+      
       
     }
     
@@ -1792,7 +4065,7 @@ public class ClickerGame implements ActionListener {
        
     public int CountLv1Cars(){
     	int countcarsLv1 = 0;
-    	for(int i = 3;i > CarsLv1.cars.length;i+=4){
+    	for(int i = 3; i < CarsLv1.cars.length;i+=4){		
     		countcarsLv1+= CarsLv1.cars[i];
     	} 
     	return countcarsLv1;
@@ -1801,7 +4074,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv2Cars(){
     	int countcarsLv2 = 0;
-    	for(int i = 3;i > CarsLv2.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv2.cars.length;i+=4){
     		countcarsLv2+= CarsLv2.cars[i];
     	} 
     	return countcarsLv2;
@@ -1810,7 +4083,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv3Cars(){
     	int countcarsLv3 = 0;
-    	for(int i = 3;i > CarsLv3.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv3.cars.length;i+=4){
     		countcarsLv3+= CarsLv3.cars[i];
     	} 
     	return countcarsLv3;
@@ -1819,7 +4092,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv4Cars(){
     	int countcarsLv4 = 0;
-    	for(int i = 3;i > CarsLv4.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv4.cars.length;i+=4){
     		countcarsLv4+= CarsLv4.cars[i];
     	} 
     	return countcarsLv4;
@@ -1828,7 +4101,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv5Cars(){
     	int countcarsLv5 = 0;
-    	for(int i = 3;i > CarsLv5.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv5.cars.length;i+=4){
     		countcarsLv5+= CarsLv5.cars[i];
     	} 
     	return countcarsLv5;
@@ -1837,7 +4110,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv6Cars(){
     	int countcarsLv6 = 0;
-    	for(int i = 3;i > CarsLv6.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv6.cars.length;i+=4){
     		countcarsLv6+= CarsLv6.cars[i];
     	} 
     	return countcarsLv6;
@@ -1846,7 +4119,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv7Cars(){
     	int countcarsLv7 = 0;
-    	for(int i = 3;i > CarsLv7.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv7.cars.length;i+=4){
     		countcarsLv7+= CarsLv7.cars[i];
     	} 
     	return countcarsLv7;
@@ -1855,7 +4128,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv8Cars(){
     	int countcarsLv8 = 0;
-    	for(int i = 3;i > CarsLv8.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv8.cars.length;i+=4){
     		countcarsLv8+= CarsLv8.cars[i];
     	} 
     	return countcarsLv8;
@@ -1864,7 +4137,7 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv9Cars(){
     	int countcarsLv9 = 0;
-    	for(int i = 3;i > CarsLv9.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv9.cars.length;i+=4){
     		countcarsLv9+= CarsLv9.cars[i];
     	} 
     	return countcarsLv9;
@@ -1873,25 +4146,32 @@ public class ClickerGame implements ActionListener {
     
     public int CountLv10Cars(){
     	int countcarsLv10 = 0;
-    	for(int i = 3;i > CarsLv10.cars.length;i+=4){
+    	for(int i = 3;i < CarsLv10.cars.length;i+=4){
     		countcarsLv10+= CarsLv10.cars[i];
     	} 
     	return countcarsLv10;
     
     }
-    
-    public int AllClicks(){
-    	int allclicks = 0;
-    	allclicks+= CarMain.main[1] + CarMain.main[3];
-    	return allclicks;
-    }   
- 	
- 	
+    	
+ 	public int AmericanCars(){
+ 		int AmericanCars = 0;
+ 		for(int i = 2; i <= 80; i+=4){
+ 				for(int j = 3; j <=80; j+=4){	
+ 		 			if(CarsLv1.cars[i] == 0){
+ 		 				if(CarsLv1.cars[j] == 1){
+ 		 					AmericanCars +=1;
+ 					}
+ 		 			}
+ 			}
+ 		}
+ 		return AmericanCars;
+ 	}
 
 	MainHolder CarMain = new MainHolder();
     BoxesHolder Box = new BoxesHolder();
     FramesHolder CarFrame = new FramesHolder();
     PartHolder Part = new PartHolder();
+    StatisticHolder Statistic = new StatisticHolder();
     CarLevel1Holder CarsLv1 = new CarLevel1Holder();
     CarLevel2Holder CarsLv2 = new CarLevel2Holder();
     CarLevel3Holder CarsLv3 = new CarLevel3Holder();
@@ -1904,8 +4184,8 @@ public class ClickerGame implements ActionListener {
     CarLevel10Holder CarsLv10 = new CarLevel10Holder();
 
     void refresh() {			
-		Labels.MoneyLabel.setText("<html>Money: " + CarMain.main[0] + "<br>Money Clicks: " + CarMain.main[1]);
-		Labels.BoxesLabel.setText("<html>Boxes: " + CarMain.main[2] + "<br>Boxes Clicks: " + CarMain.main[3]);
+		Labels.MoneyLabel.setText("Money: " + CarMain.main[0]);
+		Labels.BoxesLabel.setText("Boxes: " + CarMain.main[2]);
 		Labels.BoxesLVLLabel.setText("Boxes Level: " + CarMain.main[4]);
 		Labels.PlayerLabel.setText("Player Level: " + CarMain.main[5]);
 		Labels.GarageLabel.setText("Garage Level: " + CarMain.main[6]);
@@ -2445,7 +4725,837 @@ public class ClickerGame implements ActionListener {
             Labels.SuspensionLVL10Label.setIcon(ImagesHolder.SuspensionIcon);
             Labels.TransmissionLVL10Label.setIcon(ImagesHolder.TransmissionIcon);
             Labels.TiresLVL10Label.setIcon(ImagesHolder.TiresIcon);
-	}		
+	}
+		if(CountLv1Cars() == 20){
+			jbtnBuildCarLv1.setEnabled(false);
+		}
+		if(CountLv2Cars() == 20){
+			jbtnBuildCarLv2.setEnabled(false);
+		}
+		if(CountLv3Cars() == 20){
+			jbtnBuildCarLv3.setEnabled(false);
+		}
+		if(CountLv4Cars() == 20){
+			jbtnBuildCarLv4.setEnabled(false);
+		}
+		if(CountLv5Cars() == 20){
+			jbtnBuildCarLv5.setEnabled(false);
+		}
+		if(CountLv6Cars() == 20){
+			jbtnBuildCarLv6.setEnabled(false);
+		}
+		if(CountLv7Cars() == 20){
+			jbtnBuildCarLv7.setEnabled(false);
+		}
+		if(CountLv8Cars() == 20){
+			jbtnBuildCarLv8.setEnabled(false);
+		}
+		if(CountLv9Cars() == 20){
+			jbtnBuildCarLv9.setEnabled(false);
+		}
+		if(CountLv10Cars() == 20){
+			jbtnBuildCarLv10.setEnabled(false);
+		}
+		if(CarsLv1.cars[3] == 1){
+            Labels.Aston_Martin_DB9Label.setIcon(ImagesHolder.Aston_Martin_DB9Icon);
+            Labels.Aston_Martin_DB9Label.setText("Aston Martin DB9");
+		}
+		if(CarsLv1.cars[7] == 1){
+            Labels.Acura_NSXLabel.setIcon(ImagesHolder.Acura_NSXIcon);
+            Labels.Acura_NSXLabel.setText("Acura NSX");
+		}
+		if(CarsLv1.cars[11] == 1){
+            Labels.Ford_MustangLabel.setIcon(ImagesHolder.Ford_MustangIcon);
+            Labels.Ford_MustangLabel.setText("Ford Mustang");
+		}
+		if(CarsLv1.cars[15] == 1){
+            Labels.Moskvich_412Label.setIcon(ImagesHolder.Moskvich_412Icon);
+            Labels.Moskvich_412Label.setText("Moskvich 412");
+		}
+		if(CarsLv1.cars[19] == 1){
+            Labels.Kia_VengaLabel.setIcon(ImagesHolder.Kia_VengaIcon);
+            Labels.Kia_VengaLabel.setText("Kia Venga");
+		}
+		if(CarsLv1.cars[23] == 1){
+            Labels.Fiat_1500Label.setIcon(ImagesHolder.Fiat_1500Icon);
+            Labels.Fiat_1500Label.setText("Fiat 1500");
+		}
+		if(CarsLv1.cars[27] == 1){
+            Labels.Ferrari_EnzoLabel.setIcon(ImagesHolder.Ferrari_EnzoIcon);
+            Labels.Ferrari_EnzoLabel.setText("Ferrari Enzo");
+		}
+		if(CarsLv1.cars[31] == 1){
+            Labels.Aston_Martin_RapideLabel.setIcon(ImagesHolder.Aston_Martin_RapideIcon);
+            Labels.Aston_Martin_RapideLabel.setText("Aston Martin Rapide");
+		}
+		if(CarsLv1.cars[35] == 1){
+            Labels.Koenigsegg_CCXLabel.setIcon(ImagesHolder.Koenigsegg_CCXIcon);
+            Labels.Koenigsegg_CCXLabel.setText("Koenigsegg CCX");
+		}
+		if(CarsLv1.cars[39] == 1){
+            Labels.Honda_CivicLabel.setIcon(ImagesHolder.Honda_CivicIcon);
+            Labels.Honda_CivicLabel.setText("Honda Civic");
+		}
+		if(CarsLv1.cars[43] == 1){
+            Labels.Cadilliac_ATSLabel.setIcon(ImagesHolder.Cadilliac_ATSIcon);
+            Labels.Cadilliac_ATSLabel.setText("Cadilliac ATS");
+		}
+		if(CarsLv1.cars[47] == 1){
+            Labels.Mitsubishi_LancerEvolutionXLabel.setIcon(ImagesHolder.Mitsubishi_LancerEvolutionXIcon);
+            Labels.Mitsubishi_LancerEvolutionXLabel.setText("MitsubishiLancerEvolutionX");
+		}
+		if(CarsLv1.cars[51] == 1){
+            Labels.Infiniti_FXLabel.setIcon(ImagesHolder.Infiniti_FXIcon);
+            Labels.Infiniti_FXLabel.setText("Infiniti FX");
+		}
+		if(CarsLv1.cars[55] == 1){
+            Labels.Lancia_ThemaLabel.setIcon(ImagesHolder.Lancia_ThemaIcon);
+            Labels.Lancia_ThemaLabel.setText("Lancia Thema");
+		}
+		if(CarsLv1.cars[59] == 1){
+            Labels.Volvo_XC90Label.setIcon(ImagesHolder.Volvo_XC90Icon);
+            Labels.Volvo_XC90Label.setText("Volvo XC90");
+		}
+		if(CarsLv1.cars[63] == 1){
+            Labels.Acura_CSXLabel.setIcon(ImagesHolder.Acura_CSXIcon);
+            Labels.Acura_CSXLabel.setText("Acura CSX");
+		}
+		if(CarsLv1.cars[67] == 1){
+            Labels.Saab_SonettIILabel.setIcon(ImagesHolder.Saab_SonettIIIcon);
+            Labels.Saab_SonettIILabel.setText("Saab SonettII");
+		}
+		if(CarsLv1.cars[71] == 1){
+            Labels.Renault_FlorideLabel.setIcon(ImagesHolder.Renault_FlorideIcon);
+            Labels.Renault_FlorideLabel.setText("Renault Floride");
+		}
+		if(CarsLv1.cars[75] == 1){
+            Labels.BMW_e34Label.setIcon(ImagesHolder.BMW_e34Icon);
+            Labels.BMW_e34Label.setText("BMW e34");
+		}
+		if(CarsLv1.cars[79] == 1){
+            Labels.Chrysler_CordobaLabel.setIcon(ImagesHolder.Chrysler_CordobaIcon);
+            Labels.Chrysler_CordobaLabel.setText("Chrysler Cordoba");
+		}
+		if(CarsLv2.cars[3] == 1){
+			Labels.Buick_RivieraLabel.setIcon(ImagesHolder.Buick_RivieraIcon);
+			Labels.Buick_RivieraLabel.setText("Buick Riviera");
+		}
+		if(CarsLv2.cars[7] == 1){
+			Labels.Tesla_RoadsterLabel.setIcon(ImagesHolder.Tesla_RoadsterIcon);
+			Labels.Tesla_RoadsterLabel.setText("Tesla Roadster");
+		}
+		if(CarsLv2.cars[11] == 1){
+			Labels.Audi_80Label.setIcon(ImagesHolder.Audi_80Icon);
+			Labels.Audi_80Label.setText("Audi 80");
+		}
+		if(CarsLv2.cars[15] == 1){
+			Labels.BMW_e36Label.setIcon(ImagesHolder.BMW_e36Icon);
+			Labels.BMW_e36Label.setText("BMW e36");
+		}
+		if(CarsLv2.cars[19] == 1){
+			Labels.Volkswagen_SciroccoLabel.setIcon(ImagesHolder.Volkswagen_SciroccoIcon);
+			Labels.Volkswagen_SciroccoLabel.setText("Volkswagen Scirocco");
+		}
+		if(CarsLv2.cars[23] == 1){
+			Labels.Mazda_3Label.setIcon(ImagesHolder.Mazda_3Icon);
+			Labels.Mazda_3Label.setText("Mazda 3");
+		}
+		if(CarsLv2.cars[27] == 1){
+			Labels.Chevrolet_VikingLabel.setIcon(ImagesHolder.Chevrolet_VikingIcon);
+			Labels.Chevrolet_VikingLabel.setText("Chevrolet Viking");
+		}
+		if(CarsLv2.cars[31] == 1){
+			Labels.Tesla_SLabel.setIcon(ImagesHolder.Tesla_SIcon);
+			Labels.Tesla_SLabel.setText("Tesla S");
+		}
+		if(CarsLv2.cars[35] == 1){
+			Labels.Jeep_ZJLabel.setIcon(ImagesHolder.Jeep_ZJIcon);
+			Labels.Jeep_ZJLabel.setText("Jeep ZJ");
+		}
+		if(CarsLv2.cars[39] == 1){
+			Labels.Dodge_NeonLabel.setIcon(ImagesHolder.Dodge_NeonIcon);
+			Labels.Dodge_NeonLabel.setText("Dodge Neon");
+		}
+		if(CarsLv2.cars[43] == 1){
+			Labels.BMW_e30Label.setIcon(ImagesHolder.BMW_e30Icon);
+			Labels.BMW_e30Label.setText("BMW e30");
+		}
+		if(CarsLv2.cars[47] == 1){
+			Labels.Mercedes_Benz_W123Label.setIcon(ImagesHolder.Mercedes_Benz_W123Icon);
+			Labels.Mercedes_Benz_W123Label.setText("Mercedes Benz W123");
+		}
+		if(CarsLv2.cars[51] == 1){
+			Labels.Land_Rover_DefenderLabel.setIcon(ImagesHolder.Land_Rover_DefenderIcon);
+			Labels.Land_Rover_DefenderLabel.setText("Land Rover Defender");
+		}
+		if(CarsLv2.cars[55] == 1){
+			Labels.Saab_9_5Label.setIcon(ImagesHolder.Saab_9_5Icon);
+			Labels.Saab_9_5Label.setText("Saab 9-5");
+		}
+		if(CarsLv2.cars[59] == 1){
+			Labels.Aston_Martin_OneLabel.setIcon(ImagesHolder.Aston_Martin_OneIcon);
+			Labels.Aston_Martin_OneLabel.setText("Aston Martin One");
+		}
+		if(CarsLv2.cars[63] == 1){
+			Labels.Koenigsegg_RegeraLabel.setIcon(ImagesHolder.Koenigsegg_RegeraIcon);
+			Labels.Koenigsegg_RegeraLabel.setText("Koenigsegg Regera");
+		}
+		if(CarsLv2.cars[67] == 1){
+			Labels.Lexus_ISLabel.setIcon(ImagesHolder.Lexus_ISIcon);
+			Labels.Lexus_ISLabel.setText("Lexus IS");
+		}
+		if(CarsLv2.cars[71] == 1){
+			Labels.GMC_YukonLabel.setIcon(ImagesHolder.GMC_YukonIcon);
+			Labels.GMC_YukonLabel.setText("GMC Yukon");
+		}
+		if(CarsLv2.cars[75] == 1){
+			Labels.Opel_AstraLabel.setIcon(ImagesHolder.Opel_AstraIcon);
+			Labels.Opel_AstraLabel.setText("Opel Astra");
+		}
+		if(CarsLv2.cars[79] == 1){
+			Labels.Audi_CoupeLabel.setIcon(ImagesHolder.Audi_CoupeIcon);
+			Labels.Audi_CoupeLabel.setText("Audi Coupe");
+		}
+		if(CarsLv3.cars[3] == 1){
+			Labels.Mini_MokeLabel.setIcon(ImagesHolder.Mini_MokeIcon);
+			Labels.Mini_MokeLabel.setText("Mini Moke");
+		}
+		if(CarsLv3.cars[7] == 1){
+			Labels.Kia_RondoLabel.setIcon(ImagesHolder.Kia_RondoIcon);
+			Labels.Kia_RondoLabel.setText("Kia Rondo");
+		}
+		if(CarsLv3.cars[11] == 1){
+			Labels.GMC_SuburbanLabel.setIcon(ImagesHolder.GMC_SuburbanIcon);
+			Labels.GMC_SuburbanLabel.setText("GMC Suburban");
+		}
+		if(CarsLv3.cars[15] == 1){
+			Labels.Honda_PreludeLabel.setIcon(ImagesHolder.Honda_PreludeIcon);
+			Labels.Honda_PreludeLabel.setText("Honda Prelude");
+		}
+		if(CarsLv3.cars[19] == 1){
+			Labels.Citroen_SaxoLabel.setIcon(ImagesHolder.Citroen_SaxoIcon);
+			Labels.Citroen_SaxoLabel.setText("Citroen Saxo");
+		}
+		if(CarsLv3.cars[23] == 1){
+			Labels.Volkswagen_TiguanLabel.setIcon(ImagesHolder.Volkswagen_TiguanIcon);
+			Labels.Volkswagen_TiguanLabel.setText("Volkswagen Tiguan");
+		}
+		if(CarsLv3.cars[27] == 1){
+			Labels.Volkswagen_PhaetonLabel.setIcon(ImagesHolder.Volkswagen_PhaetonIcon);
+			Labels.Volkswagen_PhaetonLabel.setText("Volkswagen Phaeton");
+		}
+		if(CarsLv3.cars[31] == 1){
+			Labels.Buick_CentryLabel.setIcon(ImagesHolder.Buick_CentryIcon);
+			Labels.Buick_CentryLabel.setText("Buick Centry");
+		}
+		if(CarsLv3.cars[35] == 1){
+			Labels.Land_Rover_DiscoveryLabel.setIcon(ImagesHolder.Land_Rover_DiscoveryIcon);
+			Labels.Land_Rover_DiscoveryLabel.setText("Land Rover Discovery");
+		}
+		if(CarsLv3.cars[39] == 1){
+			Labels.Infiniti_EthereaLabel.setIcon(ImagesHolder.Infiniti_EthereaIcon);
+			Labels.Infiniti_EthereaLabel.setText("Infiniti Etherea");
+		}
+		if(CarsLv3.cars[43] == 1){
+			Labels.Peugeot_308Label.setIcon(ImagesHolder.Peugeot_308Icon);
+			Labels.Peugeot_308Label.setText("Peugeot 308");
+		}
+		if(CarsLv3.cars[47] == 1){
+			Labels.Toyota_AurisLabel.setIcon(ImagesHolder.Toyota_AurisIcon);
+			Labels.Toyota_AurisLabel.setText("Toyota Auris");
+		}
+		if(CarsLv3.cars[51] == 1){
+			Labels.Pagani_ZondaFLabel.setIcon(ImagesHolder.Pagani_ZondaFIcon);
+			Labels.Pagani_ZondaFLabel.setText("Pagani ZondaF");
+		}
+		if(CarsLv3.cars[55] == 1){
+			Labels.Lancia_PhedraLabel.setIcon(ImagesHolder.Lancia_PhedraIcon);
+			Labels.Lancia_PhedraLabel.setText("Lancia Phedra");
+		}
+		if(CarsLv3.cars[59] == 1){
+			Labels.Chevrolet_ImpalaLabel.setIcon(ImagesHolder.Chevrolet_ImpalaIcon);
+			Labels.Chevrolet_ImpalaLabel.setText("Chevrolet Impala");
+		}
+		if(CarsLv3.cars[63] == 1){
+			Labels.Porsche_BoxsterLabel.setIcon(ImagesHolder.Porsche_BoxsterIcon);
+			Labels.Porsche_BoxsterLabel.setText("Porsche Boxster");
+		}
+		if(CarsLv3.cars[67] == 1){
+			Labels.Aston_Martin_DB6Label.setIcon(ImagesHolder.Aston_Martin_DB6Icon);
+			Labels.Aston_Martin_DB6Label.setText("Aston Martin DB6");
+		}
+		if(CarsLv3.cars[71] == 1){
+			Labels.Vaz_2103Label.setIcon(ImagesHolder.Vaz_2103Icon);
+			Labels.Vaz_2103Label.setText("Vaz 2103");
+		}
+		if(CarsLv3.cars[75] == 1){
+			Labels.Hyundai_MistraLabel.setIcon(ImagesHolder.Hyundai_MistraIcon);
+			Labels.Hyundai_MistraLabel.setText("Hyundai Mistra");
+		}
+		if(CarsLv3.cars[79] == 1){
+			Labels.Mini_CountrymanLabel.setIcon(ImagesHolder.Mini_CountrymanIcon);
+			Labels.Mini_CountrymanLabel.setText("Mini Countryman");
+		}
+		if(CarsLv4.cars[3] == 1){
+			Labels.Mazda_MX6Label.setIcon(ImagesHolder.Mazda_MX6Icon);
+			Labels.Mazda_MX6Label.setText("Mazda MX6");
+		}
+		if(CarsLv4.cars[7] == 1){
+			Labels.Chrysler_DaytonaLabel.setIcon(ImagesHolder.Chrysler_DaytonaIcon);
+			Labels.Chrysler_DaytonaLabel.setText("Chrysler Daytona");
+		}
+		if(CarsLv4.cars[11] == 1){
+			Labels.Buick_RoadmasterLabel.setIcon(ImagesHolder.Buick_RoadmasterIcon);
+			Labels.Buick_RoadmasterLabel.setText("Buick Roadmaster");
+		}
+		if(CarsLv4.cars[15] == 1){
+			Labels.Volvo_S80Label.setIcon(ImagesHolder.Volvo_S80Icon);
+			Labels.Volvo_S80Label.setText("Volvo S80");
+		}
+		if(CarsLv4.cars[19] == 1){
+			Labels.Porsche_CaymanLabel.setIcon(ImagesHolder.Porsche_CaymanIcon);
+			Labels.Porsche_CaymanLabel.setText("Porsche Cayman");
+		}
+		if(CarsLv4.cars[23] == 1){
+			Labels.Volkswagen_BeetleLabel.setIcon(ImagesHolder.Volkswagen_BeetleIcon);
+			Labels.Volkswagen_BeetleLabel.setText("Volkswagen Beetle");
+		}
+		if(CarsLv4.cars[27] == 1){
+			Labels.Bugatti_EB110Label.setIcon(ImagesHolder.Bugatti_EB110Icon);
+			Labels.Bugatti_EB110Label.setText("Bugatti EB110");
+		}
+		if(CarsLv4.cars[31] == 1){
+			Labels.Opel_ZafiraLabel.setIcon(ImagesHolder.Opel_ZafiraIcon);
+			Labels.Opel_ZafiraLabel.setText("Opel Zafira");
+		}
+		if(CarsLv4.cars[35] == 1){
+			Labels.Saab_9000Label.setIcon(ImagesHolder.Saab_9000Icon);
+			Labels.Saab_9000Label.setText("Saab 9000");
+		}
+		if(CarsLv4.cars[39] == 1){
+			Labels.McLaren_F1Label.setIcon(ImagesHolder.McLaren_F1Icon);
+			Labels.McLaren_F1Label.setText("McLaren F1");
+		}
+		if(CarsLv4.cars[43] == 1){
+			Labels.Audi_R8Label.setIcon(ImagesHolder.Audi_R8Icon);
+			Labels.Audi_R8Label.setText("Audi R8");
+		}
+		if(CarsLv4.cars[47] == 1){
+			Labels.Alfa_Romeo_8CLabel.setIcon(ImagesHolder.Alfa_Romeo_8CIcon);
+			Labels.Alfa_Romeo_8CLabel.setText("Alfa Romeo 8C");
+		}
+		if(CarsLv4.cars[51] == 1){
+			Labels.Ford_FiestaLabel.setIcon(ImagesHolder.Ford_FiestaIcon);
+			Labels.Ford_FiestaLabel.setText("Ford Fiesta");
+		}
+		if(CarsLv4.cars[55] == 1){
+			Labels.Infiniti_Q50Label.setIcon(ImagesHolder.Infiniti_Q50Icon);
+			Labels.Infiniti_Q50Label.setText("Infiniti Q50");
+		}
+		if(CarsLv4.cars[59] == 1){
+			Labels.Maserati_5000GTLabel.setIcon(ImagesHolder.Maserati_5000GTIcon);
+			Labels.Maserati_5000GTLabel.setText("Maserati 5000GT");
+		}
+		if(CarsLv4.cars[63] == 1){
+			Labels.Mercedes_Benz_CLA250Label.setIcon(ImagesHolder.Mercedes_Benz_CLA250Icon);
+			Labels.Mercedes_Benz_CLA250Label.setText("Mercedes Benz CLA250");
+		}
+		if(CarsLv4.cars[67] == 1){
+			Labels.Lamborghini_GallardoLabel.setIcon(ImagesHolder.Lamborghini_GallardoIcon);
+			Labels.Lamborghini_GallardoLabel.setText("Lamborghini Gallardo");
+		}
+		if(CarsLv4.cars[71] == 1){
+			Labels.Mazda_RX7Label.setIcon(ImagesHolder.Mazda_RX7Icon);
+			Labels.Mazda_RX7Label.setText("Mazda RX7");
+		}
+		if(CarsLv4.cars[75] == 1){
+			Labels.Mitsubishi_ColtLabel.setIcon(ImagesHolder.Mitsubishi_ColtIcon);
+			Labels.Mitsubishi_ColtLabel.setText("Mitsubishi Colt");
+		}
+		if(CarsLv4.cars[79] == 1){
+			Labels.Kia_SorentoLabel.setIcon(ImagesHolder.Kia_SorentoIcon);
+			Labels.Kia_SorentoLabel.setText("Kia Sorento");
+		}
+		if(CarsLv5.cars[3] == 1){
+			Labels.Rolls_Royce_WraithLabel.setIcon(ImagesHolder.Rolls_Royce_WraithIcon);
+			Labels.Rolls_Royce_WraithLabel.setText("Rolls Royce Wraith");
+		}
+		if(CarsLv5.cars[7] == 1){
+			Labels.Lamborghini_DiabloLabel.setIcon(ImagesHolder.Lamborghini_DiabloIcon);
+			Labels.Lamborghini_DiabloLabel.setText("Lamborghini Diablo");
+		}
+		if(CarsLv5.cars[11] == 1){
+			Labels.Jeep_ScramblerLabel.setIcon(ImagesHolder.Jeep_ScramblerIcon);
+			Labels.Jeep_ScramblerLabel.setText("Jeep Scrambler");
+		}
+		if(CarsLv5.cars[15] == 1){
+			Labels.Bentley_ContinentalLabel.setIcon(ImagesHolder.Bentley_ContinentalIcon);
+			Labels.Bentley_ContinentalLabel.setText("Bentley Continental");
+		}
+		if(CarsLv5.cars[19] == 1){
+			Labels.Bentley_AzureLabel.setIcon(ImagesHolder.Bentley_AzureIcon);
+			Labels.Bentley_AzureLabel.setText("Bentley Azure");
+		}
+		if(CarsLv5.cars[23] == 1){
+			Labels.Koenigsegg_OneLabel.setIcon(ImagesHolder.Koenigsegg_OneIcon);
+			Labels.Koenigsegg_OneLabel.setText("Koenigsegg One");
+		}
+		if(CarsLv5.cars[27] == 1){
+			Labels.Cadilliac_XTSLabel.setIcon(ImagesHolder.Cadilliac_XTSIcon);
+			Labels.Cadilliac_XTSLabel.setText("Cadilliac XTS");
+		}
+		if(CarsLv5.cars[31] == 1){
+			Labels.Fiat_500Label.setIcon(ImagesHolder.Fiat_500Icon);
+			Labels.Fiat_500Label.setText("Fiat 500");
+		}
+		if(CarsLv5.cars[35] == 1){
+			Labels.Mitsubishi_PajeroLabel.setIcon(ImagesHolder.Mitsubishi_PajeroIcon);
+			Labels.Mitsubishi_PajeroLabel.setText("Mitsubishi Pajero");
+		}
+		if(CarsLv5.cars[39] == 1){
+			Labels.Moskvich_2140Label.setIcon(ImagesHolder.Moskvich_2140Icon);
+			Labels.Moskvich_2140Label.setText("Moskvich 2140");
+		}
+		if(CarsLv5.cars[43] == 1){
+			Labels.Opel_GTLabel.setIcon(ImagesHolder.Opel_GTIcon);
+			Labels.Opel_GTLabel.setText("Opel GT");
+		}
+		if(CarsLv5.cars[47] == 1){
+			Labels.Hyundai_GetzLabel.setIcon(ImagesHolder.Hyundai_GetzIcon);
+			Labels.Hyundai_GetzLabel.setText("Hyundai Getz");
+		}
+		if(CarsLv5.cars[51] == 1){
+			Labels.Maserati_CoupeLabel.setIcon(ImagesHolder.Maserati_CoupeIcon);
+			Labels.Maserati_CoupeLabel.setText("Maserati Coupe");
+		}
+		if(CarsLv5.cars[55] == 1){
+			Labels.Honda_S2000Label.setIcon(ImagesHolder.Honda_S2000Icon);
+			Labels.Honda_S2000Label.setText("Honda S2000");
+		}
+		if(CarsLv5.cars[59] == 1){
+			Labels.Alfa_Romeo_SpiderLabel.setIcon(ImagesHolder.Alfa_Romeo_SpiderIcon);
+			Labels.Alfa_Romeo_SpiderLabel.setText("Alfa Romeo Spider");
+		}
+		if(CarsLv5.cars[63] == 1){
+			Labels.BMW_M5Label.setIcon(ImagesHolder.BMW_M5Icon);
+			Labels.BMW_M5Label.setText("BMW M5");
+		}
+		if(CarsLv5.cars[67] == 1){
+			Labels.BMW_I8Label.setIcon(ImagesHolder.BMW_I8Icon);
+			Labels.BMW_I8Label.setText("BMW I8");
+		}
+		if(CarsLv5.cars[71] == 1){
+			Labels.Citroen_C5Label.setIcon(ImagesHolder.Citroen_C5Icon);
+			Labels.Citroen_C5Label.setText("Citroen C5");
+		}
+		if(CarsLv5.cars[75] == 1){
+			Labels.Fiat_PuntoLabel.setIcon(ImagesHolder.Fiat_PuntoIcon);
+			Labels.Fiat_PuntoLabel.setText("Fiat Punto");
+		}
+		if(CarsLv5.cars[79] == 1){
+			Labels.Audi_100Label.setIcon(ImagesHolder.Audi_100Icon);
+			Labels.Audi_100Label.setText("Audi 100");
+		}
+		if(CarsLv6.cars[3] == 1){
+			Labels.Rolls_Royce_PhantomLabel.setIcon(ImagesHolder.Rolls_Royce_PhantomIcon);
+			Labels.Rolls_Royce_PhantomLabel.setText("Rolls Royce Phantom");
+		}
+		if(CarsLv6.cars[7] == 1){
+			Labels.Toyota_86Label.setIcon(ImagesHolder.Toyota_86Icon);
+			Labels.Toyota_86Label.setText("Toyota 86");
+		}
+		if(CarsLv6.cars[11] == 1){
+			Labels.BMW_e70Label.setIcon(ImagesHolder.BMW_e70Icon);
+			Labels.BMW_e70Label.setText("BMW e70");
+		}
+		if(CarsLv6.cars[15] == 1){
+			Labels.Chrysler_VoyagerLabel.setIcon(ImagesHolder.Chrysler_VoyagerIcon);
+			Labels.Chrysler_VoyagerLabel.setText("Chrysler Voyager");
+		}
+		if(CarsLv6.cars[19] == 1){
+			Labels.Rolls_Royce_PhantomIIILabel.setIcon(ImagesHolder.Rolls_Royce_PhantomIIIIcon);
+			Labels.Rolls_Royce_PhantomIIILabel.setText("Rolls Royce PhantomIII");
+		}
+		if(CarsLv6.cars[23] == 1){
+			Labels.Honda_CRXLabel.setIcon(ImagesHolder.Honda_CRXIcon);
+			Labels.Honda_CRXLabel.setText("Honda CRX");
+		}
+		if(CarsLv6.cars[27] == 1){
+			Labels.Subaru_1000Label.setIcon(ImagesHolder.Subaru_1000Icon);
+			Labels.Subaru_1000Label.setText("Subaru 1000");
+		}
+		if(CarsLv6.cars[31] == 1){
+			Labels.Cadilliac_EldoradoLabel.setIcon(ImagesHolder.Cadilliac_EldoradoIcon);
+			Labels.Cadilliac_EldoradoLabel.setText("Cadilliac Eldorado");
+		}
+		if(CarsLv6.cars[35] == 1){
+			Labels.Land_Rover_FreelanderLabel.setIcon(ImagesHolder.Land_Rover_FreelanderIcon);
+			Labels.Land_Rover_FreelanderLabel.setText("Land Rover Freelander");
+		}
+		if(CarsLv6.cars[39] == 1){
+			Labels.Renault_SpiderLabel.setIcon(ImagesHolder.Renault_SpiderIcon);
+			Labels.Renault_SpiderLabel.setText("Renault Spider");
+		}
+		if(CarsLv6.cars[44] == 1){
+			Labels.Gaz_21Label.setIcon(ImagesHolder.Gaz_21Icon);
+			Labels.Gaz_21Label.setText("Gaz 21");
+		}
+		if(CarsLv6.cars[47] == 1){
+			Labels.Acura_ELLabel.setIcon(ImagesHolder.Acura_ELIcon);
+			Labels.Acura_ELLabel.setText("Acura EL");
+		}
+		if(CarsLv6.cars[51] == 1){
+			Labels.Bugatti_VeyronLabel.setIcon(ImagesHolder.Bugatti_VeyronIcon);
+			Labels.Bugatti_VeyronLabel.setText("Bugatti Veyron");
+		}
+		if(CarsLv6.cars[55] == 1){
+			Labels.Mercedes_Benz_SL600Label.setIcon(ImagesHolder.Mercedes_Benz_SL600Icon);
+			Labels.Mercedes_Benz_SL600Label.setText("Mercedes Benz SL600");
+		}
+		if(CarsLv6.cars[59] == 1){
+			Labels.Rolls_Royce_SilverLabel.setIcon(ImagesHolder.Rolls_Royce_SilverIcon);
+			Labels.Rolls_Royce_SilverLabel.setText("Rolls Royce Silver");
+		}
+		if(CarsLv6.cars[63] == 1){
+			Labels.Mini_PacemanLabel.setIcon(ImagesHolder.Mini_PacemanIcon);
+			Labels.Mini_PacemanLabel.setText("Mini Paceman");
+		}
+		if(CarsLv6.cars[67] == 1){
+			Labels.Hyundai_ExcelLabel.setIcon(ImagesHolder.Hyundai_ExcelIcon);
+			Labels.Hyundai_ExcelLabel.setText("Hyundai Excel");
+		}
+		if(CarsLv6.cars[71] == 1){
+			Labels.Gaz_24Label.setIcon(ImagesHolder.Gaz_24Icon);
+			Labels.Gaz_24Label.setText("Gaz 24");
+		}
+		if(CarsLv6.cars[75] == 1){
+			Labels.Peugeot_107Label.setIcon(ImagesHolder.Peugeot_107Icon);
+			Labels.Peugeot_107Label.setText("Peugeot 107");
+		}
+		if(CarsLv6.cars[79] == 1){
+			Labels.Audi_A4Label.setIcon(ImagesHolder.Audi_A4Icon);
+			Labels.Audi_A4Label.setText("Audi A4");
+		}
+		if(CarsLv7.cars[3] == 1){
+			Labels.Lamborghini_AventadorLabel.setIcon(ImagesHolder.Lamborghini_AventadorIcon);
+			Labels.Lamborghini_AventadorLabel.setText("Lamborghini Aventador");
+		}
+		if(CarsLv7.cars[5] == 1){
+			Labels.Nissan_350zLabel.setIcon(ImagesHolder.Nissan_350zIcon);
+			Labels.Nissan_350zLabel.setText("Nissan 350z");
+		}
+		if(CarsLv7.cars[11] == 1){
+			Labels.Jaguar_XJ6Label.setIcon(ImagesHolder.Jaguar_XJ6Icon);
+			Labels.Jaguar_XJ6Label.setText("Jaguar XJ6");
+		}
+		if(CarsLv7.cars[15] == 1){
+			Labels.Renault_ClioLabel.setIcon(ImagesHolder.Renault_ClioIcon);
+			Labels.Renault_ClioLabel.setText("Renault Clio");
+		}
+		if(CarsLv7.cars[19] == 1){
+			Labels.Toyota_AvensisLabel.setIcon(ImagesHolder.Toyota_AvensisIcon);
+			Labels.Toyota_AvensisLabel.setText("Toyota Avensis");
+		}
+		if(CarsLv7.cars[23] == 1){
+			Labels.Subaru_OutbackLabel.setIcon(ImagesHolder.Subaru_OutbackIcon);
+			Labels.Subaru_OutbackLabel.setText("Subaru Outback");
+		}
+		if(CarsLv7.cars[27] == 1){
+			Labels.Saab_900Label.setIcon(ImagesHolder.Saab_900Icon);
+			Labels.Saab_900Label.setText("Saab 900");
+		}
+		if(CarsLv7.cars[31] == 1){
+			Labels.Opel_VectraLabel.setIcon(ImagesHolder.Opel_VectraIcon);
+			Labels.Opel_VectraLabel.setText("Opel Vectra");
+		}
+		if(CarsLv7.cars[35] == 1){
+			Labels.Chrysler_ChargerLabel.setIcon(ImagesHolder.Chrysler_ChargerIcon);
+			Labels.Chrysler_ChargerLabel.setText("Chrysler Charger");
+		}
+		if(CarsLv7.cars[39] == 1){
+			Labels.Ferrari_348Label.setIcon(ImagesHolder.Ferrari_348Icon);
+			Labels.Ferrari_348Label.setText("Ferrari 348");
+		}
+		if(CarsLv7.cars[43] == 1){
+			Labels.Hyundai_XGLabel.setIcon(ImagesHolder.Hyundai_XGIcon);
+			Labels.Hyundai_XGLabel.setText("Hyundai XG");
+		}
+		if(CarsLv7.cars[47] == 1){
+			Labels.Lexus_RXLabel.setIcon(ImagesHolder.Lexus_RXIcon);
+			Labels.Lexus_RXLabel.setText("Lexus RX");
+		}
+		if(CarsLv7.cars[51] == 1){
+			Labels.Dodge_400Label.setIcon(ImagesHolder.Dodge_400Icon);
+			Labels.Dodge_400Label.setText("Dodge 400");
+		}
+		if(CarsLv7.cars[55] == 1){
+			Labels.GMC_TerrainLabel.setIcon(ImagesHolder.GMC_TerrainIcon);
+			Labels.GMC_TerrainLabel.setText("GMC Terrain");
+		}
+		if(CarsLv7.cars[59] == 1){
+			Labels.Volvo_C70Label.setIcon(ImagesHolder.Volvo_C70Icon);
+			Labels.Volvo_C70Label.setText("Volvo C70");
+		}
+		if(CarsLv7.cars[63] == 1){
+			Labels.Ford_SierraLabel.setIcon(ImagesHolder.Ford_SierraIcon);
+			Labels.Ford_SierraLabel.setText("Ford Sierra");
+		}
+		if(CarsLv7.cars[67] == 1){
+			Labels.Subaru_ImprezaLabel.setIcon(ImagesHolder.Subaru_ImprezaIcon);
+			Labels.Subaru_ImprezaLabel.setText("Subaru Impreza");
+		}
+		if(CarsLv7.cars[71] == 1){
+			Labels.BMW_e90Label.setIcon(ImagesHolder.BMW_e90Icon);
+			Labels.BMW_e90Label.setText("BMW e90");
+		}
+		if(CarsLv7.cars[75] == 1){
+			Labels.Nissan_SkylineLabel.setIcon(ImagesHolder.Nissan_SkylineIcon);
+			Labels.Nissan_SkylineLabel.setText("Nissan Skyline");
+		}
+		if(CarsLv7.cars[79] == 1){
+			Labels.Audi_Q7Label.setIcon(ImagesHolder.Audi_Q7Icon);
+			Labels.Audi_Q7Label.setText("Audi Q7");
+		}
+		if(CarsLv8.cars[3] == 1){
+			Labels.Bentley_ArnageLabel.setIcon(ImagesHolder.Bentley_ArnageIcon);
+			Labels.Bentley_ArnageLabel.setText("Bentley Arnage");
+		}
+		if(CarsLv8.cars[7] == 1){
+			Labels.Volvo_850Label.setIcon(ImagesHolder.Volvo_850Icon);
+			Labels.Volvo_850Label.setText("Volvo 850");
+		}
+		if(CarsLv8.cars[11] == 1){
+			Labels.Toyota_Rav4Label.setIcon(ImagesHolder.Toyota_Rav4Icon);
+			Labels.Toyota_Rav4Label.setText("Toyota Rav4");
+		}
+		if(CarsLv8.cars[15] == 1){
+			Labels.Ford_FocusLabel.setIcon(ImagesHolder.Ford_FocusIcon);
+			Labels.Ford_FocusLabel.setText("Ford Focus");
+		}
+		if(CarsLv8.cars[19] == 1){
+			Labels.Chevrolet_SpinLabel.setIcon(ImagesHolder.Chevrolet_SpinIcon);
+			Labels.Chevrolet_SpinLabel.setText("Chevrolet Spin");
+		}
+		if(CarsLv8.cars[23] == 1){
+			Labels.Bentley_GTZLabel.setIcon(ImagesHolder.Bentley_GTZIcon);
+			Labels.Bentley_GTZLabel.setText("Bentley GTZ");
+		}
+		if(CarsLv8.cars[27] == 1){
+			Labels.Lexus_LSLabel.setIcon(ImagesHolder.Lexus_LSIcon);
+			Labels.Lexus_LSLabel.setText("Lexus LS");
+		}
+		if(CarsLv8.cars[31] == 1){
+			Labels.Land_Rover_RangeRoverLabel.setIcon(ImagesHolder.Land_Rover_RangeRoverIcon);
+			Labels.Land_Rover_RangeRoverLabel.setText("Land Rover RangeRover");
+		}
+		if(CarsLv8.cars[35] == 1){
+			Labels.Lexus_GXLabel.setIcon(ImagesHolder.Lexus_GXIcon);
+			Labels.Lexus_GXLabel.setText("Lexus GX");
+		}
+		if(CarsLv8.cars[39] == 1){
+			Labels.Jeep_WranglerLabel.setIcon(ImagesHolder.Jeep_WranglerIcon);
+			Labels.Jeep_WranglerLabel.setText("Jeep Wrangler");
+		}
+		if(CarsLv8.cars[43] == 1){
+			Labels.Maserati_GranTurismoLabel.setIcon(ImagesHolder.Maserati_GranTurismoIcon);
+			Labels.Maserati_GranTurismoLabel.setText("Maserati GranTurismo");
+		}
+		if(CarsLv8.cars[47] == 1){
+			Labels.Koenigsegg_AgeraLabel.setIcon(ImagesHolder.Koenigsegg_AgeraIcon);
+			Labels.Koenigsegg_AgeraLabel.setText("Koenigsegg Agera");
+		}
+		if(CarsLv8.cars[51] == 1){
+			Labels.Acura_MDXLabel.setIcon(ImagesHolder.Acura_MDXIcon);
+			Labels.Acura_MDXLabel.setText("Acura MDX");
+		}
+		if(CarsLv8.cars[55] == 1){
+			Labels.Audi_RS6Label.setIcon(ImagesHolder.Audi_RS6Icon);
+			Labels.Audi_RS6Label.setText("Audi RS6");
+		}
+		if(CarsLv8.cars[59] == 1){
+			Labels.Cadilliac_DeVilleLabel.setIcon(ImagesHolder.Cadilliac_DeVilleIcon);
+			Labels.Cadilliac_DeVilleLabel.setText("Cadilliac DeVille");
+		}
+		if(CarsLv8.cars[63] == 1){
+			Labels.McLaren_VenenoLabel.setIcon(ImagesHolder.McLaren_VenenoIcon);
+			Labels.McLaren_VenenoLabel.setText("McLaren Veneno");
+		}
+		if(CarsLv8.cars[67] == 1){
+			Labels.Tesla_XLabel.setIcon(ImagesHolder.Tesla_XIcon);
+			Labels.Tesla_XLabel.setText("Tesla X");
+		}
+		if(CarsLv8.cars[71] == 1){
+			Labels.Mercedes_Benz_G55Label.setIcon(ImagesHolder.Mercedes_Benz_G55Icon);
+			Labels.Mercedes_Benz_G55Label.setText("Mercedes Benz G55");
+		}
+		if(CarsLv8.cars[75] == 1){
+			Labels.Lancia_LybraLabel.setIcon(ImagesHolder.Lancia_LybraIcon);
+			Labels.Lancia_LybraLabel.setText("Lancia Lybra");
+		}
+		if(CarsLv8.cars[79] == 1){
+			Labels.Infiniti_QX60Label.setIcon(ImagesHolder.Infiniti_QX60Icon);
+			Labels.Infiniti_QX60Label.setText("Infiniti QX60");
+		}
+		if(CarsLv9.cars[3] == 1){
+			Labels.Kia_ForteLabel.setIcon(ImagesHolder.Kia_ForteIcon);
+			Labels.Kia_ForteLabel.setText("Kia Forte");
+		}
+		if(CarsLv9.cars[7] == 1){
+			Labels.Lancia_VoyagerLabel.setIcon(ImagesHolder.Lancia_VoyagerIcon);
+			Labels.Lancia_VoyagerLabel.setText("Lancia Voyager");
+		}
+		if(CarsLv9.cars[11] == 1){
+			Labels.Porsche_CayenneLabel.setIcon(ImagesHolder.Porsche_CayenneIcon);
+			Labels.Porsche_CayenneLabel.setText("Porsche Cayenne");
+		}
+		if(CarsLv9.cars[15] == 1){
+			Labels.McLaren_650sLabel.setIcon(ImagesHolder.McLaren_650sIcon);
+			Labels.McLaren_650sLabel.setText("McLaren 650s");
+		}
+		if(CarsLv9.cars[19] == 1){
+			Labels.Jaguar_E_TypeLabel.setIcon(ImagesHolder.Jaguar_E_TypeIcon);
+			Labels.Jaguar_E_TypeLabel.setText("Jaguar E-Type");
+		}
+		if(CarsLv9.cars[23] == 1){
+			Labels.Peugeot_601Label.setIcon(ImagesHolder.Peugeot_601Icon);
+			Labels.Peugeot_601Label.setText("Peugeot 601");
+		}
+		if(CarsLv9.cars[27] == 1){
+			Labels.Jaguar_F_TypeLabel.setIcon(ImagesHolder.Jaguar_F_TypeIcon);
+			Labels.Jaguar_F_TypeLabel.setText("Jaguar F-Type");
+		}
+		if(CarsLv9.cars[31] == 1){
+			Labels.Fiat_DobloLabel.setIcon(ImagesHolder.Fiat_DobloIcon);
+			Labels.Fiat_DobloLabel.setText("Fiat Doblo");
+		}
+		if(CarsLv9.cars[35] == 1){
+			Labels.Vaz_2101Label.setIcon(ImagesHolder.Vaz_2101Icon);
+			Labels.Vaz_2101Label.setText("Vaz 2101");
+		}
+		if(CarsLv9.cars[39] == 1){
+			Labels.McLaren_P1Label.setIcon(ImagesHolder.McLaren_P1Icon);
+			Labels.McLaren_P1Label.setText("McLaren P1");
+		}
+		if(CarsLv9.cars[43] == 1){
+			Labels.Peugeot_405Label.setIcon(ImagesHolder.Peugeot_405Icon);
+			Labels.Peugeot_405Label.setText("Peugeot 405");
+		}
+		if(CarsLv9.cars[47] == 1){
+			Labels.GMC_EnvoyLabel.setIcon(ImagesHolder.GMC_EnvoyIcon);
+			Labels.GMC_EnvoyLabel.setText("GMC Envoy");
+		}
+		if(CarsLv9.cars[51] == 1){
+			Labels.Chevrolet_CorveteLabel.setIcon(ImagesHolder.Chevrolet_CorveteIcon);
+			Labels.Chevrolet_CorveteLabel.setText("Chevrolet Corvete");
+		}
+		if(CarsLv9.cars[55] == 1){
+			Labels.Pagani_HuayraLabel.setIcon(ImagesHolder.Pagani_HuayraIcon);
+			Labels.Pagani_HuayraLabel.setText("Pagani Huayra");
+		}
+		if(CarsLv9.cars[59] == 1){
+			Labels.Moskvich_402Label.setIcon(ImagesHolder.Moskvich_402Icon);
+			Labels.Moskvich_402Label.setText("Moskvich 402");
+		}
+		if(CarsLv9.cars[63] == 1){
+			Labels.Alfa_Romeo_159Label.setIcon(ImagesHolder.Alfa_Romeo_159Icon);
+			Labels.Alfa_Romeo_159Label.setText("Alfa Romeo 159");
+		}
+		if(CarsLv9.cars[67] == 1){
+			Labels.Renault_FregateLabel.setIcon(ImagesHolder.Renault_FregateIcon);
+			Labels.Renault_FregateLabel.setText("Renault Fregate");
+		}
+		if(CarsLv9.cars[71] == 1){
+			Labels.Mini_CooperLabel.setIcon(ImagesHolder.Mini_CooperIcon);
+			Labels.Mini_CooperLabel.setText("Mini Cooper");
+		}
+		if(CarsLv9.cars[75] == 1){
+			Labels.Dodge_ViperLabel.setIcon(ImagesHolder.Dodge_ViperIcon);
+			Labels.Dodge_ViperLabel.setText("Dodge Viper");
+		}
+		if(CarsLv9.cars[79] == 1){
+			Labels.Vaz_NivaLabel.setIcon(ImagesHolder.Vaz_NivaIcon);
+			Labels.Vaz_NivaLabel.setText("Vaz Niva");
+		}
+		if(CarsLv10.cars[3] == 1){
+			Labels.Jaguar_X_TypeLabel.setIcon(ImagesHolder.Jaguar_X_TypeIcon);
+			Labels.Jaguar_X_TypeLabel.setText("Jaguar X-Type");
+		}
+		if(CarsLv10.cars[7] == 1){
+			Labels.Ferrari_308Label.setIcon(ImagesHolder.Ferrari_308Icon);
+			Labels.Ferrari_308Label.setText("Ferrari 308");
+		}
+		if(CarsLv10.cars[11] == 1){
+			Labels.Mazda_626Label.setIcon(ImagesHolder.Mazda_626Icon);
+			Labels.Mazda_626Label.setText("Mazda 626");
+		}
+		if(CarsLv10.cars[15] == 1){
+			Labels.Maserati_ShamalLabel.setIcon(ImagesHolder.Maserati_ShamalIcon);
+			Labels.Maserati_ShamalLabel.setText("Maserati Shamal");
+		}
+		if(CarsLv10.cars[19] == 1){
+			Labels.Nissan_240sxLabel.setIcon(ImagesHolder.Nissan_240sxIcon);
+			Labels.Nissan_240sxLabel.setText("Nissan 240sx");
+		}
+		if(CarsLv10.cars[23] == 1){
+			Labels.Alfa_Romeo_4CLabel.setIcon(ImagesHolder.Alfa_Romeo_4CIcon);
+			Labels.Alfa_Romeo_4CLabel.setText("Alfa Romeo 4C");
+		}
+		if(CarsLv10.cars[27] == 1){
+			Labels.Nissan_JukeLabel.setIcon(ImagesHolder.Nissan_JukeIcon);
+			Labels.Nissan_JukeLabel.setText("Nissan Juke");
+		}
+		if(CarsLv10.cars[31] == 1){
+			Labels.Volkswagen_Golf1Label.setIcon(ImagesHolder.Volkswagen_Golf1Icon);
+			Labels.Volkswagen_Golf1Label.setText("Volkswagen Golf1");
+		}
+		if(CarsLv10.cars[35] == 1){
+			Labels.Jeep_GladiatorLabel.setIcon(ImagesHolder.Jeep_GladiatorIcon);
+			Labels.Jeep_GladiatorLabel.setText("Jeep Gladiator");
+		}
+		if(CarsLv10.cars[39] == 1){
+			Labels.Dodge_MatadorLabel.setIcon(ImagesHolder.Dodge_MatadorIcon);
+			Labels.Dodge_MatadorLabel.setText("Dodge Matador");
+		}
+		if(CarsLv10.cars[43] == 1){
+			Labels.Bugatti_RoyaleLabel.setIcon(ImagesHolder.Bugatti_RoyaleIcon);
+			Labels.Bugatti_RoyaleLabel.setText("Bugatti Royale");
+		}
+		if(CarsLv10.cars[47] == 1){
+			Labels.Citroen_CXLabel.setIcon(ImagesHolder.Citroen_CXIcon);
+			Labels.Citroen_CXLabel.setText("Citroen CX");
+		}
+		if(CarsLv10.cars[51] == 1){
+			Labels.Lamborghini_350GTLabel.setIcon(ImagesHolder.Lamborghini_350GTIcon);
+			Labels.Lamborghini_350GTLabel.setText("Lamborghini 350GT");
+		}
+		if(CarsLv10.cars[55] == 1){
+			Labels.Mitsubishi_GTOLabel.setIcon(ImagesHolder.Mitsubishi_GTOIcon);
+			Labels.Mitsubishi_GTOLabel.setText("Mitsubishi GTO");
+		}
+		if(CarsLv10.cars[59] == 1){
+			Labels.Buick_InvictaLabel.setIcon(ImagesHolder.Buick_InvictaIcon);
+			Labels.Buick_InvictaLabel.setText("Buick Invicta");
+		}
+		if(CarsLv10.cars[63] == 1){
+			Labels.Porsche_911Label.setIcon(ImagesHolder.Porsche_911Icon);
+			Labels.Porsche_911Label.setText("Porsche 911");
+		}
+		if(CarsLv10.cars[67] == 1){
+			Labels.Subaru_ForesterLabel.setIcon(ImagesHolder.Subaru_ForesterIcon);
+			Labels.Subaru_ForesterLabel.setText("Subaru Forester");
+		}
+		if(CarsLv10.cars[71] == 1){
+			Labels.Citroen_BXLabel.setIcon(ImagesHolder.Citroen_BXIcon);
+			Labels.Citroen_BXLabel.setText("Citroen BX");
+		}
+		if(CarsLv10.cars[75] == 1){
+			Labels.Bugatti_Type252Label.setIcon(ImagesHolder.Bugatti_Type252Icon);
+			Labels.Bugatti_Type252Label.setText("Bugatti Type252");
+		}
+		if(CarsLv10.cars[79] == 1){
+			Labels.Ferrari_488Label.setIcon(ImagesHolder.Ferrari_488Icon);
+			Labels.Ferrari_488Label.setText("Ferrari 488");
+		}
     }
 
     public void SaveFile(){
@@ -2471,6 +5581,7 @@ public class ClickerGame implements ActionListener {
     		save.writeObject(CarsLv8.cars);
     		save.writeObject(CarsLv9.cars);
     		save.writeObject(CarsLv10.cars);
+    		save.writeObject(Statistic.statistic);
     		
     		save.close();
     		}
@@ -2499,6 +5610,7 @@ public class ClickerGame implements ActionListener {
 		CarsLv8.cars = (Integer[]) load.readObject();
 		CarsLv9.cars = (Integer[]) load.readObject();
 		CarsLv10.cars = (Integer[]) load.readObject();
+		Statistic.statistic = (Integer[]) load.readObject();
 		
 		load.close();
 		}
@@ -2521,7 +5633,7 @@ public class ClickerGame implements ActionListener {
         if(ae.getSource() == jbtnBoxes){
         	CarMain.main[2] += 1;
             CarMain.main[3] += 1;
-            
+            System.out.println(AmericanCars());
             if(CarMain.main[2] == 5){
                 CarMain.main[2] -= 5;
                 if(CarMain.main[4] == 1){
@@ -5270,112 +8382,113 @@ public class ClickerGame implements ActionListener {
 	    		if(CarMain.main[7] >0){
 	    			if(CarFrame.frames[1] >0){ 
 	    				
-	    				for(int i=1;i <= 25;i+=2){
-	    					if(Part.parts[i] >0){
-	    						count0+=1;
-	    				
-	    					}
-	    					else{
-	    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);
-	    						break;}	    					
-						}
+//	    				for(int i=1;i <= 25;i+=2){
+//	    					if(Part.parts[i] >0){
+//	    						count0+=1;
+//	    				
+//	    					}
+//	    					else{
+//	    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);
+//	    						break;}	    					
+//						}
 	    							    				
-					if (count0 == 13){				
+					if (count0 == 0){				
 						for (int j = 3;j <= 80; j+=4){
 							if(CarsLv1.cars[j] == 0){
 								for(int i=1;i <= 25;i+=2){
 									Part.parts[i] -=1;
 								}	
-									CarFrame.frames[1] -=1;								
+									//CarFrame.frames[1] -=1;								
 									CarsLv1.cars[j] +=1;
-								
-									if(j == 3){
+									
+									switch(j){
+										
+									case 3:{
 										JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_DB9Icon);
-										break;
-									}
-									if(j == 7){
+										break;}
+									case 7:{
 										JOptionPane.showMessageDialog (null, "You have gained Acura NSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_NSXIcon);
-										break;
-									}
-									if(j == 11){
+										break;}
+									case 11:{
 										JOptionPane.showMessageDialog (null, "You have gained Ford Mustang!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_MustangIcon);
 										break;
 									}
-									if(j == 15){
+									case 15:{
 										JOptionPane.showMessageDialog (null, "You have gained Moskvich 412!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_412Icon);
 										break;
 									}
-									if(j == 19){
+									case 19:{
 										JOptionPane.showMessageDialog (null, "You have gained Kia Venga!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_VengaIcon);
 										break;
 									}
-									if(j == 23){
+									case 23:{
 										JOptionPane.showMessageDialog (null, "You have gained Fiat 1500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_1500Icon);
 										break;
 									}
-									if(j == 27){
+									case 27:{
 										JOptionPane.showMessageDialog (null, "You have gained Ferrari Enzo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_EnzoIcon);
 										break;
 									}
-									if(j == 31){
+									case 31:{
 										JOptionPane.showMessageDialog (null, "You have gained Aston Martin Rapide!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_RapideIcon);
 										break;
 									}
-									if(j == 35){
+									case 35:{
 										JOptionPane.showMessageDialog (null, "You have gained Koenigsegg CCX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_CCXIcon);
 										break;
 									}
-									if(j == 39){
+									case 39:{
 										JOptionPane.showMessageDialog (null, "You have gained Honda Civic!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_CivicIcon);
 										break;
 									}
-									if(j == 43){
+									case 43:{
 										JOptionPane.showMessageDialog (null, "You have gained Cadilliac ATS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_ATSIcon);
 										break;
 									}
-									if(j == 47){
+									case 47:{
 										JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Lancer Evolution X!", "Congralations", JOptionPane.INFORMATION_MESSAGE,ImagesHolder.Mitsubishi_LancerEvolutionXIcon);
 										break;
 									}
-									if(j == 51){
+									case 51:{
 										JOptionPane.showMessageDialog (null, "You have gained Infiniti FX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_FXIcon);
 										break;
 									}
-									if(j == 55){
+									case 55:{
 										JOptionPane.showMessageDialog (null, "You have gained Lancia Thema!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_ThemaIcon);
 										break;
 									}
-									if(j == 59){
+									case 59:{
 										JOptionPane.showMessageDialog (null, "You have gained Volvo XC90!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_XC90Icon);
 										break;
 									}
-									if(j == 63){
+									case 63:{
 										JOptionPane.showMessageDialog (null, "You have gained Acura CSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_CSXIcon);
 										break;
 									}
-									if(j == 67){
+									case 67:{
 										JOptionPane.showMessageDialog (null, "You have gained Saab Sonett II!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_SonettIIIcon);
 										break;
 									}
-									if(j == 71){
+									case 71:{
 										JOptionPane.showMessageDialog (null, "You have gained Renault Floride!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_FlorideIcon);
 										break;
 									}
-									if(j == 75){
+									case 75:{
 										JOptionPane.showMessageDialog (null, "You have gained BMW e34!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e34Icon);
 										break;
 									}
-									if(j == 79){
+									case 79:{
 										JOptionPane.showMessageDialog (null, "You have gained Chrysler Cordoba!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_CordobaIcon);									
-										break;
-									}
-									}
-									else{
 										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
 										break;
 									}
-								
-						
+									default:{
+										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+										break;
+									}
+									}
+									break;
+							}
 						}
 					}
 	    			}
@@ -5415,92 +8528,94 @@ if(CarMain.main[5] >=2){
 						CarFrame.frames[3] -=1;								
 						CarsLv2.cars[j] +=1;
 						
-						if(j == 3){
+						switch(j){
+						
+						case 3:{
 							JOptionPane.showMessageDialog (null, "You have gained Buick Riviera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_RivieraIcon);
 							break;
 						}
-						if(j == 7){
+						case 7:{
 							JOptionPane.showMessageDialog (null, "You have gained Tesla Roadster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_RoadsterIcon);
 							break;
 						}
-						if(j == 11){
+						case 11:{
 							JOptionPane.showMessageDialog (null, "You have gained Audi 80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_80Icon);
 							break;
 						}
-						if(j == 15){
+						case 15:{
 							JOptionPane.showMessageDialog (null, "You have gained BMW e36!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e36Icon);
 							break;
 						}
-						if(j == 19){
+						case 19:{
 							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Scirocco!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_SciroccoIcon);
 							break;
 						}
-						if(j == 23){
+						case 23:{
 							JOptionPane.showMessageDialog (null, "You have gained Mazda 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_3Icon);
 							break;
 						}
-						if(j == 27){
+						case 27:{
 							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Viking!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_VikingIcon);
 							break;
 						}
-						if(j == 31){
+						case 31:{
 							JOptionPane.showMessageDialog (null, "You have gained Tesla S!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_SIcon);
 							break;
 						}
-						if(j == 35){
+						case 35:{
 							JOptionPane.showMessageDialog (null, "You have gained Jeep ZJ!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_ZJIcon);
 							break;
 						}
-						if(j == 39){
+						case 39:{
 							JOptionPane.showMessageDialog (null, "You have gained Dodge Neon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_NeonIcon);
 							break;
 						}
-						if(j == 43){
+						case 43:{
 							JOptionPane.showMessageDialog (null, "You have gained BMW e30!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e30Icon);
 							break;
 						}
-						if(j == 47){
+						case 47:{
 							JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz W123!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_W123Icon);
 							break;
 						}
-						if(j == 51){
+						case 51:{
 							JOptionPane.showMessageDialog (null, "You have gained Land Rover Defender!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_DefenderIcon);
 							break;
 						}
-						if(j == 55){
+						case 55:{
 							JOptionPane.showMessageDialog (null, "You have gained Saab 9_5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_9_5Icon);
 							break;
 						}
-						if(j == 59){
+						case 59:{
 							JOptionPane.showMessageDialog (null, "You have gained Aston Martin One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_OneIcon);
 							break;
 						}
-						if(j == 63){
+						case 63:{
 							JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Regera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_RegeraIcon);
 							break;
 						}
-						if(j == 67){
+						case 67:{
 							JOptionPane.showMessageDialog (null, "You have gained Lexus IS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_ISIcon);
 							break;
 						}
-						if(j == 71){
+						case 71:{
 							JOptionPane.showMessageDialog (null, "You have gained GMC Yukon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_YukonIcon);
 							break;
 						}
-						if(j == 75){
+						case 75:{
 							JOptionPane.showMessageDialog (null, "You have gained Opel_Astra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_AstraIcon);
 							break;
 						}
-						if(j == 79){
+						case 79:{
 							JOptionPane.showMessageDialog (null, "You have gained Audi Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_CoupeIcon);
 							break;
 						}
-				}
-				else{
-					JOptionPane.showMessageDialog(null, "You have colected all 2 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-					break;
-				}
-			
+						default:{
+							JOptionPane.showMessageDialog(null, "You have colected all 2 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+						}
+						break;
 	
 			}
 		}
@@ -5516,6 +8631,7 @@ if(CarMain.main[5] >=2){
 		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
 		}  
 }	
+}
 
 if(ae.getSource() == jbtnBuildCarLv3){
 if(CarMain.main[5] >=3){
@@ -5539,93 +8655,95 @@ if(CarMain.main[5] >=3){
 					}	
 						CarFrame.frames[5] -=1;								
 						CarsLv3.cars[j] +=1;
-						if(j == 3){
+						
+						switch(j){
+						
+						case 3:{
 							JOptionPane.showMessageDialog (null, "You have gained Mini Moke!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_MokeIcon);
 							break;
 						}
-						if(j == 7){
+						case 7:{
 							JOptionPane.showMessageDialog (null, "You have gained Kia Rondo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_RondoIcon);
 							break;
 						}
-						if(j == 11){
+						case 11:{
 							JOptionPane.showMessageDialog (null, "You have gained GMC Suburban!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_SuburbanIcon);
 							break;
 						}
-						if(j == 15){
+						case 15:{
 							JOptionPane.showMessageDialog (null, "You have gained Honda Prelude!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_PreludeIcon);
 							break;
 						}
-						if(j == 19){
+						case 19:{
 							JOptionPane.showMessageDialog (null, "You have gained Citroen_Saxo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_SaxoIcon);
 							break;
 						}
-						if(j == 23){
+						case 23:{
 							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Tiguan!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_TiguanIcon);
 							break;
 						}
-						if(j == 27){
+						case 27:{
 							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Phaeton!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_PhaetonIcon);
 							break;
 						}
-						if(j == 31){
+						case 31:{
 							JOptionPane.showMessageDialog (null, "You have gained Buick Centry!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_CentryIcon);
 							break;
 						}
-						if(j == 35){
+						case 35:{
 							JOptionPane.showMessageDialog (null, "You have gained Land Rover Discovery!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_DiscoveryIcon);
 							break;
 						}
-						if(j == 39){
+						case 39:{
 							JOptionPane.showMessageDialog (null, "You have gained Infiniti Etherea!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_EthereaIcon);
 							break;
 						}
-						if(j == 43){
+						case 43:{
 							JOptionPane.showMessageDialog (null, "You have gained Peugeot 308!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_308Icon);
 							break;
 						}
-						if(j == 47){
+						case 47:{
 							JOptionPane.showMessageDialog (null, "You have gained Toyota Auris!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_AurisIcon);
 							break;
 						}
-						if(j == 51){
+						case 51:{
 							JOptionPane.showMessageDialog (null, "You have gained Pagani ZondaF!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Pagani_ZondaFIcon);
 							break;
 						}
-						if(j == 55){
+						case 55:{
 							JOptionPane.showMessageDialog (null, "You have gained Lancia Phedra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_PhedraIcon);
 							break;
 						}
-						if(j == 59){
+						case 59:{
 							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Impala!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_ImpalaIcon);
 							break;
 						}
-						if(j == 63){
+						case 63:{
 							JOptionPane.showMessageDialog (null, "You have gained Porsche Boxster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_BoxsterIcon);
 							break;
 						}
-						if(j == 67){
+						case 67:{
 							JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_DB6Icon);
 							break;
 						}
-						if(j == 71){
+						case 71:{
 							JOptionPane.showMessageDialog (null, "You have gained Vaz 2103!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_2103Icon);
 							break;
 						}
-						if(j == 75){
+						case 75:{
 							JOptionPane.showMessageDialog (null, "You have gained Hyundai Mistra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_MistraIcon);
 							break;
 						}
-						if(j == 79){
+						case 79:{
 							JOptionPane.showMessageDialog (null, "You have gained Mini Countryman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_CountrymanIcon);
 							break;
 						}
-				}
-				else{
-					JOptionPane.showMessageDialog(null, "You have colected all 3 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-					break;
-				}
-			
-	
+						default:{
+							JOptionPane.showMessageDialog(null, "You have colected all 3 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+						}
+						break;
 			}
 		}
 		}
@@ -5640,7 +8758,7 @@ if(CarMain.main[5] >=3){
 			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
 		}  
 }
-		
+}		
 if(ae.getSource() == jbtnBuildCarLv4){
 	if(CarMain.main[5] >=4){
 		if(CarMain.main[7] >0){
@@ -5665,92 +8783,93 @@ if(ae.getSource() == jbtnBuildCarLv4){
 							CarFrame.frames[7] -=1;								
 							CarsLv4.cars[j] +=1;
 							
-							if(j == 3){
+							switch(j){
+							
+							case 3:{
 								JOptionPane.showMessageDialog (null, "You have gained Mazda MX6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_MX6Icon);
 								break;
 							}
-							if(j == 7){
+							case 7:{
 								JOptionPane.showMessageDialog (null, "You have gained Chrysler Daytona!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_DaytonaIcon);
 								break;
 							}
-							if(j == 11){
+							case 11:{
 								JOptionPane.showMessageDialog (null, "You have gained Buick Roadmaster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_RoadmasterIcon);
 								break;
 							}
-							if(j == 15){
+							case 15:{
 								JOptionPane.showMessageDialog (null, "You have gained Volvo S80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_S80Icon);
 								break;
 							}
-							if(j == 19){
+							case 19:{
 								JOptionPane.showMessageDialog (null, "You have gained Porsche Cayman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_CaymanIcon);
 								break;
 							}
-							if(j == 23){
+							case 23:{
 								JOptionPane.showMessageDialog (null, "You have gained Volkswagen Beetle!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_BeetleIcon);
 								break;
 							}
-							if(j == 27){
+							case 27:{
 								JOptionPane.showMessageDialog (null, "You have gained Bugatti EB110!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_EB110Icon);
 								break;
 							}
-							if(j == 31){
+							case 31:{
 								JOptionPane.showMessageDialog (null, "You have gained Opel Zafira!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_ZafiraIcon);
 								break;
 							}
-							if(j == 35){
+							case 35:{
 								JOptionPane.showMessageDialog (null, "You have gained Saab 9000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_9000Icon);
 								break;
 							}
-							if(j == 39){
+							case 39:{
 								JOptionPane.showMessageDialog (null, "You have gained McLaren F1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_F1Icon);
 								break;
 							}
-							if(j == 43){
+							case 43:{
 								JOptionPane.showMessageDialog (null, "You have gained Audi R8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_R8Icon);
 								break;
 							}
-							if(j == 47){
+							case 47:{
 								JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 8C!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_8CIcon);
 								break;
 							}
-							if(j == 51){
+							case 51:{
 								JOptionPane.showMessageDialog (null, "You have gained Ford_Fiesta!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_FiestaIcon);
 								break;
 							}
-							if(j == 55){
+							case 55:{
 								JOptionPane.showMessageDialog (null, "You have gained Infiniti Q50!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_Q50Icon);
 								break;
 							}
-							if(j == 59){
+							case 59:{
 								JOptionPane.showMessageDialog (null, "You have gained Maserati 5000GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_5000GTIcon);
 								break;
 							}
-							if(j == 63){
+							case 63:{
 								JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz CLA250!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_CLA250Icon);
 								break;
 							}
-							if(j == 67){
+							case 67:{
 								JOptionPane.showMessageDialog (null, "You have gained Lamborghini Gallardo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_GallardoIcon);
 								break;
 							}
-							if(j == 71){
+							case 71:{
 								JOptionPane.showMessageDialog (null, "You have gained Mazda RX7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_RX7Icon);
 								break;
 							}
-							if(j == 75){
+							case 75:{
 								JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Colt!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_ColtIcon);
 							}
-							if(j == 79){
+							case 79:{
 								JOptionPane.showMessageDialog (null, "You have gained Kia Sorento!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_SorentoIcon);
 								break;
 							}
-					}
-					else{
-						JOptionPane.showMessageDialog(null, "You have colected all 4 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-						break;
-					}
-				
-		
+							default:{
+								JOptionPane.showMessageDialog(null, "You have colected all 4 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+								break;
+							}
+							}
+							break;
 				}
 			}
 			}
@@ -5765,7 +8884,8 @@ if(ae.getSource() == jbtnBuildCarLv4){
 				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
 			}  
 }
-																	
+}
+
 	if(ae.getSource() == jbtnBuildCarLv5){
 		if(CarMain.main[5] >=5){
 			if(CarMain.main[7] >0){
@@ -5788,94 +8908,95 @@ if(ae.getSource() == jbtnBuildCarLv4){
 							}	
 								CarFrame.frames[9] -=1;								
 								CarsLv5.cars[j] +=1;
+							
+								switch(j){
 								
-								if(j == 3){
+								case 3:{
 									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Wraith!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_WraithIcon);
 									break;
 								}
-								if(j == 7){
+								case 7:{
 									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Diablo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_DiabloIcon);
 									break;
 								}
-								if(j == 11){
+								case 11:{
 									JOptionPane.showMessageDialog (null, "You have gained Jeep Scrambler!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_ScramblerIcon);
 									break;
 								}
-								if(j == 15){
+								case 15:{
 									JOptionPane.showMessageDialog (null, "You have gained Bentley Continental!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_ContinentalIcon);
 									break;
 								}
-								if(j == 19){
+								case 19:{
 									JOptionPane.showMessageDialog (null, "You have gained Bentley Azure!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_AzureIcon);
 									break;
 								}
-								if(j == 23){
+								case 23:{
 									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_OneIcon);
 									break;
 								}
-								if(j == 27){
+								case 27:{
 									JOptionPane.showMessageDialog (null, "You have gained Cadilliac XTS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_XTSIcon);
 									break;
 								}
-								if(j == 31){
+								case 31:{
 									JOptionPane.showMessageDialog (null, "You have gained Fiat 500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_500Icon);
 									break;
 								}
-								if(j == 35){
+								case 35:{
 									JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Pajero!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_PajeroIcon);
 									break;
 								}
-								if(j == 39){
+								case 39:{
 									JOptionPane.showMessageDialog (null, "You have gained Moskvich 2140!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_2140Icon);
 									break;
 								}
-								if(j == 43){
+								case 43:{
 									JOptionPane.showMessageDialog (null, "You have gained Opel GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_GTIcon);
 									break;
 								}
-								if(j == 47){
+								case 47:{
 									JOptionPane.showMessageDialog (null, "You have gained Hyundai Getz!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_GetzIcon);
 									break;
 								}
-								if(j == 51){
+								case 51:{
 									JOptionPane.showMessageDialog (null, "You have gained Maserati Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_CoupeIcon);
 									break;
 								}
-								if(j == 55){
+								case 55:{
 									JOptionPane.showMessageDialog (null, "You have gained Honda S2000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_S2000Icon);
 									break;
 								}
-								if(j == 59){
+								case 59:{
 									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_SpiderIcon);
 									break;
 								}
-								if(j == 63){
+								case 63:{
 									JOptionPane.showMessageDialog (null, "You have gained BMW M5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_M5Icon);
 									break;
 								}
-								if(j == 67){
+								case 67:{
 									JOptionPane.showMessageDialog (null, "You have gained BMW I8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_I8Icon);
 									break;
 								}
-								if(j == 71){
+								case 71:{
 									JOptionPane.showMessageDialog (null, "You have gained Citroen C5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_C5Icon);
 									break;
 								}
-								if(j == 75){
+								case 75:{
 									JOptionPane.showMessageDialog (null, "You have gained Fiat Punto!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_PuntoIcon);
 									break;
 								}
-								if(j == 79){
+								case 79:{
 									JOptionPane.showMessageDialog (null, "You have gained Audi 100!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_100Icon);
 									break;
+								}						
+								default:{
+									JOptionPane.showMessageDialog(null, "You have colected all 5 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									break;
 								}
-						}
-						else{
-							JOptionPane.showMessageDialog(null, "You have colected all 5 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-							break;
-						}
-					
-			
+								}
+								break;
 					}
 				}
 				}
@@ -5890,6 +9011,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
 				}  
 }
+	}
 	
 	//Build Cars Lv6-10
 	
@@ -5916,93 +9038,94 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								CarFrame.frames[11] -=1;								
 								CarsLv6.cars[j] +=1;
 								
-								if(j == 3){
+								switch(j){
+								
+								case 3:{
 									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Phantom", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_PhantomIcon);
 									break; 
 								}
-								if(j == 7){
+								case 7:{
 									JOptionPane.showMessageDialog (null, "You have gained Toyota 86!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_86Icon);
 									break; 
 								}
-								if(j == 11){
+								case 11:{
 									JOptionPane.showMessageDialog (null, "You have gained BMW e70!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e70Icon);
 									break;
 								}
-								if(j == 15){
+								case 15:{
 									JOptionPane.showMessageDialog (null, "You have gained Chrysler Voyager!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_VoyagerIcon);
 									break;
 								}
-								if(j == 19){
+								case 19:{
 									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce PhantomIII!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_PhantomIIIIcon);
 									break;
 								}
-								if(j == 23){
+								case 23:{
 									JOptionPane.showMessageDialog (null, "You have gained Honda CRX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_CRXIcon);
 									break;
 								}
-								if(j == 27){
+								case 27:{
 									JOptionPane.showMessageDialog (null, "You have gained Subaru 1000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_1000Icon);
 									break; 
 								}
-								if(j == 31){
+								case 31:{
 									JOptionPane.showMessageDialog (null, "You have gained Cadilliac Eldorado!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_EldoradoIcon);
 									break; 
 								}
-								if(j == 35){
+								case 35:{
 									JOptionPane.showMessageDialog (null, "You have gained Land Rover Freelander!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_FreelanderIcon);
 									break;
 								}
-								if(j == 39){
+								case 39:{
 									JOptionPane.showMessageDialog (null, "You have gained Renault_Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_SpiderIcon);
 									break;
 								}
-								if(j == 43){
+								case 43:{
 									JOptionPane.showMessageDialog (null, "You have gained Gaz 21!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Gaz_21Icon);
 									break;
 								}
-								if(j == 47){
+								case 47:{
 									JOptionPane.showMessageDialog (null, "You have gained Acura EL!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_ELIcon);
 									break;
 								}
-								if(j == 51){
+								case 51:{
 									JOptionPane.showMessageDialog (null, "You have gained Bugatti Veyron!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_VeyronIcon);
 									break; 
 								}
-								if(j == 55){
+								case 55:{
 									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz SL600!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_SL600Icon);
 									break;
 								}
-								if(j == 59){
+								case 59:{
 									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Silver!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_SilverIcon);
 									break; 
 								}
-								if(j == 63){
+								case 63:{
 									JOptionPane.showMessageDialog (null, "You have gained Mini Paceman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_PacemanIcon);
 									break; 
 								}
-								if(j == 67){
+								case 67:{
 									JOptionPane.showMessageDialog (null, "You have gained Hyundai Excel!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_ExcelIcon);
 									break;
 								}
-								if(j == 71){
+								case 71:{
 									JOptionPane.showMessageDialog (null, "You have gained Gaz 24!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Gaz_24Icon);
 									break; 
 								}
-								if(j == 75){
+								case 75:{
 									JOptionPane.showMessageDialog (null, "You have gained Peugeot 107!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_107Icon);
 									break; 
 								}
-								if(j == 79){
+								case 79:{
 									JOptionPane.showMessageDialog (null, "You have gained Audi_A4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_A4Icon);
 									break;
 								}
-						}
-						else{
-							JOptionPane.showMessageDialog(null, "You have colected all 6 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-							break;
-						}
-					
-			
+								default:{
+									JOptionPane.showMessageDialog(null, "You have colected all 6 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									break;
+								}
+								}
+								break;
 					}
 				}
     			}
@@ -6017,7 +9140,8 @@ if(ae.getSource() == jbtnBuildCarLv4){
     				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
     			}  
 }
-
+	}
+	
 	
 	if(ae.getSource() == jbtnBuildCarLv7){
     	if(CarMain.main[5] >=7){
@@ -6042,93 +9166,94 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								CarFrame.frames[13] -=1;								
 								CarsLv7.cars[j] +=1;
 								
-								if(j == 3){
+								switch(j){
+								
+								case 3:{
 									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Aventador", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_AventadorIcon);
 									break;
 								}
-								if(j == 7){
+								case 7:{
 									JOptionPane.showMessageDialog (null, "You have gained Nissan 350z", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_350zIcon);
 									break;
 								}
-								if(j == 11){
+								case 11:{
 									JOptionPane.showMessageDialog (null, "You have gained Jaguar XJ6", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_XJ6Icon);
 									break;
 								}
-								if(j == 15){
+								case 15:{
 									JOptionPane.showMessageDialog (null, "You have gained Renault Clio", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_ClioIcon);
 									break;
 								}
-								if(j == 19){
+								case 19:{
 									JOptionPane.showMessageDialog (null, "You have gained Toyota Avensis", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_AvensisIcon);
 									break;
 								}
-								if(j == 23){
+								case 23:{
 									JOptionPane.showMessageDialog (null, "You have gained Subaru Outback", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_OutbackIcon);
 									break;
 								}
-								if(j == 27){
+								case 27:{
 									JOptionPane.showMessageDialog (null, "You have gained Saab 900", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_900Icon);
 									break;
 								}
-								if(j == 31){
+								case 31:{
 									JOptionPane.showMessageDialog (null, "You have gained Opel Vectra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_VectraIcon);
 									break;
 								}
-								if(j == 35){
+								case 35:{
 									JOptionPane.showMessageDialog (null, "You have gained Chrysler Charger", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_ChargerIcon);
 									break;
 								}
-								if(j == 39){
+								case 39:{
 									JOptionPane.showMessageDialog (null, "You have gained Ferrari_348", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_348Icon);
 									break;
 								}
-								if(j == 43){
+								case 43:{
 									JOptionPane.showMessageDialog (null, "You have gained Hyundai XG", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_XGIcon);
 									break;
 								}
-								if(j == 47){
+								case 47:{
 									JOptionPane.showMessageDialog (null, "You have gained Lexus RX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_RXIcon);
 									break;
 								}
-								if(j == 51){
+								case 51:{
 									JOptionPane.showMessageDialog (null, "You have gained Dodge 400", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_400Icon);
 									break;
 								}
-								if(j == 55){
+								case 55:{
 									JOptionPane.showMessageDialog (null, "You have gained GMC Terrain", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_TerrainIcon);
 									break;
 								}
-								if(j == 59){
+								case 59:{
 									JOptionPane.showMessageDialog (null, "You have gained Volvo C70", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_C70Icon);
 									break;
 								}
-								if(j == 63){
+								case 63:{
 									JOptionPane.showMessageDialog (null, "You have gained Ford_Sierra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_SierraIcon);
 									break;
 								}
-								if(j == 67){
+								case 67:{
 									JOptionPane.showMessageDialog (null, "You have gained Subaru Impreza", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_ImprezaIcon);
 									break;
 								}
-								if(j == 71){
+								case 71:{
 									JOptionPane.showMessageDialog (null, "You have gained BMW e90", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e90Icon);
 									break;
 								}
-								if(j == 75){
+								case 75:{
 									JOptionPane.showMessageDialog (null, "You have gained Nissan Skyline", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_SkylineIcon);
 									break;
 								}
-								if(j == 79){
+								case 79:{
 									JOptionPane.showMessageDialog (null, "You have gained Audi Q7", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_Q7Icon);
 									break;
 								}
-						}
-						else{
-							JOptionPane.showMessageDialog(null, "You have colected all 7 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-							break;
-						}
-					
-			
+								default:{
+									JOptionPane.showMessageDialog(null, "You have colected all 7 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									break;
+								}
+								}
+								break;
 					}
 				}
     			}
@@ -6143,7 +9268,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
     			}  
 }
-	    																		
+	}	    																		
 	    																		
 	if(ae.getSource() == jbtnBuildCarLv8){
     	if(CarMain.main[5] >=8){
@@ -6168,93 +9293,94 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								CarFrame.frames[15] -=1;								
 								CarsLv8.cars[j] +=1;
 								
-								if(j == 3){
+								switch(j){
+								
+								case 3:{
 									JOptionPane.showMessageDialog (null, "You have gained Bentley Arnage", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_ArnageIcon);
 									break;
 								}
-								if(j == 7){
+								case 7:{
 									JOptionPane.showMessageDialog (null, "You have gained Volvo 850", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_850Icon);
 									break;
 								}
-								if(j == 11){
+								case 11:{
 									JOptionPane.showMessageDialog (null, "You have gained Toyota Rav4", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_Rav4Icon);
 									break;
 								}
-								if(j == 15){
+								case 15:{
 									JOptionPane.showMessageDialog (null, "You have gained Ford Focus", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_FocusIcon);
 									break;
 								}
-								if(j == 19){
+								case 19:{
 									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Spin", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_SpinIcon);
 									break;
 								}
-								if(j == 23){
+								case 23:{
 									JOptionPane.showMessageDialog (null, "You have gained Bentley GTZ", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_GTZIcon);
 									break;
 								}
-								if(j == 27){
+								case 27:{
 									JOptionPane.showMessageDialog (null, "You have gained Lexus LS", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_LSIcon);
 									break;
 								}
-								if(j == 31){
+								case 31:{
 									JOptionPane.showMessageDialog (null, "You have gained Land Rover RangeRover", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_RangeRoverIcon);
 									break;
 								}
-								if(j == 35){
+								case 35:{
 									JOptionPane.showMessageDialog (null, "You have gained Lexus GX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_GXIcon);
 									break;
 								}
-								if(j == 39){
+								case 39:{
 									JOptionPane.showMessageDialog (null, "You have gained Jeep Wrangler", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_WranglerIcon);
 									break;
 								}
-								if(j == 43){
+								case 43:{
 									JOptionPane.showMessageDialog (null, "You have gained Maserati GranTurismo", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_GranTurismoIcon);
 									break;
 								}
-								if(j == 47){
+								case 47:{
 									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Agera", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_AgeraIcon);
 									break;
 								}
-								if(j == 51){
+								case 51:{
 									JOptionPane.showMessageDialog (null, "You have gained Acura MDX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_MDXIcon);
 									break;
 								}
-								if(j == 55){
+								case 55:{
 									JOptionPane.showMessageDialog (null, "You have gained Audi RS6", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_RS6Icon);
 									break;
 								}
-								if(j == 59){
+								case 59:{
 									JOptionPane.showMessageDialog (null, "You have gained Cadilliac DeVille", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_DeVilleIcon);
 									break;
 								}
-								if(j == 63){
+								case 63:{
 									JOptionPane.showMessageDialog (null, "You have gained McLaren Veneno", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_VenenoIcon);
 									break;
 								}
-								if(j == 67){
+								case 67:{
 									JOptionPane.showMessageDialog (null, "You have gained Tesla X", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_XIcon);
 									break;
 								}
-								if(j == 71){
+								case 71:{
 									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz G55", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_G55Icon);
 									break;
 								}
-								if(j == 75){
+								case 75:{
 									JOptionPane.showMessageDialog (null, "You have gained Lancia Lybra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_LybraIcon);
 									break;
 								}
-								if(j == 79){
+								case 79:{
 									JOptionPane.showMessageDialog (null, "You have gained Infiniti QX60", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_QX60Icon);
 									break;
 								}
-						}
-						else{
-							JOptionPane.showMessageDialog(null, "You have colected all 8 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-							break;
-						}
-					
-			
+								default:{
+									JOptionPane.showMessageDialog(null, "You have colected all 8 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									break;
+								}
+								}
+								break;
 					}
 				}
     			}
@@ -6269,7 +9395,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
     				}  
 }												
-	    																		
+	}   																		
 	    																		
 	if(ae.getSource() == jbtnBuildCarLv9){
     	if(CarMain.main[5] >=9){
@@ -6294,93 +9420,94 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								CarFrame.frames[17] -=1;								
 								CarsLv9.cars[j] +=1;
 								
-								if(j == 3){
+								switch(j){
+								
+								case 3:{
 									JOptionPane.showMessageDialog (null, "You have gained Kia Forte", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_ForteIcon);
 									break;
 								}
-								if(j == 7){
+								case 7:{
 									JOptionPane.showMessageDialog (null, "You have gained Lancia Voyager", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_VoyagerIcon);
 									break;
 								}
-								if(j == 11){
+								case 11:{
 									JOptionPane.showMessageDialog (null, "You have gained Porsche_Cayenne", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_CayenneIcon);
 									break;
 								}
-								if(j == 15){
+								case 15:{
 									JOptionPane.showMessageDialog (null, "You have gained McLaren_650s", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_650sIcon);
 									break;
 								}
-								if(j == 19){
+								case 19:{
 									JOptionPane.showMessageDialog (null, "You have gained Jaguar E-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_E_TypeIcon);
 									break;
 								}
-								if(j == 23){
+								case 23:{
 									JOptionPane.showMessageDialog (null, "You have gained Peugeot 601", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_601Icon);
 									break;
 								}
-								if(j == 27){
+								case 27:{
 									JOptionPane.showMessageDialog (null, "You have gained Jaguar F-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_F_TypeIcon);
 									break;
 								}
-								if(j == 31){
+								case 31:{
 									JOptionPane.showMessageDialog (null, "You have gained Fiat Doblo", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_DobloIcon);
 									break;
 								}
-								if(j == 35){
+								case 35:{
 									JOptionPane.showMessageDialog (null, "You have gained Vaz 2101", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_2101Icon);
 									break;
 								}
-								if(j == 39){
+								case 39:{
 									JOptionPane.showMessageDialog (null, "You have gained McLaren P1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_P1Icon);
 									break;
 								}
-								if(j == 43){
+								case 43:{
 									JOptionPane.showMessageDialog (null, "You have gained Peugeot 405", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_405Icon);
 									break;
 								}
-								if(j == 47){
+								case 47:{
 									JOptionPane.showMessageDialog (null, "You have gained GMC Envoy", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_EnvoyIcon);
 									break;
 								}
-								if(j == 51){
+								case 51:{
 									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Corvete", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_CorveteIcon);
 									break;
 								}
-								if(j == 55){
+								case 55:{
 									JOptionPane.showMessageDialog (null, "You have gained Pagani Huayra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Pagani_HuayraIcon);
 									break;
 								}
-								if(j == 59){
+								case 59:{
 									JOptionPane.showMessageDialog (null, "You have gained Moskvich 402", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_402Icon);
 									break;
 								}
-								if(j == 63){
+								case 63:{
 									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 159", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_159Icon);
 									break;
 								}
-								if(j == 67){
+								case 67:{
 									JOptionPane.showMessageDialog (null, "You have gained Renault Fregate", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_FregateIcon);
 									break;
 								}
-								if(j == 71){
+								case 71:{
 									JOptionPane.showMessageDialog (null, "You have gained Mini Cooper", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_CooperIcon);
 									break;
 								}
-								if(j == 75){
+								case 75:{
 									JOptionPane.showMessageDialog (null, "You have gained Dodge Viper", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_ViperIcon);
 									break;
 								}
-								if(j == 79){
+								case 79:{
 									JOptionPane.showMessageDialog (null, "You have gained Vaz Niva", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_NivaIcon);
 									break;
 								}
-						}
-						else{
-							JOptionPane.showMessageDialog(null, "You have colected all 9 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-							break;
-						}
-					
-			
+								default:{
+									JOptionPane.showMessageDialog(null, "You have colected all 9 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									break;
+								}
+								}
+								break;
 					}
 				}
     			}
@@ -6395,7 +9522,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
     			}  
 }											
-	    	
+	}	
 
 if(ae.getSource() == jbtnBuildCarLv10){
 if(CarMain.main[5] >=10){
@@ -6420,93 +9547,94 @@ if(CarMain.main[5] >=10){
 						CarFrame.frames[19] -=1;								
 						CarsLv10.cars[j] +=1;
 						
-						if(j == 3){
+						switch(j){
+						
+						case 3:{
 							JOptionPane.showMessageDialog (null, "You have gained Jaguar X-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_X_TypeIcon);
 							break;
 						}
-						if(j == 7){
+						case 7:{
 							JOptionPane.showMessageDialog (null, "You have gained Ferrari 308", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_308Icon);
 							break;
 						}
-						if(j == 11){
+						case 11:{
 							JOptionPane.showMessageDialog (null, "You have gained Mazda 626", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_626Icon);
 							break;
 						}
-						if(j == 15){
+						case 15:{
 							JOptionPane.showMessageDialog (null, "You have gained Maserati Shamal", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_ShamalIcon);
 							break;
 						}
-						if(j == 19){
+						case 19:{
 							JOptionPane.showMessageDialog (null, "You have gained Nissan 240sx", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_240sxIcon);
 							break;
 						}
-						if(j == 23){
+						case 23:{
 							JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 4C", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_4CIcon);
 							break;
 						}
-						if(j == 27){
+						case 27:{
 							JOptionPane.showMessageDialog (null, "You have gained Nissan Juke", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_JukeIcon);
 							break;
 						}
-						if(j == 31){
+						case 31:{
 							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Golf1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_Golf1Icon);
 							break;
 						}
-						if(j == 35){
+						case 35:{
 							JOptionPane.showMessageDialog (null, "You have gained Jeep Gladiator", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_GladiatorIcon);
 							break;
 						}
-						if(j == 39){
+						case 39:{
 							JOptionPane.showMessageDialog (null, "You have gained Dodge Matador", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_MatadorIcon);
 							break;
 						}
-						if(j == 43){
+						case 43:{
 							JOptionPane.showMessageDialog (null, "You have gained Bugatti Royale", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_RoyaleIcon);
 							break;
 						}
-						if(j == 47){
+						case 47:{
 							JOptionPane.showMessageDialog (null, "You have gained Citroen CX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_CXIcon);
 							break;
 						}
-						if(j == 51){
+						case 51:{
 							JOptionPane.showMessageDialog (null, "You have gained Lamborghini 350GT", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_350GTIcon);
 							break;
 						}
-						if(j == 55){
+						case 55:{
 							JOptionPane.showMessageDialog (null, "You have gained Mitsubishi GTO", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_GTOIcon);
 							break;
 						}
-						if(j == 59){
+						case 59:{
 							JOptionPane.showMessageDialog (null, "You have gained Buick Invicta", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_InvictaIcon);
 							break;
 						}
-						if(j == 63){
+						case 63:{
 							JOptionPane.showMessageDialog (null, "You have gained Porsche 911", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_911Icon);
 							break;
 						}
-						if(j == 67){
+						case 67:{
 							JOptionPane.showMessageDialog (null, "You have gained Subaru Forester", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_ForesterIcon);
 							break;
 						}
-						if(j == 71){
+						case 71:{
 							JOptionPane.showMessageDialog (null, "You have gained Citroen BX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_BXIcon);
 							break;
 						}
-						if(j == 75){
+						case 75:{
 							JOptionPane.showMessageDialog (null, "You have gained Bugatti Type252", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_Type252Icon);
 							break;
 						}
-						if(j == 79){
+						case 79:{
 							JOptionPane.showMessageDialog (null, "You have gained Ferrari 488", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_488Icon);
 							break;
 						}
-				}
-				else{
-					JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
-					break;
-				}
-			
-	
+						default:{
+							JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							break;
+						}
+						}
+						break;
 			}
 		}
 		}
@@ -6520,5 +9648,5 @@ if(CarMain.main[5] >=10){
 		else{
 			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
 		}  
-}
+}}
 }}

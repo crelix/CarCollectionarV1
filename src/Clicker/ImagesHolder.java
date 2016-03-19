@@ -4,12 +4,13 @@ import javax.swing.ImageIcon;
 
 public class ImagesHolder {
 
-	final public ImageIcon MoneyIcon = new ImageIcon("Images/Money.png");   
+	   final public ImageIcon MoneyIcon = new ImageIcon("Images/Money.png");   
 	   final public ImageIcon GarageIcon = new ImageIcon("Images/Garage.png");	
-	   final public ImageIcon LockedIcon = new ImageIcon("Images/Locked.png");	
+	   final public ImageIcon LockedIcon = new ImageIcon("Images/Locked.png");
+	   final public ImageIcon UnknownIcon = new ImageIcon("Images/Unknown.png");
 	   final public ImageIcon PlayerIcon = new ImageIcon("Images/Player.png");
 	   final public ImageIcon CarFrameIcon = new ImageIcon("Images/Frame.png");
-	   final public ImageIcon CarCollectionarIcon = new ImageIcon("Images/CarCollectionar.jpg");
+	   final public ImageIcon CarCollectionarIcon = new ImageIcon("Images/CarCollectionar.png");
 		
 	   final public ImageIcon NoMoneyIcon = new ImageIcon("Images/NoMoney.png");
 	   final public ImageIcon NoPartsIcon = new ImageIcon("Images/NoParts.png");
