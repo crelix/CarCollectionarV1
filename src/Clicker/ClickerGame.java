@@ -4262,8 +4262,1939 @@ public class ClickerGame implements ActionListener {
    	 	// Statistic Parts Panel
    	 	
    	 	JPanel StatisticPartsPanel = new JPanel();
+   	 	
+   	 	// Statistic Parts Panel 2
+   	 	
+   	 	JPanel StatisticPartsPanel2 = new JPanel();
+   	 	
+   	 	// Statistic Parts Panel 3
+   	 	
+   	 	JPanel StatisticPartsPanel3 = new JPanel();
    	 		
- 	 	
+   	 	// Statistic Accessories Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Accessories");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticAccessoriesPanel.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv1 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub = new JPanel();
+   	 	StatisticAccessoriesPanelSub.setLayout(new BoxLayout(StatisticAccessoriesPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticAccessoriesPanelSub.add(Labels.S_AccessoriesLVL1Label);
+   	 	StatisticAccessoriesPanelSub.add(Labels.S_AccessoriesLVL1SoldLabel);
+   	 	StatisticAccessoriesPanelSub.add(Labels.S_AccessoriesLVL1TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv2 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub2 = new JPanel();
+   	 	StatisticAccessoriesPanelSub2.setLayout(new BoxLayout(StatisticAccessoriesPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticAccessoriesPanelSub2.add(Labels.S_AccessoriesLVL2Label);
+	 	StatisticAccessoriesPanelSub2.add(Labels.S_AccessoriesLVL2SoldLabel);
+	 	StatisticAccessoriesPanelSub2.add(Labels.S_AccessoriesLVL2TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv3 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub3 = new JPanel();
+   	 	StatisticAccessoriesPanelSub3.setLayout(new BoxLayout(StatisticAccessoriesPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub3.add(Labels.S_AccessoriesLVL3Label);
+	 	StatisticAccessoriesPanelSub3.add(Labels.S_AccessoriesLVL3SoldLabel);
+	 	StatisticAccessoriesPanelSub3.add(Labels.S_AccessoriesLVL3TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv4 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub4 = new JPanel();
+   	 	StatisticAccessoriesPanelSub4.setLayout(new BoxLayout(StatisticAccessoriesPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub4.add(Labels.S_AccessoriesLVL4Label);
+	 	StatisticAccessoriesPanelSub4.add(Labels.S_AccessoriesLVL4SoldLabel);
+	 	StatisticAccessoriesPanelSub4.add(Labels.S_AccessoriesLVL4TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv5 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub5 = new JPanel();
+   	 	StatisticAccessoriesPanelSub5.setLayout(new BoxLayout(StatisticAccessoriesPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub5.add(Labels.S_AccessoriesLVL5Label);
+	 	StatisticAccessoriesPanelSub5.add(Labels.S_AccessoriesLVL5SoldLabel);
+	 	StatisticAccessoriesPanelSub5.add(Labels.S_AccessoriesLVL5TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv6 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub6 = new JPanel();
+   	 	StatisticAccessoriesPanelSub6.setLayout(new BoxLayout(StatisticAccessoriesPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub6.add(Labels.S_AccessoriesLVL6Label);
+	 	StatisticAccessoriesPanelSub6.add(Labels.S_AccessoriesLVL6SoldLabel);
+	 	StatisticAccessoriesPanelSub6.add(Labels.S_AccessoriesLVL6TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv7 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub7 = new JPanel();
+   	 	StatisticAccessoriesPanelSub7.setLayout(new BoxLayout(StatisticAccessoriesPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub7.add(Labels.S_AccessoriesLVL7Label);
+	 	StatisticAccessoriesPanelSub7.add(Labels.S_AccessoriesLVL7SoldLabel);
+	 	StatisticAccessoriesPanelSub7.add(Labels.S_AccessoriesLVL7TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv8 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub8 = new JPanel();
+   	 	StatisticAccessoriesPanelSub8.setLayout(new BoxLayout(StatisticAccessoriesPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub8.add(Labels.S_AccessoriesLVL8Label);
+	 	StatisticAccessoriesPanelSub8.add(Labels.S_AccessoriesLVL8SoldLabel);
+	 	StatisticAccessoriesPanelSub8.add(Labels.S_AccessoriesLVL8TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv9 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub9 = new JPanel();
+   	 	StatisticAccessoriesPanelSub9.setLayout(new BoxLayout(StatisticAccessoriesPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub9.add(Labels.S_AccessoriesLVL9Label);
+	 	StatisticAccessoriesPanelSub9.add(Labels.S_AccessoriesLVL9SoldLabel);
+	 	StatisticAccessoriesPanelSub9.add(Labels.S_AccessoriesLVL9TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Accessories Lv10 Panel
+   	 	
+   	 	JPanel StatisticAccessoriesPanelSub10 = new JPanel();
+   	 	StatisticAccessoriesPanelSub10.setLayout(new BoxLayout(StatisticAccessoriesPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticAccessoriesPanelSub10.add(Labels.S_AccessoriesLVL10Label);
+	 	StatisticAccessoriesPanelSub10.add(Labels.S_AccessoriesLVL10SoldLabel);
+	 	StatisticAccessoriesPanelSub10.add(Labels.S_AccessoriesLVL10TotalLabel);
+   	 	
+   	 	StatisticAccessoriesPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Body Panel
+   	 	
+   	 	JPanel StatisticBodyPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Body");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticBodyPanel.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv1 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub = new JPanel();
+   	 	StatisticBodyPanelSub.setLayout(new BoxLayout(StatisticBodyPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticBodyPanelSub.add(Labels.S_BodyLVL1Label);
+   	 	StatisticBodyPanelSub.add(Labels.S_BodyLVL1SoldLabel);
+   	 	StatisticBodyPanelSub.add(Labels.S_BodyLVL1TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv2 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub2 = new JPanel();
+   	 	StatisticBodyPanelSub2.setLayout(new BoxLayout(StatisticBodyPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticBodyPanelSub2.add(Labels.S_BodyLVL2Label);
+	 	StatisticBodyPanelSub2.add(Labels.S_BodyLVL2SoldLabel);
+	 	StatisticBodyPanelSub2.add(Labels.S_BodyLVL2TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv3 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub3 = new JPanel();
+   	 	StatisticBodyPanelSub3.setLayout(new BoxLayout(StatisticBodyPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub3.add(Labels.S_BodyLVL3Label);
+	 	StatisticBodyPanelSub3.add(Labels.S_BodyLVL3SoldLabel);
+	 	StatisticBodyPanelSub3.add(Labels.S_BodyLVL3TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv4 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub4 = new JPanel();
+   	 	StatisticBodyPanelSub4.setLayout(new BoxLayout(StatisticBodyPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub4.add(Labels.S_BodyLVL4Label);
+	 	StatisticBodyPanelSub4.add(Labels.S_BodyLVL4SoldLabel);
+	 	StatisticBodyPanelSub4.add(Labels.S_BodyLVL4TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv5 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub5 = new JPanel();
+   	 	StatisticBodyPanelSub5.setLayout(new BoxLayout(StatisticBodyPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub5.add(Labels.S_BodyLVL5Label);
+	 	StatisticBodyPanelSub5.add(Labels.S_BodyLVL5SoldLabel);
+	 	StatisticBodyPanelSub5.add(Labels.S_BodyLVL5TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv6 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub6 = new JPanel();
+   	 	StatisticBodyPanelSub6.setLayout(new BoxLayout(StatisticBodyPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub6.add(Labels.S_BodyLVL6Label);
+	 	StatisticBodyPanelSub6.add(Labels.S_BodyLVL6SoldLabel);
+	 	StatisticBodyPanelSub6.add(Labels.S_BodyLVL6TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv7 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub7 = new JPanel();
+   	 	StatisticBodyPanelSub7.setLayout(new BoxLayout(StatisticBodyPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub7.add(Labels.S_BodyLVL7Label);
+	 	StatisticBodyPanelSub7.add(Labels.S_BodyLVL7SoldLabel);
+	 	StatisticBodyPanelSub7.add(Labels.S_BodyLVL7TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv8 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub8 = new JPanel();
+   	 	StatisticBodyPanelSub8.setLayout(new BoxLayout(StatisticBodyPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub8.add(Labels.S_BodyLVL8Label);
+	 	StatisticBodyPanelSub8.add(Labels.S_BodyLVL8SoldLabel);
+	 	StatisticBodyPanelSub8.add(Labels.S_BodyLVL8TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv9 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub9 = new JPanel();
+   	 	StatisticBodyPanelSub9.setLayout(new BoxLayout(StatisticBodyPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub9.add(Labels.S_BodyLVL9Label);
+	 	StatisticBodyPanelSub9.add(Labels.S_BodyLVL9SoldLabel);
+	 	StatisticBodyPanelSub9.add(Labels.S_BodyLVL9TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Body Lv10 Panel
+   	 	
+   	 	JPanel StatisticBodyPanelSub10 = new JPanel();
+   	 	StatisticBodyPanelSub10.setLayout(new BoxLayout(StatisticBodyPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBodyPanelSub10.add(Labels.S_BodyLVL10Label);
+	 	StatisticBodyPanelSub10.add(Labels.S_BodyLVL10SoldLabel);
+	 	StatisticBodyPanelSub10.add(Labels.S_BodyLVL10TotalLabel);
+   	 	
+   	 	StatisticBodyPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Panel
+   	 	
+   	 	JPanel StatisticBrakesPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Brakes");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticBrakesPanel.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv1 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub = new JPanel();
+   	 	StatisticBrakesPanelSub.setLayout(new BoxLayout(StatisticBrakesPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticBrakesPanelSub.add(Labels.S_BrakesLVL1Label);
+   	 	StatisticBrakesPanelSub.add(Labels.S_BrakesLVL1SoldLabel);
+   	 	StatisticBrakesPanelSub.add(Labels.S_BrakesLVL1TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv2 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub2 = new JPanel();
+   	 	StatisticBrakesPanelSub2.setLayout(new BoxLayout(StatisticBrakesPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticBrakesPanelSub2.add(Labels.S_BrakesLVL2Label);
+	 	StatisticBrakesPanelSub2.add(Labels.S_BrakesLVL2SoldLabel);
+	 	StatisticBrakesPanelSub2.add(Labels.S_BrakesLVL2TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv3 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub3 = new JPanel();
+   	 	StatisticBrakesPanelSub3.setLayout(new BoxLayout(StatisticBrakesPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub3.add(Labels.S_BrakesLVL3Label);
+	 	StatisticBrakesPanelSub3.add(Labels.S_BrakesLVL3SoldLabel);
+	 	StatisticBrakesPanelSub3.add(Labels.S_BrakesLVL3TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv4 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub4 = new JPanel();
+   	 	StatisticBrakesPanelSub4.setLayout(new BoxLayout(StatisticBrakesPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub4.add(Labels.S_BrakesLVL4Label);
+	 	StatisticBrakesPanelSub4.add(Labels.S_BrakesLVL4SoldLabel);
+	 	StatisticBrakesPanelSub4.add(Labels.S_BrakesLVL4TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv5 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub5 = new JPanel();
+   	 	StatisticBrakesPanelSub5.setLayout(new BoxLayout(StatisticBrakesPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub5.add(Labels.S_BrakesLVL5Label);
+	 	StatisticBrakesPanelSub5.add(Labels.S_BrakesLVL5SoldLabel);
+	 	StatisticBrakesPanelSub5.add(Labels.S_BrakesLVL5TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv6 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub6 = new JPanel();
+   	 	StatisticBrakesPanelSub6.setLayout(new BoxLayout(StatisticBrakesPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub6.add(Labels.S_BrakesLVL6Label);
+	 	StatisticBrakesPanelSub6.add(Labels.S_BrakesLVL6SoldLabel);
+	 	StatisticBrakesPanelSub6.add(Labels.S_BrakesLVL6TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv7 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub7 = new JPanel();
+   	 	StatisticBrakesPanelSub7.setLayout(new BoxLayout(StatisticBrakesPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub7.add(Labels.S_BrakesLVL7Label);
+	 	StatisticBrakesPanelSub7.add(Labels.S_BrakesLVL7SoldLabel);
+	 	StatisticBrakesPanelSub7.add(Labels.S_BrakesLVL7TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv8 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub8 = new JPanel();
+   	 	StatisticBrakesPanelSub8.setLayout(new BoxLayout(StatisticBrakesPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub8.add(Labels.S_BrakesLVL8Label);
+	 	StatisticBrakesPanelSub8.add(Labels.S_BrakesLVL8SoldLabel);
+	 	StatisticBrakesPanelSub8.add(Labels.S_BrakesLVL8TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv9 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub9 = new JPanel();
+   	 	StatisticBrakesPanelSub9.setLayout(new BoxLayout(StatisticBrakesPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub9.add(Labels.S_BrakesLVL9Label);
+	 	StatisticBrakesPanelSub9.add(Labels.S_BrakesLVL9SoldLabel);
+	 	StatisticBrakesPanelSub9.add(Labels.S_BrakesLVL9TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Brakes Lv10 Panel
+   	 	
+   	 	JPanel StatisticBrakesPanelSub10 = new JPanel();
+   	 	StatisticBrakesPanelSub10.setLayout(new BoxLayout(StatisticBrakesPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticBrakesPanelSub10.add(Labels.S_BrakesLVL10Label);
+	 	StatisticBrakesPanelSub10.add(Labels.S_BrakesLVL10SoldLabel);
+	 	StatisticBrakesPanelSub10.add(Labels.S_BrakesLVL10TotalLabel);
+   	 	
+   	 	StatisticBrakesPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Panel
+   	 	
+   	 	JPanel StatisticCoolingPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Cooling");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticCoolingPanel.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv1 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub = new JPanel();
+   	 	StatisticCoolingPanelSub.setLayout(new BoxLayout(StatisticCoolingPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticCoolingPanelSub.add(Labels.S_CoolingLVL1Label);
+   	 	StatisticCoolingPanelSub.add(Labels.S_CoolingLVL1SoldLabel);
+   	 	StatisticCoolingPanelSub.add(Labels.S_CoolingLVL1TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv2 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub2 = new JPanel();
+   	 	StatisticCoolingPanelSub2.setLayout(new BoxLayout(StatisticCoolingPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticCoolingPanelSub2.add(Labels.S_CoolingLVL2Label);
+	 	StatisticCoolingPanelSub2.add(Labels.S_CoolingLVL2SoldLabel);
+	 	StatisticCoolingPanelSub2.add(Labels.S_CoolingLVL2TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv3 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub3 = new JPanel();
+   	 	StatisticCoolingPanelSub3.setLayout(new BoxLayout(StatisticCoolingPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub3.add(Labels.S_CoolingLVL3Label);
+	 	StatisticCoolingPanelSub3.add(Labels.S_CoolingLVL3SoldLabel);
+	 	StatisticCoolingPanelSub3.add(Labels.S_CoolingLVL3TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv4 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub4 = new JPanel();
+   	 	StatisticCoolingPanelSub4.setLayout(new BoxLayout(StatisticCoolingPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub4.add(Labels.S_CoolingLVL4Label);
+	 	StatisticCoolingPanelSub4.add(Labels.S_CoolingLVL4SoldLabel);
+	 	StatisticCoolingPanelSub4.add(Labels.S_CoolingLVL4TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv5 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub5 = new JPanel();
+   	 	StatisticCoolingPanelSub5.setLayout(new BoxLayout(StatisticCoolingPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub5.add(Labels.S_CoolingLVL5Label);
+	 	StatisticCoolingPanelSub5.add(Labels.S_CoolingLVL5SoldLabel);
+	 	StatisticCoolingPanelSub5.add(Labels.S_CoolingLVL5TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv6 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub6 = new JPanel();
+   	 	StatisticCoolingPanelSub6.setLayout(new BoxLayout(StatisticCoolingPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub6.add(Labels.S_CoolingLVL6Label);
+	 	StatisticCoolingPanelSub6.add(Labels.S_CoolingLVL6SoldLabel);
+	 	StatisticCoolingPanelSub6.add(Labels.S_CoolingLVL6TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv7 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub7 = new JPanel();
+   	 	StatisticCoolingPanelSub7.setLayout(new BoxLayout(StatisticCoolingPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub7.add(Labels.S_CoolingLVL7Label);
+	 	StatisticCoolingPanelSub7.add(Labels.S_CoolingLVL7SoldLabel);
+	 	StatisticCoolingPanelSub7.add(Labels.S_CoolingLVL7TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv8 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub8 = new JPanel();
+   	 	StatisticCoolingPanelSub8.setLayout(new BoxLayout(StatisticCoolingPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub8.add(Labels.S_CoolingLVL8Label);
+	 	StatisticCoolingPanelSub8.add(Labels.S_CoolingLVL8SoldLabel);
+	 	StatisticCoolingPanelSub8.add(Labels.S_CoolingLVL8TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv9 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub9 = new JPanel();
+   	 	StatisticCoolingPanelSub9.setLayout(new BoxLayout(StatisticCoolingPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub9.add(Labels.S_CoolingLVL9Label);
+	 	StatisticCoolingPanelSub9.add(Labels.S_CoolingLVL9SoldLabel);
+	 	StatisticCoolingPanelSub9.add(Labels.S_CoolingLVL9TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Cooling Lv10 Panel
+   	 	
+   	 	JPanel StatisticCoolingPanelSub10 = new JPanel();
+   	 	StatisticCoolingPanelSub10.setLayout(new BoxLayout(StatisticCoolingPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticCoolingPanelSub10.add(Labels.S_CoolingLVL10Label);
+	 	StatisticCoolingPanelSub10.add(Labels.S_CoolingLVL10SoldLabel);
+	 	StatisticCoolingPanelSub10.add(Labels.S_CoolingLVL10TotalLabel);
+   	 	
+   	 	StatisticCoolingPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Electronics");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticElectronicsPanel.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv1 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub = new JPanel();
+   	 	StatisticElectronicsPanelSub.setLayout(new BoxLayout(StatisticElectronicsPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticElectronicsPanelSub.add(Labels.S_ElectronicsLVL1Label);
+   	 	StatisticElectronicsPanelSub.add(Labels.S_ElectronicsLVL1SoldLabel);
+   	 	StatisticElectronicsPanelSub.add(Labels.S_ElectronicsLVL1TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv2 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub2 = new JPanel();
+   	 	StatisticElectronicsPanelSub2.setLayout(new BoxLayout(StatisticElectronicsPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticElectronicsPanelSub2.add(Labels.S_ElectronicsLVL2Label);
+	 	StatisticElectronicsPanelSub2.add(Labels.S_ElectronicsLVL2SoldLabel);
+	 	StatisticElectronicsPanelSub2.add(Labels.S_ElectronicsLVL2TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv3 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub3 = new JPanel();
+   	 	StatisticElectronicsPanelSub3.setLayout(new BoxLayout(StatisticElectronicsPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub3.add(Labels.S_ElectronicsLVL3Label);
+	 	StatisticElectronicsPanelSub3.add(Labels.S_ElectronicsLVL3SoldLabel);
+	 	StatisticElectronicsPanelSub3.add(Labels.S_ElectronicsLVL3TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv4 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub4 = new JPanel();
+   	 	StatisticElectronicsPanelSub4.setLayout(new BoxLayout(StatisticElectronicsPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub4.add(Labels.S_ElectronicsLVL4Label);
+	 	StatisticElectronicsPanelSub4.add(Labels.S_ElectronicsLVL4SoldLabel);
+	 	StatisticElectronicsPanelSub4.add(Labels.S_ElectronicsLVL4TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv5 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub5 = new JPanel();
+   	 	StatisticElectronicsPanelSub5.setLayout(new BoxLayout(StatisticElectronicsPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub5.add(Labels.S_ElectronicsLVL5Label);
+	 	StatisticElectronicsPanelSub5.add(Labels.S_ElectronicsLVL5SoldLabel);
+	 	StatisticElectronicsPanelSub5.add(Labels.S_ElectronicsLVL5TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv6 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub6 = new JPanel();
+   	 	StatisticElectronicsPanelSub6.setLayout(new BoxLayout(StatisticElectronicsPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub6.add(Labels.S_ElectronicsLVL6Label);
+	 	StatisticElectronicsPanelSub6.add(Labels.S_ElectronicsLVL6SoldLabel);
+	 	StatisticElectronicsPanelSub6.add(Labels.S_ElectronicsLVL6TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv7 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub7 = new JPanel();
+   	 	StatisticElectronicsPanelSub7.setLayout(new BoxLayout(StatisticElectronicsPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub7.add(Labels.S_ElectronicsLVL7Label);
+	 	StatisticElectronicsPanelSub7.add(Labels.S_ElectronicsLVL7SoldLabel);
+	 	StatisticElectronicsPanelSub7.add(Labels.S_ElectronicsLVL7TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv8 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub8 = new JPanel();
+   	 	StatisticElectronicsPanelSub8.setLayout(new BoxLayout(StatisticElectronicsPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub8.add(Labels.S_ElectronicsLVL8Label);
+	 	StatisticElectronicsPanelSub8.add(Labels.S_ElectronicsLVL8SoldLabel);
+	 	StatisticElectronicsPanelSub8.add(Labels.S_ElectronicsLVL8TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv9 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub9 = new JPanel();
+   	 	StatisticElectronicsPanelSub9.setLayout(new BoxLayout(StatisticElectronicsPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub9.add(Labels.S_ElectronicsLVL9Label);
+	 	StatisticElectronicsPanelSub9.add(Labels.S_ElectronicsLVL9SoldLabel);
+	 	StatisticElectronicsPanelSub9.add(Labels.S_ElectronicsLVL9TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Electronics Lv10 Panel
+   	 	
+   	 	JPanel StatisticElectronicsPanelSub10 = new JPanel();
+   	 	StatisticElectronicsPanelSub10.setLayout(new BoxLayout(StatisticElectronicsPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticElectronicsPanelSub10.add(Labels.S_ElectronicsLVL10Label);
+	 	StatisticElectronicsPanelSub10.add(Labels.S_ElectronicsLVL10SoldLabel);
+	 	StatisticElectronicsPanelSub10.add(Labels.S_ElectronicsLVL10TotalLabel);
+   	 	
+   	 	StatisticElectronicsPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Engine Panel
+   	 	
+   	 	JPanel StatisticEnginePanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Engine");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticEnginePanel.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv1 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub = new JPanel();
+   	 	StatisticEnginePanelSub.setLayout(new BoxLayout(StatisticEnginePanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticEnginePanelSub.add(Labels.S_EngineLVL1Label);
+   	 	StatisticEnginePanelSub.add(Labels.S_EngineLVL1SoldLabel);
+   	 	StatisticEnginePanelSub.add(Labels.S_EngineLVL1TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv2 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub2 = new JPanel();
+   	 	StatisticEnginePanelSub2.setLayout(new BoxLayout(StatisticEnginePanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticEnginePanelSub2.add(Labels.S_EngineLVL2Label);
+	 	StatisticEnginePanelSub2.add(Labels.S_EngineLVL2SoldLabel);
+	 	StatisticEnginePanelSub2.add(Labels.S_EngineLVL2TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv3 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub3 = new JPanel();
+   	 	StatisticEnginePanelSub3.setLayout(new BoxLayout(StatisticEnginePanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub3.add(Labels.S_EngineLVL3Label);
+	 	StatisticEnginePanelSub3.add(Labels.S_EngineLVL3SoldLabel);
+	 	StatisticEnginePanelSub3.add(Labels.S_EngineLVL3TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv4 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub4 = new JPanel();
+   	 	StatisticEnginePanelSub4.setLayout(new BoxLayout(StatisticEnginePanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub4.add(Labels.S_EngineLVL4Label);
+	 	StatisticEnginePanelSub4.add(Labels.S_EngineLVL4SoldLabel);
+	 	StatisticEnginePanelSub4.add(Labels.S_EngineLVL4TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv5 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub5 = new JPanel();
+   	 	StatisticEnginePanelSub5.setLayout(new BoxLayout(StatisticEnginePanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub5.add(Labels.S_EngineLVL5Label);
+	 	StatisticEnginePanelSub5.add(Labels.S_EngineLVL5SoldLabel);
+	 	StatisticEnginePanelSub5.add(Labels.S_EngineLVL5TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv6 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub6 = new JPanel();
+   	 	StatisticEnginePanelSub6.setLayout(new BoxLayout(StatisticEnginePanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub6.add(Labels.S_EngineLVL6Label);
+	 	StatisticEnginePanelSub6.add(Labels.S_EngineLVL6SoldLabel);
+	 	StatisticEnginePanelSub6.add(Labels.S_EngineLVL6TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv7 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub7 = new JPanel();
+   	 	StatisticEnginePanelSub7.setLayout(new BoxLayout(StatisticEnginePanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub7.add(Labels.S_EngineLVL7Label);
+	 	StatisticEnginePanelSub7.add(Labels.S_EngineLVL7SoldLabel);
+	 	StatisticEnginePanelSub7.add(Labels.S_EngineLVL7TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv8 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub8 = new JPanel();
+   	 	StatisticEnginePanelSub8.setLayout(new BoxLayout(StatisticEnginePanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub8.add(Labels.S_EngineLVL8Label);
+	 	StatisticEnginePanelSub8.add(Labels.S_EngineLVL8SoldLabel);
+	 	StatisticEnginePanelSub8.add(Labels.S_EngineLVL8TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv9 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub9 = new JPanel();
+   	 	StatisticEnginePanelSub9.setLayout(new BoxLayout(StatisticEnginePanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub9.add(Labels.S_EngineLVL9Label);
+	 	StatisticEnginePanelSub9.add(Labels.S_EngineLVL9SoldLabel);
+	 	StatisticEnginePanelSub9.add(Labels.S_EngineLVL9TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Engine Lv10 Panel
+   	 	
+   	 	JPanel StatisticEnginePanelSub10 = new JPanel();
+   	 	StatisticEnginePanelSub10.setLayout(new BoxLayout(StatisticEnginePanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticEnginePanelSub10.add(Labels.S_EngineLVL10Label);
+	 	StatisticEnginePanelSub10.add(Labels.S_EngineLVL10SoldLabel);
+	 	StatisticEnginePanelSub10.add(Labels.S_EngineLVL10TotalLabel);
+   	 	
+   	 	StatisticEnginePanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Panel
+   	 	
+   	 	JPanel StatisticExaustPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Exaust");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticExaustPanel.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv1 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub = new JPanel();
+   	 	StatisticExaustPanelSub.setLayout(new BoxLayout(StatisticExaustPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticExaustPanelSub.add(Labels.S_ExaustLVL1Label);
+   	 	StatisticExaustPanelSub.add(Labels.S_ExaustLVL1SoldLabel);
+   	 	StatisticExaustPanelSub.add(Labels.S_ExaustLVL1TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv2 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub2 = new JPanel();
+   	 	StatisticExaustPanelSub2.setLayout(new BoxLayout(StatisticExaustPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticExaustPanelSub2.add(Labels.S_ExaustLVL2Label);
+	 	StatisticExaustPanelSub2.add(Labels.S_ExaustLVL2SoldLabel);
+	 	StatisticExaustPanelSub2.add(Labels.S_ExaustLVL2TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv3 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub3 = new JPanel();
+   	 	StatisticExaustPanelSub3.setLayout(new BoxLayout(StatisticExaustPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub3.add(Labels.S_ExaustLVL3Label);
+	 	StatisticExaustPanelSub3.add(Labels.S_ExaustLVL3SoldLabel);
+	 	StatisticExaustPanelSub3.add(Labels.S_ExaustLVL3TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv4 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub4 = new JPanel();
+   	 	StatisticExaustPanelSub4.setLayout(new BoxLayout(StatisticExaustPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub4.add(Labels.S_ExaustLVL4Label);
+	 	StatisticExaustPanelSub4.add(Labels.S_ExaustLVL4SoldLabel);
+	 	StatisticExaustPanelSub4.add(Labels.S_ExaustLVL4TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv5 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub5 = new JPanel();
+   	 	StatisticExaustPanelSub5.setLayout(new BoxLayout(StatisticExaustPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub5.add(Labels.S_ExaustLVL5Label);
+	 	StatisticExaustPanelSub5.add(Labels.S_ExaustLVL5SoldLabel);
+	 	StatisticExaustPanelSub5.add(Labels.S_ExaustLVL5TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv6 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub6 = new JPanel();
+   	 	StatisticExaustPanelSub6.setLayout(new BoxLayout(StatisticExaustPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub6.add(Labels.S_ExaustLVL6Label);
+	 	StatisticExaustPanelSub6.add(Labels.S_ExaustLVL6SoldLabel);
+	 	StatisticExaustPanelSub6.add(Labels.S_ExaustLVL6TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv7 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub7 = new JPanel();
+   	 	StatisticExaustPanelSub7.setLayout(new BoxLayout(StatisticExaustPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub7.add(Labels.S_ExaustLVL7Label);
+	 	StatisticExaustPanelSub7.add(Labels.S_ExaustLVL7SoldLabel);
+	 	StatisticExaustPanelSub7.add(Labels.S_ExaustLVL7TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv8 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub8 = new JPanel();
+   	 	StatisticExaustPanelSub8.setLayout(new BoxLayout(StatisticExaustPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub8.add(Labels.S_ExaustLVL8Label);
+	 	StatisticExaustPanelSub8.add(Labels.S_ExaustLVL8SoldLabel);
+	 	StatisticExaustPanelSub8.add(Labels.S_ExaustLVL8TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv9 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub9 = new JPanel();
+   	 	StatisticExaustPanelSub9.setLayout(new BoxLayout(StatisticExaustPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub9.add(Labels.S_ExaustLVL9Label);
+	 	StatisticExaustPanelSub9.add(Labels.S_ExaustLVL9SoldLabel);
+	 	StatisticExaustPanelSub9.add(Labels.S_ExaustLVL9TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Exaust Lv10 Panel
+   	 	
+   	 	JPanel StatisticExaustPanelSub10 = new JPanel();
+   	 	StatisticExaustPanelSub10.setLayout(new BoxLayout(StatisticExaustPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticExaustPanelSub10.add(Labels.S_ExaustLVL10Label);
+	 	StatisticExaustPanelSub10.add(Labels.S_ExaustLVL10SoldLabel);
+	 	StatisticExaustPanelSub10.add(Labels.S_ExaustLVL10TotalLabel);
+   	 	
+   	 	StatisticExaustPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Panel
+   	 	
+   	 	JPanel StatisticFuelPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Fuel");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticFuelPanel.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv1 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub = new JPanel();
+   	 	StatisticFuelPanelSub.setLayout(new BoxLayout(StatisticFuelPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticFuelPanelSub.add(Labels.S_FuelLVL1Label);
+   	 	StatisticFuelPanelSub.add(Labels.S_FuelLVL1SoldLabel);
+   	 	StatisticFuelPanelSub.add(Labels.S_FuelLVL1TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv2 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub2 = new JPanel();
+   	 	StatisticFuelPanelSub2.setLayout(new BoxLayout(StatisticFuelPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticFuelPanelSub2.add(Labels.S_FuelLVL2Label);
+	 	StatisticFuelPanelSub2.add(Labels.S_FuelLVL2SoldLabel);
+	 	StatisticFuelPanelSub2.add(Labels.S_FuelLVL2TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv3 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub3 = new JPanel();
+   	 	StatisticFuelPanelSub3.setLayout(new BoxLayout(StatisticFuelPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub3.add(Labels.S_FuelLVL3Label);
+	 	StatisticFuelPanelSub3.add(Labels.S_FuelLVL3SoldLabel);
+	 	StatisticFuelPanelSub3.add(Labels.S_FuelLVL3TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv4 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub4 = new JPanel();
+   	 	StatisticFuelPanelSub4.setLayout(new BoxLayout(StatisticFuelPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub4.add(Labels.S_FuelLVL4Label);
+	 	StatisticFuelPanelSub4.add(Labels.S_FuelLVL4SoldLabel);
+	 	StatisticFuelPanelSub4.add(Labels.S_FuelLVL4TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv5 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub5 = new JPanel();
+   	 	StatisticFuelPanelSub5.setLayout(new BoxLayout(StatisticFuelPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub5.add(Labels.S_FuelLVL5Label);
+	 	StatisticFuelPanelSub5.add(Labels.S_FuelLVL5SoldLabel);
+	 	StatisticFuelPanelSub5.add(Labels.S_FuelLVL5TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv6 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub6 = new JPanel();
+   	 	StatisticFuelPanelSub6.setLayout(new BoxLayout(StatisticFuelPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub6.add(Labels.S_FuelLVL6Label);
+	 	StatisticFuelPanelSub6.add(Labels.S_FuelLVL6SoldLabel);
+	 	StatisticFuelPanelSub6.add(Labels.S_FuelLVL6TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv7 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub7 = new JPanel();
+   	 	StatisticFuelPanelSub7.setLayout(new BoxLayout(StatisticFuelPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub7.add(Labels.S_FuelLVL7Label);
+	 	StatisticFuelPanelSub7.add(Labels.S_FuelLVL7SoldLabel);
+	 	StatisticFuelPanelSub7.add(Labels.S_FuelLVL7TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv8 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub8 = new JPanel();
+   	 	StatisticFuelPanelSub8.setLayout(new BoxLayout(StatisticFuelPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub8.add(Labels.S_FuelLVL8Label);
+	 	StatisticFuelPanelSub8.add(Labels.S_FuelLVL8SoldLabel);
+	 	StatisticFuelPanelSub8.add(Labels.S_FuelLVL8TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv9 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub9 = new JPanel();
+   	 	StatisticFuelPanelSub9.setLayout(new BoxLayout(StatisticFuelPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub9.add(Labels.S_FuelLVL9Label);
+	 	StatisticFuelPanelSub9.add(Labels.S_FuelLVL9SoldLabel);
+	 	StatisticFuelPanelSub9.add(Labels.S_FuelLVL9TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Fuel Lv10 Panel
+   	 	
+   	 	JPanel StatisticFuelPanelSub10 = new JPanel();
+   	 	StatisticFuelPanelSub10.setLayout(new BoxLayout(StatisticFuelPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticFuelPanelSub10.add(Labels.S_FuelLVL10Label);
+	 	StatisticFuelPanelSub10.add(Labels.S_FuelLVL10SoldLabel);
+	 	StatisticFuelPanelSub10.add(Labels.S_FuelLVL10TotalLabel);
+   	 	
+   	 	StatisticFuelPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Interior Panel
+   	 	
+   	 	JPanel StatisticInteriorPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Interior");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticInteriorPanel.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv1 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub = new JPanel();
+   	 	StatisticInteriorPanelSub.setLayout(new BoxLayout(StatisticInteriorPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticInteriorPanelSub.add(Labels.S_InteriorLVL1Label);
+   	 	StatisticInteriorPanelSub.add(Labels.S_InteriorLVL1SoldLabel);
+   	 	StatisticInteriorPanelSub.add(Labels.S_InteriorLVL1TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv2 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub2 = new JPanel();
+   	 	StatisticInteriorPanelSub2.setLayout(new BoxLayout(StatisticInteriorPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticInteriorPanelSub2.add(Labels.S_InteriorLVL2Label);
+	 	StatisticInteriorPanelSub2.add(Labels.S_InteriorLVL2SoldLabel);
+	 	StatisticInteriorPanelSub2.add(Labels.S_InteriorLVL2TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv3 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub3 = new JPanel();
+   	 	StatisticInteriorPanelSub3.setLayout(new BoxLayout(StatisticInteriorPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub3.add(Labels.S_InteriorLVL3Label);
+	 	StatisticInteriorPanelSub3.add(Labels.S_InteriorLVL3SoldLabel);
+	 	StatisticInteriorPanelSub3.add(Labels.S_InteriorLVL3TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv4 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub4 = new JPanel();
+   	 	StatisticInteriorPanelSub4.setLayout(new BoxLayout(StatisticInteriorPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub4.add(Labels.S_InteriorLVL4Label);
+	 	StatisticInteriorPanelSub4.add(Labels.S_InteriorLVL4SoldLabel);
+	 	StatisticInteriorPanelSub4.add(Labels.S_InteriorLVL4TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv5 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub5 = new JPanel();
+   	 	StatisticInteriorPanelSub5.setLayout(new BoxLayout(StatisticInteriorPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub5.add(Labels.S_InteriorLVL5Label);
+	 	StatisticInteriorPanelSub5.add(Labels.S_InteriorLVL5SoldLabel);
+	 	StatisticInteriorPanelSub5.add(Labels.S_InteriorLVL5TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv6 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub6 = new JPanel();
+   	 	StatisticInteriorPanelSub6.setLayout(new BoxLayout(StatisticInteriorPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub6.add(Labels.S_InteriorLVL6Label);
+	 	StatisticInteriorPanelSub6.add(Labels.S_InteriorLVL6SoldLabel);
+	 	StatisticInteriorPanelSub6.add(Labels.S_InteriorLVL6TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv7 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub7 = new JPanel();
+   	 	StatisticInteriorPanelSub7.setLayout(new BoxLayout(StatisticInteriorPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub7.add(Labels.S_InteriorLVL7Label);
+	 	StatisticInteriorPanelSub7.add(Labels.S_InteriorLVL7SoldLabel);
+	 	StatisticInteriorPanelSub7.add(Labels.S_InteriorLVL7TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv8 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub8 = new JPanel();
+   	 	StatisticInteriorPanelSub8.setLayout(new BoxLayout(StatisticInteriorPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub8.add(Labels.S_InteriorLVL8Label);
+	 	StatisticInteriorPanelSub8.add(Labels.S_InteriorLVL8SoldLabel);
+	 	StatisticInteriorPanelSub8.add(Labels.S_InteriorLVL8TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv9 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub9 = new JPanel();
+   	 	StatisticInteriorPanelSub9.setLayout(new BoxLayout(StatisticInteriorPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub9.add(Labels.S_InteriorLVL9Label);
+	 	StatisticInteriorPanelSub9.add(Labels.S_InteriorLVL9SoldLabel);
+	 	StatisticInteriorPanelSub9.add(Labels.S_InteriorLVL9TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Interior Lv10 Panel
+   	 	
+   	 	JPanel StatisticInteriorPanelSub10 = new JPanel();
+   	 	StatisticInteriorPanelSub10.setLayout(new BoxLayout(StatisticInteriorPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticInteriorPanelSub10.add(Labels.S_InteriorLVL10Label);
+	 	StatisticInteriorPanelSub10.add(Labels.S_InteriorLVL10SoldLabel);
+	 	StatisticInteriorPanelSub10.add(Labels.S_InteriorLVL10TotalLabel);
+   	 	
+   	 	StatisticInteriorPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Steering Panel
+   	 	
+   	 	JPanel StatisticSteeringPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Steering");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticSteeringPanel.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv1 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub = new JPanel();
+   	 	StatisticSteeringPanelSub.setLayout(new BoxLayout(StatisticSteeringPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticSteeringPanelSub.add(Labels.S_SteeringLVL1Label);
+   	 	StatisticSteeringPanelSub.add(Labels.S_SteeringLVL1SoldLabel);
+   	 	StatisticSteeringPanelSub.add(Labels.S_SteeringLVL1TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv2 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub2 = new JPanel();
+   	 	StatisticSteeringPanelSub2.setLayout(new BoxLayout(StatisticSteeringPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticSteeringPanelSub2.add(Labels.S_SteeringLVL2Label);
+	 	StatisticSteeringPanelSub2.add(Labels.S_SteeringLVL2SoldLabel);
+	 	StatisticSteeringPanelSub2.add(Labels.S_SteeringLVL2TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv3 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub3 = new JPanel();
+   	 	StatisticSteeringPanelSub3.setLayout(new BoxLayout(StatisticSteeringPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub3.add(Labels.S_SteeringLVL3Label);
+	 	StatisticSteeringPanelSub3.add(Labels.S_SteeringLVL3SoldLabel);
+	 	StatisticSteeringPanelSub3.add(Labels.S_SteeringLVL3TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv4 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub4 = new JPanel();
+   	 	StatisticSteeringPanelSub4.setLayout(new BoxLayout(StatisticSteeringPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub4.add(Labels.S_SteeringLVL4Label);
+	 	StatisticSteeringPanelSub4.add(Labels.S_SteeringLVL4SoldLabel);
+	 	StatisticSteeringPanelSub4.add(Labels.S_SteeringLVL4TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv5 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub5 = new JPanel();
+   	 	StatisticSteeringPanelSub5.setLayout(new BoxLayout(StatisticSteeringPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub5.add(Labels.S_SteeringLVL5Label);
+	 	StatisticSteeringPanelSub5.add(Labels.S_SteeringLVL5SoldLabel);
+	 	StatisticSteeringPanelSub5.add(Labels.S_SteeringLVL5TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv6 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub6 = new JPanel();
+   	 	StatisticSteeringPanelSub6.setLayout(new BoxLayout(StatisticSteeringPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub6.add(Labels.S_SteeringLVL6Label);
+	 	StatisticSteeringPanelSub6.add(Labels.S_SteeringLVL6SoldLabel);
+	 	StatisticSteeringPanelSub6.add(Labels.S_SteeringLVL6TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv7 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub7 = new JPanel();
+   	 	StatisticSteeringPanelSub7.setLayout(new BoxLayout(StatisticSteeringPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub7.add(Labels.S_SteeringLVL7Label);
+	 	StatisticSteeringPanelSub7.add(Labels.S_SteeringLVL7SoldLabel);
+	 	StatisticSteeringPanelSub7.add(Labels.S_SteeringLVL7TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv8 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub8 = new JPanel();
+   	 	StatisticSteeringPanelSub8.setLayout(new BoxLayout(StatisticSteeringPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub8.add(Labels.S_SteeringLVL8Label);
+	 	StatisticSteeringPanelSub8.add(Labels.S_SteeringLVL8SoldLabel);
+	 	StatisticSteeringPanelSub8.add(Labels.S_SteeringLVL8TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv9 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub9 = new JPanel();
+   	 	StatisticSteeringPanelSub9.setLayout(new BoxLayout(StatisticSteeringPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub9.add(Labels.S_SteeringLVL9Label);
+	 	StatisticSteeringPanelSub9.add(Labels.S_SteeringLVL9SoldLabel);
+	 	StatisticSteeringPanelSub9.add(Labels.S_SteeringLVL9TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Steering Lv10 Panel
+   	 	
+   	 	JPanel StatisticSteeringPanelSub10 = new JPanel();
+   	 	StatisticSteeringPanelSub10.setLayout(new BoxLayout(StatisticSteeringPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSteeringPanelSub10.add(Labels.S_SteeringLVL10Label);
+	 	StatisticSteeringPanelSub10.add(Labels.S_SteeringLVL10SoldLabel);
+	 	StatisticSteeringPanelSub10.add(Labels.S_SteeringLVL10TotalLabel);
+   	 	
+   	 	StatisticSteeringPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Suspension");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticSuspensionPanel.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv1 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub = new JPanel();
+   	 	StatisticSuspensionPanelSub.setLayout(new BoxLayout(StatisticSuspensionPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticSuspensionPanelSub.add(Labels.S_SuspensionLVL1Label);
+   	 	StatisticSuspensionPanelSub.add(Labels.S_SuspensionLVL1SoldLabel);
+   	 	StatisticSuspensionPanelSub.add(Labels.S_SuspensionLVL1TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv2 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub2 = new JPanel();
+   	 	StatisticSuspensionPanelSub2.setLayout(new BoxLayout(StatisticSuspensionPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticSuspensionPanelSub2.add(Labels.S_SuspensionLVL2Label);
+	 	StatisticSuspensionPanelSub2.add(Labels.S_SuspensionLVL2SoldLabel);
+	 	StatisticSuspensionPanelSub2.add(Labels.S_SuspensionLVL2TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv3 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub3 = new JPanel();
+   	 	StatisticSuspensionPanelSub3.setLayout(new BoxLayout(StatisticSuspensionPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub3.add(Labels.S_SuspensionLVL3Label);
+	 	StatisticSuspensionPanelSub3.add(Labels.S_SuspensionLVL3SoldLabel);
+	 	StatisticSuspensionPanelSub3.add(Labels.S_SuspensionLVL3TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv4 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub4 = new JPanel();
+   	 	StatisticSuspensionPanelSub4.setLayout(new BoxLayout(StatisticSuspensionPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub4.add(Labels.S_SuspensionLVL4Label);
+	 	StatisticSuspensionPanelSub4.add(Labels.S_SuspensionLVL4SoldLabel);
+	 	StatisticSuspensionPanelSub4.add(Labels.S_SuspensionLVL4TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv5 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub5 = new JPanel();
+   	 	StatisticSuspensionPanelSub5.setLayout(new BoxLayout(StatisticSuspensionPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub5.add(Labels.S_SuspensionLVL5Label);
+	 	StatisticSuspensionPanelSub5.add(Labels.S_SuspensionLVL5SoldLabel);
+	 	StatisticSuspensionPanelSub5.add(Labels.S_SuspensionLVL5TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv6 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub6 = new JPanel();
+   	 	StatisticSuspensionPanelSub6.setLayout(new BoxLayout(StatisticSuspensionPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub6.add(Labels.S_SuspensionLVL6Label);
+	 	StatisticSuspensionPanelSub6.add(Labels.S_SuspensionLVL6SoldLabel);
+	 	StatisticSuspensionPanelSub6.add(Labels.S_SuspensionLVL6TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv7 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub7 = new JPanel();
+   	 	StatisticSuspensionPanelSub7.setLayout(new BoxLayout(StatisticSuspensionPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub7.add(Labels.S_SuspensionLVL7Label);
+	 	StatisticSuspensionPanelSub7.add(Labels.S_SuspensionLVL7SoldLabel);
+	 	StatisticSuspensionPanelSub7.add(Labels.S_SuspensionLVL7TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv8 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub8 = new JPanel();
+   	 	StatisticSuspensionPanelSub8.setLayout(new BoxLayout(StatisticSuspensionPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub8.add(Labels.S_SuspensionLVL8Label);
+	 	StatisticSuspensionPanelSub8.add(Labels.S_SuspensionLVL8SoldLabel);
+	 	StatisticSuspensionPanelSub8.add(Labels.S_SuspensionLVL8TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv9 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub9 = new JPanel();
+   	 	StatisticSuspensionPanelSub9.setLayout(new BoxLayout(StatisticSuspensionPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub9.add(Labels.S_SuspensionLVL9Label);
+	 	StatisticSuspensionPanelSub9.add(Labels.S_SuspensionLVL9SoldLabel);
+	 	StatisticSuspensionPanelSub9.add(Labels.S_SuspensionLVL9TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Suspension Lv10 Panel
+   	 	
+   	 	JPanel StatisticSuspensionPanelSub10 = new JPanel();
+   	 	StatisticSuspensionPanelSub10.setLayout(new BoxLayout(StatisticSuspensionPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticSuspensionPanelSub10.add(Labels.S_SuspensionLVL10Label);
+	 	StatisticSuspensionPanelSub10.add(Labels.S_SuspensionLVL10SoldLabel);
+	 	StatisticSuspensionPanelSub10.add(Labels.S_SuspensionLVL10TotalLabel);
+   	 	
+   	 	StatisticSuspensionPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Transmission");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticTransmissionPanel.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv1 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub = new JPanel();
+   	 	StatisticTransmissionPanelSub.setLayout(new BoxLayout(StatisticTransmissionPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticTransmissionPanelSub.add(Labels.S_TransmissionLVL1Label);
+   	 	StatisticTransmissionPanelSub.add(Labels.S_TransmissionLVL1SoldLabel);
+   	 	StatisticTransmissionPanelSub.add(Labels.S_TransmissionLVL1TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv2 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub2 = new JPanel();
+   	 	StatisticTransmissionPanelSub2.setLayout(new BoxLayout(StatisticTransmissionPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticTransmissionPanelSub2.add(Labels.S_TransmissionLVL2Label);
+	 	StatisticTransmissionPanelSub2.add(Labels.S_TransmissionLVL2SoldLabel);
+	 	StatisticTransmissionPanelSub2.add(Labels.S_TransmissionLVL2TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv3 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub3 = new JPanel();
+   	 	StatisticTransmissionPanelSub3.setLayout(new BoxLayout(StatisticTransmissionPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub3.add(Labels.S_TransmissionLVL3Label);
+	 	StatisticTransmissionPanelSub3.add(Labels.S_TransmissionLVL3SoldLabel);
+	 	StatisticTransmissionPanelSub3.add(Labels.S_TransmissionLVL3TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv4 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub4 = new JPanel();
+   	 	StatisticTransmissionPanelSub4.setLayout(new BoxLayout(StatisticTransmissionPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub4.add(Labels.S_TransmissionLVL4Label);
+	 	StatisticTransmissionPanelSub4.add(Labels.S_TransmissionLVL4SoldLabel);
+	 	StatisticTransmissionPanelSub4.add(Labels.S_TransmissionLVL4TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv5 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub5 = new JPanel();
+   	 	StatisticTransmissionPanelSub5.setLayout(new BoxLayout(StatisticTransmissionPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub5.add(Labels.S_TransmissionLVL5Label);
+	 	StatisticTransmissionPanelSub5.add(Labels.S_TransmissionLVL5SoldLabel);
+	 	StatisticTransmissionPanelSub5.add(Labels.S_TransmissionLVL5TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv6 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub6 = new JPanel();
+   	 	StatisticTransmissionPanelSub6.setLayout(new BoxLayout(StatisticTransmissionPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub6.add(Labels.S_TransmissionLVL6Label);
+	 	StatisticTransmissionPanelSub6.add(Labels.S_TransmissionLVL6SoldLabel);
+	 	StatisticTransmissionPanelSub6.add(Labels.S_TransmissionLVL6TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv7 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub7 = new JPanel();
+   	 	StatisticTransmissionPanelSub7.setLayout(new BoxLayout(StatisticTransmissionPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub7.add(Labels.S_TransmissionLVL7Label);
+	 	StatisticTransmissionPanelSub7.add(Labels.S_TransmissionLVL7SoldLabel);
+	 	StatisticTransmissionPanelSub7.add(Labels.S_TransmissionLVL7TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv8 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub8 = new JPanel();
+   	 	StatisticTransmissionPanelSub8.setLayout(new BoxLayout(StatisticTransmissionPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub8.add(Labels.S_TransmissionLVL8Label);
+	 	StatisticTransmissionPanelSub8.add(Labels.S_TransmissionLVL8SoldLabel);
+	 	StatisticTransmissionPanelSub8.add(Labels.S_TransmissionLVL8TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv9 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub9 = new JPanel();
+   	 	StatisticTransmissionPanelSub9.setLayout(new BoxLayout(StatisticTransmissionPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub9.add(Labels.S_TransmissionLVL9Label);
+	 	StatisticTransmissionPanelSub9.add(Labels.S_TransmissionLVL9SoldLabel);
+	 	StatisticTransmissionPanelSub9.add(Labels.S_TransmissionLVL9TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Transmission Lv10 Panel
+   	 	
+   	 	JPanel StatisticTransmissionPanelSub10 = new JPanel();
+   	 	StatisticTransmissionPanelSub10.setLayout(new BoxLayout(StatisticTransmissionPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTransmissionPanelSub10.add(Labels.S_TransmissionLVL10Label);
+	 	StatisticTransmissionPanelSub10.add(Labels.S_TransmissionLVL10SoldLabel);
+	 	StatisticTransmissionPanelSub10.add(Labels.S_TransmissionLVL10TotalLabel);
+   	 	
+   	 	StatisticTransmissionPanelSub10.setBorder(title);
+   	 	
+   	 	// Statistic Tires Panel
+   	 	
+   	 	JPanel StatisticTiresPanel = new JPanel();
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Tires");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticTiresPanel.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv1 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub = new JPanel();
+   	 	StatisticTiresPanelSub.setLayout(new BoxLayout(StatisticTiresPanelSub, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 1");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticTiresPanelSub.add(Labels.S_TiresLVL1Label);
+   	 	StatisticTiresPanelSub.add(Labels.S_TiresLVL1SoldLabel);
+   	 	StatisticTiresPanelSub.add(Labels.S_TiresLVL1TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv2 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub2 = new JPanel();
+   	 	StatisticTiresPanelSub2.setLayout(new BoxLayout(StatisticTiresPanelSub2, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 2");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   	 	StatisticTiresPanelSub2.add(Labels.S_TiresLVL2Label);
+	 	StatisticTiresPanelSub2.add(Labels.S_TiresLVL2SoldLabel);
+	 	StatisticTiresPanelSub2.add(Labels.S_TiresLVL2TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub2.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv3 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub3 = new JPanel();
+   	 	StatisticTiresPanelSub3.setLayout(new BoxLayout(StatisticTiresPanelSub3, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 3");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub3.add(Labels.S_TiresLVL3Label);
+	 	StatisticTiresPanelSub3.add(Labels.S_TiresLVL3SoldLabel);
+	 	StatisticTiresPanelSub3.add(Labels.S_TiresLVL3TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub3.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv4 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub4 = new JPanel();
+   	 	StatisticTiresPanelSub4.setLayout(new BoxLayout(StatisticTiresPanelSub4, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 4");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub4.add(Labels.S_TiresLVL4Label);
+	 	StatisticTiresPanelSub4.add(Labels.S_TiresLVL4SoldLabel);
+	 	StatisticTiresPanelSub4.add(Labels.S_TiresLVL4TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub4.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv5 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub5 = new JPanel();
+   	 	StatisticTiresPanelSub5.setLayout(new BoxLayout(StatisticTiresPanelSub5, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 5");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub5.add(Labels.S_TiresLVL5Label);
+	 	StatisticTiresPanelSub5.add(Labels.S_TiresLVL5SoldLabel);
+	 	StatisticTiresPanelSub5.add(Labels.S_TiresLVL5TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub5.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv6 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub6 = new JPanel();
+   	 	StatisticTiresPanelSub6.setLayout(new BoxLayout(StatisticTiresPanelSub6, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 6");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub6.add(Labels.S_TiresLVL6Label);
+	 	StatisticTiresPanelSub6.add(Labels.S_TiresLVL6SoldLabel);
+	 	StatisticTiresPanelSub6.add(Labels.S_TiresLVL6TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub6.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv7 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub7 = new JPanel();
+   	 	StatisticTiresPanelSub7.setLayout(new BoxLayout(StatisticTiresPanelSub7, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 7");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub7.add(Labels.S_TiresLVL7Label);
+	 	StatisticTiresPanelSub7.add(Labels.S_TiresLVL7SoldLabel);
+	 	StatisticTiresPanelSub7.add(Labels.S_TiresLVL7TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub7.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv8 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub8 = new JPanel();
+   	 	StatisticTiresPanelSub8.setLayout(new BoxLayout(StatisticTiresPanelSub8, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 8");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub8.add(Labels.S_TiresLVL8Label);
+	 	StatisticTiresPanelSub8.add(Labels.S_TiresLVL8SoldLabel);
+	 	StatisticTiresPanelSub8.add(Labels.S_TiresLVL8TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub8.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv9 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub9 = new JPanel();
+   	 	StatisticTiresPanelSub9.setLayout(new BoxLayout(StatisticTiresPanelSub9, BoxLayout.PAGE_AXIS));
+   	 	
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 9");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub9.add(Labels.S_TiresLVL9Label);
+	 	StatisticTiresPanelSub9.add(Labels.S_TiresLVL9SoldLabel);
+	 	StatisticTiresPanelSub9.add(Labels.S_TiresLVL9TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub9.setBorder(title);
+   	 	
+   	 	// Statistic Tires Lv10 Panel
+   	 	
+   	 	JPanel StatisticTiresPanelSub10 = new JPanel();
+   	 	StatisticTiresPanelSub10.setLayout(new BoxLayout(StatisticTiresPanelSub10, BoxLayout.PAGE_AXIS));
+   	 
+   	 	title = BorderFactory.createTitledBorder(loweredbevel, "Lv 10");
+   	 	title.setTitleJustification(TitledBorder.CENTER);	
+   	 	
+   		StatisticTiresPanelSub10.add(Labels.S_TiresLVL10Label);
+	 	StatisticTiresPanelSub10.add(Labels.S_TiresLVL10SoldLabel);
+	 	StatisticTiresPanelSub10.add(Labels.S_TiresLVL10TotalLabel);
+   	 	
+   	 	StatisticTiresPanelSub10.setBorder(title);
+   	 	
 	 	//TabbedPane 
    	 	 	 	
    	 	StatisticBoxesPanel.add(StatisticBoxesPanelSub);
@@ -4296,9 +6227,170 @@ public class ClickerGame implements ActionListener {
    	 	StatisticPanel.add(StatisticFramesPanel);
    	 	StatisticPanel.add(StatisticBoxesPanel);
    	 	
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub2);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub3);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub4);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub5);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub6);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub7);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub8);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub9);
+   	 	StatisticAccessoriesPanel.add(StatisticAccessoriesPanelSub10);
+   	 	
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub2);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub3);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub4);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub5);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub6);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub7);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub8);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub9);
+   	 	StatisticBodyPanel.add(StatisticBodyPanelSub10);
+   	 	
+   	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub2);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub3);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub4);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub5);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub6);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub7);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub8);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub9);
+	 	StatisticBrakesPanel.add(StatisticBrakesPanelSub10);
+	 	
+	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub2);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub3);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub4);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub5);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub6);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub7);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub8);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub9);
+   	 	StatisticCoolingPanel.add(StatisticCoolingPanelSub10);
+   	 	
+   	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub2);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub3);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub4);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub5);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub6);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub7);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub8);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub9);
+	 	StatisticElectronicsPanel.add(StatisticElectronicsPanelSub10);
+	 	
+	 	StatisticEnginePanel.add(StatisticEnginePanelSub);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub2);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub3);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub4);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub5);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub6);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub7);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub8);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub9);
+   	 	StatisticEnginePanel.add(StatisticEnginePanelSub10);
+   	 	
+   	 	StatisticExaustPanel.add(StatisticExaustPanelSub);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub2);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub3);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub4);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub5);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub6);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub7);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub8);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub9);
+	 	StatisticExaustPanel.add(StatisticExaustPanelSub10);
+	 	
+	 	StatisticFuelPanel.add(StatisticFuelPanelSub);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub2);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub3);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub4);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub5);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub6);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub7);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub8);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub9);
+   	 	StatisticFuelPanel.add(StatisticFuelPanelSub10);
+   	 	
+   	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub2);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub3);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub4);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub5);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub6);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub7);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub8);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub9);
+	 	StatisticInteriorPanel.add(StatisticInteriorPanelSub10);
+	 	
+	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub2);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub3);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub4);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub5);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub6);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub7);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub8);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub9);
+   	 	StatisticSteeringPanel.add(StatisticSteeringPanelSub10);
+   	 	
+   	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub2);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub3);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub4);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub5);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub6);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub7);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub8);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub9);
+	 	StatisticSuspensionPanel.add(StatisticSuspensionPanelSub10);
+	 	
+	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub2);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub3);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub4);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub5);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub6);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub7);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub8);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub9);
+   	 	StatisticTransmissionPanel.add(StatisticTransmissionPanelSub10);
+   	 	
+   	 	StatisticTiresPanel.add(StatisticTiresPanelSub);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub2);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub3);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub4);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub5);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub6);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub7);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub8);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub9);
+	 	StatisticTiresPanel.add(StatisticTiresPanelSub10);
+   	 	
+   	 	StatisticPartsPanel.add(StatisticAccessoriesPanel);
+   	 	StatisticPartsPanel.add(StatisticBodyPanel);
+   	 	StatisticPartsPanel.add(StatisticBrakesPanel);
+   	 	StatisticPartsPanel.add(StatisticCoolingPanel);
+   	 	StatisticPartsPanel.add(StatisticElectronicsPanel);
+   	 	
+   	 	StatisticPartsPanel2.add(StatisticEnginePanel);
+   	 	StatisticPartsPanel2.add(StatisticExaustPanel);
+   	 	StatisticPartsPanel2.add(StatisticFuelPanel);
+   	 	StatisticPartsPanel2.add(StatisticInteriorPanel);
+   	 	StatisticPartsPanel2.add(StatisticSteeringPanel);
+   	 	
+   	 	StatisticPartsPanel3.add(StatisticSuspensionPanel);
+   	 	StatisticPartsPanel3.add(StatisticTransmissionPanel);
+   	 	StatisticPartsPanel3.add(StatisticTiresPanel);
+   	 	
    	 	JTabbedPane StatisticsPane = new JTabbedPane();
    	 	StatisticsPane.addTab(Main, StatisticPanel);
    	 	StatisticsPane.addTab(Parts, StatisticPartsPanel);
+   	 	StatisticsPane.addTab(Parts, StatisticPartsPanel2);
+   	 	StatisticsPane.addTab(Parts, StatisticPartsPanel3);
    	 	
    	 	JTabbedPane CollectionsAmericanPane = new JTabbedPane();
    	 	CollectionsAmericanPane.addTab(Buick, CollectionBuickPanel);
