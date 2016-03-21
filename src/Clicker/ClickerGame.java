@@ -7289,28 +7289,28 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv1.setEnabled(true);
             jbtnSellTransmissionLv1.setEnabled(true);
             jbtnSellTiresLv1.setEnabled(true);
-            Labels.MoneyLabel.setIcon(ImagesHolder.MoneyIcon);
-            Labels.BoxesLabel.setIcon(ImagesHolder.BoxLv9_10Icon);
-            Labels.GarageLabel.setIcon(ImagesHolder.GarageIcon);
-            Labels.PlayerLabel.setIcon(ImagesHolder.PlayerIcon);
-            Labels.BoxesLVLLabel.setIcon(ImagesHolder.BoxLv9_10Icon);
-            Labels.BoxesLVL1Label.setIcon(ImagesHolder.BoxLv1_2Icon);
-            Labels.OpenBoxesLVL1Label.setIcon(ImagesHolder.BoxLv1_2Icon);
-            Labels.FrameLv1Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv1Label.setIcon(ImagesHolder.Saab_900Icon);
-            Labels.AccessoriesLVL1Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL1Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL1Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL1Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL1Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL1Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL1Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL1Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL1Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL1Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL1Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL1Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL1Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.MoneyLabel.setIcon(new ImageIcon(ImagesHolder.MoneyIcon));
+            Labels.BoxesLabel.setIcon(new ImageIcon(ImagesHolder.BoxLv9_10Icon));
+            Labels.GarageLabel.setIcon(new ImageIcon(ImagesHolder.GarageIcon));
+            Labels.PlayerLabel.setIcon(new ImageIcon(ImagesHolder.PlayerIcon));
+            Labels.BoxesLVLLabel.setIcon(new ImageIcon(ImagesHolder.BoxLv9_10Icon));
+            Labels.BoxesLVL1Label.setIcon(new ImageIcon(ImagesHolder.BoxLv1_2Icon));
+            Labels.OpenBoxesLVL1Label.setIcon(new ImageIcon(ImagesHolder.BoxLv1_2Icon));
+            Labels.FrameLv1Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv1Label.setIcon(new ImageIcon(ImagesHolder.Saab_900Icon));
+            Labels.AccessoriesLVL1Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL1Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL1Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL1Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL1Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL1Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL1Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL1Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL1Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL1Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL1Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL1Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL1Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
         }
 		
 		if(CarMain.main[5] >=2){
@@ -7331,23 +7331,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv2.setEnabled(true);
             jbtnSellTransmissionLv2.setEnabled(true);
             jbtnSellTiresLv2.setEnabled(true);
-            Labels.BoxesLVL2Label.setIcon(ImagesHolder.BoxLv1_2Icon);
-            Labels.OpenBoxesLVL2Label.setIcon(ImagesHolder.BoxLv1_2Icon);
-            Labels.FrameLv2Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv2Label.setIcon(ImagesHolder.Bentley_ContinentalIcon);
-            Labels.AccessoriesLVL2Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL2Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL2Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL2Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL2Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL2Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL2Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL2Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL2Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL2Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL2Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL2Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL2Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL2Label.setIcon(new ImageIcon(ImagesHolder.BoxLv1_2Icon));
+            Labels.OpenBoxesLVL2Label.setIcon(new ImageIcon(ImagesHolder.BoxLv1_2Icon));
+            Labels.FrameLv2Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv2Label.setIcon(new ImageIcon(ImagesHolder.Bentley_ContinentalIcon));
+            Labels.AccessoriesLVL2Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL2Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL2Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL2Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL2Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL2Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL2Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL2Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL2Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL2Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL2Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL2Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL2Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=3){
 			jbtnPartsLv3.setEnabled(true);
@@ -7367,23 +7367,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv3.setEnabled(true);
             jbtnSellTransmissionLv3.setEnabled(true);
             jbtnSellTiresLv3.setEnabled(true);
-            Labels.BoxesLVL3Label.setIcon(ImagesHolder.BoxLv3_4Icon);
-            Labels.OpenBoxesLVL3Label.setIcon(ImagesHolder.BoxLv3_4Icon);
-            Labels.FrameLv3Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv3Label.setIcon(ImagesHolder.Audi_RS6Icon);
-            Labels.AccessoriesLVL3Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL3Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL3Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL3Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL3Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL3Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL3Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL3Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL3Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL3Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL3Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL3Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL3Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL3Label.setIcon(new ImageIcon(ImagesHolder.BoxLv3_4Icon));
+            Labels.OpenBoxesLVL3Label.setIcon(new ImageIcon(ImagesHolder.BoxLv3_4Icon));
+            Labels.FrameLv3Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv3Label.setIcon(new ImageIcon(ImagesHolder.Audi_RS6Icon));
+            Labels.AccessoriesLVL3Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL3Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL3Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL3Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL3Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL3Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL3Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL3Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL3Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL3Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL3Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL3Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL3Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=4){
 			jbtnPartsLv4.setEnabled(true);
@@ -7403,23 +7403,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv4.setEnabled(true);
             jbtnSellTransmissionLv4.setEnabled(true);
             jbtnSellTiresLv4.setEnabled(true);
-            Labels.BoxesLVL4Label.setIcon(ImagesHolder.BoxLv3_4Icon);
-            Labels.OpenBoxesLVL4Label.setIcon(ImagesHolder.BoxLv3_4Icon);
-            Labels.FrameLv4Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv4Label.setIcon(ImagesHolder.Opel_ZafiraIcon);
-            Labels.AccessoriesLVL4Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL4Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL4Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL4Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL4Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL4Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL4Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL4Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL4Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL4Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL4Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL4Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL4Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL4Label.setIcon(new ImageIcon(ImagesHolder.BoxLv3_4Icon));
+            Labels.OpenBoxesLVL4Label.setIcon(new ImageIcon(ImagesHolder.BoxLv3_4Icon));
+            Labels.FrameLv4Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv4Label.setIcon(new ImageIcon(ImagesHolder.Opel_ZafiraIcon));
+            Labels.AccessoriesLVL4Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL4Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL4Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL4Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL4Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL4Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL4Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL4Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL4Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL4Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL4Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL4Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL4Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=5){
 			jbtnPartsLv5.setEnabled(true);
@@ -7439,23 +7439,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv5.setEnabled(true);
             jbtnSellTransmissionLv5.setEnabled(true);
             jbtnSellTiresLv5.setEnabled(true);
-            Labels.BoxesLVL5Label.setIcon(ImagesHolder.BoxLv5_6Icon);
-            Labels.OpenBoxesLVL5Label.setIcon(ImagesHolder.BoxLv5_6Icon);
-            Labels.FrameLv5Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv5Label.setIcon(ImagesHolder.Ferrari_308Icon);
-            Labels.AccessoriesLVL5Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL5Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL5Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL5Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL5Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL5Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL5Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL5Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL5Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL5Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL5Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL5Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL5Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL5Label.setIcon(new ImageIcon(ImagesHolder.BoxLv5_6Icon));
+            Labels.OpenBoxesLVL5Label.setIcon(new ImageIcon(ImagesHolder.BoxLv5_6Icon));
+            Labels.FrameLv5Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv5Label.setIcon(new ImageIcon(ImagesHolder.Ferrari_308Icon));
+            Labels.AccessoriesLVL5Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL5Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL5Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL5Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL5Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL5Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL5Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL5Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL5Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL5Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL5Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL5Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL5Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=6){
 			jbtnPartsLv6.setEnabled(true);
@@ -7475,23 +7475,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv6.setEnabled(true);
             jbtnSellTransmissionLv6.setEnabled(true);
             jbtnSellTiresLv6.setEnabled(true);
-            Labels.BoxesLVL6Label.setIcon(ImagesHolder.BoxLv5_6Icon);
-            Labels.OpenBoxesLVL6Label.setIcon(ImagesHolder.BoxLv5_6Icon);
-            Labels.FrameLv6Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv6Label.setIcon(ImagesHolder.Fiat_PuntoIcon);
-            Labels.AccessoriesLVL6Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL6Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL6Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL6Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL6Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL6Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL6Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL6Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL6Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL6Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL6Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL6Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL6Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL6Label.setIcon(new ImageIcon(ImagesHolder.BoxLv5_6Icon));
+            Labels.OpenBoxesLVL6Label.setIcon(new ImageIcon(ImagesHolder.BoxLv5_6Icon));
+            Labels.FrameLv6Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv6Label.setIcon(new ImageIcon(ImagesHolder.Fiat_PuntoIcon));
+            Labels.AccessoriesLVL6Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL6Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL6Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL6Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL6Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL6Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL6Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL6Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL6Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL6Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL6Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL6Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL6Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=7){
 			jbtnPartsLv7.setEnabled(true);
@@ -7511,23 +7511,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv7.setEnabled(true);
             jbtnSellTransmissionLv7.setEnabled(true);
             jbtnSellTiresLv7.setEnabled(true);
-            Labels.BoxesLVL7Label.setIcon(ImagesHolder.BoxLv7_8Icon);
-            Labels.OpenBoxesLVL7Label.setIcon(ImagesHolder.BoxLv7_8Icon);
-            Labels.FrameLv7Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv7Label.setIcon(ImagesHolder.Volkswagen_BeetleIcon);
-            Labels.AccessoriesLVL7Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL7Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL7Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL7Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL7Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL7Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL7Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL7Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL7Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL7Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL7Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL7Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL7Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL7Label.setIcon(new ImageIcon(ImagesHolder.BoxLv7_8Icon));
+            Labels.OpenBoxesLVL7Label.setIcon(new ImageIcon(ImagesHolder.BoxLv7_8Icon));
+            Labels.FrameLv7Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv7Label.setIcon(new ImageIcon(ImagesHolder.Volkswagen_BeetleIcon));
+            Labels.AccessoriesLVL7Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL7Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL7Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL7Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL7Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL7Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL7Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL7Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL7Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL7Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL7Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL7Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL7Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=8){
 			jbtnPartsLv8.setEnabled(true);
@@ -7547,23 +7547,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv8.setEnabled(true);
             jbtnSellTransmissionLv8.setEnabled(true);
             jbtnSellTiresLv8.setEnabled(true);
-            Labels.BoxesLVL8Label.setIcon(ImagesHolder.BoxLv7_8Icon);
-            Labels.OpenBoxesLVL8Label.setIcon(ImagesHolder.BoxLv7_8Icon);
-            Labels.FrameLv8Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv8Label.setIcon(ImagesHolder.Cadilliac_EldoradoIcon);
-            Labels.AccessoriesLVL8Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL8Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL8Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL8Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL8Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL8Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL8Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL8Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL8Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL8Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL8Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL8Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL8Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL8Label.setIcon(new ImageIcon(ImagesHolder.BoxLv7_8Icon));
+            Labels.OpenBoxesLVL8Label.setIcon(new ImageIcon(ImagesHolder.BoxLv7_8Icon));
+            Labels.FrameLv8Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv8Label.setIcon(new ImageIcon(ImagesHolder.Cadilliac_EldoradoIcon));
+            Labels.AccessoriesLVL8Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL8Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL8Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL8Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL8Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL8Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL8Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL8Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL8Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL8Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL8Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL8Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL8Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=9){
 			jbtnPartsLv9.setEnabled(true);
@@ -7583,23 +7583,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv9.setEnabled(true);
             jbtnSellTransmissionLv9.setEnabled(true);
             jbtnSellTiresLv9.setEnabled(true);
-            Labels.BoxesLVL9Label.setIcon(ImagesHolder.BoxLv9_10Icon);
-            Labels.OpenBoxesLVL9Label.setIcon(ImagesHolder.BoxLv9_10Icon);
-            Labels.FrameLv9Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv9Label.setIcon(ImagesHolder.Honda_S2000Icon);
-            Labels.AccessoriesLVL9Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL9Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL9Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL9Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL9Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL9Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL9Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL9Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL9Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL9Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL9Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL9Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL9Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL9Label.setIcon(new ImageIcon(ImagesHolder.BoxLv9_10Icon));
+            Labels.OpenBoxesLVL9Label.setIcon(new ImageIcon(ImagesHolder.BoxLv9_10Icon));
+            Labels.FrameLv9Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv9Label.setIcon(new ImageIcon(ImagesHolder.Honda_S2000Icon));
+            Labels.AccessoriesLVL9Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL9Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL9Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL9Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL9Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL9Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL9Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL9Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL9Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL9Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL9Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL9Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL9Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 		}		
 		if(CarMain.main[5] >=10){
 			jbtnPartsLv10.setEnabled(true);
@@ -7619,23 +7619,23 @@ public class ClickerGame implements ActionListener {
             jbtnSellSuspensionLv10.setEnabled(true);
             jbtnSellTransmissionLv10.setEnabled(true);
             jbtnSellTiresLv10.setEnabled(true);
-            Labels.BoxesLVL10Label.setIcon(ImagesHolder.BoxLv9_10Icon);
-            Labels.OpenBoxesLVL10Label.setIcon(ImagesHolder.BoxLv9_10Icon);
-            Labels.FrameLv10Label.setIcon(ImagesHolder.CarFrameIcon);
-            Labels.CarsLv10Label.setIcon(ImagesHolder.Peugeot_308Icon);
-            Labels.AccessoriesLVL10Label.setIcon(ImagesHolder.AccessoriesIcon);
-            Labels.BodyLVL10Label.setIcon(ImagesHolder.BodyIcon);
-            Labels.BrakesLVL10Label.setIcon(ImagesHolder.BrakesIcon);
-            Labels.CoolingLVL10Label.setIcon(ImagesHolder.CoolingIcon);
-            Labels.ElectronicsLVL10Label.setIcon(ImagesHolder.ElectronicsIcon);
-            Labels.EngineLVL10Label.setIcon(ImagesHolder.EngineIcon);
-            Labels.ExaustLVL10Label.setIcon(ImagesHolder.ExaustIcon);
-            Labels.FuelLVL10Label.setIcon(ImagesHolder.FuelIcon);
-            Labels.InteriorLVL10Label.setIcon(ImagesHolder.InteriorIcon);
-            Labels.SteeringLVL10Label.setIcon(ImagesHolder.SteeringIcon);
-            Labels.SuspensionLVL10Label.setIcon(ImagesHolder.SuspensionIcon);
-            Labels.TransmissionLVL10Label.setIcon(ImagesHolder.TransmissionIcon);
-            Labels.TiresLVL10Label.setIcon(ImagesHolder.TiresIcon);
+            Labels.BoxesLVL10Label.setIcon(new ImageIcon(ImagesHolder.BoxLv9_10Icon));
+            Labels.OpenBoxesLVL10Label.setIcon(new ImageIcon(ImagesHolder.BoxLv9_10Icon));
+            Labels.FrameLv10Label.setIcon(new ImageIcon(ImagesHolder.CarFrameIcon));
+            Labels.CarsLv10Label.setIcon(new ImageIcon(ImagesHolder.Peugeot_308Icon));
+            Labels.AccessoriesLVL10Label.setIcon(new ImageIcon(ImagesHolder.AccessoriesIcon));
+            Labels.BodyLVL10Label.setIcon(new ImageIcon(ImagesHolder.BodyIcon));
+            Labels.BrakesLVL10Label.setIcon(new ImageIcon(ImagesHolder.BrakesIcon));
+            Labels.CoolingLVL10Label.setIcon(new ImageIcon(ImagesHolder.CoolingIcon));
+            Labels.ElectronicsLVL10Label.setIcon(new ImageIcon(ImagesHolder.ElectronicsIcon));
+            Labels.EngineLVL10Label.setIcon(new ImageIcon(ImagesHolder.EngineIcon));
+            Labels.ExaustLVL10Label.setIcon(new ImageIcon(ImagesHolder.ExaustIcon));
+            Labels.FuelLVL10Label.setIcon(new ImageIcon(ImagesHolder.FuelIcon));
+            Labels.InteriorLVL10Label.setIcon(new ImageIcon(ImagesHolder.InteriorIcon));
+            Labels.SteeringLVL10Label.setIcon(new ImageIcon(ImagesHolder.SteeringIcon));
+            Labels.SuspensionLVL10Label.setIcon(new ImageIcon(ImagesHolder.SuspensionIcon));
+            Labels.TransmissionLVL10Label.setIcon(new ImageIcon(ImagesHolder.TransmissionIcon));
+            Labels.TiresLVL10Label.setIcon(new ImageIcon(ImagesHolder.TiresIcon));
 	}
 		if(CountLv1Cars() == 20){
 			jbtnBuildCarLv1.setEnabled(false);
@@ -7668,803 +7668,803 @@ public class ClickerGame implements ActionListener {
 			jbtnBuildCarLv10.setEnabled(false);
 		}
 		if(CarsLv1.cars[3] == 1){
-            Labels.Aston_Martin_DB9Label.setIcon(ImagesHolder.Aston_Martin_DB9Icon);
+            Labels.Aston_Martin_DB9Label.setIcon(new ImageIcon(ImagesHolder.Aston_Martin_DB9Icon));
             Labels.Aston_Martin_DB9Label.setText("Aston Martin DB9");
 		}
 		if(CarsLv1.cars[7] == 1){
-            Labels.Acura_NSXLabel.setIcon(ImagesHolder.Acura_NSXIcon);
+            Labels.Acura_NSXLabel.setIcon(new ImageIcon(ImagesHolder.Acura_NSXIcon));
             Labels.Acura_NSXLabel.setText("Acura NSX");
 		}
 		if(CarsLv1.cars[11] == 1){
-            Labels.Ford_MustangLabel.setIcon(ImagesHolder.Ford_MustangIcon);
+            Labels.Ford_MustangLabel.setIcon(new ImageIcon(ImagesHolder.Ford_MustangIcon));
             Labels.Ford_MustangLabel.setText("Ford Mustang");
 		}
 		if(CarsLv1.cars[15] == 1){
-            Labels.Moskvich_412Label.setIcon(ImagesHolder.Moskvich_412Icon);
+            Labels.Moskvich_412Label.setIcon(new ImageIcon(ImagesHolder.Moskvich_412Icon));
             Labels.Moskvich_412Label.setText("Moskvich 412");
 		}
 		if(CarsLv1.cars[19] == 1){
-            Labels.Kia_VengaLabel.setIcon(ImagesHolder.Kia_VengaIcon);
+            Labels.Kia_VengaLabel.setIcon(new ImageIcon(ImagesHolder.Kia_VengaIcon));
             Labels.Kia_VengaLabel.setText("Kia Venga");
 		}
 		if(CarsLv1.cars[23] == 1){
-            Labels.Fiat_1500Label.setIcon(ImagesHolder.Fiat_1500Icon);
+            Labels.Fiat_1500Label.setIcon(new ImageIcon(ImagesHolder.Fiat_1500Icon));
             Labels.Fiat_1500Label.setText("Fiat 1500");
 		}
 		if(CarsLv1.cars[27] == 1){
-            Labels.Ferrari_EnzoLabel.setIcon(ImagesHolder.Ferrari_EnzoIcon);
+            Labels.Ferrari_EnzoLabel.setIcon(new ImageIcon(ImagesHolder.Ferrari_EnzoIcon));
             Labels.Ferrari_EnzoLabel.setText("Ferrari Enzo");
 		}
 		if(CarsLv1.cars[31] == 1){
-            Labels.Aston_Martin_RapideLabel.setIcon(ImagesHolder.Aston_Martin_RapideIcon);
+            Labels.Aston_Martin_RapideLabel.setIcon(new ImageIcon(ImagesHolder.Aston_Martin_RapideIcon));
             Labels.Aston_Martin_RapideLabel.setText("Aston Martin Rapide");
 		}
 		if(CarsLv1.cars[35] == 1){
-            Labels.Koenigsegg_CCXLabel.setIcon(ImagesHolder.Koenigsegg_CCXIcon);
+            Labels.Koenigsegg_CCXLabel.setIcon(new ImageIcon(ImagesHolder.Koenigsegg_CCXIcon));
             Labels.Koenigsegg_CCXLabel.setText("Koenigsegg CCX");
 		}
 		if(CarsLv1.cars[39] == 1){
-            Labels.Honda_CivicLabel.setIcon(ImagesHolder.Honda_CivicIcon);
+            Labels.Honda_CivicLabel.setIcon(new ImageIcon(ImagesHolder.Honda_CivicIcon));
             Labels.Honda_CivicLabel.setText("Honda Civic");
 		}
 		if(CarsLv1.cars[43] == 1){
-            Labels.Cadilliac_ATSLabel.setIcon(ImagesHolder.Cadilliac_ATSIcon);
+            Labels.Cadilliac_ATSLabel.setIcon(new ImageIcon(ImagesHolder.Cadilliac_ATSIcon));
             Labels.Cadilliac_ATSLabel.setText("Cadilliac ATS");
 		}
 		if(CarsLv1.cars[47] == 1){
-            Labels.Mitsubishi_LancerEvolutionXLabel.setIcon(ImagesHolder.Mitsubishi_LancerEvolutionXIcon);
+            Labels.Mitsubishi_LancerEvolutionXLabel.setIcon(new ImageIcon(ImagesHolder.Mitsubishi_LancerEvolutionXIcon));
             Labels.Mitsubishi_LancerEvolutionXLabel.setText("MitsubishiLancerEvolutionX");
 		}
 		if(CarsLv1.cars[51] == 1){
-            Labels.Infiniti_FXLabel.setIcon(ImagesHolder.Infiniti_FXIcon);
+            Labels.Infiniti_FXLabel.setIcon(new ImageIcon(ImagesHolder.Infiniti_FXIcon));
             Labels.Infiniti_FXLabel.setText("Infiniti FX");
 		}
 		if(CarsLv1.cars[55] == 1){
-            Labels.Lancia_ThemaLabel.setIcon(ImagesHolder.Lancia_ThemaIcon);
+            Labels.Lancia_ThemaLabel.setIcon(new ImageIcon(ImagesHolder.Lancia_ThemaIcon));
             Labels.Lancia_ThemaLabel.setText("Lancia Thema");
 		}
 		if(CarsLv1.cars[59] == 1){
-            Labels.Volvo_XC90Label.setIcon(ImagesHolder.Volvo_XC90Icon);
+            Labels.Volvo_XC90Label.setIcon(new ImageIcon(ImagesHolder.Volvo_XC90Icon));
             Labels.Volvo_XC90Label.setText("Volvo XC90");
 		}
 		if(CarsLv1.cars[63] == 1){
-            Labels.Acura_CSXLabel.setIcon(ImagesHolder.Acura_CSXIcon);
+            Labels.Acura_CSXLabel.setIcon(new ImageIcon(ImagesHolder.Acura_CSXIcon));
             Labels.Acura_CSXLabel.setText("Acura CSX");
 		}
 		if(CarsLv1.cars[67] == 1){
-            Labels.Saab_SonettIILabel.setIcon(ImagesHolder.Saab_SonettIIIcon);
+            Labels.Saab_SonettIILabel.setIcon(new ImageIcon(ImagesHolder.Saab_SonettIIIcon));
             Labels.Saab_SonettIILabel.setText("Saab SonettII");
 		}
 		if(CarsLv1.cars[71] == 1){
-            Labels.Renault_FlorideLabel.setIcon(ImagesHolder.Renault_FlorideIcon);
+            Labels.Renault_FlorideLabel.setIcon(new ImageIcon(ImagesHolder.Renault_FlorideIcon));
             Labels.Renault_FlorideLabel.setText("Renault Floride");
 		}
 		if(CarsLv1.cars[75] == 1){
-            Labels.BMW_e34Label.setIcon(ImagesHolder.BMW_e34Icon);
+            Labels.BMW_e34Label.setIcon(new ImageIcon(ImagesHolder.BMW_e34Icon));
             Labels.BMW_e34Label.setText("BMW e34");
 		}
 		if(CarsLv1.cars[79] == 1){
-            Labels.Chrysler_CordobaLabel.setIcon(ImagesHolder.Chrysler_CordobaIcon);
+            Labels.Chrysler_CordobaLabel.setIcon(new ImageIcon(ImagesHolder.Chrysler_CordobaIcon));
             Labels.Chrysler_CordobaLabel.setText("Chrysler Cordoba");
 		}
 		if(CarsLv2.cars[3] == 1){
-			Labels.Buick_RivieraLabel.setIcon(ImagesHolder.Buick_RivieraIcon);
+			Labels.Buick_RivieraLabel.setIcon(new ImageIcon(ImagesHolder.Buick_RivieraIcon));
 			Labels.Buick_RivieraLabel.setText("Buick Riviera");
 		}
 		if(CarsLv2.cars[7] == 1){
-			Labels.Tesla_RoadsterLabel.setIcon(ImagesHolder.Tesla_RoadsterIcon);
+			Labels.Tesla_RoadsterLabel.setIcon(new ImageIcon(ImagesHolder.Tesla_RoadsterIcon));
 			Labels.Tesla_RoadsterLabel.setText("Tesla Roadster");
 		}
 		if(CarsLv2.cars[11] == 1){
-			Labels.Audi_80Label.setIcon(ImagesHolder.Audi_80Icon);
+			Labels.Audi_80Label.setIcon(new ImageIcon(ImagesHolder.Audi_80Icon));
 			Labels.Audi_80Label.setText("Audi 80");
 		}
 		if(CarsLv2.cars[15] == 1){
-			Labels.BMW_e36Label.setIcon(ImagesHolder.BMW_e36Icon);
+			Labels.BMW_e36Label.setIcon(new ImageIcon(ImagesHolder.BMW_e36Icon));
 			Labels.BMW_e36Label.setText("BMW e36");
 		}
 		if(CarsLv2.cars[19] == 1){
-			Labels.Volkswagen_SciroccoLabel.setIcon(ImagesHolder.Volkswagen_SciroccoIcon);
+			Labels.Volkswagen_SciroccoLabel.setIcon(new ImageIcon(ImagesHolder.Volkswagen_SciroccoIcon));
 			Labels.Volkswagen_SciroccoLabel.setText("Volkswagen Scirocco");
 		}
 		if(CarsLv2.cars[23] == 1){
-			Labels.Mazda_3Label.setIcon(ImagesHolder.Mazda_3Icon);
+			Labels.Mazda_3Label.setIcon(new ImageIcon(ImagesHolder.Mazda_3Icon));
 			Labels.Mazda_3Label.setText("Mazda 3");
 		}
 		if(CarsLv2.cars[27] == 1){
-			Labels.Chevrolet_VikingLabel.setIcon(ImagesHolder.Chevrolet_VikingIcon);
+			Labels.Chevrolet_VikingLabel.setIcon(new ImageIcon(ImagesHolder.Chevrolet_VikingIcon));
 			Labels.Chevrolet_VikingLabel.setText("Chevrolet Viking");
 		}
 		if(CarsLv2.cars[31] == 1){
-			Labels.Tesla_SLabel.setIcon(ImagesHolder.Tesla_SIcon);
+			Labels.Tesla_SLabel.setIcon(new ImageIcon(ImagesHolder.Tesla_SIcon));
 			Labels.Tesla_SLabel.setText("Tesla S");
 		}
 		if(CarsLv2.cars[35] == 1){
-			Labels.Jeep_ZJLabel.setIcon(ImagesHolder.Jeep_ZJIcon);
+			Labels.Jeep_ZJLabel.setIcon(new ImageIcon(ImagesHolder.Jeep_ZJIcon));
 			Labels.Jeep_ZJLabel.setText("Jeep ZJ");
 		}
 		if(CarsLv2.cars[39] == 1){
-			Labels.Dodge_NeonLabel.setIcon(ImagesHolder.Dodge_NeonIcon);
+			Labels.Dodge_NeonLabel.setIcon(new ImageIcon(ImagesHolder.Dodge_NeonIcon));
 			Labels.Dodge_NeonLabel.setText("Dodge Neon");
 		}
 		if(CarsLv2.cars[43] == 1){
-			Labels.BMW_e30Label.setIcon(ImagesHolder.BMW_e30Icon);
+			Labels.BMW_e30Label.setIcon(new ImageIcon(ImagesHolder.BMW_e30Icon));
 			Labels.BMW_e30Label.setText("BMW e30");
 		}
 		if(CarsLv2.cars[47] == 1){
-			Labels.Mercedes_Benz_W123Label.setIcon(ImagesHolder.Mercedes_Benz_W123Icon);
+			Labels.Mercedes_Benz_W123Label.setIcon(new ImageIcon(ImagesHolder.Mercedes_Benz_W123Icon));
 			Labels.Mercedes_Benz_W123Label.setText("Mercedes Benz W123");
 		}
 		if(CarsLv2.cars[51] == 1){
-			Labels.Land_Rover_DefenderLabel.setIcon(ImagesHolder.Land_Rover_DefenderIcon);
+			Labels.Land_Rover_DefenderLabel.setIcon(new ImageIcon(ImagesHolder.Land_Rover_DefenderIcon));
 			Labels.Land_Rover_DefenderLabel.setText("Land Rover Defender");
 		}
 		if(CarsLv2.cars[55] == 1){
-			Labels.Saab_9_5Label.setIcon(ImagesHolder.Saab_9_5Icon);
+			Labels.Saab_9_5Label.setIcon(new ImageIcon(ImagesHolder.Saab_9_5Icon));
 			Labels.Saab_9_5Label.setText("Saab 9-5");
 		}
 		if(CarsLv2.cars[59] == 1){
-			Labels.Aston_Martin_OneLabel.setIcon(ImagesHolder.Aston_Martin_OneIcon);
+			Labels.Aston_Martin_OneLabel.setIcon(new ImageIcon(ImagesHolder.Aston_Martin_OneIcon));
 			Labels.Aston_Martin_OneLabel.setText("Aston Martin One");
 		}
 		if(CarsLv2.cars[63] == 1){
-			Labels.Koenigsegg_RegeraLabel.setIcon(ImagesHolder.Koenigsegg_RegeraIcon);
+			Labels.Koenigsegg_RegeraLabel.setIcon(new ImageIcon(ImagesHolder.Koenigsegg_RegeraIcon));
 			Labels.Koenigsegg_RegeraLabel.setText("Koenigsegg Regera");
 		}
 		if(CarsLv2.cars[67] == 1){
-			Labels.Lexus_ISLabel.setIcon(ImagesHolder.Lexus_ISIcon);
+			Labels.Lexus_ISLabel.setIcon(new ImageIcon(ImagesHolder.Lexus_ISIcon));
 			Labels.Lexus_ISLabel.setText("Lexus IS");
 		}
 		if(CarsLv2.cars[71] == 1){
-			Labels.GMC_YukonLabel.setIcon(ImagesHolder.GMC_YukonIcon);
+			Labels.GMC_YukonLabel.setIcon(new ImageIcon(ImagesHolder.GMC_YukonIcon));
 			Labels.GMC_YukonLabel.setText("GMC Yukon");
 		}
 		if(CarsLv2.cars[75] == 1){
-			Labels.Opel_AstraLabel.setIcon(ImagesHolder.Opel_AstraIcon);
+			Labels.Opel_AstraLabel.setIcon(new ImageIcon(ImagesHolder.Opel_AstraIcon));
 			Labels.Opel_AstraLabel.setText("Opel Astra");
 		}
 		if(CarsLv2.cars[79] == 1){
-			Labels.Audi_CoupeLabel.setIcon(ImagesHolder.Audi_CoupeIcon);
+			Labels.Audi_CoupeLabel.setIcon(new ImageIcon(ImagesHolder.Audi_CoupeIcon));
 			Labels.Audi_CoupeLabel.setText("Audi Coupe");
 		}
 		if(CarsLv3.cars[3] == 1){
-			Labels.Mini_MokeLabel.setIcon(ImagesHolder.Mini_MokeIcon);
+			Labels.Mini_MokeLabel.setIcon(new ImageIcon(ImagesHolder.Mini_MokeIcon));
 			Labels.Mini_MokeLabel.setText("Mini Moke");
 		}
 		if(CarsLv3.cars[7] == 1){
-			Labels.Kia_RondoLabel.setIcon(ImagesHolder.Kia_RondoIcon);
+			Labels.Kia_RondoLabel.setIcon(new ImageIcon(ImagesHolder.Kia_RondoIcon));
 			Labels.Kia_RondoLabel.setText("Kia Rondo");
 		}
 		if(CarsLv3.cars[11] == 1){
-			Labels.GMC_SuburbanLabel.setIcon(ImagesHolder.GMC_SuburbanIcon);
+			Labels.GMC_SuburbanLabel.setIcon(new ImageIcon(ImagesHolder.GMC_SuburbanIcon));
 			Labels.GMC_SuburbanLabel.setText("GMC Suburban");
 		}
 		if(CarsLv3.cars[15] == 1){
-			Labels.Honda_PreludeLabel.setIcon(ImagesHolder.Honda_PreludeIcon);
+			Labels.Honda_PreludeLabel.setIcon(new ImageIcon(ImagesHolder.Honda_PreludeIcon));
 			Labels.Honda_PreludeLabel.setText("Honda Prelude");
 		}
 		if(CarsLv3.cars[19] == 1){
-			Labels.Citroen_SaxoLabel.setIcon(ImagesHolder.Citroen_SaxoIcon);
+			Labels.Citroen_SaxoLabel.setIcon(new ImageIcon(ImagesHolder.Citroen_SaxoIcon));
 			Labels.Citroen_SaxoLabel.setText("Citroen Saxo");
 		}
 		if(CarsLv3.cars[23] == 1){
-			Labels.Volkswagen_TiguanLabel.setIcon(ImagesHolder.Volkswagen_TiguanIcon);
+			Labels.Volkswagen_TiguanLabel.setIcon(new ImageIcon(ImagesHolder.Volkswagen_TiguanIcon));
 			Labels.Volkswagen_TiguanLabel.setText("Volkswagen Tiguan");
 		}
 		if(CarsLv3.cars[27] == 1){
-			Labels.Volkswagen_PhaetonLabel.setIcon(ImagesHolder.Volkswagen_PhaetonIcon);
+			Labels.Volkswagen_PhaetonLabel.setIcon(new ImageIcon(ImagesHolder.Volkswagen_PhaetonIcon));
 			Labels.Volkswagen_PhaetonLabel.setText("Volkswagen Phaeton");
 		}
 		if(CarsLv3.cars[31] == 1){
-			Labels.Buick_CentryLabel.setIcon(ImagesHolder.Buick_CentryIcon);
+			Labels.Buick_CentryLabel.setIcon(new ImageIcon(ImagesHolder.Buick_CentryIcon));
 			Labels.Buick_CentryLabel.setText("Buick Centry");
 		}
 		if(CarsLv3.cars[35] == 1){
-			Labels.Land_Rover_DiscoveryLabel.setIcon(ImagesHolder.Land_Rover_DiscoveryIcon);
+			Labels.Land_Rover_DiscoveryLabel.setIcon(new ImageIcon(ImagesHolder.Land_Rover_DiscoveryIcon));
 			Labels.Land_Rover_DiscoveryLabel.setText("Land Rover Discovery");
 		}
 		if(CarsLv3.cars[39] == 1){
-			Labels.Infiniti_EthereaLabel.setIcon(ImagesHolder.Infiniti_EthereaIcon);
+			Labels.Infiniti_EthereaLabel.setIcon(new ImageIcon(ImagesHolder.Infiniti_EthereaIcon));
 			Labels.Infiniti_EthereaLabel.setText("Infiniti Etherea");
 		}
 		if(CarsLv3.cars[43] == 1){
-			Labels.Peugeot_308Label.setIcon(ImagesHolder.Peugeot_308Icon);
+			Labels.Peugeot_308Label.setIcon(new ImageIcon(ImagesHolder.Peugeot_308Icon));
 			Labels.Peugeot_308Label.setText("Peugeot 308");
 		}
 		if(CarsLv3.cars[47] == 1){
-			Labels.Toyota_AurisLabel.setIcon(ImagesHolder.Toyota_AurisIcon);
+			Labels.Toyota_AurisLabel.setIcon(new ImageIcon(ImagesHolder.Toyota_AurisIcon));
 			Labels.Toyota_AurisLabel.setText("Toyota Auris");
 		}
 		if(CarsLv3.cars[51] == 1){
-			Labels.Pagani_ZondaFLabel.setIcon(ImagesHolder.Pagani_ZondaFIcon);
+			Labels.Pagani_ZondaFLabel.setIcon(new ImageIcon(ImagesHolder.Pagani_ZondaFIcon));
 			Labels.Pagani_ZondaFLabel.setText("Pagani ZondaF");
 		}
 		if(CarsLv3.cars[55] == 1){
-			Labels.Lancia_PhedraLabel.setIcon(ImagesHolder.Lancia_PhedraIcon);
+			Labels.Lancia_PhedraLabel.setIcon(new ImageIcon(ImagesHolder.Lancia_PhedraIcon));
 			Labels.Lancia_PhedraLabel.setText("Lancia Phedra");
 		}
 		if(CarsLv3.cars[59] == 1){
-			Labels.Chevrolet_ImpalaLabel.setIcon(ImagesHolder.Chevrolet_ImpalaIcon);
+			Labels.Chevrolet_ImpalaLabel.setIcon(new ImageIcon(ImagesHolder.Chevrolet_ImpalaIcon));
 			Labels.Chevrolet_ImpalaLabel.setText("Chevrolet Impala");
 		}
 		if(CarsLv3.cars[63] == 1){
-			Labels.Porsche_BoxsterLabel.setIcon(ImagesHolder.Porsche_BoxsterIcon);
+			Labels.Porsche_BoxsterLabel.setIcon(new ImageIcon(ImagesHolder.Porsche_BoxsterIcon));
 			Labels.Porsche_BoxsterLabel.setText("Porsche Boxster");
 		}
 		if(CarsLv3.cars[67] == 1){
-			Labels.Aston_Martin_DB6Label.setIcon(ImagesHolder.Aston_Martin_DB6Icon);
+			Labels.Aston_Martin_DB6Label.setIcon(new ImageIcon(ImagesHolder.Aston_Martin_DB6Icon));
 			Labels.Aston_Martin_DB6Label.setText("Aston Martin DB6");
 		}
 		if(CarsLv3.cars[71] == 1){
-			Labels.Vaz_2103Label.setIcon(ImagesHolder.Vaz_2103Icon);
+			Labels.Vaz_2103Label.setIcon(new ImageIcon(ImagesHolder.Vaz_2103Icon));
 			Labels.Vaz_2103Label.setText("Vaz 2103");
 		}
 		if(CarsLv3.cars[75] == 1){
-			Labels.Hyundai_MistraLabel.setIcon(ImagesHolder.Hyundai_MistraIcon);
+			Labels.Hyundai_MistraLabel.setIcon(new ImageIcon(ImagesHolder.Hyundai_MistraIcon));
 			Labels.Hyundai_MistraLabel.setText("Hyundai Mistra");
 		}
 		if(CarsLv3.cars[79] == 1){
-			Labels.Mini_CountrymanLabel.setIcon(ImagesHolder.Mini_CountrymanIcon);
+			Labels.Mini_CountrymanLabel.setIcon(new ImageIcon(ImagesHolder.Mini_CountrymanIcon));
 			Labels.Mini_CountrymanLabel.setText("Mini Countryman");
 		}
 		if(CarsLv4.cars[3] == 1){
-			Labels.Mazda_MX6Label.setIcon(ImagesHolder.Mazda_MX6Icon);
+			Labels.Mazda_MX6Label.setIcon(new ImageIcon(ImagesHolder.Mazda_MX6Icon));
 			Labels.Mazda_MX6Label.setText("Mazda MX6");
 		}
 		if(CarsLv4.cars[7] == 1){
-			Labels.Chrysler_DaytonaLabel.setIcon(ImagesHolder.Chrysler_DaytonaIcon);
+			Labels.Chrysler_DaytonaLabel.setIcon(new ImageIcon(ImagesHolder.Chrysler_DaytonaIcon));
 			Labels.Chrysler_DaytonaLabel.setText("Chrysler Daytona");
 		}
 		if(CarsLv4.cars[11] == 1){
-			Labels.Buick_RoadmasterLabel.setIcon(ImagesHolder.Buick_RoadmasterIcon);
+			Labels.Buick_RoadmasterLabel.setIcon(new ImageIcon(ImagesHolder.Buick_RoadmasterIcon));
 			Labels.Buick_RoadmasterLabel.setText("Buick Roadmaster");
 		}
 		if(CarsLv4.cars[15] == 1){
-			Labels.Volvo_S80Label.setIcon(ImagesHolder.Volvo_S80Icon);
+			Labels.Volvo_S80Label.setIcon(new ImageIcon(ImagesHolder.Volvo_S80Icon));
 			Labels.Volvo_S80Label.setText("Volvo S80");
 		}
 		if(CarsLv4.cars[19] == 1){
-			Labels.Porsche_CaymanLabel.setIcon(ImagesHolder.Porsche_CaymanIcon);
+			Labels.Porsche_CaymanLabel.setIcon(new ImageIcon(ImagesHolder.Porsche_CaymanIcon));
 			Labels.Porsche_CaymanLabel.setText("Porsche Cayman");
 		}
 		if(CarsLv4.cars[23] == 1){
-			Labels.Volkswagen_BeetleLabel.setIcon(ImagesHolder.Volkswagen_BeetleIcon);
+			Labels.Volkswagen_BeetleLabel.setIcon(new ImageIcon(ImagesHolder.Volkswagen_BeetleIcon));
 			Labels.Volkswagen_BeetleLabel.setText("Volkswagen Beetle");
 		}
 		if(CarsLv4.cars[27] == 1){
-			Labels.Bugatti_EB110Label.setIcon(ImagesHolder.Bugatti_EB110Icon);
+			Labels.Bugatti_EB110Label.setIcon(new ImageIcon(ImagesHolder.Bugatti_EB110Icon));
 			Labels.Bugatti_EB110Label.setText("Bugatti EB110");
 		}
 		if(CarsLv4.cars[31] == 1){
-			Labels.Opel_ZafiraLabel.setIcon(ImagesHolder.Opel_ZafiraIcon);
+			Labels.Opel_ZafiraLabel.setIcon(new ImageIcon(ImagesHolder.Opel_ZafiraIcon));
 			Labels.Opel_ZafiraLabel.setText("Opel Zafira");
 		}
 		if(CarsLv4.cars[35] == 1){
-			Labels.Saab_9000Label.setIcon(ImagesHolder.Saab_9000Icon);
+			Labels.Saab_9000Label.setIcon(new ImageIcon(ImagesHolder.Saab_9000Icon));
 			Labels.Saab_9000Label.setText("Saab 9000");
 		}
 		if(CarsLv4.cars[39] == 1){
-			Labels.McLaren_F1Label.setIcon(ImagesHolder.McLaren_F1Icon);
+			Labels.McLaren_F1Label.setIcon(new ImageIcon(ImagesHolder.McLaren_F1Icon));
 			Labels.McLaren_F1Label.setText("McLaren F1");
 		}
 		if(CarsLv4.cars[43] == 1){
-			Labels.Audi_R8Label.setIcon(ImagesHolder.Audi_R8Icon);
+			Labels.Audi_R8Label.setIcon(new ImageIcon(ImagesHolder.Audi_R8Icon));
 			Labels.Audi_R8Label.setText("Audi R8");
 		}
 		if(CarsLv4.cars[47] == 1){
-			Labels.Alfa_Romeo_8CLabel.setIcon(ImagesHolder.Alfa_Romeo_8CIcon);
+			Labels.Alfa_Romeo_8CLabel.setIcon(new ImageIcon(ImagesHolder.Alfa_Romeo_8CIcon));
 			Labels.Alfa_Romeo_8CLabel.setText("Alfa Romeo 8C");
 		}
 		if(CarsLv4.cars[51] == 1){
-			Labels.Ford_FiestaLabel.setIcon(ImagesHolder.Ford_FiestaIcon);
+			Labels.Ford_FiestaLabel.setIcon(new ImageIcon(ImagesHolder.Ford_FiestaIcon));
 			Labels.Ford_FiestaLabel.setText("Ford Fiesta");
 		}
 		if(CarsLv4.cars[55] == 1){
-			Labels.Infiniti_Q50Label.setIcon(ImagesHolder.Infiniti_Q50Icon);
+			Labels.Infiniti_Q50Label.setIcon(new ImageIcon(ImagesHolder.Infiniti_Q50Icon));
 			Labels.Infiniti_Q50Label.setText("Infiniti Q50");
 		}
 		if(CarsLv4.cars[59] == 1){
-			Labels.Maserati_5000GTLabel.setIcon(ImagesHolder.Maserati_5000GTIcon);
+			Labels.Maserati_5000GTLabel.setIcon(new ImageIcon(ImagesHolder.Maserati_5000GTIcon));
 			Labels.Maserati_5000GTLabel.setText("Maserati 5000GT");
 		}
 		if(CarsLv4.cars[63] == 1){
-			Labels.Mercedes_Benz_CLA250Label.setIcon(ImagesHolder.Mercedes_Benz_CLA250Icon);
+			Labels.Mercedes_Benz_CLA250Label.setIcon(new ImageIcon(ImagesHolder.Mercedes_Benz_CLA250Icon));
 			Labels.Mercedes_Benz_CLA250Label.setText("Mercedes Benz CLA250");
 		}
 		if(CarsLv4.cars[67] == 1){
-			Labels.Lamborghini_GallardoLabel.setIcon(ImagesHolder.Lamborghini_GallardoIcon);
+			Labels.Lamborghini_GallardoLabel.setIcon(new ImageIcon(ImagesHolder.Lamborghini_GallardoIcon));
 			Labels.Lamborghini_GallardoLabel.setText("Lamborghini Gallardo");
 		}
 		if(CarsLv4.cars[71] == 1){
-			Labels.Mazda_RX7Label.setIcon(ImagesHolder.Mazda_RX7Icon);
+			Labels.Mazda_RX7Label.setIcon(new ImageIcon(ImagesHolder.Mazda_RX7Icon));
 			Labels.Mazda_RX7Label.setText("Mazda RX7");
 		}
 		if(CarsLv4.cars[75] == 1){
-			Labels.Mitsubishi_ColtLabel.setIcon(ImagesHolder.Mitsubishi_ColtIcon);
+			Labels.Mitsubishi_ColtLabel.setIcon(new ImageIcon(ImagesHolder.Mitsubishi_ColtIcon));
 			Labels.Mitsubishi_ColtLabel.setText("Mitsubishi Colt");
 		}
 		if(CarsLv4.cars[79] == 1){
-			Labels.Kia_SorentoLabel.setIcon(ImagesHolder.Kia_SorentoIcon);
+			Labels.Kia_SorentoLabel.setIcon(new ImageIcon(ImagesHolder.Kia_SorentoIcon));
 			Labels.Kia_SorentoLabel.setText("Kia Sorento");
 		}
 		if(CarsLv5.cars[3] == 1){
-			Labels.Rolls_Royce_WraithLabel.setIcon(ImagesHolder.Rolls_Royce_WraithIcon);
+			Labels.Rolls_Royce_WraithLabel.setIcon(new ImageIcon(ImagesHolder.Rolls_Royce_WraithIcon));
 			Labels.Rolls_Royce_WraithLabel.setText("Rolls Royce Wraith");
 		}
 		if(CarsLv5.cars[7] == 1){
-			Labels.Lamborghini_DiabloLabel.setIcon(ImagesHolder.Lamborghini_DiabloIcon);
+			Labels.Lamborghini_DiabloLabel.setIcon(new ImageIcon(ImagesHolder.Lamborghini_DiabloIcon));
 			Labels.Lamborghini_DiabloLabel.setText("Lamborghini Diablo");
 		}
 		if(CarsLv5.cars[11] == 1){
-			Labels.Jeep_ScramblerLabel.setIcon(ImagesHolder.Jeep_ScramblerIcon);
+			Labels.Jeep_ScramblerLabel.setIcon(new ImageIcon(ImagesHolder.Jeep_ScramblerIcon));
 			Labels.Jeep_ScramblerLabel.setText("Jeep Scrambler");
 		}
 		if(CarsLv5.cars[15] == 1){
-			Labels.Bentley_ContinentalLabel.setIcon(ImagesHolder.Bentley_ContinentalIcon);
+			Labels.Bentley_ContinentalLabel.setIcon(new ImageIcon(ImagesHolder.Bentley_ContinentalIcon));
 			Labels.Bentley_ContinentalLabel.setText("Bentley Continental");
 		}
 		if(CarsLv5.cars[19] == 1){
-			Labels.Bentley_AzureLabel.setIcon(ImagesHolder.Bentley_AzureIcon);
+			Labels.Bentley_AzureLabel.setIcon(new ImageIcon(ImagesHolder.Bentley_AzureIcon));
 			Labels.Bentley_AzureLabel.setText("Bentley Azure");
 		}
 		if(CarsLv5.cars[23] == 1){
-			Labels.Koenigsegg_OneLabel.setIcon(ImagesHolder.Koenigsegg_OneIcon);
+			Labels.Koenigsegg_OneLabel.setIcon(new ImageIcon(ImagesHolder.Koenigsegg_OneIcon));
 			Labels.Koenigsegg_OneLabel.setText("Koenigsegg One");
 		}
 		if(CarsLv5.cars[27] == 1){
-			Labels.Cadilliac_XTSLabel.setIcon(ImagesHolder.Cadilliac_XTSIcon);
+			Labels.Cadilliac_XTSLabel.setIcon(new ImageIcon(ImagesHolder.Cadilliac_XTSIcon));
 			Labels.Cadilliac_XTSLabel.setText("Cadilliac XTS");
 		}
 		if(CarsLv5.cars[31] == 1){
-			Labels.Fiat_500Label.setIcon(ImagesHolder.Fiat_500Icon);
+			Labels.Fiat_500Label.setIcon(new ImageIcon(ImagesHolder.Fiat_500Icon));
 			Labels.Fiat_500Label.setText("Fiat 500");
 		}
 		if(CarsLv5.cars[35] == 1){
-			Labels.Mitsubishi_PajeroLabel.setIcon(ImagesHolder.Mitsubishi_PajeroIcon);
+			Labels.Mitsubishi_PajeroLabel.setIcon(new ImageIcon(ImagesHolder.Mitsubishi_PajeroIcon));
 			Labels.Mitsubishi_PajeroLabel.setText("Mitsubishi Pajero");
 		}
 		if(CarsLv5.cars[39] == 1){
-			Labels.Moskvich_2140Label.setIcon(ImagesHolder.Moskvich_2140Icon);
+			Labels.Moskvich_2140Label.setIcon(new ImageIcon(ImagesHolder.Moskvich_2140Icon));
 			Labels.Moskvich_2140Label.setText("Moskvich 2140");
 		}
 		if(CarsLv5.cars[43] == 1){
-			Labels.Opel_GTLabel.setIcon(ImagesHolder.Opel_GTIcon);
+			Labels.Opel_GTLabel.setIcon(new ImageIcon(ImagesHolder.Opel_GTIcon));
 			Labels.Opel_GTLabel.setText("Opel GT");
 		}
 		if(CarsLv5.cars[47] == 1){
-			Labels.Hyundai_GetzLabel.setIcon(ImagesHolder.Hyundai_GetzIcon);
+			Labels.Hyundai_GetzLabel.setIcon(new ImageIcon(ImagesHolder.Hyundai_GetzIcon));
 			Labels.Hyundai_GetzLabel.setText("Hyundai Getz");
 		}
 		if(CarsLv5.cars[51] == 1){
-			Labels.Maserati_CoupeLabel.setIcon(ImagesHolder.Maserati_CoupeIcon);
+			Labels.Maserati_CoupeLabel.setIcon(new ImageIcon(ImagesHolder.Maserati_CoupeIcon));
 			Labels.Maserati_CoupeLabel.setText("Maserati Coupe");
 		}
 		if(CarsLv5.cars[55] == 1){
-			Labels.Honda_S2000Label.setIcon(ImagesHolder.Honda_S2000Icon);
+			Labels.Honda_S2000Label.setIcon(new ImageIcon(ImagesHolder.Honda_S2000Icon));
 			Labels.Honda_S2000Label.setText("Honda S2000");
 		}
 		if(CarsLv5.cars[59] == 1){
-			Labels.Alfa_Romeo_SpiderLabel.setIcon(ImagesHolder.Alfa_Romeo_SpiderIcon);
+			Labels.Alfa_Romeo_SpiderLabel.setIcon(new ImageIcon(ImagesHolder.Alfa_Romeo_SpiderIcon));
 			Labels.Alfa_Romeo_SpiderLabel.setText("Alfa Romeo Spider");
 		}
 		if(CarsLv5.cars[63] == 1){
-			Labels.BMW_M5Label.setIcon(ImagesHolder.BMW_M5Icon);
+			Labels.BMW_M5Label.setIcon(new ImageIcon(ImagesHolder.BMW_M5Icon));
 			Labels.BMW_M5Label.setText("BMW M5");
 		}
 		if(CarsLv5.cars[67] == 1){
-			Labels.BMW_I8Label.setIcon(ImagesHolder.BMW_I8Icon);
+			Labels.BMW_I8Label.setIcon(new ImageIcon(ImagesHolder.BMW_I8Icon));
 			Labels.BMW_I8Label.setText("BMW I8");
 		}
 		if(CarsLv5.cars[71] == 1){
-			Labels.Citroen_C5Label.setIcon(ImagesHolder.Citroen_C5Icon);
+			Labels.Citroen_C5Label.setIcon(new ImageIcon(ImagesHolder.Citroen_C5Icon));
 			Labels.Citroen_C5Label.setText("Citroen C5");
 		}
 		if(CarsLv5.cars[75] == 1){
-			Labels.Fiat_PuntoLabel.setIcon(ImagesHolder.Fiat_PuntoIcon);
+			Labels.Fiat_PuntoLabel.setIcon(new ImageIcon(ImagesHolder.Fiat_PuntoIcon));
 			Labels.Fiat_PuntoLabel.setText("Fiat Punto");
 		}
 		if(CarsLv5.cars[79] == 1){
-			Labels.Audi_100Label.setIcon(ImagesHolder.Audi_100Icon);
+			Labels.Audi_100Label.setIcon(new ImageIcon(ImagesHolder.Audi_100Icon));
 			Labels.Audi_100Label.setText("Audi 100");
 		}
 		if(CarsLv6.cars[3] == 1){
-			Labels.Rolls_Royce_PhantomLabel.setIcon(ImagesHolder.Rolls_Royce_PhantomIcon);
+			Labels.Rolls_Royce_PhantomLabel.setIcon(new ImageIcon(ImagesHolder.Rolls_Royce_PhantomIcon));
 			Labels.Rolls_Royce_PhantomLabel.setText("Rolls Royce Phantom");
 		}
 		if(CarsLv6.cars[7] == 1){
-			Labels.Toyota_86Label.setIcon(ImagesHolder.Toyota_86Icon);
+			Labels.Toyota_86Label.setIcon(new ImageIcon(ImagesHolder.Toyota_86Icon));
 			Labels.Toyota_86Label.setText("Toyota 86");
 		}
 		if(CarsLv6.cars[11] == 1){
-			Labels.BMW_e70Label.setIcon(ImagesHolder.BMW_e70Icon);
+			Labels.BMW_e70Label.setIcon(new ImageIcon(ImagesHolder.BMW_e70Icon));
 			Labels.BMW_e70Label.setText("BMW e70");
 		}
 		if(CarsLv6.cars[15] == 1){
-			Labels.Chrysler_VoyagerLabel.setIcon(ImagesHolder.Chrysler_VoyagerIcon);
+			Labels.Chrysler_VoyagerLabel.setIcon(new ImageIcon(ImagesHolder.Chrysler_VoyagerIcon));
 			Labels.Chrysler_VoyagerLabel.setText("Chrysler Voyager");
 		}
 		if(CarsLv6.cars[19] == 1){
-			Labels.Rolls_Royce_PhantomIIILabel.setIcon(ImagesHolder.Rolls_Royce_PhantomIIIIcon);
+			Labels.Rolls_Royce_PhantomIIILabel.setIcon(new ImageIcon(ImagesHolder.Rolls_Royce_PhantomIIIIcon));
 			Labels.Rolls_Royce_PhantomIIILabel.setText("Rolls Royce PhantomIII");
 		}
 		if(CarsLv6.cars[23] == 1){
-			Labels.Honda_CRXLabel.setIcon(ImagesHolder.Honda_CRXIcon);
+			Labels.Honda_CRXLabel.setIcon(new ImageIcon(ImagesHolder.Honda_CRXIcon));
 			Labels.Honda_CRXLabel.setText("Honda CRX");
 		}
 		if(CarsLv6.cars[27] == 1){
-			Labels.Subaru_1000Label.setIcon(ImagesHolder.Subaru_1000Icon);
+			Labels.Subaru_1000Label.setIcon(new ImageIcon(ImagesHolder.Subaru_1000Icon));
 			Labels.Subaru_1000Label.setText("Subaru 1000");
 		}
 		if(CarsLv6.cars[31] == 1){
-			Labels.Cadilliac_EldoradoLabel.setIcon(ImagesHolder.Cadilliac_EldoradoIcon);
+			Labels.Cadilliac_EldoradoLabel.setIcon(new ImageIcon(ImagesHolder.Cadilliac_EldoradoIcon));
 			Labels.Cadilliac_EldoradoLabel.setText("Cadilliac Eldorado");
 		}
 		if(CarsLv6.cars[35] == 1){
-			Labels.Land_Rover_FreelanderLabel.setIcon(ImagesHolder.Land_Rover_FreelanderIcon);
+			Labels.Land_Rover_FreelanderLabel.setIcon(new ImageIcon(ImagesHolder.Land_Rover_FreelanderIcon));
 			Labels.Land_Rover_FreelanderLabel.setText("Land Rover Freelander");
 		}
 		if(CarsLv6.cars[39] == 1){
-			Labels.Renault_SpiderLabel.setIcon(ImagesHolder.Renault_SpiderIcon);
+			Labels.Renault_SpiderLabel.setIcon(new ImageIcon(ImagesHolder.Renault_SpiderIcon));
 			Labels.Renault_SpiderLabel.setText("Renault Spider");
 		}
 		if(CarsLv6.cars[44] == 1){
-			Labels.Gaz_21Label.setIcon(ImagesHolder.Gaz_21Icon);
+			Labels.Gaz_21Label.setIcon(new ImageIcon(ImagesHolder.Gaz_21Icon));
 			Labels.Gaz_21Label.setText("Gaz 21");
 		}
 		if(CarsLv6.cars[47] == 1){
-			Labels.Acura_ELLabel.setIcon(ImagesHolder.Acura_ELIcon);
+			Labels.Acura_ELLabel.setIcon(new ImageIcon(ImagesHolder.Acura_ELIcon));
 			Labels.Acura_ELLabel.setText("Acura EL");
 		}
 		if(CarsLv6.cars[51] == 1){
-			Labels.Bugatti_VeyronLabel.setIcon(ImagesHolder.Bugatti_VeyronIcon);
+			Labels.Bugatti_VeyronLabel.setIcon(new ImageIcon(ImagesHolder.Bugatti_VeyronIcon));
 			Labels.Bugatti_VeyronLabel.setText("Bugatti Veyron");
 		}
 		if(CarsLv6.cars[55] == 1){
-			Labels.Mercedes_Benz_SL600Label.setIcon(ImagesHolder.Mercedes_Benz_SL600Icon);
+			Labels.Mercedes_Benz_SL600Label.setIcon(new ImageIcon(ImagesHolder.Mercedes_Benz_SL600Icon));
 			Labels.Mercedes_Benz_SL600Label.setText("Mercedes Benz SL600");
 		}
 		if(CarsLv6.cars[59] == 1){
-			Labels.Rolls_Royce_SilverLabel.setIcon(ImagesHolder.Rolls_Royce_SilverIcon);
+			Labels.Rolls_Royce_SilverLabel.setIcon(new ImageIcon(ImagesHolder.Rolls_Royce_SilverIcon));
 			Labels.Rolls_Royce_SilverLabel.setText("Rolls Royce Silver");
 		}
 		if(CarsLv6.cars[63] == 1){
-			Labels.Mini_PacemanLabel.setIcon(ImagesHolder.Mini_PacemanIcon);
+			Labels.Mini_PacemanLabel.setIcon(new ImageIcon(ImagesHolder.Mini_PacemanIcon));
 			Labels.Mini_PacemanLabel.setText("Mini Paceman");
 		}
 		if(CarsLv6.cars[67] == 1){
-			Labels.Hyundai_ExcelLabel.setIcon(ImagesHolder.Hyundai_ExcelIcon);
+			Labels.Hyundai_ExcelLabel.setIcon(new ImageIcon(ImagesHolder.Hyundai_ExcelIcon));
 			Labels.Hyundai_ExcelLabel.setText("Hyundai Excel");
 		}
 		if(CarsLv6.cars[71] == 1){
-			Labels.Gaz_24Label.setIcon(ImagesHolder.Gaz_24Icon);
+			Labels.Gaz_24Label.setIcon(new ImageIcon(ImagesHolder.Gaz_24Icon));
 			Labels.Gaz_24Label.setText("Gaz 24");
 		}
 		if(CarsLv6.cars[75] == 1){
-			Labels.Peugeot_107Label.setIcon(ImagesHolder.Peugeot_107Icon);
+			Labels.Peugeot_107Label.setIcon(new ImageIcon(ImagesHolder.Peugeot_107Icon));
 			Labels.Peugeot_107Label.setText("Peugeot 107");
 		}
 		if(CarsLv6.cars[79] == 1){
-			Labels.Audi_A4Label.setIcon(ImagesHolder.Audi_A4Icon);
+			Labels.Audi_A4Label.setIcon(new ImageIcon(ImagesHolder.Audi_A4Icon));
 			Labels.Audi_A4Label.setText("Audi A4");
 		}
 		if(CarsLv7.cars[3] == 1){
-			Labels.Lamborghini_AventadorLabel.setIcon(ImagesHolder.Lamborghini_AventadorIcon);
+			Labels.Lamborghini_AventadorLabel.setIcon(new ImageIcon(ImagesHolder.Lamborghini_AventadorIcon));
 			Labels.Lamborghini_AventadorLabel.setText("Lamborghini Aventador");
 		}
 		if(CarsLv7.cars[5] == 1){
-			Labels.Nissan_350zLabel.setIcon(ImagesHolder.Nissan_350zIcon);
+			Labels.Nissan_350zLabel.setIcon(new ImageIcon(ImagesHolder.Nissan_350zIcon));
 			Labels.Nissan_350zLabel.setText("Nissan 350z");
 		}
 		if(CarsLv7.cars[11] == 1){
-			Labels.Jaguar_XJ6Label.setIcon(ImagesHolder.Jaguar_XJ6Icon);
+			Labels.Jaguar_XJ6Label.setIcon(new ImageIcon(ImagesHolder.Jaguar_XJ6Icon));
 			Labels.Jaguar_XJ6Label.setText("Jaguar XJ6");
 		}
 		if(CarsLv7.cars[15] == 1){
-			Labels.Renault_ClioLabel.setIcon(ImagesHolder.Renault_ClioIcon);
+			Labels.Renault_ClioLabel.setIcon(new ImageIcon(ImagesHolder.Renault_ClioIcon));
 			Labels.Renault_ClioLabel.setText("Renault Clio");
 		}
 		if(CarsLv7.cars[19] == 1){
-			Labels.Toyota_AvensisLabel.setIcon(ImagesHolder.Toyota_AvensisIcon);
+			Labels.Toyota_AvensisLabel.setIcon(new ImageIcon(ImagesHolder.Toyota_AvensisIcon));
 			Labels.Toyota_AvensisLabel.setText("Toyota Avensis");
 		}
 		if(CarsLv7.cars[23] == 1){
-			Labels.Subaru_OutbackLabel.setIcon(ImagesHolder.Subaru_OutbackIcon);
+			Labels.Subaru_OutbackLabel.setIcon(new ImageIcon(ImagesHolder.Subaru_OutbackIcon));
 			Labels.Subaru_OutbackLabel.setText("Subaru Outback");
 		}
 		if(CarsLv7.cars[27] == 1){
-			Labels.Saab_900Label.setIcon(ImagesHolder.Saab_900Icon);
+			Labels.Saab_900Label.setIcon(new ImageIcon(ImagesHolder.Saab_900Icon));
 			Labels.Saab_900Label.setText("Saab 900");
 		}
 		if(CarsLv7.cars[31] == 1){
-			Labels.Opel_VectraLabel.setIcon(ImagesHolder.Opel_VectraIcon);
+			Labels.Opel_VectraLabel.setIcon(new ImageIcon(ImagesHolder.Opel_VectraIcon));
 			Labels.Opel_VectraLabel.setText("Opel Vectra");
 		}
 		if(CarsLv7.cars[35] == 1){
-			Labels.Chrysler_ChargerLabel.setIcon(ImagesHolder.Chrysler_ChargerIcon);
+			Labels.Chrysler_ChargerLabel.setIcon(new ImageIcon(ImagesHolder.Chrysler_ChargerIcon));
 			Labels.Chrysler_ChargerLabel.setText("Chrysler Charger");
 		}
 		if(CarsLv7.cars[39] == 1){
-			Labels.Ferrari_348Label.setIcon(ImagesHolder.Ferrari_348Icon);
+			Labels.Ferrari_348Label.setIcon(new ImageIcon(ImagesHolder.Ferrari_348Icon));
 			Labels.Ferrari_348Label.setText("Ferrari 348");
 		}
 		if(CarsLv7.cars[43] == 1){
-			Labels.Hyundai_XGLabel.setIcon(ImagesHolder.Hyundai_XGIcon);
+			Labels.Hyundai_XGLabel.setIcon(new ImageIcon(ImagesHolder.Hyundai_XGIcon));
 			Labels.Hyundai_XGLabel.setText("Hyundai XG");
 		}
 		if(CarsLv7.cars[47] == 1){
-			Labels.Lexus_RXLabel.setIcon(ImagesHolder.Lexus_RXIcon);
+			Labels.Lexus_RXLabel.setIcon(new ImageIcon(ImagesHolder.Lexus_RXIcon));
 			Labels.Lexus_RXLabel.setText("Lexus RX");
 		}
 		if(CarsLv7.cars[51] == 1){
-			Labels.Dodge_400Label.setIcon(ImagesHolder.Dodge_400Icon);
+			Labels.Dodge_400Label.setIcon(new ImageIcon(ImagesHolder.Dodge_400Icon));
 			Labels.Dodge_400Label.setText("Dodge 400");
 		}
 		if(CarsLv7.cars[55] == 1){
-			Labels.GMC_TerrainLabel.setIcon(ImagesHolder.GMC_TerrainIcon);
+			Labels.GMC_TerrainLabel.setIcon(new ImageIcon(ImagesHolder.GMC_TerrainIcon));
 			Labels.GMC_TerrainLabel.setText("GMC Terrain");
 		}
 		if(CarsLv7.cars[59] == 1){
-			Labels.Volvo_C70Label.setIcon(ImagesHolder.Volvo_C70Icon);
+			Labels.Volvo_C70Label.setIcon(new ImageIcon(ImagesHolder.Volvo_C70Icon));
 			Labels.Volvo_C70Label.setText("Volvo C70");
 		}
 		if(CarsLv7.cars[63] == 1){
-			Labels.Ford_SierraLabel.setIcon(ImagesHolder.Ford_SierraIcon);
+			Labels.Ford_SierraLabel.setIcon(new ImageIcon(ImagesHolder.Ford_SierraIcon));
 			Labels.Ford_SierraLabel.setText("Ford Sierra");
 		}
 		if(CarsLv7.cars[67] == 1){
-			Labels.Subaru_ImprezaLabel.setIcon(ImagesHolder.Subaru_ImprezaIcon);
+			Labels.Subaru_ImprezaLabel.setIcon(new ImageIcon(ImagesHolder.Subaru_ImprezaIcon));
 			Labels.Subaru_ImprezaLabel.setText("Subaru Impreza");
 		}
 		if(CarsLv7.cars[71] == 1){
-			Labels.BMW_e90Label.setIcon(ImagesHolder.BMW_e90Icon);
+			Labels.BMW_e90Label.setIcon(new ImageIcon(ImagesHolder.BMW_e90Icon));
 			Labels.BMW_e90Label.setText("BMW e90");
 		}
 		if(CarsLv7.cars[75] == 1){
-			Labels.Nissan_SkylineLabel.setIcon(ImagesHolder.Nissan_SkylineIcon);
+			Labels.Nissan_SkylineLabel.setIcon(new ImageIcon(ImagesHolder.Nissan_SkylineIcon));
 			Labels.Nissan_SkylineLabel.setText("Nissan Skyline");
 		}
 		if(CarsLv7.cars[79] == 1){
-			Labels.Audi_Q7Label.setIcon(ImagesHolder.Audi_Q7Icon);
+			Labels.Audi_Q7Label.setIcon(new ImageIcon(ImagesHolder.Audi_Q7Icon));
 			Labels.Audi_Q7Label.setText("Audi Q7");
 		}
 		if(CarsLv8.cars[3] == 1){
-			Labels.Bentley_ArnageLabel.setIcon(ImagesHolder.Bentley_ArnageIcon);
+			Labels.Bentley_ArnageLabel.setIcon(new ImageIcon(ImagesHolder.Bentley_ArnageIcon));
 			Labels.Bentley_ArnageLabel.setText("Bentley Arnage");
 		}
 		if(CarsLv8.cars[7] == 1){
-			Labels.Volvo_850Label.setIcon(ImagesHolder.Volvo_850Icon);
+			Labels.Volvo_850Label.setIcon(new ImageIcon(ImagesHolder.Volvo_850Icon));
 			Labels.Volvo_850Label.setText("Volvo 850");
 		}
 		if(CarsLv8.cars[11] == 1){
-			Labels.Toyota_Rav4Label.setIcon(ImagesHolder.Toyota_Rav4Icon);
+			Labels.Toyota_Rav4Label.setIcon(new ImageIcon(ImagesHolder.Toyota_Rav4Icon));
 			Labels.Toyota_Rav4Label.setText("Toyota Rav4");
 		}
 		if(CarsLv8.cars[15] == 1){
-			Labels.Ford_FocusLabel.setIcon(ImagesHolder.Ford_FocusIcon);
+			Labels.Ford_FocusLabel.setIcon(new ImageIcon(ImagesHolder.Ford_FocusIcon));
 			Labels.Ford_FocusLabel.setText("Ford Focus");
 		}
 		if(CarsLv8.cars[19] == 1){
-			Labels.Chevrolet_SpinLabel.setIcon(ImagesHolder.Chevrolet_SpinIcon);
+			Labels.Chevrolet_SpinLabel.setIcon(new ImageIcon(ImagesHolder.Chevrolet_SpinIcon));
 			Labels.Chevrolet_SpinLabel.setText("Chevrolet Spin");
 		}
 		if(CarsLv8.cars[23] == 1){
-			Labels.Bentley_GTZLabel.setIcon(ImagesHolder.Bentley_GTZIcon);
+			Labels.Bentley_GTZLabel.setIcon(new ImageIcon(ImagesHolder.Bentley_GTZIcon));
 			Labels.Bentley_GTZLabel.setText("Bentley GTZ");
 		}
 		if(CarsLv8.cars[27] == 1){
-			Labels.Lexus_LSLabel.setIcon(ImagesHolder.Lexus_LSIcon);
+			Labels.Lexus_LSLabel.setIcon(new ImageIcon(ImagesHolder.Lexus_LSIcon));
 			Labels.Lexus_LSLabel.setText("Lexus LS");
 		}
 		if(CarsLv8.cars[31] == 1){
-			Labels.Land_Rover_RangeRoverLabel.setIcon(ImagesHolder.Land_Rover_RangeRoverIcon);
+			Labels.Land_Rover_RangeRoverLabel.setIcon(new ImageIcon(ImagesHolder.Land_Rover_RangeRoverIcon));
 			Labels.Land_Rover_RangeRoverLabel.setText("Land Rover RangeRover");
 		}
 		if(CarsLv8.cars[35] == 1){
-			Labels.Lexus_GXLabel.setIcon(ImagesHolder.Lexus_GXIcon);
+			Labels.Lexus_GXLabel.setIcon(new ImageIcon(ImagesHolder.Lexus_GXIcon));
 			Labels.Lexus_GXLabel.setText("Lexus GX");
 		}
 		if(CarsLv8.cars[39] == 1){
-			Labels.Jeep_WranglerLabel.setIcon(ImagesHolder.Jeep_WranglerIcon);
+			Labels.Jeep_WranglerLabel.setIcon(new ImageIcon(ImagesHolder.Jeep_WranglerIcon));
 			Labels.Jeep_WranglerLabel.setText("Jeep Wrangler");
 		}
 		if(CarsLv8.cars[43] == 1){
-			Labels.Maserati_GranTurismoLabel.setIcon(ImagesHolder.Maserati_GranTurismoIcon);
+			Labels.Maserati_GranTurismoLabel.setIcon(new ImageIcon(ImagesHolder.Maserati_GranTurismoIcon));
 			Labels.Maserati_GranTurismoLabel.setText("Maserati GranTurismo");
 		}
 		if(CarsLv8.cars[47] == 1){
-			Labels.Koenigsegg_AgeraLabel.setIcon(ImagesHolder.Koenigsegg_AgeraIcon);
+			Labels.Koenigsegg_AgeraLabel.setIcon(new ImageIcon(ImagesHolder.Koenigsegg_AgeraIcon));
 			Labels.Koenigsegg_AgeraLabel.setText("Koenigsegg Agera");
 		}
 		if(CarsLv8.cars[51] == 1){
-			Labels.Acura_MDXLabel.setIcon(ImagesHolder.Acura_MDXIcon);
+			Labels.Acura_MDXLabel.setIcon(new ImageIcon(ImagesHolder.Acura_MDXIcon));
 			Labels.Acura_MDXLabel.setText("Acura MDX");
 		}
 		if(CarsLv8.cars[55] == 1){
-			Labels.Audi_RS6Label.setIcon(ImagesHolder.Audi_RS6Icon);
+			Labels.Audi_RS6Label.setIcon(new ImageIcon(ImagesHolder.Audi_RS6Icon));
 			Labels.Audi_RS6Label.setText("Audi RS6");
 		}
 		if(CarsLv8.cars[59] == 1){
-			Labels.Cadilliac_DeVilleLabel.setIcon(ImagesHolder.Cadilliac_DeVilleIcon);
+			Labels.Cadilliac_DeVilleLabel.setIcon(new ImageIcon(ImagesHolder.Cadilliac_DeVilleIcon));
 			Labels.Cadilliac_DeVilleLabel.setText("Cadilliac DeVille");
 		}
 		if(CarsLv8.cars[63] == 1){
-			Labels.McLaren_VenenoLabel.setIcon(ImagesHolder.McLaren_VenenoIcon);
+			Labels.McLaren_VenenoLabel.setIcon(new ImageIcon(ImagesHolder.McLaren_VenenoIcon));
 			Labels.McLaren_VenenoLabel.setText("McLaren Veneno");
 		}
 		if(CarsLv8.cars[67] == 1){
-			Labels.Tesla_XLabel.setIcon(ImagesHolder.Tesla_XIcon);
+			Labels.Tesla_XLabel.setIcon(new ImageIcon(ImagesHolder.Tesla_XIcon));
 			Labels.Tesla_XLabel.setText("Tesla X");
 		}
 		if(CarsLv8.cars[71] == 1){
-			Labels.Mercedes_Benz_G55Label.setIcon(ImagesHolder.Mercedes_Benz_G55Icon);
+			Labels.Mercedes_Benz_G55Label.setIcon(new ImageIcon(ImagesHolder.Mercedes_Benz_G55Icon));
 			Labels.Mercedes_Benz_G55Label.setText("Mercedes Benz G55");
 		}
 		if(CarsLv8.cars[75] == 1){
-			Labels.Lancia_LybraLabel.setIcon(ImagesHolder.Lancia_LybraIcon);
+			Labels.Lancia_LybraLabel.setIcon(new ImageIcon(ImagesHolder.Lancia_LybraIcon));
 			Labels.Lancia_LybraLabel.setText("Lancia Lybra");
 		}
 		if(CarsLv8.cars[79] == 1){
-			Labels.Infiniti_QX60Label.setIcon(ImagesHolder.Infiniti_QX60Icon);
+			Labels.Infiniti_QX60Label.setIcon(new ImageIcon(ImagesHolder.Infiniti_QX60Icon));
 			Labels.Infiniti_QX60Label.setText("Infiniti QX60");
 		}
 		if(CarsLv9.cars[3] == 1){
-			Labels.Kia_ForteLabel.setIcon(ImagesHolder.Kia_ForteIcon);
+			Labels.Kia_ForteLabel.setIcon(new ImageIcon(ImagesHolder.Kia_ForteIcon));
 			Labels.Kia_ForteLabel.setText("Kia Forte");
 		}
 		if(CarsLv9.cars[7] == 1){
-			Labels.Lancia_VoyagerLabel.setIcon(ImagesHolder.Lancia_VoyagerIcon);
+			Labels.Lancia_VoyagerLabel.setIcon(new ImageIcon(ImagesHolder.Lancia_VoyagerIcon));
 			Labels.Lancia_VoyagerLabel.setText("Lancia Voyager");
 		}
 		if(CarsLv9.cars[11] == 1){
-			Labels.Porsche_CayenneLabel.setIcon(ImagesHolder.Porsche_CayenneIcon);
+			Labels.Porsche_CayenneLabel.setIcon(new ImageIcon(ImagesHolder.Porsche_CayenneIcon));
 			Labels.Porsche_CayenneLabel.setText("Porsche Cayenne");
 		}
 		if(CarsLv9.cars[15] == 1){
-			Labels.McLaren_650sLabel.setIcon(ImagesHolder.McLaren_650sIcon);
+			Labels.McLaren_650sLabel.setIcon(new ImageIcon(ImagesHolder.McLaren_650sIcon));
 			Labels.McLaren_650sLabel.setText("McLaren 650s");
 		}
 		if(CarsLv9.cars[19] == 1){
-			Labels.Jaguar_E_TypeLabel.setIcon(ImagesHolder.Jaguar_E_TypeIcon);
+			Labels.Jaguar_E_TypeLabel.setIcon(new ImageIcon(ImagesHolder.Jaguar_E_TypeIcon));
 			Labels.Jaguar_E_TypeLabel.setText("Jaguar E-Type");
 		}
 		if(CarsLv9.cars[23] == 1){
-			Labels.Peugeot_601Label.setIcon(ImagesHolder.Peugeot_601Icon);
+			Labels.Peugeot_601Label.setIcon(new ImageIcon(ImagesHolder.Peugeot_601Icon));
 			Labels.Peugeot_601Label.setText("Peugeot 601");
 		}
 		if(CarsLv9.cars[27] == 1){
-			Labels.Jaguar_F_TypeLabel.setIcon(ImagesHolder.Jaguar_F_TypeIcon);
+			Labels.Jaguar_F_TypeLabel.setIcon(new ImageIcon(ImagesHolder.Jaguar_F_TypeIcon));
 			Labels.Jaguar_F_TypeLabel.setText("Jaguar F-Type");
 		}
 		if(CarsLv9.cars[31] == 1){
-			Labels.Fiat_DobloLabel.setIcon(ImagesHolder.Fiat_DobloIcon);
+			Labels.Fiat_DobloLabel.setIcon(new ImageIcon(ImagesHolder.Fiat_DobloIcon));
 			Labels.Fiat_DobloLabel.setText("Fiat Doblo");
 		}
 		if(CarsLv9.cars[35] == 1){
-			Labels.Vaz_2101Label.setIcon(ImagesHolder.Vaz_2101Icon);
+			Labels.Vaz_2101Label.setIcon(new ImageIcon(ImagesHolder.Vaz_2101Icon));
 			Labels.Vaz_2101Label.setText("Vaz 2101");
 		}
 		if(CarsLv9.cars[39] == 1){
-			Labels.McLaren_P1Label.setIcon(ImagesHolder.McLaren_P1Icon);
+			Labels.McLaren_P1Label.setIcon(new ImageIcon(ImagesHolder.McLaren_P1Icon));
 			Labels.McLaren_P1Label.setText("McLaren P1");
 		}
 		if(CarsLv9.cars[43] == 1){
-			Labels.Peugeot_405Label.setIcon(ImagesHolder.Peugeot_405Icon);
+			Labels.Peugeot_405Label.setIcon(new ImageIcon(ImagesHolder.Peugeot_405Icon));
 			Labels.Peugeot_405Label.setText("Peugeot 405");
 		}
 		if(CarsLv9.cars[47] == 1){
-			Labels.GMC_EnvoyLabel.setIcon(ImagesHolder.GMC_EnvoyIcon);
+			Labels.GMC_EnvoyLabel.setIcon(new ImageIcon(ImagesHolder.GMC_EnvoyIcon));
 			Labels.GMC_EnvoyLabel.setText("GMC Envoy");
 		}
 		if(CarsLv9.cars[51] == 1){
-			Labels.Chevrolet_CorveteLabel.setIcon(ImagesHolder.Chevrolet_CorveteIcon);
+			Labels.Chevrolet_CorveteLabel.setIcon(new ImageIcon(ImagesHolder.Chevrolet_CorveteIcon));
 			Labels.Chevrolet_CorveteLabel.setText("Chevrolet Corvete");
 		}
 		if(CarsLv9.cars[55] == 1){
-			Labels.Pagani_HuayraLabel.setIcon(ImagesHolder.Pagani_HuayraIcon);
+			Labels.Pagani_HuayraLabel.setIcon(new ImageIcon(ImagesHolder.Pagani_HuayraIcon));
 			Labels.Pagani_HuayraLabel.setText("Pagani Huayra");
 		}
 		if(CarsLv9.cars[59] == 1){
-			Labels.Moskvich_402Label.setIcon(ImagesHolder.Moskvich_402Icon);
+			Labels.Moskvich_402Label.setIcon(new ImageIcon(ImagesHolder.Moskvich_402Icon));
 			Labels.Moskvich_402Label.setText("Moskvich 402");
 		}
 		if(CarsLv9.cars[63] == 1){
-			Labels.Alfa_Romeo_159Label.setIcon(ImagesHolder.Alfa_Romeo_159Icon);
+			Labels.Alfa_Romeo_159Label.setIcon(new ImageIcon(ImagesHolder.Alfa_Romeo_159Icon));
 			Labels.Alfa_Romeo_159Label.setText("Alfa Romeo 159");
 		}
 		if(CarsLv9.cars[67] == 1){
-			Labels.Renault_FregateLabel.setIcon(ImagesHolder.Renault_FregateIcon);
+			Labels.Renault_FregateLabel.setIcon(new ImageIcon(ImagesHolder.Renault_FregateIcon));
 			Labels.Renault_FregateLabel.setText("Renault Fregate");
 		}
 		if(CarsLv9.cars[71] == 1){
-			Labels.Mini_CooperLabel.setIcon(ImagesHolder.Mini_CooperIcon);
+			Labels.Mini_CooperLabel.setIcon(new ImageIcon(ImagesHolder.Mini_CooperIcon));
 			Labels.Mini_CooperLabel.setText("Mini Cooper");
 		}
 		if(CarsLv9.cars[75] == 1){
-			Labels.Dodge_ViperLabel.setIcon(ImagesHolder.Dodge_ViperIcon);
+			Labels.Dodge_ViperLabel.setIcon(new ImageIcon(ImagesHolder.Dodge_ViperIcon));
 			Labels.Dodge_ViperLabel.setText("Dodge Viper");
 		}
 		if(CarsLv9.cars[79] == 1){
-			Labels.Vaz_NivaLabel.setIcon(ImagesHolder.Vaz_NivaIcon);
+			Labels.Vaz_NivaLabel.setIcon(new ImageIcon(ImagesHolder.Vaz_NivaIcon));
 			Labels.Vaz_NivaLabel.setText("Vaz Niva");
 		}
 		if(CarsLv10.cars[3] == 1){
-			Labels.Jaguar_X_TypeLabel.setIcon(ImagesHolder.Jaguar_X_TypeIcon);
+			Labels.Jaguar_X_TypeLabel.setIcon(new ImageIcon(ImagesHolder.Jaguar_X_TypeIcon));
 			Labels.Jaguar_X_TypeLabel.setText("Jaguar X-Type");
 		}
 		if(CarsLv10.cars[7] == 1){
-			Labels.Ferrari_308Label.setIcon(ImagesHolder.Ferrari_308Icon);
+			Labels.Ferrari_308Label.setIcon(new ImageIcon(ImagesHolder.Ferrari_308Icon));
 			Labels.Ferrari_308Label.setText("Ferrari 308");
 		}
 		if(CarsLv10.cars[11] == 1){
-			Labels.Mazda_626Label.setIcon(ImagesHolder.Mazda_626Icon);
+			Labels.Mazda_626Label.setIcon(new ImageIcon(ImagesHolder.Mazda_626Icon));
 			Labels.Mazda_626Label.setText("Mazda 626");
 		}
 		if(CarsLv10.cars[15] == 1){
-			Labels.Maserati_ShamalLabel.setIcon(ImagesHolder.Maserati_ShamalIcon);
+			Labels.Maserati_ShamalLabel.setIcon(new ImageIcon(ImagesHolder.Maserati_ShamalIcon));
 			Labels.Maserati_ShamalLabel.setText("Maserati Shamal");
 		}
 		if(CarsLv10.cars[19] == 1){
-			Labels.Nissan_240sxLabel.setIcon(ImagesHolder.Nissan_240sxIcon);
+			Labels.Nissan_240sxLabel.setIcon(new ImageIcon(ImagesHolder.Nissan_240sxIcon));
 			Labels.Nissan_240sxLabel.setText("Nissan 240sx");
 		}
 		if(CarsLv10.cars[23] == 1){
-			Labels.Alfa_Romeo_4CLabel.setIcon(ImagesHolder.Alfa_Romeo_4CIcon);
+			Labels.Alfa_Romeo_4CLabel.setIcon(new ImageIcon(ImagesHolder.Alfa_Romeo_4CIcon));
 			Labels.Alfa_Romeo_4CLabel.setText("Alfa Romeo 4C");
 		}
 		if(CarsLv10.cars[27] == 1){
-			Labels.Nissan_JukeLabel.setIcon(ImagesHolder.Nissan_JukeIcon);
+			Labels.Nissan_JukeLabel.setIcon(new ImageIcon(ImagesHolder.Nissan_JukeIcon));
 			Labels.Nissan_JukeLabel.setText("Nissan Juke");
 		}
 		if(CarsLv10.cars[31] == 1){
-			Labels.Volkswagen_Golf1Label.setIcon(ImagesHolder.Volkswagen_Golf1Icon);
+			Labels.Volkswagen_Golf1Label.setIcon(new ImageIcon(ImagesHolder.Volkswagen_Golf1Icon));
 			Labels.Volkswagen_Golf1Label.setText("Volkswagen Golf1");
 		}
 		if(CarsLv10.cars[35] == 1){
-			Labels.Jeep_GladiatorLabel.setIcon(ImagesHolder.Jeep_GladiatorIcon);
+			Labels.Jeep_GladiatorLabel.setIcon(new ImageIcon(ImagesHolder.Jeep_GladiatorIcon));
 			Labels.Jeep_GladiatorLabel.setText("Jeep Gladiator");
 		}
 		if(CarsLv10.cars[39] == 1){
-			Labels.Dodge_MatadorLabel.setIcon(ImagesHolder.Dodge_MatadorIcon);
+			Labels.Dodge_MatadorLabel.setIcon(new ImageIcon(ImagesHolder.Dodge_MatadorIcon));
 			Labels.Dodge_MatadorLabel.setText("Dodge Matador");
 		}
 		if(CarsLv10.cars[43] == 1){
-			Labels.Bugatti_RoyaleLabel.setIcon(ImagesHolder.Bugatti_RoyaleIcon);
+			Labels.Bugatti_RoyaleLabel.setIcon(new ImageIcon(ImagesHolder.Bugatti_RoyaleIcon));
 			Labels.Bugatti_RoyaleLabel.setText("Bugatti Royale");
 		}
 		if(CarsLv10.cars[47] == 1){
-			Labels.Citroen_CXLabel.setIcon(ImagesHolder.Citroen_CXIcon);
+			Labels.Citroen_CXLabel.setIcon(new ImageIcon(ImagesHolder.Citroen_CXIcon));
 			Labels.Citroen_CXLabel.setText("Citroen CX");
 		}
 		if(CarsLv10.cars[51] == 1){
-			Labels.Lamborghini_350GTLabel.setIcon(ImagesHolder.Lamborghini_350GTIcon);
+			Labels.Lamborghini_350GTLabel.setIcon(new ImageIcon(ImagesHolder.Lamborghini_350GTIcon));
 			Labels.Lamborghini_350GTLabel.setText("Lamborghini 350GT");
 		}
 		if(CarsLv10.cars[55] == 1){
-			Labels.Mitsubishi_GTOLabel.setIcon(ImagesHolder.Mitsubishi_GTOIcon);
+			Labels.Mitsubishi_GTOLabel.setIcon(new ImageIcon(ImagesHolder.Mitsubishi_GTOIcon));
 			Labels.Mitsubishi_GTOLabel.setText("Mitsubishi GTO");
 		}
 		if(CarsLv10.cars[59] == 1){
-			Labels.Buick_InvictaLabel.setIcon(ImagesHolder.Buick_InvictaIcon);
+			Labels.Buick_InvictaLabel.setIcon(new ImageIcon(ImagesHolder.Buick_InvictaIcon));
 			Labels.Buick_InvictaLabel.setText("Buick Invicta");
 		}
 		if(CarsLv10.cars[63] == 1){
-			Labels.Porsche_911Label.setIcon(ImagesHolder.Porsche_911Icon);
+			Labels.Porsche_911Label.setIcon(new ImageIcon(ImagesHolder.Porsche_911Icon));
 			Labels.Porsche_911Label.setText("Porsche 911");
 		}
 		if(CarsLv10.cars[67] == 1){
-			Labels.Subaru_ForesterLabel.setIcon(ImagesHolder.Subaru_ForesterIcon);
+			Labels.Subaru_ForesterLabel.setIcon(new ImageIcon(ImagesHolder.Subaru_ForesterIcon));
 			Labels.Subaru_ForesterLabel.setText("Subaru Forester");
 		}
 		if(CarsLv10.cars[71] == 1){
-			Labels.Citroen_BXLabel.setIcon(ImagesHolder.Citroen_BXIcon);
+			Labels.Citroen_BXLabel.setIcon(new ImageIcon(ImagesHolder.Citroen_BXIcon));
 			Labels.Citroen_BXLabel.setText("Citroen BX");
 		}
 		if(CarsLv10.cars[75] == 1){
-			Labels.Bugatti_Type252Label.setIcon(ImagesHolder.Bugatti_Type252Icon);
+			Labels.Bugatti_Type252Label.setIcon(new ImageIcon(ImagesHolder.Bugatti_Type252Icon));
 			Labels.Bugatti_Type252Label.setText("Bugatti Type252");
 		}
 		if(CarsLv10.cars[79] == 1){
-			Labels.Ferrari_488Label.setIcon(ImagesHolder.Ferrari_488Icon);
+			Labels.Ferrari_488Label.setIcon(new ImageIcon(ImagesHolder.Ferrari_488Icon));
 			Labels.Ferrari_488Label.setText("Ferrari 488");
 		}
     }
@@ -8554,18 +8554,18 @@ public class ClickerGame implements ActionListener {
                 if(CarMain.main[4] == 1){
                     Box.boxes[1] = Box.boxes[1] + 1;
                     Statistic.statistic[13] +=1;
-                    JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}                  
+                    JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}                  
                 if(CarMain.main[4] == 2){ 
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(2)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
                     	Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     }
                 if(CarMain.main[4] == 3){
                     Random randomGenerator = new Random();
@@ -8573,15 +8573,15 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
                     	Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                     	Box.boxes[5] = Box.boxes[5] + 1;
                     	Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     }
                 if(CarMain.main[4] == 4){
                     Random randomGenerator = new Random();
@@ -8589,19 +8589,19 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
                     	Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                     	Box.boxes[5] = Box.boxes[5] + 1;
                     	Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                     	Box.boxes[7] = Box.boxes[7] + 1;
                     	Statistic.statistic[16] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     }
                
                 if(CarMain.main[4] == 5){
@@ -8610,23 +8610,23 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                     	Box.boxes[3] = Box.boxes[3] + 1;
                     	Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                     	Box.boxes[5] = Box.boxes[5] + 1;
                     	Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                     	Box.boxes[7] = Box.boxes[7] + 1;
                     	Statistic.statistic[16] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 5){
                     	Box.boxes[9] = Box.boxes[9] + 1;
                     	Statistic.statistic[17] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     }
                
                 if(CarMain.main[4] == 6){
@@ -8635,27 +8635,27 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
                         Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
                         Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
                         Statistic.statistic[16] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
                         Statistic.statistic[17] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
                         Statistic.statistic[18] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     }
                 if(CarMain.main[4] == 7){
                     Random randomGenerator = new Random();
@@ -8663,31 +8663,31 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
                         Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
                         Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
                         Statistic.statistic[16] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
                         Statistic.statistic[17] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
                         Statistic.statistic[18] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
                         Statistic.statistic[19] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     }              
                 if(CarMain.main[4] == 8){
                     Random randomGenerator = new Random();
@@ -8695,35 +8695,35 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
                         Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
                         Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
                         Statistic.statistic[16] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
                         Statistic.statistic[17] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
                         Statistic.statistic[18] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
                         Statistic.statistic[19] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     if (randomInt == 8){
                         Box.boxes[15] = Box.boxes[15] + 1;
                         Statistic.statistic[20] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     }  
                 if(CarMain.main[4] == 9){
                     Random randomGenerator = new Random();
@@ -8731,73 +8731,73 @@ public class ClickerGame implements ActionListener {
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
                         Statistic.statistic[13] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
                         Statistic.statistic[14] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
                         Statistic.statistic[15] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
                         Statistic.statistic[16] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
                         Statistic.statistic[17] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
                         Statistic.statistic[18] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
                         Statistic.statistic[19] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     if (randomInt == 8){
                         Box.boxes[15] = Box.boxes[15] + 1;
                         Statistic.statistic[20] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     if (randomInt == 9){
                         Box.boxes[17] = Box.boxes[17] + 1;
                         Statistic.statistic[21] +=1;
-                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv9_10Icon));}
                     }  
                 if(CarMain.main[4] == 10){
                     Random randomGenerator = new Random();
                     int randomInt = randomGenerator.nextInt(10)+1;
                     if (randomInt == 1){
                         Box.boxes[1] = Box.boxes[1] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 1 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 2){
                         Box.boxes[3] = Box.boxes[3] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 2 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
                     if (randomInt == 3){
                         Box.boxes[5] = Box.boxes[5] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 3 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 4){
                         Box.boxes[7] = Box.boxes[7] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 4 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
                     if (randomInt == 5){
                         Box.boxes[9] = Box.boxes[9] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 5 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 6){
                         Box.boxes[11] = Box.boxes[11] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 6 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
                     if (randomInt == 7){
                         Box.boxes[13] = Box.boxes[13] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 7 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     if (randomInt == 8){
                         Box.boxes[15] = Box.boxes[15] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 8 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
                     if (randomInt == 9){
                         Box.boxes[17] = Box.boxes[17] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}                  
+                        JOptionPane.showMessageDialog (null, "You have gained 9 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv9_10Icon));}                  
                     if (randomInt == 10){
                         Box.boxes[19] = Box.boxes[19] + 1;
-                        JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
+                        JOptionPane.showMessageDialog (null, "You have gained 10 LVL box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv9_10Icon));}
                     }     
             }
         }    
@@ -8810,13 +8810,13 @@ public class ClickerGame implements ActionListener {
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[5] = CarMain.main[5] + 1;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[5] + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.PlayerIcon);}                      	
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[5] + " Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.PlayerIcon));}                      	
                    	else{                       	
-                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}               
+                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}               
                    }            		   
         	}
         	if (CarMain.main[5] == 10){
- 			   JOptionPane.showMessageDialog(null, "You have gained MAX Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+ 			   JOptionPane.showMessageDialog(null, "You have gained MAX Player level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
  		   }
         } 
         
@@ -8830,13 +8830,13 @@ public class ClickerGame implements ActionListener {
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[6] = CarMain.main[6] + 1;
                    		CarMain.main[7] = CarMain.main[7] + 25;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[6] + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GarageIcon);}                      	
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[6] + " garage level. Now you can carry 25 more cars!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.GarageIcon));}                      	
                    	else{                       	
-                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}               
+                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}               
                    }            		   
         	}
         	if (CarMain.main[6] == 10){
- 			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+ 			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
  		   }
         } 
         
@@ -8849,13 +8849,13 @@ public class ClickerGame implements ActionListener {
                    	if (CarMain.main[0] >= 100*i){
                    		CarMain.main[0] = CarMain.main[0] - (100*i);
                    		CarMain.main[4] = CarMain.main[4] + 1;
-                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[4] + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}                      	
+                   		JOptionPane.showMessageDialog (null, "You have purchased " + CarMain.main[4] + " BOX level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv9_10Icon));}                      	
                    	else{                       	
-                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}               
+                   		JOptionPane.showMessageDialog (null, "You dont have enought money. This Upgrade costs 100*Next LVL!", "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}               
                    }
         	}
         	if (CarMain.main[4] == 10){
-  			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+  			   JOptionPane.showMessageDialog(null, "You have gained MAX Garage level!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
   		   }
         }
         
@@ -8868,13 +8868,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[1] = CarFrame.frames[1] + 1;
         			Statistic.statistic[23] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[0]; 
-        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[0], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -8887,13 +8887,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[3] = CarFrame.frames[3] + 1;
         			Statistic.statistic[24] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[2];
-        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[2], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[2], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -8906,13 +8906,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[5] = CarFrame.frames[5] + 1;
         			Statistic.statistic[25] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[4];
-        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[4], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[4], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -8925,13 +8925,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[7] = CarFrame.frames[7] + 1;
         			Statistic.statistic[26] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[6];
-        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[6], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[6], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -8944,13 +8944,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[9] = CarFrame.frames[9] + 1;
         			Statistic.statistic[27] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[8];
-        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[8], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[8], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -8963,13 +8963,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[11] = CarFrame.frames[11] + 1;
         			Statistic.statistic[28] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[10];
-        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[10], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[10], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -8982,13 +8982,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[13] = CarFrame.frames[13] + 1;
         			Statistic.statistic[29] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[12];
-        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[12], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[12], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -9001,13 +9001,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[15] = CarFrame.frames[15] + 1;
         			Statistic.statistic[30] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[14];
-        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[14], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[14], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -9020,13 +9020,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[17] = CarFrame.frames[17] + 1;
         			Statistic.statistic[31] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[16];
-        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[16], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[16], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -9039,13 +9039,13 @@ public class ClickerGame implements ActionListener {
         			CarFrame.frames[19] = CarFrame.frames[19] + 1;
         			Statistic.statistic[32] +=1;
         			CarMain.main[0] = CarMain.main[0] - CarFrame.frames[18];
-        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CarFrameIcon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Car Frame!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CarFrameIcon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[18], "No money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This frame costs: " + CarFrame.frames[18], "No money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));
         		}
         	}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         }
         
@@ -9058,12 +9058,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[1] = Box.boxes[1] + 1;
         			Statistic.statistic[3] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[0];
-        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 1 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[0], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[0], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9076,12 +9076,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[3] = Box.boxes[3] + 1;
         			Statistic.statistic[4] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[2];
-        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv1_2Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 2 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv1_2Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[2], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[2], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9094,12 +9094,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[5] = Box.boxes[5] + 1;
         			Statistic.statistic[5] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[4];
-        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 3 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[4], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[4], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9112,12 +9112,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[7] = Box.boxes[7] + 1;
         			Statistic.statistic[6] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[6];
-        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv3_4Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 4 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv3_4Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[6], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[6], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9130,12 +9130,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[9] = Box.boxes[9] + 1;
         			Statistic.statistic[7] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[8];
-        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 5 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[8], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[8], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9148,12 +9148,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[11] = Box.boxes[11] + 1;
         			Statistic.statistic[8] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[10];
-        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv5_6Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 6 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv5_6Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[10], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[10], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9166,12 +9166,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[13] = Box.boxes[13] + 1;
         			Statistic.statistic[9] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[12];;
-        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 7 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[12], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[12], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9184,12 +9184,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[15] = Box.boxes[15] + 1;
         			Statistic.statistic[10] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[14];
-        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv7_8Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 8 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv7_8Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[14], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[14], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9202,12 +9202,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[17] = Box.boxes[17] + 1;
         			Statistic.statistic[11] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[16];
-        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 9 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv9_10Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[16], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[16], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9220,12 +9220,12 @@ public class ClickerGame implements ActionListener {
         			Box.boxes[19] = Box.boxes[19] + 1;
         			Statistic.statistic[12] +=1;
         			CarMain.main[0] = CarMain.main[0] - Box.boxes[18];
-        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BoxLv9_10Icon);}
+        			JOptionPane.showMessageDialog(null, "You have bought 10 LVL Box!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BoxLv9_10Icon));}
         		else{
-        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[18], "No Money", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoMoneyIcon);}
+        			JOptionPane.showMessageDialog(null, "You don't have enought money! This Box costs: " + Box.boxes[18], "No Money", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoMoneyIcon));}
         		}
         	else{
-        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+        		JOptionPane.showMessageDialog(null, "You don't have enought Player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
         	}
         	}
         
@@ -9243,64 +9243,64 @@ public class ClickerGame implements ActionListener {
                  		    if (randomInt == 1){
                 		    	Part.parts[1] = Part.parts[1] + 1;
                 		    	Statistic.statistic[43] +=1;
-                 		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+                 		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
                 		    if (randomInt == 2){
                 		    	Part.parts[3] = Part.parts[3] + 1;
                 		    	Statistic.statistic[63] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
                 		    if (randomInt == 3){
                 		    	Part.parts[5] = Part.parts[5] + 1;
                 		    	Statistic.statistic[83] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
                 		    if (randomInt == 4){
                 		    	Part.parts[7] = Part.parts[7] + 1;
                 		    	Statistic.statistic[103] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
                 		    if (randomInt == 5){
                 		    	Part.parts[9] = Part.parts[9] + 1;
                 		    	Statistic.statistic[123] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
                 		    if (randomInt == 6){
                 		    	Part.parts[11] = Part.parts[11] + 1;   
                 		    	Statistic.statistic[143] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
                 		    if (randomInt == 7){
                 		    	Part.parts[13] = Part.parts[13] + 1;
                 		    	Statistic.statistic[163] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL !1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL !1", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
                 		    if (randomInt == 8){
                 		    	Part.parts[15] = Part.parts[15] + 1;
                 		    	Statistic.statistic[183] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
                 		    if (randomInt == 9){
                 		    	Part.parts[17] = Part.parts[17] + 1;
                 		    	Statistic.statistic[203] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
                 		    if (randomInt == 10){
                 		    	Part.parts[19] = Part.parts[19] + 1;
                 		    	Statistic.statistic[223] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
                 		    if (randomInt == 11){
                 		    	Part.parts[21] = Part.parts[21] + 1;
                 		    	Statistic.statistic[243] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
                 		    if (randomInt == 12){
                 		    	Part.parts[23] = Part.parts[23] + 1;
                 		    	Statistic.statistic[263] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
                 		    if (randomInt == 13){
                 		    	Part.parts[25] = Part.parts[25] + 1;
                 		    	Statistic.statistic[283] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
         					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 2 Button Click
@@ -9317,63 +9317,63 @@ public class ClickerGame implements ActionListener {
                 		    if (randomInt == 1){
                 		    	Part.parts[27] = Part.parts[27] + 1;
                 		    	Statistic.statistic[44] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
                 		    if (randomInt == 2){
                 		    	Part.parts[29] = Part.parts[29] + 1;
                 		    	Statistic.statistic[64] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
                 		    if (randomInt == 3){
                 		    	Part.parts[31] = Part.parts[31] + 1;
                 		    	Statistic.statistic[84] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
                 		    if (randomInt == 4){
                 		    	Part.parts[33] = Part.parts[33] + 1;
                 		    	Statistic.statistic[104] +=1;
-                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+                		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
                 		    if (randomInt == 5){
                 		    	Part.parts[35] = Part.parts[35] + 1;
                 		    	Statistic.statistic[124] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
                 		    if (randomInt == 6){
                 		    	Part.parts[37] = Part.parts[37] + 1;
                 		    	Statistic.statistic[144] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
                 		    if (randomInt == 7){
                 		    	Part.parts[39] = Part.parts[39] + 1;
                 		    	Statistic.statistic[164] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
                 		    if (randomInt == 8){
                 		    	Part.parts[41] = Part.parts[41] + 1;
                 		    	Statistic.statistic[184] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
                 		    if (randomInt == 9){
                 		    	Part.parts[43] = Part.parts[43] + 1;
                 		    	Statistic.statistic[204] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
                 		    if (randomInt == 10){
                 		    	Part.parts[45] = Part.parts[45] + 1;
                 		    	Statistic.statistic[224] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
                 		    if (randomInt == 11){
                 		    	Part.parts[47] = Part.parts[47] + 1;
                 		    	Statistic.statistic[244] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
                 		    if (randomInt == 12){
                 		    	Part.parts[49] = Part.parts[49] + 1;
                 		    	Statistic.statistic[264] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
                 		    if (randomInt == 13){
                 		    	Part.parts[51] = Part.parts[51] + 1;
                 		    	Statistic.statistic[284] +=1;
-         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+         		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 2!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
         					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 3 Button Click
@@ -9390,63 +9390,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[53] = Part.parts[53] + 1;
             		    	Statistic.statistic[45] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[55] = Part.parts[55] + 1;
             		    	Statistic.statistic[65] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[57] = Part.parts[57] + 1;
             		    	Statistic.statistic[85] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[59] = Part.parts[59] + 1;
             		    	Statistic.statistic[105] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[61] = Part.parts[61] + 1;
             		    	Statistic.statistic[125] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[63] = Part.parts[63] + 1;
             		    	Statistic.statistic[145] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[65] = Part.parts[65] + 1;
             		    	Statistic.statistic[165] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[67] = Part.parts[67] + 1;
             		    	Statistic.statistic[185] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[69] = Part.parts[69] + 1;
             		    	Statistic.statistic[205] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[71] = Part.parts[71] + 1;
             		    	Statistic.statistic[225] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[73] = Part.parts[73] + 1;
             		    	Statistic.statistic[245] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[75] = Part.parts[75] + 1;
             		    	Statistic.statistic[265] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[77] = Part.parts[77] + 1;
             		    	Statistic.statistic[285] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 4 Button Click
@@ -9463,63 +9463,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[79] = Part.parts[79] + 1;
             		    	Statistic.statistic[46] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[81] = Part.parts[81] + 1;
             		    	Statistic.statistic[66] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[83] = Part.parts[83] + 1;
             		    	Statistic.statistic[86] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[85] = Part.parts[85] + 1;
             		    	Statistic.statistic[106] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[87] = Part.parts[87] + 1;
             		    	Statistic.statistic[126] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[89] = Part.parts[89] + 1;
             		    	Statistic.statistic[146] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[91] = Part.parts[91] + 1;
             		    	Statistic.statistic[166] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[93] = Part.parts[93] + 1;
             		    	Statistic.statistic[186] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[95] = Part.parts[95] + 1;
             		    	Statistic.statistic[206] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[97] = Part.parts[97] + 1;
             		    	Statistic.statistic[226] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[99] = Part.parts[99] + 1;
             		    	Statistic.statistic[246] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[101] = Part.parts[101] + 1;
             		    	Statistic.statistic[266] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[103] = Part.parts[103] + 1;
             		    	Statistic.statistic[286] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 5 Button Click
@@ -9536,63 +9536,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[105] = Part.parts[105] + 1;
             		    	Statistic.statistic[47] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[107] = Part.parts[107] + 1;
             		    	Statistic.statistic[67] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[109] = Part.parts[109] + 1;
             		    	Statistic.statistic[87] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[111] = Part.parts[111] + 1;
             		    	Statistic.statistic[107] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[113] = Part.parts[113] + 1;
             		    	Statistic.statistic[127] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[115] = Part.parts[115] + 1;
             		    	Statistic.statistic[147] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[117] = Part.parts[117] + 1;
             		    	Statistic.statistic[167] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[119] = Part.parts[119] + 1;
             		    	Statistic.statistic[187] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[121] = Part.parts[121] + 1;
             		    	Statistic.statistic[207] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[123] = Part.parts[123] + 1;
             		    	Statistic.statistic[227] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[125] = Part.parts[125] + 1;
             		    	Statistic.statistic[247] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[127] = Part.parts[127] + 1;
             		    	Statistic.statistic[267] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmisson LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmisson LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[129] = Part.parts[129] + 1;
             		    	Statistic.statistic[287] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 6 Button Click
@@ -9609,63 +9609,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[131] = Part.parts[131] + 1;
             		    	Statistic.statistic[48] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[133] = Part.parts[133] + 1;
             		    	Statistic.statistic[68] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[135] = Part.parts[135] + 1;
             		    	Statistic.statistic[88] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[137] = Part.parts[137] + 1;
             		    	Statistic.statistic[108] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[139] = Part.parts[139] + 1;
             		    	Statistic.statistic[128] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[141] = Part.parts[141] + 1;
             		    	Statistic.statistic[148] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[143] = Part.parts[143] + 1;
             		    	Statistic.statistic[168] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[145] = Part.parts[145] + 1;
             		    	Statistic.statistic[188] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[147] = Part.parts[147] + 1;
             		    	Statistic.statistic[208] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[149] = Part.parts[149] + 1;
             		    	Statistic.statistic[228] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[151] = Part.parts[151] + 1;
             		    	Statistic.statistic[248] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[153] = Part.parts[153] + 1;
             		    	Statistic.statistic[268] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[155] = Part.parts[155] + 1;
             		    	Statistic.statistic[288] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 7 Button Click
@@ -9682,63 +9682,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[157] = Part.parts[157] + 1;
             		    	Statistic.statistic[49] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[159] = Part.parts[159] + 1;
             		    	Statistic.statistic[69] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[161] = Part.parts[161] + 1;
             		    	Statistic.statistic[89] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[163] = Part.parts[163] + 1;
             		    	Statistic.statistic[109] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[165] = Part.parts[165] + 1;
             		    	Statistic.statistic[129] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[167] = Part.parts[167] + 1;
             		    	Statistic.statistic[149] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[169] = Part.parts[169] + 1;
             		    	Statistic.statistic[169] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[171] = Part.parts[171] + 1;
             		    	Statistic.statistic[189] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[173] = Part.parts[173] + 1;
             		    	Statistic.statistic[209] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[175] = Part.parts[175] + 1;
             		    	Statistic.statistic[229] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[177] = Part.parts[177] + 1;
             		    	Statistic.statistic[249] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[179] = Part.parts[179] + 1;
             		    	Statistic.statistic[269] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[181] = Part.parts[181] + 1;
             		    	Statistic.statistic[289] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 8 Button Click
@@ -9755,63 +9755,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[183] = Part.parts[183] + 1;
             		    	Statistic.statistic[50] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[185] = Part.parts[185] + 1;
             		    	Statistic.statistic[70] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[187] = Part.parts[187] + 1;
             		    	Statistic.statistic[90] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[189] = Part.parts[189] + 1;
             		    	Statistic.statistic[110] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[191] = Part.parts[191] + 1;
             		    	Statistic.statistic[130] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[193] = Part.parts[193] + 1;
             		    	Statistic.statistic[150] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[195] = Part.parts[195] + 1;
             		    	Statistic.statistic[170] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}                    		
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}                    		
      		    	   	if (randomInt == 8){
      		    	   		Part.parts[197] = Part.parts[197] + 1;
      		    	   		Statistic.statistic[190] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[199] = Part.parts[199] + 1;
             		    	Statistic.statistic[210] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[201] = Part.parts[201] + 1;
             		    	Statistic.statistic[230] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[203] = Part.parts[203] + 1;
             		    	Statistic.statistic[250] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[205] = Part.parts[205] + 1;
             		    	Statistic.statistic[270] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[207] = Part.parts[207] + 1;
             		    	Statistic.statistic[290] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
      		    	   		}
         				}
         			}
         			else{
-            				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}        			        			
+            				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}        			        			
         		}                	        	
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         }
         
         // Open Box Level 9 Button Click
@@ -9828,63 +9828,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[209] = Part.parts[209] + 1;
             		    	Statistic.statistic[51] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[211] = Part.parts[211] + 1;
             		    	Statistic.statistic[71] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[213] = Part.parts[213] + 1;
             		    	Statistic.statistic[91] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[215] = Part.parts[215] + 1;
             		    	Statistic.statistic[111] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[217] = Part.parts[217] + 1;
             		    	Statistic.statistic[131] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[219] = Part.parts[219] + 1;
             		    	Statistic.statistic[151] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[221] = Part.parts[221] + 1;
             		    	Statistic.statistic[171] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[223] = Part.parts[223] + 1;
             		    	Statistic.statistic[191] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[225] = Part.parts[225] + 1;
             		    	Statistic.statistic[211] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[227] = Part.parts[227] + 1;
             		    	Statistic.statistic[231] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[229] = Part.parts[229] + 1;
             		    	Statistic.statistic[251] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[231] = Part.parts[231] + 1;
             		    	Statistic.statistic[271] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[233] = Part.parts[233] + 1;
             		    	Statistic.statistic[291] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
         
         // Open Box Level 10 Button Click
@@ -9901,63 +9901,63 @@ public class ClickerGame implements ActionListener {
             		    if (randomInt == 1){
             		    	Part.parts[235] = Part.parts[235] + 1;
             		    	Statistic.statistic[52] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Accessories LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesIcon));}
             		    if (randomInt == 2){
             		    	Part.parts[237] = Part.parts[237] + 1;
             		    	Statistic.statistic[72] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodyIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Body LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodyIcon));}
             		    if (randomInt == 3){
             		    	Part.parts[239] = Part.parts[239] + 1;
             		    	Statistic.statistic[92] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Brakes LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesIcon));}
             		    if (randomInt == 4){
             		    	Part.parts[241] = Part.parts[241] + 1;
             		    	Statistic.statistic[112] +=1;
-            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingIcon);}
+            		    	JOptionPane.showMessageDialog (null, "You have gained Cooling LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingIcon));}
             		    if (randomInt == 5){
             		    	Part.parts[243] = Part.parts[243] + 1;
             		    	Statistic.statistic[132] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Electronics LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsIcon));}
             		    if (randomInt == 6){
             		    	Part.parts[245] = Part.parts[245] + 1;
             		    	Statistic.statistic[152] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Engine LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineIcon));}
             		    if (randomInt == 7){
             		    	Part.parts[247] = Part.parts[247] + 1;
             		    	Statistic.statistic[172] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Exaust LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustIcon));}
             		    if (randomInt == 8){
             		    	Part.parts[249] = Part.parts[249] + 1;
             		    	Statistic.statistic[192] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Fuel LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelIcon));}
             		    if (randomInt == 9){
             		    	Part.parts[251] = Part.parts[251] + 1;
             		    	Statistic.statistic[212] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Interior LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorIcon));}
             		    if (randomInt == 10){
             		    	Part.parts[253] = Part.parts[253] + 1;
             		    	Statistic.statistic[232] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Steering LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringIcon));}
             		    if (randomInt == 11){
             		    	Part.parts[255] = Part.parts[255] + 1;
             		    	Statistic.statistic[252] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Suspension LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionIcon));}
             		    if (randomInt == 12){
             		    	Part.parts[257] = Part.parts[257] + 1;
             		    	Statistic.statistic[272] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Transmission LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionIcon));}
             		    if (randomInt == 13){
             		    	Part.parts[259] = Part.parts[259] + 1;
             		    	Statistic.statistic[292] +=1;
-     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresIcon);}
+     		    	   		JOptionPane.showMessageDialog (null, "You have gained Tires LVL 10!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresIcon));}
     					}          					   
         				}
         			else{
-        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);}
+        				JOptionPane.showMessageDialog (null, "Not Enought Player Level!", "No Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));}
         			}           	                	
         		}
         	else{
-        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoBoxesIcon);}
+        		JOptionPane.showMessageDialog (null, "No more boxes left!", "No Boxes", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoBoxesIcon));}
         	}
                
         // Sell Accessories Level 1 Button Click
@@ -9969,9 +9969,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[0];
         		Statistic.statistic[33] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[0];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For: " +Part.parts[0], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 1 LVL For: " +Part.parts[0], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
             
         // Sell Accessories Level 2 Button Click
       	
@@ -9983,9 +9983,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[26];
         		Statistic.statistic[34] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[26];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For: " +Part.parts[26], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 2 LVL For: " +Part.parts[26], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -9998,9 +9998,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[52];
         		Statistic.statistic[35] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[52];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For: " +Part.parts[52], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 3 LVL For: " +Part.parts[52], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10013,9 +10013,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[78];
         		Statistic.statistic[36] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[78];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For: " +Part.parts[78], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 4 LVL For: " +Part.parts[78], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10028,9 +10028,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[104];
         		Statistic.statistic[37] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[104];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For: " +Part.parts[104], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 5 LVL For: " +Part.parts[104], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10043,9 +10043,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[130];
         		Statistic.statistic[38] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[130];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For: " +Part.parts[130], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 6 LVL For: " +Part.parts[130], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10058,9 +10058,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[156];
         		Statistic.statistic[39] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[156];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For: " +Part.parts[156], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 7 LVL For: " +Part.parts[156], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10073,9 +10073,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[182];
         		Statistic.statistic[40] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[182];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For: " +Part.parts[182], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 8 LVL For: " +Part.parts[182], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10088,9 +10088,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[208];
         		Statistic.statistic[41] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[208];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For: " +Part.parts[208], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 9 LVL For: " +Part.parts[208], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10103,9 +10103,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[234];
         		Statistic.statistic[42] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[234];
-        		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For: " +Part.parts[234], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.AccessoriesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Accessories 10 LVL For: " +Part.parts[234], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.AccessoriesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10118,9 +10118,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[2];
         		Statistic.statistic[53] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[2];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For: " +Part.parts[2], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 1 LVL For: " +Part.parts[2], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10133,9 +10133,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[28];
         		Statistic.statistic[54] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[28];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For: " +Part.parts[28], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 2 LVL For: " +Part.parts[28], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10148,9 +10148,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[54];
         		Statistic.statistic[55] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[54];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVLFor: " + Part.parts[54], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 3 LVLFor: " + Part.parts[54], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10163,9 +10163,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[80];
         		Statistic.statistic[56] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[80];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For: " +Part.parts[80], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 4 LVL For: " +Part.parts[80], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10178,9 +10178,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[106];
         		Statistic.statistic[57] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[106];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For: " +Part.parts[106], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 5 LVL For: " +Part.parts[106], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10193,9 +10193,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[132];
         		Statistic.statistic[58] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[132];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For: " +Part.parts[132], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 6 LVL For: " +Part.parts[132], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10208,9 +10208,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[158];
         		Statistic.statistic[59] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[158];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For: " +Part.parts[158], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 7 LVL For: " +Part.parts[158], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10223,9 +10223,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[184];
         		Statistic.statistic[60] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[184];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For: " +Part.parts[184], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 8 LVL For: " +Part.parts[184], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10238,9 +10238,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[210];
         		Statistic.statistic[61] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[210];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For: " +Part.parts[210], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 9 LVL For: " +Part.parts[210], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10253,9 +10253,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[236];
         		Statistic.statistic[62] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[236];
-        		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For: " +Part.parts[236], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BodySoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Body 10 LVL For: " +Part.parts[236], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BodySoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10268,9 +10268,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[4];
         		Statistic.statistic[73] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[4];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For: " +Part.parts[4], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 1 LVL For: " +Part.parts[4], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10283,9 +10283,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[30];
         		Statistic.statistic[74] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[30];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For: " +Part.parts[30], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 2 LVL For: " +Part.parts[30], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10298,9 +10298,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[56];
         		Statistic.statistic[75] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[56];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For: " +Part.parts[56], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 3 LVL For: " +Part.parts[56], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10313,9 +10313,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[82];
         		Statistic.statistic[76] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[82];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For: " +Part.parts[82], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 4 LVL For: " +Part.parts[82], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10328,9 +10328,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[108];
         		Statistic.statistic[77] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[108];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For: " +Part.parts[108], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 5 LVL For: " +Part.parts[108], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10343,9 +10343,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[134];
         		Statistic.statistic[78] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[134];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For: " +Part.parts[134], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 6 LVL For: " +Part.parts[134], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10358,9 +10358,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[160];
         		Statistic.statistic[79] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[160];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For: " +Part.parts[160], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 7 LVL For: " +Part.parts[160], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10373,9 +10373,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[186];
         		Statistic.statistic[80] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[186];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For: " +Part.parts[186], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 8 LVL For: " +Part.parts[186], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10388,9 +10388,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[212];
         		Statistic.statistic[81] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[212];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For: " +Part.parts[212], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 9 LVL For: " +Part.parts[212], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10403,9 +10403,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[238];
         		Statistic.statistic[82] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[238];
-        		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For: " +Part.parts[238], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BrakesSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Brakes 10 LVL For: " +Part.parts[238], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BrakesSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10418,9 +10418,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[6];
         		Statistic.statistic[93] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[6];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For: " +Part.parts[6], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 1 LVL For: " +Part.parts[6], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10433,9 +10433,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[32];
         		Statistic.statistic[94] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[32];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For: " +Part.parts[32], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 2 LVL For: " +Part.parts[32], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10448,9 +10448,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[58];
         		Statistic.statistic[95] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[58];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For: " +Part.parts[58], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 3 LVL For: " +Part.parts[58], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10463,9 +10463,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[84];
         		Statistic.statistic[96] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[84];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For: " +Part.parts[84], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 4 LVL For: " +Part.parts[84], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10478,9 +10478,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[110];
         		Statistic.statistic[97] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[110];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For: " +Part.parts[110], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 5 LVL For: " +Part.parts[110], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10493,9 +10493,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[136];
         		Statistic.statistic[98] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[136];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For: " +Part.parts[136], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 6 LVL For: " +Part.parts[136], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10508,9 +10508,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[162];
         		Statistic.statistic[99] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[162];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For: " +Part.parts[162], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 7 LVL For: " +Part.parts[162], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10523,9 +10523,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[188];
         		Statistic.statistic[100] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[188];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For: " +Part.parts[188], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 8 LVL For: " +Part.parts[188], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10538,9 +10538,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[214];
         		Statistic.statistic[101] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[214];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL FFor: " +Part.parts[214], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 9 LVL FFor: " +Part.parts[214], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10553,9 +10553,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[240];
         		Statistic.statistic[102] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[240];
-        		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For: " +Part.parts[240], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.CoolingSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Cooling 10 LVL For: " +Part.parts[240], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.CoolingSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10568,9 +10568,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[8];
         		Statistic.statistic[113] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[8];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For: " +Part.parts[8], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 1 LVL For: " +Part.parts[8], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10583,9 +10583,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[34];
         		Statistic.statistic[114] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[34];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For: " +Part.parts[34], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 2 LVL For: " +Part.parts[34], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10598,9 +10598,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[60];
         		Statistic.statistic[115] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[60];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For: " +Part.parts[60], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 3 LVL For: " +Part.parts[60], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10613,9 +10613,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[86];
         		Statistic.statistic[116] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[86];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For: " +Part.parts[86], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 4 LVL For: " +Part.parts[86], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10628,9 +10628,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[112];
         		Statistic.statistic[117] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[112];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For: " +Part.parts[112], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 5 LVL For: " +Part.parts[112], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10643,9 +10643,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[138];
         		Statistic.statistic[118] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[138];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For: " +Part.parts[138], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 6 LVL For: " +Part.parts[138], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10658,9 +10658,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[164];
         		Statistic.statistic[119] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[164];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For: " +Part.parts[164], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 7 LVL For: " +Part.parts[164], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10673,9 +10673,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[190];
         		Statistic.statistic[120] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[190];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For: " +Part.parts[190], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 8 LVL For: " +Part.parts[190], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10688,9 +10688,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[216];
         		Statistic.statistic[121] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[216];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For: " +Part.parts[216], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 9 LVL For: " +Part.parts[216], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10703,9 +10703,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[242];
         		Statistic.statistic[122] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[242];
-        		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For: " +Part.parts[242], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ElectronicsSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Electronics 10 LVL For: " +Part.parts[242], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ElectronicsSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10718,9 +10718,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[10];
         		Statistic.statistic[133] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[10];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For For: " +Part.parts[10], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 1 LVL For For: " +Part.parts[10], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10733,9 +10733,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[36];
         		Statistic.statistic[134] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[36];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For: " +Part.parts[36], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 2 LVL For: " +Part.parts[36], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10748,9 +10748,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[62];
         		Statistic.statistic[135] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[62];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For: " +Part.parts[62], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 3 LVL For: " +Part.parts[62], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10763,9 +10763,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[88];
         		Statistic.statistic[136] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[88];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For: " +Part.parts[88], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 4 LVL For: " +Part.parts[88], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10778,9 +10778,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[114];
         		Statistic.statistic[137] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[114];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For: " +Part.parts[114], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 5 LVL For: " +Part.parts[114], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10793,9 +10793,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[140];
         		Statistic.statistic[138] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[140];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For: " +Part.parts[140], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 6 LVL For: " +Part.parts[140], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10808,9 +10808,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[166];
         		Statistic.statistic[139] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[166];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For: " +Part.parts[166], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 7 LVL For: " +Part.parts[166], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10823,9 +10823,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[192];
         		Statistic.statistic[140] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[192];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For: " +Part.parts[192], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 8 LVL For: " +Part.parts[192], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10838,9 +10838,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[218];
         		Statistic.statistic[141] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[218];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For: " +Part.parts[218], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 9 LVL For: " +Part.parts[218], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10853,9 +10853,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[244];
         		Statistic.statistic[142] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[244];
-        		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For: " +Part.parts[244], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.EngineSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Engine 10 LVL For: " +Part.parts[244], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.EngineSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10868,9 +10868,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[12];
         		Statistic.statistic[153] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[12];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For: " +Part.parts[12], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 1 LVL For: " +Part.parts[12], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10883,9 +10883,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[38];
         		Statistic.statistic[154] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[38];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For: " +Part.parts[38], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 2 LVL For: " +Part.parts[38], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10898,9 +10898,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[64];
         		Statistic.statistic[155] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[64];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For: " +Part.parts[64], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 3 LVL For: " +Part.parts[64], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10913,9 +10913,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[90];
         		Statistic.statistic[156] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[90];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For: " +Part.parts[90], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 4 LVL For: " +Part.parts[90], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10928,9 +10928,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[116];
         		Statistic.statistic[157] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[116];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For: " +Part.parts[116], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 5 LVL For: " +Part.parts[116], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10943,9 +10943,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[142];
         		Statistic.statistic[158] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[142];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For: " +Part.parts[142], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 6 LVL For: " +Part.parts[142], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10958,9 +10958,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[168];
         		Statistic.statistic[159] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[168];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For: " +Part.parts[168], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 7 LVL For: " +Part.parts[168], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10973,9 +10973,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[194];
         		Statistic.statistic[160] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[194];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For: " +Part.parts[194], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 8 LVL For: " +Part.parts[194], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -10988,9 +10988,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[220];
         		Statistic.statistic[161] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[220];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For: " +Part.parts[220], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 9 LVL For: " +Part.parts[220], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11003,9 +11003,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[246];
         		Statistic.statistic[162] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[246];
-        		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For: " +Part.parts[246], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.ExaustSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Exaust 10 LVL For: " +Part.parts[246], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.ExaustSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11018,9 +11018,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[14];
         		Statistic.statistic[173] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[14];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For: " +Part.parts[14], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 1 LVL For: " +Part.parts[14], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11033,9 +11033,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[40];
         		Statistic.statistic[174] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[40];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For: " +Part.parts[40], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 2 LVL For: " +Part.parts[40], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11048,9 +11048,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[66];
         		Statistic.statistic[175] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[66];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For: " +Part.parts[66], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 3 LVL For: " +Part.parts[66], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11063,9 +11063,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[92];
         		Statistic.statistic[176] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[92];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For: " +Part.parts[92], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 4 LVL For: " +Part.parts[92], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11078,9 +11078,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[118];
         		Statistic.statistic[177] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[118];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For: " +Part.parts[118], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 5 LVL For: " +Part.parts[118], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11093,9 +11093,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[144];
         		Statistic.statistic[178] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[144];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL FFor: " +Part.parts[144], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 6 LVL FFor: " +Part.parts[144], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11108,9 +11108,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[170];
         		Statistic.statistic[179] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[170];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For: " +Part.parts[170], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 7 LVL For: " +Part.parts[170], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11123,9 +11123,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[196];
         		Statistic.statistic[180] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[196];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For: " +Part.parts[196], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 8 LVL For: " +Part.parts[196], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11138,9 +11138,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[222];
         		Statistic.statistic[181] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[222];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For: " +Part.parts[222], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 9 LVL For: " +Part.parts[222], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11153,9 +11153,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[248];
         		Statistic.statistic[182] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[248];
-        		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For: " +Part.parts[248], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.FuelSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Fuel 10 LVL For: " +Part.parts[248], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.FuelSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11168,9 +11168,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[16];
         		Statistic.statistic[193] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[16];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL LVL For: " +Part.parts[16], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 1 LVL LVL For: " +Part.parts[16], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
                 
@@ -11183,9 +11183,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[42];
         		Statistic.statistic[194] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[42];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For: " +Part.parts[42], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 2 LVL For: " +Part.parts[42], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11198,9 +11198,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[68];
         		Statistic.statistic[195] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[68];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For: " +Part.parts[68], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 3 LVL For: " +Part.parts[68], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11213,9 +11213,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[94];
         		Statistic.statistic[196] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[94];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For: " +Part.parts[94], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 4 LVL For: " +Part.parts[94], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11228,9 +11228,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[120];
         		Statistic.statistic[197] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[120];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For: " +Part.parts[120], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 5 LVL For: " +Part.parts[120], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11243,9 +11243,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[146];
         		Statistic.statistic[198] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[146];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For: " +Part.parts[146], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 6 LVL For: " +Part.parts[146], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11258,9 +11258,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[172];
         		Statistic.statistic[199] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[172];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For: " +Part.parts[172], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 7 LVL For: " +Part.parts[172], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11273,9 +11273,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[198];
         		Statistic.statistic[200] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[198];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For: " +Part.parts[198], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 8 LVL For: " +Part.parts[198], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11288,9 +11288,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[224];
         		Statistic.statistic[201] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[224];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For: " +Part.parts[224], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 9 LVL For: " +Part.parts[224], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11303,9 +11303,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[250];
         		Statistic.statistic[202] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[250];
-        		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For: " +Part.parts[250], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.InteriorSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Interior 10 LVL For: " +Part.parts[250], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.InteriorSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11318,9 +11318,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[18];
         		Statistic.statistic[213] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[18];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL FFor: " +Part.parts[18], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 1 LVL FFor: " +Part.parts[18], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11333,9 +11333,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[44];
         		Statistic.statistic[214] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[44];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For: " +Part.parts[44], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 2 LVL For: " +Part.parts[44], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11348,9 +11348,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[70];
         		Statistic.statistic[215] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[70];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For: " +Part.parts[70], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 3 LVL For: " +Part.parts[70], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11363,9 +11363,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[96];
         		Statistic.statistic[216] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[96];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For: " +Part.parts[96], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 4 LVL For: " +Part.parts[96], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11378,9 +11378,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[122];
         		Statistic.statistic[217] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[122];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For: " +Part.parts[122], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 5 LVL For: " +Part.parts[122], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11393,9 +11393,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[148];
         		Statistic.statistic[218] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[148];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For: " +Part.parts[148], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 6 LVL For: " +Part.parts[148], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11408,9 +11408,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[174];
         		Statistic.statistic[219] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[174];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For: " +Part.parts[174], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 7 LVL For: " +Part.parts[174], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11423,9 +11423,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[200];
         		Statistic.statistic[220] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[200];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For: " +Part.parts[200], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 8 LVL For: " +Part.parts[200], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11438,9 +11438,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[226];
         		Statistic.statistic[221] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[226];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For: " +Part.parts[226], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 9 LVL For: " +Part.parts[226], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11453,9 +11453,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[252];
         		Statistic.statistic[222] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[252];
-        		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For: " +Part.parts[252], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SteeringSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Steering 10 LVL For: " +Part.parts[252], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SteeringSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11468,9 +11468,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[20];
         		Statistic.statistic[233] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[20];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For: " +Part.parts[20], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 1 LVL For: " +Part.parts[20], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11483,9 +11483,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[46];
         		Statistic.statistic[234] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[46];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For: " +Part.parts[46], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 2 LVL For: " +Part.parts[46], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11498,9 +11498,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[72];
         		Statistic.statistic[235] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[72];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For: " +Part.parts[72], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 3 LVL For: " +Part.parts[72], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11513,9 +11513,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[98];
         		Statistic.statistic[236] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[98];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For: " +Part.parts[98], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 4 LVL For: " +Part.parts[98], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11528,9 +11528,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[124];
         		Statistic.statistic[237] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[124];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For: " +Part.parts[124], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 5 LVL For: " +Part.parts[124], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11543,9 +11543,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[150];
         		Statistic.statistic[238] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[150];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For: " +Part.parts[150], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 6 LVL For: " +Part.parts[150], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11558,9 +11558,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[176];
         		Statistic.statistic[239] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[176];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For: " +Part.parts[176], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 7 LVL For: " +Part.parts[176], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11573,9 +11573,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[202];
         		Statistic.statistic[240] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[202];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For: " +Part.parts[202], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 8 LVL For: " +Part.parts[202], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11588,9 +11588,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[228];
         		Statistic.statistic[241] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[228];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For: " +Part.parts[228], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 9 LVL For: " +Part.parts[228], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11603,9 +11603,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[254];
         		Statistic.statistic[242] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[254];
-        		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For: " +Part.parts[254], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.SuspensionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Suspension 10 LVL For: " +Part.parts[254], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.SuspensionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11618,9 +11618,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[22];
         		Statistic.statistic[253] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[22];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For: " +Part.parts[22], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 1 LVL For: " +Part.parts[22], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11633,9 +11633,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[48];
         		Statistic.statistic[254] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[48];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For: " +Part.parts[48], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 2 LVL For: " +Part.parts[48], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11648,9 +11648,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[74];
         		Statistic.statistic[255] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[74];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For: " +Part.parts[74], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 3 LVL For: " +Part.parts[74], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11663,9 +11663,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[100];
         		Statistic.statistic[256] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[100];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For: " +Part.parts[100], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 4 LVL For: " +Part.parts[100], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11678,9 +11678,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[126];
         		Statistic.statistic[257] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[126];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For: " +Part.parts[126], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 5 LVL For: " +Part.parts[126], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11693,9 +11693,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[152];
         		Statistic.statistic[258] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[152];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For: " +Part.parts[152], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 6 LVL For: " +Part.parts[152], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11708,9 +11708,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[178];
         		Statistic.statistic[259] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[178];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For: " +Part.parts[178], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 7 LVL For: " +Part.parts[178], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11723,9 +11723,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[204];
         		Statistic.statistic[260] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[204];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For: " +Part.parts[204], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 8 LVL For: " +Part.parts[204], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11738,9 +11738,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[230];
         		Statistic.statistic[261] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[230];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For: " +Part.parts[230], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 9 LVL For: " +Part.parts[230], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11753,9 +11753,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[256];
         		Statistic.statistic[262] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[256];
-        		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For: " +Part.parts[256], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TransmissionSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Transmission 10 LVL For: " +Part.parts[256], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TransmissionSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11768,9 +11768,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[24];
         		Statistic.statistic[273] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[24];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For: " +Part.parts[24], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 1 LVL For: " +Part.parts[24], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11783,7 +11783,7 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[50];
         		Statistic.statistic[274] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[50];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For: " +Part.parts[50], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 2 LVL For: " +Part.parts[50], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
@@ -11798,7 +11798,7 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[76];
         		Statistic.statistic[275] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[76];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For: " +Part.parts[76], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 3 LVL For: " +Part.parts[76], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
@@ -11813,7 +11813,7 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[102];
         		Statistic.statistic[276] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[102];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For: " +Part.parts[102], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 4 LVL For: " +Part.parts[102], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
         		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE);}
         	
@@ -11828,9 +11828,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[128];
         		Statistic.statistic[277] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[128];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For: " +Part.parts[128], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 5 LVL For: " +Part.parts[128], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11843,9 +11843,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[154];
         		Statistic.statistic[258] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[154];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For: " +Part.parts[154], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 6 LVL For: " +Part.parts[154], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11858,9 +11858,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[180];
         		Statistic.statistic[259] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[180];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For: " +Part.parts[180], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 7 LVL For: " +Part.parts[180], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11873,9 +11873,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[206];
         		Statistic.statistic[260] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[206];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For: " +Part.parts[206], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 8 LVL For: " +Part.parts[206], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11888,9 +11888,9 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[232];
         		Statistic.statistic[261] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[232];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For: " +Part.parts[232], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 9 LVL For: " +Part.parts[232], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
@@ -11903,15 +11903,16 @@ public class ClickerGame implements ActionListener {
         		CarMain.main[0] = CarMain.main[0] + Part.parts[258];
         		Statistic.statistic[262] +=1;
         		Statistic.statistic[0] = Statistic.statistic[0] + Part.parts[258];
-        		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For: " +Part.parts[258], "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.TiresSoldIcon);}
+        		JOptionPane.showMessageDialog (null, "You have sold Tires 10 LVL For: " +Part.parts[258], "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.TiresSoldIcon));}
         	else{
-        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);}
+        		JOptionPane.showMessageDialog(null, "No available parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));}
         	
         }
         
         // Build Cars 1-5LVL        
         if(ae.getSource() == jbtnBuildCarLv1){
         	Statistic.statistic[2] +=1;
+        	count0 = 0;
 	    	if(CarMain.main[5] >=1){
 	    		if(CarMain.main[7] >0){
 	    			if(CarFrame.frames[1] >0){ 
@@ -11922,102 +11923,102 @@ public class ClickerGame implements ActionListener {
 	    				
 	    					}
 	    					else{
-	    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);
+	    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));
 	    						break;}	    					
 						}
 	    							    				
-					if (count0 == 0){				
+					if (count0 == 13){				
 						for (int j = 3;j <= 80; j+=4){
 							if(CarsLv1.cars[j] == 0){
 								for(int i=1;i <= 25;i+=2){
 									Part.parts[i] -=1;
 								}	
-									//CarFrame.frames[1] -=1;								
+									CarFrame.frames[1] -=1;								
 									CarsLv1.cars[j] +=1;
 									
 									switch(j){
 										
 									case 3:{
-										JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_DB9Icon);
+										JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB9!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Aston_Martin_DB9Icon));
 										break;}
 									case 7:{
-										JOptionPane.showMessageDialog (null, "You have gained Acura NSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_NSXIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Acura NSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Acura_NSXIcon));
 										break;}
 									case 11:{
-										JOptionPane.showMessageDialog (null, "You have gained Ford Mustang!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_MustangIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Ford Mustang!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ford_MustangIcon));
 										break;
 									}
 									case 15:{
-										JOptionPane.showMessageDialog (null, "You have gained Moskvich 412!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_412Icon);
+										JOptionPane.showMessageDialog (null, "You have gained Moskvich 412!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Moskvich_412Icon));
 										break;
 									}
 									case 19:{
-										JOptionPane.showMessageDialog (null, "You have gained Kia Venga!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_VengaIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Kia Venga!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Kia_VengaIcon));
 										break;
 									}
 									case 23:{
-										JOptionPane.showMessageDialog (null, "You have gained Fiat 1500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_1500Icon);
+										JOptionPane.showMessageDialog (null, "You have gained Fiat 1500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Fiat_1500Icon));
 										break;
 									}
 									case 27:{
-										JOptionPane.showMessageDialog (null, "You have gained Ferrari Enzo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_EnzoIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Ferrari Enzo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ferrari_EnzoIcon));
 										break;
 									}
 									case 31:{
-										JOptionPane.showMessageDialog (null, "You have gained Aston Martin Rapide!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_RapideIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Aston Martin Rapide!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Aston_Martin_RapideIcon));
 										break;
 									}
 									case 35:{
-										JOptionPane.showMessageDialog (null, "You have gained Koenigsegg CCX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_CCXIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Koenigsegg CCX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Koenigsegg_CCXIcon));
 										break;
 									}
 									case 39:{
-										JOptionPane.showMessageDialog (null, "You have gained Honda Civic!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_CivicIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Honda Civic!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Honda_CivicIcon));
 										break;
 									}
 									case 43:{
-										JOptionPane.showMessageDialog (null, "You have gained Cadilliac ATS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_ATSIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Cadilliac ATS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Cadilliac_ATSIcon));
 										break;
 									}
 									case 47:{
-										JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Lancer Evolution X!", "Congralations", JOptionPane.INFORMATION_MESSAGE,ImagesHolder.Mitsubishi_LancerEvolutionXIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Lancer Evolution X!", "Congralations", JOptionPane.INFORMATION_MESSAGE,new ImageIcon(ImagesHolder.Mitsubishi_LancerEvolutionXIcon));
 										break;
 									}
 									case 51:{
-										JOptionPane.showMessageDialog (null, "You have gained Infiniti FX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_FXIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Infiniti FX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Infiniti_FXIcon));
 										break;
 									}
 									case 55:{
-										JOptionPane.showMessageDialog (null, "You have gained Lancia Thema!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_ThemaIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Lancia Thema!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lancia_ThemaIcon));
 										break;
 									}
 									case 59:{
-										JOptionPane.showMessageDialog (null, "You have gained Volvo XC90!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_XC90Icon);
+										JOptionPane.showMessageDialog (null, "You have gained Volvo XC90!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volvo_XC90Icon));
 										break;
 									}
 									case 63:{
-										JOptionPane.showMessageDialog (null, "You have gained Acura CSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_CSXIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Acura CSX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Acura_CSXIcon));
 										break;
 									}
 									case 67:{
-										JOptionPane.showMessageDialog (null, "You have gained Saab Sonett II!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_SonettIIIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Saab Sonett II!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Saab_SonettIIIcon));
 										break;
 									}
 									case 71:{
-										JOptionPane.showMessageDialog (null, "You have gained Renault Floride!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_FlorideIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Renault Floride!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Renault_FlorideIcon));
 										break;
 									}
 									case 75:{
-										JOptionPane.showMessageDialog (null, "You have gained BMW e34!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e34Icon);
+										JOptionPane.showMessageDialog (null, "You have gained BMW e34!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_e34Icon));
 										break;
 									}
 									case 79:{
-										JOptionPane.showMessageDialog (null, "You have gained Chrysler Cordoba!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_CordobaIcon);									
-										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+										JOptionPane.showMessageDialog (null, "You have gained Chrysler Cordoba!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chrysler_CordobaIcon));									
+										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 										break;
 									}
 									default:{
-										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+										JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 										break;
 									}
 									}
@@ -12027,20 +12028,21 @@ public class ClickerGame implements ActionListener {
 					}
 	    			}
 	    			else{
-	    				JOptionPane.showMessageDialog (null, "You don't have 1 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+	    				JOptionPane.showMessageDialog (null, "You don't have 1 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
 	    			}
 	    		else{
-	    			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+	    			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
 	    		}
 	    		}
 	    	else{
-	    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+	    		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
 	    	}  
 	    }
 	
 																
 if(ae.getSource() == jbtnBuildCarLv2){
 	Statistic.statistic[2] +=1;
+	count0 = 0;
 if(CarMain.main[5] >=2){
 	if(CarMain.main[7] >0){
 		if(CarFrame.frames[3] >0){ 
@@ -12050,7 +12052,7 @@ if(CarMain.main[5] >=2){
 					count0+=1;					
 				}
 				else{
-					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
 					break;}
 			}
 			
@@ -12066,87 +12068,87 @@ if(CarMain.main[5] >=2){
 						switch(j){
 						
 						case 3:{
-							JOptionPane.showMessageDialog (null, "You have gained Buick Riviera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_RivieraIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Buick Riviera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Buick_RivieraIcon));
 							break;
 						}
 						case 7:{
-							JOptionPane.showMessageDialog (null, "You have gained Tesla Roadster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_RoadsterIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Tesla Roadster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Tesla_RoadsterIcon));
 							break;
 						}
 						case 11:{
-							JOptionPane.showMessageDialog (null, "You have gained Audi 80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_80Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Audi 80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_80Icon));
 							break;
 						}
 						case 15:{
-							JOptionPane.showMessageDialog (null, "You have gained BMW e36!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e36Icon);
+							JOptionPane.showMessageDialog (null, "You have gained BMW e36!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_e36Icon));
 							break;
 						}
 						case 19:{
-							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Scirocco!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_SciroccoIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Scirocco!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volkswagen_SciroccoIcon));
 							break;
 						}
 						case 23:{
-							JOptionPane.showMessageDialog (null, "You have gained Mazda 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_3Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Mazda 3!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mazda_3Icon));
 							break;
 						}
 						case 27:{
-							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Viking!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_VikingIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Viking!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chevrolet_VikingIcon));
 							break;
 						}
 						case 31:{
-							JOptionPane.showMessageDialog (null, "You have gained Tesla S!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_SIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Tesla S!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Tesla_SIcon));
 							break;
 						}
 						case 35:{
-							JOptionPane.showMessageDialog (null, "You have gained Jeep ZJ!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_ZJIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Jeep ZJ!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jeep_ZJIcon));
 							break;
 						}
 						case 39:{
-							JOptionPane.showMessageDialog (null, "You have gained Dodge Neon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_NeonIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Dodge Neon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Dodge_NeonIcon));
 							break;
 						}
 						case 43:{
-							JOptionPane.showMessageDialog (null, "You have gained BMW e30!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e30Icon);
+							JOptionPane.showMessageDialog (null, "You have gained BMW e30!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_e30Icon));
 							break;
 						}
 						case 47:{
-							JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz W123!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_W123Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz W123!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mercedes_Benz_W123Icon));
 							break;
 						}
 						case 51:{
-							JOptionPane.showMessageDialog (null, "You have gained Land Rover Defender!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_DefenderIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Land Rover Defender!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Land_Rover_DefenderIcon));
 							break;
 						}
 						case 55:{
-							JOptionPane.showMessageDialog (null, "You have gained Saab 9_5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_9_5Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Saab 9_5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Saab_9_5Icon));
 							break;
 						}
 						case 59:{
-							JOptionPane.showMessageDialog (null, "You have gained Aston Martin One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_OneIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Aston Martin One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Aston_Martin_OneIcon));
 							break;
 						}
 						case 63:{
-							JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Regera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_RegeraIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Regera!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Koenigsegg_RegeraIcon));
 							break;
 						}
 						case 67:{
-							JOptionPane.showMessageDialog (null, "You have gained Lexus IS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_ISIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Lexus IS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lexus_ISIcon));
 							break;
 						}
 						case 71:{
-							JOptionPane.showMessageDialog (null, "You have gained GMC Yukon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_YukonIcon);
+							JOptionPane.showMessageDialog (null, "You have gained GMC Yukon!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.GMC_YukonIcon));
 							break;
 						}
 						case 75:{
-							JOptionPane.showMessageDialog (null, "You have gained Opel_Astra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_AstraIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Opel_Astra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Opel_AstraIcon));
 							break;
 						}
 						case 79:{
-							JOptionPane.showMessageDialog (null, "You have gained Audi Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_CoupeIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Audi Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_CoupeIcon));
 							break;
 						}
 						default:{
-							JOptionPane.showMessageDialog(null, "You have colected all 2 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							JOptionPane.showMessageDialog(null, "You have colected all 2 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 							break;
 						}
 						}
@@ -12156,20 +12158,21 @@ if(CarMain.main[5] >=2){
 		}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have 2 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+			JOptionPane.showMessageDialog (null, "You don't have 2 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
 		}
 		}
 	else{
-		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+		JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
 		}  
 }	
 }
 
 if(ae.getSource() == jbtnBuildCarLv3){
 	Statistic.statistic[2] +=1;
+	count0 = 0;
 if(CarMain.main[5] >=3){
 	if(CarMain.main[7] >0){
 		if(CarFrame.frames[5] >0){ 
@@ -12179,7 +12182,7 @@ if(CarMain.main[5] >=3){
 					count0+=1;
 				}
 				else{
-					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
 					break;}
 			}
 			
@@ -12195,87 +12198,87 @@ if(CarMain.main[5] >=3){
 						switch(j){
 						
 						case 3:{
-							JOptionPane.showMessageDialog (null, "You have gained Mini Moke!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_MokeIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Mini Moke!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mini_MokeIcon));
 							break;
 						}
 						case 7:{
-							JOptionPane.showMessageDialog (null, "You have gained Kia Rondo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_RondoIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Kia Rondo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Kia_RondoIcon));
 							break;
 						}
 						case 11:{
-							JOptionPane.showMessageDialog (null, "You have gained GMC Suburban!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_SuburbanIcon);
+							JOptionPane.showMessageDialog (null, "You have gained GMC Suburban!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.GMC_SuburbanIcon));
 							break;
 						}
 						case 15:{
-							JOptionPane.showMessageDialog (null, "You have gained Honda Prelude!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_PreludeIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Honda Prelude!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Honda_PreludeIcon));
 							break;
 						}
 						case 19:{
-							JOptionPane.showMessageDialog (null, "You have gained Citroen_Saxo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_SaxoIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Citroen_Saxo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Citroen_SaxoIcon));
 							break;
 						}
 						case 23:{
-							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Tiguan!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_TiguanIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Tiguan!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volkswagen_TiguanIcon));
 							break;
 						}
 						case 27:{
-							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Phaeton!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_PhaetonIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Phaeton!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volkswagen_PhaetonIcon));
 							break;
 						}
 						case 31:{
-							JOptionPane.showMessageDialog (null, "You have gained Buick Centry!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_CentryIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Buick Centry!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Buick_CentryIcon));
 							break;
 						}
 						case 35:{
-							JOptionPane.showMessageDialog (null, "You have gained Land Rover Discovery!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_DiscoveryIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Land Rover Discovery!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Land_Rover_DiscoveryIcon));
 							break;
 						}
 						case 39:{
-							JOptionPane.showMessageDialog (null, "You have gained Infiniti Etherea!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_EthereaIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Infiniti Etherea!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Infiniti_EthereaIcon));
 							break;
 						}
 						case 43:{
-							JOptionPane.showMessageDialog (null, "You have gained Peugeot 308!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_308Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Peugeot 308!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Peugeot_308Icon));
 							break;
 						}
 						case 47:{
-							JOptionPane.showMessageDialog (null, "You have gained Toyota Auris!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_AurisIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Toyota Auris!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Toyota_AurisIcon));
 							break;
 						}
 						case 51:{
-							JOptionPane.showMessageDialog (null, "You have gained Pagani ZondaF!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Pagani_ZondaFIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Pagani ZondaF!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Pagani_ZondaFIcon));
 							break;
 						}
 						case 55:{
-							JOptionPane.showMessageDialog (null, "You have gained Lancia Phedra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_PhedraIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Lancia Phedra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lancia_PhedraIcon));
 							break;
 						}
 						case 59:{
-							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Impala!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_ImpalaIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Chevrolet Impala!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chevrolet_ImpalaIcon));
 							break;
 						}
 						case 63:{
-							JOptionPane.showMessageDialog (null, "You have gained Porsche Boxster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_BoxsterIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Porsche Boxster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Porsche_BoxsterIcon));
 							break;
 						}
 						case 67:{
-							JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Aston_Martin_DB6Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Aston Martin DB6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Aston_Martin_DB6Icon));
 							break;
 						}
 						case 71:{
-							JOptionPane.showMessageDialog (null, "You have gained Vaz 2103!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_2103Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Vaz 2103!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Vaz_2103Icon));
 							break;
 						}
 						case 75:{
-							JOptionPane.showMessageDialog (null, "You have gained Hyundai Mistra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_MistraIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Hyundai Mistra!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Hyundai_MistraIcon));
 							break;
 						}
 						case 79:{
-							JOptionPane.showMessageDialog (null, "You have gained Mini Countryman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_CountrymanIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Mini Countryman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mini_CountrymanIcon));
 							break;
 						}
 						default:{
-							JOptionPane.showMessageDialog(null, "You have colected all 3 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							JOptionPane.showMessageDialog(null, "You have colected all 3 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 							break;
 						}
 						}
@@ -12284,19 +12287,20 @@ if(CarMain.main[5] >=3){
 		}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have 3 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+			JOptionPane.showMessageDialog (null, "You don't have 3 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
 		}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
 		}  
 }
 }		
 if(ae.getSource() == jbtnBuildCarLv4){
 	Statistic.statistic[2] +=1;
+	count0 = 0;
 	if(CarMain.main[5] >=4){
 		if(CarMain.main[7] >0){
 			if(CarFrame.frames[7] >0){ 
@@ -12306,7 +12310,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 						count0+=1;
 					}
 					else{
-						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
 						break;}
 				}
 				
@@ -12323,86 +12327,86 @@ if(ae.getSource() == jbtnBuildCarLv4){
 							switch(j){
 							
 							case 3:{
-								JOptionPane.showMessageDialog (null, "You have gained Mazda MX6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_MX6Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Mazda MX6!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mazda_MX6Icon));
 								break;
 							}
 							case 7:{
-								JOptionPane.showMessageDialog (null, "You have gained Chrysler Daytona!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_DaytonaIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Chrysler Daytona!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chrysler_DaytonaIcon));
 								break;
 							}
 							case 11:{
-								JOptionPane.showMessageDialog (null, "You have gained Buick Roadmaster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_RoadmasterIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Buick Roadmaster!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Buick_RoadmasterIcon));
 								break;
 							}
 							case 15:{
-								JOptionPane.showMessageDialog (null, "You have gained Volvo S80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_S80Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Volvo S80!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volvo_S80Icon));
 								break;
 							}
 							case 19:{
-								JOptionPane.showMessageDialog (null, "You have gained Porsche Cayman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_CaymanIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Porsche Cayman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Porsche_CaymanIcon));
 								break;
 							}
 							case 23:{
-								JOptionPane.showMessageDialog (null, "You have gained Volkswagen Beetle!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_BeetleIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Volkswagen Beetle!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volkswagen_BeetleIcon));
 								break;
 							}
 							case 27:{
-								JOptionPane.showMessageDialog (null, "You have gained Bugatti EB110!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_EB110Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Bugatti EB110!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bugatti_EB110Icon));
 								break;
 							}
 							case 31:{
-								JOptionPane.showMessageDialog (null, "You have gained Opel Zafira!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_ZafiraIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Opel Zafira!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Opel_ZafiraIcon));
 								break;
 							}
 							case 35:{
-								JOptionPane.showMessageDialog (null, "You have gained Saab 9000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_9000Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Saab 9000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Saab_9000Icon));
 								break;
 							}
 							case 39:{
-								JOptionPane.showMessageDialog (null, "You have gained McLaren F1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_F1Icon);
+								JOptionPane.showMessageDialog (null, "You have gained McLaren F1!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.McLaren_F1Icon));
 								break;
 							}
 							case 43:{
-								JOptionPane.showMessageDialog (null, "You have gained Audi R8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_R8Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Audi R8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_R8Icon));
 								break;
 							}
 							case 47:{
-								JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 8C!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_8CIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 8C!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Alfa_Romeo_8CIcon));
 								break;
 							}
 							case 51:{
-								JOptionPane.showMessageDialog (null, "You have gained Ford_Fiesta!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_FiestaIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Ford_Fiesta!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ford_FiestaIcon));
 								break;
 							}
 							case 55:{
-								JOptionPane.showMessageDialog (null, "You have gained Infiniti Q50!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_Q50Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Infiniti Q50!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Infiniti_Q50Icon));
 								break;
 							}
 							case 59:{
-								JOptionPane.showMessageDialog (null, "You have gained Maserati 5000GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_5000GTIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Maserati 5000GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Maserati_5000GTIcon));
 								break;
 							}
 							case 63:{
-								JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz CLA250!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_CLA250Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz CLA250!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mercedes_Benz_CLA250Icon));
 								break;
 							}
 							case 67:{
-								JOptionPane.showMessageDialog (null, "You have gained Lamborghini Gallardo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_GallardoIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Lamborghini Gallardo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lamborghini_GallardoIcon));
 								break;
 							}
 							case 71:{
-								JOptionPane.showMessageDialog (null, "You have gained Mazda RX7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_RX7Icon);
+								JOptionPane.showMessageDialog (null, "You have gained Mazda RX7!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mazda_RX7Icon));
 								break;
 							}
 							case 75:{
-								JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Colt!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_ColtIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Colt!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mitsubishi_ColtIcon));
 							}
 							case 79:{
-								JOptionPane.showMessageDialog (null, "You have gained Kia Sorento!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_SorentoIcon);
+								JOptionPane.showMessageDialog (null, "You have gained Kia Sorento!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Kia_SorentoIcon));
 								break;
 							}
 							default:{
-								JOptionPane.showMessageDialog(null, "You have colected all 4 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+								JOptionPane.showMessageDialog(null, "You have colected all 4 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 								break;
 							}
 							}
@@ -12411,20 +12415,21 @@ if(ae.getSource() == jbtnBuildCarLv4){
 			}
 			}
 			else{
-				JOptionPane.showMessageDialog (null, "You don't have 4 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+				JOptionPane.showMessageDialog (null, "You don't have 4 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
 			}
 			else{
-				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
 			}
 			}
 			else{
-				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
 			}  
 }
 }
 
 	if(ae.getSource() == jbtnBuildCarLv5){
 		Statistic.statistic[2] +=1;
+		count0 = 0;
 		if(CarMain.main[5] >=5){
 			if(CarMain.main[7] >0){
 				if(CarFrame.frames[9] >0){ 
@@ -12434,7 +12439,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 							count0+=1;
 						}
 						else{
-							JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);  					
+							JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));  					
 							break;}
 					}
 					
@@ -12450,87 +12455,87 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								switch(j){
 								
 								case 3:{
-									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Wraith!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_WraithIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Wraith!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Rolls_Royce_WraithIcon));
 									break;
 								}
 								case 7:{
-									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Diablo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_DiabloIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Diablo!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lamborghini_DiabloIcon));
 									break;
 								}
 								case 11:{
-									JOptionPane.showMessageDialog (null, "You have gained Jeep Scrambler!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_ScramblerIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Jeep Scrambler!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jeep_ScramblerIcon));
 									break;
 								}
 								case 15:{
-									JOptionPane.showMessageDialog (null, "You have gained Bentley Continental!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_ContinentalIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Bentley Continental!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bentley_ContinentalIcon));
 									break;
 								}
 								case 19:{
-									JOptionPane.showMessageDialog (null, "You have gained Bentley Azure!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_AzureIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Bentley Azure!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bentley_AzureIcon));
 									break;
 								}
 								case 23:{
-									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_OneIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg One!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Koenigsegg_OneIcon));
 									break;
 								}
 								case 27:{
-									JOptionPane.showMessageDialog (null, "You have gained Cadilliac XTS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_XTSIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Cadilliac XTS!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Cadilliac_XTSIcon));
 									break;
 								}
 								case 31:{
-									JOptionPane.showMessageDialog (null, "You have gained Fiat 500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_500Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Fiat 500!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Fiat_500Icon));
 									break;
 								}
 								case 35:{
-									JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Pajero!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_PajeroIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Mitsubishi Pajero!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mitsubishi_PajeroIcon));
 									break;
 								}
 								case 39:{
-									JOptionPane.showMessageDialog (null, "You have gained Moskvich 2140!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_2140Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Moskvich 2140!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Moskvich_2140Icon));
 									break;
 								}
 								case 43:{
-									JOptionPane.showMessageDialog (null, "You have gained Opel GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_GTIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Opel GT!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Opel_GTIcon));
 									break;
 								}
 								case 47:{
-									JOptionPane.showMessageDialog (null, "You have gained Hyundai Getz!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_GetzIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Hyundai Getz!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Hyundai_GetzIcon));
 									break;
 								}
 								case 51:{
-									JOptionPane.showMessageDialog (null, "You have gained Maserati Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_CoupeIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Maserati Coupe!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Maserati_CoupeIcon));
 									break;
 								}
 								case 55:{
-									JOptionPane.showMessageDialog (null, "You have gained Honda S2000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_S2000Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Honda S2000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Honda_S2000Icon));
 									break;
 								}
 								case 59:{
-									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_SpiderIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Alfa_Romeo_SpiderIcon));
 									break;
 								}
 								case 63:{
-									JOptionPane.showMessageDialog (null, "You have gained BMW M5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_M5Icon);
+									JOptionPane.showMessageDialog (null, "You have gained BMW M5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_M5Icon));
 									break;
 								}
 								case 67:{
-									JOptionPane.showMessageDialog (null, "You have gained BMW I8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_I8Icon);
+									JOptionPane.showMessageDialog (null, "You have gained BMW I8!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_I8Icon));
 									break;
 								}
 								case 71:{
-									JOptionPane.showMessageDialog (null, "You have gained Citroen C5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_C5Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Citroen C5!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Citroen_C5Icon));
 									break;
 								}
 								case 75:{
-									JOptionPane.showMessageDialog (null, "You have gained Fiat Punto!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_PuntoIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Fiat Punto!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Fiat_PuntoIcon));
 									break;
 								}
 								case 79:{
-									JOptionPane.showMessageDialog (null, "You have gained Audi 100!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_100Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Audi 100!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_100Icon));
 									break;
 								}						
 								default:{
-									JOptionPane.showMessageDialog(null, "You have colected all 5 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									JOptionPane.showMessageDialog(null, "You have colected all 5 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 									break;
 								}
 								}
@@ -12539,14 +12544,14 @@ if(ae.getSource() == jbtnBuildCarLv4){
 				}
 				}
 				else{
-					JOptionPane.showMessageDialog (null, "You don't have 5 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+					JOptionPane.showMessageDialog (null, "You don't have 5 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
 				}
 				else{
-					JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+					JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
 				}
 				}
 				else{
-					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
 				}  
 }
 	}
@@ -12555,6 +12560,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	
 	if(ae.getSource() == jbtnBuildCarLv6){
 		Statistic.statistic[2] +=1;
+		count0 = 0;
     	if(CarMain.main[5] >=6){
     		if(CarMain.main[7] >0){
     			if(CarFrame.frames[11] >0){ 
@@ -12564,7 +12570,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     						count0+=1;
     					}
     					else{
-    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);    					
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));    					
     						break;}
     				}
     				
@@ -12580,87 +12586,87 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								switch(j){
 								
 								case 3:{
-									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Phantom", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_PhantomIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Phantom", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Rolls_Royce_PhantomIcon));
 									break; 
 								}
 								case 7:{
-									JOptionPane.showMessageDialog (null, "You have gained Toyota 86!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_86Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Toyota 86!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Toyota_86Icon));
 									break; 
 								}
 								case 11:{
-									JOptionPane.showMessageDialog (null, "You have gained BMW e70!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e70Icon);
+									JOptionPane.showMessageDialog (null, "You have gained BMW e70!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_e70Icon));
 									break;
 								}
 								case 15:{
-									JOptionPane.showMessageDialog (null, "You have gained Chrysler Voyager!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_VoyagerIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Chrysler Voyager!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chrysler_VoyagerIcon));
 									break;
 								}
 								case 19:{
-									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce PhantomIII!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_PhantomIIIIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce PhantomIII!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Rolls_Royce_PhantomIIIIcon));
 									break;
 								}
 								case 23:{
-									JOptionPane.showMessageDialog (null, "You have gained Honda CRX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Honda_CRXIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Honda CRX!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Honda_CRXIcon));
 									break;
 								}
 								case 27:{
-									JOptionPane.showMessageDialog (null, "You have gained Subaru 1000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_1000Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Subaru 1000!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Subaru_1000Icon));
 									break; 
 								}
 								case 31:{
-									JOptionPane.showMessageDialog (null, "You have gained Cadilliac Eldorado!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_EldoradoIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Cadilliac Eldorado!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Cadilliac_EldoradoIcon));
 									break; 
 								}
 								case 35:{
-									JOptionPane.showMessageDialog (null, "You have gained Land Rover Freelander!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_FreelanderIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Land Rover Freelander!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Land_Rover_FreelanderIcon));
 									break;
 								}
 								case 39:{
-									JOptionPane.showMessageDialog (null, "You have gained Renault_Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_SpiderIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Renault_Spider!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Renault_SpiderIcon));
 									break;
 								}
 								case 43:{
-									JOptionPane.showMessageDialog (null, "You have gained Gaz 21!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Gaz_21Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Gaz 21!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Gaz_21Icon));
 									break;
 								}
 								case 47:{
-									JOptionPane.showMessageDialog (null, "You have gained Acura EL!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_ELIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Acura EL!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Acura_ELIcon));
 									break;
 								}
 								case 51:{
-									JOptionPane.showMessageDialog (null, "You have gained Bugatti Veyron!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_VeyronIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Bugatti Veyron!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bugatti_VeyronIcon));
 									break; 
 								}
 								case 55:{
-									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz SL600!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_SL600Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz SL600!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mercedes_Benz_SL600Icon));
 									break;
 								}
 								case 59:{
-									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Silver!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Rolls_Royce_SilverIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Rolls Royce Silver!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Rolls_Royce_SilverIcon));
 									break; 
 								}
 								case 63:{
-									JOptionPane.showMessageDialog (null, "You have gained Mini Paceman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_PacemanIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Mini Paceman!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mini_PacemanIcon));
 									break; 
 								}
 								case 67:{
-									JOptionPane.showMessageDialog (null, "You have gained Hyundai Excel!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_ExcelIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Hyundai Excel!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Hyundai_ExcelIcon));
 									break;
 								}
 								case 71:{
-									JOptionPane.showMessageDialog (null, "You have gained Gaz 24!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Gaz_24Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Gaz 24!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Gaz_24Icon));
 									break; 
 								}
 								case 75:{
-									JOptionPane.showMessageDialog (null, "You have gained Peugeot 107!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_107Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Peugeot 107!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Peugeot_107Icon));
 									break; 
 								}
 								case 79:{
-									JOptionPane.showMessageDialog (null, "You have gained Audi_A4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_A4Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Audi_A4!", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_A4Icon));
 									break;
 								}
 								default:{
-									JOptionPane.showMessageDialog(null, "You have colected all 6 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									JOptionPane.showMessageDialog(null, "You have colected all 6 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 									break;
 								}
 								}
@@ -12669,14 +12675,14 @@ if(ae.getSource() == jbtnBuildCarLv4){
 				}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have 6 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    				JOptionPane.showMessageDialog (null, "You don't have 6 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
     			}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
     			}  
 }
 	}
@@ -12684,6 +12690,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	
 	if(ae.getSource() == jbtnBuildCarLv7){
 		Statistic.statistic[2] +=1;
+		count0 = 0;
     	if(CarMain.main[5] >=7){
     		if(CarMain.main[7] >0){
     			if(CarFrame.frames[13] >0){ 
@@ -12693,7 +12700,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     						count0+=1;
     					}
     					else{
-    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
     						break;}
     				}
     				
@@ -12709,87 +12716,87 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								switch(j){
 								
 								case 3:{
-									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Aventador", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_AventadorIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lamborghini Aventador", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lamborghini_AventadorIcon));
 									break;
 								}
 								case 7:{
-									JOptionPane.showMessageDialog (null, "You have gained Nissan 350z", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_350zIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Nissan 350z", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Nissan_350zIcon));
 									break;
 								}
 								case 11:{
-									JOptionPane.showMessageDialog (null, "You have gained Jaguar XJ6", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_XJ6Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Jaguar XJ6", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jaguar_XJ6Icon));
 									break;
 								}
 								case 15:{
-									JOptionPane.showMessageDialog (null, "You have gained Renault Clio", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_ClioIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Renault Clio", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Renault_ClioIcon));
 									break;
 								}
 								case 19:{
-									JOptionPane.showMessageDialog (null, "You have gained Toyota Avensis", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_AvensisIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Toyota Avensis", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Toyota_AvensisIcon));
 									break;
 								}
 								case 23:{
-									JOptionPane.showMessageDialog (null, "You have gained Subaru Outback", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_OutbackIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Subaru Outback", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Subaru_OutbackIcon));
 									break;
 								}
 								case 27:{
-									JOptionPane.showMessageDialog (null, "You have gained Saab 900", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Saab_900Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Saab 900", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Saab_900Icon));
 									break;
 								}
 								case 31:{
-									JOptionPane.showMessageDialog (null, "You have gained Opel Vectra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Opel_VectraIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Opel Vectra", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Opel_VectraIcon));
 									break;
 								}
 								case 35:{
-									JOptionPane.showMessageDialog (null, "You have gained Chrysler Charger", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chrysler_ChargerIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Chrysler Charger", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chrysler_ChargerIcon));
 									break;
 								}
 								case 39:{
-									JOptionPane.showMessageDialog (null, "You have gained Ferrari_348", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_348Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Ferrari_348", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ferrari_348Icon));
 									break;
 								}
 								case 43:{
-									JOptionPane.showMessageDialog (null, "You have gained Hyundai XG", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Hyundai_XGIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Hyundai XG", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Hyundai_XGIcon));
 									break;
 								}
 								case 47:{
-									JOptionPane.showMessageDialog (null, "You have gained Lexus RX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_RXIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lexus RX", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lexus_RXIcon));
 									break;
 								}
 								case 51:{
-									JOptionPane.showMessageDialog (null, "You have gained Dodge 400", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_400Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Dodge 400", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Dodge_400Icon));
 									break;
 								}
 								case 55:{
-									JOptionPane.showMessageDialog (null, "You have gained GMC Terrain", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_TerrainIcon);
+									JOptionPane.showMessageDialog (null, "You have gained GMC Terrain", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.GMC_TerrainIcon));
 									break;
 								}
 								case 59:{
-									JOptionPane.showMessageDialog (null, "You have gained Volvo C70", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_C70Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Volvo C70", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volvo_C70Icon));
 									break;
 								}
 								case 63:{
-									JOptionPane.showMessageDialog (null, "You have gained Ford_Sierra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_SierraIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Ford_Sierra", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ford_SierraIcon));
 									break;
 								}
 								case 67:{
-									JOptionPane.showMessageDialog (null, "You have gained Subaru Impreza", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_ImprezaIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Subaru Impreza", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Subaru_ImprezaIcon));
 									break;
 								}
 								case 71:{
-									JOptionPane.showMessageDialog (null, "You have gained BMW e90", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.BMW_e90Icon);
+									JOptionPane.showMessageDialog (null, "You have gained BMW e90", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.BMW_e90Icon));
 									break;
 								}
 								case 75:{
-									JOptionPane.showMessageDialog (null, "You have gained Nissan Skyline", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_SkylineIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Nissan Skyline", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Nissan_SkylineIcon));
 									break;
 								}
 								case 79:{
-									JOptionPane.showMessageDialog (null, "You have gained Audi Q7", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_Q7Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Audi Q7", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_Q7Icon));
 									break;
 								}
 								default:{
-									JOptionPane.showMessageDialog(null, "You have colected all 7 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									JOptionPane.showMessageDialog(null, "You have colected all 7 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 									break;
 								}
 								}
@@ -12798,20 +12805,21 @@ if(ae.getSource() == jbtnBuildCarLv4){
 				}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have 7 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    				JOptionPane.showMessageDialog (null, "You don't have 7 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
     			}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
     			}  
 }
 	}	    																		
 	    																		
 	if(ae.getSource() == jbtnBuildCarLv8){
 		Statistic.statistic[2] +=1;
+		count0 = 0;
     	if(CarMain.main[5] >=8){
     		if(CarMain.main[7] >0){
     			if(CarFrame.frames[15] >0){ 
@@ -12821,7 +12829,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     						count0+=1;
     					}
     					else{
-    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
     						break;}
     				}
     				
@@ -12837,87 +12845,87 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								switch(j){
 								
 								case 3:{
-									JOptionPane.showMessageDialog (null, "You have gained Bentley Arnage", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_ArnageIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Bentley Arnage", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bentley_ArnageIcon));
 									break;
 								}
 								case 7:{
-									JOptionPane.showMessageDialog (null, "You have gained Volvo 850", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volvo_850Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Volvo 850", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volvo_850Icon));
 									break;
 								}
 								case 11:{
-									JOptionPane.showMessageDialog (null, "You have gained Toyota Rav4", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Toyota_Rav4Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Toyota Rav4", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Toyota_Rav4Icon));
 									break;
 								}
 								case 15:{
-									JOptionPane.showMessageDialog (null, "You have gained Ford Focus", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ford_FocusIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Ford Focus", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ford_FocusIcon));
 									break;
 								}
 								case 19:{
-									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Spin", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_SpinIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Spin", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chevrolet_SpinIcon));
 									break;
 								}
 								case 23:{
-									JOptionPane.showMessageDialog (null, "You have gained Bentley GTZ", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bentley_GTZIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Bentley GTZ", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bentley_GTZIcon));
 									break;
 								}
 								case 27:{
-									JOptionPane.showMessageDialog (null, "You have gained Lexus LS", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_LSIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lexus LS", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lexus_LSIcon));
 									break;
 								}
 								case 31:{
-									JOptionPane.showMessageDialog (null, "You have gained Land Rover RangeRover", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Land_Rover_RangeRoverIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Land Rover RangeRover", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Land_Rover_RangeRoverIcon));
 									break;
 								}
 								case 35:{
-									JOptionPane.showMessageDialog (null, "You have gained Lexus GX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lexus_GXIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lexus GX", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lexus_GXIcon));
 									break;
 								}
 								case 39:{
-									JOptionPane.showMessageDialog (null, "You have gained Jeep Wrangler", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_WranglerIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Jeep Wrangler", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jeep_WranglerIcon));
 									break;
 								}
 								case 43:{
-									JOptionPane.showMessageDialog (null, "You have gained Maserati GranTurismo", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_GranTurismoIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Maserati GranTurismo", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Maserati_GranTurismoIcon));
 									break;
 								}
 								case 47:{
-									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Agera", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Koenigsegg_AgeraIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Koenigsegg Agera", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Koenigsegg_AgeraIcon));
 									break;
 								}
 								case 51:{
-									JOptionPane.showMessageDialog (null, "You have gained Acura MDX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Acura_MDXIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Acura MDX", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Acura_MDXIcon));
 									break;
 								}
 								case 55:{
-									JOptionPane.showMessageDialog (null, "You have gained Audi RS6", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Audi_RS6Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Audi RS6", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Audi_RS6Icon));
 									break;
 								}
 								case 59:{
-									JOptionPane.showMessageDialog (null, "You have gained Cadilliac DeVille", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Cadilliac_DeVilleIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Cadilliac DeVille", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Cadilliac_DeVilleIcon));
 									break;
 								}
 								case 63:{
-									JOptionPane.showMessageDialog (null, "You have gained McLaren Veneno", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_VenenoIcon);
+									JOptionPane.showMessageDialog (null, "You have gained McLaren Veneno", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.McLaren_VenenoIcon));
 									break;
 								}
 								case 67:{
-									JOptionPane.showMessageDialog (null, "You have gained Tesla X", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Tesla_XIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Tesla X", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Tesla_XIcon));
 									break;
 								}
 								case 71:{
-									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz G55", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mercedes_Benz_G55Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Mercedes Benz G55", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mercedes_Benz_G55Icon));
 									break;
 								}
 								case 75:{
-									JOptionPane.showMessageDialog (null, "You have gained Lancia Lybra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_LybraIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lancia Lybra", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lancia_LybraIcon));
 									break;
 								}
 								case 79:{
-									JOptionPane.showMessageDialog (null, "You have gained Infiniti QX60", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Infiniti_QX60Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Infiniti QX60", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Infiniti_QX60Icon));
 									break;
 								}
 								default:{
-									JOptionPane.showMessageDialog(null, "You have colected all 8 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									JOptionPane.showMessageDialog(null, "You have colected all 8 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 									break;
 								}
 								}
@@ -12926,20 +12934,21 @@ if(ae.getSource() == jbtnBuildCarLv4){
 				}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have 8 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    				JOptionPane.showMessageDialog (null, "You don't have 8 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
     				}
     				}
     				else{
-    					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    					JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
     				}  
 }												
 	}   																		
 	    																		
 	if(ae.getSource() == jbtnBuildCarLv9){
 		Statistic.statistic[2] +=1;
+		count0 = 0;
     	if(CarMain.main[5] >=9){
     		if(CarMain.main[7] >0){
     			if(CarFrame.frames[17] >0){ 
@@ -12949,7 +12958,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
     						count0+=1;
     					}
     					else{
-    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+    						JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
     						break;}
     				}
     				
@@ -12965,87 +12974,87 @@ if(ae.getSource() == jbtnBuildCarLv4){
 								switch(j){
 								
 								case 3:{
-									JOptionPane.showMessageDialog (null, "You have gained Kia Forte", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Kia_ForteIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Kia Forte", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Kia_ForteIcon));
 									break;
 								}
 								case 7:{
-									JOptionPane.showMessageDialog (null, "You have gained Lancia Voyager", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lancia_VoyagerIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Lancia Voyager", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lancia_VoyagerIcon));
 									break;
 								}
 								case 11:{
-									JOptionPane.showMessageDialog (null, "You have gained Porsche_Cayenne", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_CayenneIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Porsche_Cayenne", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Porsche_CayenneIcon));
 									break;
 								}
 								case 15:{
-									JOptionPane.showMessageDialog (null, "You have gained McLaren_650s", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_650sIcon);
+									JOptionPane.showMessageDialog (null, "You have gained McLaren_650s", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.McLaren_650sIcon));
 									break;
 								}
 								case 19:{
-									JOptionPane.showMessageDialog (null, "You have gained Jaguar E-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_E_TypeIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Jaguar E-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jaguar_E_TypeIcon));
 									break;
 								}
 								case 23:{
-									JOptionPane.showMessageDialog (null, "You have gained Peugeot 601", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_601Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Peugeot 601", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Peugeot_601Icon));
 									break;
 								}
 								case 27:{
-									JOptionPane.showMessageDialog (null, "You have gained Jaguar F-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_F_TypeIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Jaguar F-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jaguar_F_TypeIcon));
 									break;
 								}
 								case 31:{
-									JOptionPane.showMessageDialog (null, "You have gained Fiat Doblo", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Fiat_DobloIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Fiat Doblo", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Fiat_DobloIcon));
 									break;
 								}
 								case 35:{
-									JOptionPane.showMessageDialog (null, "You have gained Vaz 2101", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_2101Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Vaz 2101", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Vaz_2101Icon));
 									break;
 								}
 								case 39:{
-									JOptionPane.showMessageDialog (null, "You have gained McLaren P1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.McLaren_P1Icon);
+									JOptionPane.showMessageDialog (null, "You have gained McLaren P1", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.McLaren_P1Icon));
 									break;
 								}
 								case 43:{
-									JOptionPane.showMessageDialog (null, "You have gained Peugeot 405", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Peugeot_405Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Peugeot 405", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Peugeot_405Icon));
 									break;
 								}
 								case 47:{
-									JOptionPane.showMessageDialog (null, "You have gained GMC Envoy", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.GMC_EnvoyIcon);
+									JOptionPane.showMessageDialog (null, "You have gained GMC Envoy", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.GMC_EnvoyIcon));
 									break;
 								}
 								case 51:{
-									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Corvete", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Chevrolet_CorveteIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Chevrolet Corvete", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Chevrolet_CorveteIcon));
 									break;
 								}
 								case 55:{
-									JOptionPane.showMessageDialog (null, "You have gained Pagani Huayra", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Pagani_HuayraIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Pagani Huayra", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Pagani_HuayraIcon));
 									break;
 								}
 								case 59:{
-									JOptionPane.showMessageDialog (null, "You have gained Moskvich 402", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Moskvich_402Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Moskvich 402", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Moskvich_402Icon));
 									break;
 								}
 								case 63:{
-									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 159", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_159Icon);
+									JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 159", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Alfa_Romeo_159Icon));
 									break;
 								}
 								case 67:{
-									JOptionPane.showMessageDialog (null, "You have gained Renault Fregate", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Renault_FregateIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Renault Fregate", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Renault_FregateIcon));
 									break;
 								}
 								case 71:{
-									JOptionPane.showMessageDialog (null, "You have gained Mini Cooper", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mini_CooperIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Mini Cooper", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mini_CooperIcon));
 									break;
 								}
 								case 75:{
-									JOptionPane.showMessageDialog (null, "You have gained Dodge Viper", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_ViperIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Dodge Viper", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Dodge_ViperIcon));
 									break;
 								}
 								case 79:{
-									JOptionPane.showMessageDialog (null, "You have gained Vaz Niva", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Vaz_NivaIcon);
+									JOptionPane.showMessageDialog (null, "You have gained Vaz Niva", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Vaz_NivaIcon));
 									break;
 								}
 								default:{
-									JOptionPane.showMessageDialog(null, "You have colected all 9 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+									JOptionPane.showMessageDialog(null, "You have colected all 9 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 									break;
 								}
 								}
@@ -13054,20 +13063,21 @@ if(ae.getSource() == jbtnBuildCarLv4){
 				}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have 9 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+    				JOptionPane.showMessageDialog (null, "You don't have 9 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
     			}
     			}
     			else{
-    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+    				JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
     			}  
 }											
 	}	
 
 if(ae.getSource() == jbtnBuildCarLv10){
 	Statistic.statistic[2] +=1;
+	count0 = 0;
 if(CarMain.main[5] >=10){
 	if(CarMain.main[7] >0){
 		if(CarFrame.frames[19] >0){ 
@@ -13077,7 +13087,7 @@ if(CarMain.main[5] >=10){
 					count0+=1;
 				}
 				else{
-					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPartsIcon);	    					
+					JOptionPane.showMessageDialog (null, "You don't have enought parts!", "No Parts", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPartsIcon));	    					
 					break;}
 			}
 			
@@ -13093,87 +13103,87 @@ if(CarMain.main[5] >=10){
 						switch(j){
 						
 						case 3:{
-							JOptionPane.showMessageDialog (null, "You have gained Jaguar X-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jaguar_X_TypeIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Jaguar X-Type", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jaguar_X_TypeIcon));
 							break;
 						}
 						case 7:{
-							JOptionPane.showMessageDialog (null, "You have gained Ferrari 308", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_308Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Ferrari 308", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ferrari_308Icon));
 							break;
 						}
 						case 11:{
-							JOptionPane.showMessageDialog (null, "You have gained Mazda 626", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mazda_626Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Mazda 626", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mazda_626Icon));
 							break;
 						}
 						case 15:{
-							JOptionPane.showMessageDialog (null, "You have gained Maserati Shamal", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Maserati_ShamalIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Maserati Shamal", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Maserati_ShamalIcon));
 							break;
 						}
 						case 19:{
-							JOptionPane.showMessageDialog (null, "You have gained Nissan 240sx", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_240sxIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Nissan 240sx", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Nissan_240sxIcon));
 							break;
 						}
 						case 23:{
-							JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 4C", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Alfa_Romeo_4CIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Alfa Romeo 4C", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Alfa_Romeo_4CIcon));
 							break;
 						}
 						case 27:{
-							JOptionPane.showMessageDialog (null, "You have gained Nissan Juke", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Nissan_JukeIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Nissan Juke", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Nissan_JukeIcon));
 							break;
 						}
 						case 31:{
-							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Golf1", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Volkswagen_Golf1Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Volkswagen Golf1", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Volkswagen_Golf1Icon));
 							break;
 						}
 						case 35:{
-							JOptionPane.showMessageDialog (null, "You have gained Jeep Gladiator", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Jeep_GladiatorIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Jeep Gladiator", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Jeep_GladiatorIcon));
 							break;
 						}
 						case 39:{
-							JOptionPane.showMessageDialog (null, "You have gained Dodge Matador", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Dodge_MatadorIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Dodge Matador", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Dodge_MatadorIcon));
 							break;
 						}
 						case 43:{
-							JOptionPane.showMessageDialog (null, "You have gained Bugatti Royale", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_RoyaleIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Bugatti Royale", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bugatti_RoyaleIcon));
 							break;
 						}
 						case 47:{
-							JOptionPane.showMessageDialog (null, "You have gained Citroen CX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_CXIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Citroen CX", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Citroen_CXIcon));
 							break;
 						}
 						case 51:{
-							JOptionPane.showMessageDialog (null, "You have gained Lamborghini 350GT", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Lamborghini_350GTIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Lamborghini 350GT", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Lamborghini_350GTIcon));
 							break;
 						}
 						case 55:{
-							JOptionPane.showMessageDialog (null, "You have gained Mitsubishi GTO", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Mitsubishi_GTOIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Mitsubishi GTO", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Mitsubishi_GTOIcon));
 							break;
 						}
 						case 59:{
-							JOptionPane.showMessageDialog (null, "You have gained Buick Invicta", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Buick_InvictaIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Buick Invicta", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Buick_InvictaIcon));
 							break;
 						}
 						case 63:{
-							JOptionPane.showMessageDialog (null, "You have gained Porsche 911", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Porsche_911Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Porsche 911", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Porsche_911Icon));
 							break;
 						}
 						case 67:{
-							JOptionPane.showMessageDialog (null, "You have gained Subaru Forester", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Subaru_ForesterIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Subaru Forester", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Subaru_ForesterIcon));
 							break;
 						}
 						case 71:{
-							JOptionPane.showMessageDialog (null, "You have gained Citroen BX", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Citroen_BXIcon);
+							JOptionPane.showMessageDialog (null, "You have gained Citroen BX", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Citroen_BXIcon));
 							break;
 						}
 						case 75:{
-							JOptionPane.showMessageDialog (null, "You have gained Bugatti Type252", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Bugatti_Type252Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Bugatti Type252", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Bugatti_Type252Icon));
 							break;
 						}
 						case 79:{
-							JOptionPane.showMessageDialog (null, "You have gained Ferrari 488", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.Ferrari_488Icon);
+							JOptionPane.showMessageDialog (null, "You have gained Ferrari 488", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.Ferrari_488Icon));
 							break;
 						}
 						default:{
-							JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, ImagesHolder.MaxUpgradeIcon);
+							JOptionPane.showMessageDialog(null, "You have colected all 1 LVL cars", "Congralations", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(ImagesHolder.MaxUpgradeIcon));
 							break;
 						}
 						}
@@ -13182,14 +13192,14 @@ if(CarMain.main[5] >=10){
 		}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have 1 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoFrameIcon);}
+			JOptionPane.showMessageDialog (null, "You don't have 1 LVL car frame!", "No Car Frame", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoFrameIcon));}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoGarageIcon);
+			JOptionPane.showMessageDialog (null, "You don't have available garage slot!", "No Garage Slot", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoGarageIcon));
 		}
 		}
 		else{
-			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, ImagesHolder.NoPlayerIcon);
+			JOptionPane.showMessageDialog (null, "You don't have enought player level!", "No Player Level", JOptionPane.ERROR_MESSAGE, new ImageIcon(ImagesHolder.NoPlayerIcon));
 		}  
 }}
 }}
