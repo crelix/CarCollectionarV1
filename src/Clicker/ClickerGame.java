@@ -8804,7 +8804,7 @@ public class ClickerGame implements ActionListener {
         // Upgrade Player Level Button Click
         
         if(ae.getSource() == jbtnUpgradeLevel){   
-        	Statistic.statistic[2] +=1;
+        	
         	for (int i =9; i >=0; i--){            		
         		   if (CarMain.main[5] == i){
                    	if (CarMain.main[0] >= 100*i){
@@ -8823,7 +8823,7 @@ public class ClickerGame implements ActionListener {
         // Upgrade Garage Level Button Click
         
         if(ae.getSource() == jbtnUpgradeGarageLevel){  
-        	Statistic.statistic[2] +=1;
+        	
         	for (int i =9; i >=0; i--){            		
         		   if (CarMain.main[6] == i){
                    	if (CarMain.main[0] >= 100*i){
@@ -8843,7 +8843,7 @@ public class ClickerGame implements ActionListener {
         // Upgrade Boxes Level Button Click
         
         if(ae.getSource() == jbtnUpgradeBoxesLevel){     
-        	Statistic.statistic[2] +=1;
+        	
         	for (int i =9; i >=0; i--){            		
         		   if (CarMain.main[4] == i){
                    	if (CarMain.main[0] >= 100*i){
@@ -8862,7 +8862,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 1 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=1){
         		if (CarMain.main[0] >= CarFrame.frames[0]){
         			CarFrame.frames[1] = CarFrame.frames[1] + 1;
@@ -8881,7 +8881,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 2 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=2){
         		if (CarMain.main[0] >= CarFrame.frames[2]){
         			CarFrame.frames[3] = CarFrame.frames[3] + 1;
@@ -8900,7 +8900,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 3 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=3){
         		if (CarMain.main[0] >= CarFrame.frames[4]){
         			CarFrame.frames[5] = CarFrame.frames[5] + 1;
@@ -8919,7 +8919,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 4 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=4){
         		if (CarMain.main[0] >= CarFrame.frames[6]){
         			CarFrame.frames[7] = CarFrame.frames[7] + 1;
@@ -8938,7 +8938,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 5 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=5){
         		if (CarMain.main[0] >= CarFrame.frames[8]){
         			CarFrame.frames[9] = CarFrame.frames[9] + 1;
@@ -8957,7 +8957,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 6 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=6){
         		if (CarMain.main[0] >= CarFrame.frames[10]){
         			CarFrame.frames[11] = CarFrame.frames[11] + 1;
@@ -8976,7 +8976,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 7 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=7){
         		if (CarMain.main[0] >= CarFrame.frames[12]){
         			CarFrame.frames[13] = CarFrame.frames[13] + 1;
@@ -8995,7 +8995,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 8 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=8){
         		if (CarMain.main[0] >= CarFrame.frames[14]){
         			CarFrame.frames[15] = CarFrame.frames[15] + 1;
@@ -9014,7 +9014,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 9 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=9){
         		if (CarMain.main[0] >= CarFrame.frames[16]){
         			CarFrame.frames[17] = CarFrame.frames[17] + 1;
@@ -9033,7 +9033,7 @@ public class ClickerGame implements ActionListener {
         // Buy Frame Level 10 Button Click
         
         if(ae.getSource() == jbtnBuyFrameLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=10){
         		if (CarMain.main[0] >= CarFrame.frames[18]){
         			CarFrame.frames[19] = CarFrame.frames[19] + 1;
@@ -9052,7 +9052,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 1 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=1){
         		if (CarMain.main[0] >= Box.boxes[0]){
         			Box.boxes[1] = Box.boxes[1] + 1;
@@ -9070,7 +9070,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 2 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=2){
         		if (CarMain.main[0] >= Box.boxes[2]){
         			Box.boxes[3] = Box.boxes[3] + 1;
@@ -9088,7 +9088,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 3 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=3){
         		if (CarMain.main[0] >= Box.boxes[4]){
         			Box.boxes[5] = Box.boxes[5] + 1;
@@ -9106,7 +9106,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 4 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=4){
         		if (CarMain.main[0] >= Box.boxes[6]){
         			Box.boxes[7] = Box.boxes[7] + 1;
@@ -9124,7 +9124,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 5 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=5){
         		if (CarMain.main[0] >= Box.boxes[8]){
         			Box.boxes[9] = Box.boxes[9] + 1;
@@ -9142,7 +9142,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 6 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=6){
         		if (CarMain.main[0] >= Box.boxes[10]){
         			Box.boxes[11] = Box.boxes[11] + 1;
@@ -9160,7 +9160,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 7 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=7){
         		if (CarMain.main[0] >= Box.boxes[12]){
         			Box.boxes[13] = Box.boxes[13] + 1;
@@ -9178,7 +9178,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 8 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=8){
         		if (CarMain.main[0] >= Box.boxes[14]){
         			Box.boxes[15] = Box.boxes[15] + 1;
@@ -9196,7 +9196,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 9 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=9){
         		if (CarMain.main[0] >= Box.boxes[16]){
         			Box.boxes[17] = Box.boxes[17] + 1;
@@ -9214,7 +9214,7 @@ public class ClickerGame implements ActionListener {
         // Buy Box Level 10 Button Click
         
         if(ae.getSource() == jbtnBuyBoxLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (CarMain.main[5] >=10){
         		if (CarMain.main[0] >= Box.boxes[18]){
         			Box.boxes[19] = Box.boxes[19] + 1;
@@ -9232,7 +9232,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 1 Button Click
         
         if(ae.getSource() == jbtnPartsLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[1] > 0){
         		if (CarMain.main[4] >=1){
         			if (CarMain.main[5] >=1){
@@ -9306,7 +9306,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 2 Button Click
         
         if(ae.getSource() == jbtnPartsLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[3] > 0){
         		if (CarMain.main[4] >=2){
         			if (CarMain.main[5] >=2){
@@ -9379,7 +9379,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 3 Button Click
         
         if(ae.getSource() == jbtnPartsLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[5] > 0){
         		if (CarMain.main[4] >=3){
         			if (CarMain.main[5] >=3){
@@ -9452,7 +9452,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 4 Button Click
         
         if(ae.getSource() == jbtnPartsLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[7] > 0){
         		if (CarMain.main[4] >=4){
         			if (CarMain.main[5] >=4){
@@ -9525,7 +9525,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 5 Button Click
         
         if(ae.getSource() == jbtnPartsLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[9] > 0){
         		if (CarMain.main[4] >=5){
         			if (CarMain.main[5] >=5){
@@ -9598,7 +9598,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 6 Button Click
         
         if(ae.getSource() == jbtnPartsLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[11] > 0){
         		if (CarMain.main[4] >=6){
         			if (CarMain.main[5] >=6){
@@ -9671,7 +9671,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 7 Button Click
         
         if(ae.getSource() == jbtnPartsLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[13] > 0){
         		if (CarMain.main[4] >=7){
         			if (CarMain.main[5] >=7){
@@ -9744,7 +9744,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 8 Button Click
         
         if(ae.getSource() == jbtnPartsLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[15] > 0){
         		if (CarMain.main[4] >=8){
         			if (CarMain.main[5] >=8){
@@ -9817,7 +9817,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 9 Button Click
         
         if(ae.getSource() == jbtnPartsLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[17] > 0){
         		if (CarMain.main[4] >=9){
         			if (CarMain.main[5] >=9){
@@ -9890,7 +9890,7 @@ public class ClickerGame implements ActionListener {
         // Open Box Level 10 Button Click
         
         if(ae.getSource() == jbtnPartsLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Box.boxes[19] > 0){
         		if (CarMain.main[4] >=10){
         			if (CarMain.main[5] >=10){
@@ -9963,7 +9963,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 1 Button Click
          
         if(ae.getSource() == jbtnSellAccessoriesLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[1] >0){
         		Part.parts[1] = Part.parts[1] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[0];
@@ -9977,7 +9977,7 @@ public class ClickerGame implements ActionListener {
       	
         }
         if(ae.getSource() == jbtnSellAccessoriesLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[27] >0){
         		Part.parts[27] = Part.parts[27] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[26];
@@ -9992,7 +9992,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 3 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[53] >0){
         		Part.parts[53] = Part.parts[53] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[52];
@@ -10007,7 +10007,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 4 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[79] >0){
         		Part.parts[79] = Part.parts[79] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[78];
@@ -10022,7 +10022,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 5 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[105] >0){
         		Part.parts[105] = Part.parts[105] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[104];
@@ -10037,7 +10037,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 6 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[131] >0){
         		Part.parts[131] = Part.parts[131] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[130];
@@ -10052,7 +10052,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 7 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[157] >0){
         		Part.parts[157] = Part.parts[157] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[156];
@@ -10067,7 +10067,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 8 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[183] >0){
         		Part.parts[183] = Part.parts[183] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[182];
@@ -10082,7 +10082,7 @@ public class ClickerGame implements ActionListener {
         // Sell Accessories Level 9 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[209] >0){
         		Part.parts[209] = Part.parts[209] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[208];
@@ -10097,7 +10097,7 @@ public class ClickerGame implements ActionListener {
          // Sell Accessories Level 10 Button Click
   
         if(ae.getSource() == jbtnSellAccessoriesLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[235] >0){
         		Part.parts[235] = Part.parts[235] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[234];
@@ -10112,7 +10112,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 1 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[3] >0){
         		Part.parts[3] = Part.parts[3] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[2];
@@ -10127,7 +10127,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 2 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[29] >0){
         		Part.parts[29] = Part.parts[29] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[28];
@@ -10142,7 +10142,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 3 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[55] >0){
         		Part.parts[55] = Part.parts[55] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[54];
@@ -10157,7 +10157,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 4 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[81] >0){
         		Part.parts[81] = Part.parts[81] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[80];
@@ -10172,7 +10172,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 5 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[107] >0){
         		Part.parts[107] = Part.parts[107] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[106];
@@ -10187,7 +10187,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 6 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[133] >0){
         		Part.parts[133] = Part.parts[133] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[132];
@@ -10202,7 +10202,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 7 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[159] >0){
         		Part.parts[159] = Part.parts[159] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[158];
@@ -10217,7 +10217,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 8 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[185] >0){
         		Part.parts[185] = Part.parts[185] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[184];
@@ -10232,7 +10232,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 9 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[211] >0){
         		Part.parts[211] = Part.parts[211] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[210];
@@ -10247,7 +10247,7 @@ public class ClickerGame implements ActionListener {
         // Sell Body Level 10 Button Click
  
         if(ae.getSource() == jbtnSellBodyLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[237] >0){
         		Part.parts[237] = Part.parts[237] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[236];
@@ -10262,7 +10262,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 1 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[5] >0){
         		Part.parts[5] = Part.parts[5] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[4];
@@ -10277,7 +10277,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 2 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[31] >0){
         		Part.parts[31] = Part.parts[31] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[30];
@@ -10292,7 +10292,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 3 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[57] >0){
         		Part.parts[57] = Part.parts[57] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[56];
@@ -10307,7 +10307,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 4 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[83] >0){
         		Part.parts[83] = Part.parts[83] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[82];
@@ -10322,7 +10322,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 5 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[109] >0){
         		Part.parts[109] = Part.parts[109] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[108];
@@ -10337,7 +10337,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 6 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[135] >0){
         		Part.parts[135] = Part.parts[135] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[134];
@@ -10352,7 +10352,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 7 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[161] >0){
         		Part.parts[161] = Part.parts[161] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[160];
@@ -10367,7 +10367,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 8 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[187] >0){
         		Part.parts[187] = Part.parts[187] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[186];
@@ -10382,7 +10382,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 9 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[213] >0){
         		Part.parts[213] = Part.parts[213] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[212];
@@ -10397,7 +10397,7 @@ public class ClickerGame implements ActionListener {
         // Sell Brakes Level 10 Button Click
  
         if(ae.getSource() == jbtnSellBrakesLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[239] >0){
         		Part.parts[239] = Part.parts[239] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[238];
@@ -10412,7 +10412,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 1 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[7] >0){
         		Part.parts[7] = Part.parts[7] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[6];
@@ -10427,7 +10427,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 2 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[33] >0){
         		Part.parts[33] = Part.parts[33] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[32];
@@ -10442,7 +10442,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 3 Button Click
         
         if(ae.getSource() == jbtnSellCoolingLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[59] >0){
         		Part.parts[59] = Part.parts[59] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[58];
@@ -10457,7 +10457,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 4 Button Click
       
         if(ae.getSource() == jbtnSellCoolingLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[85] >0){
         		Part.parts[85] = Part.parts[85] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[84];
@@ -10472,7 +10472,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 5 Button Click
   
         if(ae.getSource() == jbtnSellCoolingLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[111] >0){
         		Part.parts[111] = Part.parts[111] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[110];
@@ -10487,7 +10487,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 6 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[137] >0){
         		Part.parts[137] = Part.parts[137] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[136];
@@ -10502,7 +10502,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 7 Button Click
   
         if(ae.getSource() == jbtnSellCoolingLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[163] >0){
         		Part.parts[163] = Part.parts[163] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[162];
@@ -10517,7 +10517,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 8 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[189] >0){
         		Part.parts[189] = Part.parts[189] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[188];
@@ -10532,7 +10532,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 9 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[215] >0){
         		Part.parts[215] = Part.parts[215] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[214];
@@ -10547,7 +10547,7 @@ public class ClickerGame implements ActionListener {
         // Sell Cooling Level 10 Button Click
  
         if(ae.getSource() == jbtnSellCoolingLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[241] >0){
         		Part.parts[241] = Part.parts[241] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[240];
@@ -10562,7 +10562,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 1 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[9] >0){
         		Part.parts[9] = Part.parts[9] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[8];
@@ -10577,7 +10577,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 2 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[35] >0){
         		Part.parts[35] = Part.parts[35] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[34];
@@ -10592,7 +10592,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 3 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[61] >0){
         		Part.parts[61] = Part.parts[61] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[60];
@@ -10607,7 +10607,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 4 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[87] >0){
         		Part.parts[87] = Part.parts[87] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[86];
@@ -10622,7 +10622,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 5 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[113] >0){
         		Part.parts[113] = Part.parts[113] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[112];
@@ -10637,7 +10637,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 6 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[139] >0){
         		Part.parts[139] = Part.parts[139] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[138];
@@ -10652,7 +10652,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 7 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[165] >0){
         		Part.parts[165] = Part.parts[165] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[164];
@@ -10667,7 +10667,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 8 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[191] >0){
         		Part.parts[191] = Part.parts[191] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[190];
@@ -10682,7 +10682,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 9 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[217] >0){
         		Part.parts[217] = Part.parts[217] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[216];
@@ -10697,7 +10697,7 @@ public class ClickerGame implements ActionListener {
         // Sell Electronics Level 10 Button Click
  
         if(ae.getSource() == jbtnSellElectronicsLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[243] >0){
         		Part.parts[243] = Part.parts[243] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[242];
@@ -10712,7 +10712,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 1 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[11] >0){
         		Part.parts[11] = Part.parts[11] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[10];
@@ -10727,7 +10727,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 2 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[37] >0){
         		Part.parts[37] = Part.parts[37] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[36];
@@ -10742,7 +10742,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 3 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[63] >0){
         		Part.parts[63] = Part.parts[63] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[62];
@@ -10757,7 +10757,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 4 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[89] >0){
         		Part.parts[89] = Part.parts[89] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[88];
@@ -10772,7 +10772,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 5 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[115] >0){
         		Part.parts[115] = Part.parts[115] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[114];
@@ -10787,7 +10787,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 6 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[141] >0){
         		Part.parts[141] = Part.parts[141] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[140];
@@ -10802,7 +10802,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 7 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[167] >0){
         		Part.parts[167] = Part.parts[167] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[166];
@@ -10817,7 +10817,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 8 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[193] >0){
         		Part.parts[193] = Part.parts[193] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[192];
@@ -10832,7 +10832,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 9 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[219] >0){
         		Part.parts[219] = Part.parts[219] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[218];
@@ -10847,7 +10847,7 @@ public class ClickerGame implements ActionListener {
         // Sell Engine Level 10 Button Click
  
         if(ae.getSource() == jbtnSellEngineLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[245] >0){
         		Part.parts[245] = Part.parts[245] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[244];
@@ -10862,7 +10862,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 1 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[13] >0){
         		Part.parts[13] = Part.parts[13] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[12];
@@ -10877,7 +10877,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 2 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[39] >0){
         		Part.parts[39] = Part.parts[39] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[38];
@@ -10892,7 +10892,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 3 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[65] >0){
         		Part.parts[65] = Part.parts[65] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[64];
@@ -10907,7 +10907,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 4 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[91] >0){
         		Part.parts[91] = Part.parts[91] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[90];
@@ -10922,7 +10922,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 5 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[117] >0){
         		Part.parts[117] = Part.parts[117] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[116];
@@ -10937,7 +10937,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 6 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[143] >0){
         		Part.parts[143] = Part.parts[143] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[142];
@@ -10952,7 +10952,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 7 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[169] >0){
         		Part.parts[169] = Part.parts[169] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[168];
@@ -10967,7 +10967,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 8 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[195] >0){
         		Part.parts[195] = Part.parts[195] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[194];
@@ -10982,7 +10982,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 9 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[221] >0){
         		Part.parts[221] = Part.parts[221] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[220];
@@ -10997,7 +10997,7 @@ public class ClickerGame implements ActionListener {
         // Sell Exaust Level 10 Button Click
  
         if(ae.getSource() == jbtnSellExaustLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[247] >0){
         		Part.parts[247] = Part.parts[247] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[246];
@@ -11012,7 +11012,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 1 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[15] >0){
         		Part.parts[15] = Part.parts[15] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[14];
@@ -11027,7 +11027,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 2 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[41] >0){
         		Part.parts[41] = Part.parts[41] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[40];
@@ -11042,7 +11042,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 3 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[67] >0){
         		Part.parts[67] = Part.parts[67] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[66];
@@ -11057,7 +11057,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 4 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[93] >0){
         		Part.parts[93] = Part.parts[93] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[92];
@@ -11072,7 +11072,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 5 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[119] >0){
         		Part.parts[119] = Part.parts[119] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[118];
@@ -11087,7 +11087,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 6 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[145] >0){
         		Part.parts[145] = Part.parts[145] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[144];
@@ -11102,7 +11102,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 7 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[171] >0){
         		Part.parts[171] = Part.parts[171] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[170];
@@ -11117,7 +11117,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 8 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[197] >0){
         		Part.parts[197] = Part.parts[197] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[196];
@@ -11132,7 +11132,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 9 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[223] >0){
         		Part.parts[223] = Part.parts[223] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[222];
@@ -11147,7 +11147,7 @@ public class ClickerGame implements ActionListener {
         // Sell Fuel Level 10 Button Click
  
         if(ae.getSource() == jbtnSellFuelLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[249] >0){
         		Part.parts[249] = Part.parts[249] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[248];
@@ -11162,7 +11162,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 1 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[17] >0){
         		Part.parts[17] = Part.parts[17] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[16];
@@ -11177,7 +11177,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 2 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[43] >0){
         		Part.parts[43] = Part.parts[43] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[42];
@@ -11192,7 +11192,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 3 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[69] >0){
         		Part.parts[69] = Part.parts[69] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[68];
@@ -11207,7 +11207,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 4 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[95] >0){
         		Part.parts[95] = Part.parts[95] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[94];
@@ -11222,7 +11222,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 5 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[121] >0){
         		Part.parts[121] = Part.parts[121] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[120];
@@ -11237,7 +11237,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 6 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[147] >0){
         		Part.parts[147] = Part.parts[147] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[146];
@@ -11252,7 +11252,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 7 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[173] >0){
         		Part.parts[173] = Part.parts[173] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[172];
@@ -11267,7 +11267,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 8 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[199] >0){
         		Part.parts[199] = Part.parts[199] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[198];
@@ -11282,7 +11282,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 9 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[225] >0){
         		Part.parts[225] = Part.parts[225] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[224];
@@ -11297,7 +11297,7 @@ public class ClickerGame implements ActionListener {
         // Sell Interior Level 10 Button Click
  
         if(ae.getSource() == jbtnSellInteriorLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[251] >0){
         		Part.parts[251] = Part.parts[251] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[250];
@@ -11312,7 +11312,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 1 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[19] >0){
         		Part.parts[19] = Part.parts[19] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[18];
@@ -11327,7 +11327,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 2 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[45] >0){
         		Part.parts[45] = Part.parts[45] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[44];
@@ -11342,7 +11342,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 3 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[71] >0){
         		Part.parts[71] = Part.parts[71] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[70];
@@ -11357,7 +11357,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 4 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[97] >0){
         		Part.parts[97] = Part.parts[97] - 1;;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[96];
@@ -11372,7 +11372,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 5 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[123] >0){
         		Part.parts[123] = Part.parts[123] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[122];
@@ -11387,7 +11387,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 6 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[149] >0){
         		Part.parts[149] = Part.parts[149] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[148];
@@ -11402,7 +11402,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 7 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[175] >0){
         		Part.parts[175] = Part.parts[175] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[174];
@@ -11417,7 +11417,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 8 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[201] >0){
         		Part.parts[201] = Part.parts[201] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[200];
@@ -11432,7 +11432,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 9 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[227] >0){
         		Part.parts[227] = Part.parts[227] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[226];
@@ -11447,7 +11447,7 @@ public class ClickerGame implements ActionListener {
         // Sell Steering Level 10 Button Click
  
         if(ae.getSource() == jbtnSellSteeringLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[253] >0){
         		Part.parts[253] = Part.parts[253] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[252];
@@ -11462,7 +11462,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 1 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[21] >0){
         		Part.parts[21] = Part.parts[21] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[20];
@@ -11477,7 +11477,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 2 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[47] >0){
         		Part.parts[47] = Part.parts[47] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[46];
@@ -11492,7 +11492,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 3 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[73] >0){
         		Part.parts[73] = Part.parts[73] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[72];
@@ -11507,7 +11507,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 4 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[99] >0){
         		Part.parts[99] = Part.parts[99] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[98];
@@ -11522,7 +11522,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 5 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[125] >0){
         		Part.parts[125] = Part.parts[125] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[124];
@@ -11537,7 +11537,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 6 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[151] >0){
         		Part.parts[151] = Part.parts[151] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[150];
@@ -11552,7 +11552,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 7 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[177] >0){
         		Part.parts[177] = Part.parts[177] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[176];
@@ -11567,7 +11567,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 8 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[203] >0){
         		Part.parts[203] = Part.parts[203] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[202];
@@ -11582,7 +11582,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 9 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[229] >0){
         		Part.parts[229] = Part.parts[229] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[228];
@@ -11597,7 +11597,7 @@ public class ClickerGame implements ActionListener {
         // Sell Suspension Level 10 Button Click
  
         if(ae.getSource() == jbtnSellSuspensionLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[255] >0){
         		Part.parts[255] = Part.parts[255] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[254];
@@ -11612,7 +11612,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 1 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[23] >0){
         		Part.parts[23] = Part.parts[23] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[22];
@@ -11627,7 +11627,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 2 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[49] >0){
         		Part.parts[49] = Part.parts[49] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[48];
@@ -11642,7 +11642,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 3 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[75] >0){
         		Part.parts[75] = Part.parts[75] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[74];
@@ -11657,7 +11657,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 4 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[101] >0){
         		Part.parts[101] = Part.parts[101] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[100];
@@ -11672,7 +11672,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 5 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[127]>0){
         		Part.parts[127] = Part.parts[127] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[126];
@@ -11687,7 +11687,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 6 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[153] >0){
         		Part.parts[153] = Part.parts[153] - 1;;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[152];
@@ -11702,7 +11702,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 7 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[179] >0){
         		Part.parts[179] = Part.parts[179] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[178];
@@ -11717,7 +11717,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 8 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[205] >0){
         		Part.parts[205] = Part.parts[205] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[204];
@@ -11732,7 +11732,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 9 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[231] >0){
         		Part.parts[231] = Part.parts[231] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[230];
@@ -11747,7 +11747,7 @@ public class ClickerGame implements ActionListener {
         // Sell Transmission Level 10 Button Click
  
         if(ae.getSource() == jbtnSellTransmissionLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[257] >0){
         		Part.parts[257] = Part.parts[257] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[256];
@@ -11762,7 +11762,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 1 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[25] >0){
         		Part.parts[25] = Part.parts[25] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[24];
@@ -11777,7 +11777,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 2 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv2){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[51] >0){
         		Part.parts[51] = Part.parts[51] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[50];
@@ -11792,7 +11792,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 3 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv3){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[77] >0){
         		Part.parts[77] = Part.parts[77] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[76];
@@ -11807,7 +11807,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 4 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv4){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[103] >0){
         		Part.parts[103] = Part.parts[103] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[102];
@@ -11822,7 +11822,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 5 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv5){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[129] >0){
         		Part.parts[129] = Part.parts[129] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[128];
@@ -11837,7 +11837,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 6 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv6){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[155] >0){
         		Part.parts[155] = Part.parts[155] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[154];
@@ -11852,7 +11852,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 7 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv7){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[181] >0){
         		Part.parts[181] = Part.parts[181] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[180];
@@ -11867,7 +11867,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 8 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv8){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[207] >0){
         		Part.parts[207] = Part.parts[207] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[206];
@@ -11882,7 +11882,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 9 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv9){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[233] >0){
         		Part.parts[233] = Part.parts[233] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[232];
@@ -11897,7 +11897,7 @@ public class ClickerGame implements ActionListener {
         // Sell Tires Level 10 Button Click
  
         if(ae.getSource() == jbtnSellTiresLv10){
-        	Statistic.statistic[2] +=1;
+        	
         	if (Part.parts[259] >0){
         		Part.parts[259] = Part.parts[259] - 1;
         		CarMain.main[0] = CarMain.main[0] + Part.parts[258];
@@ -11911,7 +11911,7 @@ public class ClickerGame implements ActionListener {
         
         // Build Cars 1-5LVL        
         if(ae.getSource() == jbtnBuildCarLv1){
-        	Statistic.statistic[2] +=1;
+        	
         	count0 = 0;
 	    	if(CarMain.main[5] >=1){
 	    		if(CarMain.main[7] >0){
@@ -12041,7 +12041,7 @@ public class ClickerGame implements ActionListener {
 	
 																
 if(ae.getSource() == jbtnBuildCarLv2){
-	Statistic.statistic[2] +=1;
+	
 	count0 = 0;
 if(CarMain.main[5] >=2){
 	if(CarMain.main[7] >0){
@@ -12171,7 +12171,7 @@ if(CarMain.main[5] >=2){
 }
 
 if(ae.getSource() == jbtnBuildCarLv3){
-	Statistic.statistic[2] +=1;
+	
 	count0 = 0;
 if(CarMain.main[5] >=3){
 	if(CarMain.main[7] >0){
@@ -12299,7 +12299,7 @@ if(CarMain.main[5] >=3){
 }
 }		
 if(ae.getSource() == jbtnBuildCarLv4){
-	Statistic.statistic[2] +=1;
+	
 	count0 = 0;
 	if(CarMain.main[5] >=4){
 		if(CarMain.main[7] >0){
@@ -12428,7 +12428,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 }
 
 	if(ae.getSource() == jbtnBuildCarLv5){
-		Statistic.statistic[2] +=1;
+		
 		count0 = 0;
 		if(CarMain.main[5] >=5){
 			if(CarMain.main[7] >0){
@@ -12559,7 +12559,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	//Build Cars Lv6-10
 	
 	if(ae.getSource() == jbtnBuildCarLv6){
-		Statistic.statistic[2] +=1;
+		
 		count0 = 0;
     	if(CarMain.main[5] >=6){
     		if(CarMain.main[7] >0){
@@ -12689,7 +12689,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	
 	
 	if(ae.getSource() == jbtnBuildCarLv7){
-		Statistic.statistic[2] +=1;
+		
 		count0 = 0;
     	if(CarMain.main[5] >=7){
     		if(CarMain.main[7] >0){
@@ -12818,7 +12818,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	}	    																		
 	    																		
 	if(ae.getSource() == jbtnBuildCarLv8){
-		Statistic.statistic[2] +=1;
+		
 		count0 = 0;
     	if(CarMain.main[5] >=8){
     		if(CarMain.main[7] >0){
@@ -12947,7 +12947,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	}   																		
 	    																		
 	if(ae.getSource() == jbtnBuildCarLv9){
-		Statistic.statistic[2] +=1;
+		
 		count0 = 0;
     	if(CarMain.main[5] >=9){
     		if(CarMain.main[7] >0){
@@ -13076,7 +13076,7 @@ if(ae.getSource() == jbtnBuildCarLv4){
 	}	
 
 if(ae.getSource() == jbtnBuildCarLv10){
-	Statistic.statistic[2] +=1;
+	
 	count0 = 0;
 if(CarMain.main[5] >=10){
 	if(CarMain.main[7] >0){
